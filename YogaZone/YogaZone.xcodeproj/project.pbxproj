@@ -71,6 +71,7 @@
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
 				3126833D27C15ECA003F017B /* ViewController.swift */,
 				3126834227C15ECB003F017B /* Assets.xcassets */,
+				316D58CD27C19DD200F25D61 /* Iconimc */,
 				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
 				3126834727C15ECB003F017B /* Info.plist */,
 			);
@@ -83,8 +84,6 @@
 				3126835427C1675C003F017B /* Historico */,
 				3126835327C16727003F017B /* Resultado */,
 				3126835227C1671B003F017B /* Home */,
-				3126834E27C16056003F017B /* ImcController.swift */,
-				3126834F27C16056003F017B /* ImcController.xib */,
 			);
 			path = IMC;
 			sourceTree = "<group>";
@@ -92,6 +91,8 @@
 		3126835227C1671B003F017B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3126834E27C16056003F017B /* ImcController.swift */,
+				3126834F27C16056003F017B /* ImcController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -113,6 +114,13 @@
 				3126835A27C16801003F017B /* HistoricoController.xib */,
 			);
 			path = Historico;
+			sourceTree = "<group>";
+		};
+		316D58CD27C19DD200F25D61 /* Iconimc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Iconimc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
