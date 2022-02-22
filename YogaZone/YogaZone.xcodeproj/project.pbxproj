@@ -18,6 +18,8 @@
 		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
 		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
 		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
+		79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79777C7827C3040600D9065D /* TreinoUmController.swift */; };
+		79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79777C7927C3040600D9065D /* TreinoUmController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
 		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
 		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
+		79777C7827C3040600D9065D /* TreinoUmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoUmController.swift; sourceTree = "<group>"; };
+		79777C7927C3040600D9065D /* TreinoUmController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoUmController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				79777C7627C302C900D9065D /* Exercicios */,
 				3126834D27C15FE7003F017B /* IMC */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
@@ -83,8 +88,6 @@
 				3126835427C1675C003F017B /* Historico */,
 				3126835327C16727003F017B /* Resultado */,
 				3126835227C1671B003F017B /* Home */,
-				3126834E27C16056003F017B /* ImcController.swift */,
-				3126834F27C16056003F017B /* ImcController.xib */,
 			);
 			path = IMC;
 			sourceTree = "<group>";
@@ -92,6 +95,8 @@
 		3126835227C1671B003F017B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3126834F27C16056003F017B /* ImcController.xib */,
+				3126834E27C16056003F017B /* ImcController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -113,6 +118,23 @@
 				3126835A27C16801003F017B /* HistoricoController.xib */,
 			);
 			path = Historico;
+			sourceTree = "<group>";
+		};
+		79777C7627C302C900D9065D /* Exercicios */ = {
+			isa = PBXGroup;
+			children = (
+				79777C7727C3039E00D9065D /* TreinoUm */,
+			);
+			path = Exercicios;
+			sourceTree = "<group>";
+		};
+		79777C7727C3039E00D9065D /* TreinoUm */ = {
+			isa = PBXGroup;
+			children = (
+				79777C7827C3040600D9065D /* TreinoUmController.swift */,
+				79777C7927C3040600D9065D /* TreinoUmController.xib */,
+			);
+			path = TreinoUm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +197,7 @@
 			files = (
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
@@ -193,6 +216,7 @@
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
+				79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
