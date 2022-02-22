@@ -10,6 +10,10 @@ import UIKit
 class ImcController: UIViewController {
 
     @IBOutlet weak var btnCalcular: UIButton!
+  
+    @IBOutlet weak var butnVerMeuProgesso: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,16 @@ class ImcController: UIViewController {
         
         
     }
+    @IBAction func tappedVerMeuProgresso(_ sender: UIButton) {
+        let vc2 = HistoricoController()
+        present(vc2, animated: true, completion: nil)
+        
+        
+        
+        
+//        let navController = UINavigationController(rootViewController: HistoricoController())
+    }
+      
     
     /*
     // MARK: - Navigation

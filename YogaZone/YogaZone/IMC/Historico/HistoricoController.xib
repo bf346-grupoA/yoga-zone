@@ -10,6 +10,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoricoController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="Data" destination="2BA-Yc-BI3" id="bK8-sL-xtl"/>
+                <outlet property="KgObjetivo" destination="OnL-f6-C8s" id="1j6-M1-B36"/>
+                <outlet property="Resultado" destination="5Rk-Vu-ydW" id="Va6-c0-alh"/>
+                <outlet property="ResultadoFaltam" destination="5r2-eh-u7a" id="tEB-ix-Hix"/>
+                <outlet property="ResultadoObjetivo" destination="hgd-3U-zIP" id="B8W-bp-w88"/>
+                <outlet property="buttonCompartilhar" destination="xmy-xY-XXR" id="2XT-sI-5gN"/>
+                <outlet property="faltam" destination="YjU-yO-pAf" id="tMe-4Z-NnO"/>
+                <outlet property="faltamLabel2" destination="YjU-yO-pAf" id="bpy-tD-Abj"/>
+                <outlet property="kgFaltam" destination="QVG-1D-aBH" id="Hzg-1S-ALV"/>
+                <outlet property="kgPesoAtual" destination="VIg-Os-bfs" id="zVd-ZY-3WL"/>
+                <outlet property="meuProgresso" destination="Ddh-S2-1vV" id="Sga-ky-V9w"/>
+                <outlet property="obejtivo" destination="kiG-8R-3SP" id="QFf-SE-pxA"/>
+                <outlet property="peso" destination="Qdh-Zt-XsW" id="HIv-t8-55W"/>
+                <outlet property="pesoAtual" destination="3Df-m5-gFI" id="9sE-PS-Hz9"/>
+                <outlet property="resultadoPesoAtual" destination="ekc-SS-MvX" id="QTc-hL-cWQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -96,6 +111,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Compartilhar">
                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedCompartilhar:" destination="-1" eventType="touchUpInside" id="m4g-t0-lJK"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faltam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjU-yO-pAf">
                     <rect key="frame" x="364" y="307" width="54" height="22"/>
