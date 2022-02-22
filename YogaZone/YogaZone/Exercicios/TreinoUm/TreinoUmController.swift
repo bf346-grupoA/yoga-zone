@@ -39,6 +39,8 @@ class TreinoUmController: UIViewController {
     }
     
     @IBAction func tappedSeeTrainButton(_ sender: UIButton) {
+        let vc = TreinoListagemController()
+        present(vc, animated: true, completion: nil)
     }
     /*https://www.youtube.com/watch?v=lICHh10y_XU*/
 }
