@@ -18,6 +18,10 @@
 		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
 		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
 		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
+		8302F14E27C46BE2003CE838 /* CriarNovoEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F14C27C46BE2003CE838 /* CriarNovoEventoController.swift */; };
+		8302F14F27C46BE3003CE838 /* CriarNovoEventoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */; };
+		8302F15227C58E73003CE838 /* CriarEventoSucessoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */; };
+		8302F15327C58E73003CE838 /* CriarEventoSucessoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */; };
 		839CE76B27C4672C007D8330 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75427C4672C007D8330 /* Montserrat-VariableFont_wght.ttf */; };
 		839CE76C27C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75527C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf */; };
 		839CE76D27C4672C007D8330 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75727C4672C007D8330 /* Montserrat-LightItalic.ttf */; };
@@ -62,6 +66,10 @@
 		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
 		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
 		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
+		8302F14C27C46BE2003CE838 /* CriarNovoEventoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarNovoEventoController.swift; sourceTree = "<group>"; };
+		8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CriarNovoEventoController.xib; sourceTree = "<group>"; };
+		8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarEventoSucessoController.swift; sourceTree = "<group>"; };
+		8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CriarEventoSucessoController.xib; sourceTree = "<group>"; };
 		839CE75427C4672C007D8330 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		839CE75527C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		839CE75727C4672C007D8330 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -123,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				839CE75027C466EB007D8330 /* fonts */,
+				8302F14827C46BE2003CE838 /* Eventos */,
 				3126834D27C15FE7003F017B /* IMC */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
@@ -170,6 +179,41 @@
 				3126835A27C16801003F017B /* HistoricoController.xib */,
 			);
 			path = Historico;
+			sourceTree = "<group>";
+		};
+		8302F14827C46BE2003CE838 /* Eventos */ = {
+			isa = PBXGroup;
+			children = (
+				8302F14927C46BE2003CE838 /* HomeEventos */,
+				8302F14A27C46BE2003CE838 /* CriarNovoEvento */,
+				8302F14B27C46BE2003CE838 /* DetalheEvento */,
+			);
+			path = Eventos;
+			sourceTree = "<group>";
+		};
+		8302F14927C46BE2003CE838 /* HomeEventos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeEventos;
+			sourceTree = "<group>";
+		};
+		8302F14A27C46BE2003CE838 /* CriarNovoEvento */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CriarNovoEvento;
+			sourceTree = "<group>";
+		};
+		8302F14B27C46BE2003CE838 /* DetalheEvento */ = {
+			isa = PBXGroup;
+			children = (
+				8302F14C27C46BE2003CE838 /* CriarNovoEventoController.swift */,
+				8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */,
+				8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */,
+				8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */,
+			);
+			path = DetalheEvento;
 			sourceTree = "<group>";
 		};
 		839CE75027C466EB007D8330 /* fonts */ = {
@@ -299,12 +343,14 @@
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				839CE78827C46A1E007D8330 /* Comfortaa-Light.ttf in Resources */,
 				839CE76B27C4672C007D8330 /* Montserrat-VariableFont_wght.ttf in Resources */,
+				8302F14F27C46BE3003CE838 /* CriarNovoEventoController.xib in Resources */,
 				839CE77D27C4672C007D8330 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				839CE76F27C4672C007D8330 /* Montserrat-BoldItalic.ttf in Resources */,
 				839CE78B27C46A1E007D8330 /* Comfortaa-Regular.ttf in Resources */,
 				839CE77A27C4672C007D8330 /* Montserrat-Black.ttf in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				839CE77F27C4672C007D8330 /* OFL.txt in Resources */,
+				8302F15327C58E73003CE838 /* CriarEventoSucessoController.xib in Resources */,
 				839CE78D27C46A1E007D8330 /* Comfortaa-Bold.ttf in Resources */,
 				839CE78A27C46A1E007D8330 /* OFL.txt in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
@@ -332,6 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8302F15227C58E73003CE838 /* CriarEventoSucessoController.swift in Sources */,
+				8302F14E27C46BE2003CE838 /* CriarNovoEventoController.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
