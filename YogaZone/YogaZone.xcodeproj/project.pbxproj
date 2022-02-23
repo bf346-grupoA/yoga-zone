@@ -22,6 +22,8 @@
 		8302F14F27C46BE3003CE838 /* CriarNovoEventoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */; };
 		8302F15227C58E73003CE838 /* CriarEventoSucessoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */; };
 		8302F15327C58E73003CE838 /* CriarEventoSucessoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */; };
+		8347DB5327CEAAD900DA4187 /* DetalheEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347DB5127CEAAD900DA4187 /* DetalheEventoViewController.swift */; };
+		8347DB5427CEAAD900DA4187 /* DetalheEventoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8347DB5227CEAAD900DA4187 /* DetalheEventoViewController.xib */; };
 		839CE76B27C4672C007D8330 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75427C4672C007D8330 /* Montserrat-VariableFont_wght.ttf */; };
 		839CE76C27C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75527C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf */; };
 		839CE76D27C4672C007D8330 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75727C4672C007D8330 /* Montserrat-LightItalic.ttf */; };
@@ -46,7 +48,6 @@
 		839CE78027C4672C007D8330 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 839CE76A27C4672C007D8330 /* README.txt */; };
 		839CE78827C46A1E007D8330 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE78227C46A1E007D8330 /* Comfortaa-Light.ttf */; };
 		839CE78927C46A1E007D8330 /* FONTLOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 839CE78327C46A1E007D8330 /* FONTLOG.txt */; };
-		839CE78A27C46A1E007D8330 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 839CE78427C46A1E007D8330 /* OFL.txt */; };
 		839CE78B27C46A1E007D8330 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE78527C46A1E007D8330 /* Comfortaa-Regular.ttf */; };
 		839CE78C27C46A1E007D8330 /* donate.html in Resources */ = {isa = PBXBuildFile; fileRef = 839CE78627C46A1E007D8330 /* donate.html */; };
 		839CE78D27C46A1E007D8330 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE78727C46A1E007D8330 /* Comfortaa-Bold.ttf */; };
@@ -70,6 +71,8 @@
 		8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CriarNovoEventoController.xib; sourceTree = "<group>"; };
 		8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarEventoSucessoController.swift; sourceTree = "<group>"; };
 		8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CriarEventoSucessoController.xib; sourceTree = "<group>"; };
+		8347DB5127CEAAD900DA4187 /* DetalheEventoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheEventoViewController.swift; sourceTree = "<group>"; };
+		8347DB5227CEAAD900DA4187 /* DetalheEventoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheEventoViewController.xib; sourceTree = "<group>"; };
 		839CE75427C4672C007D8330 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		839CE75527C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		839CE75727C4672C007D8330 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -94,7 +97,6 @@
 		839CE76A27C4672C007D8330 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		839CE78227C46A1E007D8330 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		839CE78327C46A1E007D8330 /* FONTLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FONTLOG.txt; sourceTree = "<group>"; };
-		839CE78427C46A1E007D8330 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		839CE78527C46A1E007D8330 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		839CE78627C46A1E007D8330 /* donate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = donate.html; sourceTree = "<group>"; };
 		839CE78727C46A1E007D8330 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
@@ -212,6 +214,8 @@
 		8302F14B27C46BE2003CE838 /* DetalheEvento */ = {
 			isa = PBXGroup;
 			children = (
+				8347DB5127CEAAD900DA4187 /* DetalheEventoViewController.swift */,
+				8347DB5227CEAAD900DA4187 /* DetalheEventoViewController.xib */,
 			);
 			path = DetalheEvento;
 			sourceTree = "<group>";
@@ -267,7 +271,6 @@
 			children = (
 				839CE78227C46A1E007D8330 /* Comfortaa-Light.ttf */,
 				839CE78327C46A1E007D8330 /* FONTLOG.txt */,
-				839CE78427C46A1E007D8330 /* OFL.txt */,
 				839CE78527C46A1E007D8330 /* Comfortaa-Regular.ttf */,
 				839CE78627C46A1E007D8330 /* donate.html */,
 				839CE78727C46A1E007D8330 /* Comfortaa-Bold.ttf */,
@@ -336,6 +339,7 @@
 				839CE77027C4672C007D8330 /* Montserrat-Light.ttf in Resources */,
 				839CE76C27C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
 				839CE78927C46A1E007D8330 /* FONTLOG.txt in Resources */,
+				8347DB5427CEAAD900DA4187 /* DetalheEventoViewController.xib in Resources */,
 				839CE77B27C4672C007D8330 /* Montserrat-Regular.ttf in Resources */,
 				839CE77C27C4672C007D8330 /* Montserrat-Italic.ttf in Resources */,
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
@@ -352,7 +356,6 @@
 				839CE77F27C4672C007D8330 /* OFL.txt in Resources */,
 				8302F15327C58E73003CE838 /* CriarEventoSucessoController.xib in Resources */,
 				839CE78D27C46A1E007D8330 /* Comfortaa-Bold.ttf in Resources */,
-				839CE78A27C46A1E007D8330 /* OFL.txt in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				839CE77627C4672C007D8330 /* Montserrat-BlackItalic.ttf in Resources */,
 				839CE77727C4672C007D8330 /* Montserrat-SemiBold.ttf in Resources */,
@@ -379,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8302F15227C58E73003CE838 /* CriarEventoSucessoController.swift in Sources */,
+				8347DB5327CEAAD900DA4187 /* DetalheEventoViewController.swift in Sources */,
 				8302F14E27C46BE2003CE838 /* CriarNovoEventoController.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
@@ -526,7 +530,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RVDHB2VBB6;
+				DEVELOPMENT_TEAM = V79YGJ6ND2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YogaZone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -553,7 +557,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RVDHB2VBB6;
+				DEVELOPMENT_TEAM = V79YGJ6ND2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YogaZone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
