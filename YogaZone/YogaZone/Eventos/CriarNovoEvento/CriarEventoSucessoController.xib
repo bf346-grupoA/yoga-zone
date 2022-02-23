@@ -48,7 +48,7 @@
                     </buttonConfiguration>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOu-SP-3hg">
-                    <rect key="frame" x="30" y="260" width="315" height="100"/>
+                    <rect key="frame" x="30" y="259.5" width="315" height="100"/>
                     <attributedString key="attributedText">
                         <fragment>
                             <string key="content">Evento criado com sucesso !

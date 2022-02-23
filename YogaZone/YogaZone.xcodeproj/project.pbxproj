@@ -201,6 +201,10 @@
 		8302F14A27C46BE2003CE838 /* CriarNovoEvento */ = {
 			isa = PBXGroup;
 			children = (
+				8302F14C27C46BE2003CE838 /* CriarNovoEventoController.swift */,
+				8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */,
+				8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */,
+				8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */,
 			);
 			path = CriarNovoEvento;
 			sourceTree = "<group>";
@@ -208,10 +212,6 @@
 		8302F14B27C46BE2003CE838 /* DetalheEvento */ = {
 			isa = PBXGroup;
 			children = (
-				8302F14C27C46BE2003CE838 /* CriarNovoEventoController.swift */,
-				8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */,
-				8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */,
-				8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */,
 			);
 			path = DetalheEvento;
 			sourceTree = "<group>";
