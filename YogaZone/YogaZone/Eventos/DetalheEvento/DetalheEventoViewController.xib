@@ -117,27 +117,7 @@
                         </label>
                     </subviews>
                 </stackView>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="co3-bQ-wml">
-                    <rect key="frame" x="30" y="509.5" width="354" height="150"/>
-                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="150" id="zTT-Qb-znI"/>
-                    </constraints>
-                    <attributedString key="attributedText">
-                        <fragment>
-                            <string key="content">Encontro semanal da turma de yoga.
-Todos são bem vindos !
-Previsão de término as 21:30.</string>
-                            <attributes>
-                                <color key="NSColor" red="0.36377078289999998" green="0.3279882073" blue="0.65669530629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descricao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TU-1k-KgC">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TU-1k-KgC">
                     <rect key="frame" x="30" y="473.5" width="354" height="21"/>
                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
                     <color key="textColor" red="0.36377078289999998" green="0.3279882073" blue="0.65669530629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -178,23 +158,47 @@ Previsão de término as 21:30.</string>
                         <constraint firstAttribute="height" constant="140" id="MMz-VV-erv"/>
                     </constraints>
                 </mapView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eax-oL-eab">
+                    <rect key="frame" x="30" y="509.5" width="354" height="150"/>
+                    <color key="backgroundColor" red="0.97028059971452962" green="0.97028059971452962" blue="0.97028059971452962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="heG-92-Hzs"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Encontro semanal da turma de yoga.
+Todos são bem vindos !
+Previsão de término as 21:30.</string>
+                            <attributes>
+                                <color key="NSColor" red="0.36376999999999998" green="0.32799" blue="0.65669999999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="xLP-Q8-gIy" firstAttribute="top" secondItem="eax-oL-eab" secondAttribute="bottom" constant="15" id="1rf-JV-Gtf"/>
                 <constraint firstItem="VA0-NE-1KZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="4a6-pz-XHw"/>
                 <constraint firstItem="4TU-1k-KgC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="6dA-2q-ABZ"/>
                 <constraint firstItem="0J1-nT-odB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="8Gc-dI-14d"/>
                 <constraint firstItem="j4q-rk-Tcz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="9lq-h1-ay4"/>
-                <constraint firstItem="co3-bQ-wml" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="DlR-aK-emQ"/>
                 <constraint firstItem="Zch-B4-SeD" firstAttribute="top" secondItem="4Rp-KV-XNw" secondAttribute="bottom" constant="15" id="H8S-or-Toq"/>
                 <constraint firstItem="xLP-Q8-gIy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Ij6-xX-349"/>
                 <constraint firstItem="0J1-nT-odB" firstAttribute="top" secondItem="uoC-Zc-7tz" secondAttribute="bottom" constant="15" id="JWC-Qb-JnH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GhW-dQ-P7p" secondAttribute="trailing" constant="30" id="Lrg-cn-whN"/>
+                <constraint firstItem="eax-oL-eab" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Td5-kR-tvz"/>
                 <constraint firstItem="4Rp-KV-XNw" firstAttribute="top" secondItem="b8I-Ho-RN1" secondAttribute="bottom" constant="15" id="Uj1-bg-uNu"/>
-                <constraint firstItem="co3-bQ-wml" firstAttribute="top" secondItem="4TU-1k-KgC" secondAttribute="bottom" constant="15" id="Ylx-Ad-b3P"/>
                 <constraint firstItem="4Rp-KV-XNw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="c39-EX-0I8"/>
                 <constraint firstItem="b8I-Ho-RN1" firstAttribute="top" secondItem="0J1-nT-odB" secondAttribute="bottom" constant="15" id="ca8-0U-2Xc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eax-oL-eab" secondAttribute="trailing" constant="30" id="h15-nv-y7l"/>
                 <constraint firstItem="j4q-rk-Tcz" firstAttribute="top" secondItem="xLP-Q8-gIy" secondAttribute="bottom" constant="15" id="hj8-Gk-u6L"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="b8I-Ho-RN1" secondAttribute="trailing" constant="30" id="hou-nk-4qI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4TU-1k-KgC" secondAttribute="trailing" constant="30" id="hrD-yd-b9R"/>
@@ -204,12 +208,11 @@ Previsão de término as 21:30.</string>
                 <constraint firstItem="b8I-Ho-RN1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="oc3-Ex-vGM"/>
                 <constraint firstItem="uoC-Zc-7tz" firstAttribute="top" secondItem="GhW-dQ-P7p" secondAttribute="bottom" constant="15" id="ra4-0O-pPw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0J1-nT-odB" secondAttribute="trailing" constant="30" id="sOQ-mU-PUY"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="co3-bQ-wml" secondAttribute="trailing" constant="30" id="tiI-NA-wDC"/>
+                <constraint firstItem="eax-oL-eab" firstAttribute="top" secondItem="4TU-1k-KgC" secondAttribute="bottom" constant="15" id="sbh-Cp-oID"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j4q-rk-Tcz" secondAttribute="trailing" constant="30" id="uPP-0P-C84"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zch-B4-SeD" secondAttribute="trailing" constant="30" id="v5h-FL-tzN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uoC-Zc-7tz" secondAttribute="trailing" constant="30" id="vie-Dr-dSr"/>
                 <constraint firstItem="VA0-NE-1KZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wcR-UK-gIG"/>
-                <constraint firstItem="xLP-Q8-gIy" firstAttribute="top" secondItem="co3-bQ-wml" secondAttribute="bottom" constant="15" id="wiR-E1-j8s"/>
                 <constraint firstItem="4TU-1k-KgC" firstAttribute="top" secondItem="Zch-B4-SeD" secondAttribute="bottom" constant="15" id="x6R-sq-a7D"/>
                 <constraint firstItem="GhW-dQ-P7p" firstAttribute="top" secondItem="VA0-NE-1KZ" secondAttribute="bottom" constant="50" id="xkX-90-cg1"/>
                 <constraint firstItem="uoC-Zc-7tz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ysa-1n-3nu"/>

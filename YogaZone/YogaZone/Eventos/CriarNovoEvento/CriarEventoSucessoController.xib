@@ -24,20 +24,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criar Novo Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0m-MX-b0N">
-                    <rect key="frame" x="80" y="30" width="215" height="29.5"/>
+                    <rect key="frame" x="80" y="15" width="215" height="29.5"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OK" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-jc-IYd">
-                    <rect key="frame" x="117.5" y="109.5" width="140" height="110"/>
+                    <rect key="frame" x="117.5" y="94.5" width="140" height="110"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="GxL-iJ-zKZ"/>
                         <constraint firstAttribute="height" constant="110" id="oLE-0H-Ukk"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzR-h2-Ru4">
-                    <rect key="frame" x="30" y="389.5" width="315" height="50"/>
+                    <rect key="frame" x="30" y="404.5" width="315" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="gtw-OS-rIc"/>
                     </constraints>
@@ -45,10 +45,15 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Ok">
                         <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.36377078289999998" green="0.3279882073" blue="0.65669530629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOu-SP-3hg">
-                    <rect key="frame" x="30" y="259.5" width="315" height="100"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-GI-KDL">
+                    <rect key="frame" x="30" y="234.5" width="315" height="140"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="xbA-7o-w5a"/>
+                    </constraints>
                     <attributedString key="attributedText">
                         <fragment>
                             <string key="content">Evento criado com sucesso !
@@ -101,22 +106,22 @@
                             </attributes>
                         </fragment>
                     </attributedString>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="c0m-MX-b0N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="4ye-oK-SX3"/>
+                <constraint firstItem="c0m-MX-b0N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="4ye-oK-SX3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hzR-h2-Ru4" secondAttribute="trailing" constant="30" id="6EF-gJ-Wl1"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NOu-SP-3hg" secondAttribute="trailing" constant="30" id="D1r-6B-Uq8"/>
                 <constraint firstItem="ZCd-jc-IYd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dib-wQ-QtE"/>
-                <constraint firstItem="NOu-SP-3hg" firstAttribute="top" secondItem="ZCd-jc-IYd" secondAttribute="bottom" constant="40" id="HrQ-5y-yQ5"/>
+                <constraint firstItem="ehN-GI-KDL" firstAttribute="top" secondItem="ZCd-jc-IYd" secondAttribute="bottom" constant="30" id="PnA-Mh-d3T"/>
                 <constraint firstItem="ZCd-jc-IYd" firstAttribute="top" secondItem="c0m-MX-b0N" secondAttribute="bottom" constant="50" id="Uz4-AR-XeL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ehN-GI-KDL" secondAttribute="trailing" constant="30" id="c56-sg-fhq"/>
                 <constraint firstItem="c0m-MX-b0N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cAx-Gm-I28"/>
                 <constraint firstItem="hzR-h2-Ru4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="kLN-sP-pbz"/>
-                <constraint firstItem="hzR-h2-Ru4" firstAttribute="top" secondItem="NOu-SP-3hg" secondAttribute="bottom" constant="30" id="qEd-Jr-pTl"/>
-                <constraint firstItem="NOu-SP-3hg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ulR-RO-XRn"/>
+                <constraint firstItem="hzR-h2-Ru4" firstAttribute="top" secondItem="ehN-GI-KDL" secondAttribute="bottom" constant="30" id="qOf-JG-J6h"/>
+                <constraint firstItem="ehN-GI-KDL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="xNV-AO-Kbq"/>
             </constraints>
             <point key="canvasLocation" x="130.40000000000001" y="116.49175412293854"/>
         </view>
