@@ -15,6 +15,8 @@ class TreinoUmController: UIViewController {
    
     @IBOutlet weak var dropDownDuration: SwiftyMenu!
     
+    @IBOutlet weak var dropDownLevel: SwiftyMenu!
+    
     @IBOutlet weak var circleBackground: UIImageView!
     
     @IBOutlet weak var titleTreinoDeYoga: UILabel!
@@ -42,15 +44,15 @@ class TreinoUmController: UIViewController {
             var attributes = SwiftyMenuAttributes()
 
             // Custom Behavior
-            attributes.multiSelect = .enabled
+            attributes.multiSelect = .disabled
             attributes.scroll = .enabled
-            attributes.hideOptionsWhenSelect = .disabled
+            attributes.hideOptionsWhenSelect = .enabled
 
             // Custom UI
             attributes.roundCorners = .all(radius: 8)
             attributes.rowStyle = .value(height: 35, backgroundColor: .white, selectedColor: UIColor.gray.withAlphaComponent(0.1))
             attributes.headerStyle = .value(backgroundColor: .white, height: 35)
-            attributes.placeHolderStyle = .value(text: "Tempo", textColor: .lightGray)
+            attributes.placeHolderStyle = .value(text: "Escolher", textColor: .lightGray)
             attributes.textStyle = .value(color: .gray, separator: " & ", font: .systemFont(ofSize: 12))
             attributes.separatorStyle = .value(color: .black, isBlured: false, style: .singleLine)
             attributes.arrowStyle = .value(isEnabled: true)
@@ -79,14 +81,14 @@ class TreinoUmController: UIViewController {
             /// Setup component
         dropDownDuration.delegate = self
         dropDownDuration.items = dropDownOptionsDataSourceDuration
-//
-//            dropDownLevel.delegate = self
-//            dropDownLevel.items = dropDownOptionsDataSourceLevel
+
+        dropDownLevel.delegate = self
+        dropDownLevel.items = dropDownOptionsDataSourceLevel
         
         
             /// Configure SwiftyMenu with the attributes
         dropDownDuration.configure(with: storyboardMenuAttributes)
-//            dropDownLevel.configure(with: storyboardMenuAttributes)
+        dropDownLevel.configure(with: storyboardMenuAttributes)
         }
 
     
