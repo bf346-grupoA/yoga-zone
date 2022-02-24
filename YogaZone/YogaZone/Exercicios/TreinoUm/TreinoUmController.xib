@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="circleBackground" destination="69m-n5-rCx" id="qTp-Pf-xwX"/>
                 <outlet property="descriptionTreinoDeYoga" destination="b1V-ix-667" id="Lr2-ac-pqU"/>
+                <outlet property="dropDownDuration" destination="H6c-rY-NXV" id="vZa-0K-vyQ"/>
                 <outlet property="levelExerciceImage" destination="Xcb-9K-WzP" id="f3g-N3-iCR"/>
                 <outlet property="levelExerciceLabel" destination="y4A-Yf-i2N" id="ud2-f3-Nrj"/>
                 <outlet property="seeTrainButton" destination="cG6-Te-4Pd" id="fag-W3-HKx"/>
@@ -97,7 +98,7 @@
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="dynamic">
+                    <buttonConfiguration key="configuration" style="plain" title="Ver Treino" cornerStyle="dynamic">
                         <backgroundConfiguration key="background" cornerRadius="22">
                             <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         </backgroundConfiguration>
@@ -106,12 +107,24 @@
                         <action selector="tappedSeeTrainButton:" destination="-1" eventType="touchUpInside" id="FJ0-Wr-kYZ"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6c-rY-NXV" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                    <rect key="frame" x="250" y="389" width="100" height="35"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Fyy-T8-ygu"/>
+                        <constraint firstAttribute="height" constant="35" id="eqv-vB-vOE"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="heightConstraint" destination="eqv-vB-vOE" id="TKs-OZ-klB"/>
+                    </connections>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cG6-Te-4Pd" secondAttribute="trailing" constant="50" id="4A4-SG-YiK"/>
                 <constraint firstItem="hvj-gQ-96V" firstAttribute="top" secondItem="b1V-ix-667" secondAttribute="bottom" constant="35" id="4J7-Py-vAk"/>
+                <constraint firstItem="H6c-rY-NXV" firstAttribute="top" secondItem="b1V-ix-667" secondAttribute="bottom" constant="35" id="9AU-z0-JPd"/>
                 <constraint firstItem="iOW-S3-37L" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="AUg-ei-umZ"/>
                 <constraint firstItem="jJP-zt-0vt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="130" id="EGJ-3S-m9D"/>
                 <constraint firstItem="dKg-ep-BAs" firstAttribute="top" secondItem="b1V-ix-667" secondAttribute="bottom" constant="50" id="Lhj-iQ-Aey"/>
@@ -120,12 +133,15 @@
                 <constraint firstItem="Xcb-9K-WzP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="PD1-wE-Oo6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="b1V-ix-667" secondAttribute="trailing" constant="50" id="Px9-qQ-GLK"/>
                 <constraint firstItem="Xcb-9K-WzP" firstAttribute="top" secondItem="hvj-gQ-96V" secondAttribute="bottom" constant="25" id="VMu-Br-2QF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H6c-rY-NXV" secondAttribute="trailing" constant="25" id="Vmv-OE-PKa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H6c-rY-NXV" secondAttribute="trailing" constant="25" id="WFm-tl-ece"/>
                 <constraint firstItem="jJP-zt-0vt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="Xdr-RG-Wfm"/>
                 <constraint firstItem="y4A-Yf-i2N" firstAttribute="top" secondItem="dKg-ep-BAs" secondAttribute="bottom" constant="31" id="Z91-Vt-JyQ"/>
                 <constraint firstItem="cG6-Te-4Pd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="gxS-f0-YQr"/>
                 <constraint firstItem="iOW-S3-37L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="hqj-qa-zhW"/>
                 <constraint firstItem="b1V-ix-667" firstAttribute="top" secondItem="jJP-zt-0vt" secondAttribute="bottom" constant="60" id="jha-2b-UvS"/>
                 <constraint firstItem="b1V-ix-667" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="m63-xD-syX"/>
+                <constraint firstItem="H6c-rY-NXV" firstAttribute="top" secondItem="b1V-ix-667" secondAttribute="bottom" constant="35" id="oZf-je-Cb3"/>
                 <constraint firstItem="y4A-Yf-i2N" firstAttribute="leading" secondItem="Xcb-9K-WzP" secondAttribute="trailing" constant="15" id="uL7-a1-kpi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jJP-zt-0vt" secondAttribute="trailing" constant="25" id="uXI-B3-LJK"/>
                 <constraint firstItem="hvj-gQ-96V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="yaI-xN-ur4"/>
