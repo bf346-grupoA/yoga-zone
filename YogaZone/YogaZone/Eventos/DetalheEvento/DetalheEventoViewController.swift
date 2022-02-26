@@ -1,8 +1,8 @@
 //
-//  DetalheEventoViewController.swift
+//  DetalheEventoTesteViewController.swift
 //  YogaZone
 //
-//  Created by Rafael Benjamin on 23/02/22.
+//  Created by Rafael Benjamin on 25/02/22.
 //
 
 import UIKit

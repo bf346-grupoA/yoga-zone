@@ -22,8 +22,8 @@
 		8302F14F27C46BE3003CE838 /* CriarNovoEventoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */; };
 		8302F15227C58E73003CE838 /* CriarEventoSucessoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */; };
 		8302F15327C58E73003CE838 /* CriarEventoSucessoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */; };
-		8347DB5327CEAAD900DA4187 /* DetalheEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347DB5127CEAAD900DA4187 /* DetalheEventoViewController.swift */; };
-		8347DB5427CEAAD900DA4187 /* DetalheEventoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8347DB5227CEAAD900DA4187 /* DetalheEventoViewController.xib */; };
+		830478A227C9A89A0081CCA3 /* DetalheEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830478A027C9A8990081CCA3 /* DetalheEventoViewController.swift */; };
+		830478A327C9A89A0081CCA3 /* DetalheEventoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830478A127C9A8990081CCA3 /* DetalheEventoViewController.xib */; };
 		839CE76B27C4672C007D8330 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75427C4672C007D8330 /* Montserrat-VariableFont_wght.ttf */; };
 		839CE76C27C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75527C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf */; };
 		839CE76D27C4672C007D8330 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75727C4672C007D8330 /* Montserrat-LightItalic.ttf */; };
@@ -71,8 +71,8 @@
 		8302F14D27C46BE2003CE838 /* CriarNovoEventoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CriarNovoEventoController.xib; sourceTree = "<group>"; };
 		8302F15027C58E73003CE838 /* CriarEventoSucessoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarEventoSucessoController.swift; sourceTree = "<group>"; };
 		8302F15127C58E73003CE838 /* CriarEventoSucessoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CriarEventoSucessoController.xib; sourceTree = "<group>"; };
-		8347DB5127CEAAD900DA4187 /* DetalheEventoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheEventoViewController.swift; sourceTree = "<group>"; };
-		8347DB5227CEAAD900DA4187 /* DetalheEventoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheEventoViewController.xib; sourceTree = "<group>"; };
+		830478A027C9A8990081CCA3 /* DetalheEventoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheEventoViewController.swift; sourceTree = "<group>"; };
+		830478A127C9A8990081CCA3 /* DetalheEventoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheEventoViewController.xib; sourceTree = "<group>"; };
 		839CE75427C4672C007D8330 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		839CE75527C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		839CE75727C4672C007D8330 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -214,8 +214,8 @@
 		8302F14B27C46BE2003CE838 /* DetalheEvento */ = {
 			isa = PBXGroup;
 			children = (
-				8347DB5127CEAAD900DA4187 /* DetalheEventoViewController.swift */,
-				8347DB5227CEAAD900DA4187 /* DetalheEventoViewController.xib */,
+				830478A027C9A8990081CCA3 /* DetalheEventoViewController.swift */,
+				830478A127C9A8990081CCA3 /* DetalheEventoViewController.xib */,
 			);
 			path = DetalheEvento;
 			sourceTree = "<group>";
@@ -339,7 +339,6 @@
 				839CE77027C4672C007D8330 /* Montserrat-Light.ttf in Resources */,
 				839CE76C27C4672C007D8330 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
 				839CE78927C46A1E007D8330 /* FONTLOG.txt in Resources */,
-				8347DB5427CEAAD900DA4187 /* DetalheEventoViewController.xib in Resources */,
 				839CE77B27C4672C007D8330 /* Montserrat-Regular.ttf in Resources */,
 				839CE77C27C4672C007D8330 /* Montserrat-Italic.ttf in Resources */,
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
@@ -357,6 +356,7 @@
 				8302F15327C58E73003CE838 /* CriarEventoSucessoController.xib in Resources */,
 				839CE78D27C46A1E007D8330 /* Comfortaa-Bold.ttf in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
+				830478A327C9A89A0081CCA3 /* DetalheEventoViewController.xib in Resources */,
 				839CE77627C4672C007D8330 /* Montserrat-BlackItalic.ttf in Resources */,
 				839CE77727C4672C007D8330 /* Montserrat-SemiBold.ttf in Resources */,
 				839CE77527C4672C007D8330 /* Montserrat-MediumItalic.ttf in Resources */,
@@ -382,7 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8302F15227C58E73003CE838 /* CriarEventoSucessoController.swift in Sources */,
-				8347DB5327CEAAD900DA4187 /* DetalheEventoViewController.swift in Sources */,
+				830478A227C9A89A0081CCA3 /* DetalheEventoViewController.swift in Sources */,
 				8302F14E27C46BE2003CE838 /* CriarNovoEventoController.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
