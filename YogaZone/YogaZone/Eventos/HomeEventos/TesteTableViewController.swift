@@ -19,8 +19,6 @@ class TesteTableViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.register(nib, forCellReuseIdentifier: "EventoTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
-        
-        // Do any additional setup after loading the view.
     }
     
     
@@ -32,6 +30,7 @@ class TesteTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventoTableViewCell", for: indexPath) as! EventoTableViewCell
         //cell.myLabel.text = myData[indexPath.row]
         //cell.myImageView.backgroundColor = .red
+        self.tableView.sizeToFit()
         return cell
     }
 
