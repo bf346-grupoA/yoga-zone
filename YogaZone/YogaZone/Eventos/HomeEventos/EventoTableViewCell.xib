@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventoTableViewCell" rowHeight="127" id="KGk-i7-Jjw" userLabel="EventoTableViewCell" customClass="EventoTableViewCell" customModule="YogaZone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HkJ-VB-h58">
+                        <rect key="frame" x="0.0" y="0.0" width="383" height="126"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-info-solid" id="3m9-R8-XdV">
+                                <rect key="frame" x="8" y="12" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.44705882352941173" green="0.34901960784313724" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo Do Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmI-Tf-jrg" userLabel="Titulo">
+                                <rect key="frame" x="40" y="10" width="145.5" height="26"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.090196078431372548" green="0.31764705882352939" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-dot-solid" id="exI-OR-MNg">
+                                <rect key="frame" x="8" y="53" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.44705882349999998" green="0.34901960780000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local do Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mG-FQ-8Uq" userLabel="Local">
+                                <rect key="frame" x="40" y="53" width="127.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.31764705879999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-days-solid" id="rxp-fZ-AcU">
+                                <rect key="frame" x="8" y="92" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.44705882349999998" green="0.34901960780000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-gear-solid" id="Qd9-g7-l0m">
+                                <rect key="frame" x="249" y="12" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.97647058823529409" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gerenciar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="adq-Py-yhd">
+                                <rect key="frame" x="281" y="12" width="80.5" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.31764705879999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-check-solid" id="K3t-LW-KIV">
+                                <rect key="frame" x="249" y="53" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.20392156862745098" green="0.6588235294117647" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se Juntou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dl-7j-zFo" userLabel="Se juntou">
+                                <rect key="frame" x="281" y="53" width="80.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.31764705879999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-group-solid" id="I6x-Jd-gSs">
+                                <rect key="frame" x="249" y="92" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.44705882349999998" green="0.34901960780000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccy-K6-CQQ" userLabel="Participantes">
+                                <rect key="frame" x="281" y="92" width="16.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.31764705879999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/05/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSD-8h-Tiu" userLabel="Data">
+                                <rect key="frame" x="40" y="92" width="103" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="mFl-WL-xXm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.31764705879999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77254901960784317" green="0.78823529411764703" blue="0.95294117647058818" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SmI-Tf-jrg" firstAttribute="leading" secondItem="0mG-FQ-8Uq" secondAttribute="leading" id="18W-mO-o9Z"/>
+                            <constraint firstItem="8dl-7j-zFo" firstAttribute="leading" secondItem="adq-Py-yhd" secondAttribute="leading" id="5M0-rU-GiE"/>
+                            <constraint firstItem="8dl-7j-zFo" firstAttribute="top" secondItem="K3t-LW-KIV" secondAttribute="top" id="8ph-EJ-Q9x"/>
+                            <constraint firstItem="8dl-7j-zFo" firstAttribute="leading" secondItem="ccy-K6-CQQ" secondAttribute="leading" id="H6d-zG-v9R"/>
+                            <constraint firstItem="nSD-8h-Tiu" firstAttribute="firstBaseline" secondItem="ccy-K6-CQQ" secondAttribute="firstBaseline" id="Xyz-Fd-m2a"/>
+                            <constraint firstItem="0mG-FQ-8Uq" firstAttribute="leading" secondItem="nSD-8h-Tiu" secondAttribute="leading" id="YYZ-VH-T9O"/>
+                            <constraint firstItem="0mG-FQ-8Uq" firstAttribute="top" secondItem="SmI-Tf-jrg" secondAttribute="bottom" constant="17" id="ZOt-Yz-EtS"/>
+                            <constraint firstItem="SmI-Tf-jrg" firstAttribute="centerY" secondItem="3m9-R8-XdV" secondAttribute="centerY" id="bLB-hE-lET"/>
+                            <constraint firstItem="nSD-8h-Tiu" firstAttribute="baseline" secondItem="ccy-K6-CQQ" secondAttribute="baseline" id="f6y-yf-X4f"/>
+                            <constraint firstItem="SmI-Tf-jrg" firstAttribute="leading" secondItem="3m9-R8-XdV" secondAttribute="trailing" constant="10" id="fIt-y9-kJ2"/>
+                            <constraint firstItem="ccy-K6-CQQ" firstAttribute="top" secondItem="I6x-Jd-gSs" secondAttribute="top" id="g15-tO-6h0"/>
+                            <constraint firstItem="0mG-FQ-8Uq" firstAttribute="firstBaseline" secondItem="8dl-7j-zFo" secondAttribute="firstBaseline" id="mas-gg-mpH"/>
+                            <constraint firstItem="8dl-7j-zFo" firstAttribute="bottom" secondItem="K3t-LW-KIV" secondAttribute="bottom" id="rcD-o5-C4Y"/>
+                            <constraint firstItem="ccy-K6-CQQ" firstAttribute="bottom" secondItem="I6x-Jd-gSs" secondAttribute="bottom" id="wXf-4z-S7F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HkJ-VB-h58" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4P2-25-kZY"/>
+                    <constraint firstAttribute="trailing" secondItem="HkJ-VB-h58" secondAttribute="trailing" id="Gd4-A7-3OD"/>
+                    <constraint firstAttribute="bottom" secondItem="HkJ-VB-h58" secondAttribute="bottom" id="hOV-yp-NLV"/>
+                    <constraint firstItem="HkJ-VB-h58" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="r7i-7r-QWa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="view" destination="HkJ-VB-h58" id="Qnh-11-Mjg"/>
+            </connections>
+            <point key="canvasLocation" x="-177.536231884058" y="74.330357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar-days-solid" width="448" height="512"/>
+        <image name="circle-info-solid" width="512" height="512"/>
+        <image name="location-dot-solid" width="384" height="512"/>
+        <image name="user-check-solid" width="640" height="512"/>
+        <image name="user-gear-solid" width="640" height="512"/>
+        <image name="user-group-solid" width="640" height="512"/>
+    </resources>
+</document>
