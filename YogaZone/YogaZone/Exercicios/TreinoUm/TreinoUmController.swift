@@ -93,8 +93,6 @@ class TreinoUmController: UIViewController {
 
     
     @IBAction func tappedSeeTrainButton(_ sender: UIButton) {
-        let vc = TreinoListagemController()
-        present(vc, animated: true, completion: nil)
     }
 }
 
