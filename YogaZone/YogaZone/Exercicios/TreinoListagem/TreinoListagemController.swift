@@ -30,9 +30,11 @@ class TreinoListagemController: UIViewController {
     //Positions
     @IBOutlet weak var CirclePositionsImage: UIImageView!
     
+    @IBOutlet weak var PositionsTitleLabel: UILabel!
+    
     @IBOutlet weak var NumberOfPositionsLabel: UILabel!
     
-    @IBOutlet weak var PositionsTitleLabel: UILabel!
+ 
     
     //Start Train Button
     @IBOutlet weak var startTrainButton: UIButton!
@@ -40,12 +42,26 @@ class TreinoListagemController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
+        self.configBackButton()
         CircleCaloriesImage.image = UIImage(named: "CircleCaloriesImage")
         CircleMinutesImage.image = UIImage(named: "CircleMinutesImage")
         CirclePositionsImage.image = UIImage(named: "CirclePositionsImage")
+        tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
+        
+        // Hide Back Button from UINavigationItem
+        self.navigationItem.setHidesBackButton(true, animated: true)
 
+    }
+    
+    private func configBackButton(){
+        let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
+        self.tappedArrowVoltar.addGestureRecognizer(tapBackButton)
+        self.tappedArrowVoltar.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func tappedBackButton(){
+        self.navigationController?.popViewController(animated: true)
     }
 
     

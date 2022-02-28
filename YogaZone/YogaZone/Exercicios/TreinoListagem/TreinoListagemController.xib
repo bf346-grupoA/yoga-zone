@@ -18,6 +18,7 @@
                 <outlet property="NumberOfCaloriesLabel" destination="UCA-PN-ne3" id="j8j-Gr-Mrl"/>
                 <outlet property="NumberOfMinutesLabel" destination="8l8-Vc-KEd" id="TQ3-63-2rk"/>
                 <outlet property="NumberOfPositionsLabel" destination="rom-if-2Ar" id="WGA-6T-0aa"/>
+                <outlet property="PositionsTitleLabel" destination="psv-xx-ZJx" id="ndo-sq-Rj2"/>
                 <outlet property="TitleTreino" destination="mEm-Cr-Pvl" id="gSV-N9-a2c"/>
                 <outlet property="startTrainButton" destination="MF1-wB-kIS" id="Oxi-fU-vTl"/>
                 <outlet property="tappedArrowVoltar" destination="zUd-EB-Fao" id="afA-no-Pvc"/>

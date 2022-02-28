@@ -71,12 +71,15 @@ class TreinoUmController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupStoryboardMenu()
-        circleBackground.image = UIImage(named: "circleBackground")
         tappedArrowVoltar.image = UIImage(named: "arrowVoltar")
+        circleBackground.image = UIImage(named: "circleBackground")
         timeDurationImage.image = UIImage(named: "timeDuration")
         levelExerciceImage.image = UIImage(named: "levelExercice")
+        
+      
     }
     
+
     private func setupStoryboardMenu() {
             /// Setup component
         dropDownDuration.delegate = self
@@ -90,10 +93,18 @@ class TreinoUmController: UIViewController {
         dropDownDuration.configure(with: storyboardMenuAttributes)
         dropDownLevel.configure(with: storyboardMenuAttributes)
         }
+    
+
 
     
     @IBAction func tappedSeeTrainButton(_ sender: UIButton) {
+        let vc = TreinoListagemController()
+        navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
+    
+    
 }
 
 extension TreinoUmController: SwiftyMenuDelegate {
