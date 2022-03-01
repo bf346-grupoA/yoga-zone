@@ -18,6 +18,8 @@
 		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
 		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
 		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
+		7933378127CE802F005EE0D4 /* TreinoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933377F27CE802F005EE0D4 /* TreinoCustomCell.swift */; };
+		7933378227CE802F005EE0D4 /* TreinoCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7933378027CE802F005EE0D4 /* TreinoCustomCell.xib */; };
 		793A3CA327C46B7C0045DC5C /* TreinoListagemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A3CA127C46B7C0045DC5C /* TreinoListagemController.swift */; };
 		793A3CA427C46B7C0045DC5C /* TreinoListagemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793A3CA227C46B7C0045DC5C /* TreinoListagemController.xib */; };
 		793A3CA627C47F010045DC5C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A3CA527C47F010045DC5C /* String+Extensions.swift */; };
@@ -45,6 +47,8 @@
 		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
 		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
 		535009962731255A7560D1B2 /* Pods-YogaZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.release.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.release.xcconfig"; sourceTree = "<group>"; };
+		7933377F27CE802F005EE0D4 /* TreinoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCustomCell.swift; sourceTree = "<group>"; };
+		7933378027CE802F005EE0D4 /* TreinoCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoCustomCell.xib; sourceTree = "<group>"; };
 		793A3CA127C46B7C0045DC5C /* TreinoListagemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoListagemController.swift; sourceTree = "<group>"; };
 		793A3CA227C46B7C0045DC5C /* TreinoListagemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoListagemController.xib; sourceTree = "<group>"; };
 		793A3CA527C47F010045DC5C /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -150,9 +154,19 @@
 			path = Historico;
 			sourceTree = "<group>";
 		};
+		7933377E27CE78C3005EE0D4 /* TreinoListagemCell */ = {
+			isa = PBXGroup;
+			children = (
+				7933377F27CE802F005EE0D4 /* TreinoCustomCell.swift */,
+				7933378027CE802F005EE0D4 /* TreinoCustomCell.xib */,
+			);
+			path = TreinoListagemCell;
+			sourceTree = "<group>";
+		};
 		793A3C9C27C46B200045DC5C /* TreinoListagem */ = {
 			isa = PBXGroup;
 			children = (
+				7933377E27CE78C3005EE0D4 /* TreinoListagemCell */,
 				793A3CA127C46B7C0045DC5C /* TreinoListagemController.swift */,
 				793A3CA227C46B7C0045DC5C /* TreinoListagemController.xib */,
 			);
@@ -275,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
+				7933378227CE802F005EE0D4 /* TreinoCustomCell.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				793A3CA427C46B7C0045DC5C /* TreinoListagemController.xib in Resources */,
 				79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */,
@@ -344,6 +359,7 @@
 				7946EC6727CD472F00C3E161 /* TreinoFinalizadoVC.swift in Sources */,
 				793A3CA327C46B7C0045DC5C /* TreinoListagemController.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
+				7933378127CE802F005EE0D4 /* TreinoCustomCell.swift in Sources */,
 				79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);

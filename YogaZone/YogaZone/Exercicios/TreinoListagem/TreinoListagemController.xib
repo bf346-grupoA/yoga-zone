@@ -14,6 +14,7 @@
                 <outlet property="CircleCaloriesImage" destination="9Ka-ce-uTa" id="e8G-G2-T2T"/>
                 <outlet property="CircleMinutesImage" destination="LPw-R3-Lo4" id="Eyk-vO-Gca"/>
                 <outlet property="CirclePositionsImage" destination="pe5-db-e3I" id="4KP-Ki-LjG"/>
+                <outlet property="ListTrainYogaTableView" destination="lM0-Cx-SxB" id="eva-SN-kUb"/>
                 <outlet property="MinutesTitleLabel" destination="Rzv-JN-jMQ" id="4ih-RD-1T0"/>
                 <outlet property="NumberOfCaloriesLabel" destination="UCA-PN-ne3" id="j8j-Gr-Mrl"/>
                 <outlet property="NumberOfMinutesLabel" destination="8l8-Vc-KEd" id="TQ3-63-2rk"/>
@@ -128,6 +129,11 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lM0-Cx-SxB">
+                    <rect key="frame" x="0.0" y="322" width="375" height="343"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

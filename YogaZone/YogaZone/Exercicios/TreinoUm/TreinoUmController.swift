@@ -11,11 +11,10 @@ import SwiftyMenu
 
 class TreinoUmController: UIViewController {
     
- 
-   
-    @IBOutlet weak var dropDownDuration: SwiftyMenu!
+
+    @IBOutlet weak var dropDownDurationMenu: SwiftyMenu!
     
-    @IBOutlet weak var dropDownLevel: SwiftyMenu!
+    @IBOutlet weak var dropDownLevelMenu: SwiftyMenu!
     
     @IBOutlet weak var circleBackground: UIImageView!
     
@@ -28,10 +27,6 @@ class TreinoUmController: UIViewController {
     @IBOutlet weak var timeDurationImage: UIImageView!
     
     @IBOutlet weak var levelExerciceImage: UIImageView!
-    
-    @IBOutlet weak var timeDurationLabel: UILabel!
-    
-    @IBOutlet weak var levelExerciceLabel: UILabel!
     
     @IBOutlet weak var seeTrainButton: UIButton!
     
@@ -82,16 +77,16 @@ class TreinoUmController: UIViewController {
 
     private func setupStoryboardMenu() {
             /// Setup component
-        dropDownDuration.delegate = self
-        dropDownDuration.items = dropDownOptionsDataSourceDuration
+        dropDownDurationMenu.delegate = self
+        dropDownDurationMenu.items = dropDownOptionsDataSourceDuration
 
-        dropDownLevel.delegate = self
-        dropDownLevel.items = dropDownOptionsDataSourceLevel
+        dropDownLevelMenu.delegate = self
+        dropDownLevelMenu.items = dropDownOptionsDataSourceLevel
         
         
             /// Configure SwiftyMenu with the attributes
-        dropDownDuration.configure(with: storyboardMenuAttributes)
-        dropDownLevel.configure(with: storyboardMenuAttributes)
+        dropDownDurationMenu.configure(with: storyboardMenuAttributes)
+        dropDownLevelMenu.configure(with: storyboardMenuAttributes)
         }
     
 

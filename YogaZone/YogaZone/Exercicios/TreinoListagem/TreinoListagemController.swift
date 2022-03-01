@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TreinoListagemController: UIViewController {
+class TreinoListagemController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tappedArrowVoltar: UIImageView!
     
@@ -34,11 +34,16 @@ class TreinoListagemController: UIViewController {
     
     @IBOutlet weak var NumberOfPositionsLabel: UILabel!
     
- 
+    //Table View
+    
+    @IBOutlet weak var ListTrainYogaTableView: UITableView!
     
     //Start Train Button
     @IBOutlet weak var startTrainButton: UIButton!
     
+    
+    private var arrayExercices:[String] = ["Natarajasana", "Sarvagansana", "Prancha Lateral", "Curvatura Frente"]
+    private var arrayExercicesDuration:[String] = ["60s", "55s", "60s", "40s"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +52,11 @@ class TreinoListagemController: UIViewController {
         CircleMinutesImage.image = UIImage(named: "CircleMinutesImage")
         CirclePositionsImage.image = UIImage(named: "CirclePositionsImage")
         tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
+        
+        //Table View
+        self.ListTrainYogaTableView.register(UINib(nibName: "TreinoCustomCell", bundle: nil), forCellReuseIdentifier: "TreinoCustomCell")
+        self.ListTrainYogaTableView.delegate = self
+        self.ListTrainYogaTableView.dataSource = self
         
         // Hide Back Button from UINavigationItem
         self.navigationItem.setHidesBackButton(true, animated: true)
@@ -67,5 +77,23 @@ class TreinoListagemController: UIViewController {
     
     @IBAction func tappedStartTrainButton(_ sender: UIButton) {
     }
+}
+
+extension TreinoListagemController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.arrayExercices.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell: TreinoCustomCell? = tableView.dequeueReusableCell(withIdentifier: "TreinoCustomCell", for: indexPath) as? TreinoCustomCell
+        
+        cell?.treinoImageView.image = UIImage(named: self.arrayExercices[indexPath.row])
+        cell?.treinoDescriptionLabel.text = self.arrayExercices[indexPath.row]
+        cell?.treinoDurationLabel.text = self.arrayExercicesDuration[indexPath.row]
+        
+        return cell ?? UITableViewCell()
+    }
 }
