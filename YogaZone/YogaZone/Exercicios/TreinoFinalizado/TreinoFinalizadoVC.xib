@@ -10,6 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreinoFinalizadoVC" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="CongratulationsCaloriesLabel" destination="sUZ-SO-sYg" id="55c-2K-gCt"/>
+                <outlet property="CongratulationsDescriptionLabel" destination="mlf-6B-UEk" id="5hN-2u-9Jx"/>
+                <outlet property="CongratulationsLabel" destination="PH4-4q-jkA" id="l4y-En-cna"/>
+                <outlet property="GoToHomeButton" destination="bOD-V6-fjp" id="meX-lQ-Y3c"/>
+                <outlet property="SocialMediaShareButton" destination="XVl-gQ-Ztv" id="Brb-Td-W5r"/>
+                <outlet property="parabensTrofeuImage" destination="yZ0-il-nnx" id="nDt-hc-eoA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,27 +35,81 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="gkR-7Q-uHI"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlf-6B-UEk">
-                    <rect key="frame" x="60" y="438" width="294" height="118"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você concluiu o treino de Yoga e perdeu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlf-6B-UEk">
+                    <rect key="frame" x="60" y="424" width="294" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="THW-Tp-ar8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80 Calorias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUZ-SO-sYg">
+                    <rect key="frame" x="60" y="519" width="294" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="ml1-aV-wuR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVl-gQ-Ztv">
+                    <rect key="frame" x="60" y="579" width="294" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="T9V-cg-zsR"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Compartilhar" cornerStyle="dynamic">
+                        <backgroundConfiguration key="background" cornerRadius="22">
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedSocialMediaButton:" destination="-1" eventType="touchUpInside" id="qOD-UA-Fms"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOD-V6-fjp">
+                    <rect key="frame" x="35" y="644" width="344" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="RPT-sK-qW7"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Ir para a Home">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedGoToHomeButton:" destination="-1" eventType="touchUpInside" id="weH-TZ-kBM"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="PH4-4q-jkA" firstAttribute="top" secondItem="yZ0-il-nnx" secondAttribute="bottom" constant="40" id="2Y5-Ox-9nF"/>
+                <constraint firstItem="mlf-6B-UEk" firstAttribute="top" secondItem="PH4-4q-jkA" secondAttribute="bottom" constant="15" id="8G2-Hy-RJB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sUZ-SO-sYg" secondAttribute="trailing" constant="60" id="D95-FG-ihP"/>
                 <constraint firstItem="yZ0-il-nnx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Il8-4S-Src"/>
+                <constraint firstItem="XVl-gQ-Ztv" firstAttribute="trailing" secondItem="sUZ-SO-sYg" secondAttribute="trailing" id="NGF-BE-bd9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bOD-V6-fjp" secondAttribute="trailing" constant="35" id="Q7v-Kh-qNA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PH4-4q-jkA" secondAttribute="trailing" constant="60" id="TZW-jn-0Xw"/>
+                <constraint firstItem="XVl-gQ-Ztv" firstAttribute="leading" secondItem="sUZ-SO-sYg" secondAttribute="leading" id="aNy-xi-9fK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yZ0-il-nnx" secondAttribute="trailing" constant="35" id="b1W-gt-OpU"/>
+                <constraint firstItem="XVl-gQ-Ztv" firstAttribute="top" secondItem="sUZ-SO-sYg" secondAttribute="bottom" constant="25" id="fdF-Tb-Sxb"/>
+                <constraint firstItem="bOD-V6-fjp" firstAttribute="top" secondItem="XVl-gQ-Ztv" secondAttribute="bottom" constant="15" id="iLX-DN-K4z"/>
+                <constraint firstItem="sUZ-SO-sYg" firstAttribute="top" secondItem="mlf-6B-UEk" secondAttribute="bottom" constant="20" id="jK5-N6-YGB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mlf-6B-UEk" secondAttribute="trailing" constant="60" id="jdw-q5-YIA"/>
                 <constraint firstItem="yZ0-il-nnx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="lNH-Qb-V7Q"/>
                 <constraint firstItem="PH4-4q-jkA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="luf-vg-8pE"/>
+                <constraint firstItem="mlf-6B-UEk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="o2m-GN-EBR"/>
+                <constraint firstItem="bOD-V6-fjp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="r2c-3t-NQx"/>
+                <constraint firstItem="sUZ-SO-sYg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="sZG-La-mea"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
         </view>
@@ -57,6 +117,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
