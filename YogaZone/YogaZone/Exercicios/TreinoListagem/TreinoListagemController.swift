@@ -76,6 +76,8 @@ class TreinoListagemController: UIViewController, UITableViewDataSource {
 
     
     @IBAction func tappedStartTrainButton(_ sender: UIButton) {
+        let vc = TreinoIniciadoVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

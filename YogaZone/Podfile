@@ -7,4 +7,5 @@ target 'YogaZone' do
 
   # Pods for YogaZone
   pod 'SwiftyMenu', '~> 1.0.1'
+
 end
