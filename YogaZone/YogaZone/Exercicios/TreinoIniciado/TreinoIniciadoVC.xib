@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreinoIniciadoVC" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="gifExercice" destination="Eit-xq-gMh" id="seG-sm-9cn"/>
                 <outlet property="subtitleExerciceLabel" destination="Moe-9Q-KM4" id="hGR-5J-IJ0"/>
                 <outlet property="tappedArrowVoltar" destination="WTz-BQ-MDF" id="duu-hB-I7x"/>
                 <outlet property="titleExerciceNameLabel" destination="hd8-IK-THY" id="0zr-um-yFQ"/>
@@ -43,20 +44,29 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eit-xq-gMh" customClass="GIFImageView" customModule="Gifu">
+                    <rect key="frame" x="0.0" y="210" width="414" height="341"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="341" id="soy-Ui-NbJ"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hd8-IK-THY" secondAttribute="trailing" constant="40" id="5ZH-ON-5h5"/>
+                <constraint firstItem="Eit-xq-gMh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6ah-5y-OWv"/>
                 <constraint firstItem="Moe-9Q-KM4" firstAttribute="top" secondItem="hd8-IK-THY" secondAttribute="bottom" constant="20" id="CsF-HX-p6d"/>
+                <constraint firstAttribute="trailing" secondItem="Eit-xq-gMh" secondAttribute="trailing" id="H5M-TB-Vs5"/>
                 <constraint firstItem="Moe-9Q-KM4" firstAttribute="trailing" secondItem="hd8-IK-THY" secondAttribute="trailing" id="HfT-5g-2nH"/>
                 <constraint firstItem="hd8-IK-THY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="MhE-i6-Eav"/>
                 <constraint firstItem="WTz-BQ-MDF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="TIf-2m-OGk"/>
                 <constraint firstItem="hd8-IK-THY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="U7b-dd-t0G"/>
                 <constraint firstItem="WTz-BQ-MDF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="ggI-wM-r5V"/>
                 <constraint firstItem="Moe-9Q-KM4" firstAttribute="leading" secondItem="hd8-IK-THY" secondAttribute="leading" id="ug2-3o-YLq"/>
+                <constraint firstItem="Eit-xq-gMh" firstAttribute="top" secondItem="Moe-9Q-KM4" secondAttribute="bottom" constant="50" id="z4O-A1-AaK"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="80"/>
+            <point key="canvasLocation" x="131.8840579710145" y="79.6875"/>
         </view>
     </objects>
     <resources>
