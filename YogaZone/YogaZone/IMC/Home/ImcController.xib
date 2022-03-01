@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImcController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="SwitchSalvarOb" destination="6nx-ak-ho0" id="vrM-aN-1FL"/>
                 <outlet property="btnCalcular" destination="aS6-k2-9d4" id="Q7M-4c-QWb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -64,6 +65,10 @@
                 </button>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nx-ak-ho0">
                     <rect key="frame" x="311" y="257" width="51" height="31"/>
+                    <connections>
+                        <action selector="tappedSalvarObjetivos:" destination="-1" eventType="valueChanged" id="1ax-22-ghE"/>
+                        <action selector="tappedSwitchOb:" destination="-1" eventType="valueChanged" id="Ksf-Ia-oTP"/>
+                    </connections>
                 </switch>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoN-Ob-hTH">
                     <rect key="frame" x="146.66666666666663" y="154" width="213.33333333333337" height="34"/>
@@ -90,6 +95,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Ver meu Progresso">
                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="tapeedVermeuHistorico:" destination="-1" eventType="touchUpInside" id="1NC-s1-3T1"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

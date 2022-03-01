@@ -10,6 +10,7 @@ import UIKit
 class ImcController: UIViewController {
 
     @IBOutlet weak var btnCalcular: UIButton!
+    @IBOutlet weak var SwitchSalvarOb: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,14 @@ class ImcController: UIViewController {
         present(vc, animated: true, completion: nil)
         
         
+
+    }
+    @IBAction func tapeedVermeuHistorico(_ sender: Any) {
+        let vc2 = HistoricoController();present(vc2, animated: true, completion: nil)
+        
+    }
+    @IBAction func tappedSwitchOb(_ sender: Any) {
+     
     }
     
 }

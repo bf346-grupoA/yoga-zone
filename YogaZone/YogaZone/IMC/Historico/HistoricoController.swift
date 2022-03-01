@@ -15,6 +15,14 @@ class HistoricoController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func tappedShare(_ sender: Any) {
+    let VcShare = UIActivityViewController(activityItems: ["ŸogaZone.com"], applicationActivities: nil)
+        VcShare.popoverPresentationController?.sourceView = self.view
+        self.present(VcShare, animated: true, completion: nil)
+        
+    }
+    
+    
 
     /*
     // MARK: - Navigation
