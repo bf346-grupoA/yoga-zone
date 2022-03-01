@@ -1,19 +1,17 @@
 //
-//  EventoTableViewCell.swift
+//  EventCellTableViewCell.swift
 //  YogaZone
 //
-//  Created by Rafael Benjamin on 26/02/22.
+//  Created by Rafael Benjamin on 01/03/22.
 //
 
 import UIKit
 
-class EventoTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var view: UIView!
+class EventCellTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        view.layer.cornerRadius = 10
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

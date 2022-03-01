@@ -21,6 +21,7 @@
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
+                                    <segment title="Third"/>
                                 </segments>
                                 <connections>
                                     <action selector="didTapSegmentWithSegment:" destination="Y6W-OH-hqX" eventType="valueChanged" id="TWh-Da-8k4"/>
@@ -40,6 +41,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseBackgroundColor" red="1" green="0.53725490200000003" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="filterButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jxo-In-d0d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSL-Rr-DQw" userLabel="Create New Event">
                                 <rect key="frame" x="283" y="100" width="67" height="27"/>
@@ -54,6 +58,9 @@
                                         <color key="strokeColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="createEventButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1iQ-Kx-dIp"/>
+                                </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX2-dM-TIK" userLabel="ListView">
                                 <rect key="frame" x="0.0" y="142" width="375" height="525"/>
@@ -129,12 +136,28 @@
                     <view key="view" contentMode="scaleToFill" id="APQ-74-Rxk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="525"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A6J-vY-6KV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="525"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kzh-JB-gxw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A6J-vY-6KV" firstAttribute="top" secondItem="APQ-74-Rxk" secondAttribute="top" id="2xX-Ib-yIe"/>
+                            <constraint firstAttribute="bottom" secondItem="A6J-vY-6KV" secondAttribute="bottom" id="6ih-x7-l3Z"/>
+                            <constraint firstAttribute="trailing" secondItem="A6J-vY-6KV" secondAttribute="trailing" id="Ixj-aB-5Bh"/>
+                            <constraint firstItem="A6J-vY-6KV" firstAttribute="leading" secondItem="APQ-74-Rxk" secondAttribute="leading" id="aum-Yt-Ujm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="A6J-vY-6KV" id="ebM-fl-fU3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGp-nl-2ri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1742" y="30"/>
+            <point key="canvasLocation" x="1735" y="164"/>
         </scene>
         <!--Event Map View Controller-->
         <scene sceneID="WM2-CZ-m7R">
@@ -143,8 +166,38 @@
                     <view key="view" contentMode="scaleToFill" id="hjM-da-Yak">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="525"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="p4x-9f-cps">
+                                <rect key="frame" x="15" y="15" width="345" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="Spy-sG-7dh"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyg-tr-URy">
+                                <rect key="frame" x="25" y="325" width="325" height="35"/>
+                                <color key="backgroundColor" red="0.78431372549019607" green="0.76078431372549016" blue="0.76078431372549016" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="xXa-GC-T8S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.34901960784313724" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZJN-pI-4d7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p4x-9f-cps" firstAttribute="leading" secondItem="ZJN-pI-4d7" secondAttribute="leading" constant="15" id="7B2-Wm-xGo"/>
+                            <constraint firstItem="p4x-9f-cps" firstAttribute="top" secondItem="ZJN-pI-4d7" secondAttribute="top" constant="15" id="9F0-3P-d3z"/>
+                            <constraint firstItem="fyg-tr-URy" firstAttribute="leading" secondItem="ZJN-pI-4d7" secondAttribute="leading" constant="25" id="Tz5-QP-mPD"/>
+                            <constraint firstItem="ZJN-pI-4d7" firstAttribute="trailing" secondItem="p4x-9f-cps" secondAttribute="trailing" constant="15" id="jso-Pn-Dq0"/>
+                            <constraint firstItem="ZJN-pI-4d7" firstAttribute="trailing" secondItem="fyg-tr-URy" secondAttribute="trailing" constant="25" id="qLj-y4-cLc"/>
+                            <constraint firstItem="fyg-tr-URy" firstAttribute="top" secondItem="p4x-9f-cps" secondAttribute="bottom" constant="25" id="uhg-OW-lQa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noEventLabel" destination="fyg-tr-URy" id="vr6-JZ-531"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jos-nN-gEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

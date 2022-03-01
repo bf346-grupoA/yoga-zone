@@ -8,22 +8,40 @@
 import UIKit
 
 class EventListViewController: UIViewController {
-
+    
+    @IBOutlet var tableView: UITableView!
+    
+    let myData = ["first", "second", "third", "four","five"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
-        // Do any additional setup after loading the view.
+        let nib = UINib(nibName: "EventCellTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "EventCellTableViewCell")
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
+    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension EventListViewController:UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.myData.count
     }
-    */
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCellTableViewCell", for: indexPath) as? EventCellTableViewCell 
+        //pcell?.label?.text = myData[indexPath.row]
+        //cell.myImageView.backgroundColor = .red
+        self.tableView.sizeToFit()
+        return cell ?? UITableViewCell()
+    }
+   
+    
+}
 
+extension EventListViewController:UITableViewDelegate{
+    
 }

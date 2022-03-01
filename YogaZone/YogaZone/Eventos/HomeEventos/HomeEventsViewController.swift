@@ -21,18 +21,17 @@ class HomeEventsViewController: UIViewController{
         containerMapView.isHidden = true
     }
     
+    @IBAction func filterButtonTapped(_ sender: UIButton) {
+        //let vc = FilterController()
+        //present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func createEventButtonTapped(_ sender: UIButton) {
+        let vc = CriarNovoEventoController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBAction func didTapSegment(segment: UISegmentedControl){
-       /* listVC.view.isHidden = true
-        mapVC.view.isHidden = true
-        
-        if  segment.selectedSegmentIndex == 0 {
-            listVC.view.isHidden = false
-            
-        } else {
-            mapVC.view.isHidden = false
-          
-        }*/
-        
        switch segment.selectedSegmentIndex {
         case 0:
            containerListView.isHidden = false
@@ -57,7 +56,7 @@ extension HomeEventsViewController {
         buttonCreateNewEvent.setTitle("Criar Novo Evento", for: .normal)
         optionsControl.setTitle("Lista", forSegmentAt: 0)
         optionsControl.setTitle("Mapa", forSegmentAt: 1)
-        //optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
+        optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
     }
    
 }
