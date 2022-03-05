@@ -9,15 +9,34 @@ import UIKit
 
 class ResultadoController: UIViewController {
 
+    @IBOutlet weak var labelResultado: UILabel!
+    
+    @IBOutlet weak var labelPesoIdeal: UILabel!
+    
+    @IBOutlet weak var labelResultado2: UILabel!
+   
+  
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        labelResultado2.text = String(format: "")
+
+      
         view.backgroundColor = .white
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func closeButton(_ sender: Any){
 
+        dismiss(animated: true)
+     
+    }
+    
+    
+  
+    
     /*
     // MARK: - Navigation
 
@@ -27,5 +46,6 @@ class ResultadoController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

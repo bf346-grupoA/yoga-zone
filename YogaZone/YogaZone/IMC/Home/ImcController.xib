@@ -10,7 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImcController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="alturaLabel" destination="Oyj-e2-nl5" id="F2W-Fe-Ae5"/>
                 <outlet property="btnCalcular" destination="aS6-k2-9d4" id="Q7M-4c-QWb"/>
+                <outlet property="pesoLabel" destination="aoN-Ob-hTH" id="lFj-7J-Y37"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

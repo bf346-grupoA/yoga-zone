@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultadoController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="labelPesoIdeal" destination="mWh-LN-qkv" id="dby-9D-N8y"/>
+                <outlet property="labelResultado" destination="P5x-YK-slj" id="bON-P6-va0"/>
+                <outlet property="labelResultado2" destination="M2c-Zc-eLt" id="NBS-RM-cpl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -62,6 +65,24 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imc index" translatesAutoresizingMaskIntoConstraints="NO" id="Ajr-q0-AUV">
                     <rect key="frame" x="60" y="479" width="294" height="205"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXm-78-S2L">
+                    <rect key="frame" x="320" y="74" width="64" height="38"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="X">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                        <color key="baseForegroundColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="Kbm-Qo-opD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2c-Zc-eLt">
+                    <rect key="frame" x="181" y="618" width="52" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" systemColor="systemGreenColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,6 +91,8 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ajr-q0-AUV" secondAttribute="trailing" constant="60" id="4c5-DC-glO"/>
                 <constraint firstItem="Ajr-q0-AUV" firstAttribute="top" secondItem="Lj9-k5-1kR" secondAttribute="bottom" constant="299" id="9cU-5r-9tw"/>
                 <constraint firstItem="Lj9-k5-1kR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BkD-wE-omc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zXm-78-S2L" secondAttribute="trailing" constant="30" id="I9e-4D-nrj"/>
+                <constraint firstItem="zXm-78-S2L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="320" id="J9D-Ah-b1T"/>
                 <constraint firstItem="uIf-vO-53c" firstAttribute="top" secondItem="P5x-YK-slj" secondAttribute="bottom" constant="60" id="M7Z-uD-8gZ"/>
                 <constraint firstItem="Lj9-k5-1kR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="MYK-PM-14g"/>
                 <constraint firstItem="mWh-LN-qkv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Oh4-zh-kif"/>
@@ -82,6 +105,7 @@
                 <constraint firstItem="tid-ss-y35" firstAttribute="top" secondItem="Ajr-q0-AUV" secondAttribute="bottom" constant="40" id="kdP-nP-FRx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lj9-k5-1kR" secondAttribute="trailing" constant="20" id="keI-T3-9kR"/>
                 <constraint firstItem="P5x-YK-slj" firstAttribute="top" secondItem="Lj9-k5-1kR" secondAttribute="bottom" constant="60" id="pTw-4Q-xPc"/>
+                <constraint firstItem="zXm-78-S2L" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="sR9-Rn-Upc"/>
                 <constraint firstItem="tid-ss-y35" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="uWe-nA-2hQ"/>
                 <constraint firstItem="mWh-LN-qkv" firstAttribute="top" secondItem="uIf-vO-53c" secondAttribute="bottom" constant="20" id="xfd-Th-QkK"/>
             </constraints>

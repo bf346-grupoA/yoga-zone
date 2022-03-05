@@ -16,7 +16,7 @@ class TapeedSwitchObViewController: UIViewController {
     }
 
     @IBAction func tappedOk(_ sender: Any) {
-        let vc4 = ImcController();present(vc4, animated: false, completion: nil)
+        dismiss(animated: true)
     }
      
 
