@@ -25,6 +25,9 @@ class TreinoFinalizadoVC: UIViewController {
         super.viewDidLoad()
         parabensTrofeuImage.image = UIImage(named: "parabensTrofeuImage")
         
+        // Hide Back Button from UINavigationItem
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
     }
 
     @IBAction func tappedSocialMediaButton(_ sender: UIButton) {
