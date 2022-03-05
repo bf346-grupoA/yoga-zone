@@ -29,11 +29,7 @@ class ImcController: UIViewController{
     @IBAction func tappedCalcular(_ sender: UIButton) {
         let vc = ResultadoController()
         present(vc, animated: true, completion: nil)
-        let peso = (pesoLabel.text! as NSString).doubleValue
-        let altura = (alturaLabel.text! as NSString).doubleValue
-        let imc = altura / pow(peso, 2)
-        
-        
+      
 
     }
     @IBAction func tapeedVermeuHistorico(_ sender: Any) {
@@ -48,6 +44,3 @@ class ImcController: UIViewController{
     
 }
 
-extension ResultadoController{
-    
-}
