@@ -1,5 +1,5 @@
 //
-//  DetalheEventoTesteViewController.swift
+//  EventDetailViewController.swift
 //  YogaZone
 //
 //  Created by Rafael Benjamin on 25/02/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetalheEventoViewController: UIViewController {
+class EventDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

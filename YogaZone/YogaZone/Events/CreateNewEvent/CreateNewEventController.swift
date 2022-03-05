@@ -1,17 +1,17 @@
 //
-//  CriarEventoSucessoController.swift
+//  CreateNewEventController.swift
 //  YogaZone
 //
-//  Created by Rafael Benjamin on 22/02/22.
+//  Created by Rafael Benjamin on 19/02/22.
 //
 
 import UIKit
 
-class CriarEventoSucessoController: UIViewController {
+class CreateNewEventController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 

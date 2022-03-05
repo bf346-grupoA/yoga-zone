@@ -27,7 +27,7 @@ class HomeEventsViewController: UIViewController{
     }
     
     @IBAction func createEventButtonTapped(_ sender: UIButton) {
-        let vc = CriarNovoEventoController()
+        let vc = CreateNewEventController()
         navigationController?.pushViewController(vc, animated: true)
     }
     
