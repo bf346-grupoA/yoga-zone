@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImcController" customModule="YogaZone" customModuleProvider="target">
             <connections>
-                <outlet property="SwitchSalvarOb" destination="6nx-ak-ho0" id="vrM-aN-1FL"/>
                 <outlet property="btnCalcular" destination="aS6-k2-9d4" id="Q7M-4c-QWb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -63,11 +62,10 @@
                         <action selector="tappedCalcular:" destination="-1" eventType="touchUpInside" id="bv8-w0-miN"/>
                     </connections>
                 </button>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nx-ak-ho0">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6nx-ak-ho0">
                     <rect key="frame" x="311" y="257" width="51" height="31"/>
                     <connections>
-                        <action selector="tappedSalvarObjetivos:" destination="-1" eventType="valueChanged" id="1ax-22-ghE"/>
-                        <action selector="tappedSwitchOb:" destination="-1" eventType="valueChanged" id="Ksf-Ia-oTP"/>
+                        <action selector="tappedSwitchOb:" destination="-1" eventType="valueChanged" id="IiS-ye-5Js"/>
                     </connections>
                 </switch>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoN-Ob-hTH">

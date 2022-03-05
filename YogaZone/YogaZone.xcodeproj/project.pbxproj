@@ -18,6 +18,8 @@
 		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
 		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
 		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
+		31A646EB27D2B469005F5B94 /* TapeedSwitchObViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A646E927D2B469005F5B94 /* TapeedSwitchObViewController.swift */; };
+		31A646EC27D2B469005F5B94 /* TapeedSwitchObViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31A646EA27D2B469005F5B94 /* TapeedSwitchObViewController.xib */; };
 		793A3CA327C46B7C0045DC5C /* TreinoListagemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A3CA127C46B7C0045DC5C /* TreinoListagemController.swift */; };
 		793A3CA427C46B7C0045DC5C /* TreinoListagemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793A3CA227C46B7C0045DC5C /* TreinoListagemController.xib */; };
 		793A3CA627C47F010045DC5C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A3CA527C47F010045DC5C /* String+Extensions.swift */; };
@@ -44,6 +46,8 @@
 		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
 		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
 		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
+		31A646E927D2B469005F5B94 /* TapeedSwitchObViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeedSwitchObViewController.swift; sourceTree = "<group>"; };
+		31A646EA27D2B469005F5B94 /* TapeedSwitchObViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TapeedSwitchObViewController.xib; sourceTree = "<group>"; };
 		535009962731255A7560D1B2 /* Pods-YogaZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.release.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.release.xcconfig"; sourceTree = "<group>"; };
 		793A3CA127C46B7C0045DC5C /* TreinoListagemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoListagemController.swift; sourceTree = "<group>"; };
 		793A3CA227C46B7C0045DC5C /* TreinoListagemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoListagemController.xib; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		3126834D27C15FE7003F017B /* IMC */ = {
 			isa = PBXGroup;
 			children = (
+				31A646E827D2B42B005F5B94 /* TapeedSwitchOb */,
 				3126835427C1675C003F017B /* Historico */,
 				3126835327C16727003F017B /* Resultado */,
 				3126835227C1671B003F017B /* Home */,
@@ -148,6 +153,15 @@
 				3126835A27C16801003F017B /* HistoricoController.xib */,
 			);
 			path = Historico;
+			sourceTree = "<group>";
+		};
+		31A646E827D2B42B005F5B94 /* TapeedSwitchOb */ = {
+			isa = PBXGroup;
+			children = (
+				31A646E927D2B469005F5B94 /* TapeedSwitchObViewController.swift */,
+				31A646EA27D2B469005F5B94 /* TapeedSwitchObViewController.xib */,
+			);
+			path = TapeedSwitchOb;
 			sourceTree = "<group>";
 		};
 		793A3C9C27C46B200045DC5C /* TreinoListagem */ = {
@@ -282,6 +296,7 @@
 				7946EC6827CD472F00C3E161 /* TreinoFinalizadoVC.xib in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
+				31A646EC27D2B469005F5B94 /* TapeedSwitchObViewController.xib in Resources */,
 				7946EC6427CD015700C3E161 /* TreinoIniciadoVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +356,7 @@
 				7946EC6327CD015700C3E161 /* TreinoIniciadoVC.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				793A3CA627C47F010045DC5C /* String+Extensions.swift in Sources */,
+				31A646EB27D2B469005F5B94 /* TapeedSwitchObViewController.swift in Sources */,
 				7946EC6727CD472F00C3E161 /* TreinoFinalizadoVC.swift in Sources */,
 				793A3CA327C46B7C0045DC5C /* TreinoListagemController.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,

@@ -29,7 +29,13 @@ class ImcController: UIViewController {
         
     }
     @IBAction func tappedSwitchOb(_ sender: Any) {
-     
+        let vc3 = TapeedSwitchObViewController();present(vc3, animated: false, completion: nil)
     }
+    
+    
+    
+    
+    
+    
     
 }
