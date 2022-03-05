@@ -10,9 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultadoController" customModule="YogaZone" customModuleProvider="target">
             <connections>
-                <outlet property="labelPesoIdeal" destination="mWh-LN-qkv" id="dby-9D-N8y"/>
-                <outlet property="labelResultado" destination="P5x-YK-slj" id="bON-P6-va0"/>
-                <outlet property="labelResultado2" destination="M2c-Zc-eLt" id="NBS-RM-cpl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,104 +18,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lj9-k5-1kR">
-                    <rect key="frame" x="20" y="144" width="374" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lj9-k5-1kR">
+                    <rect key="frame" x="186" y="206" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saúdavel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5x-YK-slj">
-                    <rect key="frame" x="20" y="240" width="374" height="54"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                    <color key="textColor" systemColor="systemGreenColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O seu peso ideal deve estar entre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIf-vO-53c">
-                    <rect key="frame" x="20" y="354" width="374" height="26.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55 kg -66 kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWh-LN-qkv">
-                    <rect key="frame" x="20" y="400.5" width="374" height="42"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                    <color key="textColor" systemColor="systemGreenColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ej3-qi-nbS">
-                    <rect key="frame" x="20" y="448" width="374" height="0.0"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwB-Tg-5eA">
-                    <rect key="frame" x="50" y="448" width="314" height="0.0"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tid-ss-y35">
-                    <rect key="frame" x="80" y="724" width="254" height="40.5"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Salvar">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
-                    </buttonConfiguration>
-                </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imc index" translatesAutoresizingMaskIntoConstraints="NO" id="Ajr-q0-AUV">
-                    <rect key="frame" x="60" y="479" width="294" height="205"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXm-78-S2L">
-                    <rect key="frame" x="320" y="74" width="64" height="38"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="X">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                        <color key="baseForegroundColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="Kbm-Qo-opD"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2c-Zc-eLt">
-                    <rect key="frame" x="181" y="618" width="52" height="27"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                    <color key="textColor" systemColor="systemGreenColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P5x-YK-slj" secondAttribute="trailing" constant="20" id="0fa-hV-yKz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ajr-q0-AUV" secondAttribute="trailing" constant="60" id="4c5-DC-glO"/>
-                <constraint firstItem="Ajr-q0-AUV" firstAttribute="top" secondItem="Lj9-k5-1kR" secondAttribute="bottom" constant="299" id="9cU-5r-9tw"/>
-                <constraint firstItem="Lj9-k5-1kR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BkD-wE-omc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zXm-78-S2L" secondAttribute="trailing" constant="30" id="I9e-4D-nrj"/>
-                <constraint firstItem="zXm-78-S2L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="320" id="J9D-Ah-b1T"/>
-                <constraint firstItem="uIf-vO-53c" firstAttribute="top" secondItem="P5x-YK-slj" secondAttribute="bottom" constant="60" id="M7Z-uD-8gZ"/>
-                <constraint firstItem="Lj9-k5-1kR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="MYK-PM-14g"/>
-                <constraint firstItem="mWh-LN-qkv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Oh4-zh-kif"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tid-ss-y35" secondAttribute="trailing" constant="80" id="RcL-tg-2Sy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uIf-vO-53c" secondAttribute="trailing" constant="20" id="RgV-2g-YXq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mWh-LN-qkv" secondAttribute="trailing" constant="20" id="SjT-47-GtH"/>
-                <constraint firstItem="uIf-vO-53c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="W07-i0-BN2"/>
-                <constraint firstItem="P5x-YK-slj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XLo-Dd-YXy"/>
-                <constraint firstItem="Ajr-q0-AUV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="cdL-XL-FPZ"/>
-                <constraint firstItem="tid-ss-y35" firstAttribute="top" secondItem="Ajr-q0-AUV" secondAttribute="bottom" constant="40" id="kdP-nP-FRx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lj9-k5-1kR" secondAttribute="trailing" constant="20" id="keI-T3-9kR"/>
-                <constraint firstItem="P5x-YK-slj" firstAttribute="top" secondItem="Lj9-k5-1kR" secondAttribute="bottom" constant="60" id="pTw-4Q-xPc"/>
-                <constraint firstItem="zXm-78-S2L" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="sR9-Rn-Upc"/>
-                <constraint firstItem="tid-ss-y35" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="uWe-nA-2hQ"/>
-                <constraint firstItem="mWh-LN-qkv" firstAttribute="top" secondItem="uIf-vO-53c" secondAttribute="bottom" constant="20" id="xfd-Th-QkK"/>
-            </constraints>
-            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+            <point key="canvasLocation" x="133" y="93"/>
         </view>
     </objects>
     <resources>
-        <image name="imc index" width="408" height="205"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

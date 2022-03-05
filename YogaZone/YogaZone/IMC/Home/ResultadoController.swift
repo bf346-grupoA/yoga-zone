@@ -20,8 +20,7 @@ class ResultadoController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelResultado2.text = String(format: "")
-
+       
       
         view.backgroundColor = .white
 
