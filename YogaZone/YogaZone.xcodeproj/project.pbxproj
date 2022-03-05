@@ -30,6 +30,8 @@
 		79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79777C7827C3040600D9065D /* TreinoUmController.swift */; };
 		79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79777C7927C3040600D9065D /* TreinoUmController.xib */; };
 		79D6DEEC27CED26900C98985 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */; };
+		79FA6EAC27D3000800503A3E /* TreinoPausadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA6EAA27D3000800503A3E /* TreinoPausadoVC.swift */; };
+		79FA6EAD27D3000800503A3E /* TreinoPausadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FA6EAB27D3000800503A3E /* TreinoPausadoVC.xib */; };
 		D14A82412CDB0A055BCCD614 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6524547B5F0CF70DEA3D998 /* Pods_YogaZone.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		79777C7827C3040600D9065D /* TreinoUmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoUmController.swift; sourceTree = "<group>"; };
 		79777C7927C3040600D9065D /* TreinoUmController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoUmController.xib; sourceTree = "<group>"; };
 		79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
+		79FA6EAA27D3000800503A3E /* TreinoPausadoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoPausadoVC.swift; sourceTree = "<group>"; };
+		79FA6EAB27D3000800503A3E /* TreinoPausadoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoPausadoVC.xib; sourceTree = "<group>"; };
 		C3155CF47D6370C5D9E01E85 /* Pods-YogaZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.debug.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.debug.xcconfig"; sourceTree = "<group>"; };
 		E6524547B5F0CF70DEA3D998 /* Pods_YogaZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -188,6 +192,8 @@
 		7946EC5F27CD00DD00C3E161 /* TreinoPausado */ = {
 			isa = PBXGroup;
 			children = (
+				79FA6EAA27D3000800503A3E /* TreinoPausadoVC.swift */,
+				79FA6EAB27D3000800503A3E /* TreinoPausadoVC.xib */,
 			);
 			path = TreinoPausado;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				7946EC6827CD472F00C3E161 /* TreinoFinalizadoVC.xib in Resources */,
+				79FA6EAD27D3000800503A3E /* TreinoPausadoVC.xib in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				79D6DEEC27CED26900C98985 /* 01_Natarajasana.gif in Resources */,
 				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
@@ -371,6 +378,7 @@
 				7946EC6727CD472F00C3E161 /* TreinoFinalizadoVC.swift in Sources */,
 				793A3CA327C46B7C0045DC5C /* TreinoListagemController.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
+				79FA6EAC27D3000800503A3E /* TreinoPausadoVC.swift in Sources */,
 				7933378127CE802F005EE0D4 /* TreinoCustomCell.swift in Sources */,
 				79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,

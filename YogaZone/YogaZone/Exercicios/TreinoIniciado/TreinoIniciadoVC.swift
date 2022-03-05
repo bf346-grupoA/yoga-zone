@@ -67,8 +67,10 @@ class TreinoIniciadoVC: UIViewController {
     }
     
     @objc func tappedPauseButton(){
-        print("pause Button working!!!")
-        // TODO -> Pause exercice and Open Modal with message PAUSED when tapped in any part of screen return to exercice
+        let vc = TreinoPausadoVC()
+        vc.view.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: false, completion: nil)
     }
     
     private func configNextButton(){
