@@ -31,6 +31,10 @@ class TreinoFinalizadoVC: UIViewController {
     }
 
     @IBAction func tappedSocialMediaButton(_ sender: UIButton) {
+        let VcShare = UIActivityViewController(activityItems: ["YogaZone.com"], applicationActivities: nil)
+            VcShare.popoverPresentationController?.sourceView = self.view
+            self.present(VcShare, animated: true, completion: nil)
+
     }
     
     @IBAction func tappedGoToHomeButton(_ sender: UIButton) {
