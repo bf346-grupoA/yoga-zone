@@ -42,8 +42,8 @@ class TreinoListagemController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var startTrainButton: UIButton!
     
     
-    private var arrayExercices:[String] = ["Natarajasana", "Sarvagansana", "Prancha Lateral", "Curvatura Frente"]
-    private var arrayExercicesDuration:[String] = ["60s", "55s", "60s", "40s"]
+    private var arrayExercices:[String] = ["Natarajasana", "Sarvagansana", "Prancha Lateral", "Curvatura Frente", "Bakasana", "Boat", "Dolphin", "Garudasana", "Pigeon"]
+    private var arrayExercicesDuration:[String] = ["60s", "55s", "60s", "40s", "55s", "60s", "40s", "45s", "55s"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
