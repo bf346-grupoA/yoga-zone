@@ -18,6 +18,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventDetailViewController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="availableVacanciesLabel" destination="Hl0-5z-Nbd" id="5Jd-LI-lAX"/>
+                <outlet property="confirmParticipationButton" destination="EsQ-ds-x75" id="H00-m0-J7p"/>
+                <outlet property="dateLabel" destination="skh-aU-psk" id="J1O-WU-LrV"/>
+                <outlet property="descriptionLabel" destination="Rug-dB-wlb" id="fOe-YJ-32j"/>
+                <outlet property="descriptionTextView" destination="neX-fz-7dr" id="HKI-gZ-bnh"/>
+                <outlet property="eventAvailableVacanciesLabel" destination="GpW-pG-uWL" id="3UW-vV-Kav"/>
+                <outlet property="eventDateLabel" destination="ZJ4-Xz-Ken" id="5nk-z0-Ed1"/>
+                <outlet property="eventHoutLabel" destination="TUr-WB-VSy" id="yxa-I2-Zww"/>
+                <outlet property="eventLocalLabel" destination="1bu-fJ-bSZ" id="2Qf-h9-NYZ"/>
+                <outlet property="eventNameLabel" destination="RWR-gs-yai" id="HXL-7I-4Ru"/>
+                <outlet property="eventNumberOfParticipantsLabel" destination="4Yo-Tl-Cde" id="Lt8-0o-Q9J"/>
+                <outlet property="hourLabel" destination="HFd-vK-ZyQ" id="ZuS-ls-NvK"/>
+                <outlet property="localLabel" destination="tgG-ib-nvo" id="1ZM-vz-9eY"/>
+                <outlet property="nameLabel" destination="YcL-YI-BFW" id="a5M-Mc-4Ag"/>
+                <outlet property="numberOfParticipantsLabel" destination="riQ-Ic-CbB" id="JX6-j5-mgo"/>
+                <outlet property="titleLabel" destination="3eT-hr-Uhp" id="hz9-Jd-Sn5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
