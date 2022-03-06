@@ -28,6 +28,8 @@
 		831125A927CE6B4B00EC58D8 /* EventCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831125A727CE6B4B00EC58D8 /* EventCellTableViewCell.xib */; };
 		83130FEE27CD7AE200D62CA5 /* MockAppHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83130FEC27CD7AE200D62CA5 /* MockAppHomeViewController.swift */; };
 		83130FEF27CD7AE200D62CA5 /* MockAppHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83130FED27CD7AE200D62CA5 /* MockAppHomeViewController.xib */; };
+		834E5E2027D41D8C00A0466C /* EventFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E5E1E27D41D8C00A0466C /* EventFilterViewController.swift */; };
+		834E5E2127D41D8C00A0466C /* EventFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834E5E1F27D41D8C00A0466C /* EventFilterViewController.xib */; };
 		8361F83127CD8174003629CE /* HomeEvents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8361F83027CD8174003629CE /* HomeEvents.storyboard */; };
 		8361F83327CD83CA003629CE /* HomeEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361F83227CD83CA003629CE /* HomeEventsViewController.swift */; };
 		839CE76B27C4672C007D8330 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839CE75427C4672C007D8330 /* Montserrat-VariableFont_wght.ttf */; };
@@ -85,6 +87,8 @@
 		831125A727CE6B4B00EC58D8 /* EventCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCellTableViewCell.xib; sourceTree = "<group>"; };
 		83130FEC27CD7AE200D62CA5 /* MockAppHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppHomeViewController.swift; sourceTree = "<group>"; };
 		83130FED27CD7AE200D62CA5 /* MockAppHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MockAppHomeViewController.xib; sourceTree = "<group>"; };
+		834E5E1E27D41D8C00A0466C /* EventFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFilterViewController.swift; sourceTree = "<group>"; };
+		834E5E1F27D41D8C00A0466C /* EventFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventFilterViewController.xib; sourceTree = "<group>"; };
 		8361F83027CD8174003629CE /* HomeEvents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeEvents.storyboard; sourceTree = "<group>"; };
 		8361F83227CD83CA003629CE /* HomeEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventsViewController.swift; sourceTree = "<group>"; };
 		839CE75427C4672C007D8330 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				83F53C1427CE699000ABCEE9 /* EventMapViewController.swift */,
 				831125A627CE6B4B00EC58D8 /* EventCellTableViewCell.swift */,
 				831125A727CE6B4B00EC58D8 /* EventCellTableViewCell.xib */,
+				834E5E1E27D41D8C00A0466C /* EventFilterViewController.swift */,
+				834E5E1F27D41D8C00A0466C /* EventFilterViewController.xib */,
 			);
 			path = EventsHome;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				839CE78827C46A1E007D8330 /* Comfortaa-Light.ttf in Resources */,
 				839CE76B27C4672C007D8330 /* Montserrat-VariableFont_wght.ttf in Resources */,
 				8302F14F27C46BE3003CE838 /* CreateNewEventController.xib in Resources */,
+				834E5E2127D41D8C00A0466C /* EventFilterViewController.xib in Resources */,
 				839CE77D27C4672C007D8330 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				839CE76F27C4672C007D8330 /* Montserrat-BoldItalic.ttf in Resources */,
 				839CE78B27C46A1E007D8330 /* Comfortaa-Regular.ttf in Resources */,
@@ -416,6 +423,7 @@
 				8361F83327CD83CA003629CE /* HomeEventsViewController.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
 				83F53C1527CE699000ABCEE9 /* EventMapViewController.swift in Sources */,
+				834E5E2027D41D8C00A0466C /* EventFilterViewController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				83130FEE27CD7AE200D62CA5 /* MockAppHomeViewController.swift in Sources */,
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,

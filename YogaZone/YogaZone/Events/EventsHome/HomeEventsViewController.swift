@@ -22,8 +22,8 @@ class HomeEventsViewController: UIViewController{
     }
     
     @IBAction func filterButtonTapped(_ sender: UIButton) {
-        //let vc = FilterController()
-        //present(vc, animated: true, completion: nil)
+        let vc = EventFilterViewController()
+        present(vc, animated: true, completion: nil)
     }
     
     @IBAction func createEventButtonTapped(_ sender: UIButton) {
