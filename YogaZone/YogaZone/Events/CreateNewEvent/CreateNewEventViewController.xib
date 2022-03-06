@@ -16,8 +16,16 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateNewEventController" customModule="YogaZone" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateNewEventViewController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="createEventButton" destination="BRu-xR-sEj" id="Hla-w5-OYx"/>
+                <outlet property="eventDateTextField" destination="IHK-Ou-gpM" id="MFE-bx-46B"/>
+                <outlet property="eventDescriptionTextField" destination="gIB-eE-3Rf" id="NGT-Wb-qI6"/>
+                <outlet property="eventLocalTextField" destination="Sxg-0E-4lc" id="qx4-Oy-AZR"/>
+                <outlet property="eventNameTextField" destination="wDN-cZ-d3t" id="92q-Dq-oXe"/>
+                <outlet property="eventNumberOfParticipantsTextField" destination="pyu-qz-3nD" id="nh5-bl-R1B"/>
+                <outlet property="eventStartTimeTextField" destination="v4n-pL-KdG" id="aav-Ey-wR5"/>
+                <outlet property="titleLabel" destination="0hw-Kn-6OD" id="nh4-my-3v2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -102,6 +110,9 @@
                         <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                         <color key="baseBackgroundColor" red="0.36377078289999998" green="0.3279882073" blue="0.65669530629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="createEventButtonTapped:" destination="-1" eventType="touchUpInside" id="elM-uf-4fI"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

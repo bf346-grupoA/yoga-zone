@@ -19,6 +19,7 @@ class HomeEventsViewController: UIViewController{
         super.viewDidLoad()
         setupUI()
         containerMapView.isHidden = true
+  
     }
     
     @IBAction func filterButtonTapped(_ sender: UIButton) {
@@ -27,7 +28,7 @@ class HomeEventsViewController: UIViewController{
     }
     
     @IBAction func createEventButtonTapped(_ sender: UIButton) {
-        let vc = CreateNewEventController()
+        let vc = CreateNewEventViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
     

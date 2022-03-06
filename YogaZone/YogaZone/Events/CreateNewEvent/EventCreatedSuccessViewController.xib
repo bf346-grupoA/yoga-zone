@@ -13,8 +13,11 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventCreatedSucessViewController" customModule="YogaZone" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventCreatedSuccessViewController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="confirmButton" destination="hzR-h2-Ru4" id="yov-3B-kNT"/>
+                <outlet property="sucessMessageLabel" destination="ehN-GI-KDL" id="5X0-jY-tdr"/>
+                <outlet property="titleLabel" destination="c0m-MX-b0N" id="aMT-1L-T5b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -47,6 +50,9 @@
                         <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                         <color key="baseBackgroundColor" red="0.36377078289999998" green="0.3279882073" blue="0.65669530629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="confirmButtonTapped:" destination="-1" eventType="touchUpInside" id="dZb-2H-bRs"/>
+                    </connections>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-GI-KDL">
                     <rect key="frame" x="30" y="234.5" width="315" height="140"/>
