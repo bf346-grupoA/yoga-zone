@@ -31,7 +31,7 @@ class TreinoIniciadoVC: UIViewController {
         super.viewDidLoad()
         self.displayGif()
         
-        
+    
         self.configBackButton()
         self.configPauseButton()
         self.configNextButton()
@@ -51,19 +51,17 @@ class TreinoIniciadoVC: UIViewController {
         let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
         self.tappedArrowVoltar.addGestureRecognizer(tapBackButton)
         self.tappedArrowVoltar.isUserInteractionEnabled = true
-        
     }
     
     @objc func tappedBackButton(){
-        print("back button working!!!")
-        // TODO -> Pause exercice and Open Modal asking if you want to leave givin 2 options - cotinue or leave
+        let vcSairDoTreino = SairDoTreinoVC()
+        self.present(vcSairDoTreino, animated: false, completion: nil)
     }
     
     private func configPauseButton(){
         let tapPauseButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedPauseButton))
         self.pauseImage.addGestureRecognizer(tapPauseButton)
         self.pauseImage.isUserInteractionEnabled = true
-        
     }
     
     @objc func tappedPauseButton(){
