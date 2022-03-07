@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311CF88327D443F1009DBE5E /* tappedSwitchObController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311CF88127D443F1009DBE5E /* tappedSwitchObController.swift */; };
+		311CF88427D443F1009DBE5E /* tappedSwitchObController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311CF88227D443F1009DBE5E /* tappedSwitchObController.xib */; };
+		311CF88727D584BF009DBE5E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311CF88627D584BF009DBE5E /* Result.swift */; };
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
@@ -18,11 +21,12 @@
 		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
 		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
 		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
-		31A646EB27D2B469005F5B94 /* TapeedSwitchObViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A646E927D2B469005F5B94 /* TapeedSwitchObViewController.swift */; };
-		31A646EC27D2B469005F5B94 /* TapeedSwitchObViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31A646EA27D2B469005F5B94 /* TapeedSwitchObViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		311CF88127D443F1009DBE5E /* tappedSwitchObController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tappedSwitchObController.swift; sourceTree = "<group>"; };
+		311CF88227D443F1009DBE5E /* tappedSwitchObController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tappedSwitchObController.xib; sourceTree = "<group>"; };
+		311CF88627D584BF009DBE5E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3126833B27C15ECA003F017B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +40,6 @@
 		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
 		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
 		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
-		31A646E927D2B469005F5B94 /* TapeedSwitchObViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeedSwitchObViewController.swift; sourceTree = "<group>"; };
-		31A646EA27D2B469005F5B94 /* TapeedSwitchObViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TapeedSwitchObViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311CF88027D443B7009DBE5E /* TappedSwitchObController */ = {
+			isa = PBXGroup;
+			children = (
+				311CF88127D443F1009DBE5E /* tappedSwitchObController.swift */,
+				311CF88227D443F1009DBE5E /* tappedSwitchObController.xib */,
+			);
+			path = TappedSwitchObController;
+			sourceTree = "<group>";
+		};
+		311CF88527D58473009DBE5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				311CF88627D584BF009DBE5E /* Result.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3126832D27C15ECA003F017B = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +94,7 @@
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
 				3126833D27C15ECA003F017B /* ViewController.swift */,
 				3126834227C15ECB003F017B /* Assets.xcassets */,
+				316D58CD27C19DD200F25D61 /* Iconimc */,
 				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
 				3126834727C15ECB003F017B /* Info.plist */,
 			);
@@ -84,9 +104,10 @@
 		3126834D27C15FE7003F017B /* IMC */ = {
 			isa = PBXGroup;
 			children = (
-				31A646E827D2B42B005F5B94 /* TapeedSwitchOb */,
-				3126835427C1675C003F017B /* Historico */,
-				3126835327C16727003F017B /* Resultado */,
+				311CF88527D58473009DBE5E /* Models */,
+				311CF88027D443B7009DBE5E /* TappedSwitchObController */,
+				3126835427C1675C003F017B /* HIstorico */,
+				3126835327C16727003F017B /* Result */,
 				3126835227C1671B003F017B /* Home */,
 			);
 			path = IMC;
@@ -95,38 +116,36 @@
 		3126835227C1671B003F017B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3126834F27C16056003F017B /* ImcController.xib */,
 				3126834E27C16056003F017B /* ImcController.swift */,
+				3126834F27C16056003F017B /* ImcController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		3126835327C16727003F017B /* Resultado */ = {
+		3126835327C16727003F017B /* Result */ = {
 			isa = PBXGroup;
 			children = (
 				3126835527C167D7003F017B /* ResultadoController.swift */,
 				3126835627C167D7003F017B /* ResultadoController.xib */,
 			);
-			name = Resultado;
+			name = Result;
 			path = Home;
 			sourceTree = "<group>";
 		};
-		3126835427C1675C003F017B /* Historico */ = {
+		3126835427C1675C003F017B /* HIstorico */ = {
 			isa = PBXGroup;
 			children = (
 				3126835927C16801003F017B /* HistoricoController.swift */,
 				3126835A27C16801003F017B /* HistoricoController.xib */,
 			);
-			path = Historico;
+			path = HIstorico;
 			sourceTree = "<group>";
 		};
-		31A646E827D2B42B005F5B94 /* TapeedSwitchOb */ = {
+		316D58CD27C19DD200F25D61 /* Iconimc */ = {
 			isa = PBXGroup;
 			children = (
-				31A646E927D2B469005F5B94 /* TapeedSwitchObViewController.swift */,
-				31A646EA27D2B469005F5B94 /* TapeedSwitchObViewController.xib */,
 			);
-			path = TapeedSwitchOb;
+			path = Iconimc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,11 +155,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3126834A27C15ECB003F017B /* Build configuration list for PBXNativeTarget "YogaZone" */;
 			buildPhases = (
-				D7854E7AE3E0F9EFC06AD13C /* [CP] Check Pods Manifest.lock */,
 				3126833227C15ECA003F017B /* Sources */,
 				3126833327C15ECA003F017B /* Frameworks */,
 				3126833427C15ECA003F017B /* Resources */,
-				E82E7078626A4F7E9DE4EAFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,56 +208,14 @@
 			files = (
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				311CF88427D443F1009DBE5E /* tappedSwitchObController.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
-				31A646EC27D2B469005F5B94 /* TapeedSwitchObViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D7854E7AE3E0F9EFC06AD13C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YogaZone-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E82E7078626A4F7E9DE4EAFC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3126833227C15ECA003F017B /* Sources */ = {
@@ -248,10 +223,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				311CF88327D443F1009DBE5E /* tappedSwitchObController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
-				31A646EB27D2B469005F5B94 /* TapeedSwitchObViewController.swift in Sources */,
+				311CF88727D584BF009DBE5E /* Result.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);

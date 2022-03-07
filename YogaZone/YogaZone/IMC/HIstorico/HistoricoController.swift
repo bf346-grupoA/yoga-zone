@@ -1,5 +1,5 @@
 //
-//  ResultadoController.swift
+//  HistoricoController.swift
 //  YogaZone
 //
 //  Created by Marcelo Silva on 19/02/22.
@@ -7,33 +7,23 @@
 
 import UIKit
 
-class ResultadoController: UIViewController {
+class HistoricoController: UIViewController {
 
-    @IBOutlet weak var labelResultado: UILabel!
-    
-    @IBOutlet weak var labelPesoIdeal: UILabel!
-    
-    @IBOutlet weak var labelResultado2: UILabel!
-   
-  
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func closeButton(_ sender: Any){
-
-        dismiss(animated: true)
-     
+    @IBAction func tappedShare(_ sender: Any) {
+    let VcShare = UIActivityViewController(activityItems: ["ŸogaZone.com"], applicationActivities: nil)
+        VcShare.popoverPresentationController?.sourceView = self.view
+        self.present(VcShare, animated: true, completion: nil)
+        
     }
     
     
-  
-    
+
     /*
     // MARK: - Navigation
 
@@ -43,6 +33,5 @@ class ResultadoController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 
 }

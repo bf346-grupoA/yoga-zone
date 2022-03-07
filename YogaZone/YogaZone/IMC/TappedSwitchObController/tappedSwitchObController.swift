@@ -1,38 +1,23 @@
 //
-//  ResultadoController.swift
+//  tappedSwitchObController.swift
 //  YogaZone
 //
-//  Created by Marcelo Silva on 19/02/22.
+//  Created by Marcelo Silva on 05/03/22.
 //
 
 import UIKit
 
-class ResultadoController: UIViewController {
+class tappedSwitchObController: UIViewController {
 
-    @IBOutlet weak var labelResultado: UILabel!
-    
-    @IBOutlet weak var labelPesoIdeal: UILabel!
-    
-    @IBOutlet weak var labelResultado2: UILabel!
-   
-  
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func closeButton(_ sender: Any){
-
-        dismiss(animated: true)
-     
+    @IBAction func tappedOK(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    
-    
-  
     
     /*
     // MARK: - Navigation
@@ -43,6 +28,5 @@ class ResultadoController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 
 }
