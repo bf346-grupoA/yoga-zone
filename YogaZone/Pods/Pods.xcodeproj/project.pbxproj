@@ -136,14 +136,14 @@
 		324899D36A579EEBFAE9647B5A06A280 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		330F3050C0908CDAEADFD8E5FB1C1DFA /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		3BC6BB0125287E49F813560FFE55C75F /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		40E5F8D9277E714962AFA02550F15F8A /* Gifu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gifu; path = Gifu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gifu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4238531E1CEC7CDE4712D99CED66099F /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		482BD722508DC3B53C540BC7A38EA16A /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Sources/Gifu/Classes/Animator.swift; sourceTree = "<group>"; };
 		48C7B172B33445AF18414BF269D2D968 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		49B8189EC8AFF9B5E76BE83A6F2BE2A5 /* Gifu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Gifu.h; path = Sources/Gifu.h; sourceTree = "<group>"; };
 		4BD34E2098742E1CB9D2264E97E583F7 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSourceHelpers.swift; path = Sources/Gifu/Helpers/ImageSourceHelpers.swift; sourceTree = "<group>"; };
 		4E49ED03514ADEE173F2A28C6B893422 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		4E66C40B7AD532AA9A4C72916DB38155 /* SwiftyMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyMenu; path = SwiftyMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E66C40B7AD532AA9A4C72916DB38155 /* SwiftyMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5110E9CB89B886944277B192B0FF930A /* Gifu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gifu.release.xcconfig; sourceTree = "<group>"; };
 		559B26D6D575139E253ED5D3C22A7788 /* Gifu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gifu-dummy.m"; sourceTree = "<group>"; };
 		59A22F922C388D3F74E8D84CB3AB6154 /* SwiftyMenuAttributes+RowStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyMenuAttributes+RowStyle.swift"; path = "SwiftyMenu/Classes/MenuAttributes/SwiftyMenuAttributes+RowStyle.swift"; sourceTree = "<group>"; };
@@ -175,10 +175,10 @@
 		921879E6618A0CDEABCABD0196F8D766 /* SwiftyMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyMenu-dummy.m"; sourceTree = "<group>"; };
 		92269D090C93E5A12423C58392023C1E /* Pods-YogaZone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YogaZone-dummy.m"; sourceTree = "<group>"; };
 		972CCA446EB85E2336BC726892E46B21 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
-		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BA9F3E83AC1F0510C2CEE12BD97A70 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		9B977CA9625BF6FB9446E04953C3928C /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A19EF2C0135C155A78E13545AAD9D647 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		A4DC5B836AA3BDA19BE1DBF7999C2C11 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		A6A37DF71308766D20BA03C7A86391EB /* SwiftyMenuAttributes+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyMenuAttributes+Animation.swift"; path = "SwiftyMenu/Classes/MenuAttributes/SwiftyMenuAttributes+Animation.swift"; sourceTree = "<group>"; };
@@ -277,7 +277,6 @@
 				8DF785940DA80874B9D82661D8A7E7B7 /* UIImageView.swift */,
 				ED40946DDB8719BB8D66C073255857A7 /* Support Files */,
 			);
-			name = Gifu;
 			path = Gifu;
 			sourceTree = "<group>";
 		};
@@ -314,7 +313,6 @@
 				3AC0022B0380CBB44B3DB203BBE870BF /* Resources */,
 				A850353585F5CD363B899EB9661D46B3 /* Support Files */,
 			);
-			name = SwiftyMenu;
 			path = SwiftyMenu;
 			sourceTree = "<group>";
 		};
@@ -367,7 +365,6 @@
 				885C4DEFB18843B731BE1D1291E4D044 /* UILayoutSupport+Extensions.swift */,
 				9E1DDB1A2542F9BC050DA5C75FF2224A /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -429,10 +426,10 @@
 		BA563320B1AC7C1F98276C16B4CD58F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40E5F8D9277E714962AFA02550F15F8A /* Gifu */,
+				40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */,
 				7D19A0834A06EDBC9E6CFBE43D1909F2 /* Pods-YogaZone */,
-				979486118B3E90C08386079D57962701 /* SnapKit */,
-				4E66C40B7AD532AA9A4C72916DB38155 /* SwiftyMenu */,
+				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
+				4E66C40B7AD532AA9A4C72916DB38155 /* SwiftyMenu.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -535,7 +532,7 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		593C691EE1778BCBED924E4F750D314A /* Pods-YogaZone */ = {
@@ -574,7 +571,7 @@
 			);
 			name = Gifu;
 			productName = Gifu;
-			productReference = 40E5F8D9277E714962AFA02550F15F8A /* Gifu */;
+			productReference = 40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A6994AE4A21BC798F051C8EC951CA725 /* SwiftyMenu */ = {
@@ -593,7 +590,7 @@
 			);
 			name = SwiftyMenu;
 			productName = SwiftyMenu;
-			productReference = 4E66C40B7AD532AA9A4C72916DB38155 /* SwiftyMenu */;
+			productReference = 4E66C40B7AD532AA9A4C72916DB38155 /* SwiftyMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -603,7 +600,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -802,7 +799,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyMenu/SwiftyMenu-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyMenu/SwiftyMenu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -941,7 +938,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Gifu/Gifu-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Gifu/Gifu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -977,7 +974,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyMenu/SwiftyMenu-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyMenu/SwiftyMenu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1011,7 +1008,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Gifu/Gifu-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Gifu/Gifu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1046,7 +1043,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1143,7 +1140,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

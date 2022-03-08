@@ -71,7 +71,6 @@ class TreinoUmController: UIViewController {
         timeDurationImage.image = UIImage(named: "timeDuration")
         levelExerciceImage.image = UIImage(named: "levelExercice")
         
-      
     }
     
 

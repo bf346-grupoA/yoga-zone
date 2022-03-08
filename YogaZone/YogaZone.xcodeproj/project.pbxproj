@@ -29,6 +29,8 @@
 		7946EC6427CD015700C3E161 /* TreinoIniciadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7946EC6227CD015700C3E161 /* TreinoIniciadoVC.xib */; };
 		7946EC6727CD472F00C3E161 /* TreinoFinalizadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7946EC6527CD472F00C3E161 /* TreinoFinalizadoVC.swift */; };
 		7946EC6827CD472F00C3E161 /* TreinoFinalizadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7946EC6627CD472F00C3E161 /* TreinoFinalizadoVC.xib */; };
+		7948B16727D6DEBC00CE5074 /* MeuPerfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948B16527D6DEBC00CE5074 /* MeuPerfilVC.swift */; };
+		7948B16827D6DEBC00CE5074 /* MeuPerfilVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7948B16627D6DEBC00CE5074 /* MeuPerfilVC.xib */; };
 		79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79777C7827C3040600D9065D /* TreinoUmController.swift */; };
 		79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79777C7927C3040600D9065D /* TreinoUmController.xib */; };
 		79D6DEEC27CED26900C98985 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */; };
@@ -63,6 +65,8 @@
 		7946EC6227CD015700C3E161 /* TreinoIniciadoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoIniciadoVC.xib; sourceTree = "<group>"; };
 		7946EC6527CD472F00C3E161 /* TreinoFinalizadoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoFinalizadoVC.swift; sourceTree = "<group>"; };
 		7946EC6627CD472F00C3E161 /* TreinoFinalizadoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoFinalizadoVC.xib; sourceTree = "<group>"; };
+		7948B16527D6DEBC00CE5074 /* MeuPerfilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuPerfilVC.swift; sourceTree = "<group>"; };
+		7948B16627D6DEBC00CE5074 /* MeuPerfilVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeuPerfilVC.xib; sourceTree = "<group>"; };
 		79777C7827C3040600D9065D /* TreinoUmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoUmController.swift; sourceTree = "<group>"; };
 		79777C7927C3040600D9065D /* TreinoUmController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoUmController.xib; sourceTree = "<group>"; };
 		79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				7948B16327D6DCC500CE5074 /* Perfil */,
 				79777C7627C302C900D9065D /* Exercicios */,
 				3126834D27C15FE7003F017B /* IMC */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
@@ -218,6 +223,23 @@
 				7946EC6627CD472F00C3E161 /* TreinoFinalizadoVC.xib */,
 			);
 			path = TreinoFinalizado;
+			sourceTree = "<group>";
+		};
+		7948B16327D6DCC500CE5074 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				7948B16427D6DEA200CE5074 /* MeuPerfil */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		7948B16427D6DEA200CE5074 /* MeuPerfil */ = {
+			isa = PBXGroup;
+			children = (
+				7948B16527D6DEBC00CE5074 /* MeuPerfilVC.swift */,
+				7948B16627D6DEBC00CE5074 /* MeuPerfilVC.xib */,
+			);
+			path = MeuPerfil;
 			sourceTree = "<group>";
 		};
 		79777C7627C302C900D9065D /* Exercicios */ = {
@@ -325,6 +347,7 @@
 				793945A727D4441800D16C10 /* SairDoTreinoVC.xib in Resources */,
 				793A3CA427C46B7C0045DC5C /* TreinoListagemController.xib in Resources */,
 				79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */,
+				7948B16827D6DEBC00CE5074 /* MeuPerfilVC.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				7946EC6827CD472F00C3E161 /* TreinoFinalizadoVC.xib in Resources */,
 				79FA6EAD27D3000800503A3E /* TreinoPausadoVC.xib in Resources */,
@@ -385,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				7948B16727D6DEBC00CE5074 /* MeuPerfilVC.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				793945A627D4441800D16C10 /* SairDoTreinoVC.swift in Sources */,
