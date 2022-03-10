@@ -1,6 +1,7 @@
 import UIKit
 
-struct MeditationAudioFile {
-    let title: String
-    let image: UIImage
+struct MeditationAudioFile: Codable {
+    var id: Int
+    var title: String
+    var synthPad: String
 }

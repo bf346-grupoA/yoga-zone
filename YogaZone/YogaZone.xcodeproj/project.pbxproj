@@ -7,20 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0DA10227D5801600D5DC66 /* YogaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DA10127D5801600D5DC66 /* YogaPlayer.swift */; };
+		2F0DA10527D5A76E00D5DC66 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DA10327D5A76E00D5DC66 /* AudioCell.swift */; };
+		2F0DA10627D5A76E00D5DC66 /* AudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0DA10427D5A76E00D5DC66 /* AudioCell.xib */; };
+		2F255A0A27D3D5BE00178C43 /* MeditationAudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F255A0927D3D5BE00178C43 /* MeditationAudioFile.swift */; };
+		2F79E07E27D9411A0070397F /* MeditationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E07D27D9411A0070397F /* MeditationData.swift */; };
+		2F79E08127D94C120070397F /* YogaParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E08027D94C120070397F /* YogaParser.swift */; };
+		2F79E08927D954790070397F /* pad-Ab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E08227D954760070397F /* pad-Ab.mp3 */; };
+		2F79E08A27D954790070397F /* pad-Eb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E08327D954770070397F /* pad-Eb.mp3 */; };
+		2F79E08B27D954790070397F /* pad-E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E08427D954770070397F /* pad-E.mp3 */; };
+		2F79E08C27D954790070397F /* pad-D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E08527D954770070397F /* pad-D.mp3 */; };
+		2F79E08D27D954790070397F /* pad-C.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E08627D954780070397F /* pad-C.mp3 */; };
+		2F79E08E27D954790070397F /* pad-Gb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E08727D954780070397F /* pad-Gb.mp3 */; };
+		2F79E08F27D954790070397F /* pad-A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E08827D954790070397F /* pad-A.mp3 */; };
+		2F9C140D27D3AC1A0077C427 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C140B27D3AC1A0077C427 /* IntroViewController.swift */; };
+		2F9C140E27D3AC1A0077C427 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C140C27D3AC1A0077C427 /* IntroViewController.xib */; };
+		2F9C141127D3AC290077C427 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C140F27D3AC290077C427 /* HomeViewController.swift */; };
+		2F9C141227D3AC290077C427 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141027D3AC290077C427 /* HomeViewController.xib */; };
+		2F9C141527D3AC400077C427 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C141327D3AC400077C427 /* PracticeViewController.swift */; };
+		2F9C141627D3AC400077C427 /* PracticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141427D3AC400077C427 /* PracticeViewController.xib */; };
+		2F9C142327D3B70A0077C427 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C142127D3B53B0077C427 /* Montserrat-Bold.ttf */; };
+		2F9C142427D3B70A0077C427 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C142227D3B53B0077C427 /* Montserrat-Light.ttf */; };
+		2F9C142527D3B70A0077C427 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141E27D3B53B0077C427 /* Montserrat-Medium.ttf */; };
+		2F9C142627D3B70A0077C427 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141F27D3B53B0077C427 /* Montserrat-Regular.ttf */; };
+		2F9C142727D3B70A0077C427 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C142027D3B53B0077C427 /* Montserrat-SemiBold.ttf */; };
+		2F9C142827D3B70A0077C427 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141927D3B4FC0077C427 /* Comfortaa-Bold.ttf */; };
+		2F9C142927D3B70A0077C427 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141B27D3B4FC0077C427 /* Comfortaa-Light.ttf */; };
+		2F9C142A27D3B70A0077C427 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141A27D3B4FC0077C427 /* Comfortaa-Medium.ttf */; };
+		2F9C142B27D3B70A0077C427 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141C27D3B4FC0077C427 /* Comfortaa-Regular.ttf */; };
+		2F9C142C27D3B70A0077C427 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C141D27D3B4FC0077C427 /* Comfortaa-SemiBold.ttf */; };
+		2FDE717D27D821C3004FA62C /* pad-B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FDE717C27D821C3004FA62C /* pad-B.mp3 */; };
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-		3126835027C16056003F017B /* ImcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126834E27C16056003F017B /* ImcController.swift */; };
-		3126835127C16056003F017B /* ImcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126834F27C16056003F017B /* ImcController.xib */; };
-		3126835727C167D7003F017B /* ResultadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835527C167D7003F017B /* ResultadoController.swift */; };
-		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
-		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
-		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F0DA10127D5801600D5DC66 /* YogaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaPlayer.swift; sourceTree = "<group>"; };
+		2F0DA10327D5A76E00D5DC66 /* AudioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
+		2F0DA10427D5A76E00D5DC66 /* AudioCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioCell.xib; sourceTree = "<group>"; };
+		2F255A0927D3D5BE00178C43 /* MeditationAudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAudioFile.swift; sourceTree = "<group>"; };
+		2F79E07D27D9411A0070397F /* MeditationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationData.swift; sourceTree = "<group>"; };
+		2F79E08027D94C120070397F /* YogaParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaParser.swift; sourceTree = "<group>"; };
+		2F79E08227D954760070397F /* pad-Ab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-Ab.mp3"; sourceTree = "<group>"; };
+		2F79E08327D954770070397F /* pad-Eb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-Eb.mp3"; sourceTree = "<group>"; };
+		2F79E08427D954770070397F /* pad-E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-E.mp3"; sourceTree = "<group>"; };
+		2F79E08527D954770070397F /* pad-D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-D.mp3"; sourceTree = "<group>"; };
+		2F79E08627D954780070397F /* pad-C.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-C.mp3"; sourceTree = "<group>"; };
+		2F79E08727D954780070397F /* pad-Gb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-Gb.mp3"; sourceTree = "<group>"; };
+		2F79E08827D954790070397F /* pad-A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-A.mp3"; sourceTree = "<group>"; };
+		2F9C140B27D3AC1A0077C427 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		2F9C140C27D3AC1A0077C427 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		2F9C140F27D3AC290077C427 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F9C141027D3AC290077C427 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2F9C141327D3AC400077C427 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		2F9C141427D3AC400077C427 /* PracticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeViewController.xib; sourceTree = "<group>"; };
+		2F9C141927D3B4FC0077C427 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		2F9C141A27D3B4FC0077C427 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		2F9C141B27D3B4FC0077C427 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		2F9C141C27D3B4FC0077C427 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		2F9C141D27D3B4FC0077C427 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		2F9C141E27D3B53B0077C427 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		2F9C141F27D3B53B0077C427 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		2F9C142027D3B53B0077C427 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		2F9C142127D3B53B0077C427 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		2F9C142227D3B53B0077C427 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		2FDE717C27D821C3004FA62C /* pad-B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-B.mp3"; sourceTree = "<group>"; };
 		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3126833B27C15ECA003F017B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,12 +82,6 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3126834E27C16056003F017B /* ImcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImcController.swift; sourceTree = "<group>"; };
-		3126834F27C16056003F017B /* ImcController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImcController.xib; sourceTree = "<group>"; };
-		3126835527C167D7003F017B /* ResultadoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoController.swift; sourceTree = "<group>"; };
-		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
-		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
-		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +95,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F0DA10027D57FF300D5DC66 /* SoundBank */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SoundBank;
+			sourceTree = "<group>";
+		};
+		2F79E07C27D940290070397F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E07D27D9411A0070397F /* MeditationData.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2F79E07F27D94C000070397F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E08027D94C120070397F /* YogaParser.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2F9C141727D3B14B0077C427 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2FDE717B27D821A9004FA62C /* SoundBank */,
+				2F9C141827D3B1550077C427 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2F9C141827D3B1550077C427 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2F9C142127D3B53B0077C427 /* Montserrat-Bold.ttf */,
+				2F9C142227D3B53B0077C427 /* Montserrat-Light.ttf */,
+				2F9C141E27D3B53B0077C427 /* Montserrat-Medium.ttf */,
+				2F9C141F27D3B53B0077C427 /* Montserrat-Regular.ttf */,
+				2F9C142027D3B53B0077C427 /* Montserrat-SemiBold.ttf */,
+				2F9C141927D3B4FC0077C427 /* Comfortaa-Bold.ttf */,
+				2F9C141B27D3B4FC0077C427 /* Comfortaa-Light.ttf */,
+				2F9C141A27D3B4FC0077C427 /* Comfortaa-Medium.ttf */,
+				2F9C141C27D3B4FC0077C427 /* Comfortaa-Regular.ttf */,
+				2F9C141D27D3B4FC0077C427 /* Comfortaa-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2F9C142D27D3C4A00077C427 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F0DA10327D5A76E00D5DC66 /* AudioCell.swift */,
+				2F0DA10427D5A76E00D5DC66 /* AudioCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2F9C143327D3D5860077C427 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F255A0927D3D5BE00178C43 /* MeditationAudioFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2FD9380627C180CB002FA16A /* Meditacao */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E07C27D940290070397F /* Mocks */,
+				2F9C143327D3D5860077C427 /* Models */,
+				2FD9380927C1810D002FA16A /* Practice */,
+				2FD9380827C18109002FA16A /* Home */,
+				2FD9380727C18104002FA16A /* Intro */,
+			);
+			path = Meditacao;
+			sourceTree = "<group>";
+		};
+		2FD9380727C18104002FA16A /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				2F9C140B27D3AC1A0077C427 /* IntroViewController.swift */,
+				2F9C140C27D3AC1A0077C427 /* IntroViewController.xib */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		2FD9380827C18109002FA16A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F9C142D27D3C4A00077C427 /* Components */,
+				2F9C140F27D3AC290077C427 /* HomeViewController.swift */,
+				2F9C141027D3AC290077C427 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2FD9380927C1810D002FA16A /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				2F0DA10027D57FF300D5DC66 /* SoundBank */,
+				2F9C141327D3AC400077C427 /* PracticeViewController.swift */,
+				2F9C141427D3AC400077C427 /* PracticeViewController.xib */,
+				2F0DA10127D5801600D5DC66 /* YogaPlayer.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		2FDE717B27D821A9004FA62C /* SoundBank */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E08827D954790070397F /* pad-A.mp3 */,
+				2F79E08227D954760070397F /* pad-Ab.mp3 */,
+				2F79E08627D954780070397F /* pad-C.mp3 */,
+				2F79E08527D954770070397F /* pad-D.mp3 */,
+				2F79E08427D954770070397F /* pad-E.mp3 */,
+				2F79E08327D954770070397F /* pad-Eb.mp3 */,
+				2F79E08727D954780070397F /* pad-Gb.mp3 */,
+				2FDE717C27D821C3004FA62C /* pad-B.mp3 */,
+			);
+			path = SoundBank;
+			sourceTree = "<group>";
+		};
 		3126832D27C15ECA003F017B = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +237,9 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
-				3126834D27C15FE7003F017B /* IMC */,
+				2F79E07F27D94C000070397F /* Utils */,
+				2F9C141727D3B14B0077C427 /* Assets */,
+				2FD9380627C180CB002FA16A /* Meditacao */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
 				3126833D27C15ECA003F017B /* ViewController.swift */,
@@ -75,44 +248,6 @@
 				3126834727C15ECB003F017B /* Info.plist */,
 			);
 			path = YogaZone;
-			sourceTree = "<group>";
-		};
-		3126834D27C15FE7003F017B /* IMC */ = {
-			isa = PBXGroup;
-			children = (
-				3126835427C1675C003F017B /* Historico */,
-				3126835327C16727003F017B /* Resultado */,
-				3126835227C1671B003F017B /* Home */,
-				3126834E27C16056003F017B /* ImcController.swift */,
-				3126834F27C16056003F017B /* ImcController.xib */,
-			);
-			path = IMC;
-			sourceTree = "<group>";
-		};
-		3126835227C1671B003F017B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3126835327C16727003F017B /* Resultado */ = {
-			isa = PBXGroup;
-			children = (
-				3126835527C167D7003F017B /* ResultadoController.swift */,
-				3126835627C167D7003F017B /* ResultadoController.xib */,
-			);
-			name = Resultado;
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3126835427C1675C003F017B /* Historico */ = {
-			isa = PBXGroup;
-			children = (
-				3126835927C16801003F017B /* HistoricoController.swift */,
-				3126835A27C16801003F017B /* HistoricoController.xib */,
-			);
-			path = Historico;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,11 +308,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3126835127C16056003F017B /* ImcController.xib in Resources */,
+				2F9C142327D3B70A0077C427 /* Montserrat-Bold.ttf in Resources */,
+				2F9C142427D3B70A0077C427 /* Montserrat-Light.ttf in Resources */,
+				2F79E08F27D954790070397F /* pad-A.mp3 in Resources */,
+				2F79E08D27D954790070397F /* pad-C.mp3 in Resources */,
+				2F9C142527D3B70A0077C427 /* Montserrat-Medium.ttf in Resources */,
+				2F79E08927D954790070397F /* pad-Ab.mp3 in Resources */,
+				2F0DA10627D5A76E00D5DC66 /* AudioCell.xib in Resources */,
+				2F9C142627D3B70A0077C427 /* Montserrat-Regular.ttf in Resources */,
+				2F79E08B27D954790070397F /* pad-E.mp3 in Resources */,
+				2F9C142727D3B70A0077C427 /* Montserrat-SemiBold.ttf in Resources */,
+				2F9C142827D3B70A0077C427 /* Comfortaa-Bold.ttf in Resources */,
+				2F79E08E27D954790070397F /* pad-Gb.mp3 in Resources */,
+				2FDE717D27D821C3004FA62C /* pad-B.mp3 in Resources */,
+				2F9C142927D3B70A0077C427 /* Comfortaa-Light.ttf in Resources */,
+				2F9C142A27D3B70A0077C427 /* Comfortaa-Medium.ttf in Resources */,
+				2F9C142B27D3B70A0077C427 /* Comfortaa-Regular.ttf in Resources */,
+				2F79E08A27D954790070397F /* pad-Eb.mp3 in Resources */,
+				2F79E08C27D954790070397F /* pad-D.mp3 in Resources */,
+				2F9C142C27D3B70A0077C427 /* Comfortaa-SemiBold.ttf in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
-				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
-				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
+				2F9C141627D3AC400077C427 /* PracticeViewController.xib in Resources */,
+				2F9C141227D3AC290077C427 /* HomeViewController.xib in Resources */,
+				2F9C140E27D3AC1A0077C427 /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,10 +344,15 @@
 			files = (
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
-				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
+				2F9C140D27D3AC1A0077C427 /* IntroViewController.swift in Sources */,
+				2F0DA10227D5801600D5DC66 /* YogaPlayer.swift in Sources */,
+				2F255A0A27D3D5BE00178C43 /* MeditationAudioFile.swift in Sources */,
+				2F9C141127D3AC290077C427 /* HomeViewController.swift in Sources */,
+				2F9C141527D3AC400077C427 /* PracticeViewController.swift in Sources */,
+				2F0DA10527D5A76E00D5DC66 /* AudioCell.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
-				3126835027C16056003F017B /* ImcController.swift in Sources */,
-				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
+				2F79E07E27D9411A0070397F /* MeditationData.swift in Sources */,
+				2F79E08127D94C120070397F /* YogaParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RVDHB2VBB6;
+				DEVELOPMENT_TEAM = NXNZY6B6S6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YogaZone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -346,7 +505,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = backfront.YogaZone;
+				PRODUCT_BUNDLE_IDENTIFIER = YogaZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,7 +520,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RVDHB2VBB6;
+				DEVELOPMENT_TEAM = NXNZY6B6S6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YogaZone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -373,7 +532,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = backfront.YogaZone;
+				PRODUCT_BUNDLE_IDENTIFIER = YogaZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

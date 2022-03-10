@@ -13,9 +13,21 @@ class HomeViewController: UIViewController {
         self.meditationTableView.delegate = self
         self.meditationTableView.dataSource = self
         
+        setupData()
         setupUI()
     }
 }
+
+// MARK: Data Mock
+extension HomeViewController {
+    func setupData() {
+        let jsonData = meditationMock.data(using: .utf8)!
+        let meditationData = try! JSONDecoder().decode([MeditationAudioFile].self, from: jsonData)
+        meditationData.forEach { self.meditationFiles.append($0)}
+    }
+}
+
+
 // MARK: UI Functions
 extension HomeViewController {
     func setupUI() {
@@ -23,16 +35,11 @@ extension HomeViewController {
         let nibCell = UINib(nibName: reuseIdentifier, bundle: nil)
         self.meditationTableView.register(nibCell, forCellReuseIdentifier: reuseIdentifier)
         self.meditationTableView.separatorColor = .clear
-        
-        for m in 1...30 {
-            let meditationFile = MeditationAudioFile(title: "Meditation File - \(m)", image: #imageLiteral(resourceName: "medicacao-select"))
-            meditationFiles.append(meditationFile)
-        }
-        
-        meditationTableView.reloadData()
     }
 }
 
+
+// MARK: TableViewDelegate & TableViewDataSource
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in TableView: UITableView) -> Int {
         return 1
@@ -49,6 +56,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.titleLabel.text = meditationFile.title
         cell?.selectButtonImage.image = #imageLiteral(resourceName: "medicacao-select")
         
+        cell?.layer.cornerRadius = 8
+        cell?.layer.masksToBounds = true
+        cell?.layer.backgroundColor = .init(red: 113, green: 95, blue: 169, alpha: 3)
+        
         return cell ?? UITableViewCell()
     }
     
@@ -59,7 +70,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedFile = meditationFiles[indexPath.row]
         let vc = PracticeViewController(nibName: "PracticeViewController", bundle: nil)
-        vc.selectedFile = selectedFile.title
+        
+        vc.selectedFile = selectedFile
         
         self.navigationController?.pushViewController(vc, animated: true)
         

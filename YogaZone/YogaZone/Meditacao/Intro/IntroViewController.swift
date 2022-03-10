@@ -9,10 +9,12 @@ import UIKit
 
 class IntroViewController: UIViewController {
 
+    @IBOutlet weak var introImageView: UIImageView!
     @IBOutlet weak var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
 
     @IBAction func onStart(_ sender: UIButton) {
@@ -22,5 +24,7 @@ class IntroViewController: UIViewController {
 }
 
 extension IntroViewController {
-    
+    func setupUI() {
+        self.introImageView.image = #imageLiteral(resourceName: "meditacao-intro")
+    }
 }
