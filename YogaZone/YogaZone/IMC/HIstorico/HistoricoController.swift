@@ -7,11 +7,15 @@
 
 import UIKit
 
+private let indentifier = "HistoricoTableViewCell"
 class HistoricoController: UIViewController {
 
+    @IBOutlet weak var historicoTableView: UITableView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupTableView()
         // Do any additional setup after loading the view.
     }
 
@@ -21,17 +25,37 @@ class HistoricoController: UIViewController {
         self.present(VcShare, animated: true, completion: nil)
         
     }
-    
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension HistoricoController{
+    
+    func setupTableView(){
+        self.historicoTableView.delegate = self
+        self.historicoTableView.dataSource = self
+    
+        let nib = UINib(nibName: indentifier , bundle: nil)
+        self.historicoTableView.register(nib, forCellReuseIdentifier: indentifier)
     }
-    */
 
+}
+
+extension HistoricoController:UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.historicoTableView.dequeueReusableCell(withIdentifier: indentifier) as? HistoricoTableViewCell
+        cell?.dateLabel.text = "01/01/2022"
+        cell?.resultLabel.text = "IMC 25.5 Kg/m2"
+        cell?.weigthLabel.text = "58.0 Kg"
+        cell?.remainLabel.text = "-5 Kg"
+        return cell ?? UITableViewCell()
+    }
+}
+
+extension HistoricoController:UITableViewDelegate{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 }

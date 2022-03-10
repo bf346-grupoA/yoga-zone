@@ -10,8 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultadoController" customModule="YogaZone" customModuleProvider="target">
             <connections>
-                <outlet property="labelPesoIdeal" destination="mWh-LN-qkv" id="dby-9D-N8y"/>
-                <outlet property="labelResultado" destination="P5x-YK-slj" id="bON-P6-va0"/>
+                <outlet property="healthStatus" destination="P5x-YK-slj" id="sX5-ii-RIs"/>
+                <outlet property="labelResultado" destination="mzG-VQ-zh2" id="ypE-dk-bix"/>
+                <outlet property="possibleConsequence" destination="mWh-LN-qkv" id="IID-dw-r4t"/>
+                <outlet property="titlePossibleConsequences" destination="uIf-vO-53c" id="5Bh-LV-hSY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -72,11 +74,11 @@
                         <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="Kbm-Qo-opD"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imcindex" translatesAutoresizingMaskIntoConstraints="NO" id="sRg-RK-Ub5">
-                    <rect key="frame" x="60" y="253" width="308" height="504"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Imcindex" translatesAutoresizingMaskIntoConstraints="NO" id="sRg-RK-Ub5">
+                    <rect key="frame" x="60" y="258" width="308" height="499"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzG-VQ-zh2">
-                    <rect key="frame" x="191" y="544" width="47" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzG-VQ-zh2">
+                    <rect key="frame" x="191" y="544" width="47" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <color key="textColor" systemColor="systemGreenColor"/>
                     <nil key="highlightedColor"/>
@@ -96,7 +98,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uIf-vO-53c" secondAttribute="trailing" constant="20" id="RgV-2g-YXq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mWh-LN-qkv" secondAttribute="trailing" constant="20" id="SjT-47-GtH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mzG-VQ-zh2" secondAttribute="trailing" constant="190" id="VK7-Xd-aQW"/>
-                <constraint firstItem="sRg-RK-Ub5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="209" id="VxT-fy-52Q"/>
+                <constraint firstItem="sRg-RK-Ub5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="214" id="VxT-fy-52Q"/>
                 <constraint firstItem="uIf-vO-53c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="W07-i0-BN2"/>
                 <constraint firstItem="tid-ss-y35" firstAttribute="top" secondItem="Lj9-k5-1kR" secondAttribute="bottom" constant="485" id="X9b-uR-Hi1"/>
                 <constraint firstItem="P5x-YK-slj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XLo-Dd-YXy"/>
@@ -110,7 +112,7 @@
                 <constraint firstItem="tid-ss-y35" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="uWe-nA-2hQ"/>
                 <constraint firstItem="mWh-LN-qkv" firstAttribute="top" secondItem="uIf-vO-53c" secondAttribute="bottom" constant="20" id="xfd-Th-QkK"/>
             </constraints>
-            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+            <point key="canvasLocation" x="131.77570093457942" y="92.008639308855294"/>
         </view>
     </objects>
     <resources>
