@@ -103,13 +103,6 @@
                     <color key="textColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdl-mQ-BqU">
-                    <rect key="frame" x="94" y="405" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.96841138599999999" green="0.14601567639999999" blue="0.92006811060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <viewLayoutGuide key="contentLayoutGuide" id="TzC-bl-0kO"/>
-                    <viewLayoutGuide key="frameLayoutGuide" id="0td-EU-Ruk"/>
-                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
