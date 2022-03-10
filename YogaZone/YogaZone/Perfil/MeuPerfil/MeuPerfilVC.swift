@@ -43,7 +43,7 @@ class MeuPerfilVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.passwordTextField.setupRightImage(imageName: "editIcon")
+        self.passwordTextField.setupRightImagePasswordButton(imageNameButton: "alterarSenhaButton")
         self.nickTextField.setupRightImage(imageName: "editIcon")
         self.birthdayTextField.setupRightImage(imageName: "editIcon")
         self.locationTextField.setupRightImage(imageName: "editIcon")
@@ -52,6 +52,11 @@ class MeuPerfilVC: UIViewController {
         tappedArrowVoltarImage.image = UIImage(named: "arrowVoltarCinza")
         perfilImage.image = UIImage(named: "person")
         tappedCameraIconImage.image = UIImage(named: "cameraIcon")
+    }
+    
+    @IBAction func changePasswordButton(_ sender: Any) {
+            let vcChangePassword = AlterarSenhaVC()
+            self.present(vcChangePassword, animated: true, completion: nil)
     }
 }
 
@@ -62,6 +67,15 @@ extension UITextField {
         let imageContainerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 55, height: 40))
         imageContainerView.addSubview(imageView)
         rightView = imageContainerView
+        rightViewMode = .always
+    }
+    
+    func setupRightImagePasswordButton(imageNameButton:String){
+        let imageViewButton = UIImageView(frame: CGRect(x: 10, y: 10, width: 60, height: 20))
+        imageViewButton.image = UIImage(named: imageNameButton)
+        let imageContainerViewButton: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 85, height: 40))
+        imageContainerViewButton.addSubview(imageViewButton)
+        rightView = imageContainerViewButton
         rightViewMode = .always
     }
 }

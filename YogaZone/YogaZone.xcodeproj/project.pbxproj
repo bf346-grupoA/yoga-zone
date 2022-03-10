@@ -34,6 +34,8 @@
 		79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79777C7827C3040600D9065D /* TreinoUmController.swift */; };
 		79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79777C7927C3040600D9065D /* TreinoUmController.xib */; };
 		79D6DEEC27CED26900C98985 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */; };
+		79F8B5E427D99A0100DD8897 /* AlterarSenhaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8B5E227D99A0100DD8897 /* AlterarSenhaVC.swift */; };
+		79F8B5E527D99A0100DD8897 /* AlterarSenhaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F8B5E327D99A0100DD8897 /* AlterarSenhaVC.xib */; };
 		79FA6EAC27D3000800503A3E /* TreinoPausadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA6EAA27D3000800503A3E /* TreinoPausadoVC.swift */; };
 		79FA6EAD27D3000800503A3E /* TreinoPausadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FA6EAB27D3000800503A3E /* TreinoPausadoVC.xib */; };
 		D14A82412CDB0A055BCCD614 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6524547B5F0CF70DEA3D998 /* Pods_YogaZone.framework */; };
@@ -70,6 +72,8 @@
 		79777C7827C3040600D9065D /* TreinoUmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoUmController.swift; sourceTree = "<group>"; };
 		79777C7927C3040600D9065D /* TreinoUmController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoUmController.xib; sourceTree = "<group>"; };
 		79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
+		79F8B5E227D99A0100DD8897 /* AlterarSenhaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlterarSenhaVC.swift; sourceTree = "<group>"; };
+		79F8B5E327D99A0100DD8897 /* AlterarSenhaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlterarSenhaVC.xib; sourceTree = "<group>"; };
 		79FA6EAA27D3000800503A3E /* TreinoPausadoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoPausadoVC.swift; sourceTree = "<group>"; };
 		79FA6EAB27D3000800503A3E /* TreinoPausadoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoPausadoVC.xib; sourceTree = "<group>"; };
 		C3155CF47D6370C5D9E01E85 /* Pods-YogaZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.debug.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 		7948B16327D6DCC500CE5074 /* Perfil */ = {
 			isa = PBXGroup;
 			children = (
+				79F8B5E127D9997A00DD8897 /* AlterarSenha */,
 				7948B16427D6DEA200CE5074 /* MeuPerfil */,
 			);
 			path = Perfil;
@@ -271,6 +276,15 @@
 				79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */,
 			);
 			path = Gifs;
+			sourceTree = "<group>";
+		};
+		79F8B5E127D9997A00DD8897 /* AlterarSenha */ = {
+			isa = PBXGroup;
+			children = (
+				79F8B5E227D99A0100DD8897 /* AlterarSenhaVC.swift */,
+				79F8B5E327D99A0100DD8897 /* AlterarSenhaVC.xib */,
+			);
+			path = AlterarSenha;
 			sourceTree = "<group>";
 		};
 		9227676DF233149EF66DA3A1 /* Frameworks */ = {
@@ -344,6 +358,7 @@
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				7933378227CE802F005EE0D4 /* TreinoCustomCell.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				79F8B5E527D99A0100DD8897 /* AlterarSenhaVC.xib in Resources */,
 				793945A727D4441800D16C10 /* SairDoTreinoVC.xib in Resources */,
 				793A3CA427C46B7C0045DC5C /* TreinoListagemController.xib in Resources */,
 				79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */,
@@ -409,6 +424,7 @@
 			files = (
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
 				7948B16727D6DEBC00CE5074 /* MeuPerfilVC.swift in Sources */,
+				79F8B5E427D99A0100DD8897 /* AlterarSenhaVC.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				793945A627D4441800D16C10 /* SairDoTreinoVC.swift in Sources */,
