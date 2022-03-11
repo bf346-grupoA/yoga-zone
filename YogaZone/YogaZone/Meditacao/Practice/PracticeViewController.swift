@@ -2,10 +2,11 @@ import UIKit
 
 // MARK: IBOutlets and Lifecycle
 class PracticeViewController: UIViewController {
-    var isPaused: Bool = false
+    var isPaused: Bool = true
     var selectedFile: MeditationAudioFile? = nil
     var player: YogaPlayer?
     
+    @IBOutlet weak var buttonImageView: UIImageView!
     @IBOutlet weak var practiceImageView: UIImageView!
     @IBOutlet weak var meditationState: UILabel!
     @IBOutlet weak var meditationFilename: UILabel!
@@ -27,10 +28,15 @@ class PracticeViewController: UIViewController {
     
     @IBAction func onTap(_ sender: Any) {
         if isPaused {
+            self.buttonImageView.image = #imageLiteral(resourceName: "meditacao-pause-button")
             self.player?.play()
         } else {
+            self.buttonImageView.image = #imageLiteral(resourceName: "meditacao-play-button")
             self.player?.stop()
         }
+        
+        self.isPaused = !self.isPaused
+        self.setUIState()
     }
     
     
@@ -40,14 +46,18 @@ class PracticeViewController: UIViewController {
 extension PracticeViewController {
     func setupUI() {
         self.practiceImageView.image = #imageLiteral(resourceName: "meditacao-musica")
-        self.meditationState.text = self.isPaused ? "Em Pausa" : "Reproduzindo"
         self.meditationFilename.text = selectedFile?.title
+        self.setUIState()
+    }
+    
+    func setUIState() {
+        self.buttonImageView.image = self.isPaused ? #imageLiteral(resourceName: "meditacao-play-button") : #imageLiteral(resourceName: "meditacao-pause-button")
+        self.meditationState.text = self.isPaused ? "Em Pausa" : "Reproduzindo"
     }
     
     func setupPlayer() {
         player = YogaPlayer(filename: selectedFile?.synthPad ?? "pad-B", fileExtension: "mp3")
         player?.setup()
-        player?.play()
     }
 }
 

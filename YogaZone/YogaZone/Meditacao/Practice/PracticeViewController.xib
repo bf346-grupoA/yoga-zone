@@ -18,6 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PraticaViewController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="buttonImageView" destination="0dp-dn-jIx" id="G3K-OW-2dT"/>
                 <outlet property="meditationFilename" destination="yTY-tB-4aQ" id="M4T-ka-Apb"/>
                 <outlet property="meditationState" destination="3xK-O4-l0l" id="3dy-83-5C5"/>
                 <outlet property="practiceImageView" destination="v8T-2K-Cyh" id="zdJ-JQ-J92"/>
@@ -49,7 +50,7 @@
                         <constraint firstAttribute="height" constant="297" id="Ihc-cg-1gd"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditacao-play-button" translatesAutoresizingMaskIntoConstraints="NO" id="0dp-dn-jIx">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0dp-dn-jIx">
                     <rect key="frame" x="90" y="642.5" width="234" height="70"/>
                     <gestureRecognizers/>
                     <constraints>
@@ -74,9 +75,13 @@
                 <constraint firstItem="3xK-O4-l0l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="kyw-i1-SZZ"/>
                 <constraint firstItem="3xK-O4-l0l" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="vwb-jy-DBw"/>
             </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="E6f-1R-jFM" appends="YES" id="Rox-ky-Gy8"/>
+            </connections>
             <point key="canvasLocation" x="132" y="88"/>
         </view>
         <tapGestureRecognizer id="E6f-1R-jFM">
+            <eventButtonMask key="buttonMaskRequired" primary="YES" secondary="YES"/>
             <connections>
                 <action selector="onTap:" destination="-1" id="maC-gr-hVl"/>
                 <outlet property="delegate" destination="0dp-dn-jIx" id="I2C-nZ-cjs"/>
@@ -84,7 +89,6 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="meditacao-play-button" width="296" height="286"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
