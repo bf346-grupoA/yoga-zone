@@ -139,12 +139,6 @@
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="y6n-7E-BMW">
-                                    <rect key="frame" x="30" y="254.5" width="354" height="140"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="140" id="sdr-8b-1cO"/>
-                                    </constraints>
-                                </mapView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rug-dB-wlb">
                                     <rect key="frame" x="30" y="409.5" width="354" height="21"/>
                                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
@@ -203,6 +197,12 @@ Previsão de término as 21:30.</string>
                                         <color key="baseBackgroundColor" red="0.3002334237" green="0.6619409919" blue="0.32870206239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </buttonConfiguration>
                                 </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MockMapImage" translatesAutoresizingMaskIntoConstraints="NO" id="7ec-gO-MYo">
+                                    <rect key="frame" x="30" y="254.5" width="354" height="140"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="140" id="kXC-lr-qxK"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
@@ -211,24 +211,25 @@ Previsão de término as 21:30.</string>
                                 <constraint firstAttribute="trailing" secondItem="4rp-dI-bby" secondAttribute="trailing" constant="30" id="6zt-mV-Mwx"/>
                                 <constraint firstItem="Rug-dB-wlb" firstAttribute="leading" secondItem="qe6-2y-3vY" secondAttribute="leading" constant="30" id="7HT-iX-1Ls"/>
                                 <constraint firstAttribute="trailing" secondItem="N7E-4M-jeo" secondAttribute="trailing" constant="30" id="8CA-iI-WRg"/>
+                                <constraint firstAttribute="trailing" secondItem="7ec-gO-MYo" secondAttribute="trailing" constant="30" id="8Ig-pn-gqb"/>
                                 <constraint firstAttribute="trailing" secondItem="TOa-q2-bsJ" secondAttribute="trailing" constant="30" id="8og-5J-pRR"/>
                                 <constraint firstAttribute="height" constant="720" id="9dK-nG-bE5"/>
                                 <constraint firstAttribute="trailing" secondItem="Qf9-1d-jSf" secondAttribute="trailing" constant="30" id="CLh-US-GzJ"/>
                                 <constraint firstItem="3eT-hr-Uhp" firstAttribute="centerX" secondItem="qe6-2y-3vY" secondAttribute="centerX" id="CwG-rd-vJL"/>
-                                <constraint firstItem="y6n-7E-BMW" firstAttribute="leading" secondItem="qe6-2y-3vY" secondAttribute="leading" constant="30" id="FCd-zh-ohc"/>
+                                <constraint firstItem="Rug-dB-wlb" firstAttribute="top" secondItem="7ec-gO-MYo" secondAttribute="bottom" constant="15" id="FAa-gL-pzR"/>
                                 <constraint firstItem="N7E-4M-jeo" firstAttribute="top" secondItem="Qf9-1d-jSf" secondAttribute="bottom" constant="15" id="Fcs-N7-CT6"/>
                                 <constraint firstItem="Qf9-1d-jSf" firstAttribute="top" secondItem="Qyi-Hz-zvB" secondAttribute="bottom" constant="15" id="HM1-b3-QCE"/>
                                 <constraint firstAttribute="trailing" secondItem="Rug-dB-wlb" secondAttribute="trailing" constant="30" id="HzG-qr-tJF"/>
                                 <constraint firstAttribute="trailing" secondItem="EsQ-ds-x75" secondAttribute="trailing" constant="30" id="IHJ-7b-arD"/>
                                 <constraint firstItem="y7g-c0-WKq" firstAttribute="leading" secondItem="qe6-2y-3vY" secondAttribute="leading" constant="30" id="KCZ-91-xnA"/>
                                 <constraint firstAttribute="trailing" secondItem="y7g-c0-WKq" secondAttribute="trailing" constant="30" id="P0c-2d-RgO"/>
-                                <constraint firstItem="y6n-7E-BMW" firstAttribute="top" secondItem="4rp-dI-bby" secondAttribute="bottom" constant="15" id="Qtf-yu-agj"/>
-                                <constraint firstItem="Rug-dB-wlb" firstAttribute="top" secondItem="y6n-7E-BMW" secondAttribute="bottom" constant="15" id="Uf8-4K-s5Z"/>
+                                <constraint firstItem="7ec-gO-MYo" firstAttribute="leading" secondItem="qe6-2y-3vY" secondAttribute="leading" constant="30" id="Peg-Jl-W8V"/>
                                 <constraint firstItem="4rp-dI-bby" firstAttribute="top" secondItem="y7g-c0-WKq" secondAttribute="bottom" constant="15" id="W6N-q9-S5A"/>
                                 <constraint firstItem="EsQ-ds-x75" firstAttribute="leading" secondItem="qe6-2y-3vY" secondAttribute="leading" constant="30" id="W8B-QP-8qz"/>
                                 <constraint firstItem="neX-fz-7dr" firstAttribute="top" secondItem="Rug-dB-wlb" secondAttribute="bottom" constant="15" id="WHR-zB-kKP"/>
                                 <constraint firstItem="4rp-dI-bby" firstAttribute="leading" secondItem="qe6-2y-3vY" secondAttribute="leading" constant="30" id="WpQ-zn-7hk"/>
                                 <constraint firstItem="y7g-c0-WKq" firstAttribute="top" secondItem="N7E-4M-jeo" secondAttribute="bottom" constant="15" id="aLE-Q3-gFN"/>
+                                <constraint firstItem="7ec-gO-MYo" firstAttribute="top" secondItem="4rp-dI-bby" secondAttribute="bottom" constant="15" id="aQA-2K-CUJ"/>
                                 <constraint firstItem="N7E-4M-jeo" firstAttribute="leading" secondItem="qe6-2y-3vY" secondAttribute="leading" constant="30" id="d2u-w5-Yj5"/>
                                 <constraint firstItem="EsQ-ds-x75" firstAttribute="top" secondItem="TOa-q2-bsJ" secondAttribute="bottom" constant="15" id="dP6-He-wEu"/>
                                 <constraint firstItem="3eT-hr-Uhp" firstAttribute="top" secondItem="qe6-2y-3vY" secondAttribute="top" constant="15" id="eFg-le-NW9"/>
@@ -238,7 +239,6 @@ Previsão de término as 21:30.</string>
                                 <constraint firstAttribute="trailing" secondItem="Qyi-Hz-zvB" secondAttribute="trailing" constant="30" id="q4f-Ml-g3a"/>
                                 <constraint firstItem="TOa-q2-bsJ" firstAttribute="top" secondItem="neX-fz-7dr" secondAttribute="bottom" constant="15" id="x5V-qV-h5O"/>
                                 <constraint firstAttribute="trailing" secondItem="neX-fz-7dr" secondAttribute="trailing" constant="30" id="ySb-SF-UTl"/>
-                                <constraint firstAttribute="trailing" secondItem="y6n-7E-BMW" secondAttribute="trailing" constant="30" id="z6I-tJ-9Nd"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -263,6 +263,7 @@ Previsão de término as 21:30.</string>
         </view>
     </objects>
     <resources>
+        <image name="MockMapImage" width="225" height="169"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

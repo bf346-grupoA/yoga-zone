@@ -19,7 +19,6 @@ class HomeEventsViewController: UIViewController{
         super.viewDidLoad()
         setupUI()
         containerMapView.isHidden = true
-  
     }
     
     @IBAction func filterButtonTapped(_ sender: UIButton) {

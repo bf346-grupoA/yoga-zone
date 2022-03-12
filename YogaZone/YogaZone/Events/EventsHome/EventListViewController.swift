@@ -11,38 +11,45 @@ class EventListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    let myData = ["first", "second", "third", "four","five"]
+    var eventData: [Event] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "EventCellTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "EventCellTableViewCell")
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.separatorStyle = .none
-     }
-        
+        configureTableView()
+        setupData()
+        setupUI()
+    }
+    
+    func configureTableView(){
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.register(EventCell.nib(), forCellReuseIdentifier: EventCell.identifier)
+    }
+    
 }
 
+// MARK: TableViewDataSource
 extension EventListViewController:UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.myData.count
+        return self.eventData.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCellTableViewCell", for: indexPath) as? EventCellTableViewCell 
+        let cell = tableView.dequeueReusableCell(withIdentifier: EventCell.identifier, for: indexPath) as? EventCell
+        cell?.setupCell(event: self.eventData[indexPath.row])
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 135.0
     }
-   
+    
     
 }
 
+// MARK: TableViewDelegate
 extension EventListViewController:UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -51,4 +58,22 @@ extension EventListViewController:UITableViewDelegate{
         navigationController?.pushViewController(vc, animated: true)
     }
     
+}
+
+// MARK: UI Functions
+extension EventListViewController{
+    
+    func setupUI(){
+        self.tableView.separatorStyle = .none
+    }
+    
+}
+
+// MARK: Data Mock
+extension EventListViewController {
+    func setupData() {
+        let jsonData = eventMock.data(using: .utf8)!
+        let events = try! JSONDecoder().decode([Event].self, from: jsonData)
+        events.forEach { self.eventData.append($0)}
+    }
 }

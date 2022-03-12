@@ -24,10 +24,12 @@
 		8302F15327C58E73003CE838 /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8302F15127C58E73003CE838 /* EventCreatedSuccessViewController.xib */; };
 		830478A227C9A89A0081CCA3 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830478A027C9A8990081CCA3 /* EventDetailViewController.swift */; };
 		830478A327C9A89A0081CCA3 /* EventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830478A127C9A8990081CCA3 /* EventDetailViewController.xib */; };
-		831125A827CE6B4B00EC58D8 /* EventCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831125A627CE6B4B00EC58D8 /* EventCellTableViewCell.swift */; };
-		831125A927CE6B4B00EC58D8 /* EventCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831125A727CE6B4B00EC58D8 /* EventCellTableViewCell.xib */; };
+		831125A827CE6B4B00EC58D8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831125A627CE6B4B00EC58D8 /* EventCell.swift */; };
+		831125A927CE6B4B00EC58D8 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831125A727CE6B4B00EC58D8 /* EventCell.xib */; };
 		83130FEE27CD7AE200D62CA5 /* MockAppHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83130FEC27CD7AE200D62CA5 /* MockAppHomeViewController.swift */; };
 		83130FEF27CD7AE200D62CA5 /* MockAppHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83130FED27CD7AE200D62CA5 /* MockAppHomeViewController.xib */; };
+		8346713727DD27980082C84E /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346713627DD27980082C84E /* EventData.swift */; };
+		8346713A27DD27CE0082C84E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346713927DD27CE0082C84E /* Event.swift */; };
 		834E5E2027D41D8C00A0466C /* EventFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E5E1E27D41D8C00A0466C /* EventFilterViewController.swift */; };
 		834E5E2127D41D8C00A0466C /* EventFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834E5E1F27D41D8C00A0466C /* EventFilterViewController.xib */; };
 		8361F83127CD8174003629CE /* HomeEvents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8361F83027CD8174003629CE /* HomeEvents.storyboard */; };
@@ -83,10 +85,12 @@
 		8302F15127C58E73003CE838 /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		830478A027C9A8990081CCA3 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		830478A127C9A8990081CCA3 /* EventDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailViewController.xib; sourceTree = "<group>"; };
-		831125A627CE6B4B00EC58D8 /* EventCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellTableViewCell.swift; sourceTree = "<group>"; };
-		831125A727CE6B4B00EC58D8 /* EventCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCellTableViewCell.xib; sourceTree = "<group>"; };
+		831125A627CE6B4B00EC58D8 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		831125A727CE6B4B00EC58D8 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		83130FEC27CD7AE200D62CA5 /* MockAppHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppHomeViewController.swift; sourceTree = "<group>"; };
 		83130FED27CD7AE200D62CA5 /* MockAppHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MockAppHomeViewController.xib; sourceTree = "<group>"; };
+		8346713627DD27980082C84E /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		8346713927DD27CE0082C84E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		834E5E1E27D41D8C00A0466C /* EventFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFilterViewController.swift; sourceTree = "<group>"; };
 		834E5E1F27D41D8C00A0466C /* EventFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventFilterViewController.xib; sourceTree = "<group>"; };
 		8361F83027CD8174003629CE /* HomeEvents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeEvents.storyboard; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 		8302F14827C46BE2003CE838 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				8346713827DD27B50082C84E /* Model */,
+				8346713527DD27790082C84E /* Mock */,
 				8302F14927C46BE2003CE838 /* EventsHome */,
 				8302F14A27C46BE2003CE838 /* CreateNewEvent */,
 				8302F14B27C46BE2003CE838 /* EventDetail */,
@@ -252,10 +258,26 @@
 		8346713427DCECA00082C84E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				831125A627CE6B4B00EC58D8 /* EventCellTableViewCell.swift */,
-				831125A727CE6B4B00EC58D8 /* EventCellTableViewCell.xib */,
+				831125A627CE6B4B00EC58D8 /* EventCell.swift */,
+				831125A727CE6B4B00EC58D8 /* EventCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8346713527DD27790082C84E /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				8346713627DD27980082C84E /* EventData.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		8346713827DD27B50082C84E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8346713927DD27CE0082C84E /* Event.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		839CE75027C466EB007D8330 /* fonts */ = {
@@ -382,7 +404,7 @@
 				839CE77C27C4672C007D8330 /* Montserrat-Italic.ttf in Resources */,
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				839CE77227C4672C007D8330 /* Montserrat-ExtraLight.ttf in Resources */,
-				831125A927CE6B4B00EC58D8 /* EventCellTableViewCell.xib in Resources */,
+				831125A927CE6B4B00EC58D8 /* EventCell.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				839CE78827C46A1E007D8330 /* Comfortaa-Light.ttf in Resources */,
 				839CE76B27C4672C007D8330 /* Montserrat-VariableFont_wght.ttf in Resources */,
@@ -427,9 +449,11 @@
 				83F53C1327CE699000ABCEE9 /* EventListViewController.swift in Sources */,
 				830478A227C9A89A0081CCA3 /* EventDetailViewController.swift in Sources */,
 				8302F14E27C46BE2003CE838 /* CreateNewEventViewController.swift in Sources */,
-				831125A827CE6B4B00EC58D8 /* EventCellTableViewCell.swift in Sources */,
+				831125A827CE6B4B00EC58D8 /* EventCell.swift in Sources */,
 				8361F83327CD83CA003629CE /* HomeEventsViewController.swift in Sources */,
+				8346713727DD27980082C84E /* EventData.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				8346713A27DD27CE0082C84E /* Event.swift in Sources */,
 				83F53C1527CE699000ABCEE9 /* EventMapViewController.swift in Sources */,
 				834E5E2027D41D8C00A0466C /* EventFilterViewController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
