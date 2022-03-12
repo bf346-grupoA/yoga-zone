@@ -19,9 +19,9 @@ class EventListViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "EventCellTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
-    }
-    
-    
+        tableView.separatorStyle = .none
+     }
+        
 }
 
 extension EventListViewController:UITableViewDataSource {
@@ -33,15 +33,22 @@ extension EventListViewController:UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCellTableViewCell", for: indexPath) as? EventCellTableViewCell 
-        //pcell?.label?.text = myData[indexPath.row]
-        //cell.myImageView.backgroundColor = .red
-        self.tableView.sizeToFit()
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 135.0
     }
    
     
 }
 
 extension EventListViewController:UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        let vc = EventDetailViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

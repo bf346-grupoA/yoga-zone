@@ -216,14 +216,13 @@
 		8302F14927C46BE2003CE838 /* EventsHome */ = {
 			isa = PBXGroup;
 			children = (
+				8346713427DCECA00082C84E /* Cell */,
 				83130FEC27CD7AE200D62CA5 /* MockAppHomeViewController.swift */,
 				83130FED27CD7AE200D62CA5 /* MockAppHomeViewController.xib */,
 				8361F83227CD83CA003629CE /* HomeEventsViewController.swift */,
 				8361F83027CD8174003629CE /* HomeEvents.storyboard */,
 				83F53C1227CE699000ABCEE9 /* EventListViewController.swift */,
 				83F53C1427CE699000ABCEE9 /* EventMapViewController.swift */,
-				831125A627CE6B4B00EC58D8 /* EventCellTableViewCell.swift */,
-				831125A727CE6B4B00EC58D8 /* EventCellTableViewCell.xib */,
 				834E5E1E27D41D8C00A0466C /* EventFilterViewController.swift */,
 				834E5E1F27D41D8C00A0466C /* EventFilterViewController.xib */,
 			);
@@ -248,6 +247,15 @@
 				830478A127C9A8990081CCA3 /* EventDetailViewController.xib */,
 			);
 			path = EventDetail;
+			sourceTree = "<group>";
+		};
+		8346713427DCECA00082C84E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				831125A627CE6B4B00EC58D8 /* EventCellTableViewCell.swift */,
+				831125A727CE6B4B00EC58D8 /* EventCellTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		839CE75027C466EB007D8330 /* fonts */ = {
