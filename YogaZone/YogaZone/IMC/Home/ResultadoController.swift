@@ -48,6 +48,7 @@ extension ResultadoController{
         self.healthStatus.text = resultado?.healthStatus?.rawValue ?? ""
         self.healthStatus.textColor = getColor(colorIndex: resultado?.imcIndex?.rawValue ?? 0)
         self.possibleConsequence.text = resultado?.possibleConsequences?.rawValue ?? ""
+        self.possibleConsequence.textColor = getColor(colorIndex: resultado?.imcIndex?.rawValue ?? 0)
         
     }
  

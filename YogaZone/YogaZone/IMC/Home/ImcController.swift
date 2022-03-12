@@ -16,12 +16,14 @@ class ImcController: UIViewController{
     
     @IBOutlet weak var alturaLabel: UITextField!
     
+    @IBOutlet weak var textFieldObjetivo: UITextField!
     
   
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
    
     }
@@ -57,6 +59,7 @@ extension ImcController {
         height = height / 100
         
         let imc =  weigth / (height * height)
+        
        
         var result = Result()
         

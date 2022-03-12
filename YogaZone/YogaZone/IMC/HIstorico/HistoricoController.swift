@@ -11,12 +11,15 @@ private let indentifier = "HistoricoTableViewCell"
 class HistoricoController: UIViewController {
 
     @IBOutlet weak var historicoTableView: UITableView!
-   
+    @IBOutlet weak var pesoAtualLabel: UILabel!
+    
+    @IBOutlet weak var faltamLabel: UILabel!
+    @IBOutlet weak var obejtivoLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupTableView()
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func tappedShare(_ sender: Any) {
@@ -59,3 +62,5 @@ extension HistoricoController:UITableViewDelegate{
         return 1
     }
 }
+
+

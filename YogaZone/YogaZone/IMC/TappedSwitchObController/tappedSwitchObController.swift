@@ -16,7 +16,7 @@ class tappedSwitchObController: UIViewController {
     }
 
     @IBAction func tappedOK(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: false, completion: nil)
     }
     
     /*
