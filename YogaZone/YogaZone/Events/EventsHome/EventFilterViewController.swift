@@ -8,7 +8,7 @@
 import UIKit
 
 class EventFilterViewController: UIViewController {
-
+    
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var cityTextField: UITextField!
@@ -29,30 +29,30 @@ class EventFilterViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-
+    
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    
 }
 
 // MARK: UI Functions
 extension EventFilterViewController {
     func setupUI(){
-        cancelButton.setTitle("Cancelar", for: .normal)
-        cityLabel.text = "Cidade"
-        cityTextField.placeholder = "Cidade"
-        startDateLabel.text = "Data inicial"
-        startDateTextField.placeholder = "Inicio"
-        endDateLabel.text = "Data final"
-        endDateTextField.placeholder = "Fim"
-        eventNameLabel.text = "Nome do Evento"
-        eventNameTextField.placeholder = "Nome do Evento"
-        finalizedLabel.text = "Finalizados"
-        createdByMeLabel.text = "Criados por mim"
-        applyButton.setTitle("Aplicar", for: .normal)
-        clearFiltersButtons.setTitle("Limpar filtros", for: .normal)
+        self.cancelButton.setTitle("Cancelar", for: .normal)
+        self.cityLabel.text = "Cidade"
+        self.cityTextField.placeholder = "Cidade"
+        self.startDateLabel.text = "Data inicial"
+        self.startDateTextField.placeholder = "Inicio"
+        self.endDateLabel.text = "Data final"
+        self.endDateTextField.placeholder = "Fim"
+        self.eventNameLabel.text = "Nome do Evento"
+        self.eventNameTextField.placeholder = "Nome do Evento"
+        self.finalizedLabel.text = "Finalizados"
+        self.createdByMeLabel.text = "Criados por mim"
+        self.applyButton.setTitle("Aplicar", for: .normal)
+        self.clearFiltersButtons.setTitle("Limpar filtros", for: .normal)
         
     }
     

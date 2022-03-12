@@ -8,7 +8,7 @@
 import UIKit
 
 class EventDetailViewController: UIViewController {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var eventNameLabel: UILabel!
@@ -28,26 +28,23 @@ class EventDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
     }
-
-
+        
 }
 
 // MARK: UI Functions
 extension EventDetailViewController {
     func setupUI(){
-        titleLabel.text = "Evento"
-        nameLabel.text = "Nome"
-        dateLabel.text = "Data"
-        hourLabel.text = "Hora"
-        numberOfParticipantsLabel.text = "Participantes"
-        localLabel.text = "Local"
-        descriptionLabel.text = "Descrição"
-        availableVacanciesLabel.text = "Vagas disponíveis"
-        confirmParticipationButton.setTitle("Confirmar Participação", for: .normal)
-        
+        self.titleLabel.text = "Evento"
+        self.nameLabel.text = "Nome"
+        self.dateLabel.text = "Data"
+        self.hourLabel.text = "Hora"
+        self.numberOfParticipantsLabel.text = "Participantes"
+        self.localLabel.text = "Local"
+        self.descriptionLabel.text = "Descrição"
+        self.availableVacanciesLabel.text = "Vagas disponíveis"
+        self.confirmParticipationButton.setTitle("Confirmar Participação", for: .normal)
     }
     
 }

@@ -32,18 +32,18 @@ class HomeEventsViewController: UIViewController{
     }
     
     @IBAction func didTapSegment(segment: UISegmentedControl){
-       switch segment.selectedSegmentIndex {
+        switch segment.selectedSegmentIndex {
         case 0:
-           containerListView.isHidden = false
-           containerMapView.isHidden = true
+            self.containerListView.isHidden = false
+            self.containerMapView.isHidden = true
         case 1:
-           containerMapView.isHidden = false
-           containerListView.isHidden = true
+            self.containerMapView.isHidden = false
+            self.containerListView.isHidden = true
         default:
-           containerListView.isHidden = false
-           containerMapView.isHidden = true
+            self.containerListView.isHidden = false
+            self.containerMapView.isHidden = true
         }
-
+        
     }
     
 }
@@ -51,12 +51,12 @@ class HomeEventsViewController: UIViewController{
 // MARK: UI Functions
 extension HomeEventsViewController {
     func setupUI(){
-        navigationItem.title = "Eventos"
-        buttonFilter.setTitle("Filtros", for: .normal)
-        buttonCreateNewEvent.setTitle("Criar Novo Evento", for: .normal)
-        optionsControl.setTitle("Lista", forSegmentAt: 0)
-        optionsControl.setTitle("Mapa", forSegmentAt: 1)
-        optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
+        self.navigationItem.title = "Eventos"
+        self.buttonFilter.setTitle("Filtros", for: .normal)
+        self.buttonCreateNewEvent.setTitle("Criar Novo Evento", for: .normal)
+        self.optionsControl.setTitle("Lista", forSegmentAt: 0)
+        self.optionsControl.setTitle("Mapa", forSegmentAt: 1)
+        self.optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
     }
-   
+    
 }

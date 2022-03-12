@@ -8,7 +8,7 @@
 import UIKit
 
 class CreateNewEventViewController: UIViewController {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var eventNameTextField: UITextField!
     @IBOutlet weak var eventDateTextField: UITextField!
@@ -33,14 +33,14 @@ class CreateNewEventViewController: UIViewController {
 // MARK: UI Functions
 extension CreateNewEventViewController {
     func setupUI(){
-        titleLabel.text = "Criar Novo Evento"
-        eventNameTextField.placeholder = "Nome do evento"
-        eventDateTextField.placeholder = "Data do evento"
-        eventStartTimeTextField.placeholder = "Horário de início"
-        eventNumberOfParticipantsTextField.placeholder = "Número de participantes"
-        eventLocalTextField.placeholder = "Local"
-        eventDescriptionTextField.placeholder = "Descrição de outras informações"
-        createEventButton.setTitle("Criar Evento", for: .normal)
+        self.titleLabel.text = "Criar Novo Evento"
+        self.eventNameTextField.placeholder = "Nome do evento"
+        self.eventDateTextField.placeholder = "Data do evento"
+        self.eventStartTimeTextField.placeholder = "Horário de início"
+        self.eventNumberOfParticipantsTextField.placeholder = "Número de participantes"
+        self.eventLocalTextField.placeholder = "Local"
+        self.eventDescriptionTextField.placeholder = "Descrição de outras informações"
+        self.createEventButton.setTitle("Criar Evento", for: .normal)
     }
     
 }
