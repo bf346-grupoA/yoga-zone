@@ -33,6 +33,8 @@
 		7948B16827D6DEBC00CE5074 /* MeuPerfilVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7948B16627D6DEBC00CE5074 /* MeuPerfilVC.xib */; };
 		79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79777C7827C3040600D9065D /* TreinoUmController.swift */; };
 		79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79777C7927C3040600D9065D /* TreinoUmController.xib */; };
+		79D3587127DD359E006CAF4A /* MeuPerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3586F27DD359E006CAF4A /* MeuPerfilTableViewCell.swift */; };
+		79D3587227DD359E006CAF4A /* MeuPerfilTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D3587027DD359E006CAF4A /* MeuPerfilTableViewCell.xib */; };
 		79D6DEEC27CED26900C98985 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */; };
 		79F8B5E427D99A0100DD8897 /* AlterarSenhaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8B5E227D99A0100DD8897 /* AlterarSenhaVC.swift */; };
 		79F8B5E527D99A0100DD8897 /* AlterarSenhaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F8B5E327D99A0100DD8897 /* AlterarSenhaVC.xib */; };
@@ -71,6 +73,8 @@
 		7948B16627D6DEBC00CE5074 /* MeuPerfilVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeuPerfilVC.xib; sourceTree = "<group>"; };
 		79777C7827C3040600D9065D /* TreinoUmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoUmController.swift; sourceTree = "<group>"; };
 		79777C7927C3040600D9065D /* TreinoUmController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoUmController.xib; sourceTree = "<group>"; };
+		79D3586F27DD359E006CAF4A /* MeuPerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuPerfilTableViewCell.swift; sourceTree = "<group>"; };
+		79D3587027DD359E006CAF4A /* MeuPerfilTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeuPerfilTableViewCell.xib; sourceTree = "<group>"; };
 		79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
 		79F8B5E227D99A0100DD8897 /* AlterarSenhaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlterarSenhaVC.swift; sourceTree = "<group>"; };
 		79F8B5E327D99A0100DD8897 /* AlterarSenhaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlterarSenhaVC.xib; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 		7948B16427D6DEA200CE5074 /* MeuPerfil */ = {
 			isa = PBXGroup;
 			children = (
+				79D3586E27DD349D006CAF4A /* MeuPerfilTableViewCell */,
 				7948B16527D6DEBC00CE5074 /* MeuPerfilVC.swift */,
 				7948B16627D6DEBC00CE5074 /* MeuPerfilVC.xib */,
 			);
@@ -268,6 +273,15 @@
 				793A3CA527C47F010045DC5C /* String+Extensions.swift */,
 			);
 			path = TreinoUm;
+			sourceTree = "<group>";
+		};
+		79D3586E27DD349D006CAF4A /* MeuPerfilTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				79D3586F27DD359E006CAF4A /* MeuPerfilTableViewCell.swift */,
+				79D3587027DD359E006CAF4A /* MeuPerfilTableViewCell.xib */,
+			);
+			path = MeuPerfilTableViewCell;
 			sourceTree = "<group>";
 		};
 		79D6DEED27CED4E800C98985 /* Gifs */ = {
@@ -362,6 +376,7 @@
 				793945A727D4441800D16C10 /* SairDoTreinoVC.xib in Resources */,
 				793A3CA427C46B7C0045DC5C /* TreinoListagemController.xib in Resources */,
 				79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */,
+				79D3587227DD359E006CAF4A /* MeuPerfilTableViewCell.xib in Resources */,
 				7948B16827D6DEBC00CE5074 /* MeuPerfilVC.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				7946EC6827CD472F00C3E161 /* TreinoFinalizadoVC.xib in Resources */,
@@ -433,6 +448,7 @@
 				793A3CA627C47F010045DC5C /* String+Extensions.swift in Sources */,
 				7946EC6727CD472F00C3E161 /* TreinoFinalizadoVC.swift in Sources */,
 				793A3CA327C46B7C0045DC5C /* TreinoListagemController.swift in Sources */,
+				79D3587127DD359E006CAF4A /* MeuPerfilTableViewCell.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
 				79FA6EAC27D3000800503A3E /* TreinoPausadoVC.swift in Sources */,
 				7933378127CE802F005EE0D4 /* TreinoCustomCell.swift in Sources */,

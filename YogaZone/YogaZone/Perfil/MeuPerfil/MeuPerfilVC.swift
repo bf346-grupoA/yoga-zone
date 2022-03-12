@@ -8,8 +8,10 @@
 import UIKit
 
 class MeuPerfilVC: UIViewController {
-
-
+    
+    
+    private var arrayProfile:[String] = ["Nick", "Data de Nascimento", "Localidade", "Sexo"]
+    
     @IBOutlet weak var tappedArrowVoltarImage: UIImageView!
     
     @IBOutlet weak var meuPerfilLabel: UILabel!
@@ -18,64 +20,57 @@ class MeuPerfilVC: UIViewController {
     
     @IBOutlet weak var tappedCameraIconImage: UIImageView!
     
-    //NICK
-    @IBOutlet weak var nickLabel: UILabel!
-    @IBOutlet weak var nickTextField: UITextField!
-
+    @IBOutlet weak var tableView: UITableView!
     
-    //SENHA
-    @IBOutlet weak var passwordLabel: UILabel!
-    @IBOutlet weak var passwordTextField: UITextField!
-
     
-    //DATA NASC
-    @IBOutlet weak var birthdayLabel: UILabel!
-    @IBOutlet weak var birthdayTextField: UITextField!
-    
-    //LOCALIDADE
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var locationTextField: UITextField!
-    
-    //SEXO
-    @IBOutlet weak var sexLabel: UILabel!
-    @IBOutlet weak var sexTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.passwordTextField.setupRightImagePasswordButton(imageNameButton: "alterarSenhaButton")
-        self.nickTextField.setupRightImage(imageName: "editIcon")
-        self.birthdayTextField.setupRightImage(imageName: "editIcon")
-        self.locationTextField.setupRightImage(imageName: "editIcon")
-        self.sexTextField.setupRightImage(imageName: "editIcon")
-        
+        configTableView()
+        configImages()
+    }
+    
+    
+    func configImages(){
         tappedArrowVoltarImage.image = UIImage(named: "arrowVoltarCinza")
         perfilImage.image = UIImage(named: "person")
         tappedCameraIconImage.image = UIImage(named: "cameraIcon")
     }
     
-    @IBAction func changePasswordButton(_ sender: Any) {
-            let vcChangePassword = AlterarSenhaVC()
-            self.present(vcChangePassword, animated: true, completion: nil)
+    
+    func configTableView(){
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.separatorStyle = .none
+        self.tableView.register(MeuPerfilTableViewCell.nib(), forCellReuseIdentifier: MeuPerfilTableViewCell.identifier)
+    }
+    
+    @IBAction func moreOptionsButton(_ sender: UIButton) {
+        let vc = AlterarSenhaVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-extension UITextField {
-    func setupRightImage(imageName:String){
-        let imageView = UIImageView(frame: CGRect(x: 10, y: 10, width: 20, height: 20))
-        imageView.image = UIImage(named: imageName)
-        let imageContainerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 55, height: 40))
-        imageContainerView.addSubview(imageView)
-        rightView = imageContainerView
-        rightViewMode = .always
+extension MeuPerfilVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.arrayProfile.count
     }
     
-    func setupRightImagePasswordButton(imageNameButton:String){
-        let imageViewButton = UIImageView(frame: CGRect(x: 10, y: 10, width: 60, height: 20))
-        imageViewButton.image = UIImage(named: imageNameButton)
-        let imageContainerViewButton: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 85, height: 40))
-        imageContainerViewButton.addSubview(imageViewButton)
-        rightView = imageContainerViewButton
-        rightViewMode = .always
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell: MeuPerfilTableViewCell? = tableView.dequeueReusableCell(withIdentifier: MeuPerfilTableViewCell.identifier, for: indexPath) as? MeuPerfilTableViewCell
+        cell?.meuPerfilTitleCellLabel.text = self.arrayProfile[indexPath.row]
+        return cell ?? UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
     }
 }
+
+extension MeuPerfilVC: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(arrayProfile[indexPath.row])
+    }
+}
+
+
