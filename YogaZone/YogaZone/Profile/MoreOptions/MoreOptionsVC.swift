@@ -26,7 +26,7 @@ class MoreOptionsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.saveButton.isEnabled = false
+        self.saveButton.isEnabled = true
         
         configImage()
         configBackButton()
@@ -52,11 +52,12 @@ class MoreOptionsVC: UIViewController {
     
 
     @IBAction func tappedSaveNewPasswordButton(_ sender: UIButton) {
+        CustomAlertVC.instance.showAlert(titleType: .success, message: "Sua senha foi salva com sucesso !", alertType: .success)
     }
     
     
     @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
-        //IR PARA TELHA DE ESQUECI MINHA SENHA
+        //IR PARA TELA DE ESQUECI MINHA SENHA
     }
     
     

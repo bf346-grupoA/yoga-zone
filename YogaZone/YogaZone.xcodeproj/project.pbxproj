@@ -50,6 +50,8 @@
 		79D6DEEC27CED26900C98985 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */; };
 		79ED5ADC27DE72490064ADEA /* DeleteAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED5ADA27DE72490064ADEA /* DeleteAccountVC.swift */; };
 		79ED5ADD27DE72490064ADEA /* DeleteAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79ED5ADB27DE72490064ADEA /* DeleteAccountVC.xib */; };
+		79ED5AE227DE8D420064ADEA /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED5AE027DE8D420064ADEA /* CustomAlertVC.swift */; };
+		79ED5AE327DE8D420064ADEA /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79ED5AE127DE8D420064ADEA /* CustomAlertVC.xib */; };
 		79F8B5E427D99A0100DD8897 /* MoreOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8B5E227D99A0100DD8897 /* MoreOptionsVC.swift */; };
 		79F8B5E527D99A0100DD8897 /* MoreOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F8B5E327D99A0100DD8897 /* MoreOptionsVC.xib */; };
 		79FA6EAC27D3000800503A3E /* TreinoPausadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA6EAA27D3000800503A3E /* TreinoPausadoVC.swift */; };
@@ -104,6 +106,8 @@
 		79D6DEEB27CED26900C98985 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
 		79ED5ADA27DE72490064ADEA /* DeleteAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountVC.swift; sourceTree = "<group>"; };
 		79ED5ADB27DE72490064ADEA /* DeleteAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteAccountVC.xib; sourceTree = "<group>"; };
+		79ED5AE027DE8D420064ADEA /* CustomAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+		79ED5AE127DE8D420064ADEA /* CustomAlertVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
 		79F8B5E227D99A0100DD8897 /* MoreOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOptionsVC.swift; sourceTree = "<group>"; };
 		79F8B5E327D99A0100DD8897 /* MoreOptionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreOptionsVC.xib; sourceTree = "<group>"; };
 		79FA6EAA27D3000800503A3E /* TreinoPausadoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoPausadoVC.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				79ED5ADE27DE8CC90064ADEA /* Helpers */,
 				79D3587627DD9BB0006CAF4A /* Fonts */,
 				7948B16327D6DCC500CE5074 /* Profile */,
 				79777C7627C302C900D9065D /* Exercicios */,
@@ -350,6 +355,23 @@
 			path = DeleteAccount;
 			sourceTree = "<group>";
 		};
+		79ED5ADE27DE8CC90064ADEA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79ED5ADF27DE8CD60064ADEA /* Alert */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		79ED5ADF27DE8CD60064ADEA /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				79ED5AE027DE8D420064ADEA /* CustomAlertVC.swift */,
+				79ED5AE127DE8D420064ADEA /* CustomAlertVC.xib */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		79F8B5E127D9997A00DD8897 /* MoreOptions */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +461,7 @@
 				79D3588827DD9C63006CAF4A /* Montserrat-Light.ttf in Resources */,
 				79D3588627DD9C63006CAF4A /* Montserrat-Medium.ttf in Resources */,
 				793945A727D4441800D16C10 /* SairDoTreinoVC.xib in Resources */,
+				79ED5AE327DE8D420064ADEA /* CustomAlertVC.xib in Resources */,
 				793A3CA427C46B7C0045DC5C /* TreinoListagemController.xib in Resources */,
 				79777C7B27C3040600D9065D /* TreinoUmController.xib in Resources */,
 				79D3587227DD359E006CAF4A /* MyProfileTableViewCell.xib in Resources */,
@@ -524,6 +547,7 @@
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
 				79FA6EAC27D3000800503A3E /* TreinoPausadoVC.swift in Sources */,
 				7933378127CE802F005EE0D4 /* TreinoCustomCell.swift in Sources */,
+				79ED5AE227DE8D420064ADEA /* CustomAlertVC.swift in Sources */,
 				79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
