@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlterarSenhaVC" customModule="YogaZone" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreOptionsVC" customModule="YogaZone" customModuleProvider="target">
             <connections>
                 <outlet property="CurrentPasswordTextField" destination="47g-QS-GLV" id="WRw-gq-tGk"/>
                 <outlet property="changePasswordTitleLabel" destination="fcw-6C-tBE" id="X12-i3-ZgT"/>
@@ -82,7 +82,7 @@
                         </backgroundConfiguration>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="tappedSaveButton:" destination="-1" eventType="touchUpInside" id="vQZ-o5-yR4"/>
+                        <action selector="tappedSaveNewPasswordButton:" destination="-1" eventType="touchUpInside" id="vsY-G7-Tho"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk3-1q-HB9">
@@ -99,7 +99,6 @@
                     </buttonConfiguration>
                     <connections>
                         <action selector="leaveAppButton:" destination="-1" eventType="touchUpInside" id="VdH-74-gjn"/>
-                        <action selector="tappedSaveButton:" destination="-1" eventType="touchUpInside" id="biC-V0-K8B"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43b-eL-Jil">
@@ -116,7 +115,6 @@
                     </buttonConfiguration>
                     <connections>
                         <action selector="tappedDeleteAccountButton:" destination="-1" eventType="touchUpInside" id="RCd-1q-UWz"/>
-                        <action selector="tappedSaveButton:" destination="-1" eventType="touchUpInside" id="Lnh-Zk-1Tq"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mais Opções" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Un-Vw6">

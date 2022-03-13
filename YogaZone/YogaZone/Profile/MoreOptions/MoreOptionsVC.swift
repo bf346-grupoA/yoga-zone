@@ -25,6 +25,9 @@ class MoreOptionsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.saveButton.isEnabled = false
+        
         configImage()
         configBackButton()
     }
@@ -47,21 +50,45 @@ class MoreOptionsVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+
+    @IBAction func tappedSaveNewPasswordButton(_ sender: UIButton) {
+    }
+    
     
     @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
         //IR PARA TELHA DE ESQUECI MINHA SENHA
     }
     
-    @IBAction func tappedSaveButton(_ sender: UIButton) {
-        //MOSTRAR CONFIRMACAO DE NOVA SENHA SETADA
-    }
     
     @IBAction func tappedDeleteAccountButton(_ sender: UIButton) {
-        //MOSTRAR MODAL DE CONFIRMAR EXCLUIR CONTA
+        let vcDeleteAccount = DeleteAccountVC()
+        if let sheet = vcDeleteAccount.sheetPresentationController {
+            sheet.detents = [.medium()]
+        }
+        self.present(vcDeleteAccount, animated: true, completion: nil)
     }
     
     @IBAction func leaveAppButton(_ sender: UIButton) {
         //MOSTRAR MODAL DE CONFIRMAR SAIR DO APP
     }
-    
 }
+
+extension MoreOptionsVC:UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        //REALIZAR AS VALIDACOES
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+
+
+
+
+

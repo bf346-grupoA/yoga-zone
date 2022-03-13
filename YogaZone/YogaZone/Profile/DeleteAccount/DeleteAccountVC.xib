@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteAccountVC" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmDeleteAccountButton" destination="1iR-AT-CSJ" id="PRS-zY-OZc"/>
+                <outlet property="confirmPasswordTextField" destination="tFW-pB-3q9" id="9q1-Xh-Kyg"/>
+                <outlet property="deleteAccountLabel" destination="OJ3-cf-6Od" id="9pl-FR-1fb"/>
+                <outlet property="displayTextFieldSwitch" destination="pLx-yS-D3F" id="efA-H8-9Se"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pLx-yS-D3F">
+                    <rect key="frame" x="301" y="50" width="51" height="31"/>
+                    <connections>
+                        <action selector="actionDisplayTextFieldSwitch:" destination="-1" eventType="valueChanged" id="WdN-fI-Fye"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excluir Conta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ3-cf-6Od">
+                    <rect key="frame" x="25" y="50" width="134" height="24.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tFW-pB-3q9">
+                    <rect key="frame" x="25" y="106" width="325" height="34"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iR-AT-CSJ">
+                    <rect key="frame" x="70" y="160" width="235" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aOL-1t-huv"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Confirmar :(" cornerStyle="dynamic">
+                        <backgroundConfiguration key="background" cornerRadius="22">
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedConfirmDeleteAccountButton:" destination="-1" eventType="touchUpInside" id="OEm-zk-zNw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1iR-AT-CSJ" firstAttribute="top" secondItem="tFW-pB-3q9" secondAttribute="bottom" constant="20" id="10M-lP-DZC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tFW-pB-3q9" secondAttribute="trailing" constant="25" id="FNr-HP-4Sf"/>
+                <constraint firstItem="tFW-pB-3q9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="I9O-kH-eg7"/>
+                <constraint firstItem="tFW-pB-3q9" firstAttribute="top" secondItem="pLx-yS-D3F" secondAttribute="bottom" constant="25" id="NW9-bN-hhH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pLx-yS-D3F" secondAttribute="trailing" constant="25" id="QlE-R0-5bg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1iR-AT-CSJ" secondAttribute="trailing" constant="70" id="eQc-9N-RlC"/>
+                <constraint firstItem="OJ3-cf-6Od" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="kZy-80-IIv"/>
+                <constraint firstItem="1iR-AT-CSJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="nBK-xD-7vV"/>
+                <constraint firstItem="OJ3-cf-6Od" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="rX1-Nj-Fr0"/>
+                <constraint firstItem="pLx-yS-D3F" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="xDM-bW-axs"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="99.400299850074973"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
