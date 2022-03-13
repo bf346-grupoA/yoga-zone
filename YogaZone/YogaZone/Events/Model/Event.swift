@@ -16,5 +16,6 @@ struct Event: Codable {
     var isOwner: Bool
     var isParticipating: Bool
     var numberOfParticipants: Int
+    var maximumOfParticipants: Int
     var startTime: String
 }

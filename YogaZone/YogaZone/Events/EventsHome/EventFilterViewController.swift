@@ -34,6 +34,13 @@ class EventFilterViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func applyButtonTapped(_ sender: Any) {
+    
+    }
+    
+    @IBAction func clearFilterButtonTapped(_ sender: Any) {
+    
+    }
     
 }
 

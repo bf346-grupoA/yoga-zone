@@ -12,18 +12,19 @@ class EventListViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var eventData: [Event] = []
+    var idSegment:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTableView()
         setupData()
+        configureTableView()
         setupUI()
     }
     
     func configureTableView(){
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.register(EventCell.nib(), forCellReuseIdentifier: EventCell.identifier)
+        self.tableView?.delegate = self
+        self.tableView?.dataSource = self
+        self.tableView?.register(EventCell.nib(), forCellReuseIdentifier: EventCell.identifier)
     }
     
 }
@@ -64,7 +65,7 @@ extension EventListViewController:UITableViewDelegate{
 extension EventListViewController{
     
     func setupUI(){
-        self.tableView.separatorStyle = .none
+        self.tableView?.separatorStyle = .none
     }
     
 }
@@ -72,8 +73,18 @@ extension EventListViewController{
 // MARK: Data Mock
 extension EventListViewController {
     func setupData() {
+        self.eventData.removeAll()
         let jsonData = eventMock.data(using: .utf8)!
         let events = try! JSONDecoder().decode([Event].self, from: jsonData)
         events.forEach { self.eventData.append($0)}
+        
+        if idSegment == 2 {
+            eventData = eventData.filter({ Event in
+                Event.isOwner == true || Event.isParticipating == true
+            })
+        }
+        
+        self.tableView?.reloadData()
+        
     }
 }

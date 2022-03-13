@@ -65,7 +65,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX2-dM-TIK" userLabel="ListView">
                                 <rect key="frame" x="0.0" y="142" width="375" height="525"/>
                                 <connections>
-                                    <segue destination="Bh3-jp-Of6" kind="embed" id="WPa-Lr-3wq"/>
+                                    <segue destination="Bh3-jp-Of6" kind="embed" identifier="goToEventList" id="WPa-Lr-3wq"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tuy-9N-obw" userLabel="MapView">

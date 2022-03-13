@@ -31,20 +31,35 @@ class HomeEventsViewController: UIViewController{
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    //Acessando os dados que estão dentro do viewcontroler, que estão dentro do Container View na home
+    var containerViewController: EventListViewController?
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToEventList" {
+            containerViewController = segue.destination as? EventListViewController
+        }
+    }
+    
     @IBAction func didTapSegment(segment: UISegmentedControl){
         switch segment.selectedSegmentIndex {
         case 0:
             self.containerListView.isHidden = false
             self.containerMapView.isHidden = true
+            containerViewController?.idSegment = 0 //Aqui o 'prepare' acima é chamado e obtem acesso ao EventListViewController
+            containerViewController?.setupData()
+            containerViewController?.configureTableView()
         case 1:
             self.containerMapView.isHidden = false
             self.containerListView.isHidden = true
         default:
             self.containerListView.isHidden = false
             self.containerMapView.isHidden = true
+            containerViewController?.idSegment = 2 //Aqui o 'prepare' acima é chamado e obtem acesso ao EventListViewController
+            containerViewController?.setupData()
+            containerViewController?.configureTableView()
         }
         
     }
+    
     
 }
 

@@ -23,32 +23,34 @@ class EventCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        view.layer.cornerRadius = 10
+        self.view.layer.cornerRadius = 10
     }
     
     static func nib()->UINib{
         return UINib(nibName: self.identifier, bundle: nil)
     }
-        
+    
     func setupCell(event: Event){
         self.eventTitleLabel.text = event.title
         self.eventLocalLabel.text = event.local
         self.eventDateLabel.text = event.date
-        self.eventNumberOfParticipantsLabel.text = String(event.numberOfParticipants)
+        self.eventNumberOfParticipantsLabel.text = String(event.numberOfParticipants) + " / " + String(event.maximumOfParticipants)
+
         
-        if event.isParticipating == false {
-            self.eventIsParticipatingLabel.isHidden = true
-            self.eventIsParticipatingImageView.isHidden = true
-        }
-        
-        if event.isOwner == false {
-            self.eventIsOwnerLabel.isHidden = true
-            self.eventIsOwnerImageView.isHidden = true
-        } else {
+        if event.isOwner == true {
             self.eventIsOwnerLabel.isHidden = false
             self.eventIsOwnerImageView.isHidden = false
+        } else {
+            self.eventIsOwnerLabel.isHidden = true
+            self.eventIsOwnerImageView.isHidden = true
+        }
+        
+        if event.isParticipating == true {
             self.eventIsParticipatingLabel.isHidden = false
             self.eventIsParticipatingImageView.isHidden = false
+        } else {
+            self.eventIsParticipatingLabel.isHidden = true
+            self.eventIsParticipatingImageView.isHidden = true
         }
         
     }
