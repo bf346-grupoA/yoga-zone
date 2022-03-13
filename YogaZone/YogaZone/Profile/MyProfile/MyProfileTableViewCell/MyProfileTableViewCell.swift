@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MeuPerfilTableViewCell: UITableViewCell {
+class MyProfileTableViewCell: UITableViewCell {
     
     
     
@@ -16,7 +16,7 @@ class MeuPerfilTableViewCell: UITableViewCell {
     @IBOutlet weak var meuPerfilTitleCellTextField: UITextField!
     
     
-    static let identifier:String = "MeuPerfilTableViewCell"
+    static let identifier:String = "MyProfileTableViewCell"
     
     static func nib()-> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
@@ -24,8 +24,14 @@ class MeuPerfilTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        clearBackgroundColorWhenSelectCell()
         self.meuPerfilTitleCellTextField.setupRightImage(imageName: "editIcon")
+    }
+    
+    func clearBackgroundColorWhenSelectCell() {
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
+        selectedBackgroundView = view
     }
 }
 
