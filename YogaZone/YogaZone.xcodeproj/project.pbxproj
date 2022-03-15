@@ -18,6 +18,12 @@
 		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
 		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
 		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
+		79EF3D7327E01FB300B402FB /* MainRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF3D7127E01FB300B402FB /* MainRegisterVC.swift */; };
+		79EF3D7427E01FB300B402FB /* MainRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EF3D7227E01FB300B402FB /* MainRegisterVC.xib */; };
+		79EF3D7827E0280F00B402FB /* CustomMainRegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF3D7627E0280F00B402FB /* CustomMainRegisterCell.swift */; };
+		79EF3D7927E0280F00B402FB /* CustomMainRegisterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EF3D7727E0280F00B402FB /* CustomMainRegisterCell.xib */; };
+		79EF3D7D27E02B4200B402FB /* UserLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF3D7B27E02B4200B402FB /* UserLevelVC.swift */; };
+		79EF3D7E27E02B4200B402FB /* UserLevelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EF3D7C27E02B4200B402FB /* UserLevelVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
 		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
 		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
+		79EF3D7127E01FB300B402FB /* MainRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRegisterVC.swift; sourceTree = "<group>"; };
+		79EF3D7227E01FB300B402FB /* MainRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainRegisterVC.xib; sourceTree = "<group>"; };
+		79EF3D7627E0280F00B402FB /* CustomMainRegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainRegisterCell.swift; sourceTree = "<group>"; };
+		79EF3D7727E0280F00B402FB /* CustomMainRegisterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMainRegisterCell.xib; sourceTree = "<group>"; };
+		79EF3D7B27E02B4200B402FB /* UserLevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLevelVC.swift; sourceTree = "<group>"; };
+		79EF3D7C27E02B4200B402FB /* UserLevelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserLevelVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				79EF3D6F27E01ED000B402FB /* Register */,
 				3126834D27C15FE7003F017B /* IMC */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
@@ -113,6 +126,43 @@
 				3126835A27C16801003F017B /* HistoricoController.xib */,
 			);
 			path = Historico;
+			sourceTree = "<group>";
+		};
+		79EF3D6F27E01ED000B402FB /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				79EF3D7A27E02B1100B402FB /* UserLevel */,
+				79EF3D7027E01F7800B402FB /* MainRegister */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		79EF3D7027E01F7800B402FB /* MainRegister */ = {
+			isa = PBXGroup;
+			children = (
+				79EF3D7527E027D100B402FB /* MainRegisterCell */,
+				79EF3D7127E01FB300B402FB /* MainRegisterVC.swift */,
+				79EF3D7227E01FB300B402FB /* MainRegisterVC.xib */,
+			);
+			path = MainRegister;
+			sourceTree = "<group>";
+		};
+		79EF3D7527E027D100B402FB /* MainRegisterCell */ = {
+			isa = PBXGroup;
+			children = (
+				79EF3D7627E0280F00B402FB /* CustomMainRegisterCell.swift */,
+				79EF3D7727E0280F00B402FB /* CustomMainRegisterCell.xib */,
+			);
+			path = MainRegisterCell;
+			sourceTree = "<group>";
+		};
+		79EF3D7A27E02B1100B402FB /* UserLevel */ = {
+			isa = PBXGroup;
+			children = (
+				79EF3D7B27E02B4200B402FB /* UserLevelVC.swift */,
+				79EF3D7C27E02B4200B402FB /* UserLevelVC.xib */,
+			);
+			path = UserLevel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +223,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EF3D7E27E02B4200B402FB /* UserLevelVC.xib in Resources */,
+				79EF3D7427E01FB300B402FB /* MainRegisterVC.xib in Resources */,
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
+				79EF3D7927E0280F00B402FB /* CustomMainRegisterCell.xib in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
 			);
@@ -189,9 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				79EF3D7D27E02B4200B402FB /* UserLevelVC.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
+				79EF3D7827E0280F00B402FB /* CustomMainRegisterCell.swift in Sources */,
+				79EF3D7327E01FB300B402FB /* MainRegisterVC.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
