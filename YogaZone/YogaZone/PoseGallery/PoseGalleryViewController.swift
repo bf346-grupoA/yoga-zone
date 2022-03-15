@@ -9,6 +9,7 @@ import UIKit
 
 class PoseGalleryViewController: UIViewController {
     var poses: [Pose] = []
+    
     @IBOutlet weak var poseLabel: UILabel!
     @IBOutlet weak var posesTableView: UITableView!
     
@@ -38,18 +39,18 @@ extension PoseGalleryViewController {
 // MARK: Data
 extension PoseGalleryViewController {
     func setupData() {
-        for n in 1...30 {
-            var pose = Pose(id: n, name: "Pose - \(n)", categories: [])
+        for n in 1...13 {
+            var pose = Pose(id: n, name: poseNames[n] ?? "1", categories: [])
             
             pose.categories = [
-                PoseCategory(id: 12, name: "2345234", description: "GitHub is united with the people of Ukraine and the international community."),
-                PoseCategory(id: 12, name: "2345234", description: "GitHub is united with the people of Ukraine and the international community."),
-                PoseCategory(id: 12, name: "2345234", description: "GitHub is united with the people of Ukraine and the international community."),
-                PoseCategory(id: 12, name: "2345234", description: "GitHub is united with the people of Ukraine and the international community."),
-                PoseCategory(id: 12, name: "2345234", description: "GitHub is united with the people of Ukraine and the international community."),
-                PoseCategory(id: 12, name: "2345234", description: "GitHub is united with the people of Ukraine and the international community."),
-                PoseCategory(id: 12, name: "2345234", description: "GitHub is united with the people of Ukraine and the international community."),
-                PoseCategory(id: 12, name: "2345234", description: "GitHub is united with the people of Ukraine and the international community.")
+                PoseCategory(id: 12, name: "Good", description: "GitHub is united with the people of Ukraine and the international community."),
+                PoseCategory(id: 12, name: "Hard", description: "GitHub is united with the people of Ukraine and the international community."),
+                PoseCategory(id: 12, name: "Impossible", description: "GitHub is united with the people of Ukraine and the international community."),
+                PoseCategory(id: 12, name: "Math", description: "GitHub is united with the people of Ukraine and the international community."),
+                PoseCategory(id: 12, name: "Geometrics", description: "GitHub is united with the people of Ukraine and the international community."),
+                PoseCategory(id: 12, name: "Painful", description: "GitHub is united with the people of Ukraine and the international community."),
+                PoseCategory(id: 12, name: "Annoying", description: "GitHub is united with the people of Ukraine and the international community."),
+                PoseCategory(id: 12, name: "Nice", description: "GitHub is united with the people of Ukraine and the international community.")
             ]
             
             poses.append(pose)
@@ -61,25 +62,20 @@ extension PoseGalleryViewController {
 // MARK: TableViewDelegate
 extension PoseGalleryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return poses.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.posesTableView.dequeueReusableCell(withIdentifier: PoseCell.identifier, for: indexPath) as? PoseCell
-        let pose = poses[indexPath.row]
+        let pose = poses[indexPath.section]
         
         cell?.setupCell(pose)
-        
-        cell?.layer.cornerRadius = 8
+        cell?.selectionStyle = .none
         return cell ?? UITableViewCell()
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedPose = poses[indexPath.row]
+        let selectedPose = poses[indexPath.section]
         let vc = PoseDetailViewController()
         vc.selectedPose = selectedPose
         
@@ -90,7 +86,18 @@ extension PoseGalleryViewController: UITableViewDelegate {
 // MARK: TableViewDataSource
 extension PoseGalleryViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        1
+        return poses.count
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = view.backgroundColor
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 4
     }
 }
 

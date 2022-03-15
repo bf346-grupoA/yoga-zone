@@ -26,13 +26,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-23-smd">
-                    <rect key="frame" x="165" y="94" width="84.5" height="34.5"/>
+                    <rect key="frame" x="165" y="64" width="84.5" height="34.5"/>
                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="28"/>
                     <color key="textColor" red="0.25490196079999999" green="0.043137254899999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a8U-cG-i8t">
-                    <rect key="frame" x="0.0" y="192" width="414" height="670"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a8U-cG-i8t">
+                    <rect key="frame" x="0.0" y="108.5" width="414" height="753.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
@@ -40,8 +40,8 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a8U-cG-i8t" secondAttribute="trailing" id="2Vb-3H-a4s"/>
-                <constraint firstItem="h1N-23-smd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Tm3-Ik-Orf"/>
-                <constraint firstItem="a8U-cG-i8t" firstAttribute="top" secondItem="h1N-23-smd" secondAttribute="bottom" constant="63.5" id="Xwt-f2-odc"/>
+                <constraint firstItem="h1N-23-smd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Tm3-Ik-Orf"/>
+                <constraint firstItem="a8U-cG-i8t" firstAttribute="top" secondItem="h1N-23-smd" secondAttribute="bottom" constant="10" id="Xwt-f2-odc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a8U-cG-i8t" secondAttribute="bottom" id="ase-sg-2lF"/>
                 <constraint firstItem="a8U-cG-i8t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nRe-6o-2dr"/>
                 <constraint firstItem="h1N-23-smd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uFX-F5-tFY"/>

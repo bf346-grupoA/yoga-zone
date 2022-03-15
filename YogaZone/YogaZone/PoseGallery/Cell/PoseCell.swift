@@ -21,7 +21,10 @@ class PoseCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.contentView.layer.cornerRadius = 4
+        self.contentView.layoutMargins.left = 10
+        self.contentView.layoutMargins.right = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,6 +34,6 @@ class PoseCell: UITableViewCell {
     func setupCell(_ pose: Pose) {
         self.titleLabel.text = pose.name
         self.descriptionLabel.text = pose.categories.map{ $0.name }.joined(separator: ", ")
-        self.poseImageView.image = UIImage(systemName: "person.circle")
+        self.poseImageView.image = UIImage(named: "\(pose.id)")
     }
 }
