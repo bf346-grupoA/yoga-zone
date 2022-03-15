@@ -19,6 +19,8 @@ class EditEventDetailViewController: UIViewController {
     @IBOutlet weak var editEventButton: UIButton!
     @IBOutlet weak var deleteEventButton: UIButton!
     
+    let alertService = AlertService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -29,7 +31,8 @@ class EditEventDetailViewController: UIViewController {
     }
     
     @IBAction func deleteButtonTapped(_ sender: Any) {
-        
+        let alertVC = alertService.alert(alertTitle: "Atenção!", alertDescription: "Confirmar Exclusão do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Exclusão")
+        present(alertVC, animated: true)
     }
     
 }

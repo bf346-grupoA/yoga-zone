@@ -40,6 +40,9 @@
 		836B501727E0581D003C8E5E /* FinalizedContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B501627E0581D003C8E5E /* FinalizedContainerViewController.swift */; };
 		83CC89F927E05EB5005F391A /* EditEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC89F727E05EB5005F391A /* EditEventDetailViewController.swift */; };
 		83CC89FA27E05EB5005F391A /* EditEventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83CC89F827E05EB5005F391A /* EditEventDetailViewController.xib */; };
+		83CC89FE27E0E85B005F391A /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC89FC27E0E85B005F391A /* AlertViewController.swift */; };
+		83CC8A0327E0F1A1005F391A /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC8A0227E0F1A1005F391A /* AlertService.swift */; };
+		83CC8A0527E0F500005F391A /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CC8A0427E0F500005F391A /* Alert.storyboard */; };
 		83F53C1327CE699000ABCEE9 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F53C1227CE699000ABCEE9 /* EventListViewController.swift */; };
 		83F53C1527CE699000ABCEE9 /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F53C1427CE699000ABCEE9 /* EventMapViewController.swift */; };
 /* End PBXBuildFile section */
@@ -80,6 +83,9 @@
 		836B501627E0581D003C8E5E /* FinalizedContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizedContainerViewController.swift; sourceTree = "<group>"; };
 		83CC89F727E05EB5005F391A /* EditEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventDetailViewController.swift; sourceTree = "<group>"; };
 		83CC89F827E05EB5005F391A /* EditEventDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditEventDetailViewController.xib; sourceTree = "<group>"; };
+		83CC89FC27E0E85B005F391A /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		83CC8A0227E0F1A1005F391A /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		83CC8A0427E0F500005F391A /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
 		83F53C1227CE699000ABCEE9 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		83F53C1427CE699000ABCEE9 /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +210,7 @@
 		8302F14B27C46BE2003CE838 /* Event Detail */ = {
 			isa = PBXGroup;
 			children = (
+				83CC89FB27E0E809005F391A /* Custom Alert */,
 				83CC89F627E05E31005F391A /* Edit Event */,
 				836B500E27E04A58003C8E5E /* Detail Containers */,
 				830478A027C9A8990081CCA3 /* EventDetailViewController.swift */,
@@ -275,6 +282,16 @@
 			path = "Edit Event";
 			sourceTree = "<group>";
 		};
+		83CC89FB27E0E809005F391A /* Custom Alert */ = {
+			isa = PBXGroup;
+			children = (
+				83CC89FC27E0E85B005F391A /* AlertViewController.swift */,
+				83CC8A0227E0F1A1005F391A /* AlertService.swift */,
+				83CC8A0427E0F500005F391A /* Alert.storyboard */,
+			);
+			path = "Custom Alert";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,6 +361,7 @@
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				8302F15327C58E73003CE838 /* EventCreatedSuccessViewController.xib in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
+				83CC8A0527E0F500005F391A /* Alert.storyboard in Resources */,
 				8361F83127CD8174003629CE /* HomeEvents.storyboard in Resources */,
 				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
 			);
@@ -367,6 +385,7 @@
 				831125A827CE6B4B00EC58D8 /* EventCell.swift in Sources */,
 				8361F83327CD83CA003629CE /* HomeEventsViewController.swift in Sources */,
 				8346713727DD27980082C84E /* EventData.swift in Sources */,
+				83CC89FE27E0E85B005F391A /* AlertViewController.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
 				8346713A27DD27CE0082C84E /* Event.swift in Sources */,
 				83F53C1527CE699000ABCEE9 /* EventMapViewController.swift in Sources */,
@@ -377,6 +396,7 @@
 				836B501527E0580E003C8E5E /* EditContainerViewController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
+				83CC8A0327E0F1A1005F391A /* AlertService.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

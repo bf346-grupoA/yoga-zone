@@ -39,7 +39,6 @@
                                         <color key="backgroundColor" red="1" green="0.53725490200000003" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="strokeColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" red="1" green="0.53725490200000003" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="filterButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jxo-In-d0d"/>

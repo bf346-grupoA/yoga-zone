@@ -32,7 +32,6 @@ class EventDetailViewController: UIViewController {
     
     var event = try! JSONDecoder().decode([Event].self, from: eventMock.data(using: .utf8)!).first
     var avaliableVacancies = 0
-    var date = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
