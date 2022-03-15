@@ -59,7 +59,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.layer.cornerRadius = 8
         cell?.layer.masksToBounds = true
         cell?.selectionStyle = .none
-        cell?.layer.backgroundColor = .init(red: 113, green: 95, blue: 169, alpha: 3)
+        cell?.contentView.backgroundColor = UIColor(red: 113, green: 95, blue: 169, alpha: 0.8)
         
         return cell ?? UITableViewCell()
     }

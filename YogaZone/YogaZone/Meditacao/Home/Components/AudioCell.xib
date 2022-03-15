@@ -50,7 +50,7 @@
                 <outlet property="selectButtonImage" destination="l7N-QY-feU" id="IC3-be-4Lx"/>
                 <outlet property="titleLabel" destination="0co-bQ-F61" id="b5T-Sh-CWn"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="53.571428571428569"/>
+            <point key="canvasLocation" x="-497" y="-35"/>
         </tableViewCell>
     </objects>
 </document>
