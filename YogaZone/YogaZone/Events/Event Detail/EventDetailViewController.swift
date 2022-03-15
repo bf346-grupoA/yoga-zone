@@ -74,21 +74,28 @@ extension EventDetailViewController {
         let today = Date()
         
         if dateEvent < today {
+            
             self.confirmContainer.isHidden = true
             self.cancelContainer.isHidden = true
             self.editContainer.isHidden = true
             self.finalizedContainer.isHidden = false
+            
         } else if self.event?.isOwner == true {
+            
             self.confirmContainer.isHidden = true
             self.cancelContainer.isHidden = true
             self.editContainer.isHidden = false
             self.finalizedContainer.isHidden = true
+            
         } else if self.event?.isParticipating == true {
+            
             self.confirmContainer.isHidden = true
             self.cancelContainer.isHidden = false
             self.editContainer.isHidden = true
             self.finalizedContainer.isHidden = true
+            
         } else if avaliableVacancies > 0 {
+            
             self.confirmContainer.isHidden = false
             self.cancelContainer.isHidden = true
             self.editContainer.isHidden = true

@@ -34,6 +34,12 @@
 		8361F83127CD8174003629CE /* HomeEvents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8361F83027CD8174003629CE /* HomeEvents.storyboard */; };
 		8361F83327CD83CA003629CE /* HomeEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361F83227CD83CA003629CE /* HomeEventsViewController.swift */; };
 		836B500B27DFF11E003C8E5E /* EventDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B500A27DFF11E003C8E5E /* EventDetail.storyboard */; };
+		836B501127E057BB003C8E5E /* ConfirmContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B501027E057BB003C8E5E /* ConfirmContainerViewController.swift */; };
+		836B501327E05801003C8E5E /* CancelContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B501227E05801003C8E5E /* CancelContainerViewController.swift */; };
+		836B501527E0580E003C8E5E /* EditContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B501427E0580E003C8E5E /* EditContainerViewController.swift */; };
+		836B501727E0581D003C8E5E /* FinalizedContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B501627E0581D003C8E5E /* FinalizedContainerViewController.swift */; };
+		83CC89F927E05EB5005F391A /* EditEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC89F727E05EB5005F391A /* EditEventDetailViewController.swift */; };
+		83CC89FA27E05EB5005F391A /* EditEventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83CC89F827E05EB5005F391A /* EditEventDetailViewController.xib */; };
 		83F53C1327CE699000ABCEE9 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F53C1227CE699000ABCEE9 /* EventListViewController.swift */; };
 		83F53C1527CE699000ABCEE9 /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F53C1427CE699000ABCEE9 /* EventMapViewController.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +74,12 @@
 		8361F83027CD8174003629CE /* HomeEvents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeEvents.storyboard; sourceTree = "<group>"; };
 		8361F83227CD83CA003629CE /* HomeEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventsViewController.swift; sourceTree = "<group>"; };
 		836B500A27DFF11E003C8E5E /* EventDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventDetail.storyboard; sourceTree = "<group>"; };
+		836B501027E057BB003C8E5E /* ConfirmContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmContainerViewController.swift; sourceTree = "<group>"; };
+		836B501227E05801003C8E5E /* CancelContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelContainerViewController.swift; sourceTree = "<group>"; };
+		836B501427E0580E003C8E5E /* EditContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContainerViewController.swift; sourceTree = "<group>"; };
+		836B501627E0581D003C8E5E /* FinalizedContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizedContainerViewController.swift; sourceTree = "<group>"; };
+		83CC89F727E05EB5005F391A /* EditEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventDetailViewController.swift; sourceTree = "<group>"; };
+		83CC89F827E05EB5005F391A /* EditEventDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditEventDetailViewController.xib; sourceTree = "<group>"; };
 		83F53C1227CE699000ABCEE9 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		83F53C1427CE699000ABCEE9 /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,30 +169,28 @@
 			children = (
 				8346713827DD27B50082C84E /* Model */,
 				8346713527DD27790082C84E /* Mock */,
-				8302F14927C46BE2003CE838 /* EventsHome */,
-				8302F14A27C46BE2003CE838 /* CreateNewEvent */,
-				8302F14B27C46BE2003CE838 /* EventDetail */,
+				8302F14927C46BE2003CE838 /* Events Home */,
+				8302F14A27C46BE2003CE838 /* Create New Event */,
+				8302F14B27C46BE2003CE838 /* Event Detail */,
 			);
 			path = Events;
 			sourceTree = "<group>";
 		};
-		8302F14927C46BE2003CE838 /* EventsHome */ = {
+		8302F14927C46BE2003CE838 /* Events Home */ = {
 			isa = PBXGroup;
 			children = (
+				836B500D27E04A31003C8E5E /* Filter Modal */,
+				836B500C27E049FC003C8E5E /* Home Containers */,
 				8346713427DCECA00082C84E /* Cell */,
 				83130FEC27CD7AE200D62CA5 /* MockAppHomeViewController.swift */,
 				83130FED27CD7AE200D62CA5 /* MockAppHomeViewController.xib */,
 				8361F83227CD83CA003629CE /* HomeEventsViewController.swift */,
 				8361F83027CD8174003629CE /* HomeEvents.storyboard */,
-				83F53C1227CE699000ABCEE9 /* EventListViewController.swift */,
-				83F53C1427CE699000ABCEE9 /* EventMapViewController.swift */,
-				834E5E1E27D41D8C00A0466C /* EventFilterViewController.swift */,
-				834E5E1F27D41D8C00A0466C /* EventFilterViewController.xib */,
 			);
-			path = EventsHome;
+			path = "Events Home";
 			sourceTree = "<group>";
 		};
-		8302F14A27C46BE2003CE838 /* CreateNewEvent */ = {
+		8302F14A27C46BE2003CE838 /* Create New Event */ = {
 			isa = PBXGroup;
 			children = (
 				8302F14C27C46BE2003CE838 /* CreateNewEventViewController.swift */,
@@ -188,16 +198,18 @@
 				8302F15027C58E73003CE838 /* EventCreatedSuccessViewController.swift */,
 				8302F15127C58E73003CE838 /* EventCreatedSuccessViewController.xib */,
 			);
-			path = CreateNewEvent;
+			path = "Create New Event";
 			sourceTree = "<group>";
 		};
-		8302F14B27C46BE2003CE838 /* EventDetail */ = {
+		8302F14B27C46BE2003CE838 /* Event Detail */ = {
 			isa = PBXGroup;
 			children = (
+				83CC89F627E05E31005F391A /* Edit Event */,
+				836B500E27E04A58003C8E5E /* Detail Containers */,
 				830478A027C9A8990081CCA3 /* EventDetailViewController.swift */,
 				836B500A27DFF11E003C8E5E /* EventDetail.storyboard */,
 			);
-			path = EventDetail;
+			path = "Event Detail";
 			sourceTree = "<group>";
 		};
 		8346713427DCECA00082C84E /* Cell */ = {
@@ -223,6 +235,44 @@
 				8346713927DD27CE0082C84E /* Event.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		836B500C27E049FC003C8E5E /* Home Containers */ = {
+			isa = PBXGroup;
+			children = (
+				83F53C1227CE699000ABCEE9 /* EventListViewController.swift */,
+				83F53C1427CE699000ABCEE9 /* EventMapViewController.swift */,
+			);
+			path = "Home Containers";
+			sourceTree = "<group>";
+		};
+		836B500D27E04A31003C8E5E /* Filter Modal */ = {
+			isa = PBXGroup;
+			children = (
+				834E5E1E27D41D8C00A0466C /* EventFilterViewController.swift */,
+				834E5E1F27D41D8C00A0466C /* EventFilterViewController.xib */,
+			);
+			path = "Filter Modal";
+			sourceTree = "<group>";
+		};
+		836B500E27E04A58003C8E5E /* Detail Containers */ = {
+			isa = PBXGroup;
+			children = (
+				836B501027E057BB003C8E5E /* ConfirmContainerViewController.swift */,
+				836B501227E05801003C8E5E /* CancelContainerViewController.swift */,
+				836B501427E0580E003C8E5E /* EditContainerViewController.swift */,
+				836B501627E0581D003C8E5E /* FinalizedContainerViewController.swift */,
+			);
+			path = "Detail Containers";
+			sourceTree = "<group>";
+		};
+		83CC89F627E05E31005F391A /* Edit Event */ = {
+			isa = PBXGroup;
+			children = (
+				83CC89F727E05EB5005F391A /* EditEventDetailViewController.swift */,
+				83CC89F827E05EB5005F391A /* EditEventDetailViewController.xib */,
+			);
+			path = "Edit Event";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83130FEF27CD7AE200D62CA5 /* MockAppHomeViewController.xib in Resources */,
+				83CC89FA27E05EB5005F391A /* EditEventDetailViewController.xib in Resources */,
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				831125A927CE6B4B00EC58D8 /* EventCell.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
@@ -306,6 +357,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8302F15227C58E73003CE838 /* EventCreatedSuccessViewController.swift in Sources */,
+				836B501127E057BB003C8E5E /* ConfirmContainerViewController.swift in Sources */,
+				836B501727E0581D003C8E5E /* FinalizedContainerViewController.swift in Sources */,
+				836B501327E05801003C8E5E /* CancelContainerViewController.swift in Sources */,
+				83CC89F927E05EB5005F391A /* EditEventDetailViewController.swift in Sources */,
 				83F53C1327CE699000ABCEE9 /* EventListViewController.swift in Sources */,
 				830478A227C9A89A0081CCA3 /* EventDetailViewController.swift in Sources */,
 				8302F14E27C46BE2003CE838 /* CreateNewEventViewController.swift in Sources */,
@@ -319,6 +374,7 @@
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				83130FEE27CD7AE200D62CA5 /* MockAppHomeViewController.swift in Sources */,
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
+				836B501527E0580E003C8E5E /* EditContainerViewController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,

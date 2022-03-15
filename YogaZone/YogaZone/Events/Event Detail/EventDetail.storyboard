@@ -303,10 +303,10 @@ Previsão de término as 21:30.</string>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="63.616071428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm Container View Controller-->
         <scene sceneID="XkN-Hm-So8">
             <objects>
-                <viewController id="12E-yo-kHL" sceneMemberID="viewController">
+                <viewController id="12E-yo-kHL" customClass="ConfirmContainerViewController" customModule="YogaZone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="osi-gV-IWy">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,8 +319,12 @@ Previsão de término as 21:30.</string>
                                     <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                     <color key="baseBackgroundColor" red="0.3002334237" green="0.6619409919" blue="0.32870206239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="confirmButtonTapped:" destination="12E-yo-kHL" eventType="touchUpInside" id="TxK-Aw-PHp"/>
+                                </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="cvn-G7-8bL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="W0A-Up-eoF" firstAttribute="top" secondItem="osi-gV-IWy" secondAttribute="top" id="QDj-W9-fcV"/>
@@ -329,15 +333,18 @@ Previsão de término as 21:30.</string>
                             <constraint firstAttribute="trailing" secondItem="W0A-Up-eoF" secondAttribute="trailing" id="r5B-FB-Psl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="W0A-Up-eoF" id="DDW-gH-jjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nka-mR-yTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="100" y="536"/>
         </scene>
-        <!--View Controller-->
+        <!--Cancel Container View Controller-->
         <scene sceneID="XXM-sj-cv7">
             <objects>
-                <viewController id="Ssu-JN-Hux" sceneMemberID="viewController">
+                <viewController id="Ssu-JN-Hux" customClass="CancelContainerViewController" customModule="YogaZone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yT7-tz-L34">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -350,8 +357,12 @@ Previsão de término as 21:30.</string>
                                     <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                     <color key="baseBackgroundColor" red="0.83166521790000003" green="0.13453733919999999" blue="0.13380703329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="Ssu-JN-Hux" eventType="touchUpInside" id="LX2-rJ-jrR"/>
+                                </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="8ey-eY-jVa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="tI6-uL-o98" secondAttribute="bottom" id="7oh-YR-I9r"/>
@@ -360,15 +371,18 @@ Previsão de término as 21:30.</string>
                             <constraint firstItem="tI6-uL-o98" firstAttribute="top" secondItem="yT7-tz-L34" secondAttribute="top" id="rVM-gY-ClG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="tI6-uL-o98" id="gzt-Q5-FjB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OiL-gu-U25" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="48"/>
+            <point key="canvasLocation" x="870" y="202"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Container View Controller-->
         <scene sceneID="xbv-Bb-5dI">
             <objects>
-                <viewController id="iIY-zN-ikn" sceneMemberID="viewController">
+                <viewController id="iIY-zN-ikn" customClass="EditContainerViewController" customModule="YogaZone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aKL-Rr-XFm">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,8 +395,12 @@ Previsão de término as 21:30.</string>
                                     <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                     <color key="baseBackgroundColor" red="0.85846430060000001" green="0.50492221120000003" blue="0.25515305999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="editButtonTapped:" destination="iIY-zN-ikn" eventType="touchUpInside" id="ksW-hP-eFF"/>
+                                </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="XtG-il-Nnp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pB6-KB-4dT" firstAttribute="top" secondItem="aKL-Rr-XFm" secondAttribute="top" id="11f-S0-3EC"/>
@@ -391,36 +409,47 @@ Previsão de término as 21:30.</string>
                             <constraint firstAttribute="trailing" secondItem="pB6-KB-4dT" secondAttribute="trailing" id="iTF-1E-j9a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="editButton" destination="pB6-KB-4dT" id="MUK-dn-NQq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0O-JP-dpV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="723" y="536"/>
         </scene>
-        <!--View Controller-->
+        <!--Finalized Container View Controller-->
         <scene sceneID="bc3-o8-paG">
             <objects>
-                <viewController id="Aqn-wx-HmW" sceneMemberID="viewController">
+                <viewController id="Aqn-wx-HmW" customClass="FinalizedContainerViewController" customModule="YogaZone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBL-mp-5ZQ">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento Finalizado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xx-oW-rKq" userLabel="Finalized">
-                                <rect key="frame" x="110.5" y="14.5" width="133" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento Finalizado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xx-oW-rKq" userLabel="Finalized">
+                                <rect key="frame" x="102" y="12.5" width="150" height="25"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.76078431369999999" blue="0.76078431369999999" alpha="0.50475993377483441" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="78U-xb-WqT"/>
+                                    <constraint firstAttribute="width" constant="150" id="ZAB-Ig-6Tc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.83166521790000003" green="0.13453733919999999" blue="0.13380703329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.7843137255" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="g0W-u4-m8P"/>
                         <constraints>
-                            <constraint firstItem="2xx-oW-rKq" firstAttribute="centerY" secondItem="sBL-mp-5ZQ" secondAttribute="centerY" id="WRf-MI-fzW"/>
-                            <constraint firstItem="2xx-oW-rKq" firstAttribute="centerX" secondItem="sBL-mp-5ZQ" secondAttribute="centerX" id="iTZ-T1-GkO"/>
+                            <constraint firstItem="2xx-oW-rKq" firstAttribute="centerY" secondItem="sBL-mp-5ZQ" secondAttribute="centerY" id="I7h-vN-Ui7"/>
+                            <constraint firstItem="2xx-oW-rKq" firstAttribute="centerX" secondItem="sBL-mp-5ZQ" secondAttribute="centerX" id="SaY-lK-peh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="finalizedLabel" destination="2xx-oW-rKq" id="e9d-Un-GPP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZhD-dy-EZ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="198"/>
+            <point key="canvasLocation" x="871" y="48"/>
         </scene>
     </scenes>
     <resources>
