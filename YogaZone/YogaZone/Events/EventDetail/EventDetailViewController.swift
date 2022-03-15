@@ -9,6 +9,11 @@ import UIKit
 
 class EventDetailViewController: UIViewController {
     
+    @IBOutlet weak var confirmContainer: UIView!
+    @IBOutlet weak var cancelContainer: UIView!
+    @IBOutlet weak var editContainer: UIView!
+    @IBOutlet weak var finalizedContainer: UIView!
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var eventNameLabel: UILabel!
@@ -24,13 +29,15 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var availableVacanciesLabel: UILabel!
     @IBOutlet weak var eventAvailableVacanciesLabel: UILabel!
-    @IBOutlet weak var confirmParticipationButton: UIButton!
     
     var event = try! JSONDecoder().decode([Event].self, from: eventMock.data(using: .utf8)!).first
+    var avaliableVacancies = 0
+    var date = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        configureContainerView()
     }
     
 }
@@ -46,7 +53,6 @@ extension EventDetailViewController {
         self.localLabel.text = "Local"
         self.descriptionLabel.text = "Descrição"
         self.availableVacanciesLabel.text = "Vagas disponíveis"
-        self.confirmParticipationButton.setTitle("Confirmar Participação", for: .normal)
         
         self.eventNameLabel.text = self.event?.title
         self.eventDateLabel.text = self.event?.date
@@ -54,7 +60,40 @@ extension EventDetailViewController {
         self.eventNumberOfParticipantsLabel.text = String(self.event?.numberOfParticipants ?? 0)
         self.eventLocalLabel.text = self.event?.local
         self.descriptionTextView.text = self.event?.description
-        self.eventAvailableVacanciesLabel.text = String( (self.event?.maximumOfParticipants ?? 0) - (self.event?.numberOfParticipants ?? 0) )
+        self.avaliableVacancies = (self.event?.maximumOfParticipants ?? 0) - (self.event?.numberOfParticipants ?? 0)
+        self.eventAvailableVacanciesLabel.text = String(avaliableVacancies)
+        
+    }
+    
+    func configureContainerView() {
+    
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let dateString = self.event?.date ?? ""
+        let dateEvent = dateFormatter.date(from: dateString) ?? Date()
+        let today = Date()
+        
+        if dateEvent < today {
+            self.confirmContainer.isHidden = true
+            self.cancelContainer.isHidden = true
+            self.editContainer.isHidden = true
+            self.finalizedContainer.isHidden = false
+        } else if self.event?.isOwner == true {
+            self.confirmContainer.isHidden = true
+            self.cancelContainer.isHidden = true
+            self.editContainer.isHidden = false
+            self.finalizedContainer.isHidden = true
+        } else if self.event?.isParticipating == true {
+            self.confirmContainer.isHidden = true
+            self.cancelContainer.isHidden = false
+            self.editContainer.isHidden = true
+            self.finalizedContainer.isHidden = true
+        } else if avaliableVacancies > 0 {
+            self.confirmContainer.isHidden = false
+            self.cancelContainer.isHidden = true
+            self.editContainer.isHidden = true
+            self.finalizedContainer.isHidden = true
+        }
         
     }
     

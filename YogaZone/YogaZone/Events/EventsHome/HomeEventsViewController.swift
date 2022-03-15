@@ -15,6 +15,8 @@ class HomeEventsViewController: UIViewController{
     @IBOutlet weak var containerListView: UIView!
     @IBOutlet weak var containerMapView: UIView!
     
+    var containerViewController: EventListViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -29,14 +31,6 @@ class HomeEventsViewController: UIViewController{
     @IBAction func createEventButtonTapped(_ sender: UIButton) {
         let vc = CreateNewEventViewController()
         navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    //Acessando os dados que estão dentro do viewcontroler, que estão dentro do Container View na home
-    var containerViewController: EventListViewController?
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToEventList" {
-            containerViewController = segue.destination as? EventListViewController
-        }
     }
     
     @IBAction func didTapSegment(segment: UISegmentedControl){
@@ -72,6 +66,17 @@ extension HomeEventsViewController {
         self.optionsControl.setTitle("Lista", forSegmentAt: 0)
         self.optionsControl.setTitle("Mapa", forSegmentAt: 1)
         self.optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
+    }
+    
+}
+
+// MARK: Container View Segue
+extension HomeEventsViewController {
+    //Acessando os dados que estão dentro do viewcontroler, que estão dentro do Container View na home
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToEventList" {
+            containerViewController = segue.destination as? EventListViewController
+        }
     }
     
 }

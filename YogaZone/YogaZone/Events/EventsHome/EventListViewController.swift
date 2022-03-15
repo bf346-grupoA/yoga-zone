@@ -55,9 +55,13 @@ extension EventListViewController:UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
-        let vc = EventDetailViewController()
-        vc.event = eventData[indexPath.row]
-        navigationController?.pushViewController(vc, animated: true)
+        
+        let storyboard = UIStoryboard(name: "EventDetail", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "EventDetailViewController") as?  EventDetailViewController
+        
+        vc?.event = eventData[indexPath.row]
+        
+        navigationController?.pushViewController(vc ?? EventDetailViewController(), animated: true)
     }
     
 }
