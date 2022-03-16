@@ -121,6 +121,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				31FE9FFA27DED6FB002D3713 /* New Group */,
 				319BBBCB27DA7771000DF0F4 /* Fonts */,
 				3126834D27C15FE7003F017B /* IMC */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
@@ -226,6 +227,13 @@
 				319BBBD527DA77B8000DF0F4 /* Montserrat-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		31FE9FFA27DED6FB002D3713 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
