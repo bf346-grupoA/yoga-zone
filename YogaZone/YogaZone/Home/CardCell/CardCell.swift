@@ -2,9 +2,11 @@ import UIKit
 
 class CardCell: UICollectionViewCell {
     static let identifier: String = "ColorCubeCell"
+    var destination: UIViewController? = nil
+    var navController: UINavigationController? = nil
     
-    public var imageView: UIImageView = {
-       let imageView = UIImageView()
+    var imageView: UIImageView = {
+        let imageView = UIImageView()
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleToFill
         
@@ -27,10 +29,26 @@ class CardCell: UICollectionViewCell {
         imageView.layer.cornerRadius = 9
     }
     
-    func setupCell(imageName: String) {
+    func setupCell(imageName: String, destination: UIViewController) {
+        self.destination = destination
+        self.navController = UINavigationController(rootViewController: destination)
         imageView.image = UIImage(named: imageName)
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onTap))
+        imageView.addGestureRecognizer(tapGesture)
+        imageView.isUserInteractionEnabled = true
+        
+        
         self.contentView.clipsToBounds = true
     }
     
+    @objc func onTap() {
+        self.navigateTo()
+    }
+    
+    func navigateTo() {
+        self.navController?.pushViewController(self.destination ?? UIViewController(), animated: true)
+    }
     
 }

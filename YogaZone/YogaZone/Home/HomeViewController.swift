@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     private let categoryHeaderId = "categoryHeaderId"
     private let headerId = "headerId"
-    
+
     
     lazy var headerView = HomeHeader()
     
@@ -33,7 +33,6 @@ class HomeViewController: UIViewController {
             collectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
 
         ])
-        
     }
 }
 
@@ -66,6 +65,7 @@ extension HomeViewController {
     
     
 }
+
 
 // MARK: Section Builders
 extension HomeViewController {
@@ -169,26 +169,17 @@ extension HomeViewController {
     }
 }
 
+
 // MARK: DataSource and Delegate
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: CardCell.identifier, for: indexPath) as? CardCell
         
-        if (indexPath.section == 0) {
-            switch indexPath.row {
-                case 0: cell?.setupCell(imageName: "poses")
-                case 1: cell?.setupCell(imageName: "imc")
-                default: cell?.setupCell(imageName: "respiracao")
-            }
-        } else if(indexPath.section == 1) {
-            switch indexPath.row {
-                case 0: cell?.setupCell(imageName: "meditacao")
-                default: cell?.setupCell(imageName: "treinos")
-            }
-        } else {
-            cell?.setupCell(imageName: "eventos")
-        }
+        let image = Router.getImageName(indexPath: indexPath)
+        let destination = Router.getDestination(indexPath: indexPath)
         
+        cell?.setupCell(imageName: image, destination: destination)
+                
         return cell ?? UICollectionViewCell()
     }
     
