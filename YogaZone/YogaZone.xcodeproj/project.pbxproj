@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312612C827E299AC00090F7A /* telaaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312612C627E299AC00090F7A /* telaaLoginViewController.swift */; };
+		312612C927E299AC00090F7A /* telaaLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312612C727E299AC00090F7A /* telaaLoginViewController.xib */; };
+		312612CE27E29AD000090F7A /* novaSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312612CC27E29AD000090F7A /* novaSenhaViewController.swift */; };
+		312612CF27E29AD000090F7A /* novaSenhaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312612CD27E29AD000090F7A /* novaSenhaViewController.xib */; };
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312612C627E299AC00090F7A /* telaaLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telaaLoginViewController.swift; sourceTree = "<group>"; };
+		312612C727E299AC00090F7A /* telaaLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = telaaLoginViewController.xib; sourceTree = "<group>"; };
+		312612CC27E29AD000090F7A /* novaSenhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = novaSenhaViewController.swift; sourceTree = "<group>"; };
+		312612CD27E29AD000090F7A /* novaSenhaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = novaSenhaViewController.xib; sourceTree = "<group>"; };
 		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3126833B27C15ECA003F017B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312612C527E2992D00090F7A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				312612C627E299AC00090F7A /* telaaLoginViewController.swift */,
+				312612C727E299AC00090F7A /* telaaLoginViewController.xib */,
+				312612CB27E29A7300090F7A /* Nova Senha */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		312612CA27E299D200090F7A /* Fluxo Login */ = {
+			isa = PBXGroup;
+			children = (
+				312612C527E2992D00090F7A /* Login */,
+			);
+			path = "Fluxo Login";
+			sourceTree = "<group>";
+		};
+		312612CB27E29A7300090F7A /* Nova Senha */ = {
+			isa = PBXGroup;
+			children = (
+				312612CC27E29AD000090F7A /* novaSenhaViewController.swift */,
+				312612CD27E29AD000090F7A /* novaSenhaViewController.xib */,
+			);
+			path = "Nova Senha";
+			sourceTree = "<group>";
+		};
 		3126832D27C15ECA003F017B = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +108,7 @@
 				3126834227C15ECB003F017B /* Assets.xcassets */,
 				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
 				3126834727C15ECB003F017B /* Info.plist */,
+				312612CA27E299D200090F7A /* Fluxo Login */,
 			);
 			path = YogaZone;
 			sourceTree = "<group>";
@@ -175,6 +211,8 @@
 			files = (
 				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				312612CF27E29AD000090F7A /* novaSenhaViewController.xib in Resources */,
+				312612C927E299AC00090F7A /* telaaLoginViewController.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
@@ -188,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				312612C827E299AC00090F7A /* telaaLoginViewController.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				312612CE27E29AD000090F7A /* novaSenhaViewController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,

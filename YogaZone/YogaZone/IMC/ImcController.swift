@@ -17,9 +17,9 @@ class ImcController: UIViewController {
     }
 
     @IBAction func tappedCalcular(_ sender: UIButton) {
-        let vc = ResultadoController()
-        present(vc, animated: true, completion: nil)
-        
+//        let vc = ResultadoController()
+//        present(vc, animated: true, completion: nil)
+//
         
     }
     
