@@ -19,8 +19,12 @@ class InfEmailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
     @IBAction func tappedButtonSend(_ sender: Any) {
+        let vc = modalSViewController()
+        present(vc, animated: true, completion: nil)
+     
     }
     
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		31056F7D27E2B959002C001A /* InfEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31056F7B27E2B959002C001A /* InfEmailViewController.swift */; };
 		31056F7E27E2B959002C001A /* InfEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31056F7C27E2B959002C001A /* InfEmailViewController.xib */; };
+		31056F8227E3923C002C001A /* modalSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31056F8027E3923C002C001A /* modalSViewController.swift */; };
+		31056F8327E3923C002C001A /* modalSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31056F8127E3923C002C001A /* modalSViewController.xib */; };
 		312612C827E299AC00090F7A /* telaaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312612C627E299AC00090F7A /* telaaLoginViewController.swift */; };
 		312612C927E299AC00090F7A /* telaaLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312612C727E299AC00090F7A /* telaaLoginViewController.xib */; };
 		312612CE27E29AD000090F7A /* novaSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312612CC27E29AD000090F7A /* novaSenhaViewController.swift */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		31056F7B27E2B959002C001A /* InfEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfEmailViewController.swift; sourceTree = "<group>"; };
 		31056F7C27E2B959002C001A /* InfEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfEmailViewController.xib; sourceTree = "<group>"; };
+		31056F8027E3923C002C001A /* modalSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modalSViewController.swift; sourceTree = "<group>"; };
+		31056F8127E3923C002C001A /* modalSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = modalSViewController.xib; sourceTree = "<group>"; };
 		312612C627E299AC00090F7A /* telaaLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telaaLoginViewController.swift; sourceTree = "<group>"; };
 		312612C727E299AC00090F7A /* telaaLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = telaaLoginViewController.xib; sourceTree = "<group>"; };
 		312612CC27E29AD000090F7A /* novaSenhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = novaSenhaViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,15 @@
 			path = InformarEmail;
 			sourceTree = "<group>";
 		};
+		31056F7F27E2D8B4002C001A /* modal Sucesso */ = {
+			isa = PBXGroup;
+			children = (
+				31056F8027E3923C002C001A /* modalSViewController.swift */,
+				31056F8127E3923C002C001A /* modalSViewController.xib */,
+			);
+			path = "modal Sucesso";
+			sourceTree = "<group>";
+		};
 		312612C527E2992D00090F7A /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +93,7 @@
 		312612CA27E299D200090F7A /* Fluxo Login */ = {
 			isa = PBXGroup;
 			children = (
+				31056F7F27E2D8B4002C001A /* modal Sucesso */,
 				31056F7A27E2B93A002C001A /* InformarEmail */,
 				312612C527E2992D00090F7A /* Login */,
 				312612CB27E29A7300090F7A /* Nova Senha */,
@@ -231,6 +245,7 @@
 				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
 				31056F7E27E2B959002C001A /* InfEmailViewController.xib in Resources */,
+				31056F8327E3923C002C001A /* modalSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +264,7 @@
 				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				3126835027C16056003F017B /* ImcController.swift in Sources */,
+				31056F8227E3923C002C001A /* modalSViewController.swift in Sources */,
 				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

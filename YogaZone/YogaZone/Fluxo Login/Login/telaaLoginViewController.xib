@@ -108,6 +108,12 @@
                         <action selector="tappedJoin:" destination="-1" eventType="touchUpInside" id="UL9-ly-0Xg"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo google" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-Qi-EgF">
+                    <rect key="frame" x="106" y="492" width="24" height="24"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLogoFacebook" translatesAutoresizingMaskIntoConstraints="NO" id="fs2-SM-8vX">
+                    <rect key="frame" x="77" y="552" width="53" height="50"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,9 +124,11 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="08n-Ci-2Qe" secondAttribute="trailing" constant="20" id="3gp-ld-7mO"/>
                 <constraint firstItem="5u5-es-exO" firstAttribute="top" secondItem="gTy-HQ-9os" secondAttribute="bottom" constant="30" id="3p0-8W-PJW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5u5-es-exO" secondAttribute="trailing" constant="100" id="7At-T3-3A1"/>
+                <constraint firstItem="fs2-SM-8vX" firstAttribute="top" secondItem="TGe-u0-XKz" secondAttribute="bottom" constant="26.329999999999998" id="AV5-pz-S6G"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nXg-bB-wiz" secondAttribute="bottom" constant="40" id="B5z-HQ-v3O"/>
                 <constraint firstItem="5u5-es-exO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="CfW-Bs-fCz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gTy-HQ-9os" secondAttribute="trailing" constant="20" id="K7i-0m-yaH"/>
+                <constraint firstItem="fs2-SM-8vX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="KOU-8a-Mfo"/>
                 <constraint firstItem="el3-gW-L1j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Mdj-jl-zFf"/>
                 <constraint firstItem="nXg-bB-wiz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P4t-Dz-g2g"/>
                 <constraint firstItem="T6o-QY-HAe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Rk0-An-eng"/>
@@ -128,10 +136,12 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T6o-QY-HAe" secondAttribute="trailing" constant="20" id="Ztc-hs-Gvf"/>
                 <constraint firstAttribute="trailing" secondItem="MnO-Vt-GlD" secondAttribute="trailing" constant="20" id="cn3-ZV-6gw"/>
                 <constraint firstItem="TGe-u0-XKz" firstAttribute="top" secondItem="5u5-es-exO" secondAttribute="bottom" constant="30" id="czw-hz-CLN"/>
+                <constraint firstItem="dj9-Qi-EgF" firstAttribute="top" secondItem="5u5-es-exO" secondAttribute="bottom" constant="39.329999999999998" id="fsS-B5-uPj"/>
                 <constraint firstItem="TGe-u0-XKz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gdb-l7-2xs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9nD-7o-97I" secondAttribute="trailing" constant="20" id="ho2-8T-MQV"/>
                 <constraint firstItem="9nD-7o-97I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qnm-YD-thQ"/>
                 <constraint firstItem="T6o-QY-HAe" firstAttribute="top" secondItem="el3-gW-L1j" secondAttribute="bottom" constant="25" id="rrM-1e-feI"/>
+                <constraint firstItem="dj9-Qi-EgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="106" id="t0E-9h-FYV"/>
                 <constraint firstItem="gTy-HQ-9os" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uiH-Pd-4Ge"/>
                 <constraint firstItem="gTy-HQ-9os" firstAttribute="top" secondItem="MnO-Vt-GlD" secondAttribute="bottom" constant="15" id="vth-cd-2ua"/>
                 <constraint firstItem="08n-Ci-2Qe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wcv-az-NTE"/>
@@ -144,6 +154,8 @@
     </objects>
     <resources>
         <image name="Logo" width="388" height="151"/>
+        <image name="imgLogoFacebook" width="53" height="50"/>
+        <image name="logo google" width="24" height="24"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

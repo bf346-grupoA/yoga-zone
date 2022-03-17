@@ -44,7 +44,7 @@ class telaaLoginViewController: UIViewController {
     }
     
     @IBAction func tappedForgotPassword(_ sender: Any) {
-        let _: Void = show(novaSenhaViewController(), sender:UIViewController().self)
+        let _: Void = show(InfEmailViewController(), sender:UIViewController().self)
     }
     
     /*

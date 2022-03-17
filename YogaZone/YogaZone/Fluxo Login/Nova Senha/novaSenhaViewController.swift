@@ -37,7 +37,7 @@ class novaSenhaViewController: UIViewController {
     }
 
     @IBAction func tappedCreatedNewPassword(_ sender: Any) {
-        let _: Void = show(InfEmailViewController(), sender:UIViewController().self)
+      
     }
     
     
