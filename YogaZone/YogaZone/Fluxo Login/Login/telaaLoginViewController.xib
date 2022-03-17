@@ -56,6 +56,9 @@
                     <color key="tintColor" systemColor="labelColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Esqueceu sua senha?"/>
+                    <connections>
+                        <action selector="tappedForgotPassword:" destination="-1" eventType="touchUpInside" id="wEx-aJ-U6O"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-------- ou  --------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5u5-es-exO">
                     <rect key="frame" x="100" y="432" width="228" height="20.666666666666686"/>

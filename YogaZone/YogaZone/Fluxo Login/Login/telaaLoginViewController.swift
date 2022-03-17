@@ -21,12 +21,13 @@ class telaaLoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.buttonLogin.layer.cornerRadius = 10
         self.buttonGoogle.layer.cornerRadius = 10
         self.buttonFb.layer.cornerRadius = 10
         self.textFieldEmail.layer.cornerRadius = 10
         self.textFieldSenha.layer.cornerRadius = 10
-        self.textFieldSenha.isHidden = true
+        self.textFieldSenha.isSecureTextEntry = true
         
 
     }
@@ -42,7 +43,10 @@ class telaaLoginViewController: UIViewController {
     @IBAction func tappedJoin(_ sender: Any) {
     }
     
-
+    @IBAction func tappedForgotPassword(_ sender: Any) {
+        let _: Void = show(novaSenhaViewController(), sender:UIViewController().self)
+    }
+    
     /*
     // MARK: - Navigation
 
