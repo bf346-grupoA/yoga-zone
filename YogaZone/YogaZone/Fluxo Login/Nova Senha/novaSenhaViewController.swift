@@ -33,7 +33,7 @@ class novaSenhaViewController: UIViewController {
 //signing contracts
         self.textFieldPassword.delegate = self
         self.textFieldConfirmPass.delegate = self
-    
+    //ididid
     }
 
     @IBAction func tappedCreatedNewPassword(_ sender: Any) {
