@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5D5AAD27E3E15800B5BB97 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D5AA927E3E15800B5BB97 /* CardCell.swift */; };
+		2F5D5AAE27E3E15800B5BB97 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D5AAA27E3E15800B5BB97 /* CategoryHeaderView.swift */; };
+		2F5D5AAF27E3E15800B5BB97 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D5AAB27E3E15800B5BB97 /* HomeHeader.swift */; };
+		2F5D5AB027E3E15800B5BB97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D5AAC27E3E15800B5BB97 /* HomeViewController.swift */; };
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
-		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-		3126835027C16056003F017B /* ImcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126834E27C16056003F017B /* ImcController.swift */; };
-		3126835127C16056003F017B /* ImcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126834F27C16056003F017B /* ImcController.xib */; };
-		3126835727C167D7003F017B /* ResultadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835527C167D7003F017B /* ResultadoController.swift */; };
-		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
-		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
-		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F5D5AA927E3E15800B5BB97 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		2F5D5AAA27E3E15800B5BB97 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		2F5D5AAB27E3E15800B5BB97 /* HomeHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		2F5D5AAC27E3E15800B5BB97 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3126833B27C15ECA003F017B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3126833D27C15ECA003F017B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3126834E27C16056003F017B /* ImcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImcController.swift; sourceTree = "<group>"; };
-		3126834F27C16056003F017B /* ImcController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImcController.xib; sourceTree = "<group>"; };
-		3126835527C167D7003F017B /* ResultadoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoController.swift; sourceTree = "<group>"; };
-		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
-		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
-		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +41,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F5D5AB127E3E79B00B5BB97 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D5AAB27E3E15800B5BB97 /* HomeHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		2F5D5AB227E3E7A200B5BB97 /* CategoryHeader */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D5AAA27E3E15800B5BB97 /* CategoryHeaderView.swift */,
+			);
+			path = CategoryHeader;
+			sourceTree = "<group>";
+		};
+		2F5D5AB327E3E7D300B5BB97 /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D5AA927E3E15800B5BB97 /* CardCell.swift */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+		2FA32E2327E138480061996E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D5AB327E3E7D300B5BB97 /* CardCell */,
+				2F5D5AB227E3E7A200B5BB97 /* CategoryHeader */,
+				2F5D5AB127E3E79B00B5BB97 /* Header */,
+				2F5D5AAC27E3E15800B5BB97 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		3126832D27C15ECA003F017B = {
 			isa = PBXGroup;
 			children = (
@@ -66,53 +95,14 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
-				3126834D27C15FE7003F017B /* IMC */,
+				2FA32E2327E138480061996E /* Home */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
-				3126833D27C15ECA003F017B /* ViewController.swift */,
 				3126834227C15ECB003F017B /* Assets.xcassets */,
 				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
 				3126834727C15ECB003F017B /* Info.plist */,
 			);
 			path = YogaZone;
-			sourceTree = "<group>";
-		};
-		3126834D27C15FE7003F017B /* IMC */ = {
-			isa = PBXGroup;
-			children = (
-				3126835427C1675C003F017B /* Historico */,
-				3126835327C16727003F017B /* Resultado */,
-				3126835227C1671B003F017B /* Home */,
-				3126834E27C16056003F017B /* ImcController.swift */,
-				3126834F27C16056003F017B /* ImcController.xib */,
-			);
-			path = IMC;
-			sourceTree = "<group>";
-		};
-		3126835227C1671B003F017B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3126835327C16727003F017B /* Resultado */ = {
-			isa = PBXGroup;
-			children = (
-				3126835527C167D7003F017B /* ResultadoController.swift */,
-				3126835627C167D7003F017B /* ResultadoController.xib */,
-			);
-			name = Resultado;
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3126835427C1675C003F017B /* Historico */ = {
-			isa = PBXGroup;
-			children = (
-				3126835927C16801003F017B /* HistoricoController.swift */,
-				3126835A27C16801003F017B /* HistoricoController.xib */,
-			);
-			path = Historico;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,11 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
-				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
-				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,12 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				2F5D5AAE27E3E15800B5BB97 /* CategoryHeaderView.swift in Sources */,
+				2F5D5AAD27E3E15800B5BB97 /* CardCell.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
-				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
+				2F5D5AAF27E3E15800B5BB97 /* HomeHeader.swift in Sources */,
+				2F5D5AB027E3E15800B5BB97 /* HomeViewController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
-				3126835027C16056003F017B /* ImcController.swift in Sources */,
-				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +321,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RVDHB2VBB6;
+				DEVELOPMENT_TEAM = NXNZY6B6S6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YogaZone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -346,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = backfront.YogaZone;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.YogaZone.Home;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RVDHB2VBB6;
+				DEVELOPMENT_TEAM = NXNZY6B6S6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YogaZone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -373,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = backfront.YogaZone;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.YogaZone.Home;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
