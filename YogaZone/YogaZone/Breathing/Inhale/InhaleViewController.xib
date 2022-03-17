@@ -36,7 +36,7 @@
                         <action selector="inhaleNextButton:" destination="-1" eventType="touchUpInside" id="XYD-oI-rJa"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 segundos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ias-wd-cDU">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ias-wd-cDU">
                     <rect key="frame" x="94" y="682" width="227" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="M1g-oo-Z47"/>

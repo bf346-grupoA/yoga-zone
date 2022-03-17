@@ -19,9 +19,8 @@ class AnimationViewController: UIViewController  {
         view.layer.addSublayer(layer)
         
         player.play()
+    }
         
-   
-        }
     @IBAction func nextStartButton(_ sender: Any) {
         
         self.navigationController? .pushViewController (HomeViewController(), animated: true)

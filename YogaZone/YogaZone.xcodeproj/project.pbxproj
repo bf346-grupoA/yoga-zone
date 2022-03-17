@@ -32,6 +32,10 @@
 		5C9854AF27E13678003BD995 /* inhale.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C9854AC27E13678003BD995 /* inhale.mp4 */; };
 		5C9854B127E1368B003BD995 /* hold.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C9854B027E1368B003BD995 /* hold.mp4 */; };
 		5C98554127E193C0003BD995 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C98554027E193C0003BD995 /* ViewModel.swift */; };
+		5C98554527E3995F003BD995 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C98554327E3995F003BD995 /* TimerViewController.swift */; };
+		5C98554627E3995F003BD995 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C98554427E3995F003BD995 /* TimerViewController.xib */; };
+		5C98554A27E3D97C003BD995 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C98554827E3D97C003BD995 /* ModalViewController.swift */; };
+		5C98554B27E3D97C003BD995 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C98554927E3D97C003BD995 /* ModalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		5C9854AC27E13678003BD995 /* inhale.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = inhale.mp4; sourceTree = "<group>"; };
 		5C9854B027E1368B003BD995 /* hold.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hold.mp4; sourceTree = "<group>"; };
 		5C98554027E193C0003BD995 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5C98554327E3995F003BD995 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		5C98554427E3995F003BD995 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		5C98554827E3D97C003BD995 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		5C98554927E3D97C003BD995 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,8 @@
 		5C98547027DD614B003BD995 /* Breathing */ = {
 			isa = PBXGroup;
 			children = (
+				5C98554727E3D965003BD995 /* Modal */,
+				5C98554227E39904003BD995 /* Timer */,
 				5C98554027E193C0003BD995 /* ViewModel.swift */,
 				5C98549827E0B2B3003BD995 /* Animation */,
 				5C98549127E004A3003BD995 /* Expire */,
@@ -196,6 +206,24 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		5C98554227E39904003BD995 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				5C98554327E3995F003BD995 /* TimerViewController.swift */,
+				5C98554427E3995F003BD995 /* TimerViewController.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		5C98554727E3D965003BD995 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				5C98554827E3D97C003BD995 /* ModalViewController.swift */,
+				5C98554927E3D97C003BD995 /* ModalViewController.xib */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,9 +290,11 @@
 				5C9854AF27E13678003BD995 /* inhale.mp4 in Resources */,
 				5C98548B27DFFC45003BD995 /* InhaleViewController.xib in Resources */,
 				5C98548627DFEBA3003BD995 /* SettingsViewController.xib in Resources */,
+				5C98554627E3995F003BD995 /* TimerViewController.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				5C98547527DD617B003BD995 /* HomeViewController.xib in Resources */,
 				5C9854AD27E13678003BD995 /* start.mp4 in Resources */,
+				5C98554B27E3D97C003BD995 /* ModalViewController.xib in Resources */,
 				5C98549027E00479003BD995 /* HoldViewController.xib in Resources */,
 				5C98547827DFD32E003BD995 /* Fonts in Resources */,
 				5C98547D27DFDF12003BD995 /* StartViewController.xib in Resources */,
@@ -283,11 +313,13 @@
 				5C98549627E004E1003BD995 /* ExpireViewController.swift in Sources */,
 				5C98548A27DFFC45003BD995 /* InhaleViewController.swift in Sources */,
 				5C98547C27DFDF12003BD995 /* StartViewController.swift in Sources */,
+				5C98554A27E3D97C003BD995 /* ModalViewController.swift in Sources */,
 				5C98548F27E00479003BD995 /* HoldViewController.swift in Sources */,
 				5C98554127E193C0003BD995 /* ViewModel.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				5C98549B27E0B309003BD995 /* AnimationViewController.swift in Sources */,
 				5C98548527DFEBA3003BD995 /* SettingsViewController.swift in Sources */,
+				5C98554527E3995F003BD995 /* TimerViewController.swift in Sources */,
 				5C98547427DD617B003BD995 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

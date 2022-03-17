@@ -45,7 +45,7 @@ class SettingsViewController: UIViewController {
 
 //        let viewModel = ViewModel.getViewModel()
 ////        viewModel.self.
-        let xulambsInhale = self.sliderInhale.value * 10
+        let xulambsInhale = self.sliderInhale.value * 30
 //        print(String(format:"%0.0f", xulambs))
         
         labelSecondsIlhale.text = "\(String(format:"%0.0f", xulambsInhale)) segundos"
@@ -57,10 +57,10 @@ class SettingsViewController: UIViewController {
     }
     @IBAction func onValueHold(_ sender: Any) {
     
-        let xulambsHold = self.sliderHold.value * 10
+        let xulambsHold = self.sliderHold.value * 30
 //        print(String(format:"%0.0f", xulambs))
         
-        labelSecondsHold.text = "\(xulambsHold) segundos"
+        labelSecondsHold.text = "\(String(format:"%0.0f", xulambsHold)) segundos"
         
         
         delegate?.updatoHold(holdValue: Int((xulambsHold)))
@@ -68,10 +68,10 @@ class SettingsViewController: UIViewController {
     
     @IBAction func onValueExpire(_ sender: Any) {
         
-        let xulambsExpire = self.sliderExpire.value * 10
+        let xulambsExpire = self.sliderExpire.value * 30
 //        print(String(format:"%0.0f", xulambs))
         
-        labelSecondsExpire.text = "\(xulambsExpire) segundos"
+        labelSecondsExpire.text = "\(String(format:"%0.0f", xulambsExpire)) segundos"
         
         
         delegate?.updateExpire(expire: Int((xulambsExpire)))
@@ -82,7 +82,7 @@ class SettingsViewController: UIViewController {
         let xulambsCicle = self.sliderCicle.value * 10
 //        print(String(format:"%0.0f", xulambs))
         
-        labelSecondsCicle.text = "\(xulambsCicle) segundos"
+        labelSecondsCicle.text = "\(String(format:"%0.0f", xulambsCicle)) segundos"
         
         
         delegate?.updateCicle(cicle: Int((xulambsCicle)))

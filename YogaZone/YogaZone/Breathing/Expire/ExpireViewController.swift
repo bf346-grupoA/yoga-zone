@@ -4,6 +4,7 @@ import UIKit
 
 class ExpireViewController: UIViewController {
 
+    @IBOutlet weak var timerTestButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,5 +21,9 @@ class ExpireViewController: UIViewController {
        
             }
 
-
+    @IBAction func timerTestButtonLetsGo(_ sender: Any) {
+        self.navigationController? .pushViewController (InhaleViewController(), animated: true)
+        
+    }
+    
 }
