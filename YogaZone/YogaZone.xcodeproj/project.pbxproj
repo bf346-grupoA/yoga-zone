@@ -12,12 +12,11 @@
 		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-		3126835027C16056003F017B /* ImcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126834E27C16056003F017B /* ImcController.swift */; };
-		3126835127C16056003F017B /* ImcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126834F27C16056003F017B /* ImcController.xib */; };
-		3126835727C167D7003F017B /* ResultadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835527C167D7003F017B /* ResultadoController.swift */; };
-		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
-		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
-		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
+		79C9C6E527E2BD0E00D8678A /* MoreInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C9C6E327E2BD0E00D8678A /* MoreInfoRegisterVC.swift */; };
+		79C9C6E627E2BD0E00D8678A /* MoreInfoRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C9C6E427E2BD0E00D8678A /* MoreInfoRegisterVC.xib */; };
+		79C9C6E827E2CB5700D8678A /* RadioButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C9C6E727E2CB5700D8678A /* RadioButtonController.swift */; };
+		79C9C6EC27E2D45700D8678A /* DoneRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C9C6EA27E2D45700D8678A /* DoneRegisterVC.swift */; };
+		79C9C6ED27E2D45700D8678A /* DoneRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C9C6EB27E2D45700D8678A /* DoneRegisterVC.xib */; };
 		79EF3D7327E01FB300B402FB /* MainRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF3D7127E01FB300B402FB /* MainRegisterVC.swift */; };
 		79EF3D7427E01FB300B402FB /* MainRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EF3D7227E01FB300B402FB /* MainRegisterVC.xib */; };
 		79EF3D7827E0280F00B402FB /* CustomMainRegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF3D7627E0280F00B402FB /* CustomMainRegisterCell.swift */; };
@@ -34,12 +33,11 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3126834E27C16056003F017B /* ImcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImcController.swift; sourceTree = "<group>"; };
-		3126834F27C16056003F017B /* ImcController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImcController.xib; sourceTree = "<group>"; };
-		3126835527C167D7003F017B /* ResultadoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoController.swift; sourceTree = "<group>"; };
-		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
-		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
-		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
+		79C9C6E327E2BD0E00D8678A /* MoreInfoRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoRegisterVC.swift; sourceTree = "<group>"; };
+		79C9C6E427E2BD0E00D8678A /* MoreInfoRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreInfoRegisterVC.xib; sourceTree = "<group>"; };
+		79C9C6E727E2CB5700D8678A /* RadioButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonController.swift; sourceTree = "<group>"; };
+		79C9C6EA27E2D45700D8678A /* DoneRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneRegisterVC.swift; sourceTree = "<group>"; };
+		79C9C6EB27E2D45700D8678A /* DoneRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneRegisterVC.xib; sourceTree = "<group>"; };
 		79EF3D7127E01FB300B402FB /* MainRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRegisterVC.swift; sourceTree = "<group>"; };
 		79EF3D7227E01FB300B402FB /* MainRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainRegisterVC.xib; sourceTree = "<group>"; };
 		79EF3D7627E0280F00B402FB /* CustomMainRegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainRegisterCell.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				79EF3D6F27E01ED000B402FB /* Register */,
-				3126834D27C15FE7003F017B /* IMC */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
 				3126833D27C15ECA003F017B /* ViewController.swift */,
@@ -90,47 +87,30 @@
 			path = YogaZone;
 			sourceTree = "<group>";
 		};
-		3126834D27C15FE7003F017B /* IMC */ = {
+		79C9C6E227E2BCB600D8678A /* MoreInfoRegister */ = {
 			isa = PBXGroup;
 			children = (
-				3126835427C1675C003F017B /* Historico */,
-				3126835327C16727003F017B /* Resultado */,
-				3126835227C1671B003F017B /* Home */,
-				3126834E27C16056003F017B /* ImcController.swift */,
-				3126834F27C16056003F017B /* ImcController.xib */,
+				79C9C6E327E2BD0E00D8678A /* MoreInfoRegisterVC.swift */,
+				79C9C6E427E2BD0E00D8678A /* MoreInfoRegisterVC.xib */,
+				79C9C6E727E2CB5700D8678A /* RadioButtonController.swift */,
 			);
-			path = IMC;
+			path = MoreInfoRegister;
 			sourceTree = "<group>";
 		};
-		3126835227C1671B003F017B /* Home */ = {
+		79C9C6E927E2D43C00D8678A /* DoneRegister */ = {
 			isa = PBXGroup;
 			children = (
+				79C9C6EA27E2D45700D8678A /* DoneRegisterVC.swift */,
+				79C9C6EB27E2D45700D8678A /* DoneRegisterVC.xib */,
 			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3126835327C16727003F017B /* Resultado */ = {
-			isa = PBXGroup;
-			children = (
-				3126835527C167D7003F017B /* ResultadoController.swift */,
-				3126835627C167D7003F017B /* ResultadoController.xib */,
-			);
-			name = Resultado;
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3126835427C1675C003F017B /* Historico */ = {
-			isa = PBXGroup;
-			children = (
-				3126835927C16801003F017B /* HistoricoController.swift */,
-				3126835A27C16801003F017B /* HistoricoController.xib */,
-			);
-			path = Historico;
+			path = DoneRegister;
 			sourceTree = "<group>";
 		};
 		79EF3D6F27E01ED000B402FB /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				79C9C6E927E2D43C00D8678A /* DoneRegister */,
+				79C9C6E227E2BCB600D8678A /* MoreInfoRegister */,
 				79EF3D7A27E02B1100B402FB /* UserLevel */,
 				79EF3D7027E01F7800B402FB /* MainRegister */,
 			);
@@ -225,12 +205,11 @@
 			files = (
 				79EF3D7E27E02B4200B402FB /* UserLevelVC.xib in Resources */,
 				79EF3D7427E01FB300B402FB /* MainRegisterVC.xib in Resources */,
-				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
+				79C9C6E627E2BD0E00D8678A /* MoreInfoRegisterVC.xib in Resources */,
+				79C9C6ED27E2D45700D8678A /* DoneRegisterVC.xib in Resources */,
 				79EF3D7927E0280F00B402FB /* CustomMainRegisterCell.xib in Resources */,
-				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
-				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,15 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C9C6E527E2BD0E00D8678A /* MoreInfoRegisterVC.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
 				79EF3D7D27E02B4200B402FB /* UserLevelVC.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
-				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
+				79C9C6E827E2CB5700D8678A /* RadioButtonController.swift in Sources */,
+				79C9C6EC27E2D45700D8678A /* DoneRegisterVC.swift in Sources */,
 				79EF3D7827E0280F00B402FB /* CustomMainRegisterCell.swift in Sources */,
 				79EF3D7327E01FB300B402FB /* MainRegisterVC.swift in Sources */,
-				3126835027C16056003F017B /* ImcController.swift in Sources */,
-				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
