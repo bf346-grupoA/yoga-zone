@@ -21,7 +21,6 @@
                 <outlet property="CurrentPasswordTextField" destination="47g-QS-GLV" id="WRw-gq-tGk"/>
                 <outlet property="changePasswordTitleLabel" destination="fcw-6C-tBE" id="X12-i3-ZgT"/>
                 <outlet property="confirmNewPasswordTextField" destination="QeU-Dz-in5" id="I1I-cn-bQC"/>
-                <outlet property="forgotPasswordButton" destination="awf-8v-gkK" id="FQI-Xq-IZ7"/>
                 <outlet property="newPasswordTextField" destination="TkI-kT-3NN" id="dfB-ze-04x"/>
                 <outlet property="saveButton" destination="Mhi-L3-HM5" id="oJq-SX-b2Y"/>
                 <outlet property="tappedArrowBackToProfileImage" destination="qDt-hu-68s" id="Orr-yL-wnv"/>
@@ -48,15 +47,6 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awf-8v-gkK">
-                    <rect key="frame" x="190" y="197" width="160" height="31"/>
-                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Esqueci minha senha"/>
-                    <connections>
-                        <action selector="tappedForgotPasswordButton:" destination="-1" eventType="touchUpInside" id="len-3Q-Tp9"/>
-                    </connections>
-                </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nova senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TkI-kT-3NN">
                     <rect key="frame" x="25" y="260" width="325" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -164,7 +154,6 @@
                 <constraint firstItem="kk3-1q-HB9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="g8U-2i-R5O"/>
                 <constraint firstItem="VhQ-NZ-kWj" firstAttribute="top" secondItem="Mhi-L3-HM5" secondAttribute="bottom" constant="25" id="gM1-2U-JCl"/>
                 <constraint firstItem="47g-QS-GLV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="hYZ-iC-rHD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="awf-8v-gkK" secondAttribute="trailing" constant="25" id="i4e-pf-shu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TkI-kT-3NN" secondAttribute="trailing" constant="25" id="kgD-cq-SEi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QeU-Dz-in5" secondAttribute="trailing" constant="25" id="mVt-LM-16l"/>
                 <constraint firstItem="qDt-hu-68s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="mrn-Iy-EUW"/>
@@ -172,7 +161,6 @@
                 <constraint firstItem="43b-eL-Jil" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="pbI-5y-IKT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mhi-L3-HM5" secondAttribute="trailing" constant="70" id="rAP-xe-Oai"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="47g-QS-GLV" secondAttribute="trailing" constant="25" id="tPF-hA-7jq"/>
-                <constraint firstItem="awf-8v-gkK" firstAttribute="top" secondItem="47g-QS-GLV" secondAttribute="bottom" constant="7" id="zMu-pJ-2mP"/>
             </constraints>
             <point key="canvasLocation" x="130.40000000000001" y="99.400299850074973"/>
         </view>

@@ -12,12 +12,6 @@
 		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-		3126835027C16056003F017B /* ImcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126834E27C16056003F017B /* ImcController.swift */; };
-		3126835127C16056003F017B /* ImcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126834F27C16056003F017B /* ImcController.xib */; };
-		3126835727C167D7003F017B /* ResultadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835527C167D7003F017B /* ResultadoController.swift */; };
-		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
-		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
-		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
 		7933378127CE802F005EE0D4 /* TreinoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933377F27CE802F005EE0D4 /* TreinoCustomCell.swift */; };
 		7933378227CE802F005EE0D4 /* TreinoCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7933378027CE802F005EE0D4 /* TreinoCustomCell.xib */; };
 		793945A627D4441800D16C10 /* SairDoTreinoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793945A427D4441800D16C10 /* SairDoTreinoVC.swift */; };
@@ -67,12 +61,6 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3126834E27C16056003F017B /* ImcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImcController.swift; sourceTree = "<group>"; };
-		3126834F27C16056003F017B /* ImcController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImcController.xib; sourceTree = "<group>"; };
-		3126835527C167D7003F017B /* ResultadoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoController.swift; sourceTree = "<group>"; };
-		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
-		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
-		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
 		535009962731255A7560D1B2 /* Pods-YogaZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.release.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.release.xcconfig"; sourceTree = "<group>"; };
 		7933377F27CE802F005EE0D4 /* TreinoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCustomCell.swift; sourceTree = "<group>"; };
 		7933378027CE802F005EE0D4 /* TreinoCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoCustomCell.xib; sourceTree = "<group>"; };
@@ -162,7 +150,6 @@
 				79D3587627DD9BB0006CAF4A /* Fonts */,
 				7948B16327D6DCC500CE5074 /* Profile */,
 				79777C7627C302C900D9065D /* Exercicios */,
-				3126834D27C15FE7003F017B /* IMC */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
 				3126833D27C15ECA003F017B /* ViewController.swift */,
@@ -171,44 +158,6 @@
 				3126834727C15ECB003F017B /* Info.plist */,
 			);
 			path = YogaZone;
-			sourceTree = "<group>";
-		};
-		3126834D27C15FE7003F017B /* IMC */ = {
-			isa = PBXGroup;
-			children = (
-				3126835427C1675C003F017B /* Historico */,
-				3126835327C16727003F017B /* Resultado */,
-				3126835227C1671B003F017B /* Home */,
-			);
-			path = IMC;
-			sourceTree = "<group>";
-		};
-		3126835227C1671B003F017B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				3126834F27C16056003F017B /* ImcController.xib */,
-				3126834E27C16056003F017B /* ImcController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3126835327C16727003F017B /* Resultado */ = {
-			isa = PBXGroup;
-			children = (
-				3126835527C167D7003F017B /* ResultadoController.swift */,
-				3126835627C167D7003F017B /* ResultadoController.xib */,
-			);
-			name = Resultado;
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3126835427C1675C003F017B /* Historico */ = {
-			isa = PBXGroup;
-			children = (
-				3126835927C16801003F017B /* HistoricoController.swift */,
-				3126835A27C16801003F017B /* HistoricoController.xib */,
-			);
-			path = Historico;
 			sourceTree = "<group>";
 		};
 		7933377E27CE78C3005EE0D4 /* TreinoListagemCell */ = {
@@ -450,7 +399,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D3588527DD9C63006CAF4A /* Montserrat-ExtraLight.ttf in Resources */,
-				3126835127C16056003F017B /* ImcController.xib in Resources */,
 				7933378227CE802F005EE0D4 /* TreinoCustomCell.xib in Resources */,
 				79D3588427DD9C63006CAF4A /* Comfortaa-SemiBold.ttf in Resources */,
 				79D3588C27DD9C63006CAF4A /* Comfortaa-Light.ttf in Resources */,
@@ -471,11 +419,9 @@
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				7946EC6827CD472F00C3E161 /* TreinoFinalizadoVC.xib in Resources */,
 				79FA6EAD27D3000800503A3E /* TreinoPausadoVC.xib in Resources */,
-				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
 				79D3588927DD9C63006CAF4A /* Comfortaa-Medium.ttf in Resources */,
 				79D6DEEC27CED26900C98985 /* 01_Natarajasana.gif in Resources */,
 				79D3588B27DD9C63006CAF4A /* Montserrat-ExtraBold.ttf in Resources */,
-				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
 				7946EC6427CD015700C3E161 /* TreinoIniciadoVC.xib in Resources */,
 				79D3588327DD9C63006CAF4A /* Comfortaa-Bold.ttf in Resources */,
 				79D3588727DD9C63006CAF4A /* Montserrat-Bold.ttf in Resources */,
@@ -536,7 +482,6 @@
 				79F8B5E427D99A0100DD8897 /* MoreOptionsVC.swift in Sources */,
 				79ED5ADC27DE72490064ADEA /* DeleteAccountVC.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
-				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
 				793945A627D4441800D16C10 /* SairDoTreinoVC.swift in Sources */,
 				7946EC6327CD015700C3E161 /* TreinoIniciadoVC.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
@@ -544,12 +489,10 @@
 				7946EC6727CD472F00C3E161 /* TreinoFinalizadoVC.swift in Sources */,
 				793A3CA327C46B7C0045DC5C /* TreinoListagemController.swift in Sources */,
 				79D3587127DD359E006CAF4A /* MyProfileTableViewCell.swift in Sources */,
-				3126835027C16056003F017B /* ImcController.swift in Sources */,
 				79FA6EAC27D3000800503A3E /* TreinoPausadoVC.swift in Sources */,
 				7933378127CE802F005EE0D4 /* TreinoCustomCell.swift in Sources */,
 				79ED5AE227DE8D420064ADEA /* CustomAlertVC.swift in Sources */,
 				79777C7A27C3040600D9065D /* TreinoUmController.swift in Sources */,
-				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

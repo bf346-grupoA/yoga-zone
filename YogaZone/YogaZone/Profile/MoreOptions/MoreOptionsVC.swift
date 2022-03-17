@@ -56,9 +56,6 @@ class MoreOptionsVC: UIViewController {
     }
     
     
-    @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
-        //IR PARA TELA DE ESQUECI MINHA SENHA
-    }
     
     
     @IBAction func tappedDeleteAccountButton(_ sender: UIButton) {
