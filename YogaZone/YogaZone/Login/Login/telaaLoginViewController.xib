@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="telaaLoginViewController" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonFb" destination="08n-Ci-2Qe" id="ppg-Lx-5Z3"/>
+                <outlet property="buttonForgotPassowrd" destination="MnO-Vt-GlD" id="JRN-9O-b02"/>
+                <outlet property="buttonGoogle" destination="TGe-u0-XKz" id="CdT-jU-NCB"/>
+                <outlet property="buttonJoin" destination="nXg-bB-wiz" id="2Ry-nf-icy"/>
+                <outlet property="buttonLogin" destination="gTy-HQ-9os" id="6gp-sN-4nJ"/>
+                <outlet property="labelOr" destination="5u5-es-exO" id="CWc-qL-RGG"/>
+                <outlet property="textFieldEmail" destination="el3-gW-L1j" id="20I-WH-ddH"/>
+                <outlet property="textFieldSenha" destination="T6o-QY-HAe" id="zA0-3a-Qwg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-HQ-9os">
+                    <rect key="frame" x="20" y="359" width="388" height="43"/>
+                    <color key="backgroundColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="tip-qd-YXD"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Entrar"/>
+                    <connections>
+                        <action selector="tappedLogin:" destination="-1" eventType="touchUpInside" id="F6Z-6S-kQ4"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="el3-gW-L1j">
+                    <rect key="frame" x="20" y="205" width="388" height="34"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6o-QY-HAe">
+                    <rect key="frame" x="20" y="264" width="388" height="34"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnO-Vt-GlD">
+                    <rect key="frame" x="244" y="313" width="164" height="31"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Esqueceu sua senha?"/>
+                    <connections>
+                        <action selector="tappedForgotPassword:" destination="-1" eventType="touchUpInside" id="wEx-aJ-U6O"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-------- ou  --------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5u5-es-exO">
+                    <rect key="frame" x="100" y="432" width="228" height="20.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGe-u0-XKz">
+                    <rect key="frame" x="20" y="482.66666666666669" width="388" height="43.000000000000057"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="wpg-7o-8Mm"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Entrar com o Google"/>
+                    <connections>
+                        <action selector="tappedGoogle:" destination="-1" eventType="touchUpInside" id="tau-S7-FKF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08n-Ci-2Qe">
+                    <rect key="frame" x="20" y="555.66666666666663" width="388" height="43"/>
+                    <color key="backgroundColor" red="0.0" green="0.1632410027" blue="0.72811291879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="PPw-pI-Lrd"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Entrar com o Facebook"/>
+                    <connections>
+                        <action selector="tappedFb:" destination="-1" eventType="touchUpInside" id="hau-qD-AVN"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="9nD-7o-97I">
+                    <rect key="frame" x="20" y="54" width="388" height="151"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXg-bB-wiz">
+                    <rect key="frame" x="0.0" y="809" width="428" height="43"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="6fm-ug-sLQ"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Ainda sem conta? Cadastre-se"/>
+                    <connections>
+                        <action selector="tappedJoin:" destination="-1" eventType="touchUpInside" id="UL9-ly-0Xg"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo google" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-Qi-EgF">
+                    <rect key="frame" x="106" y="492" width="24" height="24"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLogoFacebook" translatesAutoresizingMaskIntoConstraints="NO" id="fs2-SM-8vX">
+                    <rect key="frame" x="77" y="552" width="53" height="50"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="el3-gW-L1j" firstAttribute="top" secondItem="9nD-7o-97I" secondAttribute="bottom" id="0vp-Ie-XJU"/>
+                <constraint firstItem="MnO-Vt-GlD" firstAttribute="top" secondItem="T6o-QY-HAe" secondAttribute="bottom" constant="15" id="1YC-qZ-O4c"/>
+                <constraint firstItem="9nD-7o-97I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="1sD-WO-9R7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="08n-Ci-2Qe" secondAttribute="trailing" constant="20" id="3gp-ld-7mO"/>
+                <constraint firstItem="5u5-es-exO" firstAttribute="top" secondItem="gTy-HQ-9os" secondAttribute="bottom" constant="30" id="3p0-8W-PJW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5u5-es-exO" secondAttribute="trailing" constant="100" id="7At-T3-3A1"/>
+                <constraint firstItem="fs2-SM-8vX" firstAttribute="top" secondItem="TGe-u0-XKz" secondAttribute="bottom" constant="26.329999999999998" id="AV5-pz-S6G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nXg-bB-wiz" secondAttribute="bottom" constant="40" id="B5z-HQ-v3O"/>
+                <constraint firstItem="5u5-es-exO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="CfW-Bs-fCz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gTy-HQ-9os" secondAttribute="trailing" constant="20" id="K7i-0m-yaH"/>
+                <constraint firstItem="fs2-SM-8vX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="KOU-8a-Mfo"/>
+                <constraint firstItem="el3-gW-L1j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Mdj-jl-zFf"/>
+                <constraint firstItem="nXg-bB-wiz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P4t-Dz-g2g"/>
+                <constraint firstItem="T6o-QY-HAe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Rk0-An-eng"/>
+                <constraint firstItem="nXg-bB-wiz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TKx-mK-1u8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T6o-QY-HAe" secondAttribute="trailing" constant="20" id="Ztc-hs-Gvf"/>
+                <constraint firstAttribute="trailing" secondItem="MnO-Vt-GlD" secondAttribute="trailing" constant="20" id="cn3-ZV-6gw"/>
+                <constraint firstItem="TGe-u0-XKz" firstAttribute="top" secondItem="5u5-es-exO" secondAttribute="bottom" constant="30" id="czw-hz-CLN"/>
+                <constraint firstItem="dj9-Qi-EgF" firstAttribute="top" secondItem="5u5-es-exO" secondAttribute="bottom" constant="39.329999999999998" id="fsS-B5-uPj"/>
+                <constraint firstItem="TGe-u0-XKz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gdb-l7-2xs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9nD-7o-97I" secondAttribute="trailing" constant="20" id="ho2-8T-MQV"/>
+                <constraint firstItem="9nD-7o-97I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qnm-YD-thQ"/>
+                <constraint firstItem="T6o-QY-HAe" firstAttribute="top" secondItem="el3-gW-L1j" secondAttribute="bottom" constant="25" id="rrM-1e-feI"/>
+                <constraint firstItem="dj9-Qi-EgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="106" id="t0E-9h-FYV"/>
+                <constraint firstItem="gTy-HQ-9os" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uiH-Pd-4Ge"/>
+                <constraint firstItem="gTy-HQ-9os" firstAttribute="top" secondItem="MnO-Vt-GlD" secondAttribute="bottom" constant="15" id="vth-cd-2ua"/>
+                <constraint firstItem="08n-Ci-2Qe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wcv-az-NTE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="el3-gW-L1j" secondAttribute="trailing" constant="20" id="zLv-Tk-fgf"/>
+                <constraint firstItem="08n-Ci-2Qe" firstAttribute="top" secondItem="TGe-u0-XKz" secondAttribute="bottom" constant="30" id="zby-rD-GDT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TGe-u0-XKz" secondAttribute="trailing" constant="20" id="ztk-Tf-ea9"/>
+            </constraints>
+            <point key="canvasLocation" x="131.77570093457942" y="99.136069114470843"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="388" height="151"/>
+        <image name="imgLogoFacebook" width="53" height="50"/>
+        <image name="logo google" width="24" height="24"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
