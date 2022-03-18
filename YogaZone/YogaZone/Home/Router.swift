@@ -60,4 +60,21 @@ class Router {
         
         return routes[selectedSection?[indexPath.row] ?? 0] ?? HomeViewController()
     }
+    
+    static func getDestinationIndex(indexPath: IndexPath) -> Int {
+        let selectedSection = sections[indexPath.section]
+        
+        return selectedSection?[indexPath.row] ?? 0
+    }
+    
+    static func getDestinationByIndex(index: Int) -> UIViewController {
+        switch index {
+            case 1: return PoseGalleryViewController()
+            case 2: return ImcController()
+            case 3: return BreathingHomeViewController()
+            case 4: return MeditacaoHomeViewController()
+            case 5: return MeditacaoHomeViewController()
+            default: return HomeEventsViewController()
+        }
+    }
 }

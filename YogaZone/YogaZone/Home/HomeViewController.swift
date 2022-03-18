@@ -11,9 +11,7 @@ class HomeViewController: UIViewController {
     private let categoryHeaderId = "categoryHeaderId"
     private let headerId = "headerId"
 
-    
     lazy var headerView = HomeHeader()
-    
     lazy var collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
     
     override func viewDidLoad() {
@@ -21,7 +19,6 @@ class HomeViewController: UIViewController {
         setupCollectionView()
         setupConstraints()
     }
-    
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
@@ -50,7 +47,6 @@ extension HomeViewController {
         self.view.addSubview(self.collectionView)
     }
     
-
     private func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
         
         return UICollectionViewCompositionalLayout { (sectionNumber, env) -> NSCollectionLayoutSection? in
@@ -62,8 +58,6 @@ extension HomeViewController {
             }
         }
     }
-    
-    
 }
 
 
@@ -176,9 +170,11 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: CardCell.identifier, for: indexPath) as? CardCell
         
         let image = Router.getImageName(indexPath: indexPath)
-        let destination = Router.getDestination(indexPath: indexPath)
+        //let destination = Router.getDestination(indexPath: indexPath)
+        let destinationIndex = Router.getDestinationIndex(indexPath: indexPath)
+        cell?.delegate = self
         
-        cell?.setupCell(imageName: image, destination: destination)
+        cell?.setupCell(imageName: image, destinationIndex: destinationIndex)
                 
         return cell ?? UICollectionViewCell()
     }
@@ -204,6 +200,19 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
                 return 2
             default:
                 return 1
+        }
+    }
+}
+
+extension HomeViewController: Selectable {
+    func navigateTo(routeIndex: Int) {
+        switch routeIndex {
+            case 1: self.navigationController?.pushViewController(PoseGalleryViewController(), animated: true)
+            case 2: self.navigationController?.pushViewController(ImcController(), animated: true)
+            case 3: self.navigationController?.pushViewController(BreathingHomeViewController(), animated: true)
+            case 4: self.navigationController?.pushViewController(MeditacaoHomeViewController(), animated: true)
+            case 5: self.navigationController?.pushViewController(MeditacaoHomeViewController(), animated: true)
+            default: self.navigationController?.pushViewController(HomeEventsViewController(), animated: true)
         }
     }
 }

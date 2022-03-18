@@ -92,6 +92,7 @@
 		2F0C343727E43954004A1E8C /* hold.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343227E43954004A1E8C /* hold.mp4 */; };
 		2F0C343827E43954004A1E8C /* expire.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343327E43954004A1E8C /* expire.mp4 */; };
 		2F0C343927E43954004A1E8C /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343427E43954004A1E8C /* intro.mp4 */; };
+		2F0C343C27E53336004A1E8C /* Selectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C343B27E53336004A1E8C /* Selectable.swift */; };
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
 		2F412EB727E4101E007708E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* HomeViewController.swift */; };
 		2F412EB827E4101E007708E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB127E4101E007708E8 /* Router.swift */; };
@@ -246,6 +247,7 @@
 		2F0C343227E43954004A1E8C /* hold.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hold.mp4; sourceTree = "<group>"; };
 		2F0C343327E43954004A1E8C /* expire.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = expire.mp4; sourceTree = "<group>"; };
 		2F0C343427E43954004A1E8C /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
+		2F0C343B27E53336004A1E8C /* Selectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectable.swift; sourceTree = "<group>"; };
 		2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		2F412EB027E4101E007708E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2F412EB127E4101E007708E8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -759,9 +761,18 @@
 			path = Animations;
 			sourceTree = SOURCE_ROOT;
 		};
+		2F0C343A27E5330C004A1E8C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C343B27E53336004A1E8C /* Selectable.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		2F412EAD27E4101E007708E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2F0C343A27E5330C004A1E8C /* Delegates */,
 				2F412EAE27E4101E007708E8 /* CategoryHeader */,
 				2F412EB027E4101E007708E8 /* HomeViewController.swift */,
 				2F412EB127E4101E007708E8 /* Router.swift */,
@@ -1212,6 +1223,7 @@
 				2F79E15E27DD0DB60070397F /* ModalVideoViewController.swift in Sources */,
 				2F036F8D27E429D800993E41 /* AlertService.swift in Sources */,
 				2F036F8227E429D800993E41 /* CreateNewEventViewController.swift in Sources */,
+				2F0C343C27E53336004A1E8C /* Selectable.swift in Sources */,
 				2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */,
 				2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */,
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
