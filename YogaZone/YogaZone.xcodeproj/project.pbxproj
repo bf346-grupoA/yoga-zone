@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31056F7D27E2B959002C001A /* InfEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31056F7B27E2B959002C001A /* InfEmailViewController.swift */; };
+		31056F7E27E2B959002C001A /* InfEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31056F7C27E2B959002C001A /* InfEmailViewController.xib */; };
+		31056F8227E3923C002C001A /* ModalSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31056F8027E3923C002C001A /* ModalSViewController.swift */; };
+		31056F8327E3923C002C001A /* ModalSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31056F8127E3923C002C001A /* ModalSViewController.xib */; };
+		312612C827E299AC00090F7A /* telaaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312612C627E299AC00090F7A /* telaaLoginViewController.swift */; };
+		312612C927E299AC00090F7A /* telaaLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312612C727E299AC00090F7A /* telaaLoginViewController.xib */; };
+		312612CE27E29AD000090F7A /* novaSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312612CC27E29AD000090F7A /* novaSenhaViewController.swift */; };
+		312612CF27E29AD000090F7A /* novaSenhaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312612CD27E29AD000090F7A /* novaSenhaViewController.xib */; };
 		2F036F7727E429D800993E41 /* EventFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F5327E429D800993E41 /* EventFilterViewController.swift */; };
 		2F036F7827E429D800993E41 /* EventFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F5427E429D800993E41 /* EventFilterViewController.xib */; };
 		2F036F7927E429D800993E41 /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F5627E429D800993E41 /* EventMapViewController.swift */; };
@@ -111,6 +119,7 @@
 		2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E16127DD12A30070397F /* PoseCategoryCell.swift */; };
 		2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E16227DD12A30070397F /* PoseCategoryCell.xib */; };
 		2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0560227E022DA000E9CA6 /* Poses.swift */; };
+
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
@@ -118,6 +127,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31056F7B27E2B959002C001A /* InfEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfEmailViewController.swift; sourceTree = "<group>"; };
+		31056F7C27E2B959002C001A /* InfEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfEmailViewController.xib; sourceTree = "<group>"; };
+		31056F8027E3923C002C001A /* ModalSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSViewController.swift; sourceTree = "<group>"; };
+		31056F8127E3923C002C001A /* ModalSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalSViewController.xib; sourceTree = "<group>"; };
+		312612C627E299AC00090F7A /* telaaLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telaaLoginViewController.swift; sourceTree = "<group>"; };
+		312612C727E299AC00090F7A /* telaaLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = telaaLoginViewController.xib; sourceTree = "<group>"; };
+		312612CC27E29AD000090F7A /* novaSenhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = novaSenhaViewController.swift; sourceTree = "<group>"; };
+		312612CD27E29AD000090F7A /* novaSenhaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = novaSenhaViewController.xib; sourceTree = "<group>"; };
 		2F036F5327E429D800993E41 /* EventFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFilterViewController.swift; sourceTree = "<group>"; };
 		2F036F5427E429D800993E41 /* EventFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventFilterViewController.xib; sourceTree = "<group>"; };
 		2F036F5627E429D800993E41 /* EventMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +258,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31056F7A27E2B93A002C001A /* InformarEmail */ = {
+			isa = PBXGroup;
+			children = (
+				31056F7B27E2B959002C001A /* InfEmailViewController.swift */,
+				31056F7C27E2B959002C001A /* InfEmailViewController.xib */,
+			);
+			path = InformarEmail;
+			sourceTree = "<group>";
+		};
+		31056F7F27E2D8B4002C001A /* ModalSucesso */ = {
+			isa = PBXGroup;
+			children = (
+				31056F8027E3923C002C001A /* ModalSViewController.swift */,
+				31056F8127E3923C002C001A /* ModalSViewController.xib */,
+			);
+			path = ModalSucesso;
+			sourceTree = "<group>";
+		};
+		312612C527E2992D00090F7A /* HomeLogin */ = {
+			isa = PBXGroup;
+			children = (
+				312612C627E299AC00090F7A /* telaaLoginViewController.swift */,
+				312612C727E299AC00090F7A /* telaaLoginViewController.xib */,
+			);
+			path = HomeLogin;
+			sourceTree = "<group>";
+		};
+		312612CA27E299D200090F7A /* Login_ */ = {
+			isa = PBXGroup;
+			children = (
+				31056F7F27E2D8B4002C001A /* ModalSucesso */,
+				31056F7A27E2B93A002C001A /* InformarEmail */,
+				312612C527E2992D00090F7A /* HomeLogin */,
+				312612CB27E29A7300090F7A /* Nova Senha */,
 		2F036F5027E429D800993E41 /* Events */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,18 +426,50 @@
 				2F036FA627E429E400993E41 /* TappedSwitchObController */,
 				2F036FA927E429E400993E41 /* Helpers */,
 			);
-			path = IMC;
+			path = Login_;
 			sourceTree = "<group>";
 		};
+		312612CB27E29A7300090F7A /* Nova Senha */ = {
+			isa = PBXGroup;
+			children = (
+				312612CC27E29AD000090F7A /* novaSenhaViewController.swift */,
+				312612CD27E29AD000090F7A /* novaSenhaViewController.xib */,
 		2F036F9327E429E400993E41 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				2F036F9427E429E400993E41 /* ImcController.xib */,
 				2F036F9527E429E400993E41 /* ImcController.swift */,
 			);
-			path = Home;
+			path = "Nova Senha";
 			sourceTree = "<group>";
 		};
+		3126832D27C15ECA003F017B = {
+			isa = PBXGroup;
+			children = (
+				3126833827C15ECA003F017B /* YogaZone */,
+				3126833727C15ECA003F017B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3126833727C15ECA003F017B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3126833627C15ECA003F017B /* YogaZone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3126833827C15ECA003F017B /* YogaZone */ = {
+			isa = PBXGroup;
+			children = (
+				312612CA27E299D200090F7A /* Login_ */,
+				3126833927C15ECA003F017B /* AppDelegate.swift */,
+				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
+				3126833D27C15ECA003F017B /* ViewController.swift */,
+				3126834227C15ECB003F017B /* Assets.xcassets */,
+				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
+				3126834727C15ECB003F017B /* Info.plist */,
+			);
 		2F036F9627E429E400993E41 /* TapeedSwitchOb */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +874,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				312612CF27E29AD000090F7A /* novaSenhaViewController.xib in Resources */,
+				312612C927E299AC00090F7A /* telaaLoginViewController.xib in Resources */,
+				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
+				31056F7E27E2B959002C001A /* InfEmailViewController.xib in Resources */,
+				31056F8327E3923C002C001A /* ModalSViewController.xib in Resources */,
 				2F412ED927E41821007708E8 /* PracticeViewController.xib in Resources */,
 				2F79E14B27DCF6FA0070397F /* Comfortaa-Light.ttf in Resources */,
 				2F412EFB27E41A0B007708E8 /* Montserrat-Light.ttf in Resources */,
@@ -859,6 +948,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				312612C827E299AC00090F7A /* telaaLoginViewController.swift in Sources */,
+				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				312612CE27E29AD000090F7A /* novaSenhaViewController.swift in Sources */,
+				31056F7D27E2B959002C001A /* InfEmailViewController.swift in Sources */,
+				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
+				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
+				31056F8227E3923C002C001A /* ModalSViewController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
 				2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
