@@ -1,20 +1,32 @@
 //
-//  HistoricoController.swift
+//  InfEmailViewController.swift
 //  YogaZone
 //
-//  Created by Marcelo Silva on 19/02/22.
+//  Created by Marcelo Silva on 16/03/22.
 //
 
 import UIKit
 
-class HistoricoController: UIViewController {
+class InfEmailViewController: UIViewController {
 
+    @IBOutlet weak var textFielTypeEmail: UITextField!
+    @IBOutlet weak var infLabelTextField: UILabel!
+    @IBOutlet weak var buttonSend: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
-
+    @IBAction func tappedButtonSend(_ sender: Any) {
+        let vc = ModalSViewController()
+        present(vc, animated: true, completion: nil)
+     
+    }
+    
 
     /*
     // MARK: - Navigation

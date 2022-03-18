@@ -1,23 +1,33 @@
 //
-//  ResultadoController.swift
+//  modalSViewController.swift
 //  YogaZone
 //
-//  Created by Marcelo Silva on 19/02/22.
+//  Created by Marcelo Silva on 17/03/22.
 //
 
 import UIKit
 
-class ResultadoController: UIViewController {
+class ModalSViewController: UIViewController {
 
+    @IBOutlet weak var viewControllerMOdal: UIView!
+    
+    @IBOutlet weak var buttonLabel: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.viewControllerMOdal.layer.cornerRadius = 
+//        self.buttonLabel.layer.cornerRadius =
         
-        view.backgroundColor = .white
-
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func tappedOkButton(_ sender: Any) {
+        let _: Void = show(telaaLoginViewController(), sender:UIViewController().self)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
