@@ -12,12 +12,16 @@
 		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-		3126835027C16056003F017B /* ImcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126834E27C16056003F017B /* ImcController.swift */; };
-		3126835127C16056003F017B /* ImcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126834F27C16056003F017B /* ImcController.xib */; };
-		3126835727C167D7003F017B /* ResultadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835527C167D7003F017B /* ResultadoController.swift */; };
-		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
-		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
-		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
+		7930F2D427E43FE10081C2EC /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2D227E43FE10081C2EC /* CustomAlertVC.xib */; };
+		7930F2D527E43FE10081C2EC /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2D327E43FE10081C2EC /* CustomAlertVC.swift */; };
+		7930F2E327E43FF60081C2EC /* MoreOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2D827E43FF60081C2EC /* MoreOptionsVC.swift */; };
+		7930F2E427E43FF60081C2EC /* MoreOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2D927E43FF60081C2EC /* MoreOptionsVC.xib */; };
+		7930F2E527E43FF60081C2EC /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2DC27E43FF60081C2EC /* MyProfileTableViewCell.swift */; };
+		7930F2E627E43FF60081C2EC /* MyProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2DD27E43FF60081C2EC /* MyProfileTableViewCell.xib */; };
+		7930F2E727E43FF60081C2EC /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2DE27E43FF60081C2EC /* MyProfileVC.swift */; };
+		7930F2E827E43FF60081C2EC /* MyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2DF27E43FF60081C2EC /* MyProfileVC.xib */; };
+		7930F2E927E43FF60081C2EC /* DeleteAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2E127E43FF60081C2EC /* DeleteAccountVC.swift */; };
+		7930F2EA27E43FF60081C2EC /* DeleteAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2E227E43FF60081C2EC /* DeleteAccountVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +32,16 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3126834E27C16056003F017B /* ImcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImcController.swift; sourceTree = "<group>"; };
-		3126834F27C16056003F017B /* ImcController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImcController.xib; sourceTree = "<group>"; };
-		3126835527C167D7003F017B /* ResultadoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoController.swift; sourceTree = "<group>"; };
-		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
-		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
-		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
+		7930F2D227E43FE10081C2EC /* CustomAlertVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
+		7930F2D327E43FE10081C2EC /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+		7930F2D827E43FF60081C2EC /* MoreOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsVC.swift; sourceTree = "<group>"; };
+		7930F2D927E43FF60081C2EC /* MoreOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreOptionsVC.xib; sourceTree = "<group>"; };
+		7930F2DC27E43FF60081C2EC /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
+		7930F2DD27E43FF60081C2EC /* MyProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileTableViewCell.xib; sourceTree = "<group>"; };
+		7930F2DE27E43FF60081C2EC /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		7930F2DF27E43FF60081C2EC /* MyProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileVC.xib; sourceTree = "<group>"; };
+		7930F2E127E43FF60081C2EC /* DeleteAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountVC.swift; sourceTree = "<group>"; };
+		7930F2E227E43FF60081C2EC /* DeleteAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteAccountVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +74,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
-				3126834D27C15FE7003F017B /* IMC */,
+				7930F2D627E43FF60081C2EC /* Profile */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
 				3126833D27C15ECA003F017B /* ViewController.swift */,
@@ -77,42 +85,69 @@
 			path = YogaZone;
 			sourceTree = "<group>";
 		};
-		3126834D27C15FE7003F017B /* IMC */ = {
+		7930F2D027E43FE10081C2EC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				3126835427C1675C003F017B /* Historico */,
-				3126835327C16727003F017B /* Resultado */,
-				3126835227C1671B003F017B /* Home */,
-				3126834E27C16056003F017B /* ImcController.swift */,
-				3126834F27C16056003F017B /* ImcController.xib */,
+				7930F2D127E43FE10081C2EC /* Alert */,
 			);
-			path = IMC;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		3126835227C1671B003F017B /* Home */ = {
+		7930F2D127E43FE10081C2EC /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				7930F2D227E43FE10081C2EC /* CustomAlertVC.xib */,
+				7930F2D327E43FE10081C2EC /* CustomAlertVC.swift */,
 			);
-			path = Home;
+			path = Alert;
 			sourceTree = "<group>";
 		};
-		3126835327C16727003F017B /* Resultado */ = {
+		7930F2D627E43FF60081C2EC /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				3126835527C167D7003F017B /* ResultadoController.swift */,
-				3126835627C167D7003F017B /* ResultadoController.xib */,
+				7930F2D027E43FE10081C2EC /* Helpers */,
+				7930F2D727E43FF60081C2EC /* MoreOptions */,
+				7930F2DA27E43FF60081C2EC /* MyProfile */,
+				7930F2E027E43FF60081C2EC /* DeleteAccount */,
 			);
-			name = Resultado;
-			path = Home;
+			path = Profile;
 			sourceTree = "<group>";
 		};
-		3126835427C1675C003F017B /* Historico */ = {
+		7930F2D727E43FF60081C2EC /* MoreOptions */ = {
 			isa = PBXGroup;
 			children = (
-				3126835927C16801003F017B /* HistoricoController.swift */,
-				3126835A27C16801003F017B /* HistoricoController.xib */,
+				7930F2D827E43FF60081C2EC /* MoreOptionsVC.swift */,
+				7930F2D927E43FF60081C2EC /* MoreOptionsVC.xib */,
 			);
-			path = Historico;
+			path = MoreOptions;
+			sourceTree = "<group>";
+		};
+		7930F2DA27E43FF60081C2EC /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2DB27E43FF60081C2EC /* MyProfileTableViewCell */,
+				7930F2DE27E43FF60081C2EC /* MyProfileVC.swift */,
+				7930F2DF27E43FF60081C2EC /* MyProfileVC.xib */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		7930F2DB27E43FF60081C2EC /* MyProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2DC27E43FF60081C2EC /* MyProfileTableViewCell.swift */,
+				7930F2DD27E43FF60081C2EC /* MyProfileTableViewCell.xib */,
+			);
+			path = MyProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		7930F2E027E43FF60081C2EC /* DeleteAccount */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2E127E43FF60081C2EC /* DeleteAccountVC.swift */,
+				7930F2E227E43FF60081C2EC /* DeleteAccountVC.xib */,
+			);
+			path = DeleteAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,11 +208,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3126835127C16056003F017B /* ImcController.xib in Resources */,
+				7930F2D427E43FE10081C2EC /* CustomAlertVC.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				7930F2EA27E43FF60081C2EC /* DeleteAccountVC.xib in Resources */,
+				7930F2E627E43FF60081C2EC /* MyProfileTableViewCell.xib in Resources */,
+				7930F2E427E43FF60081C2EC /* MoreOptionsVC.xib in Resources */,
+				7930F2E827E43FF60081C2EC /* MyProfileVC.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
-				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
-				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				7930F2E927E43FF60081C2EC /* DeleteAccountVC.swift in Sources */,
+				7930F2E527E43FF60081C2EC /* MyProfileTableViewCell.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
-				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
+				7930F2E727E43FF60081C2EC /* MyProfileVC.swift in Sources */,
+				7930F2E327E43FF60081C2EC /* MoreOptionsVC.swift in Sources */,
+				7930F2D527E43FE10081C2EC /* CustomAlertVC.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
-				3126835027C16056003F017B /* ImcController.swift in Sources */,
-				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
