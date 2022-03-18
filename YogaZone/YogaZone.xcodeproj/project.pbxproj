@@ -57,6 +57,17 @@
 		2F0C33E027E432EC004A1E8C /* modalSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33D727E432EC004A1E8C /* modalSViewController.xib */; };
 		2F0C33E127E432EC004A1E8C /* telaaLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33D927E432EC004A1E8C /* telaaLoginViewController.xib */; };
 		2F0C33E227E432EC004A1E8C /* telaaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33DA27E432EC004A1E8C /* telaaLoginViewController.swift */; };
+		2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */; };
+		2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */; };
+		2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */; };
+		2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */; };
+		2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33EA27E434DA004A1E8C /* DoneRegisterVC.swift */; };
+		2F0C33F927E434DA004A1E8C /* UserLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33EC27E434DA004A1E8C /* UserLevelVC.swift */; };
+		2F0C33FA27E434DA004A1E8C /* UserLevelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33ED27E434DA004A1E8C /* UserLevelVC.xib */; };
+		2F0C33FB27E434DA004A1E8C /* MainRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33EF27E434DA004A1E8C /* MainRegisterVC.swift */; };
+		2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33F027E434DA004A1E8C /* MainRegisterVC.xib */; };
+		2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33F227E434DA004A1E8C /* CustomMainRegisterCell.swift */; };
+		2F0C33FE27E434DA004A1E8C /* CustomMainRegisterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33F327E434DA004A1E8C /* CustomMainRegisterCell.xib */; };
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
 		2F412EB727E4101E007708E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* HomeViewController.swift */; };
 		2F412EB827E4101E007708E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB127E4101E007708E8 /* Router.swift */; };
@@ -176,6 +187,17 @@
 		2F0C33D727E432EC004A1E8C /* modalSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = modalSViewController.xib; sourceTree = "<group>"; };
 		2F0C33D927E432EC004A1E8C /* telaaLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = telaaLoginViewController.xib; sourceTree = "<group>"; };
 		2F0C33DA27E432EC004A1E8C /* telaaLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = telaaLoginViewController.swift; sourceTree = "<group>"; };
+		2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonController.swift; sourceTree = "<group>"; };
+		2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoRegisterVC.swift; sourceTree = "<group>"; };
+		2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInfoRegisterVC.xib; sourceTree = "<group>"; };
+		2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoneRegisterVC.xib; sourceTree = "<group>"; };
+		2F0C33EA27E434DA004A1E8C /* DoneRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneRegisterVC.swift; sourceTree = "<group>"; };
+		2F0C33EC27E434DA004A1E8C /* UserLevelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLevelVC.swift; sourceTree = "<group>"; };
+		2F0C33ED27E434DA004A1E8C /* UserLevelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserLevelVC.xib; sourceTree = "<group>"; };
+		2F0C33EF27E434DA004A1E8C /* MainRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRegisterVC.swift; sourceTree = "<group>"; };
+		2F0C33F027E434DA004A1E8C /* MainRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainRegisterVC.xib; sourceTree = "<group>"; };
+		2F0C33F227E434DA004A1E8C /* CustomMainRegisterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMainRegisterCell.swift; sourceTree = "<group>"; };
+		2F0C33F327E434DA004A1E8C /* CustomMainRegisterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMainRegisterCell.xib; sourceTree = "<group>"; };
 		2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		2F412EB027E4101E007708E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2F412EB127E4101E007708E8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -520,6 +542,64 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		2F0C33E327E434DA004A1E8C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C33E427E434DA004A1E8C /* MoreInfoRegister */,
+				2F0C33E827E434DA004A1E8C /* DoneRegister */,
+				2F0C33EB27E434DA004A1E8C /* UserLevel */,
+				2F0C33EE27E434DA004A1E8C /* MainRegister */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2F0C33E427E434DA004A1E8C /* MoreInfoRegister */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */,
+				2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */,
+				2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */,
+			);
+			path = MoreInfoRegister;
+			sourceTree = "<group>";
+		};
+		2F0C33E827E434DA004A1E8C /* DoneRegister */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */,
+				2F0C33EA27E434DA004A1E8C /* DoneRegisterVC.swift */,
+			);
+			path = DoneRegister;
+			sourceTree = "<group>";
+		};
+		2F0C33EB27E434DA004A1E8C /* UserLevel */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C33EC27E434DA004A1E8C /* UserLevelVC.swift */,
+				2F0C33ED27E434DA004A1E8C /* UserLevelVC.xib */,
+			);
+			path = UserLevel;
+			sourceTree = "<group>";
+		};
+		2F0C33EE27E434DA004A1E8C /* MainRegister */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C33EF27E434DA004A1E8C /* MainRegisterVC.swift */,
+				2F0C33F027E434DA004A1E8C /* MainRegisterVC.xib */,
+				2F0C33F127E434DA004A1E8C /* MainRegisterCell */,
+			);
+			path = MainRegister;
+			sourceTree = "<group>";
+		};
+		2F0C33F127E434DA004A1E8C /* MainRegisterCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C33F227E434DA004A1E8C /* CustomMainRegisterCell.swift */,
+				2F0C33F327E434DA004A1E8C /* CustomMainRegisterCell.xib */,
+			);
+			path = MainRegisterCell;
+			sourceTree = "<group>";
+		};
 		2F412EAD27E4101E007708E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -780,6 +860,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				2F0C33E327E434DA004A1E8C /* Register */,
 				2F0C33CE27E432EC004A1E8C /* Login */,
 				2F036F9227E429E400993E41 /* IMC */,
 				2F036F5027E429D800993E41 /* Events */,
@@ -856,10 +937,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F412ED927E41821007708E8 /* PracticeViewController.xib in Resources */,
+				2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */,
 				2F79E14B27DCF6FA0070397F /* Comfortaa-Light.ttf in Resources */,
 				2F412EFB27E41A0B007708E8 /* Montserrat-Light.ttf in Resources */,
 				2F412EF127E41A0B007708E8 /* pad-A.mp3 in Resources */,
 				2F412ED127E41821007708E8 /* AudioCell.xib in Resources */,
+				2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */,
 				2F412F0127E41A0B007708E8 /* Montserrat-ExtraBold.ttf in Resources */,
 				2F036F8027E429D800993E41 /* MockAppHomeViewController.xib in Resources */,
 				2F79E13E27DCF6E40070397F /* Montserrat-Regular.ttf in Resources */,
@@ -893,6 +976,7 @@
 				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
 				2F036FB027E429E400993E41 /* HistoricoController.xib in Resources */,
 				2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */,
+				2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */,
 				2F79E14027DCF6E40070397F /* Montserrat-SemiBold.ttf in Resources */,
 				2F036F7B27E429D800993E41 /* HomeEvents.storyboard in Resources */,
 				2F79E13F27DCF6E40070397F /* Montserrat-ExtraLight.ttf in Resources */,
@@ -902,6 +986,7 @@
 				2F0C33E127E432EC004A1E8C /* telaaLoginViewController.xib in Resources */,
 				2F412EF727E41A0B007708E8 /* pad-Gb.mp3 in Resources */,
 				2F412EF527E41A0B007708E8 /* pad-D.mp3 in Resources */,
+				2F0C33FA27E434DA004A1E8C /* UserLevelVC.xib in Resources */,
 				2F412EF827E41A0B007708E8 /* pad-Eb.mp3 in Resources */,
 				2F79E13C27DCF6E40070397F /* Montserrat-Medium.ttf in Resources */,
 				2F036FB627E429E400993E41 /* ResultadoController.xib in Resources */,
@@ -909,6 +994,7 @@
 				2F036F8A27E429D800993E41 /* EditEventDetailViewController.xib in Resources */,
 				2F412EF627E41A0B007708E8 /* pad-Ab.mp3 in Resources */,
 				2F0C33DC27E432EC004A1E8C /* novaSenhaViewController.xib in Resources */,
+				2F0C33FE27E434DA004A1E8C /* CustomMainRegisterCell.xib in Resources */,
 				2F412F0427E41A0B007708E8 /* Comfortaa-Bold.ttf in Resources */,
 				2F412EF427E41A0B007708E8 /* pad-E.mp3 in Resources */,
 				2F412EFD27E41A0B007708E8 /* Montserrat-Bold.ttf in Resources */,
@@ -927,6 +1013,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
 				2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
@@ -941,6 +1028,7 @@
 				2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */,
 				2F036F8727E429D800993E41 /* CancelContainerViewController.swift in Sources */,
 				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
+				2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */,
 				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
 				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
@@ -953,9 +1041,12 @@
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036FAC27E429E400993E41 /* ImcController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
+				2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */,
+				2F0C33FB27E434DA004A1E8C /* MainRegisterVC.swift in Sources */,
 				2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */,
 				2F036F7927E429D800993E41 /* EventMapViewController.swift in Sources */,
 				2F412ED727E41821007708E8 /* PracticeViewController.swift in Sources */,
+				2F0C33F927E434DA004A1E8C /* UserLevelVC.swift in Sources */,
 				2F412EB927E4101E007708E8 /* CardCell.swift in Sources */,
 				2F036FB527E429E400993E41 /* ResultadoController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
@@ -974,6 +1065,7 @@
 				2F0C33E227E432EC004A1E8C /* telaaLoginViewController.swift in Sources */,
 				2F0C33DD27E432EC004A1E8C /* InfEmailViewController.swift in Sources */,
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
+				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
 				2F412EB827E4101E007708E8 /* Router.swift in Sources */,
 				2F036FB827E429E400993E41 /* tappedSwitchObController.swift in Sources */,
 				2F412EBA27E4101E007708E8 /* HomeHeader.swift in Sources */,
