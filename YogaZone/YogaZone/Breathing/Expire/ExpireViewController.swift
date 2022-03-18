@@ -4,7 +4,10 @@ import UIKit
 
 class ExpireViewController: UIViewController {
 
+    @IBOutlet weak var labelSecondsExpire: UILabel!
+    @IBOutlet weak var labelCicleExpire: UILabel!
     @IBOutlet weak var timerTestButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
