@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="novaSenhaViewController" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="InfConfirmPassword" destination="cQ5-Pa-u1i" id="tTg-Lh-DlL"/>
+                <outlet property="buttonCreatNewPassword" destination="Vaw-uv-lxv" id="odT-1v-3JQ"/>
+                <outlet property="infPassword" destination="dum-9m-Rd9" id="xR6-iK-AOc"/>
+                <outlet property="textFieldConfirmPass" destination="fXh-da-dLV" id="hTR-Tz-xOS"/>
+                <outlet property="textFieldPassword" destination="4ry-39-jAc" id="BHf-jq-re6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crie sua nova senha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgx-GT-hAn">
+                    <rect key="frame" x="120" y="94" width="188" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua nova senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ry-39-jAc">
+                    <rect key="frame" x="20" y="182" width="388" height="34"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirme sua nova senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXh-da-dLV">
+                    <rect key="frame" x="20" y="252" width="388" height="34"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha e confirmação de senha devem ser iguais" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dum-9m-Rd9">
+                    <rect key="frame" x="20" y="221" width="306" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha e confirmação de senha devem ser iguais" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ5-Pa-u1i">
+                    <rect key="frame" x="20" y="291" width="306" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaw-uv-lxv">
+                    <rect key="frame" x="20" y="317" width="388" height="43"/>
+                    <color key="backgroundColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="Zao-Mn-r42"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Criar nova senha"/>
+                    <connections>
+                        <action selector="tappedCreatedNewPassword:" destination="-1" eventType="touchUpInside" id="l5r-Ku-t19"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sgx-GT-hAn" secondAttribute="trailing" constant="120" id="2Eg-nj-IS2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cQ5-Pa-u1i" secondAttribute="trailing" constant="102" id="9N9-dV-vQc"/>
+                <constraint firstItem="fXh-da-dLV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9dV-y5-Bwk"/>
+                <constraint firstItem="cQ5-Pa-u1i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AiH-VS-XJY"/>
+                <constraint firstItem="Sgx-GT-hAn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="BpZ-AR-IHK"/>
+                <constraint firstItem="dum-9m-Rd9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Cl1-9O-aiA"/>
+                <constraint firstItem="Vaw-uv-lxv" firstAttribute="top" secondItem="cQ5-Pa-u1i" secondAttribute="bottom" constant="10" id="Fg5-wr-ICe"/>
+                <constraint firstItem="4ry-39-jAc" firstAttribute="top" secondItem="Sgx-GT-hAn" secondAttribute="bottom" constant="67" id="Gj1-Rl-jFy"/>
+                <constraint firstItem="Sgx-GT-hAn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="Tbg-NQ-6O0"/>
+                <constraint firstItem="4ry-39-jAc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UOA-g2-pDD"/>
+                <constraint firstItem="cQ5-Pa-u1i" firstAttribute="top" secondItem="fXh-da-dLV" secondAttribute="bottom" constant="5" id="VRC-CQ-Nz8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fXh-da-dLV" secondAttribute="trailing" constant="20" id="XwW-id-lEt"/>
+                <constraint firstItem="fXh-da-dLV" firstAttribute="top" secondItem="dum-9m-Rd9" secondAttribute="bottom" constant="15" id="abr-qH-1EI"/>
+                <constraint firstItem="Vaw-uv-lxv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bpX-63-3VY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4ry-39-jAc" secondAttribute="trailing" constant="20" id="cZj-jO-C0e"/>
+                <constraint firstItem="dum-9m-Rd9" firstAttribute="top" secondItem="4ry-39-jAc" secondAttribute="bottom" constant="5" id="eeE-vj-oX9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dum-9m-Rd9" secondAttribute="trailing" constant="102" id="vAU-XF-oay"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vaw-uv-lxv" secondAttribute="trailing" constant="20" id="vN9-21-Tsi"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
