@@ -1,6 +1,6 @@
 import UIKit
     
-class HomeViewController: UIViewController, SliderEventsDelegate {
+class BreathingHomeViewController: UIViewController, SliderEventsDelegate {
     func updateExpire(expire: Int) {
         self.viewModel.sliderExpire =
         Int(expire)

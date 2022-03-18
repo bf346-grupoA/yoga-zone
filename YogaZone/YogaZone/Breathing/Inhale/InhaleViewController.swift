@@ -22,7 +22,7 @@ class InhaleViewController: UIViewController {
 //        labelInhale.text = " \(HomeViewController().viewModel.sliderInhale) Segundos"
  
         
-        print(HomeViewController().viewModel.sliderExpire)
+        print(BreathingHomeViewController().viewModel.sliderExpire)
     }
    
     func startTimer() {

@@ -38,7 +38,7 @@ class SettingsViewController: UIViewController {
 
     @IBAction func backSaveSettingsButton(_ sender: Any) {
         
-        self.navigationController? .pushViewController (HomeViewController(), animated: true)
+        self.navigationController? .pushViewController (BreathingHomeViewController(), animated: true)
     }
     
     @IBAction func onValueInhale(_ sender: Any) {
