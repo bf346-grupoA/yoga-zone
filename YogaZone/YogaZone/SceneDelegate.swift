@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  YogaZone
-//
-//  Created by Marcelo Silva on 19/02/22.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -15,7 +8,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let navController = UINavigationController(rootViewController: HomeViewController())
+
         window = UIWindow(windowScene: windowScene)
+        window?.backgroundColor = .white
         window?.frame = UIScreen.main.bounds
         window?.backgroundColor = .white
         window?.rootViewController = navController
