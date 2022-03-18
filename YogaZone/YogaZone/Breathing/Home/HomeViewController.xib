@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="settingsExerciseButton" destination="3LV-uM-8Sm" id="sIK-TI-7e7"/>
+                <outlet property="startExerciseButton" destination="WeB-jj-jda" id="vT1-Ei-d8x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O exercício de" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9Z-bM-29D">
+                    <rect key="frame" x="30" y="154" width="354" height="37"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="respiração ajuda a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-79-Mbc">
+                    <rect key="frame" x="30" y="191" width="354" height="37"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="melhorar seu nível de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmy-it-KbT">
+                    <rect key="frame" x="30" y="228" width="354" height="37"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="energia!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHp-cb-I7r">
+                    <rect key="frame" x="30" y="265" width="354" height="37"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeB-jj-jda">
+                    <rect key="frame" x="13" y="352" width="388" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6Ot-Ks-M4E"/>
+                        <constraint firstAttribute="width" constant="388" id="Off-GE-nXx"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Respiração">
+                        <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                        <color key="baseBackgroundColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="startNowExerciseButton:" destination="-1" eventType="touchUpInside" id="a00-Vb-mol"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LV-uM-8Sm">
+                    <rect key="frame" x="13" y="422" width="388" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="388" id="7Oc-ah-j83"/>
+                        <constraint firstAttribute="height" constant="50" id="rsM-Cs-jjP"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Configurar Intervalos">
+                        <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                        <color key="baseBackgroundColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="settingsExerciseButton:" destination="-1" eventType="touchUpInside" id="GTG-bB-FQo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l9Z-bM-29D" secondAttribute="trailing" constant="30" id="5fR-86-GMC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bmy-it-KbT" secondAttribute="trailing" constant="30" id="6HS-Z8-3cN"/>
+                <constraint firstItem="cQC-79-Mbc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="81z-BI-4y6"/>
+                <constraint firstItem="3LV-uM-8Sm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="FeG-Xa-gp0"/>
+                <constraint firstItem="Bmy-it-KbT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="PXe-ik-jWw"/>
+                <constraint firstItem="Bmy-it-KbT" firstAttribute="top" secondItem="cQC-79-Mbc" secondAttribute="bottom" id="WOI-1E-PHp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cQC-79-Mbc" secondAttribute="trailing" constant="30" id="Xmf-I3-gIu"/>
+                <constraint firstItem="3LV-uM-8Sm" firstAttribute="top" secondItem="WeB-jj-jda" secondAttribute="bottom" constant="20" id="abt-fa-sHW"/>
+                <constraint firstItem="dHp-cb-I7r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ayk-T8-wax"/>
+                <constraint firstItem="dHp-cb-I7r" firstAttribute="top" secondItem="Bmy-it-KbT" secondAttribute="bottom" id="b9z-rP-ccu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dHp-cb-I7r" secondAttribute="trailing" constant="30" id="dX1-3z-NFa"/>
+                <constraint firstItem="cQC-79-Mbc" firstAttribute="top" secondItem="l9Z-bM-29D" secondAttribute="bottom" id="dvA-dT-YUd"/>
+                <constraint firstItem="WeB-jj-jda" firstAttribute="top" secondItem="dHp-cb-I7r" secondAttribute="bottom" constant="50" id="q5U-7X-lZ1"/>
+                <constraint firstItem="WeB-jj-jda" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="sOw-8F-mh4"/>
+                <constraint firstItem="l9Z-bM-29D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="sQ0-j9-kfl"/>
+                <constraint firstItem="l9Z-bM-29D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="110" id="vqk-Vs-eeZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WeB-jj-jda" secondAttribute="trailing" constant="13" id="vtI-3d-j1i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3LV-uM-8Sm" secondAttribute="trailing" constant="13" id="yHa-1a-B1D"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
