@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311CF88327D443F1009DBE5E /* tappedSwitchObController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311CF88127D443F1009DBE5E /* tappedSwitchObController.swift */; };
+		311CF88427D443F1009DBE5E /* tappedSwitchObController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311CF88227D443F1009DBE5E /* tappedSwitchObController.xib */; };
+		311CF88727D584BF009DBE5E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311CF88627D584BF009DBE5E /* Result.swift */; };
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
 		2F412EB727E4101E007708E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* HomeViewController.swift */; };
 		2F412EB827E4101E007708E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB127E4101E007708E8 /* Router.swift */; };
@@ -73,6 +76,34 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+		3126835027C16056003F017B /* ImcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126834E27C16056003F017B /* ImcController.swift */; };
+		3126835127C16056003F017B /* ImcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126834F27C16056003F017B /* ImcController.xib */; };
+		3126835727C167D7003F017B /* ResultadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835527C167D7003F017B /* ResultadoController.swift */; };
+		3126835827C167D7003F017B /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835627C167D7003F017B /* ResultadoController.xib */; };
+		3126835B27C16801003F017B /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126835927C16801003F017B /* HistoricoController.swift */; };
+		3126835C27C16801003F017B /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3126835A27C16801003F017B /* HistoricoController.xib */; };
+		3150CA9F27DA469400B845C1 /* ImcEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3150CA9E27DA469400B845C1 /* ImcEnums.swift */; };
+		319BBBC527DA5D5F000DF0F4 /* NumericExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BBBC427DA5D5F000DF0F4 /* NumericExtensions.swift */; };
+		319BBBC927DA6F27000DF0F4 /* HistoricoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BBBC727DA6F27000DF0F4 /* HistoricoTableViewCell.swift */; };
+		319BBBCA27DA6F27000DF0F4 /* HistoricoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBC827DA6F27000DF0F4 /* HistoricoTableViewCell.xib */; };
+		319BBBD827DA77B8000DF0F4 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBCC27DA77B8000DF0F4 /* Comfortaa-Regular.ttf */; };
+		319BBBD927DA77B8000DF0F4 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBCD27DA77B8000DF0F4 /* Montserrat-Bold.ttf */; };
+		319BBBDA27DA77B8000DF0F4 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBCE27DA77B8000DF0F4 /* Comfortaa-SemiBold.ttf */; };
+		319BBBDB27DA77B8000DF0F4 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBCF27DA77B8000DF0F4 /* Comfortaa-Bold.ttf */; };
+		319BBBDC27DA77B8000DF0F4 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBD027DA77B8000DF0F4 /* Montserrat-ExtraBold.ttf */; };
+		319BBBDD27DA77B8000DF0F4 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBD127DA77B8000DF0F4 /* Montserrat-Light.ttf */; };
+		319BBBDE27DA77B8000DF0F4 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBD227DA77B8000DF0F4 /* Montserrat-ExtraLight.ttf */; };
+		319BBBDF27DA77B8000DF0F4 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBD327DA77B8000DF0F4 /* Montserrat-Medium.ttf */; };
+		319BBBE027DA77B8000DF0F4 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBD427DA77B8000DF0F4 /* Montserrat-Regular.ttf */; };
+		319BBBE127DA77B8000DF0F4 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBD527DA77B8000DF0F4 /* Montserrat-SemiBold.ttf */; };
+		319BBBE227DA77B8000DF0F4 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBD627DA77B8000DF0F4 /* Comfortaa-Medium.ttf */; };
+		319BBBE327DA77B8000DF0F4 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319BBBD727DA77B8000DF0F4 /* Comfortaa-Light.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		311CF88127D443F1009DBE5E /* tappedSwitchObController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tappedSwitchObController.swift; sourceTree = "<group>"; };
+		311CF88227D443F1009DBE5E /* tappedSwitchObController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tappedSwitchObController.xib; sourceTree = "<group>"; };
+		311CF88627D584BF009DBE5E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +175,28 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3126834E27C16056003F017B /* ImcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImcController.swift; sourceTree = "<group>"; };
+		3126834F27C16056003F017B /* ImcController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImcController.xib; sourceTree = "<group>"; };
+		3126835527C167D7003F017B /* ResultadoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoController.swift; sourceTree = "<group>"; };
+		3126835627C167D7003F017B /* ResultadoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
+		3126835927C16801003F017B /* HistoricoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
+		3126835A27C16801003F017B /* HistoricoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
+		3150CA9E27DA469400B845C1 /* ImcEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImcEnums.swift; sourceTree = "<group>"; };
+		319BBBC427DA5D5F000DF0F4 /* NumericExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericExtensions.swift; sourceTree = "<group>"; };
+		319BBBC727DA6F27000DF0F4 /* HistoricoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewCell.swift; sourceTree = "<group>"; };
+		319BBBC827DA6F27000DF0F4 /* HistoricoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoricoTableViewCell.xib; sourceTree = "<group>"; };
+		319BBBCC27DA77B8000DF0F4 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Regular.ttf"; path = "../../../../../Downloads/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		319BBBCD27DA77B8000DF0F4 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../Downloads/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		319BBBCE27DA77B8000DF0F4 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-SemiBold.ttf"; path = "../../../../../Downloads/Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		319BBBCF27DA77B8000DF0F4 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Bold.ttf"; path = "../../../../../Downloads/Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		319BBBD027DA77B8000DF0F4 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.ttf"; path = "../../../../../Downloads/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		319BBBD127DA77B8000DF0F4 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.ttf"; path = "../../../../../Downloads/Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		319BBBD227DA77B8000DF0F4 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLight.ttf"; path = "../../../../../Downloads/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		319BBBD327DA77B8000DF0F4 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../../../../Downloads/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		319BBBD427DA77B8000DF0F4 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../Downloads/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		319BBBD527DA77B8000DF0F4 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.ttf"; path = "../../../../../Downloads/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		319BBBD627DA77B8000DF0F4 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Medium.ttf"; path = "../../../../../Downloads/Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		319BBBD727DA77B8000DF0F4 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Light.ttf"; path = "../../../../../Downloads/Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +210,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311CF88027D443B7009DBE5E /* TappedSwitchObController */ = {
+			isa = PBXGroup;
+			children = (
+				311CF88127D443F1009DBE5E /* tappedSwitchObController.swift */,
+				311CF88227D443F1009DBE5E /* tappedSwitchObController.xib */,
+			);
+			path = TappedSwitchObController;
+			sourceTree = "<group>";
+		};
+		311CF88527D58473009DBE5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				311CF88627D584BF009DBE5E /* Result.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3126832D27C15ECA003F017B = {
 		2F412EAD27E4101E007708E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +251,16 @@
 		2F412EB227E4101E007708E8 /* CardCell */ = {
 			isa = PBXGroup;
 			children = (
+				31FE9FFA27DED6FB002D3713 /* New Group */,
+				319BBBCB27DA7771000DF0F4 /* Fonts */,
+				3126834D27C15FE7003F017B /* IMC */,
+				3126833927C15ECA003F017B /* AppDelegate.swift */,
+				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
+				3126833D27C15ECA003F017B /* ViewController.swift */,
+				3126834227C15ECB003F017B /* Assets.xcassets */,
+				316D58CD27C19DD200F25D61 /* Iconimc */,
+				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
+				3126834727C15ECB003F017B /* Info.plist */,
 				2F412EB327E4101E007708E8 /* CardCell.swift */,
 			);
 			path = CardCell;
@@ -188,6 +269,13 @@
 		2F412EB427E4101E007708E8 /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				319BBBC327DA5D2E000DF0F4 /* Helpers */,
+				3150CA9D27DA466200B845C1 /* Enums */,
+				311CF88527D58473009DBE5E /* Models */,
+				311CF88027D443B7009DBE5E /* TappedSwitchObController */,
+				3126835427C1675C003F017B /* HIstorico */,
+				3126835327C16727003F017B /* Result */,
+				3126835227C1671B003F017B /* Home */,
 				2F412EB527E4101E007708E8 /* HomeHeader.swift */,
 			);
 			path = Header;
@@ -196,6 +284,8 @@
 		2F412EBB27E41821007708E8 /* Meditacao */ = {
 			isa = PBXGroup;
 			children = (
+				3126834E27C16056003F017B /* ImcController.swift */,
+				3126834F27C16056003F017B /* ImcController.xib */,
 				2F412EBC27E41821007708E8 /* Mocks */,
 				2F412EBE27E41821007708E8 /* MeditacaoHome */,
 				2F412EC427E41821007708E8 /* Intro */,
@@ -205,11 +295,82 @@
 			path = Meditacao;
 			sourceTree = "<group>";
 		};
+		3126835327C16727003F017B /* Result */ = {
 		2F412EBC27E41821007708E8 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
 				2F412EBD27E41821007708E8 /* MeditationData.swift */,
 			);
+			name = Result;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3126835427C1675C003F017B /* HIstorico */ = {
+			isa = PBXGroup;
+			children = (
+				319BBBC627DA6EEC000DF0F4 /* HistoricoCell */,
+				3126835927C16801003F017B /* HistoricoController.swift */,
+				3126835A27C16801003F017B /* HistoricoController.xib */,
+			);
+			path = HIstorico;
+			sourceTree = "<group>";
+		};
+		3150CA9D27DA466200B845C1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				3150CA9E27DA469400B845C1 /* ImcEnums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		316D58CD27C19DD200F25D61 /* Iconimc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Iconimc;
+			sourceTree = "<group>";
+		};
+		319BBBC327DA5D2E000DF0F4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				319BBBC427DA5D5F000DF0F4 /* NumericExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		319BBBC627DA6EEC000DF0F4 /* HistoricoCell */ = {
+			isa = PBXGroup;
+			children = (
+				319BBBC727DA6F27000DF0F4 /* HistoricoTableViewCell.swift */,
+				319BBBC827DA6F27000DF0F4 /* HistoricoTableViewCell.xib */,
+			);
+			path = HistoricoCell;
+			sourceTree = "<group>";
+		};
+		319BBBCB27DA7771000DF0F4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				319BBBCF27DA77B8000DF0F4 /* Comfortaa-Bold.ttf */,
+				319BBBD727DA77B8000DF0F4 /* Comfortaa-Light.ttf */,
+				319BBBD627DA77B8000DF0F4 /* Comfortaa-Medium.ttf */,
+				319BBBCC27DA77B8000DF0F4 /* Comfortaa-Regular.ttf */,
+				319BBBCE27DA77B8000DF0F4 /* Comfortaa-SemiBold.ttf */,
+				319BBBCD27DA77B8000DF0F4 /* Montserrat-Bold.ttf */,
+				319BBBD027DA77B8000DF0F4 /* Montserrat-ExtraBold.ttf */,
+				319BBBD227DA77B8000DF0F4 /* Montserrat-ExtraLight.ttf */,
+				319BBBD127DA77B8000DF0F4 /* Montserrat-Light.ttf */,
+				319BBBD327DA77B8000DF0F4 /* Montserrat-Medium.ttf */,
+				319BBBD427DA77B8000DF0F4 /* Montserrat-Regular.ttf */,
+				319BBBD527DA77B8000DF0F4 /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		31FE9FFA27DED6FB002D3713 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			path = Mocks;
 			sourceTree = "<group>";
 		};
@@ -489,6 +650,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319BBBE027DA77B8000DF0F4 /* Montserrat-Regular.ttf in Resources */,
+				319BBBDA27DA77B8000DF0F4 /* Comfortaa-SemiBold.ttf in Resources */,
+				319BBBDF27DA77B8000DF0F4 /* Montserrat-Medium.ttf in Resources */,
+				319BBBDC27DA77B8000DF0F4 /* Montserrat-ExtraBold.ttf in Resources */,
+				3126835127C16056003F017B /* ImcController.xib in Resources */,
+				319BBBDE27DA77B8000DF0F4 /* Montserrat-ExtraLight.ttf in Resources */,
+				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				311CF88427D443F1009DBE5E /* tappedSwitchObController.xib in Resources */,
+				319BBBCA27DA6F27000DF0F4 /* HistoricoTableViewCell.xib in Resources */,
+				319BBBE327DA77B8000DF0F4 /* Comfortaa-Light.ttf in Resources */,
+				319BBBDB27DA77B8000DF0F4 /* Comfortaa-Bold.ttf in Resources */,
+				319BBBD827DA77B8000DF0F4 /* Comfortaa-Regular.ttf in Resources */,
+				319BBBD927DA77B8000DF0F4 /* Montserrat-Bold.ttf in Resources */,
+				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
+				319BBBE127DA77B8000DF0F4 /* Montserrat-SemiBold.ttf in Resources */,
+				3126835827C167D7003F017B /* ResultadoController.xib in Resources */,
+				3126835C27C16801003F017B /* HistoricoController.xib in Resources */,
+				319BBBE227DA77B8000DF0F4 /* Comfortaa-Medium.ttf in Resources */,
+				319BBBDD27DA77B8000DF0F4 /* Montserrat-Light.ttf in Resources */,
 				2F412ED927E41821007708E8 /* PracticeViewController.xib in Resources */,
 				2F79E14B27DCF6FA0070397F /* Comfortaa-Light.ttf in Resources */,
 				2F412EFB27E41A0B007708E8 /* Montserrat-Light.ttf in Resources */,
@@ -542,6 +722,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				319BBBC527DA5D5F000DF0F4 /* NumericExtensions.swift in Sources */,
+				311CF88327D443F1009DBE5E /* tappedSwitchObController.swift in Sources */,
+				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
+				3126835B27C16801003F017B /* HistoricoController.swift in Sources */,
+				3150CA9F27DA469400B845C1 /* ImcEnums.swift in Sources */,
+				319BBBC927DA6F27000DF0F4 /* HistoricoTableViewCell.swift in Sources */,
+				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
+				311CF88727D584BF009DBE5E /* Result.swift in Sources */,
+				3126835027C16056003F017B /* ImcController.swift in Sources */,
+				3126835727C167D7003F017B /* ResultadoController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
 				2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */,

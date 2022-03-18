@@ -4,16 +4,18 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Comfortaa-Regular.ttf</string>
-		<string>Comfortaa-Medium.ttf</string>
-		<string>Comfortaa-Light.ttf</string>
-		<string>Comfortaa-SemiBold.ttf</string>
 		<string>Comfortaa-Bold.ttf</string>
-		<string>Montserrat-SemiBold.ttf</string>
-		<string>Montserrat-Regular.ttf</string>
-		<string>Montserrat-Medium.ttf</string>
-		<string>Montserrat-Light.ttf</string>
+		<string>Comfortaa-Light.ttf</string>
+		<string>Comfortaa-Medium.ttf</string>
+		<string>Comfortaa-SemiBold.ttf</string>
+		<string>Comfortaa-Regular.ttf</string>
 		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-ExtraBold.ttf</string>
+		<string>Montserrat-ExtraLight.ttf</string>
+		<string>Montserrat-Light.ttf</string>
+		<string>Montserrat-Medium.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-SemiBold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
