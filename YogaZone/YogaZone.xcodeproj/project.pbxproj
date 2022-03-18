@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E12A27DCF47B0070397F /* PoseGalleryViewController.swift */; };
+		2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E12B27DCF47B0070397F /* PoseGalleryViewController.xib */; };
+		2F79E13B27DCF6E40070397F /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E13427DCF6E40070397F /* Montserrat-Light.ttf */; };
+		2F79E13C27DCF6E40070397F /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E13527DCF6E40070397F /* Montserrat-Medium.ttf */; };
+		2F79E13D27DCF6E40070397F /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E13627DCF6E40070397F /* Montserrat-ExtraBold.ttf */; };
+		2F79E13E27DCF6E40070397F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E13727DCF6E40070397F /* Montserrat-Regular.ttf */; };
+		2F79E13F27DCF6E40070397F /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E13827DCF6E40070397F /* Montserrat-ExtraLight.ttf */; };
+		2F79E14027DCF6E40070397F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E13927DCF6E40070397F /* Montserrat-SemiBold.ttf */; };
+		2F79E14127DCF6E40070397F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E13A27DCF6E40070397F /* Montserrat-Bold.ttf */; };
+		2F79E14727DCF6FA0070397F /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E14227DCF6F90070397F /* Comfortaa-SemiBold.ttf */; };
+		2F79E14827DCF6FA0070397F /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E14327DCF6F90070397F /* Comfortaa-Regular.ttf */; };
+		2F79E14927DCF6FA0070397F /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E14427DCF6FA0070397F /* Comfortaa-Medium.ttf */; };
+		2F79E14A27DCF6FA0070397F /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E14527DCF6FA0070397F /* Comfortaa-Bold.ttf */; };
+		2F79E14B27DCF6FA0070397F /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E14627DCF6FA0070397F /* Comfortaa-Light.ttf */; };
+		2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E14D27DCFA120070397F /* PoseCell.swift */; };
+		2F79E15027DCFA120070397F /* PoseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E14E27DCFA120070397F /* PoseCell.xib */; };
+		2F79E15227DCFEEB0070397F /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E15127DCFEEB0070397F /* Pose.swift */; };
+		2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E15327DD034C0070397F /* PoseCategory.swift */; };
+		2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E15727DD0B170070397F /* PoseDetailViewController.swift */; };
+		2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E15827DD0B170070397F /* PoseDetailViewController.xib */; };
+		2F79E15E27DD0DB60070397F /* ModalVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E15C27DD0DB60070397F /* ModalVideoViewController.swift */; };
+		2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */; };
+		2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E16127DD12A30070397F /* PoseCategoryCell.swift */; };
+		2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E16227DD12A30070397F /* PoseCategoryCell.xib */; };
+		2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0560227E022DA000E9CA6 /* Poses.swift */; };
+		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
+		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
+		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
+		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
+		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F79E12A27DCF47B0070397F /* PoseGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGalleryViewController.swift; sourceTree = "<group>"; };
+		2F79E12B27DCF47B0070397F /* PoseGalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseGalleryViewController.xib; sourceTree = "<group>"; };
+		2F79E13427DCF6E40070397F /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		2F79E13527DCF6E40070397F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		2F79E13627DCF6E40070397F /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2F79E13727DCF6E40070397F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		2F79E13827DCF6E40070397F /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		2F79E13927DCF6E40070397F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		2F79E13A27DCF6E40070397F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		2F79E14227DCF6F90070397F /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		2F79E14327DCF6F90070397F /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		2F79E14427DCF6FA0070397F /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		2F79E14527DCF6FA0070397F /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		2F79E14627DCF6FA0070397F /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		2F79E14D27DCFA120070397F /* PoseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCell.swift; sourceTree = "<group>"; };
+		2F79E14E27DCFA120070397F /* PoseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseCell.xib; sourceTree = "<group>"; };
+		2F79E15127DCFEEB0070397F /* Pose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
+		2F79E15327DD034C0070397F /* PoseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategory.swift; sourceTree = "<group>"; };
+		2F79E15727DD0B170070397F /* PoseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetailViewController.swift; sourceTree = "<group>"; };
+		2F79E15827DD0B170070397F /* PoseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseDetailViewController.xib; sourceTree = "<group>"; };
+		2F79E15C27DD0DB60070397F /* ModalVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalVideoViewController.swift; sourceTree = "<group>"; };
+		2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalVideoViewController.xib; sourceTree = "<group>"; };
+		2F79E16127DD12A30070397F /* PoseCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategoryCell.swift; sourceTree = "<group>"; };
+		2F79E16227DD12A30070397F /* PoseCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseCategoryCell.xib; sourceTree = "<group>"; };
+		2FB0560227E022DA000E9CA6 /* Poses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poses.swift; sourceTree = "<group>"; };
+		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3126833B27C15ECA003F017B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3126833D27C15ECA003F017B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3126833327C15ECA003F017B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F79E12627DCF42B0070397F /* PoseGallery */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E15527DD0AED0070397F /* Detail */,
+				2F79E12927DCF4490070397F /* Mock */,
+				2F79E12827DCF4440070397F /* Models */,
+				2F79E12727DCF43C0070397F /* Cell */,
+				2F79E12A27DCF47B0070397F /* PoseGalleryViewController.swift */,
+				2F79E12B27DCF47B0070397F /* PoseGalleryViewController.xib */,
+			);
+			path = PoseGallery;
+			sourceTree = "<group>";
+		};
+		2F79E12727DCF43C0070397F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E14D27DCFA120070397F /* PoseCell.swift */,
+				2F79E14E27DCFA120070397F /* PoseCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2F79E12827DCF4440070397F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E15127DCFEEB0070397F /* Pose.swift */,
+				2F79E15327DD034C0070397F /* PoseCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F79E12927DCF4490070397F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2FB0560227E022DA000E9CA6 /* Poses.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		2F79E12E27DCF5AE0070397F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E12F27DCF5B30070397F /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2F79E12F27DCF5B30070397F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E14527DCF6FA0070397F /* Comfortaa-Bold.ttf */,
+				2F79E14627DCF6FA0070397F /* Comfortaa-Light.ttf */,
+				2F79E14427DCF6FA0070397F /* Comfortaa-Medium.ttf */,
+				2F79E14327DCF6F90070397F /* Comfortaa-Regular.ttf */,
+				2F79E14227DCF6F90070397F /* Comfortaa-SemiBold.ttf */,
+				2F79E13A27DCF6E40070397F /* Montserrat-Bold.ttf */,
+				2F79E13627DCF6E40070397F /* Montserrat-ExtraBold.ttf */,
+				2F79E13827DCF6E40070397F /* Montserrat-ExtraLight.ttf */,
+				2F79E13427DCF6E40070397F /* Montserrat-Light.ttf */,
+				2F79E13527DCF6E40070397F /* Montserrat-Medium.ttf */,
+				2F79E13727DCF6E40070397F /* Montserrat-Regular.ttf */,
+				2F79E13927DCF6E40070397F /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2F79E15527DD0AED0070397F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E16027DD124F0070397F /* PoseCategoryCell */,
+				2F79E15B27DD0D980070397F /* ModalVideo */,
+				2F79E15727DD0B170070397F /* PoseDetailViewController.swift */,
+				2F79E15827DD0B170070397F /* PoseDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2F79E15B27DD0D980070397F /* ModalVideo */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E15C27DD0DB60070397F /* ModalVideoViewController.swift */,
+				2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */,
+			);
+			path = ModalVideo;
+			sourceTree = "<group>";
+		};
+		2F79E16027DD124F0070397F /* PoseCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E16127DD12A30070397F /* PoseCategoryCell.swift */,
+				2F79E16227DD12A30070397F /* PoseCategoryCell.xib */,
+			);
+			path = PoseCategoryCell;
+			sourceTree = "<group>";
+		};
+		3126832D27C15ECA003F017B = {
+			isa = PBXGroup;
+			children = (
+				3126833827C15ECA003F017B /* YogaZone */,
+				3126833727C15ECA003F017B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3126833727C15ECA003F017B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3126833627C15ECA003F017B /* YogaZone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3126833827C15ECA003F017B /* YogaZone */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E12E27DCF5AE0070397F /* Assets */,
+				2F79E12627DCF42B0070397F /* PoseGallery */,
+				3126833927C15ECA003F017B /* AppDelegate.swift */,
+				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
+				3126833D27C15ECA003F017B /* ViewController.swift */,
+				3126834227C15ECB003F017B /* Assets.xcassets */,
+				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
+				3126834727C15ECB003F017B /* Info.plist */,
+			);
+			path = YogaZone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3126833527C15ECA003F017B /* YogaZone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3126834A27C15ECB003F017B /* Build configuration list for PBXNativeTarget "YogaZone" */;
+			buildPhases = (
+				3126833227C15ECA003F017B /* Sources */,
+				3126833327C15ECA003F017B /* Frameworks */,
+				3126833427C15ECA003F017B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YogaZone;
+			productName = YogaZone;
+			productReference = 3126833627C15ECA003F017B /* YogaZone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3126832E27C15ECA003F017B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3126833527C15ECA003F017B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3126833127C15ECA003F017B /* Build configuration list for PBXProject "YogaZone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3126832D27C15ECA003F017B;
+			productRefGroup = 3126833727C15ECA003F017B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3126833527C15ECA003F017B /* YogaZone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3126833427C15ECA003F017B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F79E14B27DCF6FA0070397F /* Comfortaa-Light.ttf in Resources */,
+				2F79E13E27DCF6E40070397F /* Montserrat-Regular.ttf in Resources */,
+				2F79E13B27DCF6E40070397F /* Montserrat-Light.ttf in Resources */,
+				2F79E14A27DCF6FA0070397F /* Comfortaa-Bold.ttf in Resources */,
+				2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */,
+				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
+				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
+				2F79E14927DCF6FA0070397F /* Comfortaa-Medium.ttf in Resources */,
+				2F79E14727DCF6FA0070397F /* Comfortaa-SemiBold.ttf in Resources */,
+				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
+				2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */,
+				2F79E14027DCF6E40070397F /* Montserrat-SemiBold.ttf in Resources */,
+				2F79E13F27DCF6E40070397F /* Montserrat-ExtraLight.ttf in Resources */,
+				2F79E13C27DCF6E40070397F /* Montserrat-Medium.ttf in Resources */,
+				2F79E13D27DCF6E40070397F /* Montserrat-ExtraBold.ttf in Resources */,
+				2F79E14127DCF6E40070397F /* Montserrat-Bold.ttf in Resources */,
+				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
+				2F79E14827DCF6FA0070397F /* Comfortaa-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3126833227C15ECA003F017B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
+				2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */,
+				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
+				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
+				2F79E15E27DD0DB60070397F /* ModalVideoViewController.swift in Sources */,
+				2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */,
+				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
+				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
+				2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */,
+				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3126834427C15ECB003F017B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3126834527C15ECB003F017B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3126834827C15ECB003F017B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3126834927C15ECB003F017B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3126834B27C15ECB003F017B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NXNZY6B6S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YogaZone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.backfront.YogaZone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3126834C27C15ECB003F017B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NXNZY6B6S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YogaZone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.backfront.YogaZone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3126833127C15ECA003F017B /* Build configuration list for PBXProject "YogaZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3126834827C15ECB003F017B /* Debug */,
+				3126834927C15ECB003F017B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3126834A27C15ECB003F017B /* Build configuration list for PBXNativeTarget "YogaZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3126834B27C15ECB003F017B /* Debug */,
+				3126834C27C15ECB003F017B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3126832E27C15ECA003F017B /* Project object */;
+}
