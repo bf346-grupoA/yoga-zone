@@ -52,7 +52,7 @@ extension HomeHeader {
             label.translatesAutoresizingMaskIntoConstraints = false
             label.font = UIFont.systemFont(ofSize: 20)
             label.textColor = .black
-            
+            label.text = "Ola Meu Mano"
             return label
         }()
         
@@ -60,11 +60,10 @@ extension HomeHeader {
         addSubview(profileImage)
         
         
-        
         greetingLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         greetingLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8).isActive = true
         greetingLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        greetingLabel.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        greetingLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
         
         profileImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         profileImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8).isActive = true

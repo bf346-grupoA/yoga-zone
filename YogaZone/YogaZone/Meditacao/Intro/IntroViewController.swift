@@ -18,7 +18,7 @@ class IntroViewController: UIViewController {
     }
 
     @IBAction func onStart(_ sender: UIButton) {
-        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+        self.navigationController?.pushViewController(MeditacaoHomeViewController(), animated: true)
     }
     
 }

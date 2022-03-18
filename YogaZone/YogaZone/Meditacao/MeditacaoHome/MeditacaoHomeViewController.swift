@@ -2,7 +2,7 @@ import UIKit
 
 private let reuseIdentifier = "AudioCell"
 
-class HomeViewController: UIViewController {
+class MeditacaoHomeViewController: UIViewController {
     
     @IBOutlet weak var meditationTableView: UITableView!
     
@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
 }
 
 // MARK: Data Mock
-extension HomeViewController {
+extension MeditacaoHomeViewController {
     func setupData() {
         let jsonData = meditationMock.data(using: .utf8)!
         let meditationData = try! JSONDecoder().decode([MeditationAudioFile].self, from: jsonData)
@@ -29,7 +29,7 @@ extension HomeViewController {
 
 
 // MARK: UI Functions
-extension HomeViewController {
+extension MeditacaoHomeViewController {
     func setupUI() {
         
         let nibCell = UINib(nibName: reuseIdentifier, bundle: nil)
@@ -40,7 +40,7 @@ extension HomeViewController {
 
 
 // MARK: TableViewDelegate & TableViewDataSource
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension MeditacaoHomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in TableView: UITableView) -> Int {
         return 1
     }

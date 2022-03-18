@@ -10,12 +10,12 @@ import UIKit
 
 class Router {
     static let routes: [Int: UIViewController] = [
-        1: HomeViewController(), // PosesViewController()
-        2: HomeViewController(), // ImcViewController()
-        3: HomeViewController(), // RespiracaoViewController()
-        4: HomeViewController(), // MeditcacaoViewController()
-        5: HomeViewController(), // TreinosViewController()
-        6: HomeViewController() // EventosViewController()
+        1: PoseGalleryViewController(), // PosesViewController()
+        2: PoseGalleryViewController(), // ImcViewController()
+        3: PoseGalleryViewController(), // RespiracaoViewController()
+        4: PoseGalleryViewController(), // MeditcacaoViewController()
+        5: PoseGalleryViewController(), // TreinosViewController()
+        6: PoseGalleryViewController() // EventosViewController()
     ]
     
     static let firstSectionRouter: [Int: Int] = [
