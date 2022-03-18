@@ -7,7 +7,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let navController = UINavigationController(rootViewController: HomeViewController())
+        
+        
+        let storyboard = UIStoryboard(name: "HomeEvents", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "HomeEventsViewController")
+        
+        let navController = UINavigationController(rootViewController: vc)
         window = UIWindow(windowScene: windowScene)
         window?.backgroundColor = .white
         window?.frame = UIScreen.main.bounds
