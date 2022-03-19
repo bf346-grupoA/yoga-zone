@@ -10,7 +10,8 @@ class InhaleViewController: UIViewController {
   
     @IBOutlet weak var labelInhale: UILabel!
     @IBOutlet weak var inhaleButton: UIButton!
-  
+    @IBOutlet weak var labelCicleInhale: UILabel!
+    
     
     
     override func viewDidLoad() {

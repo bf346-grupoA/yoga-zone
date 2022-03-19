@@ -4,6 +4,8 @@ import UIKit
 
 class HoldViewController: UIViewController {
     @IBOutlet weak var holdButton: UIButton!
+    @IBOutlet weak var labelCicleHold: UILabel!
+    @IBOutlet weak var labelSecondsHold: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

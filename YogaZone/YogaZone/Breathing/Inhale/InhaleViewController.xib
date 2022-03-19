@@ -16,6 +16,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InhaleViewController" customModule="YogaZone" customModuleProvider="target">
             <connections>
                 <outlet property="inhaleButton" destination="fy1-zg-HtC" id="reo-zH-PEU"/>
+                <outlet property="labelCicleInhale" destination="Irj-Do-ja2" id="HIg-G8-jD6"/>
                 <outlet property="labelInhale" destination="Ias-wd-cDU" id="lrx-6y-Cik"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -46,13 +47,22 @@
                     <color key="textColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciclo 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irj-Do-ja2">
+                    <rect key="frame" x="94" y="114" width="227" height="37"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="30"/>
+                    <color key="textColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ias-wd-cDU" secondAttribute="bottom" constant="130" id="LNm-aZ-Bve"/>
+                <constraint firstItem="Irj-Do-ja2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="94" id="Tnu-v6-hsB"/>
                 <constraint firstItem="fy1-zg-HtC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="264" id="f4T-87-wO0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fy1-zg-HtC" secondAttribute="trailing" constant="67" id="fR5-tV-uzV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Irj-Do-ja2" secondAttribute="trailing" constant="93" id="fYI-T0-r9v"/>
+                <constraint firstItem="Irj-Do-ja2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="lzc-vU-Hxs"/>
                 <constraint firstItem="fy1-zg-HtC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="o3d-8Z-4Hh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ias-wd-cDU" secondAttribute="trailing" constant="93" id="sfc-mO-pd6"/>
                 <constraint firstItem="Ias-wd-cDU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="94" id="ubg-7A-dzf"/>

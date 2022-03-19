@@ -16,6 +16,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HoldViewController" customModule="YogaZone" customModuleProvider="target">
             <connections>
                 <outlet property="holdButton" destination="aar-GX-DFp" id="R9h-Al-fPB"/>
+                <outlet property="labelCicleHold" destination="FS2-9R-5x5" id="bF7-cx-VgA"/>
+                <outlet property="labelSecondsHold" destination="V4y-cD-EYl" id="2vG-Mp-Ef9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -45,16 +47,25 @@
                     <color key="textColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciclo 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FS2-9R-5x5">
+                    <rect key="frame" x="94" y="114" width="227" height="37"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="30"/>
+                    <color key="textColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="FS2-9R-5x5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="52g-9n-cCF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="V4y-cD-EYl" secondAttribute="bottom" constant="130" id="DW1-eV-bqO"/>
                 <constraint firstItem="aar-GX-DFp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="264" id="NrG-WC-W5U"/>
                 <constraint firstItem="V4y-cD-EYl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="94" id="Q5H-Kw-aeh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aar-GX-DFp" secondAttribute="trailing" constant="67" id="S0A-Zf-UwR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V4y-cD-EYl" secondAttribute="trailing" constant="93" id="Z3w-t9-G5c"/>
                 <constraint firstItem="aar-GX-DFp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="ia1-5W-SwM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FS2-9R-5x5" secondAttribute="trailing" constant="93" id="q5D-hJ-6xL"/>
+                <constraint firstItem="FS2-9R-5x5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="94" id="sW1-I5-knJ"/>
             </constraints>
             <point key="canvasLocation" x="133" y="79"/>
         </view>
