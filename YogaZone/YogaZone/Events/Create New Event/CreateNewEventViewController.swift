@@ -25,6 +25,11 @@ class CreateNewEventViewController: UIViewController {
     
     @IBAction func createEventButtonTapped(_ sender: UIButton) {
         let vc = EventCreatedSuccessViewController()
+        vc.titleText = "Criar Novo Evento"
+        vc.sucessMessage = """
+        Evento criado com sucesso !
+        Para visualiza-lo, acesse o submenu ‘Meus Eventos’ dentro de ‘Eventos’ e selecione o filtro para visualizar os eventos ‘Criados por mim’.
+        """
         navigationController?.pushViewController(vc, animated: true)
     }
     

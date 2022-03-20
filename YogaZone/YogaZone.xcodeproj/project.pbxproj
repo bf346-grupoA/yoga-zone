@@ -15,13 +15,9 @@
 		2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F5927E429D800993E41 /* HomeEventsViewController.swift */; };
 		2F036F7D27E429D800993E41 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F5B27E429D800993E41 /* EventCell.swift */; };
 		2F036F7E27E429D800993E41 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F5C27E429D800993E41 /* EventCell.xib */; };
-		2F036F7F27E429D800993E41 /* MockAppHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F5D27E429D800993E41 /* MockAppHomeViewController.swift */; };
-		2F036F8027E429D800993E41 /* MockAppHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F5E27E429D800993E41 /* MockAppHomeViewController.xib */; };
 		2F036F8127E429D800993E41 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F6027E429D800993E41 /* EventData.swift */; };
 		2F036F8227E429D800993E41 /* CreateNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F6227E429D800993E41 /* CreateNewEventViewController.swift */; };
 		2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F6327E429D800993E41 /* CreateNewEventViewController.xib */; };
-		2F036F8427E429D800993E41 /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F6427E429D800993E41 /* EventCreatedSuccessViewController.xib */; };
-		2F036F8527E429D800993E41 /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F6527E429D800993E41 /* EventCreatedSuccessViewController.swift */; };
 		2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F6827E429D800993E41 /* FinalizedContainerViewController.swift */; };
 		2F036F8727E429D800993E41 /* CancelContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F6927E429D800993E41 /* CancelContainerViewController.swift */; };
 		2F036F8827E429D800993E41 /* ConfirmContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F6A27E429D800993E41 /* ConfirmContainerViewController.swift */; };
@@ -135,6 +131,8 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
+		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,13 +144,9 @@
 		2F036F5927E429D800993E41 /* HomeEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEventsViewController.swift; sourceTree = "<group>"; };
 		2F036F5B27E429D800993E41 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		2F036F5C27E429D800993E41 /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
-		2F036F5D27E429D800993E41 /* MockAppHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAppHomeViewController.swift; sourceTree = "<group>"; };
-		2F036F5E27E429D800993E41 /* MockAppHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MockAppHomeViewController.xib; sourceTree = "<group>"; };
 		2F036F6027E429D800993E41 /* EventData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
 		2F036F6227E429D800993E41 /* CreateNewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewEventViewController.swift; sourceTree = "<group>"; };
 		2F036F6327E429D800993E41 /* CreateNewEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateNewEventViewController.xib; sourceTree = "<group>"; };
-		2F036F6427E429D800993E41 /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
-		2F036F6527E429D800993E41 /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		2F036F6827E429D800993E41 /* FinalizedContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalizedContainerViewController.swift; sourceTree = "<group>"; };
 		2F036F6927E429D800993E41 /* CancelContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelContainerViewController.swift; sourceTree = "<group>"; };
 		2F036F6A27E429D800993E41 /* ConfirmContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmContainerViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +262,8 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
+		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +280,7 @@
 		2F036F5027E429D800993E41 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				8327042227E7AB3A0006CF3B /* Sucess Screen */,
 				2F036F5127E429D800993E41 /* Events Home */,
 				2F036F5F27E429D800993E41 /* Mock */,
 				2F036F6127E429D800993E41 /* Create New Event */,
@@ -301,8 +298,6 @@
 				2F036F5827E429D800993E41 /* HomeEvents.storyboard */,
 				2F036F5927E429D800993E41 /* HomeEventsViewController.swift */,
 				2F036F5A27E429D800993E41 /* Cell */,
-				2F036F5D27E429D800993E41 /* MockAppHomeViewController.swift */,
-				2F036F5E27E429D800993E41 /* MockAppHomeViewController.xib */,
 			);
 			path = "Events Home";
 			sourceTree = "<group>";
@@ -347,8 +342,6 @@
 			children = (
 				2F036F6227E429D800993E41 /* CreateNewEventViewController.swift */,
 				2F036F6327E429D800993E41 /* CreateNewEventViewController.xib */,
-				2F036F6427E429D800993E41 /* EventCreatedSuccessViewController.xib */,
-				2F036F6527E429D800993E41 /* EventCreatedSuccessViewController.swift */,
 			);
 			path = "Create New Event";
 			sourceTree = "<group>";
@@ -961,6 +954,15 @@
 			path = YogaZone;
 			sourceTree = "<group>";
 		};
+		8327042227E7AB3A0006CF3B /* Sucess Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */,
+				8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */,
+			);
+			path = "Sucess Screen";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1031,7 +1033,6 @@
 				2F412ED127E41821007708E8 /* AudioCell.xib in Resources */,
 				2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */,
 				2F0C342827E4384E004A1E8C /* ExpireViewController.xib in Resources */,
-				2F036F8027E429D800993E41 /* MockAppHomeViewController.xib in Resources */,
 				2F036FB227E429E400993E41 /* HistoricoTableViewCell.xib in Resources */,
 				2F412EF327E41A0B007708E8 /* pad-B.mp3 in Resources */,
 				2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */,
@@ -1041,8 +1042,8 @@
 				2F0C342C27E4384E004A1E8C /* HoldViewController.xib in Resources */,
 				2F0C33DE27E432EC004A1E8C /* InfEmailViewController.xib in Resources */,
 				2F0C343627E43954004A1E8C /* start.mp4 in Resources */,
+				8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */,
 				2F412EF227E41A0B007708E8 /* pad-C.mp3 in Resources */,
-				2F036F8427E429D800993E41 /* EventCreatedSuccessViewController.xib in Resources */,
 				2F036F7E27E429D800993E41 /* EventCell.xib in Resources */,
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
@@ -1114,6 +1115,7 @@
 				2F0C343C27E53336004A1E8C /* Selectable.swift in Sources */,
 				2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */,
 				2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */,
+				8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */,
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036FAC27E429E400993E41 /* ImcController.swift in Sources */,
@@ -1131,7 +1133,6 @@
 				2F0C342E27E4384E004A1E8C /* InhaleViewController.swift in Sources */,
 				2F036FB527E429E400993E41 /* ResultadoController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
-				2F036F8527E429D800993E41 /* EventCreatedSuccessViewController.swift in Sources */,
 				2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */,
 				2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */,
 				2F036F7D27E429D800993E41 /* EventCell.swift in Sources */,
@@ -1141,7 +1142,6 @@
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				2F412EB727E4101E007708E8 /* HomeViewController.swift in Sources */,
 				2F036FB427E429E400993E41 /* Result.swift in Sources */,
-				2F036F7F27E429D800993E41 /* MockAppHomeViewController.swift in Sources */,
 				2F036FB327E429E400993E41 /* ImcEnums.swift in Sources */,
 				2F0C33E227E432EC004A1E8C /* telaaLoginViewController.swift in Sources */,
 				2F0C33DD27E432EC004A1E8C /* InfEmailViewController.swift in Sources */,

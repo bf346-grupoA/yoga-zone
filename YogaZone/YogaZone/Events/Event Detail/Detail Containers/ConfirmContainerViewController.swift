@@ -17,7 +17,13 @@ class ConfirmContainerViewController:UIViewController {
     }
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
-        
+        let vc = EventCreatedSuccessViewController()
+        vc.titleText = "Confirmado!"
+        vc.sucessMessage = """
+        Sua participação foi confirmada !
+        Para visualiza-lo, acesse o submenu ‘Meus Eventos’ dentro de ‘Eventos’.
+        """
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

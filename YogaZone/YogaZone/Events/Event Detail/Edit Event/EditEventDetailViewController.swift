@@ -27,12 +27,17 @@ class EditEventDetailViewController: UIViewController {
     }
     
     @IBAction func editButtonTapped(_ sender: Any) {
-        
+        let vc = EventCreatedSuccessViewController()
+        vc.titleText = "Evento Alterado!"
+        vc.sucessMessage = """
+        Evento alterado com sucesso !
+        """
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func deleteButtonTapped(_ sender: Any) {
-        let alertVC = alertService.alert(alertTitle: "Atenção!", alertDescription: "Confirmar Exclusão do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Exclusão")
-        present(alertVC, animated: true)
+        let alertVC = alertService.alert(parentVC: self, alertTitle: "Atenção!", alertDescription: "Confirmar Exclusão do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Exclusão")
+        self.present(alertVC, animated: true)
     }
     
 }
