@@ -27,6 +27,7 @@
 		797E9CB627E7799F00D1EB7B /* TreinoPausadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9CA627E7799F00D1EB7B /* TreinoPausadoVC.swift */; };
 		797E9CB727E7799F00D1EB7B /* TreinoPausadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9CA727E7799F00D1EB7B /* TreinoPausadoVC.xib */; };
 		797E9CB927E779BC00D1EB7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797E9CB827E779BC00D1EB7B /* Assets.xcassets */; };
+		7988BBD427E7E409006B5BBB /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7988BBD327E7E409006B5BBB /* iOSDevCenters+GIF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		797E9CA627E7799F00D1EB7B /* TreinoPausadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoPausadoVC.swift; sourceTree = "<group>"; };
 		797E9CA727E7799F00D1EB7B /* TreinoPausadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoPausadoVC.xib; sourceTree = "<group>"; };
 		797E9CB827E779BC00D1EB7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7988BBD327E7E409006B5BBB /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +141,10 @@
 		797E9C9927E7799F00D1EB7B /* TreinoIniciado */ = {
 			isa = PBXGroup;
 			children = (
-				797E9C9A27E7799F00D1EB7B /* TreinoIniciadoVC.xib */,
 				797E9C9B27E7799F00D1EB7B /* Gifs */,
+				797E9C9A27E7799F00D1EB7B /* TreinoIniciadoVC.xib */,
 				797E9C9D27E7799F00D1EB7B /* TreinoIniciadoVC.swift */,
+				7988BBD327E7E409006B5BBB /* iOSDevCenters+GIF.swift */,
 			);
 			path = TreinoIniciado;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				797E9CAB27E7799F00D1EB7B /* TreinoCustomCell.swift in Sources */,
 				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				7988BBD427E7E409006B5BBB /* iOSDevCenters+GIF.swift in Sources */,
 				797E9CB427E7799F00D1EB7B /* TreinoUmController.swift in Sources */,
 				797E9CB627E7799F00D1EB7B /* TreinoPausadoVC.swift in Sources */,
 				797E9CAC27E7799F00D1EB7B /* TreinoListagemController.swift in Sources */,

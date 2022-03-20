@@ -18,17 +18,18 @@ class TreinoIniciadoVC: UIViewController {
     
     @IBOutlet weak var secondsTimerLabel: UILabel!
     
-    @IBOutlet weak var minutesAndSecondsTimerLabel: UILabel!
-    
     @IBOutlet weak var pauseImage: UIImageView!
     
     @IBOutlet weak var nextImage: UIImageView!
+    
+    @IBOutlet weak var gifImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configBackButton()
         self.configPauseButton()
         self.configNextButton()
+        self.loadGifImage()
         
         
         tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
@@ -39,6 +40,11 @@ class TreinoIniciadoVC: UIViewController {
         // Hide Back Button from UINavigationItem
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
+    
+    func loadGifImage(){
+        gifImage.image = UIImage.gifImageWithName("01_Natarajasana")
+    }
+ 
     
 
     private func configBackButton(){
