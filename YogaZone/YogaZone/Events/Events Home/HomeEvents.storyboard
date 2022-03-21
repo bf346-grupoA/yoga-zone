@@ -27,25 +27,29 @@
                                     <action selector="didTapSegmentWithSegment:" destination="Y6W-OH-hqX" eventType="valueChanged" id="TWh-Da-8k4"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZK-5s-Taq" userLabel="Filter">
-                                <rect key="frame" x="25" y="100" width="67" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZK-5s-Taq" userLabel="Filter">
+                                <rect key="frame" x="25" y="100" width="63.5" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="5qe-4Z-FmM"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="50"/>
+                                <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="50"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <backgroundConfiguration key="background" cornerRadius="50">
                                         <color key="backgroundColor" red="1" green="0.53725490200000003" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="strokeColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="filterButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jxo-In-d0d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSL-Rr-DQw" userLabel="Create New Event">
-                                <rect key="frame" x="283" y="100" width="67" height="27"/>
+                                <rect key="frame" x="286.5" y="100" width="63.5" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="LjY-hB-taz"/>
                                 </constraints>
@@ -56,6 +60,7 @@
                                         <color key="backgroundColor" red="1" green="0.53725490200000003" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="strokeColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="createEventButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1iQ-Kx-dIp"/>

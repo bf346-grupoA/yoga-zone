@@ -60,12 +60,24 @@ class HomeEventsViewController: UIViewController{
 // MARK: UI Functions
 extension HomeEventsViewController {
     func setupUI(){
+        
+        
+        self.buttonFilter.setImage(UIImage(named:"sliders-white"), for: .normal)
+        self.buttonFilter.semanticContentAttribute = .forceLeftToRight
+        
+        self.buttonCreateNewEvent.setImage(UIImage(named:"circle-plus-white"), for: .normal)
+        self.buttonCreateNewEvent.semanticContentAttribute = .forceLeftToRight
+        
+        self.buttonFilter.configuration?.imagePadding = 5
+        self.buttonCreateNewEvent.configuration?.imagePadding = 5
+        
         self.navigationItem.title = "Eventos"
         self.buttonFilter.setTitle("Filtros", for: .normal)
         self.buttonCreateNewEvent.setTitle("Criar Novo Evento", for: .normal)
         self.optionsControl.setTitle("Lista", forSegmentAt: 0)
         self.optionsControl.setTitle("Mapa", forSegmentAt: 1)
         self.optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
+        
     }
     
 }

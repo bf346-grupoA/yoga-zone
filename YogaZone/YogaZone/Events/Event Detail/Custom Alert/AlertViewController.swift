@@ -25,7 +25,6 @@ class AlertViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
     }
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
@@ -40,7 +39,6 @@ class AlertViewController: UIViewController {
             
             self.dismiss(animated: true, completion: {
                 self.parentVC.navigationController?.pushViewController(vc, animated: false)
-                
             })
             
         } else if actionType == "Cancelamento"{
@@ -51,9 +49,7 @@ class AlertViewController: UIViewController {
          """
             
             self.dismiss(animated: true, completion: {
-                
                 self.parentVC.navigationController?.pushViewController(vc, animated: false)
-                
             })
         }
     }
@@ -69,7 +65,7 @@ extension AlertViewController {
     func setupUI(){
         self.alertView.layer.cornerRadius = 8
         self.alertView.layer.borderWidth = 1
-                
+        
         self.cancelButton.layer.cornerRadius = 8
         self.cancelButton.layer.borderWidth = 1
         self.cancelButton.layer.borderColor = UIColor.black.cgColor

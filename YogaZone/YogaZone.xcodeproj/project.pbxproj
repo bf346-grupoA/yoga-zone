@@ -880,13 +880,6 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
-		2F79E12E27DCF5AE0070397F /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 		2F79E15527DD0AED0070397F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -943,7 +936,6 @@
 				2F412EDA27E41A0B007708E8 /* Assets */,
 				2F412EBB27E41821007708E8 /* Meditacao */,
 				2F412EAD27E4101E007708E8 /* Home */,
-				2F79E12E27DCF5AE0070397F /* Assets */,
 				2F79E12627DCF42B0070397F /* PoseGallery */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
