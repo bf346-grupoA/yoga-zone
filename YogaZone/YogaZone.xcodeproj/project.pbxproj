@@ -133,6 +133,18 @@
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
+		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
+		8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */; };
+		8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */; };
+		8391EA5327E820E800F466F2 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4727E820E800F466F2 /* Montserrat-ExtraLight.ttf */; };
+		8391EA5427E820E800F466F2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4827E820E800F466F2 /* Montserrat-Bold.ttf */; };
+		8391EA5527E820E800F466F2 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4927E820E800F466F2 /* Comfortaa-SemiBold.ttf */; };
+		8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4A27E820E800F466F2 /* Comfortaa-Medium.ttf */; };
+		8391EA5727E820E800F466F2 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4B27E820E800F466F2 /* Montserrat-SemiBold.ttf */; };
+		8391EA5827E820E800F466F2 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4C27E820E800F466F2 /* Montserrat-ExtraBold.ttf */; };
+		8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4D27E820E800F466F2 /* Montserrat-Regular.ttf */; };
+		8391EA5A27E820E800F466F2 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */; };
+		8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -264,6 +276,18 @@
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
+		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		8391EA4727E820E800F466F2 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		8391EA4827E820E800F466F2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		8391EA4927E820E800F466F2 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		8391EA4A27E820E800F466F2 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		8391EA4B27E820E800F466F2 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		8391EA4C27E820E800F466F2 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8391EA4D27E820E800F466F2 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -821,6 +845,7 @@
 		2F412EDA27E41A0B007708E8 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8391EA4327E820E800F466F2 /* Fonts */,
 				2F412EDB27E41A0B007708E8 /* SoundBank */,
 			);
 			path = Assets;
@@ -955,6 +980,25 @@
 			path = "Sucess Screen";
 			sourceTree = "<group>";
 		};
+		8391EA4327E820E800F466F2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */,
+				8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */,
+				8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */,
+				8391EA4727E820E800F466F2 /* Montserrat-ExtraLight.ttf */,
+				8391EA4827E820E800F466F2 /* Montserrat-Bold.ttf */,
+				8391EA4927E820E800F466F2 /* Comfortaa-SemiBold.ttf */,
+				8391EA4A27E820E800F466F2 /* Comfortaa-Medium.ttf */,
+				8391EA4B27E820E800F466F2 /* Montserrat-SemiBold.ttf */,
+				8391EA4C27E820E800F466F2 /* Montserrat-ExtraBold.ttf */,
+				8391EA4D27E820E800F466F2 /* Montserrat-Regular.ttf */,
+				8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */,
+				8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1025,22 +1069,29 @@
 				2F412ED127E41821007708E8 /* AudioCell.xib in Resources */,
 				2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */,
 				2F0C342827E4384E004A1E8C /* ExpireViewController.xib in Resources */,
+				8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */,
 				2F036FB227E429E400993E41 /* HistoricoTableViewCell.xib in Resources */,
 				2F412EF327E41A0B007708E8 /* pad-B.mp3 in Resources */,
 				2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */,
+				8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */,
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
+				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
 				2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */,
 				2F412ED427E41821007708E8 /* IntroViewController.xib in Resources */,
 				2F0C342C27E4384E004A1E8C /* HoldViewController.xib in Resources */,
+				8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */,
 				2F0C33DE27E432EC004A1E8C /* InfEmailViewController.xib in Resources */,
 				2F0C343627E43954004A1E8C /* start.mp4 in Resources */,
 				8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */,
+				8391EA5A27E820E800F466F2 /* Comfortaa-Regular.ttf in Resources */,
 				2F412EF227E41A0B007708E8 /* pad-C.mp3 in Resources */,
+				8391EA5427E820E800F466F2 /* Montserrat-Bold.ttf in Resources */,
 				2F036F7E27E429D800993E41 /* EventCell.xib in Resources */,
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
 				2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
 				2F036FAB27E429E400993E41 /* ImcController.xib in Resources */,
 				2F036F8C27E429D800993E41 /* Alert.storyboard in Resources */,
 				2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */,
@@ -1048,17 +1099,20 @@
 				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
 				2F036FB027E429E400993E41 /* HistoricoController.xib in Resources */,
 				2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */,
+				8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */,
 				2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */,
 				2F036F7B27E429D800993E41 /* HomeEvents.storyboard in Resources */,
 				2F036FAE27E429E400993E41 /* TapeedSwitchObViewController.xib in Resources */,
 				2F0C33E127E432EC004A1E8C /* telaaLoginViewController.xib in Resources */,
 				2F412EF727E41A0B007708E8 /* pad-Gb.mp3 in Resources */,
+				8391EA5527E820E800F466F2 /* Comfortaa-SemiBold.ttf in Resources */,
 				2F412EF527E41A0B007708E8 /* pad-D.mp3 in Resources */,
 				2F0C33FA27E434DA004A1E8C /* UserLevelVC.xib in Resources */,
 				2F412EF827E41A0B007708E8 /* pad-Eb.mp3 in Resources */,
 				2F036FB627E429E400993E41 /* ResultadoController.xib in Resources */,
 				2F036F8A27E429D800993E41 /* EditEventDetailViewController.xib in Resources */,
 				2F412EF627E41A0B007708E8 /* pad-Ab.mp3 in Resources */,
+				8391EA5327E820E800F466F2 /* Montserrat-ExtraLight.ttf in Resources */,
 				2F0C33DC27E432EC004A1E8C /* novaSenhaViewController.xib in Resources */,
 				2F0C33FE27E434DA004A1E8C /* CustomMainRegisterCell.xib in Resources */,
 				2F0C341C27E4384E004A1E8C /* SettingsViewController.xib in Resources */,
@@ -1066,8 +1120,10 @@
 				2F412EF427E41A0B007708E8 /* pad-E.mp3 in Resources */,
 				2F0C341E27E4384E004A1E8C /* BreathingHomeViewController.xib in Resources */,
 				2F0C33E027E432EC004A1E8C /* modalSViewController.xib in Resources */,
+				8391EA5827E820E800F466F2 /* Montserrat-ExtraBold.ttf in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				2F0C342D27E4384E004A1E8C /* InhaleViewController.xib in Resources */,
+				8391EA5727E820E800F466F2 /* Montserrat-SemiBold.ttf in Resources */,
 				2F036FB727E429E400993E41 /* tappedSwitchObController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
