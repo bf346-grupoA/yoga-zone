@@ -33,14 +33,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFt-Qu-Sdd" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzD-Yn-rRl">
-                                                <rect key="frame" x="145.66666666666666" y="14.999999999999998" width="83.666666666666657" height="29.333333333333329"/>
-                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
-                                                <color key="textColor" red="0.36377078289999998" green="0.3279882073" blue="0.65669530629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="Z4x-IH-sHP" userLabel="Stack View Name">
-                                                <rect key="frame" x="30" y="59.333333333333329" width="315" height="21"/>
+                                                <rect key="frame" x="30" y="35" width="315" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcX-42-BCw">
                                                         <rect key="frame" x="0.0" y="0.0" width="53.333333333333336" height="21"/>
@@ -57,7 +51,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="NlM-HU-J7I" userLabel="Stack View Date">
-                                                <rect key="frame" x="30" y="95.333333333333343" width="315" height="21"/>
+                                                <rect key="frame" x="30" y="71" width="315" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCl-8n-p1O">
                                                         <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
@@ -74,7 +68,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="128" translatesAutoresizingMaskIntoConstraints="NO" id="oVL-Py-lpg" userLabel="Stack View Hour">
-                                                <rect key="frame" x="30" y="131.33333333333334" width="315" height="21"/>
+                                                <rect key="frame" x="30" y="107" width="315" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWY-fQ-UNA">
                                                         <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="21"/>
@@ -91,7 +85,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Ier-aH-ufQ" userLabel="Stack View Participants">
-                                                <rect key="frame" x="30" y="167.33333333333334" width="315" height="21"/>
+                                                <rect key="frame" x="30" y="143" width="315" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participantes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1v-dZ-Ym3">
                                                         <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="21"/>
@@ -108,7 +102,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Umi-yw-SeE" userLabel="Stack View Local">
-                                                <rect key="frame" x="30" y="203.33333333333334" width="315" height="21"/>
+                                                <rect key="frame" x="30" y="179" width="315" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJY-n4-fd2">
                                                         <rect key="frame" x="0.0" y="0.0" width="46.333333333333336" height="21"/>
@@ -125,20 +119,20 @@
                                                 </subviews>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MockMapImage" translatesAutoresizingMaskIntoConstraints="NO" id="oTM-K2-cbS">
-                                                <rect key="frame" x="30" y="239.33333333333331" width="315" height="140"/>
+                                                <rect key="frame" x="30" y="215" width="315" height="140"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="P7n-AS-KZq"/>
                                                     <constraint firstAttribute="height" constant="140" id="cah-Sg-iuk"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EI-sB-Jxa">
-                                                <rect key="frame" x="30" y="394.33333333333331" width="315" height="21"/>
+                                                <rect key="frame" x="30" y="370" width="315" height="21"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
                                                 <color key="textColor" red="0.36377078289999998" green="0.3279882073" blue="0.65669530629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNu-VA-mHc">
-                                                <rect key="frame" x="30" y="430.33333333333331" width="315" height="149.99999999999994"/>
+                                                <rect key="frame" x="30" y="406" width="315" height="150"/>
                                                 <color key="backgroundColor" red="0.97028059970000002" green="0.97028059970000002" blue="0.97028059970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -154,7 +148,7 @@ Previsão de término as 21:30.</string>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="jYU-Gy-PVf" userLabel="Stack View Vacancies">
-                                                <rect key="frame" x="30" y="595.33333333333337" width="315" height="21"/>
+                                                <rect key="frame" x="30" y="571" width="315" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vagas disponíveis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkf-oY-84B">
                                                         <rect key="frame" x="0.0" y="0.0" width="146" height="21"/>
@@ -171,7 +165,7 @@ Previsão de término as 21:30.</string>
                                                 </subviews>
                                             </stackView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8p-N1-aBi" userLabel="Container View Confirm">
-                                                <rect key="frame" x="30" y="631.33333333333337" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="607" width="315" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="qJM-oY-YEQ"/>
                                                 </constraints>
@@ -180,7 +174,7 @@ Previsão de término as 21:30.</string>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fun-JD-IpC" userLabel="Container View Cancel">
-                                                <rect key="frame" x="30" y="631.33333333333337" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="607" width="315" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="rXu-3B-Ck8"/>
                                                 </constraints>
@@ -189,7 +183,7 @@ Previsão de término as 21:30.</string>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B24-XY-7kt" userLabel="Container View Edit">
-                                                <rect key="frame" x="30" y="631.33333333333337" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="607" width="315" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mac-Xd-Yds"/>
                                                 </constraints>
@@ -198,7 +192,7 @@ Previsão de término as 21:30.</string>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFI-e3-9Og" userLabel="Container View Finalized">
-                                                <rect key="frame" x="30" y="631.33333333333337" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="607" width="315" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="4OQ-v5-P0e"/>
                                                 </constraints>
@@ -209,7 +203,6 @@ Previsão de término as 21:30.</string>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="ZzD-Yn-rRl" firstAttribute="top" secondItem="OFt-Qu-Sdd" secondAttribute="top" constant="15" id="0lA-FO-HuS"/>
                                             <constraint firstItem="oTM-K2-cbS" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="2O0-4q-fPi"/>
                                             <constraint firstAttribute="trailing" secondItem="oTM-K2-cbS" secondAttribute="trailing" constant="30" id="3kJ-Mc-QYJ"/>
                                             <constraint firstAttribute="trailing" secondItem="a8p-N1-aBi" secondAttribute="trailing" constant="30" id="5vd-iz-33f"/>
@@ -223,7 +216,6 @@ Previsão de término as 21:30.</string>
                                             <constraint firstItem="kNu-VA-mHc" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="Egr-vS-iQw"/>
                                             <constraint firstItem="jYU-Gy-PVf" firstAttribute="top" secondItem="kNu-VA-mHc" secondAttribute="bottom" constant="15" id="Gar-LM-YET"/>
                                             <constraint firstAttribute="trailing" secondItem="jYU-Gy-PVf" secondAttribute="trailing" constant="30" id="Hfp-Uz-lvS"/>
-                                            <constraint firstItem="Z4x-IH-sHP" firstAttribute="top" secondItem="ZzD-Yn-rRl" secondAttribute="bottom" constant="15" id="O8P-jB-oPc"/>
                                             <constraint firstAttribute="trailing" secondItem="Fun-JD-IpC" secondAttribute="trailing" constant="30" id="OW7-30-TEM"/>
                                             <constraint firstItem="a8p-N1-aBi" firstAttribute="top" secondItem="jYU-Gy-PVf" secondAttribute="bottom" constant="15" id="Q0A-Kx-l7h"/>
                                             <constraint firstAttribute="trailing" secondItem="oVL-Py-lpg" secondAttribute="trailing" constant="30" id="Rpx-yR-IF1"/>
@@ -242,13 +234,13 @@ Previsão de término as 21:30.</string>
                                             <constraint firstItem="oTM-K2-cbS" firstAttribute="top" secondItem="Umi-yw-SeE" secondAttribute="bottom" constant="15" id="ehi-yS-9VT"/>
                                             <constraint firstItem="Ier-aH-ufQ" firstAttribute="top" secondItem="oVL-Py-lpg" secondAttribute="bottom" constant="15" id="g3R-9I-FDL"/>
                                             <constraint firstItem="jFI-e3-9Og" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="gNv-A3-ylD"/>
+                                            <constraint firstItem="Z4x-IH-sHP" firstAttribute="top" secondItem="OFt-Qu-Sdd" secondAttribute="top" constant="35" id="gaX-6u-WeM"/>
                                             <constraint firstItem="Z4x-IH-sHP" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="iHg-lV-UJK"/>
                                             <constraint firstItem="oVL-Py-lpg" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="nTr-wz-FxI"/>
                                             <constraint firstItem="Ier-aH-ufQ" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="nsg-TA-GHw"/>
                                             <constraint firstItem="1EI-sB-Jxa" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="qVO-cB-CRQ"/>
                                             <constraint firstAttribute="trailing" secondItem="Ier-aH-ufQ" secondAttribute="trailing" constant="30" id="wEm-X7-SIz"/>
                                             <constraint firstItem="jYU-Gy-PVf" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="wOV-os-QOW"/>
-                                            <constraint firstItem="ZzD-Yn-rRl" firstAttribute="centerX" secondItem="OFt-Qu-Sdd" secondAttribute="centerX" id="waK-HO-1PZ"/>
                                             <constraint firstItem="Umi-yw-SeE" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="y3V-N9-b2d"/>
                                             <constraint firstItem="a8p-N1-aBi" firstAttribute="leading" secondItem="OFt-Qu-Sdd" secondAttribute="leading" constant="30" id="zVO-g9-DA4"/>
                                         </constraints>
@@ -292,7 +284,6 @@ Previsão de término as 21:30.</string>
                         <outlet property="localLabel" destination="OJY-n4-fd2" id="ddI-hv-JMa"/>
                         <outlet property="nameLabel" destination="BcX-42-BCw" id="4QS-py-gJb"/>
                         <outlet property="numberOfParticipantsLabel" destination="p1v-dZ-Ym3" id="msk-go-6yQ"/>
-                        <outlet property="titleLabel" destination="ZzD-Yn-rRl" id="1dO-wa-L8l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

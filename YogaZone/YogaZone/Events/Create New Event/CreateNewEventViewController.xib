@@ -11,9 +11,6 @@
         <array key="Comfortaa-Bold.ttf">
             <string>Comfortaa-Bold</string>
         </array>
-        <array key="Montserrat-Regular.ttf">
-            <string>Montserrat-Regular</string>
-        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateNewEventViewController" customModule="YogaZone" customModuleProvider="target">
@@ -25,7 +22,6 @@
                 <outlet property="eventNameTextField" destination="wDN-cZ-d3t" id="92q-Dq-oXe"/>
                 <outlet property="eventNumberOfParticipantsTextField" destination="pyu-qz-3nD" id="nh5-bl-R1B"/>
                 <outlet property="eventStartTimeTextField" destination="v4n-pL-KdG" id="aav-Ey-wR5"/>
-                <outlet property="titleLabel" destination="0hw-Kn-6OD" id="nh4-my-3v2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,14 +30,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criar Novo Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hw-Kn-6OD" userLabel="Title">
-                    <rect key="frame" x="89.5" y="15" width="196" height="28"/>
-                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do evento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wDN-cZ-d3t" userLabel="event name">
-                    <rect key="frame" x="30" y="93" width="315" height="50"/>
+                    <rect key="frame" x="30" y="35" width="315" height="50"/>
                     <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="UYH-Fk-CZb"/>
@@ -50,7 +40,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data do evento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-Ou-gpM" userLabel="event date">
-                    <rect key="frame" x="30" y="158" width="315" height="50"/>
+                    <rect key="frame" x="30" y="100" width="315" height="50"/>
                     <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="8lY-Kr-2kI"/>
@@ -59,7 +49,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="nJ4-43-bzO">
-                    <rect key="frame" x="30" y="223" width="315" height="50"/>
+                    <rect key="frame" x="30" y="165" width="315" height="50"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Horário de início" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-pL-KdG">
                             <rect key="frame" x="0.0" y="0.0" width="129.5" height="50"/>
@@ -82,7 +72,7 @@
                     </subviews>
                 </stackView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Local" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sxg-0E-4lc">
-                    <rect key="frame" x="30" y="288" width="315" height="50"/>
+                    <rect key="frame" x="30" y="230" width="315" height="50"/>
                     <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="dDi-A7-2MT"/>
@@ -91,7 +81,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Descrição e outras informações" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="gIB-eE-3Rf" userLabel="Description">
-                    <rect key="frame" x="30" y="353" width="315" height="150"/>
+                    <rect key="frame" x="30" y="295" width="315" height="150"/>
                     <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="t5E-Bh-WgY"/>
@@ -100,7 +90,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRu-xR-sEj" userLabel="Create Button">
-                    <rect key="frame" x="30" y="518" width="315" height="50"/>
+                    <rect key="frame" x="30" y="460" width="315" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="vWw-Ed-8eb"/>
                     </constraints>
@@ -118,18 +108,16 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="wDN-cZ-d3t" firstAttribute="top" secondItem="0hw-Kn-6OD" secondAttribute="bottom" constant="50" id="81S-be-BXW"/>
                 <constraint firstItem="IHK-Ou-gpM" firstAttribute="top" secondItem="wDN-cZ-d3t" secondAttribute="bottom" constant="15" id="8nb-rB-efe"/>
-                <constraint firstItem="0hw-Kn-6OD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ffo-xo-xLD"/>
                 <constraint firstItem="gIB-eE-3Rf" firstAttribute="top" secondItem="Sxg-0E-4lc" secondAttribute="bottom" constant="15" id="I2P-BX-W1U"/>
                 <constraint firstItem="nJ4-43-bzO" firstAttribute="top" secondItem="IHK-Ou-gpM" secondAttribute="bottom" constant="15" id="ImF-wc-IYi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sxg-0E-4lc" secondAttribute="trailing" constant="30" id="JCX-ui-421"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wDN-cZ-d3t" secondAttribute="trailing" constant="30" id="LSs-4q-Lpz"/>
-                <constraint firstItem="0hw-Kn-6OD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="NoN-Cv-y3u"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gIB-eE-3Rf" secondAttribute="trailing" constant="30" id="Oen-Uf-SAE"/>
                 <constraint firstAttribute="trailing" secondItem="nJ4-43-bzO" secondAttribute="trailing" constant="30" id="Op0-Wb-G2e"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BRu-xR-sEj" secondAttribute="trailing" constant="30" id="PzJ-94-j4C"/>
                 <constraint firstItem="IHK-Ou-gpM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="VAf-fk-7iq"/>
+                <constraint firstItem="wDN-cZ-d3t" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="WIM-LU-or5"/>
                 <constraint firstItem="Sxg-0E-4lc" firstAttribute="top" secondItem="nJ4-43-bzO" secondAttribute="bottom" constant="15" id="YJb-hY-KJA"/>
                 <constraint firstItem="BRu-xR-sEj" firstAttribute="top" secondItem="gIB-eE-3Rf" secondAttribute="bottom" constant="15" id="huF-rk-9ay"/>
                 <constraint firstItem="gIB-eE-3Rf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ijT-pU-2SC"/>

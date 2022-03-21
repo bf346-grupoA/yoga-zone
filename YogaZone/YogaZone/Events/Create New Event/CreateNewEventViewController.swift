@@ -6,10 +6,10 @@
 //
 
 import UIKit
+import SwiftUI
 
-class CreateNewEventViewController: UIViewController {
+class CreateNewEventViewController: UIViewController, UIGestureRecognizerDelegate {
     
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var eventNameTextField: UITextField!
     @IBOutlet weak var eventDateTextField: UITextField!
     @IBOutlet weak var eventStartTimeTextField: UITextField!
@@ -20,6 +20,7 @@ class CreateNewEventViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationBar()
         setupUI()
     }
     
@@ -37,8 +38,22 @@ class CreateNewEventViewController: UIViewController {
 
 // MARK: UI Functions
 extension CreateNewEventViewController {
+    
+    func setupNavigationBar(){
+        self.navigationItem.title = "Criar Novo Evento"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 24) ?? UIFont() ]
+        
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
     func setupUI(){
-        self.titleLabel.text = "Criar Novo Evento"
         self.eventNameTextField.placeholder = "Nome do evento"
         self.eventDateTextField.placeholder = "Data do evento"
         self.eventStartTimeTextField.placeholder = "Horário de início"
@@ -49,3 +64,13 @@ extension CreateNewEventViewController {
     }
     
 }
+
+// MARK: Navigation Bar Customization
+extension CreateNewEventViewController {
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
+
