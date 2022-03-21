@@ -308,6 +308,7 @@
 				2F036F5127E429D800993E41 /* Events Home */,
 				2F036F5F27E429D800993E41 /* Mock */,
 				2F036F6127E429D800993E41 /* Create New Event */,
+				2F036F5227E429D800993E41 /* Filter Modal */,
 				2F036F6627E429D800993E41 /* Event Detail */,
 				2F036F7527E429D800993E41 /* Model */,
 			);
@@ -317,7 +318,6 @@
 		2F036F5127E429D800993E41 /* Events Home */ = {
 			isa = PBXGroup;
 			children = (
-				2F036F5227E429D800993E41 /* Filter Modal */,
 				2F036F5527E429D800993E41 /* Home Containers */,
 				2F036F5827E429D800993E41 /* HomeEvents.storyboard */,
 				2F036F5927E429D800993E41 /* HomeEventsViewController.swift */,

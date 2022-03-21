@@ -61,7 +61,12 @@ class HomeEventsViewController: UIViewController{
 extension HomeEventsViewController {
     func setupUI(){
         
+        self.navigationItem.title = "Eventos"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 24)!]
         
+        self.optionsControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 13)!], for: .normal)
+        self.optionsControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 13)!], for: .selected)
+       
         self.buttonFilter.setImage(UIImage(named:"sliders-white"), for: .normal)
         self.buttonFilter.semanticContentAttribute = .forceLeftToRight
         
@@ -71,9 +76,17 @@ extension HomeEventsViewController {
         self.buttonFilter.configuration?.imagePadding = 5
         self.buttonCreateNewEvent.configuration?.imagePadding = 5
         
-        self.navigationItem.title = "Eventos"
-        self.buttonFilter.setTitle("Filtros", for: .normal)
-        self.buttonCreateNewEvent.setTitle("Criar Novo Evento", for: .normal)
+        let eventsCustomTitle = NSMutableAttributedString(string: "Filtros", attributes: [
+            NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 13) ?? UIFont(),
+        ])
+        
+        let createNewEventCustomTitle = NSMutableAttributedString(string: "Criar Novo Evento", attributes: [
+            NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 13) ?? UIFont(),
+        ])
+        
+        self.buttonFilter.setAttributedTitle(eventsCustomTitle, for: .normal)
+        self.buttonCreateNewEvent.setAttributedTitle(createNewEventCustomTitle, for: .normal)
+        
         self.optionsControl.setTitle("Lista", forSegmentAt: 0)
         self.optionsControl.setTitle("Mapa", forSegmentAt: 1)
         self.optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
