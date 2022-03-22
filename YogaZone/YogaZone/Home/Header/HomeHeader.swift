@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class HomeHeader: UIView {
-    let headerSize: CGFloat = 130
+    let headerSize: CGFloat = 150
     
     override init(frame: CGRect) {
         super.init(frame: frame)

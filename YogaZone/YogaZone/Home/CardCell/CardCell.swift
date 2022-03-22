@@ -1,8 +1,11 @@
 import UIKit
 
 class CardCell: UICollectionViewCell {
+    weak var delegate: Selectable?
+    
     static let identifier: String = "ColorCubeCell"
     var destination: UIViewController? = nil
+    var destinationIndex: Int? = nil
     var navController: UINavigationController? = nil
     
     var imageView: UIImageView = {
@@ -29,9 +32,11 @@ class CardCell: UICollectionViewCell {
         imageView.layer.cornerRadius = 9
     }
     
-    func setupCell(imageName: String, destination: UIViewController) {
-        self.destination = destination
-        self.navController = UINavigationController(rootViewController: destination)
+    func setupCell(imageName: String, destinationIndex: Int) {
+//        self.destination = destination
+        self.destinationIndex = destinationIndex
+//        self.navController = UINavigationController(rootViewController: Router.getDestinationByIndex(index: self.destinationIndex ?? 0))
+        self.navController = UINavigationController(rootViewController: HomeViewController())
         imageView.image = UIImage(named: imageName)
         
         
@@ -44,11 +49,7 @@ class CardCell: UICollectionViewCell {
     }
     
     @objc func onTap() {
-        self.navigateTo()
+        self.delegate?.navigateTo(routeIndex: self.destinationIndex ?? 0)
     }
-    
-    func navigateTo() {
-        self.navController?.pushViewController(self.destination ?? UIViewController(), animated: true)
-    }
-    
+
 }

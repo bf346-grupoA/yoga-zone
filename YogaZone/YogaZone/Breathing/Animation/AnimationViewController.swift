@@ -23,7 +23,7 @@ class AnimationViewController: UIViewController  {
         
     @IBAction func nextStartButton(_ sender: Any) {
         
-        self.navigationController? .pushViewController (HomeViewController(), animated: true)
+        self.navigationController? .pushViewController (BreathingHomeViewController(), animated: true)
         
     }
     
