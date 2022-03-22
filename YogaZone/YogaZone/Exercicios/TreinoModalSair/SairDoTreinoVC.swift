@@ -8,13 +8,16 @@
 import UIKit
 
 class SairDoTreinoVC: UIViewController {
+    
     @IBOutlet weak var WantToLeaveLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     @IBAction func tappedYesButton(_ sender: UIButton) {
-        //GO TO HOME
+            // ir para home
+        dismiss(animated: false, completion: nil)
     }
     
     @IBAction func tappedNoButton(_ sender: UIButton) {

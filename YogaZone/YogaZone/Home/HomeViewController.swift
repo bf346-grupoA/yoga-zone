@@ -18,6 +18,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         setupConstraints()
+        
+        // Hide Back Button from UINavigationItem
+        self.navigationItem.setHidesBackButton(true, animated: true)
+
     }
     
     func setupConstraints() {
