@@ -157,8 +157,37 @@
 		2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0560227E022DA000E9CA6 /* Poses.swift */; };
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
+
+		3126833E27C15ECA003F017B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833D27C15ECA003F017B /* ViewController.swift */; };
+		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+		797D85BE27E8141400220BBD /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D85B327E8141400220BBD /* TrainingModel.swift */; };
+		797D85BF27E8141400220BBD /* DropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797D85B527E8141400220BBD /* DropDownTableViewCell.xib */; };
+		797D85C027E8141400220BBD /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D85B627E8141400220BBD /* DropDownTableViewCell.swift */; };
+		797D85C227E8141400220BBD /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D85B927E8141400220BBD /* MakeDropDown.swift */; };
+		797D85C327E8141400220BBD /* DropDownTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D85BB27E8141400220BBD /* DropDownTwoTableViewCell.swift */; };
+		797D85C427E8141400220BBD /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797D85BC27E8141400220BBD /* DropDownTwoTableViewCell.xib */; };
+		797E9CA827E7799F00D1EB7B /* TreinoFinalizadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9C9127E7799F00D1EB7B /* TreinoFinalizadoVC.xib */; };
+		797E9CA927E7799F00D1EB7B /* TreinoFinalizadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9C9227E7799F00D1EB7B /* TreinoFinalizadoVC.swift */; };
+		797E9CAA27E7799F00D1EB7B /* TreinoCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9C9527E7799F00D1EB7B /* TreinoCustomCell.xib */; };
+		797E9CAB27E7799F00D1EB7B /* TreinoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9C9627E7799F00D1EB7B /* TreinoCustomCell.swift */; };
+		797E9CAC27E7799F00D1EB7B /* TreinoListagemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9C9727E7799F00D1EB7B /* TreinoListagemController.swift */; };
+		797E9CAD27E7799F00D1EB7B /* TreinoListagemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9C9827E7799F00D1EB7B /* TreinoListagemController.xib */; };
+		797E9CAE27E7799F00D1EB7B /* TreinoIniciadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9C9A27E7799F00D1EB7B /* TreinoIniciadoVC.xib */; };
+		797E9CAF27E7799F00D1EB7B /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 797E9C9C27E7799F00D1EB7B /* 01_Natarajasana.gif */; };
+		797E9CB027E7799F00D1EB7B /* TreinoIniciadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9C9D27E7799F00D1EB7B /* TreinoIniciadoVC.swift */; };
+		797E9CB127E7799F00D1EB7B /* SairDoTreinoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9C9F27E7799F00D1EB7B /* SairDoTreinoVC.xib */; };
+		797E9CB227E7799F00D1EB7B /* SairDoTreinoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9CA027E7799F00D1EB7B /* SairDoTreinoVC.swift */; };
+		797E9CB427E7799F00D1EB7B /* TreinoUmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9CA327E7799F00D1EB7B /* TreinoUmController.swift */; };
+		797E9CB527E7799F00D1EB7B /* TreinoUmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9CA427E7799F00D1EB7B /* TreinoUmController.xib */; };
+		797E9CB627E7799F00D1EB7B /* TreinoPausadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9CA627E7799F00D1EB7B /* TreinoPausadoVC.swift */; };
+		797E9CB727E7799F00D1EB7B /* TreinoPausadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9CA727E7799F00D1EB7B /* TreinoPausadoVC.xib */; };
+		797E9CB927E779BC00D1EB7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797E9CB827E779BC00D1EB7B /* Assets.xcassets */; };
+		7988BBD427E7E409006B5BBB /* iOSDevCenters
+    GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7988BBD327E7E409006B5BBB /* iOSDevCenters+GIF.swift */; };
+
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -313,9 +342,38 @@
 		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3126833B27C15ECA003F017B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+
+		3126833D27C15ECA003F017B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797D85B327E8141400220BBD /* TrainingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
+		797D85B527E8141400220BBD /* DropDownTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTableViewCell.xib; sourceTree = "<group>"; };
+		797D85B627E8141400220BBD /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		797D85B927E8141400220BBD /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
+		797D85BB27E8141400220BBD /* DropDownTwoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTwoTableViewCell.swift; sourceTree = "<group>"; };
+		797D85BC27E8141400220BBD /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
+		797E9C9127E7799F00D1EB7B /* TreinoFinalizadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoFinalizadoVC.xib; sourceTree = "<group>"; };
+		797E9C9227E7799F00D1EB7B /* TreinoFinalizadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoFinalizadoVC.swift; sourceTree = "<group>"; };
+		797E9C9527E7799F00D1EB7B /* TreinoCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoCustomCell.xib; sourceTree = "<group>"; };
+		797E9C9627E7799F00D1EB7B /* TreinoCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoCustomCell.swift; sourceTree = "<group>"; };
+		797E9C9727E7799F00D1EB7B /* TreinoListagemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoListagemController.swift; sourceTree = "<group>"; };
+		797E9C9827E7799F00D1EB7B /* TreinoListagemController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoListagemController.xib; sourceTree = "<group>"; };
+		797E9C9A27E7799F00D1EB7B /* TreinoIniciadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoIniciadoVC.xib; sourceTree = "<group>"; };
+		797E9C9C27E7799F00D1EB7B /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
+		797E9C9D27E7799F00D1EB7B /* TreinoIniciadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoIniciadoVC.swift; sourceTree = "<group>"; };
+		797E9C9F27E7799F00D1EB7B /* SairDoTreinoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SairDoTreinoVC.xib; sourceTree = "<group>"; };
+		797E9CA027E7799F00D1EB7B /* SairDoTreinoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SairDoTreinoVC.swift; sourceTree = "<group>"; };
+		797E9CA327E7799F00D1EB7B /* TreinoUmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoUmController.swift; sourceTree = "<group>"; };
+		797E9CA427E7799F00D1EB7B /* TreinoUmController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoUmController.xib; sourceTree = "<group>"; };
+		797E9CA627E7799F00D1EB7B /* TreinoPausadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoPausadoVC.swift; sourceTree = "<group>"; };
+		797E9CA727E7799F00D1EB7B /* TreinoPausadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoPausadoVC.xib; sourceTree = "<group>"; };
+		797E9CB827E779BC00D1EB7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7988BBD327E7E409006B5BBB /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,8 +416,18 @@
 		2F036F5227E429D800993E41 /* Filter Modal */ = {
 			isa = PBXGroup;
 			children = (
+
+				797E9C8F27E7799F00D1EB7B /* Exercicios */,
+				3126833927C15ECA003F017B /* AppDelegate.swift */,
+				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
+				3126833D27C15ECA003F017B /* ViewController.swift */,
+				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
+				797E9CB827E779BC00D1EB7B /* Assets.xcassets */,
+				3126834727C15ECB003F017B /* Info.plist */,
+
 				2F036F5327E429D800993E41 /* EventFilterViewController.swift */,
 				2F036F5427E429D800993E41 /* EventFilterViewController.xib */,
+
 			);
 			path = "Filter Modal";
 			sourceTree = "<group>";
@@ -401,6 +469,15 @@
 			path = "Create New Event";
 			sourceTree = "<group>";
 		};
+
+		797D85B027E8141400220BBD /* DropDownWithMultipleXib */ = {
+			isa = PBXGroup;
+			children = (
+				797D85B227E8141400220BBD /* Models */,
+				797D85B427E8141400220BBD /* DropDownTableCell */,
+				797D85B827E8141400220BBD /* MakeDropDownFile */,
+				797D85BA27E8141400220BBD /* DropDownTwoTableCell */,
+
 		2F036F6627E429D800993E41 /* Event Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,19 +539,141 @@
 				2F036FA327E429E400993E41 /* Resultado */,
 				2F036FA627E429E400993E41 /* TappedSwitchObController */,
 				2F036FA927E429E400993E41 /* Helpers */,
+
 			);
-			path = IMC;
+			path = DropDownWithMultipleXib;
 			sourceTree = "<group>";
 		};
+
+		797D85B227E8141400220BBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				797D85B327E8141400220BBD /* TrainingModel.swift */,
+
 		2F036F9327E429E400993E41 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				2F036F9427E429E400993E41 /* ImcController.xib */,
 				2F036F9527E429E400993E41 /* ImcController.swift */,
+
 			);
-			path = Home;
+			path = Models;
 			sourceTree = "<group>";
 		};
+
+		797D85B427E8141400220BBD /* DropDownTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				797D85B527E8141400220BBD /* DropDownTableViewCell.xib */,
+				797D85B627E8141400220BBD /* DropDownTableViewCell.swift */,
+			);
+			path = DropDownTableCell;
+			sourceTree = "<group>";
+		};
+		797D85B827E8141400220BBD /* MakeDropDownFile */ = {
+			isa = PBXGroup;
+			children = (
+				797D85B927E8141400220BBD /* MakeDropDown.swift */,
+			);
+			path = MakeDropDownFile;
+			sourceTree = "<group>";
+		};
+		797D85BA27E8141400220BBD /* DropDownTwoTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				797D85BB27E8141400220BBD /* DropDownTwoTableViewCell.swift */,
+				797D85BC27E8141400220BBD /* DropDownTwoTableViewCell.xib */,
+			);
+			path = DropDownTwoTableCell;
+			sourceTree = "<group>";
+		};
+		797E9C8F27E7799F00D1EB7B /* Exercicios */ = {
+			isa = PBXGroup;
+			children = (
+				797E9C9027E7799F00D1EB7B /* TreinoFinalizado */,
+				797E9C9327E7799F00D1EB7B /* TreinoListagem */,
+				797E9C9927E7799F00D1EB7B /* TreinoIniciado */,
+				797E9C9E27E7799F00D1EB7B /* TreinoModalSair */,
+				797E9CA127E7799F00D1EB7B /* TreinoUm */,
+				797E9CA527E7799F00D1EB7B /* TreinoPausado */,
+			);
+			path = Exercicios;
+			sourceTree = "<group>";
+		};
+		797E9C9027E7799F00D1EB7B /* TreinoFinalizado */ = {
+			isa = PBXGroup;
+			children = (
+				797E9C9127E7799F00D1EB7B /* TreinoFinalizadoVC.xib */,
+				797E9C9227E7799F00D1EB7B /* TreinoFinalizadoVC.swift */,
+			);
+			path = TreinoFinalizado;
+			sourceTree = "<group>";
+		};
+		797E9C9327E7799F00D1EB7B /* TreinoListagem */ = {
+			isa = PBXGroup;
+			children = (
+				797E9C9427E7799F00D1EB7B /* TreinoListagemCell */,
+				797E9C9727E7799F00D1EB7B /* TreinoListagemController.swift */,
+				797E9C9827E7799F00D1EB7B /* TreinoListagemController.xib */,
+			);
+			path = TreinoListagem;
+			sourceTree = "<group>";
+		};
+		797E9C9427E7799F00D1EB7B /* TreinoListagemCell */ = {
+			isa = PBXGroup;
+			children = (
+				797E9C9527E7799F00D1EB7B /* TreinoCustomCell.xib */,
+				797E9C9627E7799F00D1EB7B /* TreinoCustomCell.swift */,
+			);
+			path = TreinoListagemCell;
+			sourceTree = "<group>";
+		};
+		797E9C9927E7799F00D1EB7B /* TreinoIniciado */ = {
+			isa = PBXGroup;
+			children = (
+				797E9C9B27E7799F00D1EB7B /* Gifs */,
+				797E9C9A27E7799F00D1EB7B /* TreinoIniciadoVC.xib */,
+				797E9C9D27E7799F00D1EB7B /* TreinoIniciadoVC.swift */,
+				7988BBD327E7E409006B5BBB /* iOSDevCenters+GIF.swift */,
+			);
+			path = TreinoIniciado;
+			sourceTree = "<group>";
+		};
+		797E9C9B27E7799F00D1EB7B /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				797E9C9C27E7799F00D1EB7B /* 01_Natarajasana.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
+		797E9C9E27E7799F00D1EB7B /* TreinoModalSair */ = {
+			isa = PBXGroup;
+			children = (
+				797E9C9F27E7799F00D1EB7B /* SairDoTreinoVC.xib */,
+				797E9CA027E7799F00D1EB7B /* SairDoTreinoVC.swift */,
+			);
+			path = TreinoModalSair;
+			sourceTree = "<group>";
+		};
+		797E9CA127E7799F00D1EB7B /* TreinoUm */ = {
+			isa = PBXGroup;
+			children = (
+				797D85B027E8141400220BBD /* DropDownWithMultipleXib */,
+				797E9CA327E7799F00D1EB7B /* TreinoUmController.swift */,
+				797E9CA427E7799F00D1EB7B /* TreinoUmController.xib */,
+			);
+			path = TreinoUm;
+			sourceTree = "<group>";
+		};
+		797E9CA527E7799F00D1EB7B /* TreinoPausado */ = {
+			isa = PBXGroup;
+			children = (
+				797E9CA627E7799F00D1EB7B /* TreinoPausadoVC.swift */,
+				797E9CA727E7799F00D1EB7B /* TreinoPausadoVC.xib */,
+			);
+			path = TreinoPausado;
+
 		2F036F9627E429E400993E41 /* TapeedSwitchOb */ = {
 			isa = PBXGroup;
 			children = (
@@ -1047,6 +1246,7 @@
 				3126834727C15ECB003F017B /* Info.plist */,
 			);
 			path = YogaZone;
+
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1107,6 +1307,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				797E9CB727E7799F00D1EB7B /* TreinoPausadoVC.xib in Resources */,
+				797E9CAA27E7799F00D1EB7B /* TreinoCustomCell.xib in Resources */,
+				797E9CB527E7799F00D1EB7B /* TreinoUmController.xib in Resources */,
+				797E9CB927E779BC00D1EB7B /* Assets.xcassets in Resources */,
+				797E9CAF27E7799F00D1EB7B /* 01_Natarajasana.gif in Resources */,
+				797E9CAD27E7799F00D1EB7B /* TreinoListagemController.xib in Resources */,
+				797E9CA827E7799F00D1EB7B /* TreinoFinalizadoVC.xib in Resources */,
+				797E9CAE27E7799F00D1EB7B /* TreinoIniciadoVC.xib in Resources */,
+				797D85BF27E8141400220BBD /* DropDownTableViewCell.xib in Resources */,
+				797E9CB127E7799F00D1EB7B /* SairDoTreinoVC.xib in Resources */,
+				797D85C427E8141400220BBD /* DropDownTwoTableViewCell.xib in Resources */,
+
 				2F412ED927E41821007708E8 /* PracticeViewController.xib in Resources */,
 				2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */,
 				2F0C342927E4384E004A1E8C /* ModalViewController.xib in Resources */,
@@ -1188,6 +1402,7 @@
 				2F0C342D27E4384E004A1E8C /* InhaleViewController.xib in Resources */,
 				2F036FB727E429E400993E41 /* tappedSwitchObController.xib in Resources */,
 				2F79E14827DCF6FA0070397F /* Comfortaa-Regular.ttf in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1198,6 +1413,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				797D85C227E8141400220BBD /* MakeDropDown.swift in Sources */,
+				797E9CAB27E7799F00D1EB7B /* TreinoCustomCell.swift in Sources */,
+				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				797D85C327E8141400220BBD /* DropDownTwoTableViewCell.swift in Sources */,
+				7988BBD427E7E409006B5BBB /* iOSDevCenters+GIF.swift in Sources */,
+				797E9CB427E7799F00D1EB7B /* TreinoUmController.swift in Sources */,
+				797E9CB627E7799F00D1EB7B /* TreinoPausadoVC.swift in Sources */,
+				797E9CAC27E7799F00D1EB7B /* TreinoListagemController.swift in Sources */,
+				797E9CB227E7799F00D1EB7B /* SairDoTreinoVC.swift in Sources */,
+				797D85C027E8141400220BBD /* DropDownTableViewCell.swift in Sources */,
+				797D85BE27E8141400220BBD /* TrainingModel.swift in Sources */,
+				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
+				797E9CB027E7799F00D1EB7B /* TreinoIniciadoVC.swift in Sources */,
+				797E9CA927E7799F00D1EB7B /* TreinoFinalizadoVC.swift in Sources */,
+				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F0C342327E4384E004A1E8C /* StartViewController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
