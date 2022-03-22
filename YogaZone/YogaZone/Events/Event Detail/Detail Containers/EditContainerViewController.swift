@@ -13,7 +13,7 @@ class EditContainerViewController:UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.editButton.setTitle("Editar Participação", for: .normal)
+        self.editButton.setTitle("Editar Evento", for: .normal)
     }
     
     @IBAction func editButtonTapped(_ sender: Any) {

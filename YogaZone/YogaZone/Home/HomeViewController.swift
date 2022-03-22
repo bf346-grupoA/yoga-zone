@@ -211,8 +211,10 @@ extension HomeViewController: Selectable {
             case 2: self.navigationController?.pushViewController(ImcController(), animated: true)
             case 3: self.navigationController?.pushViewController(BreathingHomeViewController(), animated: true)
             case 4: self.navigationController?.pushViewController(MeditacaoHomeViewController(), animated: true)
-            case 5: self.navigationController?.pushViewController(MeditacaoHomeViewController(), animated: true)
-            default: self.navigationController?.pushViewController(HomeEventsViewController(), animated: true)
+            case 5: self.navigationController?.pushViewController(TreinoUmController(), animated: true)
+            default:
+            let storyboard = UIStoryboard(name: "HomeEvents", bundle: nil)
+            self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: "HomeEventsViewController"), animated: true)           
         }
     }
 }

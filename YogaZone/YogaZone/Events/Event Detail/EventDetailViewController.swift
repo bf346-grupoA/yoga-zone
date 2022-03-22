@@ -7,14 +7,13 @@
 
 import UIKit
 
-class EventDetailViewController: UIViewController {
+class EventDetailViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var confirmContainer: UIView!
     @IBOutlet weak var cancelContainer: UIView!
     @IBOutlet weak var editContainer: UIView!
     @IBOutlet weak var finalizedContainer: UIView!
     
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -35,6 +34,7 @@ class EventDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationBar()
         setupUI()
         configureContainerView()
     }
@@ -43,8 +43,22 @@ class EventDetailViewController: UIViewController {
 
 // MARK: UI Functions
 extension EventDetailViewController {
+    
+    func setupNavigationBar(){
+        self.navigationItem.title = "Evento"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 24) ?? UIFont()]
+        
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
     func setupUI(){
-        self.titleLabel.text = "Evento"
         self.nameLabel.text = "Nome"
         self.dateLabel.text = "Data"
         self.hourLabel.text = "Hora"
@@ -105,4 +119,12 @@ extension EventDetailViewController {
     
 }
 
+// MARK: Navigation Bar Customization
+extension EventDetailViewController {
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
 

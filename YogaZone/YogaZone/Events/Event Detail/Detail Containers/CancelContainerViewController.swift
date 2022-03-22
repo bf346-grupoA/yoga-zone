@@ -19,8 +19,8 @@ class CancelContainerViewController:UIViewController {
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        let alertVC = alertService.alert(alertTitle: "Atenção!", alertDescription: "Confirmar Saída do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Cancelamento")
-        present(alertVC, animated: true)
+        let alertVC = alertService.alert(parentVC: self, alertTitle: "Atenção!", alertDescription: "Confirmar Saída do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Cancelamento")
+        self.present(alertVC, animated: true)
     }
     
 }

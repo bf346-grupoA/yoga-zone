@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home Events-->
         <scene sceneID="s0d-6b-0kx">
@@ -17,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3lA-8k-aM4" userLabel="Options">
-                                <rect key="frame" x="35" y="54" width="305" height="32"/>
+                                <rect key="frame" x="32" y="54" width="311" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -27,12 +32,15 @@
                                     <action selector="didTapSegmentWithSegment:" destination="Y6W-OH-hqX" eventType="valueChanged" id="TWh-Da-8k4"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZK-5s-Taq" userLabel="Filter">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZK-5s-Taq" userLabel="Filter">
                                 <rect key="frame" x="25" y="100" width="67" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="5qe-4Z-FmM"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="50"/>
+                                <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="50"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <backgroundConfiguration key="background" cornerRadius="50">
@@ -87,9 +95,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YSL-Rr-DQw" secondAttribute="trailing" constant="25" id="OIh-Zn-s9r"/>
                             <constraint firstItem="Tuy-9N-obw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="et7-fq-XAF"/>
                             <constraint firstItem="3lA-8k-aM4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gwH-1P-3MA"/>
-                            <constraint firstItem="3lA-8k-aM4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="iGA-js-dA7"/>
+                            <constraint firstItem="3lA-8k-aM4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="iGA-js-dA7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bX2-dM-TIK" secondAttribute="trailing" id="mrs-Pa-Ui6"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3lA-8k-aM4" secondAttribute="trailing" constant="35" id="oFJ-6p-Ai4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3lA-8k-aM4" secondAttribute="trailing" constant="32" id="oFJ-6p-Ai4"/>
                             <constraint firstItem="3lA-8k-aM4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="qWd-1U-P0S"/>
                             <constraint firstItem="SZK-5s-Taq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="s5Q-Nu-pPJ"/>
                             <constraint firstItem="SZK-5s-Taq" firstAttribute="top" secondItem="3lA-8k-aM4" secondAttribute="bottom" constant="15" id="xH9-ob-paR"/>
@@ -113,7 +121,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kS5-hX-rec">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PgO-ow-zs6" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeEventosNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="PgO-ow-zs6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xa8-vl-WID">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -167,12 +175,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyg-tr-URy">
-                                <rect key="frame" x="25" y="330" width="325" height="35"/>
+                                <rect key="frame" x="20" y="330" width="335" height="60"/>
                                 <color key="backgroundColor" red="0.78431372549019607" green="0.76078431372549016" blue="0.76078431372549016" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="xXa-GC-T8S"/>
+                                    <constraint firstAttribute="height" constant="60" id="xXa-GC-T8S"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="18"/>
                                 <color key="textColor" red="0.20392156862745098" green="0.34901960784313724" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -186,10 +194,10 @@
                         <viewLayoutGuide key="safeArea" id="ZJN-pI-4d7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fyg-tr-URy" firstAttribute="leading" secondItem="ZJN-pI-4d7" secondAttribute="leading" constant="25" id="Tz5-QP-mPD"/>
+                            <constraint firstItem="fyg-tr-URy" firstAttribute="leading" secondItem="ZJN-pI-4d7" secondAttribute="leading" constant="20" id="Tz5-QP-mPD"/>
                             <constraint firstItem="CKu-cJ-ZdZ" firstAttribute="top" secondItem="ZJN-pI-4d7" secondAttribute="top" constant="20" id="iRi-0r-EmQ"/>
                             <constraint firstItem="fyg-tr-URy" firstAttribute="top" secondItem="CKu-cJ-ZdZ" secondAttribute="bottom" constant="25" id="nY3-pu-Jnn"/>
-                            <constraint firstItem="ZJN-pI-4d7" firstAttribute="trailing" secondItem="fyg-tr-URy" secondAttribute="trailing" constant="25" id="qLj-y4-cLc"/>
+                            <constraint firstItem="ZJN-pI-4d7" firstAttribute="trailing" secondItem="fyg-tr-URy" secondAttribute="trailing" constant="20" id="qLj-y4-cLc"/>
                             <constraint firstItem="CKu-cJ-ZdZ" firstAttribute="leading" secondItem="ZJN-pI-4d7" secondAttribute="leading" constant="15" id="trF-E4-Yd3"/>
                             <constraint firstItem="ZJN-pI-4d7" firstAttribute="trailing" secondItem="CKu-cJ-ZdZ" secondAttribute="trailing" constant="15" id="zrc-Td-gZc"/>
                         </constraints>

@@ -9,7 +9,8 @@ import UIKit
 
 class AlertService {
     
-    func alert(alertTitle: String, alertDescription: String, cancelText: String, confirmText: String, actionType: String) -> AlertViewController {
+    func alert(parentVC: UIViewController, alertTitle: String, alertDescription: String, cancelText: String, confirmText: String, actionType: String) -> AlertViewController {
+       
         let storyboard = UIStoryboard(name: "Alert", bundle: nil)
         let alertVC = storyboard.instantiateViewController(identifier: "AlertViewController") as AlertViewController
         
@@ -18,8 +19,12 @@ class AlertService {
         alertVC.cancelText = cancelText
         alertVC.confirmText = confirmText
         alertVC.actionType = actionType
+        alertVC.parentVC = parentVC
+        
         alertVC.modalTransitionStyle = .crossDissolve
         alertVC.modalPresentationStyle = .overFullScreen
+        
         return alertVC
+        
     }
 }

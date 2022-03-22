@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeEventsViewController: UIViewController{
+class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
     
     @IBOutlet weak var optionsControl: UISegmentedControl!
     @IBOutlet weak var buttonFilter: UIButton!
@@ -19,8 +19,8 @@ class HomeEventsViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationBar()
         setupUI()
-        containerMapView.isHidden = true
     }
     
     @IBAction func filterButtonTapped(_ sender: UIButton) {
@@ -38,7 +38,7 @@ class HomeEventsViewController: UIViewController{
         case 0:
             self.containerListView.isHidden = false
             self.containerMapView.isHidden = true
-            containerViewController?.idSegment = 0 //Aqui o 'prepare' acima é chamado e obtem acesso ao EventListViewController
+            containerViewController?.idSegment = 0
             containerViewController?.setupData()
             containerViewController?.configureTableView()
         case 1:
@@ -47,7 +47,7 @@ class HomeEventsViewController: UIViewController{
         default:
             self.containerListView.isHidden = false
             self.containerMapView.isHidden = true
-            containerViewController?.idSegment = 2 //Aqui o 'prepare' acima é chamado e obtem acesso ao EventListViewController
+            containerViewController?.idSegment = 2
             containerViewController?.setupData()
             containerViewController?.configureTableView()
         }
@@ -59,13 +59,52 @@ class HomeEventsViewController: UIViewController{
 
 // MARK: UI Functions
 extension HomeEventsViewController {
-    func setupUI(){
+    
+    func setupNavigationBar(){
         self.navigationItem.title = "Eventos"
-        self.buttonFilter.setTitle("Filtros", for: .normal)
-        self.buttonCreateNewEvent.setTitle("Criar Novo Evento", for: .normal)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 24) ?? UIFont()]
+        
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    func setupUI(){
+      
+        containerMapView.isHidden = true
+        
+        self.optionsControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 13) ?? UIFont() ], for: .normal)
+        self.optionsControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 13) ?? UIFont()], for: .selected)
+       
+        self.buttonFilter.setImage(UIImage(named:"sliders-white"), for: .normal)
+        self.buttonFilter.semanticContentAttribute = .forceLeftToRight
+        
+        self.buttonCreateNewEvent.setImage(UIImage(named:"circle-plus-white"), for: .normal)
+        self.buttonCreateNewEvent.semanticContentAttribute = .forceLeftToRight
+        
+        self.buttonFilter.configuration?.imagePadding = 5
+        self.buttonCreateNewEvent.configuration?.imagePadding = 5
+        
+        let eventsCustomTitle = NSMutableAttributedString(string: "Filtros", attributes: [
+            NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 13) ?? UIFont(),
+        ])
+        
+        let createNewEventCustomTitle = NSMutableAttributedString(string: "Criar Novo Evento", attributes: [
+            NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 13) ?? UIFont(),
+        ])
+        
+        self.buttonFilter.setAttributedTitle(eventsCustomTitle, for: .normal)
+        self.buttonCreateNewEvent.setAttributedTitle(createNewEventCustomTitle, for: .normal)
+        
         self.optionsControl.setTitle("Lista", forSegmentAt: 0)
         self.optionsControl.setTitle("Mapa", forSegmentAt: 1)
         self.optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
+        
     }
     
 }
@@ -80,3 +119,13 @@ extension HomeEventsViewController {
     }
     
 }
+
+// MARK: Navigation Bar Customization
+extension HomeEventsViewController {
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
+
