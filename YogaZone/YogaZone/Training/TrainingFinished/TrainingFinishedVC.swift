@@ -1,5 +1,5 @@
 //
-//  TreinoFinalizadoVC.swift
+//  TrainingFinishedVC.swift
 //  YogaZone
 //
 //  Created by Marcus on 28/02/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TreinoFinalizadoVC: UIViewController {
+class TrainingFinishedVC: UIViewController {
 
     @IBOutlet weak var parabensTrofeuImage: UIImageView!
     
@@ -31,15 +31,13 @@ class TreinoFinalizadoVC: UIViewController {
     }
 
     @IBAction func tappedSocialMediaButton(_ sender: UIButton) {
-        let VcShare = UIActivityViewController(activityItems: ["YogaZone.com"], applicationActivities: nil)
-            VcShare.popoverPresentationController?.sourceView = self.view
-            self.present(VcShare, animated: true, completion: nil)
+        let share = UIActivityViewController(activityItems: ["YogaZone.com"], applicationActivities: nil)
+        share.popoverPresentationController?.sourceView = self.view
+            self.present(share, animated: true, completion: nil)
 
     }
     
     @IBAction func tappedGoToHomeButton(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
-    
-    
-    
 }

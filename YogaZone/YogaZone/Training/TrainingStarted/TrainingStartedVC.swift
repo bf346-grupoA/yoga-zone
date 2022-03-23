@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TreinoIniciadoVC: UIViewController {
+class TrainingStartedVC: UIViewController {
 
     @IBOutlet weak var tappedArrowVoltar: UIImageView!
     
@@ -31,7 +31,6 @@ class TreinoIniciadoVC: UIViewController {
         self.configNextButton()
         self.loadGifImage()
         
-        
         tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
         pauseImage.image = UIImage(named: "pauseImage")
         nextImage.image = UIImage(named: "nextArrowImage")
@@ -45,8 +44,6 @@ class TreinoIniciadoVC: UIViewController {
         gifImage.image = UIImage.gifImageWithName("01_Natarajasana")
     }
  
-    
-
     private func configBackButton(){
         let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
         self.tappedArrowVoltar.addGestureRecognizer(tapBackButton)
@@ -54,8 +51,8 @@ class TreinoIniciadoVC: UIViewController {
     }
     
     @objc func tappedBackButton(){
-        let vcSairDoTreino = SairDoTreinoVC()
-        self.present(vcSairDoTreino, animated: false, completion: nil)
+        let leaveTraining = LeaveTrainingVC()
+        navigationController?.pushViewController(leaveTraining, animated: false)
     }
     
     private func configPauseButton(){
@@ -65,7 +62,7 @@ class TreinoIniciadoVC: UIViewController {
     }
     
     @objc func tappedPauseButton(){
-        let vc = TreinoPausadoVC()
+        let vc = TrainingPausedVC()
         vc.view.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: false, completion: nil)
@@ -79,7 +76,7 @@ class TreinoIniciadoVC: UIViewController {
     }
     
     @objc func tappedNextButton(){
-        let vc = TreinoFinalizadoVC()
+        let vc = TrainingFinishedVC()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

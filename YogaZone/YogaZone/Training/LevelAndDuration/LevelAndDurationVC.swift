@@ -8,7 +8,7 @@
 import UIKit
 
 
-class TreinoUmController: UIViewController {
+class LevelAndDurationVC: UIViewController {
     
 
     @IBOutlet weak var durationNameLabel: UILabel!
@@ -46,6 +46,7 @@ class TreinoUmController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configImages()
+        self.configBackButton()
         setUpGestures()
         populateDropDownArrays()
         
@@ -62,6 +63,9 @@ class TreinoUmController: UIViewController {
         circleBackground.image = UIImage(named: "circleBackground")
         timeDurationImage.image = UIImage(named: "timeDuration")
         levelExerciceImage.image = UIImage(named: "levelExercice")
+        
+        // Hide Back Button from UINavigationItem
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     //MARK: - Setup Methods
@@ -127,14 +131,25 @@ class TreinoUmController: UIViewController {
     @objc func levelNameLabelTapped(){
         self.levelDropDown.showDropDown(height: self.dropDownRowHeight * 4)
     }
+    
+    private func configBackButton(){
+        let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
+        self.tappedArrowVoltar.addGestureRecognizer(tapBackButton)
+        self.tappedArrowVoltar.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func tappedBackButton(){
+        self.navigationController?.popViewController(animated: true)
+    }
 
     @IBAction func tappedSeeTrainButton(_ sender: UIButton) {
-        let vc = TreinoListagemController()
+        let vc = TrainingListController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-extension TreinoUmController: MakeDropDownDataSourceProtocol{
+extension LevelAndDurationVC: MakeDropDownDataSourceProtocol{
     func numberOfRows(makeDropDownIdentifier: String) -> Int {
         if makeDropDownIdentifier == self.durationDropDownIdentifier{
             return self.durationArr.count

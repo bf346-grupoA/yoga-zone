@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TreinoPausadoVC: UIViewController {
+class TrainingPausedVC: UIViewController {
 
     @IBOutlet weak var pausedLabel: UILabel!
     
