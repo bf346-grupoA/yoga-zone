@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TreinoIniciadoVC: UIViewController {
+class TrainingStartedVC: UIViewController {
 
     @IBOutlet weak var tappedArrowVoltar: UIImageView!
     
@@ -51,8 +51,8 @@ class TreinoIniciadoVC: UIViewController {
     }
     
     @objc func tappedBackButton(){
-        let vcSairDoTreino = SairDoTreinoVC()
-        navigationController?.pushViewController(vcSairDoTreino, animated: false)
+        let leaveTraining = LeaveTrainingVC()
+        navigationController?.pushViewController(leaveTraining, animated: false)
     }
     
     private func configPauseButton(){
@@ -62,7 +62,7 @@ class TreinoIniciadoVC: UIViewController {
     }
     
     @objc func tappedPauseButton(){
-        let vc = TreinoPausadoVC()
+        let vc = TrainingPausedVC()
         vc.view.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: false, completion: nil)
@@ -76,7 +76,7 @@ class TreinoIniciadoVC: UIViewController {
     }
     
     @objc func tappedNextButton(){
-        let vc = TreinoFinalizadoVC()
+        let vc = TrainingFinishedVC()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

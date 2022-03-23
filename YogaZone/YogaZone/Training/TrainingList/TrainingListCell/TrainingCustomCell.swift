@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TreinoCustomCell: UITableViewCell {
+class TrainingCustomCell: UITableViewCell {
 
     @IBOutlet weak var treinoImageView: UIImageView!
     

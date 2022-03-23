@@ -8,7 +8,7 @@
 import UIKit
 
 
-class TreinoUmController: UIViewController {
+class LevelAndDurationVC: UIViewController {
     
 
     @IBOutlet weak var durationNameLabel: UILabel!
@@ -144,12 +144,12 @@ class TreinoUmController: UIViewController {
     }
 
     @IBAction func tappedSeeTrainButton(_ sender: UIButton) {
-        let vc = TreinoListagemController()
+        let vc = TrainingListController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-extension TreinoUmController: MakeDropDownDataSourceProtocol{
+extension LevelAndDurationVC: MakeDropDownDataSourceProtocol{
     func numberOfRows(makeDropDownIdentifier: String) -> Int {
         if makeDropDownIdentifier == self.durationDropDownIdentifier{
             return self.durationArr.count

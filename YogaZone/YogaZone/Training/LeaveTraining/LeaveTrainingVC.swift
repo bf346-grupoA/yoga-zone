@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SairDoTreinoVC: UIViewController {
+class LeaveTrainingVC: UIViewController {
     
     @IBOutlet weak var WantToLeaveLabel: UILabel!
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TreinoListagemController: UIViewController, UITableViewDataSource {
+class TrainingListController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tappedArrowVoltar: UIImageView!
     
@@ -54,7 +54,7 @@ class TreinoListagemController: UIViewController, UITableViewDataSource {
         tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
         
         //Table View
-        self.ListTrainYogaTableView.register(UINib(nibName: "TreinoCustomCell", bundle: nil), forCellReuseIdentifier: "TreinoCustomCell")
+        self.ListTrainYogaTableView.register(UINib(nibName: "TrainingCustomCell", bundle: nil), forCellReuseIdentifier: "TrainingCustomCell")
         self.ListTrainYogaTableView.delegate = self
         self.ListTrainYogaTableView.dataSource = self
         
@@ -76,12 +76,12 @@ class TreinoListagemController: UIViewController, UITableViewDataSource {
 
     
     @IBAction func tappedStartTrainButton(_ sender: UIButton) {
-        let vc = TreinoIniciadoVC()
+        let vc = TrainingStartedVC()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-extension TreinoListagemController: UITableViewDelegate {
+extension TrainingListController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -90,7 +90,7 @@ extension TreinoListagemController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: TreinoCustomCell? = tableView.dequeueReusableCell(withIdentifier: "TreinoCustomCell", for: indexPath) as? TreinoCustomCell
+        let cell:TrainingCustomCell? = tableView.dequeueReusableCell(withIdentifier: "TrainingCustomCell", for: indexPath) as? TrainingCustomCell
         
         cell?.treinoImageView.image = UIImage(named: self.arrayExercices[indexPath.row])
         cell?.treinoDescriptionLabel.text = self.arrayExercices[indexPath.row]
