@@ -1,9 +1,7 @@
 import UIKit
 
 class CardCell: UICollectionViewCell {
-    weak var delegate: Selectable?
-    
-    static let identifier: String = "ColorCubeCell"
+    static let identifier: String = "CardCell"
     var destination: UIViewController? = nil
     var destinationIndex: Int? = nil
     var navController: UINavigationController? = nil
@@ -33,23 +31,16 @@ class CardCell: UICollectionViewCell {
         self.imageView.contentMode = .scaleToFill
         
     }
-    
+}
+
+
+// MARK: UI
+extension CardCell {
     func setupCell(imageName: String, destinationIndex: Int) {
         self.destinationIndex = destinationIndex
         self.navController = UINavigationController(rootViewController: HomeViewController())
         imageView.image = UIImage(named: imageName)
         
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onTap))
-        imageView.addGestureRecognizer(tapGesture)
-        imageView.isUserInteractionEnabled = true
-        
-        
         self.contentView.clipsToBounds = true
     }
-    
-    @objc func onTap() {
-        self.delegate?.navigateTo(routeIndex: self.destinationIndex ?? 0)
-    }
-
 }
