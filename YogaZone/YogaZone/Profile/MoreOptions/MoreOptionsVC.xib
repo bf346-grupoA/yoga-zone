@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,6 +21,8 @@
                 <outlet property="CurrentPasswordTextField" destination="47g-QS-GLV" id="WRw-gq-tGk"/>
                 <outlet property="changePasswordTitleLabel" destination="fcw-6C-tBE" id="X12-i3-ZgT"/>
                 <outlet property="confirmNewPasswordTextField" destination="QeU-Dz-in5" id="I1I-cn-bQC"/>
+                <outlet property="excludeAccountButton" destination="43b-eL-Jil" id="tLX-1N-vkz"/>
+                <outlet property="leaveAppButton" destination="kk3-1q-HB9" id="Egw-th-UPJ"/>
                 <outlet property="newPasswordTextField" destination="TkI-kT-3NN" id="dfB-ze-04x"/>
                 <outlet property="saveButton" destination="Mhi-L3-HM5" id="oJq-SX-b2Y"/>
                 <outlet property="tappedArrowBackToProfileImage" destination="qDt-hu-68s" id="Orr-yL-wnv"/>
@@ -33,7 +35,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trocar Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcw-6C-tBE">
-                    <rect key="frame" x="25" y="100" width="160" height="21"/>
+                    <rect key="frame" x="25" y="100" width="160" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="160" id="M7z-Gt-T04"/>
                     </constraints>
@@ -42,32 +44,32 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha atual" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47g-QS-GLV">
-                    <rect key="frame" x="25" y="156" width="325" height="34"/>
+                    <rect key="frame" x="25" y="155" width="325" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nova senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TkI-kT-3NN">
-                    <rect key="frame" x="25" y="260" width="325" height="34"/>
+                    <rect key="frame" x="25" y="259" width="325" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar nova senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeU-Dz-in5">
-                    <rect key="frame" x="25" y="314" width="325" height="34"/>
+                    <rect key="frame" x="25" y="313" width="325" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhi-L3-HM5">
-                    <rect key="frame" x="70" y="373" width="235" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhi-L3-HM5">
+                    <rect key="frame" x="70" y="372" width="235" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="MCz-SM-pxT"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Salvar Senha" cornerStyle="dynamic">
-                        <backgroundConfiguration key="background" cornerRadius="22">
+                        <backgroundConfiguration key="background" cornerRadius="8">
                             <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         </backgroundConfiguration>
                     </buttonConfiguration>
@@ -75,15 +77,15 @@
                         <action selector="tappedSaveNewPasswordButton:" destination="-1" eventType="touchUpInside" id="vsY-G7-Tho"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk3-1q-HB9">
-                    <rect key="frame" x="70" y="530" width="235" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk3-1q-HB9">
+                    <rect key="frame" x="70" y="529" width="235" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="xSk-TV-rRf"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Sair do Aplicativo" cornerStyle="dynamic">
-                        <backgroundConfiguration key="background" cornerRadius="22">
+                        <backgroundConfiguration key="background" cornerRadius="8">
                             <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         </backgroundConfiguration>
                     </buttonConfiguration>
@@ -91,15 +93,15 @@
                         <action selector="leaveAppButton:" destination="-1" eventType="touchUpInside" id="VdH-74-gjn"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43b-eL-Jil">
-                    <rect key="frame" x="70" y="465" width="235" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43b-eL-Jil">
+                    <rect key="frame" x="70" y="464" width="235" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="2ic-E8-Lgt"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Excluir Conta" cornerStyle="dynamic">
-                        <backgroundConfiguration key="background" cornerRadius="22">
+                        <backgroundConfiguration key="background" cornerRadius="8">
                             <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         </backgroundConfiguration>
                     </buttonConfiguration>
@@ -108,7 +110,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mais Opções" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Un-Vw6">
-                    <rect key="frame" x="90" y="25" width="108.5" height="21"/>
+                    <rect key="frame" x="90" y="25" width="100.5" height="20"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -121,7 +123,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhQ-NZ-kWj">
-                    <rect key="frame" x="16" y="438" width="334" height="2"/>
+                    <rect key="frame" x="16" y="437" width="334" height="2"/>
                     <color key="backgroundColor" systemColor="systemGrayColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="GLx-37-PM5"/>

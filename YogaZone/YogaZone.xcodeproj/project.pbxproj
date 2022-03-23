@@ -141,6 +141,19 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+
+		79293CF327EACAD500E7B48F /* MoreOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79293CE427EACAD500E7B48F /* MoreOptionsVC.swift */; };
+		79293CF427EACAD500E7B48F /* MoreOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79293CE527EACAD500E7B48F /* MoreOptionsVC.xib */; };
+		79293CF527EACAD500E7B48F /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79293CE827EACAD500E7B48F /* MyProfileTableViewCell.swift */; };
+		79293CF627EACAD500E7B48F /* MyProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79293CE927EACAD500E7B48F /* MyProfileTableViewCell.xib */; };
+		79293CF727EACAD500E7B48F /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79293CEA27EACAD500E7B48F /* MyProfileVC.swift */; };
+		79293CF827EACAD500E7B48F /* MyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79293CEB27EACAD500E7B48F /* MyProfileVC.xib */; };
+		79293CF927EACAD500E7B48F /* DeleteAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79293CED27EACAD500E7B48F /* DeleteAccountVC.swift */; };
+		79293CFA27EACAD500E7B48F /* DeleteAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79293CEE27EACAD500E7B48F /* DeleteAccountVC.xib */; };
+		79293CFB27EACAD500E7B48F /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79293CF127EACAD500E7B48F /* CustomAlertVC.xib */; };
+		79293CFC27EACAD500E7B48F /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79293CF227EACAD500E7B48F /* CustomAlertVC.swift */; };
+
+
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		8334036D27E95659004FCA47 /* TreinoFinalizadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334034B27E95659004FCA47 /* TreinoFinalizadoVC.xib */; };
@@ -316,6 +329,19 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		79293CE427EACAD500E7B48F /* MoreOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsVC.swift; sourceTree = "<group>"; };
+		79293CE527EACAD500E7B48F /* MoreOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreOptionsVC.xib; sourceTree = "<group>"; };
+		79293CE827EACAD500E7B48F /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
+		79293CE927EACAD500E7B48F /* MyProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileTableViewCell.xib; sourceTree = "<group>"; };
+		79293CEA27EACAD500E7B48F /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		79293CEB27EACAD500E7B48F /* MyProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileVC.xib; sourceTree = "<group>"; };
+		79293CED27EACAD500E7B48F /* DeleteAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountVC.swift; sourceTree = "<group>"; };
+		79293CEE27EACAD500E7B48F /* DeleteAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteAccountVC.xib; sourceTree = "<group>"; };
+		79293CF127EACAD500E7B48F /* CustomAlertVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
+		79293CF227EACAD500E7B48F /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+
+
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		8334034B27E95659004FCA47 /* TreinoFinalizadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoFinalizadoVC.xib; sourceTree = "<group>"; };
@@ -1021,13 +1047,97 @@
 		2FA287B527EACC3C00C5BD81 /* MyProfile */ = {
 			isa = PBXGroup;
 			children = (
+
+				79293CE227EACAD500E7B48F /* Profile */,
+				2F0C33FF27E4384E004A1E8C /* Breathing */,
+				2F0C33E327E434DA004A1E8C /* Register */,
+				2F0C33CE27E432EC004A1E8C /* Login */,
+				2F036F9227E429E400993E41 /* IMC */,
+				2F036F5027E429D800993E41 /* Events */,
+				2F412EDA27E41A0B007708E8 /* Assets */,
+				2F412EBB27E41821007708E8 /* Meditacao */,
+				8334034927E95659004FCA47 /* Exercicios */,
+				2F412EAD27E4101E007708E8 /* Home */,
+				2F79E12627DCF42B0070397F /* PoseGallery */,
+				3126833927C15ECA003F017B /* AppDelegate.swift */,
+				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
+				3126834227C15ECB003F017B /* Assets.xcassets */,
+				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
+				3126834727C15ECB003F017B /* Info.plist */,
+
 				2FA287B627EACC3C00C5BD81 /* MyProfileTableViewCell */,
 				2FA287B927EACC3C00C5BD81 /* MyProfileVC.swift */,
 				2FA287BA27EACC3C00C5BD81 /* MyProfileVC.xib */,
+
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
 		};
+
+		79293CE227EACAD500E7B48F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				79293CE327EACAD500E7B48F /* MoreOptions */,
+				79293CE627EACAD500E7B48F /* MyProfile */,
+				79293CEC27EACAD500E7B48F /* DeleteAccount */,
+				79293CEF27EACAD500E7B48F /* Helpers */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		79293CE327EACAD500E7B48F /* MoreOptions */ = {
+			isa = PBXGroup;
+			children = (
+				79293CE427EACAD500E7B48F /* MoreOptionsVC.swift */,
+				79293CE527EACAD500E7B48F /* MoreOptionsVC.xib */,
+			);
+			path = MoreOptions;
+			sourceTree = "<group>";
+		};
+		79293CE627EACAD500E7B48F /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				79293CE727EACAD500E7B48F /* MyProfileTableViewCell */,
+				79293CEA27EACAD500E7B48F /* MyProfileVC.swift */,
+				79293CEB27EACAD500E7B48F /* MyProfileVC.xib */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		79293CE727EACAD500E7B48F /* MyProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				79293CE827EACAD500E7B48F /* MyProfileTableViewCell.swift */,
+				79293CE927EACAD500E7B48F /* MyProfileTableViewCell.xib */,
+			);
+			path = MyProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		79293CEC27EACAD500E7B48F /* DeleteAccount */ = {
+			isa = PBXGroup;
+			children = (
+				79293CED27EACAD500E7B48F /* DeleteAccountVC.swift */,
+				79293CEE27EACAD500E7B48F /* DeleteAccountVC.xib */,
+			);
+			path = DeleteAccount;
+			sourceTree = "<group>";
+		};
+		79293CEF27EACAD500E7B48F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79293CF027EACAD500E7B48F /* Alert */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		79293CF027EACAD500E7B48F /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				79293CF127EACAD500E7B48F /* CustomAlertVC.xib */,
+				79293CF227EACAD500E7B48F /* CustomAlertVC.swift */,
+			);
+			path = Alert;
+
 		2FA287B627EACC3C00C5BD81 /* MyProfileTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1100,6 +1210,7 @@
 				3126834727C15ECB003F017B /* Info.plist */,
 			);
 			path = YogaZone;
+
 			sourceTree = "<group>";
 		};
 		8327042227E7AB3A0006CF3B /* Sucess Screen */ = {
@@ -1341,10 +1452,17 @@
 				2F036FB227E429E400993E41 /* HistoricoTableViewCell.xib in Resources */,
 				2F412EF327E41A0B007708E8 /* pad-B.mp3 in Resources */,
 				2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */,
+
+				79293CF827EACAD500E7B48F /* MyProfileVC.xib in Resources */,
+				8334038027E95659004FCA47 /* TreinoUmController.xib in Resources */,
+				8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */,
+				79293CFB27EACAD500E7B48F /* CustomAlertVC.xib in Resources */,
+
 				2FA287C727EACC3C00C5BD81 /* MyProfileVC.xib in Resources */,
 				8334038027E95659004FCA47 /* TreinoUmController.xib in Resources */,
 				8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */,
 				2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */,
+
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
 				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
 				8334037427E95659004FCA47 /* 01_Natarajasana.gif in Resources */,
@@ -1354,7 +1472,11 @@
 				2F0C342C27E4384E004A1E8C /* HoldViewController.xib in Resources */,
 				8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */,
 				2F0C33DE27E432EC004A1E8C /* InfEmailViewController.xib in Resources */,
+
+				79293CFA27EACAD500E7B48F /* DeleteAccountVC.xib in Resources */,
+
 				2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */,
+
 				2F0C343627E43954004A1E8C /* start.mp4 in Resources */,
 				8334038227E95659004FCA47 /* TreinoPausadoVC.xib in Resources */,
 				8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */,
@@ -1362,11 +1484,19 @@
 				2F412EF227E41A0B007708E8 /* pad-C.mp3 in Resources */,
 				8391EA5427E820E800F466F2 /* Montserrat-Bold.ttf in Resources */,
 				2F036F7E27E429D800993E41 /* EventCell.xib in Resources */,
+
+				79293CF627EACAD500E7B48F /* MyProfileTableViewCell.xib in Resources */,
+				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
+				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
+				8334037A27E95659004FCA47 /* DropDownTableViewCell.xib in Resources */,
+				79293CF427EACAD500E7B48F /* MoreOptionsVC.xib in Resources */,
+
 				2FA287C527EACC3C00C5BD81 /* MyProfileTableViewCell.xib in Resources */,
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
 				8334037A27E95659004FCA47 /* DropDownTableViewCell.xib in Resources */,
 				2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */,
+
 				2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
@@ -1415,7 +1545,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				79293CF327EACAD500E7B48F /* MoreOptionsVC.swift in Sources */,
+
 				2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */,
+
 				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F0C342327E4384E004A1E8C /* StartViewController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
@@ -1440,7 +1574,11 @@
 				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
 				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
+
+				79293CF527EACAD500E7B48F /* MyProfileTableViewCell.swift in Sources */,
+
 				2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */,
+
 				2F79E15E27DD0DB60070397F /* ModalVideoViewController.swift in Sources */,
 				2F036F8D27E429D800993E41 /* AlertService.swift in Sources */,
 				2F036F8227E429D800993E41 /* CreateNewEventViewController.swift in Sources */,
@@ -1477,7 +1615,11 @@
 				8334037C27E95659004FCA47 /* MakeDropDown.swift in Sources */,
 				2F036F8827E429D800993E41 /* ConfirmContainerViewController.swift in Sources */,
 				2F036F7727E429D800993E41 /* EventFilterViewController.swift in Sources */,
+
+				79293CF727EACAD500E7B48F /* MyProfileVC.swift in Sources */,
+
 				2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */,
+
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				8334037927E95659004FCA47 /* TrainingModel.swift in Sources */,
 				2F412EB727E4101E007708E8 /* HomeViewController.swift in Sources */,
@@ -1493,9 +1635,15 @@
 				8334037827E95659004FCA47 /* SairDoTreinoVC.swift in Sources */,
 				2F412EBA27E4101E007708E8 /* HomeHeader.swift in Sources */,
 				2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */,
+
+				79293CFC27EACAD500E7B48F /* CustomAlertVC.swift in Sources */,
+				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
+				79293CF927EACAD500E7B48F /* DeleteAccountVC.swift in Sources */,
+
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
 				2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */,
+
 				2F0C342B27E4384E004A1E8C /* HoldViewController.swift in Sources */,
 				2F0C342427E4384E004A1E8C /* AnimationViewController.swift in Sources */,
 				8334037027E95659004FCA47 /* TreinoCustomCell.swift in Sources */,

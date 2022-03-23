@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,27 +41,27 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meu Perfil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ip-sY-Jn7">
-                    <rect key="frame" x="90" y="25" width="87" height="21"/>
+                    <rect key="frame" x="90" y="25" width="76.5" height="20"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ee7-fb-6dF">
-                    <rect key="frame" x="137.5" y="76" width="100" height="100"/>
+                    <rect key="frame" x="137.5" y="75" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="ETL-Wa-YLF"/>
                         <constraint firstAttribute="width" constant="100" id="IY1-e0-6ly"/>
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52C-KW-VGF">
-                    <rect key="frame" x="207.5" y="146" width="30" height="30"/>
+                    <rect key="frame" x="207.5" y="145" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="e8K-3m-RH7"/>
                         <constraint firstAttribute="height" constant="30" id="vMT-3G-rPE"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ricardo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds1-Gz-2KN">
-                    <rect key="frame" x="137.5" y="191" width="100" height="23.5"/>
+                    <rect key="frame" x="137.5" y="190" width="100" height="22.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="00s-Fh-00u"/>
                     </constraints>
@@ -70,20 +70,20 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-cA-U9t">
-                    <rect key="frame" x="0.0" y="239.5" width="375" height="327.5"/>
+                    <rect key="frame" x="0.0" y="237.5" width="375" height="329.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-Yo-jD1">
                     <rect key="frame" x="50" y="592" width="275" height="50"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="RFU-6q-pMX"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Salvar Alterações"/>
                     <buttonConfiguration key="configuration" style="plain" title="Salvar Alterações" cornerStyle="dynamic">
-                        <backgroundConfiguration key="background" cornerRadius="22">
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        </backgroundConfiguration>
+                        <backgroundConfiguration key="background" cornerRadius="8"/>
                     </buttonConfiguration>
                     <connections>
                         <action selector="tappedSaveChangesButton:" destination="-1" eventType="touchUpInside" id="bOX-h5-J73"/>
