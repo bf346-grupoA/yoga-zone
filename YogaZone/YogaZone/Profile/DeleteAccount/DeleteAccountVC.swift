@@ -49,7 +49,7 @@ class DeleteAccountVC: UIViewController {
     }
     
     @IBAction func tappedConfirmDeleteAccountButton(_ sender: UIButton) {
-        // CONTA DELETADA
+        CustomAlertVC.instance.showAlert(titleType: .success, message: "Sua conta foi excluida com sucesso !", alertType: .success)
     }
 }
 
