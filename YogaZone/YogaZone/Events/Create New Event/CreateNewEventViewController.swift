@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 class CreateNewEventViewController: UIViewController, UIGestureRecognizerDelegate {
     
@@ -60,7 +59,13 @@ extension CreateNewEventViewController {
         self.eventNumberOfParticipantsTextField.placeholder = "Número de participantes"
         self.eventLocalTextField.placeholder = "Local"
         self.eventDescriptionTextField.placeholder = "Descrição de outras informações"
+    
+        self.createEventButton.configuration = nil
         self.createEventButton.setTitle("Criar Evento", for: .normal)
+        self.createEventButton.setTitleColor(.white, for: .normal)
+        self.createEventButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.createEventButton.backgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        self.createEventButton.layer.cornerRadius = 8
     }
     
 }
@@ -73,4 +78,3 @@ extension CreateNewEventViewController {
     }
     
 }
-

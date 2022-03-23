@@ -38,8 +38,14 @@ extension EventCreatedSuccessViewController {
     func setupUI(){
         self.titleLabel.text = self.titleText
         self.sucessMessageLabel.text = self.sucessMessage
-        self.confirmButton.setTitle("OK", for: .normal)
         self.navigationItem.setHidesBackButton(true, animated: false)
+        
+        self.confirmButton.configuration = nil
+        self.confirmButton.setTitle("OK", for: .normal)
+        self.confirmButton.setTitleColor(.white, for: .normal)
+        self.confirmButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.confirmButton.backgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        self.confirmButton.layer.cornerRadius = 8
     }
     
 }

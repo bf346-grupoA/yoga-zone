@@ -66,8 +66,21 @@ extension EditEventDetailViewController {
         self.eventNumberOfParticipantsTextField.placeholder = "Número de participantes"
         self.eventLocalTextField.placeholder = "Local"
         self.eventDescriptionTextField.placeholder = "Descrição de outras informações"
-        self.editEventButton.setTitle("Editar Evento", for: .normal)
+      
+        self.editEventButton.configuration = nil
+        self.editEventButton.setTitle("Confirmar Alterações", for: .normal)
+        self.editEventButton.setTitleColor(.white, for: .normal)
+        self.editEventButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.editEventButton.backgroundColor = #colorLiteral(red: 0.2039215686, green: 0.6588235294, blue: 0.3254901961, alpha: 1)
+        self.editEventButton.layer.cornerRadius = 8
+        
+        self.deleteEventButton.configuration = nil
         self.deleteEventButton.setTitle("Excluir Evento", for: .normal)
+        self.deleteEventButton.setTitleColor(.white, for: .normal)
+        self.deleteEventButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.deleteEventButton.backgroundColor = #colorLiteral(red: 0.831372549, green: 0.1764705882, blue: 0.1764705882, alpha: 1)
+        self.deleteEventButton.layer.cornerRadius = 8
+        
     }
     
 }
