@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class HomeHeader: UIView {
-    let headerSize: CGFloat = 150
+    let headerSize: CGFloat = 180
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,11 +18,12 @@ class HomeHeader: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupUI()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        self.backgroundColor = .init(red: 65/255, green: 11/255, blue: 127/255, alpha: 1.0)
     }
 }
 
@@ -30,8 +31,6 @@ extension HomeHeader {
     
     func setupUI() {
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.backgroundColor = .init(red: 94, green: 76, blue: 132, alpha: 0)
-//        self.layer.cornerRadius = 8
         self.frame.size.width = UIScreen.main.bounds.width
         self.frame.size.height = headerSize
                 
@@ -40,7 +39,7 @@ extension HomeHeader {
             image.translatesAutoresizingMaskIntoConstraints = false
             image.image =  #imageLiteral(resourceName: "profile")
             image.contentMode = .scaleToFill
-            image.layer.cornerRadius = 40
+            image.layer.cornerRadius = 28
             image.layer.masksToBounds = true
             
             return image
@@ -48,11 +47,12 @@ extension HomeHeader {
         
         let greetingLabel: UILabel = {
             let label = UILabel()
-            label.frame = CGRect(x: 0, y: 0, width: 50, height: 20)
             label.translatesAutoresizingMaskIntoConstraints = false
-            label.font = UIFont.systemFont(ofSize: 20)
-            label.textColor = .black
-            label.text = "Ola Meu Mano"
+            label.font = UIFont(name: "Montserrat-Regular", size: 20)
+            label.textColor = .white
+            label.text = "Namastê,    Nicolas Cage"
+            label.numberOfLines = 0
+            
             return label
         }()
         
@@ -61,14 +61,14 @@ extension HomeHeader {
         
         
         greetingLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        greetingLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8).isActive = true
+        greetingLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
         greetingLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
         greetingLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
         
         profileImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        profileImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8).isActive = true
-        profileImage.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        profileImage.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        profileImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
+        profileImage.heightAnchor.constraint(equalToConstant: 55).isActive = true
+        profileImage.widthAnchor.constraint(equalToConstant: 55).isActive = true
     }
     
     override var intrinsicContentSize: CGSize {

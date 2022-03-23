@@ -22,12 +22,13 @@ class HomeViewController: UIViewController {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
-            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -0),
+            self.headerView.topAnchor.constraint(equalTo: view.topAnchor),
+            self.headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            self.headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -0),
             
-            collectionView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 20),
-            collectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            self.collectionView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor, constant: 20),
+            self.collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            self.collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
 
         ])
     }
@@ -36,10 +37,11 @@ class HomeViewController: UIViewController {
 // MARK: Setup CollectionView
 extension HomeViewController {
     func setupCollectionView() {
-        collectionView.frame = .init(x: 0, y: headerView.frame.height, width: view.frame.width, height: view.frame.height - headerView.frame.height)
+        self.collectionView.frame = .init(x: 0, y: self.headerView.frame.height, width: view.frame.width, height: view.frame.height + self.headerView.frame.height)
         self.collectionView.backgroundColor = .white
         self.collectionView.register(CardCell.self, forCellWithReuseIdentifier: CardCell.identifier)
         self.collectionView.register(CategoryHeaderView.self, forSupplementaryViewOfKind: categoryHeaderId, withReuseIdentifier: CategoryHeaderView.identifier)
+        
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
@@ -121,10 +123,10 @@ extension HomeViewController {
     
     private func secondLayoutSection() -> NSCollectionLayoutSection {
         
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .absolute(120))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .absolute(140))
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = .init(top: 0, leading: 8, bottom: 20, trailing: 8)
+        item.contentInsets = .init(top: 0, leading: 6, bottom: 10, trailing: 6)
         
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(500))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
@@ -135,7 +137,7 @@ extension HomeViewController {
     
     private func thirdLayoutSection() -> NSCollectionLayoutSection {
         
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(120))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(200))
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets.bottom = 15
@@ -143,7 +145,7 @@ extension HomeViewController {
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(0.35))
         
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-        group.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 8)
+        group.contentInsets = .init(top: 0, leading: 0, bottom: 100, trailing: 8)
        
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsets.leading = 8
@@ -165,12 +167,11 @@ extension HomeViewController {
 
 
 // MARK: DataSource and Delegate
-extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: CardCell.identifier, for: indexPath) as? CardCell
         
         let image = Router.getImageName(indexPath: indexPath)
-        //let destination = Router.getDestination(indexPath: indexPath)
         let destinationIndex = Router.getDestinationIndex(indexPath: indexPath)
         cell?.delegate = self
         
@@ -202,6 +203,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
                 return 1
         }
     }
+    
 }
 
 extension HomeViewController: Selectable {

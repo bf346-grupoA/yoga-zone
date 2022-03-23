@@ -28,8 +28,10 @@ class CardCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        imageView.frame = contentView.bounds
-        imageView.layer.cornerRadius = 9
+        self.imageView.frame = contentView.bounds
+        self.imageView.layer.cornerRadius = 9
+        self.imageView.contentMode = .scaleToFill
+        
     }
     
     func setupCell(imageName: String, destinationIndex: Int) {
