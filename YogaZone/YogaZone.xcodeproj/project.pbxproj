@@ -131,6 +131,18 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+
+		7930F2D427E43FE10081C2EC /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2D227E43FE10081C2EC /* CustomAlertVC.xib */; };
+		7930F2D527E43FE10081C2EC /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2D327E43FE10081C2EC /* CustomAlertVC.swift */; };
+		7930F2E327E43FF60081C2EC /* MoreOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2D827E43FF60081C2EC /* MoreOptionsVC.swift */; };
+		7930F2E427E43FF60081C2EC /* MoreOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2D927E43FF60081C2EC /* MoreOptionsVC.xib */; };
+		7930F2E527E43FF60081C2EC /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2DC27E43FF60081C2EC /* MyProfileTableViewCell.swift */; };
+		7930F2E627E43FF60081C2EC /* MyProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2DD27E43FF60081C2EC /* MyProfileTableViewCell.xib */; };
+		7930F2E727E43FF60081C2EC /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2DE27E43FF60081C2EC /* MyProfileVC.swift */; };
+		7930F2E827E43FF60081C2EC /* MyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2DF27E43FF60081C2EC /* MyProfileVC.xib */; };
+		7930F2E927E43FF60081C2EC /* DeleteAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930F2E127E43FF60081C2EC /* DeleteAccountVC.swift */; };
+		7930F2EA27E43FF60081C2EC /* DeleteAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7930F2E227E43FF60081C2EC /* DeleteAccountVC.xib */; };
+
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		8334036D27E95659004FCA47 /* TreinoFinalizadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334034B27E95659004FCA47 /* TreinoFinalizadoVC.xib */; };
@@ -167,6 +179,7 @@
 		8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4D27E820E800F466F2 /* Montserrat-Regular.ttf */; };
 		8391EA5A27E820E800F466F2 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */; };
 		8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -296,6 +309,18 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		7930F2D227E43FE10081C2EC /* CustomAlertVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
+		7930F2D327E43FE10081C2EC /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+		7930F2D827E43FF60081C2EC /* MoreOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsVC.swift; sourceTree = "<group>"; };
+		7930F2D927E43FF60081C2EC /* MoreOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreOptionsVC.xib; sourceTree = "<group>"; };
+		7930F2DC27E43FF60081C2EC /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
+		7930F2DD27E43FF60081C2EC /* MyProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileTableViewCell.xib; sourceTree = "<group>"; };
+		7930F2DE27E43FF60081C2EC /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		7930F2DF27E43FF60081C2EC /* MyProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileVC.xib; sourceTree = "<group>"; };
+		7930F2E127E43FF60081C2EC /* DeleteAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountVC.swift; sourceTree = "<group>"; };
+		7930F2E227E43FF60081C2EC /* DeleteAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteAccountVC.xib; sourceTree = "<group>"; };
+
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		8334034B27E95659004FCA47 /* TreinoFinalizadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoFinalizadoVC.xib; sourceTree = "<group>"; };
@@ -332,6 +357,7 @@
 		8391EA4D27E820E800F466F2 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -997,6 +1023,9 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+
+				7930F2D627E43FF60081C2EC /* Profile */,
+
 				2F0C33FF27E4384E004A1E8C /* Breathing */,
 				2F0C33E327E434DA004A1E8C /* Register */,
 				2F0C33CE27E432EC004A1E8C /* Login */,
@@ -1007,6 +1036,7 @@
 				8334034927E95659004FCA47 /* Exercicios */,
 				2F412EAD27E4101E007708E8 /* Home */,
 				2F79E12627DCF42B0070397F /* PoseGallery */,
+
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
 				3126834227C15ECB003F017B /* Assets.xcassets */,
@@ -1016,6 +1046,71 @@
 			path = YogaZone;
 			sourceTree = "<group>";
 		};
+
+		7930F2D027E43FE10081C2EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2D127E43FE10081C2EC /* Alert */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7930F2D127E43FE10081C2EC /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2D227E43FE10081C2EC /* CustomAlertVC.xib */,
+				7930F2D327E43FE10081C2EC /* CustomAlertVC.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		7930F2D627E43FF60081C2EC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2D027E43FE10081C2EC /* Helpers */,
+				7930F2D727E43FF60081C2EC /* MoreOptions */,
+				7930F2DA27E43FF60081C2EC /* MyProfile */,
+				7930F2E027E43FF60081C2EC /* DeleteAccount */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7930F2D727E43FF60081C2EC /* MoreOptions */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2D827E43FF60081C2EC /* MoreOptionsVC.swift */,
+				7930F2D927E43FF60081C2EC /* MoreOptionsVC.xib */,
+			);
+			path = MoreOptions;
+			sourceTree = "<group>";
+		};
+		7930F2DA27E43FF60081C2EC /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2DB27E43FF60081C2EC /* MyProfileTableViewCell */,
+				7930F2DE27E43FF60081C2EC /* MyProfileVC.swift */,
+				7930F2DF27E43FF60081C2EC /* MyProfileVC.xib */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		7930F2DB27E43FF60081C2EC /* MyProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2DC27E43FF60081C2EC /* MyProfileTableViewCell.swift */,
+				7930F2DD27E43FF60081C2EC /* MyProfileTableViewCell.xib */,
+			);
+			path = MyProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		7930F2E027E43FF60081C2EC /* DeleteAccount */ = {
+			isa = PBXGroup;
+			children = (
+				7930F2E127E43FF60081C2EC /* DeleteAccountVC.swift */,
+				7930F2E227E43FF60081C2EC /* DeleteAccountVC.xib */,
+			);
+			path = DeleteAccount;
+
 		8327042227E7AB3A0006CF3B /* Sucess Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -1176,6 +1271,7 @@
 				8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */,
 			);
 			path = Fonts;
+
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1236,6 +1332,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				7930F2D427E43FE10081C2EC /* CustomAlertVC.xib in Resources */,
+				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				7930F2EA27E43FF60081C2EC /* DeleteAccountVC.xib in Resources */,
+				7930F2E627E43FF60081C2EC /* MyProfileTableViewCell.xib in Resources */,
+				7930F2E427E43FF60081C2EC /* MoreOptionsVC.xib in Resources */,
+				7930F2E827E43FF60081C2EC /* MyProfileVC.xib in Resources */,
+				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
+
 				2F412ED927E41821007708E8 /* PracticeViewController.xib in Resources */,
 				2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */,
 				8334036D27E95659004FCA47 /* TreinoFinalizadoVC.xib in Resources */,
@@ -1314,6 +1419,7 @@
 				2F0C342D27E4384E004A1E8C /* InhaleViewController.xib in Resources */,
 				8391EA5727E820E800F466F2 /* Montserrat-SemiBold.ttf in Resources */,
 				2F036FB727E429E400993E41 /* tappedSwitchObController.xib in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1324,6 +1430,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				3126833E27C15ECA003F017B /* ViewController.swift in Sources */,
+				7930F2E927E43FF60081C2EC /* DeleteAccountVC.swift in Sources */,
+				7930F2E527E43FF60081C2EC /* MyProfileTableViewCell.swift in Sources */,
+				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
+				7930F2E727E43FF60081C2EC /* MyProfileVC.swift in Sources */,
+				7930F2E327E43FF60081C2EC /* MoreOptionsVC.swift in Sources */,
+				7930F2D527E43FE10081C2EC /* CustomAlertVC.swift in Sources */,
+				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
+
 				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F0C342327E4384E004A1E8C /* StartViewController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
@@ -1406,6 +1522,7 @@
 				2F036F8E27E429D800993E41 /* AlertViewController.swift in Sources */,
 				2F036F8B27E429D800993E41 /* EditEventDetailViewController.swift in Sources */,
 				8334037F27E95659004FCA47 /* TreinoUmController.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
