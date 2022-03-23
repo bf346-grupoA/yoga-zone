@@ -13,15 +13,17 @@ class SairDoTreinoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Hide Back Button from UINavigationItem
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     @IBAction func tappedYesButton(_ sender: UIButton) {
-            // ir para home
-        dismiss(animated: false, completion: nil)
+        navigationController?.popToRootViewController(animated: true)
+        
     }
     
     @IBAction func tappedNoButton(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        navigationController?.popViewController(animated: false)
     }
-    
 }

@@ -31,7 +31,6 @@ class TreinoIniciadoVC: UIViewController {
         self.configNextButton()
         self.loadGifImage()
         
-        
         tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
         pauseImage.image = UIImage(named: "pauseImage")
         nextImage.image = UIImage(named: "nextArrowImage")
@@ -45,8 +44,6 @@ class TreinoIniciadoVC: UIViewController {
         gifImage.image = UIImage.gifImageWithName("01_Natarajasana")
     }
  
-    
-
     private func configBackButton(){
         let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
         self.tappedArrowVoltar.addGestureRecognizer(tapBackButton)
@@ -55,7 +52,7 @@ class TreinoIniciadoVC: UIViewController {
     
     @objc func tappedBackButton(){
         let vcSairDoTreino = SairDoTreinoVC()
-        self.present(vcSairDoTreino, animated: false, completion: nil)
+        navigationController?.pushViewController(vcSairDoTreino, animated: false)
     }
     
     private func configPauseButton(){
