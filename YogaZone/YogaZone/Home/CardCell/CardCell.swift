@@ -35,9 +35,7 @@ class CardCell: UICollectionViewCell {
     }
     
     func setupCell(imageName: String, destinationIndex: Int) {
-//        self.destination = destination
         self.destinationIndex = destinationIndex
-//        self.navController = UINavigationController(rootViewController: Router.getDestinationByIndex(index: self.destinationIndex ?? 0))
         self.navController = UINavigationController(rootViewController: HomeViewController())
         imageView.image = UIImage(named: imageName)
         

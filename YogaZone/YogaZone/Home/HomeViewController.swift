@@ -16,6 +16,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.headerView.delegate = self
+        
         setupCollectionView()
         setupConstraints()
     }
@@ -214,6 +216,7 @@ extension HomeViewController: Selectable {
             case 3: self.navigationController?.pushViewController(BreathingHomeViewController(), animated: true)
             case 4: self.navigationController?.pushViewController(MeditacaoHomeViewController(), animated: true)
             case 5: self.navigationController?.pushViewController(TreinoUmController(), animated: true)
+            case 6: self.navigationController?.pushViewController(MyProfileVC(), animated: true)
             default:
             let storyboard = UIStoryboard(name: "HomeEvents", bundle: nil)
             self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: "HomeEventsViewController"), animated: true)           
