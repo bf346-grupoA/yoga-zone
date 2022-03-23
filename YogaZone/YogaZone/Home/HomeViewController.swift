@@ -40,14 +40,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
             case 0:
-            let headerCell = self.menuTableView.dequeueReusableCell(withIdentifier: HeaderCell.identifier, for: indexPath) as? HeaderCell
+                let headerCell = self.menuTableView.dequeueReusableCell(withIdentifier: HeaderCell.identifier, for: indexPath) as? HeaderCell
+                headerCell?.delegate = self
+                
                 return headerCell ?? UITableViewCell()
-            default:
-                let cell = self.menuTableView.dequeueReusableCell(withIdentifier: CardMenuCell.identifier, for: indexPath) as? CardMenuCell
-                cell?.delegate = self
-                cell?.awakeFromNib()
             
-                return cell ?? UITableViewCell()
+            default:
+                let menuCell = self.menuTableView.dequeueReusableCell(withIdentifier: CardMenuCell.identifier, for: indexPath) as? CardMenuCell
+                menuCell?.delegate = self
+                menuCell?.awakeFromNib()
+            
+                return menuCell ?? UITableViewCell()
         }
     }
     
