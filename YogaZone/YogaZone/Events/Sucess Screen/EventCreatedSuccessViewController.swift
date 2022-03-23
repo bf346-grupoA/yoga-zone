@@ -22,13 +22,9 @@ class EventCreatedSuccessViewController: UIViewController {
     }
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
-        let vc = HomeViewController()
-        navigationController?.pushViewController(vc, animated: true)
-        
-        //Deveria voltar para a home de eventos, porem o botao voltar deveria retornar para a home:
-        //let storyboard = UIStoryboard(name: "HomeEvents", bundle: nil)
-        //let vc = storyboard.instantiateViewController(identifier: "HomeEventsViewController")
-        //self.navigationController?.pushViewController(vc, animated: true)
+        let storyboard = UIStoryboard(name: "HomeEvents", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "HomeEventsViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
