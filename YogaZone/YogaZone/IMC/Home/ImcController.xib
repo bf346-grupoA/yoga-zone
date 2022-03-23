@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,6 +18,7 @@
                 <outlet property="alturaLabel" destination="Oyj-e2-nl5" id="F2W-Fe-Ae5"/>
                 <outlet property="btnCalcular" destination="aS6-k2-9d4" id="Q7M-4c-QWb"/>
                 <outlet property="pesoLabel" destination="aoN-Ob-hTH" id="lFj-7J-Y37"/>
+                <outlet property="seeMyProgress" destination="xaO-74-HXG" id="vHF-00-29L"/>
                 <outlet property="textFieldObjetivo" destination="VTf-6c-Ghu" id="vr0-Jg-MhN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -52,14 +53,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obejtivo (KG)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhE-o6-2WE">
-                    <rect key="frame" x="30.000000000000007" y="303.66666666666669" width="105.66666666666669" height="19.666666666666686"/>
+                    <rect key="frame" x="30.000000000000007" y="303.66666666666669" width="105.66666666666669" height="18.666666666666686"/>
                     <color key="tintColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="0.87688669220000004" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                     <color key="textColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="0.87688669220000004" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS6-k2-9d4">
-                    <rect key="frame" x="55" y="353.33333333333331" width="280" height="38.666666666666686"/>
+                    <rect key="frame" x="55" y="352.33333333333331" width="280" height="38.666666666666686"/>
                     <color key="backgroundColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="0.87688669220000004" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
@@ -76,13 +77,13 @@
                         <action selector="tappedSwitchOb:" destination="-1" eventType="valueChanged" id="IiS-ye-5Js"/>
                     </connections>
                 </switch>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoN-Ob-hTH">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoN-Ob-hTH">
                     <rect key="frame" x="151.66666666666663" y="149.66666666666666" width="208.33333333333337" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyj-e2-nl5">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oyj-e2-nl5">
                     <rect key="frame" x="153" y="198.66666666666666" width="207" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -94,7 +95,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaO-74-HXG">
-                    <rect key="frame" x="55" y="422" width="280" height="38.666666666666686"/>
+                    <rect key="frame" x="55" y="421" width="280" height="38.666666666666686"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>

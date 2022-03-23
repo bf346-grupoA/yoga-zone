@@ -17,16 +17,15 @@ class ResultadoController: UIViewController {
     
     @IBOutlet weak var possibleConsequence: UILabel!
     @IBOutlet weak var labelResultado: UILabel!
-   
-  
+    @IBOutlet weak var saveButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         print(resultado?.possibleConsequences ?? "nao chegou ainda")
         setupUI()
-
+        view.backgroundColor = .white
+        self.saveButton.layer.cornerRadius = 8
         // Do any additional setup after loading the view.
     }
 

@@ -18,14 +18,16 @@ class ImcController: UIViewController{
     
     @IBOutlet weak var textFieldObjetivo: UITextField!
     
-  
+    @IBOutlet weak var seeMyProgress: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-   
+        self.alturaLabel.textAlignment = .center
+        self.pesoLabel.textAlignment = .center
+        self.btnCalcular.layer.cornerRadius = 8
+        self.seeMyProgress.layer.cornerRadius = 8
+           
     }
 
     @IBAction func tappedCalcular(_ sender: UIButton) {
