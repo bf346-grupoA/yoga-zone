@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         setupTableView()
     }
 }
@@ -22,6 +23,8 @@ extension HomeViewController {
         self.menuTableView.delegate = self
         self.menuTableView.dataSource = self
         self.menuTableView.showsVerticalScrollIndicator = false
+        self.menuTableView.separatorStyle = .none
+        self.menuTableView.backgroundColor = .clear
         self.menuTableView.register(HeaderCell.getNib(), forCellReuseIdentifier: HeaderCell.identifier)
         self.menuTableView.register(CardMenuCell.self, forCellReuseIdentifier: CardMenuCell.identifier)
     }
