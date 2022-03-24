@@ -12,9 +12,7 @@ class ResultadoController: UIViewController {
     var resultado : Result? = nil
 
     @IBOutlet weak var healthStatus: UILabel!
-    
     @IBOutlet weak var titlePossibleConsequences: UILabel!
-    
     @IBOutlet weak var possibleConsequence: UILabel!
     @IBOutlet weak var labelResultado: UILabel!
     @IBOutlet weak var saveButton: UIButton!
@@ -26,7 +24,6 @@ class ResultadoController: UIViewController {
         setupUI()
         view.backgroundColor = .white
         self.saveButton.layer.cornerRadius = 8
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func closeButton(_ sender: Any){
@@ -35,6 +32,14 @@ class ResultadoController: UIViewController {
      
     }
     
+    @IBAction func saveButton(_ sender: Any) {
+        let vc4 = tappedSaveResultViewController()
+        vc4.message = "Resultado Salvo!"
+        vc4.modalTransitionStyle = .crossDissolve
+        vc4.modalPresentationStyle = .overFullScreen
+        present(vc4, animated: false, completion: nil)
+        
+    }
     
   
 }
@@ -47,6 +52,7 @@ extension ResultadoController{
         self.healthStatus.text = resultado?.healthStatus?.rawValue ?? ""
         self.healthStatus.textColor = getColor(colorIndex: resultado?.imcIndex?.rawValue ?? 0)
         self.possibleConsequence.text = resultado?.possibleConsequences?.rawValue ?? ""
+        self.possibleConsequence.textColor = getColor(colorIndex: resultado?.imcIndex?.rawValue ?? 0)
         
     }
  

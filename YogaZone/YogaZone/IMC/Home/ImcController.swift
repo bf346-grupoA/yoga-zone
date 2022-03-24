@@ -11,25 +11,28 @@ class ImcController: UIViewController{
 
     @IBOutlet weak var btnCalcular: UIButton!
     @IBOutlet weak var SwitchSalvarOb: UISwitch!
-    
     @IBOutlet weak var pesoLabel: UITextField!
-    
     @IBOutlet weak var alturaLabel: UITextField!
-    
     @IBOutlet weak var textFieldObjetivo: UITextField!
-    
     @IBOutlet weak var seeMyProgress: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.alturaLabel.delegate = self
+//        self.pesoLabel.delegate = self
         self.alturaLabel.textAlignment = .center
         self.pesoLabel.textAlignment = .center
         self.btnCalcular.layer.cornerRadius = 8
         self.seeMyProgress.layer.cornerRadius = 8
-           
-    }
+        self.alturaLabel.keyboardType = UIKeyboardType.numberPad
+        self.pesoLabel.keyboardType = UIKeyboardType.numberPad
+        self.textFieldObjetivo.keyboardType = UIKeyboardType.numberPad
+}
 
+                                                           
+                                                           
+                                                           
     @IBAction func tappedCalcular(_ sender: UIButton) {
         
         let result = calcularResultado()
@@ -46,7 +49,13 @@ class ImcController: UIViewController{
          
     
     @IBAction func tappedSwitchOb(_ sender: Any) {
-        let vc3 = tappedSwitchObController();present(vc3, animated: false, completion: nil)
+        let vc4 = tappedSaveResultViewController()
+        vc4.message = "Objetivo Salvo!"
+        vc4.modalTransitionStyle = .crossDissolve
+        vc4.modalPresentationStyle = .overFullScreen
+        present(vc4, animated: false, completion: nil)
+        
+        
     }
     
     
@@ -95,7 +104,16 @@ extension ImcController {
         return result
     }
     
-    
-    
-    
 }
+//
+//just numbers
+//func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//
+//        let allowedCharacters = "+1234567890"
+//        let allowedCharcterSet = CharacterSet(charactersIn: allowedCharacters)
+//        let typedCharcterSet = CharacterSet(charactersIn: string)
+//        return allowedCharcterSet.isSuperset(of: typedCharcterSet)
+//    }
+
+
+
