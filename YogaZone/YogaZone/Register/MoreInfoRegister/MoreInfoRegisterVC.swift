@@ -13,12 +13,21 @@ class MoreInfoRegisterVC: UIViewController {
     
     @IBOutlet weak var ageLabel: UILabel!
     
+    @IBOutlet weak var locateLabel: UILabel!
+    
+    @IBOutlet weak var genderLabel: UILabel!
+    
+    @IBOutlet weak var womanLabel: UILabel!
+    
+    @IBOutlet weak var manLabel: UILabel!
+    
     @IBOutlet weak var ageTextField: UITextField!
     
     @IBOutlet weak var btnWoman: UIButton!
     
     @IBOutlet weak var btnMan: UIButton!
     
+    @IBOutlet weak var registerDoneBtn: UIButton!
     
     let radioController: RadioButtonController = RadioButtonController()
     	
@@ -27,6 +36,7 @@ class MoreInfoRegisterVC: UIViewController {
         configImages()
         configBackButton()
         createDatePicker()
+        configButtonsAndLabelsApperance()
         
         radioController.buttonsArray = [btnWoman,btnMan]
         radioController.defaultButton = btnWoman
@@ -79,6 +89,19 @@ class MoreInfoRegisterVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    func configButtonsAndLabelsApperance(){
+        registerDoneBtn.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
+        registerDoneBtn.clipsToBounds = true // Rounded 🙂
+        registerDoneBtn.layer.cornerRadius = 7.5
+        
+        ageLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+        locateLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+        genderLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+        womanLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+        manLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+        
+    }
+    
     @IBAction func btnWomanAction(_ sender: UIButton) {
         radioController.buttonArrayUpdated(buttonSelected: sender)
     }
@@ -89,6 +112,7 @@ class MoreInfoRegisterVC: UIViewController {
     
     @IBAction func tappedRegisterDone(_ sender: UIButton) {
         self.navigationController?.pushViewController(DoneRegisterVC(), animated: true)
+        
     }
     
 }
