@@ -58,8 +58,20 @@ extension EventFilterViewController {
         self.eventNameTextField.placeholder = "Nome do Evento"
         self.finalizedLabel.text = "Finalizados"
         self.createdByMeLabel.text = "Criados por mim"
+        
+        self.applyButton.configuration = nil
         self.applyButton.setTitle("Aplicar", for: .normal)
-        self.clearFiltersButtons.setTitle("Limpar filtros", for: .normal)
+        self.applyButton.setTitleColor(.white, for: .normal)
+        self.applyButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.applyButton.backgroundColor = #colorLiteral(red: 0.2039215686, green: 0.7803921569, blue: 0.3490196078, alpha: 1)
+        self.applyButton.layer.cornerRadius = 8
+        
+        self.clearFiltersButtons.configuration = nil
+        self.clearFiltersButtons.setTitle("Limpar Filtros", for: .normal)
+        self.clearFiltersButtons.setTitleColor(.white, for: .normal)
+        self.clearFiltersButtons.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.clearFiltersButtons.backgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        self.clearFiltersButtons.layer.cornerRadius = 8
         
     }
     
