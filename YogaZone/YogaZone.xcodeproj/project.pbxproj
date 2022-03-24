@@ -86,6 +86,8 @@
 		2F0C343727E43954004A1E8C /* hold.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343227E43954004A1E8C /* hold.mp4 */; };
 		2F0C343827E43954004A1E8C /* expire.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343327E43954004A1E8C /* expire.mp4 */; };
 		2F0C343927E43954004A1E8C /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343427E43954004A1E8C /* intro.mp4 */; };
+
+
 		2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53C927EB641C00FBA25F /* HomeViewController.swift */; };
 		2F3A53CC27EB641C00FBA25F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */; };
 		2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53CF27EB67B400FBA25F /* HeaderCell.swift */; };
@@ -114,6 +116,7 @@
 		2F3A541327EC04A100FBA25F /* LevelAndDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */; };
 		2F3A541727EC1D8A00FBA25F /* tappedSaveResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A541527EC1D8A00FBA25F /* tappedSaveResultViewController.xib */; };
 		2F3A541827EC1D8A00FBA25F /* tappedSaveResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A541627EC1D8A00FBA25F /* tappedSaveResultViewController.swift */; };
+
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
 		2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* CardMenuCell.swift */; };
 		2F412EB827E4101E007708E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB127E4101E007708E8 /* Router.swift */; };
@@ -160,12 +163,40 @@
 		2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */; };
 		2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */; };
 		2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */; };
+
+		2FA287CD27EAD19000C5BD81 /* Selectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287CC27EAD19000C5BD81 /* Selectable.swift */; };
+
 		2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287CC27EAD19000C5BD81 /* Navigable.swift */; };
+
 		2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0560227E022DA000E9CA6 /* Poses.swift */; };
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+
+		79E9072927EC0B9B007FB7A4 /* TrainingListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9070727EC0B9B007FB7A4 /* TrainingListController.xib */; };
+		79E9072A27EC0B9B007FB7A4 /* TrainingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9070827EC0B9B007FB7A4 /* TrainingListController.swift */; };
+		79E9072B27EC0B9B007FB7A4 /* TrainingCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9070A27EC0B9B007FB7A4 /* TrainingCustomCell.swift */; };
+		79E9072C27EC0B9B007FB7A4 /* TrainingCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9070B27EC0B9B007FB7A4 /* TrainingCustomCell.xib */; };
+		79E9072D27EC0B9B007FB7A4 /* TrainingFinishedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9070D27EC0B9B007FB7A4 /* TrainingFinishedVC.swift */; };
+		79E9072E27EC0B9B007FB7A4 /* TrainingFinishedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9070E27EC0B9B007FB7A4 /* TrainingFinishedVC.xib */; };
+		79E9072F27EC0B9B007FB7A4 /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9071027EC0B9B007FB7A4 /* RenderGIF.swift */; };
+		79E9073027EC0B9B007FB7A4 /* TrainingStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9071127EC0B9B007FB7A4 /* TrainingStartedVC.swift */; };
+		79E9073127EC0B9B007FB7A4 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79E9071327EC0B9B007FB7A4 /* 01_Natarajasana.gif */; };
+		79E9073227EC0B9B007FB7A4 /* TrainingStartedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9071427EC0B9B007FB7A4 /* TrainingStartedVC.xib */; };
+		79E9073327EC0B9B007FB7A4 /* LeaveTrainingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9071627EC0B9B007FB7A4 /* LeaveTrainingVC.xib */; };
+		79E9073427EC0B9B007FB7A4 /* LeaveTrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9071727EC0B9B007FB7A4 /* LeaveTrainingVC.swift */; };
+		79E9073527EC0B9B007FB7A4 /* TrainingPausedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9071927EC0B9B007FB7A4 /* TrainingPausedVC.xib */; };
+		79E9073627EC0B9B007FB7A4 /* TrainingPausedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9071A27EC0B9B007FB7A4 /* TrainingPausedVC.swift */; };
+		79E9073727EC0B9B007FB7A4 /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9071E27EC0B9B007FB7A4 /* TrainingModel.swift */; };
+		79E9073827EC0B9B007FB7A4 /* DropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9072027EC0B9B007FB7A4 /* DropDownTableViewCell.xib */; };
+		79E9073927EC0B9B007FB7A4 /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9072127EC0B9B007FB7A4 /* DropDownTableViewCell.swift */; };
+		79E9073A27EC0B9B007FB7A4 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9072327EC0B9B007FB7A4 /* MakeDropDown.swift */; };
+		79E9073B27EC0B9B007FB7A4 /* DropDownTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9072527EC0B9B007FB7A4 /* DropDownTwoTableViewCell.swift */; };
+		79E9073C27EC0B9B007FB7A4 /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9072627EC0B9B007FB7A4 /* DropDownTwoTableViewCell.xib */; };
+		79E9073D27EC0B9B007FB7A4 /* LevelAndDurationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E9072727EC0B9B007FB7A4 /* LevelAndDurationVC.xib */; };
+		79E9073E27EC0B9B007FB7A4 /* LevelAndDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9072827EC0B9B007FB7A4 /* LevelAndDurationVC.swift */; };
+
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
@@ -262,6 +293,8 @@
 		2F0C343227E43954004A1E8C /* hold.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hold.mp4; sourceTree = "<group>"; };
 		2F0C343327E43954004A1E8C /* expire.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = expire.mp4; sourceTree = "<group>"; };
 		2F0C343427E43954004A1E8C /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
+
+
 		2F3A53C927EB641C00FBA25F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		2F3A53CF27EB67B400FBA25F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
@@ -290,6 +323,7 @@
 		2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelAndDurationVC.swift; sourceTree = "<group>"; };
 		2F3A541527EC1D8A00FBA25F /* tappedSaveResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tappedSaveResultViewController.xib; sourceTree = "<group>"; };
 		2F3A541627EC1D8A00FBA25F /* tappedSaveResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tappedSaveResultViewController.swift; sourceTree = "<group>"; };
+
 		2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		2F412EB027E4101E007708E8 /* CardMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMenuCell.swift; sourceTree = "<group>"; };
 		2F412EB127E4101E007708E8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -336,7 +370,11 @@
 		2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteAccountVC.xib; sourceTree = "<group>"; };
 		2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
 		2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+
+		2FA287CC27EAD19000C5BD81 /* Selectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selectable.swift; sourceTree = "<group>"; };
+
 		2FA287CC27EAD19000C5BD81 /* Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigable.swift; sourceTree = "<group>"; };
+
 		2FB0560227E022DA000E9CA6 /* Poses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poses.swift; sourceTree = "<group>"; };
 		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -344,6 +382,30 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		79E9070727EC0B9B007FB7A4 /* TrainingListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingListController.xib; sourceTree = "<group>"; };
+		79E9070827EC0B9B007FB7A4 /* TrainingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingListController.swift; sourceTree = "<group>"; };
+		79E9070A27EC0B9B007FB7A4 /* TrainingCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingCustomCell.swift; sourceTree = "<group>"; };
+		79E9070B27EC0B9B007FB7A4 /* TrainingCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingCustomCell.xib; sourceTree = "<group>"; };
+		79E9070D27EC0B9B007FB7A4 /* TrainingFinishedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingFinishedVC.swift; sourceTree = "<group>"; };
+		79E9070E27EC0B9B007FB7A4 /* TrainingFinishedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingFinishedVC.xib; sourceTree = "<group>"; };
+		79E9071027EC0B9B007FB7A4 /* RenderGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderGIF.swift; sourceTree = "<group>"; };
+		79E9071127EC0B9B007FB7A4 /* TrainingStartedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingStartedVC.swift; sourceTree = "<group>"; };
+		79E9071327EC0B9B007FB7A4 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
+		79E9071427EC0B9B007FB7A4 /* TrainingStartedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingStartedVC.xib; sourceTree = "<group>"; };
+		79E9071627EC0B9B007FB7A4 /* LeaveTrainingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaveTrainingVC.xib; sourceTree = "<group>"; };
+		79E9071727EC0B9B007FB7A4 /* LeaveTrainingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveTrainingVC.swift; sourceTree = "<group>"; };
+		79E9071927EC0B9B007FB7A4 /* TrainingPausedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingPausedVC.xib; sourceTree = "<group>"; };
+		79E9071A27EC0B9B007FB7A4 /* TrainingPausedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPausedVC.swift; sourceTree = "<group>"; };
+		79E9071E27EC0B9B007FB7A4 /* TrainingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
+		79E9072027EC0B9B007FB7A4 /* DropDownTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTableViewCell.xib; sourceTree = "<group>"; };
+		79E9072127EC0B9B007FB7A4 /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		79E9072327EC0B9B007FB7A4 /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
+		79E9072527EC0B9B007FB7A4 /* DropDownTwoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTwoTableViewCell.swift; sourceTree = "<group>"; };
+		79E9072627EC0B9B007FB7A4 /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
+		79E9072727EC0B9B007FB7A4 /* LevelAndDurationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelAndDurationVC.xib; sourceTree = "<group>"; };
+		79E9072827EC0B9B007FB7A4 /* LevelAndDurationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelAndDurationVC.swift; sourceTree = "<group>"; };
+
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -852,8 +914,12 @@
 		2F3A53DE27EC04A100FBA25F /* TrainingListCell */ = {
 			isa = PBXGroup;
 			children = (
+
+				2FA287CC27EAD19000C5BD81 /* Selectable.swift */,
+
 				2F3A53DF27EC04A100FBA25F /* TrainingCustomCell.swift */,
 				2F3A53E027EC04A100FBA25F /* TrainingCustomCell.xib */,
+
 			);
 			path = TrainingListCell;
 			sourceTree = "<group>";
@@ -1239,8 +1305,12 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+
+				79E9070527EC0B9B007FB7A4 /* Training */,
+
 				2F3A53DA27EC04A100FBA25F /* Training */,
 				2F3A53D827EB772800FBA25F /* Helpers */,
+
 				2FA287B127EACC3C00C5BD81 /* Profile */,
 				2F0C33FF27E4384E004A1E8C /* Breathing */,
 				2F0C33E327E434DA004A1E8C /* Register */,
@@ -1260,6 +1330,140 @@
 			path = YogaZone;
 			sourceTree = "<group>";
 		};
+		79E9070527EC0B9B007FB7A4 /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				79E9070627EC0B9B007FB7A4 /* TrainingList */,
+				79E9070C27EC0B9B007FB7A4 /* TrainingFinished */,
+				79E9070F27EC0B9B007FB7A4 /* TrainingStarted */,
+				79E9071527EC0B9B007FB7A4 /* LeaveTraining */,
+				79E9071827EC0B9B007FB7A4 /* TrainingPaused */,
+				79E9071B27EC0B9B007FB7A4 /* LevelAndDuration */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+
+		79E9070627EC0B9B007FB7A4 /* TrainingList */ = {
+			isa = PBXGroup;
+			children = (
+				79E9070727EC0B9B007FB7A4 /* TrainingListController.xib */,
+				79E9070827EC0B9B007FB7A4 /* TrainingListController.swift */,
+				79E9070927EC0B9B007FB7A4 /* TrainingListCell */,
+			);
+			path = TrainingList;
+			sourceTree = "<group>";
+		};
+		79E9070927EC0B9B007FB7A4 /* TrainingListCell */ = {
+			isa = PBXGroup;
+			children = (
+				79E9070A27EC0B9B007FB7A4 /* TrainingCustomCell.swift */,
+				79E9070B27EC0B9B007FB7A4 /* TrainingCustomCell.xib */,
+			);
+			path = TrainingListCell;
+			sourceTree = "<group>";
+		};
+		79E9070C27EC0B9B007FB7A4 /* TrainingFinished */ = {
+			isa = PBXGroup;
+			children = (
+				79E9070D27EC0B9B007FB7A4 /* TrainingFinishedVC.swift */,
+				79E9070E27EC0B9B007FB7A4 /* TrainingFinishedVC.xib */,
+			);
+			path = TrainingFinished;
+			sourceTree = "<group>";
+		};
+		79E9070F27EC0B9B007FB7A4 /* TrainingStarted */ = {
+			isa = PBXGroup;
+			children = (
+				79E9071027EC0B9B007FB7A4 /* RenderGIF.swift */,
+				79E9071127EC0B9B007FB7A4 /* TrainingStartedVC.swift */,
+				79E9071227EC0B9B007FB7A4 /* Gifs */,
+				79E9071427EC0B9B007FB7A4 /* TrainingStartedVC.xib */,
+			);
+			path = TrainingStarted;
+			sourceTree = "<group>";
+		};
+		79E9071227EC0B9B007FB7A4 /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				79E9071327EC0B9B007FB7A4 /* 01_Natarajasana.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
+		79E9071527EC0B9B007FB7A4 /* LeaveTraining */ = {
+			isa = PBXGroup;
+			children = (
+				79E9071627EC0B9B007FB7A4 /* LeaveTrainingVC.xib */,
+				79E9071727EC0B9B007FB7A4 /* LeaveTrainingVC.swift */,
+			);
+			path = LeaveTraining;
+			sourceTree = "<group>";
+		};
+		79E9071827EC0B9B007FB7A4 /* TrainingPaused */ = {
+			isa = PBXGroup;
+			children = (
+				79E9071927EC0B9B007FB7A4 /* TrainingPausedVC.xib */,
+				79E9071A27EC0B9B007FB7A4 /* TrainingPausedVC.swift */,
+			);
+			path = TrainingPaused;
+			sourceTree = "<group>";
+		};
+		79E9071B27EC0B9B007FB7A4 /* LevelAndDuration */ = {
+			isa = PBXGroup;
+			children = (
+				79E9071C27EC0B9B007FB7A4 /* DropDownWithMultipleXib */,
+				79E9072727EC0B9B007FB7A4 /* LevelAndDurationVC.xib */,
+				79E9072827EC0B9B007FB7A4 /* LevelAndDurationVC.swift */,
+			);
+			path = LevelAndDuration;
+			sourceTree = "<group>";
+		};
+		79E9071C27EC0B9B007FB7A4 /* DropDownWithMultipleXib */ = {
+			isa = PBXGroup;
+			children = (
+				79E9071D27EC0B9B007FB7A4 /* Models */,
+				79E9071F27EC0B9B007FB7A4 /* DropDownTableCell */,
+				79E9072227EC0B9B007FB7A4 /* MakeDropDownFile */,
+				79E9072427EC0B9B007FB7A4 /* DropDownTwoTableCell */,
+			);
+			path = DropDownWithMultipleXib;
+			sourceTree = "<group>";
+		};
+		79E9071D27EC0B9B007FB7A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79E9071E27EC0B9B007FB7A4 /* TrainingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79E9071F27EC0B9B007FB7A4 /* DropDownTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				79E9072027EC0B9B007FB7A4 /* DropDownTableViewCell.xib */,
+				79E9072127EC0B9B007FB7A4 /* DropDownTableViewCell.swift */,
+			);
+			path = DropDownTableCell;
+			sourceTree = "<group>";
+		};
+		79E9072227EC0B9B007FB7A4 /* MakeDropDownFile */ = {
+			isa = PBXGroup;
+			children = (
+				79E9072327EC0B9B007FB7A4 /* MakeDropDown.swift */,
+			);
+			path = MakeDropDownFile;
+			sourceTree = "<group>";
+		};
+		79E9072427EC0B9B007FB7A4 /* DropDownTwoTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				79E9072527EC0B9B007FB7A4 /* DropDownTwoTableViewCell.swift */,
+				79E9072627EC0B9B007FB7A4 /* DropDownTwoTableViewCell.xib */,
+			);
+			path = DropDownTwoTableCell;
+			sourceTree = "<group>";
+		};
 		8327042227E7AB3A0006CF3B /* Sucess Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -1269,6 +1473,7 @@
 			path = "Sucess Screen";
 			sourceTree = "<group>";
 		};
+
 		8391EA4327E820E800F466F2 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1350,17 +1555,25 @@
 				2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */,
 				2F0C342927E4384E004A1E8C /* ModalViewController.xib in Resources */,
 				2F0C342527E4384E004A1E8C /* AnimationViewController.xib in Resources */,
+
+				79E9073327EC0B9B007FB7A4 /* LeaveTrainingVC.xib in Resources */,
+
 				2F3A540A27EC04A100FBA25F /* TrainingPausedVC.xib in Resources */,
+
 				2F0C342227E4384E004A1E8C /* StartViewController.xib in Resources */,
+				79E9073D27EC0B9B007FB7A4 /* LevelAndDurationVC.xib in Resources */,
 				2F0C343827E43954004A1E8C /* expire.mp4 in Resources */,
 				2F3A541127EC04A100FBA25F /* DropDownTwoTableViewCell.xib in Resources */,
 				2F0C343727E43954004A1E8C /* hold.mp4 in Resources */,
 				2F412EF127E41A0B007708E8 /* pad-A.mp3 in Resources */,
+				79E9073227EC0B9B007FB7A4 /* TrainingStartedVC.xib in Resources */,
 				2F0C343527E43954004A1E8C /* inhale.mp4 in Resources */,
 				2F3A540827EC04A100FBA25F /* LeaveTrainingVC.xib in Resources */,
 				2F412ED127E41821007708E8 /* AudioCell.xib in Resources */,
 				2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */,
+
 				2F3A53FE27EC04A100FBA25F /* TrainingListController.xib in Resources */,
+
 				2F0C342827E4384E004A1E8C /* ExpireViewController.xib in Resources */,
 				8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */,
 				2F3A540327EC04A100FBA25F /* TrainingFinishedVC.xib in Resources */,
@@ -1369,11 +1582,15 @@
 				2F3A540627EC04A100FBA25F /* 01_Natarajasana.gif in Resources */,
 				2F3A540727EC04A100FBA25F /* TrainingStartedVC.xib in Resources */,
 				2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */,
+
+
 				2F3A53CC27EB641C00FBA25F /* HomeViewController.xib in Resources */,
+
 				2FA287C727EACC3C00C5BD81 /* MyProfileVC.xib in Resources */,
 				8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */,
 				2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */,
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
+				79E9073827EC0B9B007FB7A4 /* DropDownTableViewCell.xib in Resources */,
 				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
 				2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */,
 				2F412ED427E41821007708E8 /* IntroViewController.xib in Resources */,
@@ -1397,6 +1614,10 @@
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
 				2F036FAB27E429E400993E41 /* ImcController.xib in Resources */,
 				2F036F8C27E429D800993E41 /* Alert.storyboard in Resources */,
+
+				79E9073527EC0B9B007FB7A4 /* TrainingPausedVC.xib in Resources */,
+
+
 				2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */,
 				2F036F7827E429D800993E41 /* EventFilterViewController.xib in Resources */,
 				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
@@ -1407,12 +1628,15 @@
 				2F036F7B27E429D800993E41 /* HomeEvents.storyboard in Resources */,
 				2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */,
 				2F0C33E127E432EC004A1E8C /* telaaLoginViewController.xib in Resources */,
+				79E9073127EC0B9B007FB7A4 /* 01_Natarajasana.gif in Resources */,
 				2F412EF727E41A0B007708E8 /* pad-Gb.mp3 in Resources */,
 				8391EA5527E820E800F466F2 /* Comfortaa-SemiBold.ttf in Resources */,
 				2F3A540127EC04A100FBA25F /* TrainingCustomCell.xib in Resources */,
 				2F412EF527E41A0B007708E8 /* pad-D.mp3 in Resources */,
 				2F0C33FA27E434DA004A1E8C /* UserLevelVC.xib in Resources */,
+				79E9072C27EC0B9B007FB7A4 /* TrainingCustomCell.xib in Resources */,
 				2F412EF827E41A0B007708E8 /* pad-Eb.mp3 in Resources */,
+				79E9072E27EC0B9B007FB7A4 /* TrainingFinishedVC.xib in Resources */,
 				2F036FB627E429E400993E41 /* ResultadoController.xib in Resources */,
 				2F036F8A27E429D800993E41 /* EditEventDetailViewController.xib in Resources */,
 				2F412EF627E41A0B007708E8 /* pad-Ab.mp3 in Resources */,
@@ -1428,7 +1652,9 @@
 				8391EA5827E820E800F466F2 /* Montserrat-ExtraBold.ttf in Resources */,
 				2F3A53D227EB67B500FBA25F /* HeaderCell.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
+				79E9073C27EC0B9B007FB7A4 /* DropDownTwoTableViewCell.xib in Resources */,
 				2F0C342D27E4384E004A1E8C /* InhaleViewController.xib in Resources */,
+				79E9072927EC0B9B007FB7A4 /* TrainingListController.xib in Resources */,
 				8391EA5727E820E800F466F2 /* Montserrat-SemiBold.ttf in Resources */,
 				2F036FB727E429E400993E41 /* tappedSwitchObController.xib in Resources */,
 			);
@@ -1441,9 +1667,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				79E9073627EC0B9B007FB7A4 /* TrainingPausedVC.swift in Sources */,
+				2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */,
+				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
+				79E9072B27EC0B9B007FB7A4 /* TrainingCustomCell.swift in Sources */,
+
 				2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */,
 				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F3A541827EC1D8A00FBA25F /* tappedSaveResultViewController.swift in Sources */,
+
 				2F0C342327E4384E004A1E8C /* StartViewController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
 				2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */,
@@ -1455,8 +1688,11 @@
 				2F0C33DF27E432EC004A1E8C /* modalSViewController.swift in Sources */,
 				2F036FB127E429E400993E41 /* HistoricoTableViewCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
+
+
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
 				2F3A541027EC04A100FBA25F /* DropDownTwoTableViewCell.swift in Sources */,
+
 				2F412ED227E41821007708E8 /* AudioCell.swift in Sources */,
 				2F3A540527EC04A100FBA25F /* TrainingStartedVC.swift in Sources */,
 				2F3A540427EC04A100FBA25F /* RenderGIF.swift in Sources */,
@@ -1465,17 +1701,29 @@
 				2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */,
 				2F036F8727E429D800993E41 /* CancelContainerViewController.swift in Sources */,
 				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
+				79E9072A27EC0B9B007FB7A4 /* TrainingListController.swift in Sources */,
 				2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */,
 				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
+
+				2FA287CD27EAD19000C5BD81 /* Selectable.swift in Sources */,
+
 				2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */,
+
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
 				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
 				2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */,
 				2F79E15E27DD0DB60070397F /* ModalVideoViewController.swift in Sources */,
 				2F036F8D27E429D800993E41 /* AlertService.swift in Sources */,
 				2F036F8227E429D800993E41 /* CreateNewEventViewController.swift in Sources */,
+
+				79E9073727EC0B9B007FB7A4 /* TrainingModel.swift in Sources */,
+				79E9073027EC0B9B007FB7A4 /* TrainingStartedVC.swift in Sources */,
+
+
 				2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */,
 				2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */,
+				79E9072F27EC0B9B007FB7A4 /* RenderGIF.swift in Sources */,
+				79E9073427EC0B9B007FB7A4 /* LeaveTrainingVC.swift in Sources */,
 				8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */,
 				2F3A540B27EC04A100FBA25F /* TrainingPausedVC.swift in Sources */,
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
@@ -1485,8 +1733,12 @@
 				2F0C341D27E4384E004A1E8C /* SettingsViewController.swift in Sources */,
 				2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */,
 				2F0C33FB27E434DA004A1E8C /* MainRegisterVC.swift in Sources */,
+
+				79E9073A27EC0B9B007FB7A4 /* MakeDropDown.swift in Sources */,
+
 				2F3A540C27EC04A100FBA25F /* TrainingModel.swift in Sources */,
 				2F3A541327EC04A100FBA25F /* LevelAndDurationVC.swift in Sources */,
+
 				2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */,
 				2F036F7927E429D800993E41 /* EventMapViewController.swift in Sources */,
 				2F0C341F27E4384E004A1E8C /* BreathingHomeViewController.swift in Sources */,
@@ -1495,20 +1747,32 @@
 				2F0C33F927E434DA004A1E8C /* UserLevelVC.swift in Sources */,
 				2F412EB927E4101E007708E8 /* CardCell.swift in Sources */,
 				2F0C342A27E4384E004A1E8C /* ModalViewController.swift in Sources */,
+
 				2F3A540E27EC04A100FBA25F /* DropDownTableViewCell.swift in Sources */,
+
 				2F0C342E27E4384E004A1E8C /* InhaleViewController.swift in Sources */,
 				2F036FB527E429E400993E41 /* ResultadoController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */,
+				79E9073B27EC0B9B007FB7A4 /* DropDownTwoTableViewCell.swift in Sources */,
 				2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */,
+				79E9072D27EC0B9B007FB7A4 /* TrainingFinishedVC.swift in Sources */,
+				79E9073927EC0B9B007FB7A4 /* DropDownTableViewCell.swift in Sources */,
 				2F036F7D27E429D800993E41 /* EventCell.swift in Sources */,
 				2F036F9127E429D800993E41 /* Event.swift in Sources */,
+
+
 				2F3A540927EC04A100FBA25F /* LeaveTrainingVC.swift in Sources */,
+
 				2F036F8827E429D800993E41 /* ConfirmContainerViewController.swift in Sources */,
 				2F036F7727E429D800993E41 /* EventFilterViewController.swift in Sources */,
 				2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
+
+				2F412EB727E4101E007708E8 /* HomeViewController.swift in Sources */,
+
 				2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */,
+
 				2F036FB427E429E400993E41 /* Result.swift in Sources */,
 				2F3A53FF27EC04A100FBA25F /* TrainingListController.swift in Sources */,
 				2F036FB327E429E400993E41 /* ImcEnums.swift in Sources */,
@@ -1520,8 +1784,12 @@
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				2F3A540227EC04A100FBA25F /* TrainingFinishedVC.swift in Sources */,
 				2F036FB827E429E400993E41 /* tappedSwitchObController.swift in Sources */,
+
+				2F412EBA27E4101E007708E8 /* HomeHeader.swift in Sources */,
+
 				2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
+				79E9073E27EC0B9B007FB7A4 /* LevelAndDurationVC.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
 				2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */,
 				2F0C342B27E4384E004A1E8C /* HoldViewController.swift in Sources */,
