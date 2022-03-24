@@ -50,10 +50,13 @@ class UserLevelVC: UIViewController {
     
     
     func configButtonsAndLabelsApperance(){
+        BeginnerBtn.configuration = nil
         BeginnerBtn.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-        BeginnerBtn.subtitleLabel?.font = UIFont(name: "Montserrat-Regular", size: 10)
+        BeginnerBtn.setTitle("Iniciante", for: .normal)
+        BeginnerBtn.setTitleColor(.white, for: .normal)
         BeginnerBtn.clipsToBounds = true // Rounded 🙂
         BeginnerBtn.layer.cornerRadius = 7.5
+        
         
         IntermediateBtn.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
         IntermediateBtn.subtitleLabel?.font = UIFont(name: "Montserrat-Regular", size: 10)

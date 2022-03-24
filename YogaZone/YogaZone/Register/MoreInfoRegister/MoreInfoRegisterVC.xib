@@ -77,8 +77,8 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sr4-oa-yec">
-                    <rect key="frame" x="120" y="401" width="50" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sr4-oa-yec" userLabel="W">
+                    <rect key="frame" x="100" y="381" width="50" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="FSS-8j-aSV"/>
@@ -86,13 +86,13 @@
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Woman"/>
+                    <buttonConfiguration key="configuration" style="plain" title="W"/>
                     <connections>
                         <action selector="btnWomanAction:" destination="-1" eventType="touchUpInside" id="PO2-0C-PBO"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-5r-py5">
-                    <rect key="frame" x="245" y="401" width="50" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-5r-py5" userLabel="M">
+                    <rect key="frame" x="225" y="381" width="50" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="CZc-4j-WWs"/>
@@ -100,7 +100,7 @@
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Man"/>
+                    <buttonConfiguration key="configuration" style="plain" title="M"/>
                     <connections>
                         <action selector="btnManAction:" destination="-1" eventType="touchUpInside" id="3ba-65-4h7"/>
                     </connections>
@@ -124,17 +124,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qij-8D-bM8">
-                    <rect key="frame" x="70" y="511" width="235" height="40"/>
+                    <rect key="frame" x="70" y="491" width="235" height="40"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Cmi-5x-h7g"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Finalizar Cadastro" cornerStyle="dynamic">
-                        <backgroundConfiguration key="background" cornerRadius="8">
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        </backgroundConfiguration>
-                    </buttonConfiguration>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Finalizar Cadastro"/>
                     <connections>
                         <action selector="tappedRegisterDone:" destination="-1" eventType="touchUpInside" id="Oh7-3M-qVZ"/>
                     </connections>
@@ -143,7 +140,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CUf-5r-py5" secondAttribute="trailing" constant="80" id="0mx-70-F5B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CUf-5r-py5" secondAttribute="trailing" constant="100" id="0mx-70-F5B"/>
                 <constraint firstItem="JmF-az-iV2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="1XN-R6-QvX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qij-8D-bM8" secondAttribute="trailing" constant="70" id="1dw-vc-cER"/>
                 <constraint firstItem="zhQ-qQ-5yM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="BCH-Zf-S4K"/>
@@ -157,16 +154,16 @@
                 <constraint firstItem="AJM-AI-IJF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="UB8-wq-Po2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q76-aL-3Pm" secondAttribute="trailing" constant="30" id="VSF-4Y-t3Z"/>
                 <constraint firstItem="AJM-AI-IJF" firstAttribute="top" secondItem="NtT-gF-a49" secondAttribute="bottom" constant="30" id="WWT-dB-YyH"/>
-                <constraint firstItem="CUf-5r-py5" firstAttribute="top" secondItem="FF1-dh-1J5" secondAttribute="bottom" constant="35" id="aNJ-Bb-IuD"/>
+                <constraint firstItem="CUf-5r-py5" firstAttribute="top" secondItem="FF1-dh-1J5" secondAttribute="bottom" constant="15" id="aNJ-Bb-IuD"/>
                 <constraint firstItem="zhQ-qQ-5yM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="afd-lI-gKe"/>
                 <constraint firstItem="NtT-gF-a49" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="aqp-d7-1mW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AJM-AI-IJF" secondAttribute="trailing" constant="30" id="e4F-K4-GHs"/>
                 <constraint firstItem="gSD-AV-6Cv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="kEi-UF-awG"/>
-                <constraint firstItem="sr4-oa-yec" firstAttribute="top" secondItem="gSD-AV-6Cv" secondAttribute="bottom" constant="35" id="kIf-nr-SOd"/>
+                <constraint firstItem="sr4-oa-yec" firstAttribute="top" secondItem="gSD-AV-6Cv" secondAttribute="bottom" constant="15" id="kIf-nr-SOd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FF1-dh-1J5" secondAttribute="trailing" constant="50" id="kWJ-wC-dSg"/>
                 <constraint firstItem="q76-aL-3Pm" firstAttribute="top" secondItem="AJM-AI-IJF" secondAttribute="bottom" constant="20" id="mne-6X-Acw"/>
                 <constraint firstItem="gSD-AV-6Cv" firstAttribute="top" secondItem="hbJ-SQ-C8X" secondAttribute="bottom" constant="35" id="moF-vh-jxY"/>
-                <constraint firstItem="sr4-oa-yec" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="myN-H0-bVs"/>
+                <constraint firstItem="sr4-oa-yec" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="myN-H0-bVs"/>
                 <constraint firstItem="NtT-gF-a49" firstAttribute="top" secondItem="JmF-az-iV2" secondAttribute="bottom" constant="20" id="nSR-Jh-Fo2"/>
                 <constraint firstItem="APa-Yv-PfL" firstAttribute="top" secondItem="q76-aL-3Pm" secondAttribute="top" id="nY4-bM-iZn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NtT-gF-a49" secondAttribute="trailing" constant="30" id="oyd-Bk-vm3"/>

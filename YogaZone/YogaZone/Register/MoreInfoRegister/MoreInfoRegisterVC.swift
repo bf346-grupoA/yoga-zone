@@ -90,6 +90,9 @@ class MoreInfoRegisterVC: UIViewController {
     }
     
     func configButtonsAndLabelsApperance(){
+        registerDoneBtn.configuration = nil
+        registerDoneBtn.setTitle("Finalizar Cadastro", for: .normal)
+        registerDoneBtn.setTitleColor(.white, for: .normal)
         registerDoneBtn.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
         registerDoneBtn.clipsToBounds = true // Rounded 🙂
         registerDoneBtn.layer.cornerRadius = 7.5
@@ -97,8 +100,8 @@ class MoreInfoRegisterVC: UIViewController {
         ageLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
         locateLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
         genderLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
-        womanLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
-        manLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+        womanLabel.font = UIFont(name: "Montserrat-SemiBold", size: 17.0)
+        manLabel.font = UIFont(name: "Montserrat-SemiBold", size: 17.0)
         
     }
     

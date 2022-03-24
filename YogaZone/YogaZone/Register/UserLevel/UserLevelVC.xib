@@ -40,13 +40,13 @@
                         <constraint firstAttribute="height" constant="25" id="So3-jL-DUb"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-At-r4M">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-At-r4M">
                     <rect key="frame" x="40" y="145" width="295" height="50"/>
                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="il7-rp-3jd"/>
                     </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Iniciante"/>
@@ -60,7 +60,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="1ib-Sv-iBA"/>
                     </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Pouco Experiente"/>
@@ -74,7 +74,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="JAB-ik-GHN"/>
                     </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Intermediário"/>
@@ -88,7 +88,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="H7H-pv-9f0"/>
                     </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Guru"/>
