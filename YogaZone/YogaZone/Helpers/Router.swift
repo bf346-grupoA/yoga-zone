@@ -33,7 +33,7 @@ class Router {
         6: "eventos"
     ]
     
-    static let sections: [Int: Dictionary] = [
+    static let sections: [Int: Dictionary<Int,Int>] = [
         0: firstSectionRouter,
         1: secondSectionRouter,
         2: thirdSectionRouter

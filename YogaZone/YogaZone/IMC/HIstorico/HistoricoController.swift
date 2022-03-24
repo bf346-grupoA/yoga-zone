@@ -12,12 +12,16 @@ class HistoricoController: UIViewController {
 
     @IBOutlet weak var historicoTableView: UITableView!
     @IBOutlet weak var pesoAtualLabel: UILabel!
-    
     @IBOutlet weak var faltamLabel: UILabel!
     @IBOutlet weak var obejtivoLabel: UILabel!
+    @IBOutlet weak var buttonShare: UIButton!
+    
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.buttonShare.layer.cornerRadius = 8
         setupTableView()
         
     }
