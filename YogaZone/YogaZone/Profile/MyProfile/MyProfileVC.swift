@@ -26,6 +26,7 @@ class MyProfileVC: UIViewController {
     
     @IBOutlet weak var saveChangesButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
@@ -42,7 +43,6 @@ class MyProfileVC: UIViewController {
         perfilImage.image = UIImage(named: "person")
         tappedCameraIconImage.image = UIImage(named: "cameraIcon")
     }
-    
     
     func configTableView(){
         self.tableView.delegate = self
@@ -77,9 +77,12 @@ class MyProfileVC: UIViewController {
     
     func configSaveChangeButton(){
         saveChangesButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
+        saveChangesButton.clipsToBounds = true // Rounded 🙂
+        saveChangesButton.layer.cornerRadius = 7.5
     }
     
     @IBAction func tappedSaveChangesButton(_ sender: UIButton) {
+        CustomAlertVC.instance.showAlert(titleType: .success, message: "Suas alterações foram salvas com sucesso !", alertType: .success)
     }
     
 }

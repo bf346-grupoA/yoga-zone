@@ -8,11 +8,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
+<<<<<<< HEAD
         let navController = UINavigationController(rootViewController: ImcController())
+=======
+        let navController = UINavigationController(rootViewController: MyProfileVC())
+>>>>>>> 1dd9e2655970a996a1f40b97b51087db53d48382
         window = UIWindow(windowScene: windowScene)
-        window?.backgroundColor = .white
         window?.frame = UIScreen.main.bounds
-        window?.backgroundColor = .white
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
