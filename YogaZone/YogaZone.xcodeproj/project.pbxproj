@@ -1021,18 +1021,18 @@
 			children = (
 				2F412EBF27E41821007708E8 /* MeditacaoHomeViewController.xib */,
 				2F412EC027E41821007708E8 /* MeditacaoHomeViewController.swift */,
-				2F412EC127E41821007708E8 /* Components */,
+				2F412EC127E41821007708E8 /* Cells */,
 			);
 			path = MeditacaoHome;
 			sourceTree = "<group>";
 		};
-		2F412EC127E41821007708E8 /* Components */ = {
+		2F412EC127E41821007708E8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				2F412EC227E41821007708E8 /* AudioCell.xib */,
 				2F412EC327E41821007708E8 /* AudioCell.swift */,
 			);
-			path = Components;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		2F412EC427E41821007708E8 /* Intro */ = {
