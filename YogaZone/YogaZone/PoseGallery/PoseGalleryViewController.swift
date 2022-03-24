@@ -32,6 +32,7 @@ extension PoseGalleryViewController {
         self.posesTableView.dataSource = self
         self.posesTableView.register(PoseCell.getNib(), forCellReuseIdentifier: PoseCell.identifier)
         self.posesTableView.separatorStyle = .none
+        self.posesTableView.showsVerticalScrollIndicator = false
     }
 }
 
@@ -80,6 +81,10 @@ extension PoseGalleryViewController: UITableViewDelegate {
         vc.selectedPose = selectedPose
         
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 158
     }
 }
 
