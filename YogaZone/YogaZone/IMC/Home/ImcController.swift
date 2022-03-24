@@ -54,8 +54,6 @@ class ImcController: UIViewController{
         vc4.modalTransitionStyle = .crossDissolve
         vc4.modalPresentationStyle = .overFullScreen
         present(vc4, animated: false, completion: nil)
-        
-        
     }
     
     
