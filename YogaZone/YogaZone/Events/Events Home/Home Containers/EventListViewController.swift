@@ -55,7 +55,6 @@ extension EventListViewController:UITableViewDataSource {
 extension EventListViewController:UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
         
         let storyboard = UIStoryboard(name: "EventDetail", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "EventDetailViewController") as?  EventDetailViewController
