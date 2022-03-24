@@ -21,10 +21,14 @@ class MainRegisterVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var nextBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configImages()
         configTableView()
+        configButtonsAndLabelsApperance()
     }
     
     func configTableView(){
@@ -39,6 +43,13 @@ class MainRegisterVC: UIViewController {
             perfilImage.image = UIImage(named: "person")
             tappedCameraIconImage.image = UIImage(named: "cameraIcon")
         }
+    
+    func configButtonsAndLabelsApperance(){
+        nextBtn.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
+        nextBtn.clipsToBounds = true // Rounded 🙂
+        nextBtn.layer.cornerRadius = 7.5
+        textAddPictureLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+    }
     
     @IBAction func nextPageButton(_ sender: UIButton) {
         self.navigationController?.pushViewController(UserLevelVC(), animated: true)

@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true);
         self.view.backgroundColor = .white
         setupTableView()
     }
@@ -74,7 +75,7 @@ extension HomeViewController: Navigable {
             case 1: self.navigationController?.pushViewController(PoseGalleryViewController(), animated: true)
             case 2: self.navigationController?.pushViewController(ImcController(), animated: true)
             case 3: self.navigationController?.pushViewController(BreathingHomeViewController(), animated: true)
-            case 4: self.navigationController?.pushViewController(MeditacaoHomeViewController(), animated: true)
+            case 4: self.navigationController?.pushViewController(IntroViewController(), animated: true)
             case 5: self.navigationController?.pushViewController(LevelAndDurationVC(), animated: true)
             case 6:
                 let storyboard = UIStoryboard(name: "HomeEvents", bundle: nil)

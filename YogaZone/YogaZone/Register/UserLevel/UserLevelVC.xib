@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserLevelVC" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="BeginnerBtn" destination="jTD-At-r4M" id="pRM-Y5-3Bh"/>
+                <outlet property="GuruBtn" destination="igj-2l-TDc" id="vY1-qs-nnd"/>
+                <outlet property="IntermediateBtn" destination="zqI-Kw-bjI" id="78B-9r-JlH"/>
+                <outlet property="LowExperienceBtn" destination="82h-yE-GrG" id="Cgk-zF-qjh"/>
                 <outlet property="tappedArrowVoltarImage" destination="n5T-kO-wv1" id="LpT-Ul-1dR"/>
                 <outlet property="titleLabel" destination="ngt-ND-Iby" id="exB-pO-oUf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -20,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conte um pouco mais sobre voce, selecione qual seu nivel atual ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngt-ND-Iby">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conte um pouco mais sobre você, selecione qual seu nível atual ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngt-ND-Iby">
                     <rect key="frame" x="30" y="60" width="315" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="M6I-F7-1Cn"/>
@@ -36,70 +40,58 @@
                         <constraint firstAttribute="height" constant="25" id="So3-jL-DUb"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-At-r4M">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-At-r4M">
                     <rect key="frame" x="40" y="145" width="295" height="50"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="il7-rp-3jd"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Iniciante" subtitle="Sou totalmente novo no Yoga" cornerStyle="dynamic" titleAlignment="center">
-                        <backgroundConfiguration key="background" cornerRadius="14">
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        </backgroundConfiguration>
-                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
-                    </buttonConfiguration>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Iniciante"/>
                     <connections>
                         <action selector="tappedBeginnerButton:" destination="-1" eventType="touchUpInside" id="u93-cj-9SV"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82h-yE-GrG">
                     <rect key="frame" x="40" y="210" width="295" height="50"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="1ib-Sv-iBA"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Pouco Experiente" subtitle="Pratico Yoga a pouco tempo" cornerStyle="dynamic" titleAlignment="center">
-                        <backgroundConfiguration key="background" cornerRadius="14">
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        </backgroundConfiguration>
-                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
-                    </buttonConfiguration>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Pouco Experiente"/>
                     <connections>
                         <action selector="tappedLowExperienceButton:" destination="-1" eventType="touchUpInside" id="N64-uK-1Pr"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqI-Kw-bjI">
                     <rect key="frame" x="40" y="275" width="295" height="50"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="JAB-ik-GHN"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Intermediario" subtitle="Pratico Yoga regularmente" cornerStyle="dynamic" titleAlignment="center">
-                        <backgroundConfiguration key="background" cornerRadius="14">
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        </backgroundConfiguration>
-                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
-                    </buttonConfiguration>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Intermediário"/>
                     <connections>
                         <action selector="tappedMediumExperienceButton:" destination="-1" eventType="touchUpInside" id="Ehv-ZQ-d9m"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igj-2l-TDc">
                     <rect key="frame" x="40" y="340" width="295" height="50"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="H7H-pv-9f0"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Guru" subtitle="Sou mestre no Yoga !" cornerStyle="dynamic" titleAlignment="center">
-                        <backgroundConfiguration key="background" cornerRadius="14">
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        </backgroundConfiguration>
-                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
-                    </buttonConfiguration>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Guru"/>
                     <connections>
                         <action selector="tappedGuruButton:" destination="-1" eventType="touchUpInside" id="d1o-P8-Y0b"/>
                     </connections>

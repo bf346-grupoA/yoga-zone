@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "radio_off.png",
+      "filename" : "radioButtonUnselected.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

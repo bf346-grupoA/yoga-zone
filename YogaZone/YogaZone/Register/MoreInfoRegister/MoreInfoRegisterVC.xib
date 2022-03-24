@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,8 +14,13 @@
                 <outlet property="ageTextField" destination="NtT-gF-a49" id="dwu-rg-KcD"/>
                 <outlet property="btnMan" destination="CUf-5r-py5" id="Mgf-TG-QFl"/>
                 <outlet property="btnWoman" destination="sr4-oa-yec" id="xzR-L8-bVe"/>
+                <outlet property="genderLabel" destination="hbJ-SQ-C8X" id="BCF-OZ-1os"/>
+                <outlet property="locateLabel" destination="AJM-AI-IJF" id="wg3-BX-RJ6"/>
+                <outlet property="manLabel" destination="FF1-dh-1J5" id="fQt-65-cui"/>
+                <outlet property="registerDoneBtn" destination="qij-8D-bM8" id="ixE-0F-QW8"/>
                 <outlet property="tappedArrowVoltarImage" destination="zhQ-qQ-5yM" id="uiC-8s-bKN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="womanLabel" destination="gSD-AV-6Cv" id="vTL-lW-5uX"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -30,7 +35,7 @@
                         <constraint firstAttribute="width" constant="25" id="aAh-tc-cyg"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual e sua data de nascimento ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmF-az-iV2">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual sua data de nascimento ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmF-az-iV2">
                     <rect key="frame" x="30" y="80" width="315" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="glH-k3-QOZ"/>
@@ -39,13 +44,13 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe sua data de nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NtT-gF-a49">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe sua data de nascimento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NtT-gF-a49">
                     <rect key="frame" x="30" y="125" width="315" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onde voce mora ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJM-AI-IJF">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onde você mora ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJM-AI-IJF">
                     <rect key="frame" x="30" y="189" width="315" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -57,7 +62,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe sua Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APa-Yv-PfL">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe sua Cidade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APa-Yv-PfL">
                     <rect key="frame" x="30" y="230" width="250" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <constraints>
@@ -66,14 +71,14 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q76-aL-3Pm">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q76-aL-3Pm">
                     <rect key="frame" x="298.5" y="230" width="46.5" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sr4-oa-yec">
-                    <rect key="frame" x="120" y="401" width="50" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sr4-oa-yec" userLabel="W">
+                    <rect key="frame" x="100" y="381" width="50" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="FSS-8j-aSV"/>
@@ -81,13 +86,13 @@
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Woman"/>
+                    <buttonConfiguration key="configuration" style="plain" title="W"/>
                     <connections>
                         <action selector="btnWomanAction:" destination="-1" eventType="touchUpInside" id="PO2-0C-PBO"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-5r-py5">
-                    <rect key="frame" x="245" y="401" width="50" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-5r-py5" userLabel="M">
+                    <rect key="frame" x="225" y="381" width="50" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="CZc-4j-WWs"/>
@@ -95,7 +100,7 @@
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Man"/>
+                    <buttonConfiguration key="configuration" style="plain" title="M"/>
                     <connections>
                         <action selector="btnManAction:" destination="-1" eventType="touchUpInside" id="3ba-65-4h7"/>
                     </connections>
@@ -118,18 +123,15 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qij-8D-bM8">
-                    <rect key="frame" x="70" y="511" width="235" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qij-8D-bM8">
+                    <rect key="frame" x="70" y="491" width="235" height="40"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Cmi-5x-h7g"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Finalizar Cadastro" cornerStyle="dynamic">
-                        <backgroundConfiguration key="background" cornerRadius="22">
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        </backgroundConfiguration>
-                    </buttonConfiguration>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Finalizar Cadastro"/>
                     <connections>
                         <action selector="tappedRegisterDone:" destination="-1" eventType="touchUpInside" id="Oh7-3M-qVZ"/>
                     </connections>
@@ -138,7 +140,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CUf-5r-py5" secondAttribute="trailing" constant="80" id="0mx-70-F5B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CUf-5r-py5" secondAttribute="trailing" constant="100" id="0mx-70-F5B"/>
                 <constraint firstItem="JmF-az-iV2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="1XN-R6-QvX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qij-8D-bM8" secondAttribute="trailing" constant="70" id="1dw-vc-cER"/>
                 <constraint firstItem="zhQ-qQ-5yM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="BCH-Zf-S4K"/>
@@ -152,16 +154,16 @@
                 <constraint firstItem="AJM-AI-IJF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="UB8-wq-Po2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q76-aL-3Pm" secondAttribute="trailing" constant="30" id="VSF-4Y-t3Z"/>
                 <constraint firstItem="AJM-AI-IJF" firstAttribute="top" secondItem="NtT-gF-a49" secondAttribute="bottom" constant="30" id="WWT-dB-YyH"/>
-                <constraint firstItem="CUf-5r-py5" firstAttribute="top" secondItem="FF1-dh-1J5" secondAttribute="bottom" constant="35" id="aNJ-Bb-IuD"/>
+                <constraint firstItem="CUf-5r-py5" firstAttribute="top" secondItem="FF1-dh-1J5" secondAttribute="bottom" constant="15" id="aNJ-Bb-IuD"/>
                 <constraint firstItem="zhQ-qQ-5yM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="afd-lI-gKe"/>
                 <constraint firstItem="NtT-gF-a49" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="aqp-d7-1mW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AJM-AI-IJF" secondAttribute="trailing" constant="30" id="e4F-K4-GHs"/>
                 <constraint firstItem="gSD-AV-6Cv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="kEi-UF-awG"/>
-                <constraint firstItem="sr4-oa-yec" firstAttribute="top" secondItem="gSD-AV-6Cv" secondAttribute="bottom" constant="35" id="kIf-nr-SOd"/>
+                <constraint firstItem="sr4-oa-yec" firstAttribute="top" secondItem="gSD-AV-6Cv" secondAttribute="bottom" constant="15" id="kIf-nr-SOd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FF1-dh-1J5" secondAttribute="trailing" constant="50" id="kWJ-wC-dSg"/>
                 <constraint firstItem="q76-aL-3Pm" firstAttribute="top" secondItem="AJM-AI-IJF" secondAttribute="bottom" constant="20" id="mne-6X-Acw"/>
                 <constraint firstItem="gSD-AV-6Cv" firstAttribute="top" secondItem="hbJ-SQ-C8X" secondAttribute="bottom" constant="35" id="moF-vh-jxY"/>
-                <constraint firstItem="sr4-oa-yec" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="myN-H0-bVs"/>
+                <constraint firstItem="sr4-oa-yec" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="myN-H0-bVs"/>
                 <constraint firstItem="NtT-gF-a49" firstAttribute="top" secondItem="JmF-az-iV2" secondAttribute="bottom" constant="20" id="nSR-Jh-Fo2"/>
                 <constraint firstItem="APa-Yv-PfL" firstAttribute="top" secondItem="q76-aL-3Pm" secondAttribute="top" id="nY4-bM-iZn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NtT-gF-a49" secondAttribute="trailing" constant="30" id="oyd-Bk-vm3"/>

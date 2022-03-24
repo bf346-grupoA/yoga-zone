@@ -45,7 +45,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <backgroundConfiguration key="background" cornerRadius="50">
                                         <color key="backgroundColor" red="1" green="0.53725490200000003" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="strokeColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" red="0.2121409679" green="0.0" blue="0.2046566614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
@@ -62,7 +62,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <backgroundConfiguration key="background" cornerRadius="50">
                                         <color key="backgroundColor" red="1" green="0.53725490200000003" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="strokeColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" red="0.2121409679" green="0.0" blue="0.2046566614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>

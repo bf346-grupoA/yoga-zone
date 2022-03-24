@@ -414,13 +414,13 @@ Previsão de término as 21:30.</string>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento Finalizado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xx-oW-rKq" userLabel="Finalized">
                                 <rect key="frame" x="77.666666666666686" y="12.666666666666664" width="160" height="25"/>
-                                <color key="backgroundColor" red="0.7843137255" green="0.76078431369999999" blue="0.76078431369999999" alpha="0.50475993377483441" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="78U-xb-WqT"/>
                                     <constraint firstAttribute="width" constant="160" id="ZAB-Ig-6Tc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
-                                <color key="textColor" red="0.83166521790000003" green="0.13453733919999999" blue="0.13380703329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.83137254901960778" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

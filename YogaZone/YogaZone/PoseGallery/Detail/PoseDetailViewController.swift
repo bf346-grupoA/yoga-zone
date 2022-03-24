@@ -19,11 +19,9 @@ class PoseDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupData()
         setupUI()
         setupTableView()
     }
-
 }
 
 
@@ -47,22 +45,10 @@ extension PoseDetailViewController {
         self.categoriesTableView.delegate = self
         self.categoriesTableView.dataSource = self
         self.categoriesTableView.separatorStyle = .none
-        
-//        self.categoriesTableView.layoutMargins = .init(top: 0.0, left: 23.5, bottom: 0.0, right: 23.5)
-        // if you want the separator lines to follow the content width
-//        self.categoriesTableView.separatorInset = self.categoriesTableView.layoutMargins
+        self.categoriesTableView.showsVerticalScrollIndicator = false
         self.categoriesTableView.register(PoseCategoryCell.getNib(), forCellReuseIdentifier: PoseCategoryCell.identifier)
     }
 }
-
-// MARK: Data
-extension PoseDetailViewController {
-    func setupData() {
-
-    }
-}
-
-
 
 // MARK: TableViewDelegate & TableViewDataSource
 extension PoseDetailViewController: UITableViewDataSource, UITableViewDelegate {
@@ -72,10 +58,11 @@ extension PoseDetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.categoriesTableView.dequeueReusableCell(withIdentifier: PoseCategoryCell.identifier, for: indexPath) as? PoseCategoryCell
-        cell?.selectionStyle = .none
         
-        let category = self.selectedPose?.categories[indexPath.section]
-        cell?.setupCell(category ?? PoseCategory(id: 0, name: "None", description: "None"))
+        guard let category = self.selectedPose?.categories[indexPath.section] else { return UITableViewCell() }
+        
+        cell?.selectionStyle = .none
+        cell?.setupCell(category: category)
         
         return cell ?? UITableViewCell()
     }
@@ -85,7 +72,7 @@ extension PoseDetailViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 132
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
