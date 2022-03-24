@@ -15,21 +15,23 @@ class MoreOptionsVC: UIViewController {
     
     @IBOutlet weak var CurrentPasswordTextField: UITextField!
     
-    @IBOutlet weak var forgotPasswordButton: UIButton!
-    
     @IBOutlet weak var newPasswordTextField: UITextField!
     
     @IBOutlet weak var confirmNewPasswordTextField: UITextField!
     
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBOutlet weak var excludeAccountButton: UIButton!
+    
+    @IBOutlet weak var leaveAppButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.saveButton.isEnabled = true
         
         configImage()
         configBackButton()
+        configButtonsApperance()
     }
     
     func configImage(){
@@ -38,6 +40,22 @@ class MoreOptionsVC: UIViewController {
         // Hide Back Button from UINavigationItem
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
+    
+    func configButtonsApperance(){
+        excludeAccountButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
+        excludeAccountButton.clipsToBounds = true // Rounded 🙂
+        excludeAccountButton.layer.cornerRadius = 7.5
+        
+        saveButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
+        saveButton.clipsToBounds = true // Rounded 🙂
+        saveButton.layer.cornerRadius = 7.5
+        
+        leaveAppButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
+        leaveAppButton.clipsToBounds = true // Rounded 🙂
+        leaveAppButton.layer.cornerRadius = 7.5
+        
+    }
+
     
     private func configBackButton(){
         let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
@@ -67,7 +85,7 @@ class MoreOptionsVC: UIViewController {
     }
     
     @IBAction func leaveAppButton(_ sender: UIButton) {
-        //MOSTRAR MODAL DE CONFIRMAR SAIR DO APP
+        navigationController?.popToRootViewController(animated: false)
     }
 }
 

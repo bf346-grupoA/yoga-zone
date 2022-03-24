@@ -75,7 +75,7 @@ extension HomeViewController: Navigable {
             case 2: self.navigationController?.pushViewController(ImcController(), animated: true)
             case 3: self.navigationController?.pushViewController(BreathingHomeViewController(), animated: true)
             case 4: self.navigationController?.pushViewController(MeditacaoHomeViewController(), animated: true)
-            case 5: self.navigationController?.pushViewController(TreinoUmController(), animated: true)
+            case 5: self.navigationController?.pushViewController(LevelAndDurationVC(), animated: true)
             case 6:
                 let storyboard = UIStoryboard(name: "HomeEvents", bundle: nil)
                 self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: "HomeEventsViewController"), animated: true)
