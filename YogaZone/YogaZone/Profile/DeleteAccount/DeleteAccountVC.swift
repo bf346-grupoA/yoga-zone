@@ -16,8 +16,12 @@ class DeleteAccountVC: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
     @IBOutlet weak var confirmDeleteAccountButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configButtonsApperance()
         
         self.confirmPasswordTextField.delegate = self
         self.confirmPasswordTextField.isHidden = true
@@ -28,6 +32,11 @@ class DeleteAccountVC: UIViewController {
         self.displayTextFieldSwitch.setOn(false, animated: false)
     }
     
+    func configButtonsApperance(){
+        confirmDeleteAccountButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
+        confirmDeleteAccountButton.clipsToBounds = true // Rounded 🙂
+        confirmDeleteAccountButton.layer.cornerRadius = 7.5
+    }
     
     @IBAction func actionDisplayTextFieldSwitch(_ sender: UISwitch) {
         if displayTextFieldSwitch.isOn {
@@ -40,7 +49,7 @@ class DeleteAccountVC: UIViewController {
     }
     
     @IBAction func tappedConfirmDeleteAccountButton(_ sender: UIButton) {
-        // CONTA DELETADA
+        CustomAlertVC.instance.showAlert(titleType: .success, message: "Sua conta foi excluida com sucesso !", alertType: .success)
     }
 }
 

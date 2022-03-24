@@ -88,12 +88,36 @@
 		2F0C343727E43954004A1E8C /* hold.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343227E43954004A1E8C /* hold.mp4 */; };
 		2F0C343827E43954004A1E8C /* expire.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343327E43954004A1E8C /* expire.mp4 */; };
 		2F0C343927E43954004A1E8C /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343427E43954004A1E8C /* intro.mp4 */; };
-		2F0C343C27E53336004A1E8C /* Selectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C343B27E53336004A1E8C /* Selectable.swift */; };
+		2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53C927EB641C00FBA25F /* HomeViewController.swift */; };
+		2F3A53CC27EB641C00FBA25F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */; };
+		2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53CF27EB67B400FBA25F /* HeaderCell.swift */; };
+		2F3A53D227EB67B500FBA25F /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53D027EB67B500FBA25F /* HeaderCell.xib */; };
+		2F3A53FE27EC04A100FBA25F /* TrainingListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53DC27EC04A100FBA25F /* TrainingListController.xib */; };
+		2F3A53FF27EC04A100FBA25F /* TrainingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53DD27EC04A100FBA25F /* TrainingListController.swift */; };
+		2F3A540027EC04A100FBA25F /* TrainingCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53DF27EC04A100FBA25F /* TrainingCustomCell.swift */; };
+		2F3A540127EC04A100FBA25F /* TrainingCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53E027EC04A100FBA25F /* TrainingCustomCell.xib */; };
+		2F3A540227EC04A100FBA25F /* TrainingFinishedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53E227EC04A100FBA25F /* TrainingFinishedVC.swift */; };
+		2F3A540327EC04A100FBA25F /* TrainingFinishedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53E327EC04A100FBA25F /* TrainingFinishedVC.xib */; };
+		2F3A540427EC04A100FBA25F /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53E527EC04A100FBA25F /* RenderGIF.swift */; };
+		2F3A540527EC04A100FBA25F /* TrainingStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53E627EC04A100FBA25F /* TrainingStartedVC.swift */; };
+		2F3A540627EC04A100FBA25F /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53E827EC04A100FBA25F /* 01_Natarajasana.gif */; };
+		2F3A540727EC04A100FBA25F /* TrainingStartedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53E927EC04A100FBA25F /* TrainingStartedVC.xib */; };
+		2F3A540827EC04A100FBA25F /* LeaveTrainingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53EB27EC04A100FBA25F /* LeaveTrainingVC.xib */; };
+		2F3A540927EC04A100FBA25F /* LeaveTrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53EC27EC04A100FBA25F /* LeaveTrainingVC.swift */; };
+		2F3A540A27EC04A100FBA25F /* TrainingPausedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53EE27EC04A100FBA25F /* TrainingPausedVC.xib */; };
+		2F3A540B27EC04A100FBA25F /* TrainingPausedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53EF27EC04A100FBA25F /* TrainingPausedVC.swift */; };
+		2F3A540C27EC04A100FBA25F /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53F327EC04A100FBA25F /* TrainingModel.swift */; };
+		2F3A540D27EC04A100FBA25F /* DropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53F527EC04A100FBA25F /* DropDownTableViewCell.xib */; };
+		2F3A540E27EC04A100FBA25F /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53F627EC04A100FBA25F /* DropDownTableViewCell.swift */; };
+		2F3A540F27EC04A100FBA25F /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53F827EC04A100FBA25F /* MakeDropDown.swift */; };
+		2F3A541027EC04A100FBA25F /* DropDownTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53FA27EC04A100FBA25F /* DropDownTwoTableViewCell.swift */; };
+		2F3A541127EC04A100FBA25F /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */; };
+		2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */; };
+		2F3A541327EC04A100FBA25F /* LevelAndDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */; };
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
-		2F412EB727E4101E007708E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* HomeViewController.swift */; };
+		2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* CardMenuCell.swift */; };
 		2F412EB827E4101E007708E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB127E4101E007708E8 /* Router.swift */; };
 		2F412EB927E4101E007708E8 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB327E4101E007708E8 /* CardCell.swift */; };
-		2F412EBA27E4101E007708E8 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB527E4101E007708E8 /* HomeHeader.swift */; };
 		2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EBD27E41821007708E8 /* MeditationData.swift */; };
 		2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F412EBF27E41821007708E8 /* MeditacaoHomeViewController.xib */; };
 		2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EC027E41821007708E8 /* MeditacaoHomeViewController.swift */; };
@@ -136,6 +160,7 @@
 		2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */; };
 		2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */; };
 		2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */; };
+		2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287CC27EAD19000C5BD81 /* Navigable.swift */; };
 		2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0560227E022DA000E9CA6 /* Poses.swift */; };
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
@@ -143,28 +168,6 @@
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
-		8334036D27E95659004FCA47 /* TreinoFinalizadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334034B27E95659004FCA47 /* TreinoFinalizadoVC.xib */; };
-		8334036E27E95659004FCA47 /* TreinoFinalizadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334034C27E95659004FCA47 /* TreinoFinalizadoVC.swift */; };
-		8334036F27E95659004FCA47 /* TreinoCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334034F27E95659004FCA47 /* TreinoCustomCell.xib */; };
-		8334037027E95659004FCA47 /* TreinoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334035027E95659004FCA47 /* TreinoCustomCell.swift */; };
-		8334037127E95659004FCA47 /* TreinoListagemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334035127E95659004FCA47 /* TreinoListagemController.swift */; };
-		8334037227E95659004FCA47 /* TreinoListagemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334035227E95659004FCA47 /* TreinoListagemController.xib */; };
-		8334037327E95659004FCA47 /* TreinoIniciadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334035427E95659004FCA47 /* TreinoIniciadoVC.xib */; };
-		8334037427E95659004FCA47 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8334035627E95659004FCA47 /* 01_Natarajasana.gif */; };
-		8334037527E95659004FCA47 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334035727E95659004FCA47 /* iOSDevCenters+GIF.swift */; };
-		8334037627E95659004FCA47 /* TreinoIniciadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334035827E95659004FCA47 /* TreinoIniciadoVC.swift */; };
-		8334037727E95659004FCA47 /* SairDoTreinoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334035A27E95659004FCA47 /* SairDoTreinoVC.xib */; };
-		8334037827E95659004FCA47 /* SairDoTreinoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334035B27E95659004FCA47 /* SairDoTreinoVC.swift */; };
-		8334037927E95659004FCA47 /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334035F27E95659004FCA47 /* TrainingModel.swift */; };
-		8334037A27E95659004FCA47 /* DropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334036127E95659004FCA47 /* DropDownTableViewCell.xib */; };
-		8334037B27E95659004FCA47 /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334036227E95659004FCA47 /* DropDownTableViewCell.swift */; };
-		8334037C27E95659004FCA47 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334036427E95659004FCA47 /* MakeDropDown.swift */; };
-		8334037D27E95659004FCA47 /* DropDownTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334036627E95659004FCA47 /* DropDownTwoTableViewCell.swift */; };
-		8334037E27E95659004FCA47 /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334036727E95659004FCA47 /* DropDownTwoTableViewCell.xib */; };
-		8334037F27E95659004FCA47 /* TreinoUmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334036827E95659004FCA47 /* TreinoUmController.swift */; };
-		8334038027E95659004FCA47 /* TreinoUmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334036927E95659004FCA47 /* TreinoUmController.xib */; };
-		8334038127E95659004FCA47 /* TreinoPausadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334036B27E95659004FCA47 /* TreinoPausadoVC.swift */; };
-		8334038227E95659004FCA47 /* TreinoPausadoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8334036C27E95659004FCA47 /* TreinoPausadoVC.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
 		8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */; };
 		8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */; };
@@ -261,12 +264,36 @@
 		2F0C343227E43954004A1E8C /* hold.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hold.mp4; sourceTree = "<group>"; };
 		2F0C343327E43954004A1E8C /* expire.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = expire.mp4; sourceTree = "<group>"; };
 		2F0C343427E43954004A1E8C /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
-		2F0C343B27E53336004A1E8C /* Selectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectable.swift; sourceTree = "<group>"; };
+		2F3A53C927EB641C00FBA25F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2F3A53CF27EB67B400FBA25F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		2F3A53D027EB67B500FBA25F /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		2F3A53DC27EC04A100FBA25F /* TrainingListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingListController.xib; sourceTree = "<group>"; };
+		2F3A53DD27EC04A100FBA25F /* TrainingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingListController.swift; sourceTree = "<group>"; };
+		2F3A53DF27EC04A100FBA25F /* TrainingCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingCustomCell.swift; sourceTree = "<group>"; };
+		2F3A53E027EC04A100FBA25F /* TrainingCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingCustomCell.xib; sourceTree = "<group>"; };
+		2F3A53E227EC04A100FBA25F /* TrainingFinishedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingFinishedVC.swift; sourceTree = "<group>"; };
+		2F3A53E327EC04A100FBA25F /* TrainingFinishedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingFinishedVC.xib; sourceTree = "<group>"; };
+		2F3A53E527EC04A100FBA25F /* RenderGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderGIF.swift; sourceTree = "<group>"; };
+		2F3A53E627EC04A100FBA25F /* TrainingStartedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingStartedVC.swift; sourceTree = "<group>"; };
+		2F3A53E827EC04A100FBA25F /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
+		2F3A53E927EC04A100FBA25F /* TrainingStartedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingStartedVC.xib; sourceTree = "<group>"; };
+		2F3A53EB27EC04A100FBA25F /* LeaveTrainingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaveTrainingVC.xib; sourceTree = "<group>"; };
+		2F3A53EC27EC04A100FBA25F /* LeaveTrainingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveTrainingVC.swift; sourceTree = "<group>"; };
+		2F3A53EE27EC04A100FBA25F /* TrainingPausedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingPausedVC.xib; sourceTree = "<group>"; };
+		2F3A53EF27EC04A100FBA25F /* TrainingPausedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPausedVC.swift; sourceTree = "<group>"; };
+		2F3A53F327EC04A100FBA25F /* TrainingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
+		2F3A53F527EC04A100FBA25F /* DropDownTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTableViewCell.xib; sourceTree = "<group>"; };
+		2F3A53F627EC04A100FBA25F /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		2F3A53F827EC04A100FBA25F /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
+		2F3A53FA27EC04A100FBA25F /* DropDownTwoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTwoTableViewCell.swift; sourceTree = "<group>"; };
+		2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
+		2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelAndDurationVC.xib; sourceTree = "<group>"; };
+		2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelAndDurationVC.swift; sourceTree = "<group>"; };
 		2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
-		2F412EB027E4101E007708E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F412EB027E4101E007708E8 /* CardMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMenuCell.swift; sourceTree = "<group>"; };
 		2F412EB127E4101E007708E8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2F412EB327E4101E007708E8 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		2F412EB527E4101E007708E8 /* HomeHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
 		2F412EBD27E41821007708E8 /* MeditationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationData.swift; sourceTree = "<group>"; };
 		2F412EBF27E41821007708E8 /* MeditacaoHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeditacaoHomeViewController.xib; sourceTree = "<group>"; };
 		2F412EC027E41821007708E8 /* MeditacaoHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditacaoHomeViewController.swift; sourceTree = "<group>"; };
@@ -309,6 +336,7 @@
 		2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteAccountVC.xib; sourceTree = "<group>"; };
 		2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
 		2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+		2FA287CC27EAD19000C5BD81 /* Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigable.swift; sourceTree = "<group>"; };
 		2FB0560227E022DA000E9CA6 /* Poses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poses.swift; sourceTree = "<group>"; };
 		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -318,28 +346,6 @@
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
-		8334034B27E95659004FCA47 /* TreinoFinalizadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoFinalizadoVC.xib; sourceTree = "<group>"; };
-		8334034C27E95659004FCA47 /* TreinoFinalizadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoFinalizadoVC.swift; sourceTree = "<group>"; };
-		8334034F27E95659004FCA47 /* TreinoCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoCustomCell.xib; sourceTree = "<group>"; };
-		8334035027E95659004FCA47 /* TreinoCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoCustomCell.swift; sourceTree = "<group>"; };
-		8334035127E95659004FCA47 /* TreinoListagemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoListagemController.swift; sourceTree = "<group>"; };
-		8334035227E95659004FCA47 /* TreinoListagemController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoListagemController.xib; sourceTree = "<group>"; };
-		8334035427E95659004FCA47 /* TreinoIniciadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoIniciadoVC.xib; sourceTree = "<group>"; };
-		8334035627E95659004FCA47 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
-		8334035727E95659004FCA47 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
-		8334035827E95659004FCA47 /* TreinoIniciadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoIniciadoVC.swift; sourceTree = "<group>"; };
-		8334035A27E95659004FCA47 /* SairDoTreinoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SairDoTreinoVC.xib; sourceTree = "<group>"; };
-		8334035B27E95659004FCA47 /* SairDoTreinoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SairDoTreinoVC.swift; sourceTree = "<group>"; };
-		8334035F27E95659004FCA47 /* TrainingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
-		8334036127E95659004FCA47 /* DropDownTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTableViewCell.xib; sourceTree = "<group>"; };
-		8334036227E95659004FCA47 /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
-		8334036427E95659004FCA47 /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
-		8334036627E95659004FCA47 /* DropDownTwoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTwoTableViewCell.swift; sourceTree = "<group>"; };
-		8334036727E95659004FCA47 /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
-		8334036827E95659004FCA47 /* TreinoUmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoUmController.swift; sourceTree = "<group>"; };
-		8334036927E95659004FCA47 /* TreinoUmController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoUmController.xib; sourceTree = "<group>"; };
-		8334036B27E95659004FCA47 /* TreinoPausadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoPausadoVC.swift; sourceTree = "<group>"; };
-		8334036C27E95659004FCA47 /* TreinoPausadoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoPausadoVC.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
@@ -794,23 +800,182 @@
 			path = Animations;
 			sourceTree = SOURCE_ROOT;
 		};
-		2F0C343A27E5330C004A1E8C /* Delegates */ = {
+		2F3A53C827EB63D900FBA25F /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				2F0C343B27E53336004A1E8C /* Selectable.swift */,
+				2F3A53D727EB770A00FBA25F /* CardMenuCell */,
+				2F3A53CD27EB672900FBA25F /* HeaderCell */,
 			);
-			path = Delegates;
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		2F3A53CD27EB672900FBA25F /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53CF27EB67B400FBA25F /* HeaderCell.swift */,
+				2F3A53D027EB67B500FBA25F /* HeaderCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		2F3A53D727EB770A00FBA25F /* CardMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F412EB027E4101E007708E8 /* CardMenuCell.swift */,
+			);
+			path = CardMenuCell;
+			sourceTree = "<group>";
+		};
+		2F3A53D827EB772800FBA25F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2FA287CC27EAD19000C5BD81 /* Navigable.swift */,
+				2F412EB127E4101E007708E8 /* Router.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2F3A53DA27EC04A100FBA25F /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53DB27EC04A100FBA25F /* TrainingList */,
+				2F3A53E127EC04A100FBA25F /* TrainingFinished */,
+				2F3A53E427EC04A100FBA25F /* TrainingStarted */,
+				2F3A53EA27EC04A100FBA25F /* LeaveTraining */,
+				2F3A53ED27EC04A100FBA25F /* TrainingPaused */,
+				2F3A53F027EC04A100FBA25F /* LevelAndDuration */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		2F3A53DB27EC04A100FBA25F /* TrainingList */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53DC27EC04A100FBA25F /* TrainingListController.xib */,
+				2F3A53DD27EC04A100FBA25F /* TrainingListController.swift */,
+				2F3A53DE27EC04A100FBA25F /* TrainingListCell */,
+			);
+			path = TrainingList;
+			sourceTree = "<group>";
+		};
+		2F3A53DE27EC04A100FBA25F /* TrainingListCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53DF27EC04A100FBA25F /* TrainingCustomCell.swift */,
+				2F3A53E027EC04A100FBA25F /* TrainingCustomCell.xib */,
+			);
+			path = TrainingListCell;
+			sourceTree = "<group>";
+		};
+		2F3A53E127EC04A100FBA25F /* TrainingFinished */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53E227EC04A100FBA25F /* TrainingFinishedVC.swift */,
+				2F3A53E327EC04A100FBA25F /* TrainingFinishedVC.xib */,
+			);
+			path = TrainingFinished;
+			sourceTree = "<group>";
+		};
+		2F3A53E427EC04A100FBA25F /* TrainingStarted */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53E527EC04A100FBA25F /* RenderGIF.swift */,
+				2F3A53E627EC04A100FBA25F /* TrainingStartedVC.swift */,
+				2F3A53E727EC04A100FBA25F /* Gifs */,
+				2F3A53E927EC04A100FBA25F /* TrainingStartedVC.xib */,
+			);
+			path = TrainingStarted;
+			sourceTree = "<group>";
+		};
+		2F3A53E727EC04A100FBA25F /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53E827EC04A100FBA25F /* 01_Natarajasana.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
+		2F3A53EA27EC04A100FBA25F /* LeaveTraining */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53EB27EC04A100FBA25F /* LeaveTrainingVC.xib */,
+				2F3A53EC27EC04A100FBA25F /* LeaveTrainingVC.swift */,
+			);
+			path = LeaveTraining;
+			sourceTree = "<group>";
+		};
+		2F3A53ED27EC04A100FBA25F /* TrainingPaused */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53EE27EC04A100FBA25F /* TrainingPausedVC.xib */,
+				2F3A53EF27EC04A100FBA25F /* TrainingPausedVC.swift */,
+			);
+			path = TrainingPaused;
+			sourceTree = "<group>";
+		};
+		2F3A53F027EC04A100FBA25F /* LevelAndDuration */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53F127EC04A100FBA25F /* DropDownWithMultipleXib */,
+				2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */,
+				2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */,
+			);
+			path = LevelAndDuration;
+			sourceTree = "<group>";
+		};
+		2F3A53F127EC04A100FBA25F /* DropDownWithMultipleXib */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53F227EC04A100FBA25F /* Models */,
+				2F3A53F427EC04A100FBA25F /* DropDownTableCell */,
+				2F3A53F727EC04A100FBA25F /* MakeDropDownFile */,
+				2F3A53F927EC04A100FBA25F /* DropDownTwoTableCell */,
+			);
+			path = DropDownWithMultipleXib;
+			sourceTree = "<group>";
+		};
+		2F3A53F227EC04A100FBA25F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53F327EC04A100FBA25F /* TrainingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F3A53F427EC04A100FBA25F /* DropDownTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53F527EC04A100FBA25F /* DropDownTableViewCell.xib */,
+				2F3A53F627EC04A100FBA25F /* DropDownTableViewCell.swift */,
+			);
+			path = DropDownTableCell;
+			sourceTree = "<group>";
+		};
+		2F3A53F727EC04A100FBA25F /* MakeDropDownFile */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53F827EC04A100FBA25F /* MakeDropDown.swift */,
+			);
+			path = MakeDropDownFile;
+			sourceTree = "<group>";
+		};
+		2F3A53F927EC04A100FBA25F /* DropDownTwoTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53FA27EC04A100FBA25F /* DropDownTwoTableViewCell.swift */,
+				2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */,
+			);
+			path = DropDownTwoTableCell;
 			sourceTree = "<group>";
 		};
 		2F412EAD27E4101E007708E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2F0C343A27E5330C004A1E8C /* Delegates */,
+				2F3A53C827EB63D900FBA25F /* Menu */,
 				2F412EAE27E4101E007708E8 /* CategoryHeader */,
-				2F412EB027E4101E007708E8 /* HomeViewController.swift */,
-				2F412EB127E4101E007708E8 /* Router.swift */,
 				2F412EB227E4101E007708E8 /* CardCell */,
-				2F412EB427E4101E007708E8 /* Header */,
+				2F3A53C927EB641C00FBA25F /* HomeViewController.swift */,
+				2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -829,14 +994,6 @@
 				2F412EB327E4101E007708E8 /* CardCell.swift */,
 			);
 			path = CardCell;
-			sourceTree = "<group>";
-		};
-		2F412EB427E4101E007708E8 /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				2F412EB527E4101E007708E8 /* HomeHeader.swift */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		2F412EBB27E41821007708E8 /* Meditacao */ = {
@@ -1082,6 +1239,8 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				2F3A53DA27EC04A100FBA25F /* Training */,
+				2F3A53D827EB772800FBA25F /* Helpers */,
 				2FA287B127EACC3C00C5BD81 /* Profile */,
 				2F0C33FF27E4384E004A1E8C /* Breathing */,
 				2F0C33E327E434DA004A1E8C /* Register */,
@@ -1090,7 +1249,6 @@
 				2F036F5027E429D800993E41 /* Events */,
 				2F412EDA27E41A0B007708E8 /* Assets */,
 				2F412EBB27E41821007708E8 /* Meditacao */,
-				8334034927E95659004FCA47 /* Exercicios */,
 				2F412EAD27E4101E007708E8 /* Home */,
 				2F79E12627DCF42B0070397F /* PoseGallery */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
@@ -1109,140 +1267,6 @@
 				8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */,
 			);
 			path = "Sucess Screen";
-			sourceTree = "<group>";
-		};
-		8334034927E95659004FCA47 /* Exercicios */ = {
-			isa = PBXGroup;
-			children = (
-				8334034A27E95659004FCA47 /* TreinoFinalizado */,
-				8334034D27E95659004FCA47 /* TreinoListagem */,
-				8334035327E95659004FCA47 /* TreinoIniciado */,
-				8334035927E95659004FCA47 /* TreinoModalSair */,
-				8334035C27E95659004FCA47 /* TreinoUm */,
-				8334036A27E95659004FCA47 /* TreinoPausado */,
-			);
-			name = Exercicios;
-			path = YogaZone/Exercicios;
-			sourceTree = SOURCE_ROOT;
-		};
-		8334034A27E95659004FCA47 /* TreinoFinalizado */ = {
-			isa = PBXGroup;
-			children = (
-				8334034B27E95659004FCA47 /* TreinoFinalizadoVC.xib */,
-				8334034C27E95659004FCA47 /* TreinoFinalizadoVC.swift */,
-			);
-			path = TreinoFinalizado;
-			sourceTree = "<group>";
-		};
-		8334034D27E95659004FCA47 /* TreinoListagem */ = {
-			isa = PBXGroup;
-			children = (
-				8334034E27E95659004FCA47 /* TreinoListagemCell */,
-				8334035127E95659004FCA47 /* TreinoListagemController.swift */,
-				8334035227E95659004FCA47 /* TreinoListagemController.xib */,
-			);
-			path = TreinoListagem;
-			sourceTree = "<group>";
-		};
-		8334034E27E95659004FCA47 /* TreinoListagemCell */ = {
-			isa = PBXGroup;
-			children = (
-				8334034F27E95659004FCA47 /* TreinoCustomCell.xib */,
-				8334035027E95659004FCA47 /* TreinoCustomCell.swift */,
-			);
-			path = TreinoListagemCell;
-			sourceTree = "<group>";
-		};
-		8334035327E95659004FCA47 /* TreinoIniciado */ = {
-			isa = PBXGroup;
-			children = (
-				8334035427E95659004FCA47 /* TreinoIniciadoVC.xib */,
-				8334035527E95659004FCA47 /* Gifs */,
-				8334035727E95659004FCA47 /* iOSDevCenters+GIF.swift */,
-				8334035827E95659004FCA47 /* TreinoIniciadoVC.swift */,
-			);
-			path = TreinoIniciado;
-			sourceTree = "<group>";
-		};
-		8334035527E95659004FCA47 /* Gifs */ = {
-			isa = PBXGroup;
-			children = (
-				8334035627E95659004FCA47 /* 01_Natarajasana.gif */,
-			);
-			path = Gifs;
-			sourceTree = "<group>";
-		};
-		8334035927E95659004FCA47 /* TreinoModalSair */ = {
-			isa = PBXGroup;
-			children = (
-				8334035A27E95659004FCA47 /* SairDoTreinoVC.xib */,
-				8334035B27E95659004FCA47 /* SairDoTreinoVC.swift */,
-			);
-			path = TreinoModalSair;
-			sourceTree = "<group>";
-		};
-		8334035C27E95659004FCA47 /* TreinoUm */ = {
-			isa = PBXGroup;
-			children = (
-				8334035D27E95659004FCA47 /* DropDownWithMultipleXib */,
-				8334036827E95659004FCA47 /* TreinoUmController.swift */,
-				8334036927E95659004FCA47 /* TreinoUmController.xib */,
-			);
-			path = TreinoUm;
-			sourceTree = "<group>";
-		};
-		8334035D27E95659004FCA47 /* DropDownWithMultipleXib */ = {
-			isa = PBXGroup;
-			children = (
-				8334035E27E95659004FCA47 /* Models */,
-				8334036027E95659004FCA47 /* DropDownTableCell */,
-				8334036327E95659004FCA47 /* MakeDropDownFile */,
-				8334036527E95659004FCA47 /* DropDownTwoTableCell */,
-			);
-			path = DropDownWithMultipleXib;
-			sourceTree = "<group>";
-		};
-		8334035E27E95659004FCA47 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8334035F27E95659004FCA47 /* TrainingModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8334036027E95659004FCA47 /* DropDownTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				8334036127E95659004FCA47 /* DropDownTableViewCell.xib */,
-				8334036227E95659004FCA47 /* DropDownTableViewCell.swift */,
-			);
-			path = DropDownTableCell;
-			sourceTree = "<group>";
-		};
-		8334036327E95659004FCA47 /* MakeDropDownFile */ = {
-			isa = PBXGroup;
-			children = (
-				8334036427E95659004FCA47 /* MakeDropDown.swift */,
-			);
-			path = MakeDropDownFile;
-			sourceTree = "<group>";
-		};
-		8334036527E95659004FCA47 /* DropDownTwoTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				8334036627E95659004FCA47 /* DropDownTwoTableViewCell.swift */,
-				8334036727E95659004FCA47 /* DropDownTwoTableViewCell.xib */,
-			);
-			path = DropDownTwoTableCell;
-			sourceTree = "<group>";
-		};
-		8334036A27E95659004FCA47 /* TreinoPausado */ = {
-			isa = PBXGroup;
-			children = (
-				8334036B27E95659004FCA47 /* TreinoPausadoVC.swift */,
-				8334036C27E95659004FCA47 /* TreinoPausadoVC.xib */,
-			);
-			path = TreinoPausado;
 			sourceTree = "<group>";
 		};
 		8391EA4327E820E800F466F2 /* Fonts */ = {
@@ -1324,55 +1348,55 @@
 			files = (
 				2F412ED927E41821007708E8 /* PracticeViewController.xib in Resources */,
 				2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */,
-				8334036D27E95659004FCA47 /* TreinoFinalizadoVC.xib in Resources */,
 				2F0C342927E4384E004A1E8C /* ModalViewController.xib in Resources */,
 				2F0C342527E4384E004A1E8C /* AnimationViewController.xib in Resources */,
-				8334037227E95659004FCA47 /* TreinoListagemController.xib in Resources */,
+				2F3A540A27EC04A100FBA25F /* TrainingPausedVC.xib in Resources */,
 				2F0C342227E4384E004A1E8C /* StartViewController.xib in Resources */,
 				2F0C343827E43954004A1E8C /* expire.mp4 in Resources */,
+				2F3A541127EC04A100FBA25F /* DropDownTwoTableViewCell.xib in Resources */,
 				2F0C343727E43954004A1E8C /* hold.mp4 in Resources */,
 				2F412EF127E41A0B007708E8 /* pad-A.mp3 in Resources */,
 				2F0C343527E43954004A1E8C /* inhale.mp4 in Resources */,
+				2F3A540827EC04A100FBA25F /* LeaveTrainingVC.xib in Resources */,
 				2F412ED127E41821007708E8 /* AudioCell.xib in Resources */,
 				2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */,
-				8334037727E95659004FCA47 /* SairDoTreinoVC.xib in Resources */,
+				2F3A53FE27EC04A100FBA25F /* TrainingListController.xib in Resources */,
 				2F0C342827E4384E004A1E8C /* ExpireViewController.xib in Resources */,
 				8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */,
+				2F3A540327EC04A100FBA25F /* TrainingFinishedVC.xib in Resources */,
 				2F036FB227E429E400993E41 /* HistoricoTableViewCell.xib in Resources */,
 				2F412EF327E41A0B007708E8 /* pad-B.mp3 in Resources */,
+				2F3A540627EC04A100FBA25F /* 01_Natarajasana.gif in Resources */,
+				2F3A540727EC04A100FBA25F /* TrainingStartedVC.xib in Resources */,
 				2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */,
+				2F3A53CC27EB641C00FBA25F /* HomeViewController.xib in Resources */,
 				2FA287C727EACC3C00C5BD81 /* MyProfileVC.xib in Resources */,
-				8334038027E95659004FCA47 /* TreinoUmController.xib in Resources */,
 				8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */,
 				2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */,
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
 				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
-				8334037427E95659004FCA47 /* 01_Natarajasana.gif in Resources */,
 				2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */,
 				2F412ED427E41821007708E8 /* IntroViewController.xib in Resources */,
-				8334037327E95659004FCA47 /* TreinoIniciadoVC.xib in Resources */,
 				2F0C342C27E4384E004A1E8C /* HoldViewController.xib in Resources */,
 				8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */,
 				2F0C33DE27E432EC004A1E8C /* InfEmailViewController.xib in Resources */,
 				2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */,
 				2F0C343627E43954004A1E8C /* start.mp4 in Resources */,
-				8334038227E95659004FCA47 /* TreinoPausadoVC.xib in Resources */,
 				8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */,
 				8391EA5A27E820E800F466F2 /* Comfortaa-Regular.ttf in Resources */,
 				2F412EF227E41A0B007708E8 /* pad-C.mp3 in Resources */,
 				8391EA5427E820E800F466F2 /* Montserrat-Bold.ttf in Resources */,
 				2F036F7E27E429D800993E41 /* EventCell.xib in Resources */,
 				2FA287C527EACC3C00C5BD81 /* MyProfileTableViewCell.xib in Resources */,
+				2F3A540D27EC04A100FBA25F /* DropDownTableViewCell.xib in Resources */,
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
-				8334037A27E95659004FCA47 /* DropDownTableViewCell.xib in Resources */,
 				2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */,
 				2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
 				2F036FAB27E429E400993E41 /* ImcController.xib in Resources */,
 				2F036F8C27E429D800993E41 /* Alert.storyboard in Resources */,
-				8334037E27E95659004FCA47 /* DropDownTwoTableViewCell.xib in Resources */,
 				2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */,
 				2F036F7827E429D800993E41 /* EventFilterViewController.xib in Resources */,
 				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
@@ -1381,10 +1405,12 @@
 				8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */,
 				2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */,
 				2F036F7B27E429D800993E41 /* HomeEvents.storyboard in Resources */,
+				2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */,
 				2F036FAE27E429E400993E41 /* TapeedSwitchObViewController.xib in Resources */,
 				2F0C33E127E432EC004A1E8C /* telaaLoginViewController.xib in Resources */,
 				2F412EF727E41A0B007708E8 /* pad-Gb.mp3 in Resources */,
 				8391EA5527E820E800F466F2 /* Comfortaa-SemiBold.ttf in Resources */,
+				2F3A540127EC04A100FBA25F /* TrainingCustomCell.xib in Resources */,
 				2F412EF527E41A0B007708E8 /* pad-D.mp3 in Resources */,
 				2F0C33FA27E434DA004A1E8C /* UserLevelVC.xib in Resources */,
 				2F412EF827E41A0B007708E8 /* pad-Eb.mp3 in Resources */,
@@ -1396,11 +1422,11 @@
 				2F0C33FE27E434DA004A1E8C /* CustomMainRegisterCell.xib in Resources */,
 				2F0C341C27E4384E004A1E8C /* SettingsViewController.xib in Resources */,
 				2F0C343927E43954004A1E8C /* intro.mp4 in Resources */,
-				8334036F27E95659004FCA47 /* TreinoCustomCell.xib in Resources */,
 				2F412EF427E41A0B007708E8 /* pad-E.mp3 in Resources */,
 				2F0C341E27E4384E004A1E8C /* BreathingHomeViewController.xib in Resources */,
 				2F0C33E027E432EC004A1E8C /* modalSViewController.xib in Resources */,
 				8391EA5827E820E800F466F2 /* Montserrat-ExtraBold.ttf in Resources */,
+				2F3A53D227EB67B500FBA25F /* HeaderCell.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				2F0C342D27E4384E004A1E8C /* InhaleViewController.xib in Resources */,
 				8391EA5727E820E800F466F2 /* Montserrat-SemiBold.ttf in Resources */,
@@ -1419,18 +1445,21 @@
 				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F0C342327E4384E004A1E8C /* StartViewController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
-				8334037127E95659004FCA47 /* TreinoListagemController.swift in Sources */,
 				2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
 				2F036F8127E429D800993E41 /* EventData.swift in Sources */,
 				2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */,
 				2F0C33DB27E432EC004A1E8C /* novaSenhaViewController.swift in Sources */,
+				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
 				2F0C33DF27E432EC004A1E8C /* modalSViewController.swift in Sources */,
 				2F036FAD27E429E400993E41 /* TapeedSwitchObViewController.swift in Sources */,
 				2F036FB127E429E400993E41 /* HistoricoTableViewCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
-				8334036E27E95659004FCA47 /* TreinoFinalizadoVC.swift in Sources */,
+				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
+				2F3A541027EC04A100FBA25F /* DropDownTwoTableViewCell.swift in Sources */,
 				2F412ED227E41821007708E8 /* AudioCell.swift in Sources */,
+				2F3A540527EC04A100FBA25F /* TrainingStartedVC.swift in Sources */,
+				2F3A540427EC04A100FBA25F /* RenderGIF.swift in Sources */,
 				2F412ED627E41821007708E8 /* MeditationAudioFile.swift in Sources */,
 				2F0C342727E4384E004A1E8C /* ExpireViewController.swift in Sources */,
 				2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */,
@@ -1438,50 +1467,50 @@
 				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
 				2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */,
 				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
+				2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
 				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
 				2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */,
 				2F79E15E27DD0DB60070397F /* ModalVideoViewController.swift in Sources */,
 				2F036F8D27E429D800993E41 /* AlertService.swift in Sources */,
 				2F036F8227E429D800993E41 /* CreateNewEventViewController.swift in Sources */,
-				2F0C343C27E53336004A1E8C /* Selectable.swift in Sources */,
 				2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */,
 				2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */,
 				8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */,
+				2F3A540B27EC04A100FBA25F /* TrainingPausedVC.swift in Sources */,
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036FAC27E429E400993E41 /* ImcController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
-				8334038127E95659004FCA47 /* TreinoPausadoVC.swift in Sources */,
 				2F0C341D27E4384E004A1E8C /* SettingsViewController.swift in Sources */,
 				2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */,
 				2F0C33FB27E434DA004A1E8C /* MainRegisterVC.swift in Sources */,
+				2F3A540C27EC04A100FBA25F /* TrainingModel.swift in Sources */,
+				2F3A541327EC04A100FBA25F /* LevelAndDurationVC.swift in Sources */,
 				2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */,
 				2F036F7927E429D800993E41 /* EventMapViewController.swift in Sources */,
 				2F0C341F27E4384E004A1E8C /* BreathingHomeViewController.swift in Sources */,
-				8334037527E95659004FCA47 /* iOSDevCenters+GIF.swift in Sources */,
 				2F412ED727E41821007708E8 /* PracticeViewController.swift in Sources */,
+				2F3A540F27EC04A100FBA25F /* MakeDropDown.swift in Sources */,
 				2F0C33F927E434DA004A1E8C /* UserLevelVC.swift in Sources */,
 				2F412EB927E4101E007708E8 /* CardCell.swift in Sources */,
 				2F0C342A27E4384E004A1E8C /* ModalViewController.swift in Sources */,
-				8334037B27E95659004FCA47 /* DropDownTableViewCell.swift in Sources */,
+				2F3A540E27EC04A100FBA25F /* DropDownTableViewCell.swift in Sources */,
 				2F0C342E27E4384E004A1E8C /* InhaleViewController.swift in Sources */,
 				2F036FB527E429E400993E41 /* ResultadoController.swift in Sources */,
-				8334037627E95659004FCA47 /* TreinoIniciadoVC.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
-				8334037D27E95659004FCA47 /* DropDownTwoTableViewCell.swift in Sources */,
 				2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */,
 				2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */,
 				2F036F7D27E429D800993E41 /* EventCell.swift in Sources */,
 				2F036F9127E429D800993E41 /* Event.swift in Sources */,
-				8334037C27E95659004FCA47 /* MakeDropDown.swift in Sources */,
+				2F3A540927EC04A100FBA25F /* LeaveTrainingVC.swift in Sources */,
 				2F036F8827E429D800993E41 /* ConfirmContainerViewController.swift in Sources */,
 				2F036F7727E429D800993E41 /* EventFilterViewController.swift in Sources */,
 				2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
-				8334037927E95659004FCA47 /* TrainingModel.swift in Sources */,
-				2F412EB727E4101E007708E8 /* HomeViewController.swift in Sources */,
+				2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */,
 				2F036FB427E429E400993E41 /* Result.swift in Sources */,
+				2F3A53FF27EC04A100FBA25F /* TrainingListController.swift in Sources */,
 				2F036FB327E429E400993E41 /* ImcEnums.swift in Sources */,
 				2F0C33E227E432EC004A1E8C /* telaaLoginViewController.swift in Sources */,
 				2F0C33DD27E432EC004A1E8C /* InfEmailViewController.swift in Sources */,
@@ -1489,19 +1518,17 @@
 				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
 				2F412EB827E4101E007708E8 /* Router.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
+				2F3A540227EC04A100FBA25F /* TrainingFinishedVC.swift in Sources */,
 				2F036FB827E429E400993E41 /* tappedSwitchObController.swift in Sources */,
-				8334037827E95659004FCA47 /* SairDoTreinoVC.swift in Sources */,
-				2F412EBA27E4101E007708E8 /* HomeHeader.swift in Sources */,
 				2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
 				2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */,
 				2F0C342B27E4384E004A1E8C /* HoldViewController.swift in Sources */,
 				2F0C342427E4384E004A1E8C /* AnimationViewController.swift in Sources */,
-				8334037027E95659004FCA47 /* TreinoCustomCell.swift in Sources */,
 				2F036F8E27E429D800993E41 /* AlertViewController.swift in Sources */,
+				2F3A540027EC04A100FBA25F /* TrainingCustomCell.swift in Sources */,
 				2F036F8B27E429D800993E41 /* EditEventDetailViewController.swift in Sources */,
-				8334037F27E95659004FCA47 /* TreinoUmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
