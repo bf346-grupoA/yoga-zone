@@ -15,6 +15,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimerTestViewController" customModule="YogaZone" customModuleProvider="target">
             <connections>
+                <outlet property="addSeconds" destination="PZd-dc-iHY" id="mmh-O4-XRb"/>
+                <outlet property="minusSeconds" destination="XnW-mS-hMI" id="7IV-kH-VAP"/>
+                <outlet property="pauseButton" destination="Vv2-7I-wdG" id="uOb-6W-ldL"/>
+                <outlet property="resetButton" destination="OlO-J0-GuW" id="Wee-7w-eVW"/>
+                <outlet property="startButton" destination="yQd-tf-4dI" id="I1n-cZ-vMl"/>
                 <outlet property="timerLabel" destination="dHP-ta-mUW" id="vyW-0J-DnK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,18 +30,69 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHP-ta-mUW">
-                    <rect key="frame" x="147" y="244" width="120" height="61"/>
-                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="50"/>
+                    <rect key="frame" x="147" y="129" width="120" height="110"/>
+                    <color key="tintColor" red="0.48424969392849337" green="0.42079983302399582" blue="0.72762784090909083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="90"/>
                     <color key="textColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlO-J0-GuW">
+                    <rect key="frame" x="171" y="712" width="61" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                    <connections>
+                        <action selector="resetButton:" destination="-1" eventType="touchUpInside" id="g2R-wq-lyA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZd-dc-iHY">
+                    <rect key="frame" x="194" y="766" width="54" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="+5m"/>
+                    <connections>
+                        <action selector="addSecnds:" destination="-1" eventType="touchUpInside" id="eMW-60-faf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnW-mS-hMI">
+                    <rect key="frame" x="117" y="766" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="-5m"/>
+                    <connections>
+                        <action selector="minusSeconds:" destination="-1" eventType="touchUpInside" id="9vq-4A-SWT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQd-tf-4dI">
+                    <rect key="frame" x="256" y="735" width="100" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="10" maxX="100" maxY="10"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                    <connections>
+                        <action selector="startButton:" destination="-1" eventType="touchUpInside" id="6dX-hi-FB3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vv2-7I-wdG">
+                    <rect key="frame" x="157" y="369" width="100" height="31"/>
+                    <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="20" bottom="8" trailing="8"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Pause"/>
+                    <connections>
+                        <action selector="pauseButton:" destination="-1" eventType="touchUpInside" id="eqZ-pb-egI"/>
+                        <action selector="startButton:" destination="-1" eventType="touchUpInside" id="Fku-bm-Iu1"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="dHP-ta-mUW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="147" id="9Ac-uS-M2r"/>
-                <constraint firstItem="dHP-ta-mUW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="U7P-4t-iII"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vv2-7I-wdG" secondAttribute="trailing" constant="157" id="MDT-AX-JIt"/>
+                <constraint firstItem="dHP-ta-mUW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="85" id="OOV-lZ-jn2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dHP-ta-mUW" secondAttribute="trailing" constant="147" id="Wc2-RW-yyO"/>
+                <constraint firstItem="Vv2-7I-wdG" firstAttribute="top" secondItem="dHP-ta-mUW" secondAttribute="bottom" constant="130" id="oRp-2N-Jwb"/>
+                <constraint firstItem="Vv2-7I-wdG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="157" id="yyn-CJ-I4G"/>
             </constraints>
             <point key="canvasLocation" x="128.98550724637681" y="41.517857142857139"/>
         </view>

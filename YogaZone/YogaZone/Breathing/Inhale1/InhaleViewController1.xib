@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InhaleViewController" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="inhaleButton" destination="fy1-zg-HtC" id="reo-zH-PEU"/>
+                <outlet property="labelCicleInhale" destination="Irj-Do-ja2" id="HIg-G8-jD6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciclo 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irj-Do-ja2">
+                    <rect key="frame" x="20" y="74" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="374" id="d6N-kK-ed1"/>
+                        <constraint firstAttribute="height" constant="50" id="rh7-xy-jHx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="30"/>
+                    <color key="textColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy1-zg-HtC">
+                    <rect key="frame" x="67" y="274" width="280" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="4pn-uv-vxC"/>
+                        <constraint firstAttribute="width" constant="280" id="EwR-IL-1zt"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="inhaleNextButton:" destination="-1" eventType="touchUpInside" id="XYD-oI-rJa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 segundos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpe-cf-D3Z">
+                    <rect key="frame" x="20" y="584" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ehf-tP-MXd"/>
+                        <constraint firstAttribute="width" constant="374" id="lLX-jr-c77"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="30"/>
+                    <color key="textColor" red="0.43137252329999998" green="0.37647059560000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Lpe-cf-D3Z" firstAttribute="top" secondItem="fy1-zg-HtC" secondAttribute="bottom" constant="30" id="48O-29-5Oj"/>
+                <constraint firstItem="Irj-Do-ja2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="4Qd-5y-5JM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lpe-cf-D3Z" secondAttribute="trailing" constant="20" id="ACe-OF-pem"/>
+                <constraint firstItem="fy1-zg-HtC" firstAttribute="top" secondItem="Irj-Do-ja2" secondAttribute="bottom" constant="150" id="Onh-56-qhN"/>
+                <constraint firstItem="Irj-Do-ja2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZMu-Z1-5cD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fy1-zg-HtC" secondAttribute="trailing" constant="67" id="fR5-tV-uzV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Irj-Do-ja2" secondAttribute="trailing" constant="20" id="gYK-77-R2F"/>
+                <constraint firstItem="fy1-zg-HtC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="o3d-8Z-4Hh"/>
+                <constraint firstItem="Lpe-cf-D3Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="tZF-C3-bRz"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -2,7 +2,7 @@ import AVKit
 import Foundation
 import UIKit
 
-class HoldViewController: UIViewController {
+class HoldViewController1: UIViewController {
     @IBOutlet weak var holdButton: UIButton!
     @IBOutlet weak var labelCicleHold: UILabel!
     @IBOutlet weak var labelSecondsHold: UILabel!
