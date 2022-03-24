@@ -128,19 +128,19 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0j-4Q-0nb">
-                    <rect key="frame" x="268.66666666666669" y="321.33333333333331" width="43.666666666666686" height="22"/>
+                    <rect key="frame" x="280.66666666666669" y="321.33333333333331" width="43.666666666666686" height="22"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                     <color key="textColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faltam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ia-ck-RRl">
-                    <rect key="frame" x="354.33333333333331" y="321.33333333333331" width="63.666666666666686" height="22"/>
+                    <rect key="frame" x="359.33333333333331" y="321.33333333333331" width="63.666666666666686" height="22"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                     <color key="textColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJP-bK-G4i">
-                    <rect key="frame" x="135.66666666666666" y="321.33333333333331" width="91.333333333333343" height="22"/>
+                    <rect key="frame" x="98.666666666666686" y="321.33333333333331" width="91.333333333333314" height="22"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                     <color key="textColor" red="0.43519829529999998" green="0.2314966497" blue="0.56909153199999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -150,14 +150,14 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="85N-u5-5nX" firstAttribute="top" secondItem="LgI-Tf-UdX" secondAttribute="bottom" constant="12" id="0pA-JZ-NNU"/>
-                <constraint firstItem="gJP-bK-G4i" firstAttribute="leading" secondItem="Xkr-9e-qdb" secondAttribute="trailing" constant="82" id="3eD-5e-fVW"/>
+                <constraint firstItem="gJP-bK-G4i" firstAttribute="leading" secondItem="Xkr-9e-qdb" secondAttribute="trailing" constant="45" id="3eD-5e-fVW"/>
                 <constraint firstItem="1x6-7h-O0n" firstAttribute="top" secondItem="VCd-pL-1ZS" secondAttribute="bottom" constant="12" id="3jj-6h-Mae"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EPN-tR-E7L" secondAttribute="bottom" constant="15" id="4MD-tT-JWk"/>
                 <constraint firstItem="PhO-Lb-6fS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4gh-ip-F2k"/>
                 <constraint firstItem="LgI-Tf-UdX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9eW-Jw-Aas"/>
                 <constraint firstItem="gSU-o1-FCw" firstAttribute="top" secondItem="24a-im-HDm" secondAttribute="bottom" constant="12" id="ATL-LZ-xB3"/>
                 <constraint firstItem="C0j-4Q-0nb" firstAttribute="top" secondItem="sch-98-4uy" secondAttribute="bottom" constant="30" id="CFX-sa-AEF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Ia-ck-RRl" secondAttribute="trailing" constant="10" id="Cjo-09-XD9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Ia-ck-RRl" secondAttribute="trailing" constant="5" id="Cjo-09-XD9"/>
                 <constraint firstItem="sch-98-4uy" firstAttribute="top" secondItem="1x6-7h-O0n" secondAttribute="bottom" constant="12" id="GvV-0a-iBb"/>
                 <constraint firstItem="9s4-DE-fO4" firstAttribute="top" secondItem="85N-u5-5nX" secondAttribute="bottom" constant="12" id="IG8-p2-auv"/>
                 <constraint firstItem="RLA-fg-tUG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="KLs-EN-2aW"/>
@@ -177,7 +177,7 @@
                 <constraint firstItem="9s4-DE-fO4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="65" id="egP-I2-xJ6"/>
                 <constraint firstItem="1x6-7h-O0n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g9m-vJ-1rW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6DS-4B-e6g" secondAttribute="trailing" constant="48" id="pZQ-bv-3sg"/>
-                <constraint firstItem="3Ia-ck-RRl" firstAttribute="leading" secondItem="C0j-4Q-0nb" secondAttribute="trailing" constant="42" id="qka-D8-gO6"/>
+                <constraint firstItem="3Ia-ck-RRl" firstAttribute="leading" secondItem="C0j-4Q-0nb" secondAttribute="trailing" constant="35" id="qka-D8-gO6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gSU-o1-FCw" secondAttribute="trailing" constant="65" id="sIw-V9-DaU"/>
                 <constraint firstItem="6DS-4B-e6g" firstAttribute="top" secondItem="RLA-fg-tUG" secondAttribute="bottom" constant="40" id="u00-50-2mb"/>
                 <constraint firstItem="EPN-tR-E7L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="xY3-4C-NRv"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,25 +17,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppz-cG-TxD">
-                        <rect key="frame" x="12" y="12" width="42" height="20"/>
+                        <rect key="frame" x="5" y="12" width="42" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-Xn-jPD">
-                        <rect key="frame" x="96" y="12" width="42" height="20"/>
+                        <rect key="frame" x="69" y="12" width="42" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-6J-DpM">
-                        <rect key="frame" x="182" y="12" width="42" height="20"/>
+                        <rect key="frame" x="211" y="12" width="42" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xn1-S9-jcB">
-                        <rect key="frame" x="266" y="12" width="42" height="20"/>
+                        <rect key="frame" x="273" y="12" width="42" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -46,14 +46,14 @@
                     <constraint firstAttribute="bottom" secondItem="Xn1-S9-jcB" secondAttribute="bottom" constant="12" id="4ta-ag-8gV"/>
                     <constraint firstItem="OcD-6J-DpM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="58l-T4-ciz"/>
                     <constraint firstAttribute="bottom" secondItem="ppz-cG-TxD" secondAttribute="bottom" constant="12" id="Am8-kG-MEW"/>
-                    <constraint firstItem="Hsb-Xn-jPD" firstAttribute="leading" secondItem="ppz-cG-TxD" secondAttribute="trailing" constant="42" id="BeQ-qd-ITr"/>
+                    <constraint firstItem="Hsb-Xn-jPD" firstAttribute="leading" secondItem="ppz-cG-TxD" secondAttribute="trailing" constant="22" id="BeQ-qd-ITr"/>
                     <constraint firstAttribute="bottom" secondItem="OcD-6J-DpM" secondAttribute="bottom" constant="12" id="DXl-xV-RWg"/>
                     <constraint firstAttribute="bottom" secondItem="Hsb-Xn-jPD" secondAttribute="bottom" constant="12" id="Hnl-17-Tal"/>
-                    <constraint firstAttribute="trailing" secondItem="Xn1-S9-jcB" secondAttribute="trailing" constant="12" id="ITf-MH-JYU"/>
-                    <constraint firstItem="Xn1-S9-jcB" firstAttribute="leading" secondItem="OcD-6J-DpM" secondAttribute="trailing" constant="42" id="JuL-cH-R3h"/>
+                    <constraint firstAttribute="trailing" secondItem="Xn1-S9-jcB" secondAttribute="trailing" constant="5" id="ITf-MH-JYU"/>
+                    <constraint firstItem="Xn1-S9-jcB" firstAttribute="leading" secondItem="OcD-6J-DpM" secondAttribute="trailing" constant="20" id="JuL-cH-R3h"/>
                     <constraint firstItem="ppz-cG-TxD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Kdw-Ya-dBq"/>
                     <constraint firstItem="Xn1-S9-jcB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="f20-f4-Ax0"/>
-                    <constraint firstItem="ppz-cG-TxD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="fHC-Mr-4sy"/>
+                    <constraint firstItem="ppz-cG-TxD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="fHC-Mr-4sy"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
