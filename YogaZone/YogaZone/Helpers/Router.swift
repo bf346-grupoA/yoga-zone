@@ -9,15 +9,6 @@ import Foundation
 import UIKit
 
 class Router {
-    static let routes: [Int: UIViewController] = [
-        1: PoseGalleryViewController(), // PosesViewController()
-        2: PoseGalleryViewController(), // ImcViewController()
-        3: PoseGalleryViewController(), // RespiracaoViewController()
-        4: PoseGalleryViewController(), // MeditcacaoViewController()
-        5: PoseGalleryViewController(), // TreinosViewController()
-        6: PoseGalleryViewController() // EventosViewController()
-    ]
-    
     static let firstSectionRouter: [Int: Int] = [
         0: 1,
         1: 2,
@@ -52,13 +43,6 @@ class Router {
         let selectedSection = sections[indexPath.section]
         
         return images[selectedSection?[indexPath.row] ?? 0] ?? ""
-    }
-    
-    
-    static func getDestination(indexPath: IndexPath) -> UIViewController {
-        let selectedSection = sections[indexPath.section]
-        
-        return routes[selectedSection?[indexPath.row] ?? 0] ?? HomeViewController()
     }
     
     static func getDestinationIndex(indexPath: IndexPath) -> Int {

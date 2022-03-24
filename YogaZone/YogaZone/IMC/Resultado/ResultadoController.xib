@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,6 +13,7 @@
                 <outlet property="healthStatus" destination="P5x-YK-slj" id="sX5-ii-RIs"/>
                 <outlet property="labelResultado" destination="mzG-VQ-zh2" id="ypE-dk-bix"/>
                 <outlet property="possibleConsequence" destination="mWh-LN-qkv" id="IID-dw-r4t"/>
+                <outlet property="saveButton" destination="tid-ss-y35" id="NHw-M1-7LL"/>
                 <outlet property="titlePossibleConsequences" destination="uIf-vO-53c" id="5Bh-LV-hSY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -62,6 +63,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Salvar">
                         <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="saveButton:" destination="-1" eventType="touchUpInside" id="bbo-mG-y1q"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXm-78-S2L">
                     <rect key="frame" x="320" y="74" width="78" height="38"/>
@@ -74,12 +78,12 @@
                         <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="Kbm-Qo-opD"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Imcindex" translatesAutoresizingMaskIntoConstraints="NO" id="sRg-RK-Ub5">
-                    <rect key="frame" x="60" y="258" width="308" height="499"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imcindex" translatesAutoresizingMaskIntoConstraints="NO" id="sRg-RK-Ub5">
+                    <rect key="frame" x="60" y="258" width="308" height="504"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzG-VQ-zh2">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzG-VQ-zh2">
                     <rect key="frame" x="191" y="544" width="47" height="0.0"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" systemColor="systemGreenColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -112,7 +116,7 @@
                 <constraint firstItem="tid-ss-y35" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="uWe-nA-2hQ"/>
                 <constraint firstItem="mWh-LN-qkv" firstAttribute="top" secondItem="uIf-vO-53c" secondAttribute="bottom" constant="20" id="xfd-Th-QkK"/>
             </constraints>
-            <point key="canvasLocation" x="131.77570093457942" y="92.008639308855294"/>
+            <point key="canvasLocation" x="-84.112149532710276" y="-336.28509719222467"/>
         </view>
     </objects>
     <resources>

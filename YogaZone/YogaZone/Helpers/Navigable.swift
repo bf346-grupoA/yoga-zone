@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol Selectable: AnyObject {
+protocol Navigable: AnyObject {
     func navigateTo(routeIndex: Int)
 }

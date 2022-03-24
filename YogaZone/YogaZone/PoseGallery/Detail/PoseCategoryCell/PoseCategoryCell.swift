@@ -27,7 +27,7 @@ class PoseCategoryCell: UITableViewCell {
 
     }
     
-    func setupCell(_ category: PoseCategory) {
+    func setupCell(category: PoseCategory) {
         self.nameLabel.text = category.name
         self.descriptionLabel.text = category.description
     }

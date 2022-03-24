@@ -15,7 +15,7 @@ class CategoryHeaderView: UICollectionReusableView {
     
     lazy var label: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        label.font = UIFont(name: "Montserrat-SemiBold", size: 20)
         
         return label
     }()
