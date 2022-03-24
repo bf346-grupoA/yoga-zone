@@ -43,14 +43,8 @@
 		2F036FB727E429E400993E41 /* tappedSwitchObController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036FA727E429E400993E41 /* tappedSwitchObController.xib */; };
 		2F036FB827E429E400993E41 /* tappedSwitchObController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036FA827E429E400993E41 /* tappedSwitchObController.swift */; };
 		2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036FAA27E429E400993E41 /* NumericExtensions.swift */; };
-		2F0C33DB27E432EC004A1E8C /* novaSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33D027E432EC004A1E8C /* novaSenhaViewController.swift */; };
-		2F0C33DC27E432EC004A1E8C /* novaSenhaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33D127E432EC004A1E8C /* novaSenhaViewController.xib */; };
-		2F0C33DD27E432EC004A1E8C /* InfEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33D327E432EC004A1E8C /* InfEmailViewController.swift */; };
-		2F0C33DE27E432EC004A1E8C /* InfEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33D427E432EC004A1E8C /* InfEmailViewController.xib */; };
-		2F0C33DF27E432EC004A1E8C /* modalSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33D627E432EC004A1E8C /* modalSViewController.swift */; };
-		2F0C33E027E432EC004A1E8C /* modalSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33D727E432EC004A1E8C /* modalSViewController.xib */; };
-		2F0C33E127E432EC004A1E8C /* telaaLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33D927E432EC004A1E8C /* telaaLoginViewController.xib */; };
-		2F0C33E227E432EC004A1E8C /* telaaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33DA27E432EC004A1E8C /* telaaLoginViewController.swift */; };
+		2F0C33DF27E432EC004A1E8C /* ModalSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33D627E432EC004A1E8C /* ModalSuccessViewController.swift */; };
+		2F0C33E027E432EC004A1E8C /* ModalSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33D727E432EC004A1E8C /* ModalSuccessViewController.xib */; };
 		2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */; };
 		2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */; };
 		2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */; };
@@ -116,14 +110,10 @@
 		2F3A542627EC28AA00FBA25F /* LogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A542427EC28AA00FBA25F /* LogoCell.xib */; };
 		2F3A543127EC2E5000FBA25F /* tappedSaveResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */; };
 		2F3A543227EC2E5000FBA25F /* tappedSaveResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */; };
-		2F3A543527EC341000FBA25F /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543327EC341000FBA25F /* FormCell.swift */; };
-		2F3A543627EC341000FBA25F /* FormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A543427EC341000FBA25F /* FormCell.xib */; };
 		2F3A543927EC341F00FBA25F /* SeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543727EC341F00FBA25F /* SeparatorCell.swift */; };
 		2F3A543A27EC341F00FBA25F /* SeparatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A543827EC341F00FBA25F /* SeparatorCell.xib */; };
-		2F3A543D27EC342C00FBA25F /* SocialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543B27EC342C00FBA25F /* SocialCell.swift */; };
-		2F3A543E27EC342C00FBA25F /* SocialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A543C27EC342C00FBA25F /* SocialCell.xib */; };
-		2F3A544127EC343800FBA25F /* RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543F27EC343800FBA25F /* RegisterCell.swift */; };
-		2F3A544227EC343800FBA25F /* RegisterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A544027EC343800FBA25F /* RegisterCell.xib */; };
+		2F3A544127EC343800FBA25F /* RegisterButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543F27EC343800FBA25F /* RegisterButtonCell.swift */; };
+		2F3A544227EC343800FBA25F /* RegisterButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A544027EC343800FBA25F /* RegisterButtonCell.xib */; };
 		2F3A544527EC3EE400FBA25F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A544327EC3EE400FBA25F /* LoginViewController.swift */; };
 		2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A544427EC3EE400FBA25F /* LoginViewController.xib */; };
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
@@ -150,6 +140,20 @@
 		2F412EF627E41A0B007708E8 /* pad-Ab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F412EE127E41A0B007708E8 /* pad-Ab.mp3 */; };
 		2F412EF727E41A0B007708E8 /* pad-Gb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F412EE227E41A0B007708E8 /* pad-Gb.mp3 */; };
 		2F412EF827E41A0B007708E8 /* pad-Eb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F412EE327E41A0B007708E8 /* pad-Eb.mp3 */; };
+		2F5B66A427ECD48E00AC243E /* LoginButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B66A227ECD48E00AC243E /* LoginButtonCell.swift */; };
+		2F5B66A527ECD48E00AC243E /* LoginButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5B66A327ECD48E00AC243E /* LoginButtonCell.xib */; };
+		2F5B66AC27ECD51D00AC243E /* EmailAndPasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B66AA27ECD51D00AC243E /* EmailAndPasswordCell.swift */; };
+		2F5B66AD27ECD51D00AC243E /* EmailAndPasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5B66AB27ECD51D00AC243E /* EmailAndPasswordCell.xib */; };
+		2F5B66B027ECD75200AC243E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B66AF27ECD75200AC243E /* UserData.swift */; };
+		2F5B66B227ECD8A700AC243E /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B66B127ECD8A700AC243E /* FormValidation.swift */; };
+		2F5B66B827ECF5C200AC243E /* FacebookButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B66B627ECF5C200AC243E /* FacebookButtonCell.swift */; };
+		2F5B66B927ECF5C200AC243E /* FacebookButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5B66B727ECF5C200AC243E /* FacebookButtonCell.xib */; };
+		2F5B66BC27ECF5D700AC243E /* GoogleButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B66BA27ECF5D700AC243E /* GoogleButtonCell.swift */; };
+		2F5B66BD27ECF5D700AC243E /* GoogleButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5B66BB27ECF5D700AC243E /* GoogleButtonCell.xib */; };
+		2F5B66CE27ED1B6A00AC243E /* ResetPasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B66CC27ED1B6A00AC243E /* ResetPasswordCell.swift */; };
+		2F5B66CF27ED1B6A00AC243E /* ResetPasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5B66CD27ED1B6A00AC243E /* ResetPasswordCell.xib */; };
+		2F5B66D227ED1BA600AC243E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B66D027ED1BA600AC243E /* ResetPasswordViewController.swift */; };
+		2F5B66D327ED1BA600AC243E /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5B66D127ED1BA600AC243E /* ResetPasswordViewController.xib */; };
 		2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E12A27DCF47B0070397F /* PoseGalleryViewController.swift */; };
 		2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E12B27DCF47B0070397F /* PoseGalleryViewController.xib */; };
 		2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E14D27DCFA120070397F /* PoseCell.swift */; };
@@ -231,14 +235,8 @@
 		2F036FA727E429E400993E41 /* tappedSwitchObController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tappedSwitchObController.xib; sourceTree = "<group>"; };
 		2F036FA827E429E400993E41 /* tappedSwitchObController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tappedSwitchObController.swift; sourceTree = "<group>"; };
 		2F036FAA27E429E400993E41 /* NumericExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericExtensions.swift; sourceTree = "<group>"; };
-		2F0C33D027E432EC004A1E8C /* novaSenhaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novaSenhaViewController.swift; sourceTree = "<group>"; };
-		2F0C33D127E432EC004A1E8C /* novaSenhaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = novaSenhaViewController.xib; sourceTree = "<group>"; };
-		2F0C33D327E432EC004A1E8C /* InfEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfEmailViewController.swift; sourceTree = "<group>"; };
-		2F0C33D427E432EC004A1E8C /* InfEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfEmailViewController.xib; sourceTree = "<group>"; };
-		2F0C33D627E432EC004A1E8C /* modalSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modalSViewController.swift; sourceTree = "<group>"; };
-		2F0C33D727E432EC004A1E8C /* modalSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = modalSViewController.xib; sourceTree = "<group>"; };
-		2F0C33D927E432EC004A1E8C /* telaaLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = telaaLoginViewController.xib; sourceTree = "<group>"; };
-		2F0C33DA27E432EC004A1E8C /* telaaLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = telaaLoginViewController.swift; sourceTree = "<group>"; };
+		2F0C33D627E432EC004A1E8C /* ModalSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalSuccessViewController.swift; sourceTree = "<group>"; };
+		2F0C33D727E432EC004A1E8C /* ModalSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalSuccessViewController.xib; sourceTree = "<group>"; };
 		2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonController.swift; sourceTree = "<group>"; };
 		2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoRegisterVC.swift; sourceTree = "<group>"; };
 		2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInfoRegisterVC.xib; sourceTree = "<group>"; };
@@ -304,14 +302,10 @@
 		2F3A542427EC28AA00FBA25F /* LogoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoCell.xib; sourceTree = "<group>"; };
 		2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tappedSaveResultViewController.xib; sourceTree = "<group>"; };
 		2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tappedSaveResultViewController.swift; sourceTree = "<group>"; };
-		2F3A543327EC341000FBA25F /* FormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
-		2F3A543427EC341000FBA25F /* FormCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormCell.xib; sourceTree = "<group>"; };
 		2F3A543727EC341F00FBA25F /* SeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorCell.swift; sourceTree = "<group>"; };
 		2F3A543827EC341F00FBA25F /* SeparatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeparatorCell.xib; sourceTree = "<group>"; };
-		2F3A543B27EC342C00FBA25F /* SocialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialCell.swift; sourceTree = "<group>"; };
-		2F3A543C27EC342C00FBA25F /* SocialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialCell.xib; sourceTree = "<group>"; };
-		2F3A543F27EC343800FBA25F /* RegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCell.swift; sourceTree = "<group>"; };
-		2F3A544027EC343800FBA25F /* RegisterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCell.xib; sourceTree = "<group>"; };
+		2F3A543F27EC343800FBA25F /* RegisterButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonCell.swift; sourceTree = "<group>"; };
+		2F3A544027EC343800FBA25F /* RegisterButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterButtonCell.xib; sourceTree = "<group>"; };
 		2F3A544327EC3EE400FBA25F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F3A544427EC3EE400FBA25F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
@@ -338,6 +332,20 @@
 		2F412EE127E41A0B007708E8 /* pad-Ab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-Ab.mp3"; sourceTree = "<group>"; };
 		2F412EE227E41A0B007708E8 /* pad-Gb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-Gb.mp3"; sourceTree = "<group>"; };
 		2F412EE327E41A0B007708E8 /* pad-Eb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pad-Eb.mp3"; sourceTree = "<group>"; };
+		2F5B66A227ECD48E00AC243E /* LoginButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonCell.swift; sourceTree = "<group>"; };
+		2F5B66A327ECD48E00AC243E /* LoginButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginButtonCell.xib; sourceTree = "<group>"; };
+		2F5B66AA27ECD51D00AC243E /* EmailAndPasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAndPasswordCell.swift; sourceTree = "<group>"; };
+		2F5B66AB27ECD51D00AC243E /* EmailAndPasswordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailAndPasswordCell.xib; sourceTree = "<group>"; };
+		2F5B66AF27ECD75200AC243E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2F5B66B127ECD8A700AC243E /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		2F5B66B627ECF5C200AC243E /* FacebookButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButtonCell.swift; sourceTree = "<group>"; };
+		2F5B66B727ECF5C200AC243E /* FacebookButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacebookButtonCell.xib; sourceTree = "<group>"; };
+		2F5B66BA27ECF5D700AC243E /* GoogleButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButtonCell.swift; sourceTree = "<group>"; };
+		2F5B66BB27ECF5D700AC243E /* GoogleButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoogleButtonCell.xib; sourceTree = "<group>"; };
+		2F5B66CC27ED1B6A00AC243E /* ResetPasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordCell.swift; sourceTree = "<group>"; };
+		2F5B66CD27ED1B6A00AC243E /* ResetPasswordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordCell.xib; sourceTree = "<group>"; };
+		2F5B66D027ED1BA600AC243E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		2F5B66D127ED1BA600AC243E /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
 		2F79E12A27DCF47B0070397F /* PoseGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGalleryViewController.swift; sourceTree = "<group>"; };
 		2F79E12B27DCF47B0070397F /* PoseGalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseGalleryViewController.xib; sourceTree = "<group>"; };
 		2F79E14D27DCFA120070397F /* PoseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCell.swift; sourceTree = "<group>"; };
@@ -602,51 +610,36 @@
 		2F0C33CE27E432EC004A1E8C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2F0C33CF27E432EC004A1E8C /* Nova Senha */,
-				2F0C33D227E432EC004A1E8C /* InformarEmail */,
-				2F0C33D527E432EC004A1E8C /* ModalSucesso */,
+				2F0C33D227E432EC004A1E8C /* ForgotPassword */,
+				2F0C33D527E432EC004A1E8C /* Modal */,
 				2F0C33D827E432EC004A1E8C /* Login */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		2F0C33CF27E432EC004A1E8C /* Nova Senha */ = {
+		2F0C33D227E432EC004A1E8C /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
-				2F0C33D027E432EC004A1E8C /* novaSenhaViewController.swift */,
-				2F0C33D127E432EC004A1E8C /* novaSenhaViewController.xib */,
+				2F5B66D027ED1BA600AC243E /* ResetPasswordViewController.swift */,
+				2F5B66D127ED1BA600AC243E /* ResetPasswordViewController.xib */,
 			);
-			path = "Nova Senha";
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
-		2F0C33D227E432EC004A1E8C /* InformarEmail */ = {
+		2F0C33D527E432EC004A1E8C /* Modal */ = {
 			isa = PBXGroup;
 			children = (
-				2F0C33D327E432EC004A1E8C /* InfEmailViewController.swift */,
-				2F0C33D427E432EC004A1E8C /* InfEmailViewController.xib */,
+				2F0C33D627E432EC004A1E8C /* ModalSuccessViewController.swift */,
+				2F0C33D727E432EC004A1E8C /* ModalSuccessViewController.xib */,
 			);
-			path = InformarEmail;
-			sourceTree = "<group>";
-		};
-		2F0C33D527E432EC004A1E8C /* ModalSucesso */ = {
-			isa = PBXGroup;
-			children = (
-				2F0C33D627E432EC004A1E8C /* modalSViewController.swift */,
-				2F0C33D727E432EC004A1E8C /* modalSViewController.xib */,
-			);
-			path = ModalSucesso;
+			path = Modal;
 			sourceTree = "<group>";
 		};
 		2F0C33D827E432EC004A1E8C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2F3A542227EC272400FBA25F /* RegisterCell */,
-				2F3A542127EC270700FBA25F /* SocialCell */,
-				2F3A542027EC26FC00FBA25F /* SeparatorCell */,
-				2F3A541F27EC267900FBA25F /* FormCell */,
-				2F3A541E27EC267200FBA25F /* LogoCell */,
-				2F0C33D927E432EC004A1E8C /* telaaLoginViewController.xib */,
-				2F0C33DA27E432EC004A1E8C /* telaaLoginViewController.swift */,
+				2F5B66AE27ECD74800AC243E /* Models */,
+				2F3A541F27EC267900FBA25F /* Form */,
 				2F3A544327EC3EE400FBA25F /* LoginViewController.swift */,
 				2F3A544427EC3EE400FBA25F /* LoginViewController.xib */,
 			);
@@ -853,6 +846,7 @@
 			children = (
 				2FA287CC27EAD19000C5BD81 /* Navigable.swift */,
 				2F412EB127E4101E007708E8 /* Router.swift */,
+				2F5B66B127ECD8A700AC243E /* FormValidation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -999,13 +993,15 @@
 			path = LogoCell;
 			sourceTree = "<group>";
 		};
-		2F3A541F27EC267900FBA25F /* FormCell */ = {
+		2F3A541F27EC267900FBA25F /* Form */ = {
 			isa = PBXGroup;
 			children = (
-				2F3A543327EC341000FBA25F /* FormCell.swift */,
-				2F3A543427EC341000FBA25F /* FormCell.xib */,
+				2F3A541E27EC267200FBA25F /* LogoCell */,
+				2F3A542027EC26FC00FBA25F /* SeparatorCell */,
+				2F5B66A127ECD46D00AC243E /* Buttons */,
+				2F5B669E27ECD43F00AC243E /* TextFields */,
 			);
-			path = FormCell;
+			path = Form;
 			sourceTree = "<group>";
 		};
 		2F3A542027EC26FC00FBA25F /* SeparatorCell */ = {
@@ -1017,22 +1013,13 @@
 			path = SeparatorCell;
 			sourceTree = "<group>";
 		};
-		2F3A542127EC270700FBA25F /* SocialCell */ = {
+		2F3A542227EC272400FBA25F /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				2F3A543B27EC342C00FBA25F /* SocialCell.swift */,
-				2F3A543C27EC342C00FBA25F /* SocialCell.xib */,
+				2F3A543F27EC343800FBA25F /* RegisterButtonCell.swift */,
+				2F3A544027EC343800FBA25F /* RegisterButtonCell.xib */,
 			);
-			path = SocialCell;
-			sourceTree = "<group>";
-		};
-		2F3A542227EC272400FBA25F /* RegisterCell */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A543F27EC343800FBA25F /* RegisterCell.swift */,
-				2F3A544027EC343800FBA25F /* RegisterCell.xib */,
-			);
-			path = RegisterCell;
+			path = Register;
 			sourceTree = "<group>";
 		};
 		2F3A542E27EC2E5000FBA25F /* TappedButtonSave */ = {
@@ -1161,6 +1148,79 @@
 				2F412EE327E41A0B007708E8 /* pad-Eb.mp3 */,
 			);
 			path = SoundBank;
+			sourceTree = "<group>";
+		};
+		2F5B669E27ECD43F00AC243E /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66AA27ECD51D00AC243E /* EmailAndPasswordCell.swift */,
+				2F5B66AB27ECD51D00AC243E /* EmailAndPasswordCell.xib */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		2F5B66A027ECD45700AC243E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66A227ECD48E00AC243E /* LoginButtonCell.swift */,
+				2F5B66A327ECD48E00AC243E /* LoginButtonCell.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F5B66A127ECD46D00AC243E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66CB27ED1B2100AC243E /* ResetPassword */,
+				2F3A542227EC272400FBA25F /* Register */,
+				2F5B66B327ECF57300AC243E /* Social */,
+				2F5B66A027ECD45700AC243E /* Login */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		2F5B66AE27ECD74800AC243E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66AF27ECD75200AC243E /* UserData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F5B66B327ECF57300AC243E /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66B527ECF58500AC243E /* Facebook */,
+				2F5B66B427ECF58300AC243E /* Google */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		2F5B66B427ECF58300AC243E /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66BA27ECF5D700AC243E /* GoogleButtonCell.swift */,
+				2F5B66BB27ECF5D700AC243E /* GoogleButtonCell.xib */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		2F5B66B527ECF58500AC243E /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66B627ECF5C200AC243E /* FacebookButtonCell.swift */,
+				2F5B66B727ECF5C200AC243E /* FacebookButtonCell.xib */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		2F5B66CB27ED1B2100AC243E /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66CC27ED1B6A00AC243E /* ResetPasswordCell.swift */,
+				2F5B66CD27ED1B6A00AC243E /* ResetPasswordCell.xib */,
+			);
+			path = ResetPassword;
 			sourceTree = "<group>";
 		};
 		2F79E12627DCF42B0070397F /* PoseGallery */ = {
@@ -1423,6 +1483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F412ED927E41821007708E8 /* PracticeViewController.xib in Resources */,
+				2F5B66AD27ECD51D00AC243E /* EmailAndPasswordCell.xib in Resources */,
 				2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */,
 				2F0C342927E4384E004A1E8C /* ModalViewController.xib in Resources */,
 				2F0C342527E4384E004A1E8C /* AnimationViewController.xib in Resources */,
@@ -1431,13 +1492,13 @@
 				2F0C343827E43954004A1E8C /* expire.mp4 in Resources */,
 				2F3A541127EC04A100FBA25F /* DropDownTwoTableViewCell.xib in Resources */,
 				2F0C343727E43954004A1E8C /* hold.mp4 in Resources */,
-				2F3A543E27EC342C00FBA25F /* SocialCell.xib in Resources */,
 				2F412EF127E41A0B007708E8 /* pad-A.mp3 in Resources */,
 				2F0C343527E43954004A1E8C /* inhale.mp4 in Resources */,
 				2F3A543A27EC341F00FBA25F /* SeparatorCell.xib in Resources */,
 				2F3A540827EC04A100FBA25F /* LeaveTrainingVC.xib in Resources */,
 				2F412ED127E41821007708E8 /* AudioCell.xib in Resources */,
 				2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */,
+				2F5B66CF27ED1B6A00AC243E /* ResetPasswordCell.xib in Resources */,
 				2F3A53FE27EC04A100FBA25F /* TrainingListController.xib in Resources */,
 				2F0C342827E4384E004A1E8C /* ExpireViewController.xib in Resources */,
 				8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */,
@@ -1457,8 +1518,9 @@
 				2F412ED427E41821007708E8 /* IntroViewController.xib in Resources */,
 				2F0C342C27E4384E004A1E8C /* HoldViewController.xib in Resources */,
 				8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */,
-				2F0C33DE27E432EC004A1E8C /* InfEmailViewController.xib in Resources */,
 				2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */,
+				2F5B66D327ED1BA600AC243E /* ResetPasswordViewController.xib in Resources */,
+				2F5B66A527ECD48E00AC243E /* LoginButtonCell.xib in Resources */,
 				2F0C343627E43954004A1E8C /* start.mp4 in Resources */,
 				8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */,
 				8391EA5A27E820E800F466F2 /* Comfortaa-Regular.ttf in Resources */,
@@ -1470,10 +1532,9 @@
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
 				2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */,
-				2F3A544227EC343800FBA25F /* RegisterCell.xib in Resources */,
+				2F3A544227EC343800FBA25F /* RegisterButtonCell.xib in Resources */,
 				2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
-				2F3A543627EC341000FBA25F /* FormCell.xib in Resources */,
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
 				2F036FAB27E429E400993E41 /* ImcController.xib in Resources */,
 				2F036F8C27E429D800993E41 /* Alert.storyboard in Resources */,
@@ -1482,6 +1543,7 @@
 				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
 				2F3A542627EC28AA00FBA25F /* LogoCell.xib in Resources */,
 				2F036FB027E429E400993E41 /* HistoricoController.xib in Resources */,
+				2F5B66BD27ECF5D700AC243E /* GoogleButtonCell.xib in Resources */,
 				2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */,
 				2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */,
 				8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */,
@@ -1489,24 +1551,23 @@
 				2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */,
 				2F036F7B27E429D800993E41 /* HomeEvents.storyboard in Resources */,
 				2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */,
-				2F0C33E127E432EC004A1E8C /* telaaLoginViewController.xib in Resources */,
 				2F412EF727E41A0B007708E8 /* pad-Gb.mp3 in Resources */,
 				8391EA5527E820E800F466F2 /* Comfortaa-SemiBold.ttf in Resources */,
 				2F3A540127EC04A100FBA25F /* TrainingCustomCell.xib in Resources */,
 				2F412EF527E41A0B007708E8 /* pad-D.mp3 in Resources */,
 				2F0C33FA27E434DA004A1E8C /* UserLevelVC.xib in Resources */,
+				2F5B66B927ECF5C200AC243E /* FacebookButtonCell.xib in Resources */,
 				2F412EF827E41A0B007708E8 /* pad-Eb.mp3 in Resources */,
 				2F036FB627E429E400993E41 /* ResultadoController.xib in Resources */,
 				2F036F8A27E429D800993E41 /* EditEventDetailViewController.xib in Resources */,
 				2F412EF627E41A0B007708E8 /* pad-Ab.mp3 in Resources */,
 				8391EA5327E820E800F466F2 /* Montserrat-ExtraLight.ttf in Resources */,
-				2F0C33DC27E432EC004A1E8C /* novaSenhaViewController.xib in Resources */,
 				2F0C33FE27E434DA004A1E8C /* CustomMainRegisterCell.xib in Resources */,
 				2F0C341C27E4384E004A1E8C /* SettingsViewController.xib in Resources */,
 				2F0C343927E43954004A1E8C /* intro.mp4 in Resources */,
 				2F412EF427E41A0B007708E8 /* pad-E.mp3 in Resources */,
 				2F0C341E27E4384E004A1E8C /* BreathingHomeViewController.xib in Resources */,
-				2F0C33E027E432EC004A1E8C /* modalSViewController.xib in Resources */,
+				2F0C33E027E432EC004A1E8C /* ModalSuccessViewController.xib in Resources */,
 				8391EA5827E820E800F466F2 /* Montserrat-ExtraBold.ttf in Resources */,
 				2F3A53D227EB67B500FBA25F /* HeaderCell.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
@@ -1526,24 +1587,24 @@
 				2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */,
 				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F0C342327E4384E004A1E8C /* StartViewController.swift in Sources */,
+				2F5B66D227ED1BA600AC243E /* ResetPasswordViewController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
 				2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
 				2F036F8127E429D800993E41 /* EventData.swift in Sources */,
 				2F3A543227EC2E5000FBA25F /* tappedSaveResultViewController.swift in Sources */,
+				2F5B66CE27ED1B6A00AC243E /* ResetPasswordCell.swift in Sources */,
 				2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */,
-				2F0C33DB27E432EC004A1E8C /* novaSenhaViewController.swift in Sources */,
 				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
-				2F0C33DF27E432EC004A1E8C /* modalSViewController.swift in Sources */,
+				2F0C33DF27E432EC004A1E8C /* ModalSuccessViewController.swift in Sources */,
 				2F036FB127E429E400993E41 /* HistoricoTableViewCell.swift in Sources */,
-				2F3A543527EC341000FBA25F /* FormCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
 				2F3A541027EC04A100FBA25F /* DropDownTwoTableViewCell.swift in Sources */,
 				2F412ED227E41821007708E8 /* AudioCell.swift in Sources */,
-				2F3A543D27EC342C00FBA25F /* SocialCell.swift in Sources */,
 				2F3A540527EC04A100FBA25F /* TrainingStartedVC.swift in Sources */,
 				2F3A540427EC04A100FBA25F /* RenderGIF.swift in Sources */,
+				2F5B66BC27ECF5D700AC243E /* GoogleButtonCell.swift in Sources */,
 				2F412ED627E41821007708E8 /* MeditationAudioFile.swift in Sources */,
 				2F0C342727E4384E004A1E8C /* ExpireViewController.swift in Sources */,
 				2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */,
@@ -1553,17 +1614,20 @@
 				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
 				2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
+				2F5B66B027ECD75200AC243E /* UserData.swift in Sources */,
 				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
 				2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */,
 				2F79E15E27DD0DB60070397F /* ModalVideoViewController.swift in Sources */,
 				2F036F8D27E429D800993E41 /* AlertService.swift in Sources */,
 				2F036F8227E429D800993E41 /* CreateNewEventViewController.swift in Sources */,
 				2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */,
+				2F5B66B827ECF5C200AC243E /* FacebookButtonCell.swift in Sources */,
 				2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */,
 				8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */,
 				2F3A540B27EC04A100FBA25F /* TrainingPausedVC.swift in Sources */,
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
 				2F3A544527EC3EE400FBA25F /* LoginViewController.swift in Sources */,
+				2F5B66B227ECD8A700AC243E /* FormValidation.swift in Sources */,
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036FAC27E429E400993E41 /* ImcController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
@@ -1583,11 +1647,12 @@
 				2F3A540E27EC04A100FBA25F /* DropDownTableViewCell.swift in Sources */,
 				2F3A543927EC341F00FBA25F /* SeparatorCell.swift in Sources */,
 				2F0C342E27E4384E004A1E8C /* InhaleViewController.swift in Sources */,
-				2F3A544127EC343800FBA25F /* RegisterCell.swift in Sources */,
+				2F3A544127EC343800FBA25F /* RegisterButtonCell.swift in Sources */,
 				2F036FB527E429E400993E41 /* ResultadoController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */,
 				2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */,
+				2F5B66A427ECD48E00AC243E /* LoginButtonCell.swift in Sources */,
 				2F036F7D27E429D800993E41 /* EventCell.swift in Sources */,
 				2F036F9127E429D800993E41 /* Event.swift in Sources */,
 				2F3A540927EC04A100FBA25F /* LeaveTrainingVC.swift in Sources */,
@@ -1599,12 +1664,11 @@
 				2F036FB427E429E400993E41 /* Result.swift in Sources */,
 				2F3A53FF27EC04A100FBA25F /* TrainingListController.swift in Sources */,
 				2F036FB327E429E400993E41 /* ImcEnums.swift in Sources */,
-				2F0C33E227E432EC004A1E8C /* telaaLoginViewController.swift in Sources */,
-				2F0C33DD27E432EC004A1E8C /* InfEmailViewController.swift in Sources */,
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
 				2F412EB827E4101E007708E8 /* Router.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
+				2F5B66AC27ECD51D00AC243E /* EmailAndPasswordCell.swift in Sources */,
 				2F3A540227EC04A100FBA25F /* TrainingFinishedVC.swift in Sources */,
 				2F036FB827E429E400993E41 /* tappedSwitchObController.swift in Sources */,
 				2F3A542527EC28AA00FBA25F /* LogoCell.swift in Sources */,

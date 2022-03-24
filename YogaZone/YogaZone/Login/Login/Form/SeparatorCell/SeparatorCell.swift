@@ -15,20 +15,11 @@ class SeparatorCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        self.firstSeparatorView.awakeFromNib()
-        self.secondSeparatorView.awakeFromNib()
-
     }
     
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        self.firstSeparatorView.backgroundColor = .black
-        self.secondSeparatorView.backgroundColor = .black
-        self.firstSeparatorView.layer.borderWidth = 1
-        self.secondSeparatorView.layer.borderWidth = 1
     }
 }
 

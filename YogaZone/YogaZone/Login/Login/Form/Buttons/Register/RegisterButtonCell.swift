@@ -7,24 +7,24 @@
 
 import UIKit
 
-class RegisterCell: UITableViewCell {
-
+class RegisterButtonCell: UITableViewCell {
+    weak var delegate: Navigable?
+    
     @IBOutlet weak var registerButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     @IBAction func tappedRegisterButton(_ sender: Any) {
-        print(#function)
+        self.delegate?.navigateTo(routeIndex: 4)
     }
     
 }
 
 // MARK: Static properties & methods
-extension RegisterCell {
-    static let identifier: String = "RegisterCell"
+extension RegisterButtonCell {
+    static let identifier: String = "RegisterButtonCell"
     
     static func getNib() -> UINib {
         return UINib(nibName: self.identifier, bundle: nil)
