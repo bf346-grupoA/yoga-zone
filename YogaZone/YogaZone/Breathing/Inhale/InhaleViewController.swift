@@ -46,18 +46,20 @@ class InhaleViewController: UIViewController {
                                      endAngle: .pi * 2,
                                      clockwise: true)
         
+//        let screenWidth = self.view.frame.size.width
+                
         let trackShape = CAShapeLayer()
         trackShape.path = ciclePath.cgPath
         trackShape.fillColor = UIColor.clear.cgColor
         trackShape.lineWidth = 15
-        trackShape.frame = CGRect(x: -20, y: -130, width: 100, height: 50)
+        trackShape.frame = CGRect(x: view.frame.size.width / -45, y: -130, width: 80, height: 80)
         trackShape.strokeColor = UIColor.lightGray.cgColor
         view.layer.addSublayer(trackShape)
         
         shape.path = ciclePath.cgPath
         shape.lineWidth = 15
         shape.strokeColor = CGColor(red: 114/255, green: 103/255, blue: 203/255, alpha: 1)
-        shape.frame = CGRect(x: -4, y: -130, width: 100, height: 50)
+        shape.frame = CGRect(x: view.frame.size.width / -45, y: -130, width: 100, height: 50)
         shape.fillColor = UIColor.clear.cgColor
         shape.strokeEnd = 0
         view.layer.addSublayer(shape)
@@ -121,6 +123,7 @@ class InhaleViewController: UIViewController {
         if(seconds == 0)
         {
             timer.invalidate()
+            self.navigationController? .pushViewController (StartViewController(), animated: true)
         }
     }
     

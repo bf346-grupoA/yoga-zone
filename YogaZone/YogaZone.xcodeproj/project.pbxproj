@@ -81,8 +81,6 @@
 		2F0C342827E4384E004A1E8C /* ExpireViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C341227E4384E004A1E8C /* ExpireViewController1.xib */; };
 		2F0C342927E4384E004A1E8C /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C341427E4384E004A1E8C /* ModalViewController.xib */; };
 		2F0C342A27E4384E004A1E8C /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C341527E4384E004A1E8C /* ModalViewController.swift */; };
-		2F0C342B27E4384E004A1E8C /* HoldViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C341727E4384E004A1E8C /* HoldViewController1.swift */; };
-		2F0C342C27E4384E004A1E8C /* HoldViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C341827E4384E004A1E8C /* HoldViewController1.xib */; };
 		2F0C342D27E4384E004A1E8C /* InhaleViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C341A27E4384E004A1E8C /* InhaleViewController1.xib */; };
 		2F0C342E27E4384E004A1E8C /* InhaleViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C341B27E4384E004A1E8C /* InhaleViewController1.swift */; };
 		2F0C343527E43954004A1E8C /* inhale.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343027E43954004A1E8C /* inhale.mp4 */; };
@@ -241,8 +239,6 @@
 		2F0C341227E4384E004A1E8C /* ExpireViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpireViewController1.xib; sourceTree = "<group>"; };
 		2F0C341427E4384E004A1E8C /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 		2F0C341527E4384E004A1E8C /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		2F0C341727E4384E004A1E8C /* HoldViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldViewController1.swift; sourceTree = "<group>"; };
-		2F0C341827E4384E004A1E8C /* HoldViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HoldViewController1.xib; sourceTree = "<group>"; };
 		2F0C341A27E4384E004A1E8C /* InhaleViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InhaleViewController1.xib; sourceTree = "<group>"; };
 		2F0C341B27E4384E004A1E8C /* InhaleViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InhaleViewController1.swift; sourceTree = "<group>"; };
 		2F0C343027E43954004A1E8C /* inhale.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = inhale.mp4; sourceTree = "<group>"; };
@@ -673,7 +669,6 @@
 				2F0C340F27E4384E004A1E8C /* ViewModel.swift */,
 				2F0C341027E4384E004A1E8C /* Expire1 */,
 				2F0C341327E4384E004A1E8C /* Modal */,
-				2F0C341627E4384E004A1E8C /* Hold1 */,
 				2F0C341927E4384E004A1E8C /* Inhale1 */,
 			);
 			path = Breathing;
@@ -731,15 +726,6 @@
 				2F0C341527E4384E004A1E8C /* ModalViewController.swift */,
 			);
 			path = Modal;
-			sourceTree = "<group>";
-		};
-		2F0C341627E4384E004A1E8C /* Hold1 */ = {
-			isa = PBXGroup;
-			children = (
-				2F0C341727E4384E004A1E8C /* HoldViewController1.swift */,
-				2F0C341827E4384E004A1E8C /* HoldViewController1.xib */,
-			);
-			path = Hold1;
 			sourceTree = "<group>";
 		};
 		2F0C341927E4384E004A1E8C /* Inhale1 */ = {
@@ -1160,7 +1146,6 @@
 				2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */,
 				2F412ED427E41821007708E8 /* IntroViewController.xib in Resources */,
 				5C77B6BE27EAD96C0030EAC7 /* 002-play.png in Resources */,
-				2F0C342C27E4384E004A1E8C /* HoldViewController1.xib in Resources */,
 				2F0C33DE27E432EC004A1E8C /* InfEmailViewController.xib in Resources */,
 				2F0C343627E43954004A1E8C /* start.mp4 in Resources */,
 				2F412EF227E41A0B007708E8 /* pad-C.mp3 in Resources */,
@@ -1293,7 +1278,6 @@
 				2F412EBA27E4101E007708E8 /* HomeHeader.swift in Sources */,
 				2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
-				2F0C342B27E4384E004A1E8C /* HoldViewController1.swift in Sources */,
 				2F0C342427E4384E004A1E8C /* AnimationViewController.swift in Sources */,
 				2F036F8E27E429D800993E41 /* AlertViewController.swift in Sources */,
 				2F036F8B27E429D800993E41 /* EditEventDetailViewController.swift in Sources */,

@@ -59,8 +59,8 @@ class InhaleViewController1: UIViewController {
 
 
 
-    @IBAction func inhaleNextButton(_ sender: Any) {
-        self.navigationController? .pushViewController (HoldViewController1(), animated: true)
+//    @IBAction func inhaleNextButton(_ sender: Any) {
+//        self.navigationController? .pushViewController (HoldViewController1(), animated: true)
 
 //        print("Olá")
 //
@@ -96,6 +96,6 @@ class InhaleViewController1: UIViewController {
 //    }
 
 }
-}
+
 //
 //
