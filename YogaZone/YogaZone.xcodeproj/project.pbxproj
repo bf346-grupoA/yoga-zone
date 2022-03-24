@@ -32,8 +32,6 @@
 		2F036F9127E429D800993E41 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F7627E429D800993E41 /* Event.swift */; };
 		2F036FAB27E429E400993E41 /* ImcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F9427E429E400993E41 /* ImcController.xib */; };
 		2F036FAC27E429E400993E41 /* ImcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F9527E429E400993E41 /* ImcController.swift */; };
-		2F036FAD27E429E400993E41 /* TapeedSwitchObViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F9727E429E400993E41 /* TapeedSwitchObViewController.swift */; };
-		2F036FAE27E429E400993E41 /* TapeedSwitchObViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F9827E429E400993E41 /* TapeedSwitchObViewController.xib */; };
 		2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F9A27E429E400993E41 /* HistoricoController.swift */; };
 		2F036FB027E429E400993E41 /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F9B27E429E400993E41 /* HistoricoController.xib */; };
 		2F036FB127E429E400993E41 /* HistoricoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F9D27E429E400993E41 /* HistoricoTableViewCell.swift */; };
@@ -114,6 +112,20 @@
 		2F3A541127EC04A100FBA25F /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */; };
 		2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */; };
 		2F3A541327EC04A100FBA25F /* LevelAndDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */; };
+		2F3A542527EC28AA00FBA25F /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A542327EC28AA00FBA25F /* LogoCell.swift */; };
+		2F3A542627EC28AA00FBA25F /* LogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A542427EC28AA00FBA25F /* LogoCell.xib */; };
+		2F3A543127EC2E5000FBA25F /* tappedSaveResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */; };
+		2F3A543227EC2E5000FBA25F /* tappedSaveResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */; };
+		2F3A543527EC341000FBA25F /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543327EC341000FBA25F /* FormCell.swift */; };
+		2F3A543627EC341000FBA25F /* FormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A543427EC341000FBA25F /* FormCell.xib */; };
+		2F3A543927EC341F00FBA25F /* SeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543727EC341F00FBA25F /* SeparatorCell.swift */; };
+		2F3A543A27EC341F00FBA25F /* SeparatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A543827EC341F00FBA25F /* SeparatorCell.xib */; };
+		2F3A543D27EC342C00FBA25F /* SocialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543B27EC342C00FBA25F /* SocialCell.swift */; };
+		2F3A543E27EC342C00FBA25F /* SocialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A543C27EC342C00FBA25F /* SocialCell.xib */; };
+		2F3A544127EC343800FBA25F /* RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543F27EC343800FBA25F /* RegisterCell.swift */; };
+		2F3A544227EC343800FBA25F /* RegisterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A544027EC343800FBA25F /* RegisterCell.xib */; };
+		2F3A544527EC3EE400FBA25F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A544327EC3EE400FBA25F /* LoginViewController.swift */; };
+		2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A544427EC3EE400FBA25F /* LoginViewController.xib */; };
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
 		2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* CardMenuCell.swift */; };
 		2F412EB827E4101E007708E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB127E4101E007708E8 /* Router.swift */; };
@@ -208,8 +220,6 @@
 		2F036F7627E429D800993E41 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		2F036F9427E429E400993E41 /* ImcController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImcController.xib; sourceTree = "<group>"; };
 		2F036F9527E429E400993E41 /* ImcController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImcController.swift; sourceTree = "<group>"; };
-		2F036F9727E429E400993E41 /* TapeedSwitchObViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapeedSwitchObViewController.swift; sourceTree = "<group>"; };
-		2F036F9827E429E400993E41 /* TapeedSwitchObViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapeedSwitchObViewController.xib; sourceTree = "<group>"; };
 		2F036F9A27E429E400993E41 /* HistoricoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
 		2F036F9B27E429E400993E41 /* HistoricoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
 		2F036F9D27E429E400993E41 /* HistoricoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewCell.swift; sourceTree = "<group>"; };
@@ -290,6 +300,20 @@
 		2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
 		2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelAndDurationVC.xib; sourceTree = "<group>"; };
 		2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelAndDurationVC.swift; sourceTree = "<group>"; };
+		2F3A542327EC28AA00FBA25F /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
+		2F3A542427EC28AA00FBA25F /* LogoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoCell.xib; sourceTree = "<group>"; };
+		2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tappedSaveResultViewController.xib; sourceTree = "<group>"; };
+		2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tappedSaveResultViewController.swift; sourceTree = "<group>"; };
+		2F3A543327EC341000FBA25F /* FormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
+		2F3A543427EC341000FBA25F /* FormCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormCell.xib; sourceTree = "<group>"; };
+		2F3A543727EC341F00FBA25F /* SeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorCell.swift; sourceTree = "<group>"; };
+		2F3A543827EC341F00FBA25F /* SeparatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeparatorCell.xib; sourceTree = "<group>"; };
+		2F3A543B27EC342C00FBA25F /* SocialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialCell.swift; sourceTree = "<group>"; };
+		2F3A543C27EC342C00FBA25F /* SocialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialCell.xib; sourceTree = "<group>"; };
+		2F3A543F27EC343800FBA25F /* RegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCell.swift; sourceTree = "<group>"; };
+		2F3A544027EC343800FBA25F /* RegisterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCell.xib; sourceTree = "<group>"; };
+		2F3A544327EC3EE400FBA25F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F3A544427EC3EE400FBA25F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		2F412EB027E4101E007708E8 /* CardMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMenuCell.swift; sourceTree = "<group>"; };
 		2F412EB127E4101E007708E8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -494,7 +518,6 @@
 			isa = PBXGroup;
 			children = (
 				2F036F9327E429E400993E41 /* Home */,
-				2F036F9627E429E400993E41 /* TapeedSwitchOb */,
 				2F036F9927E429E400993E41 /* HIstorico */,
 				2F036F9F27E429E400993E41 /* Enums */,
 				2F036FA127E429E400993E41 /* Models */,
@@ -512,15 +535,6 @@
 				2F036F9527E429E400993E41 /* ImcController.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		2F036F9627E429E400993E41 /* TapeedSwitchOb */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F9727E429E400993E41 /* TapeedSwitchObViewController.swift */,
-				2F036F9827E429E400993E41 /* TapeedSwitchObViewController.xib */,
-			);
-			path = TapeedSwitchOb;
 			sourceTree = "<group>";
 		};
 		2F036F9927E429E400993E41 /* HIstorico */ = {
@@ -561,6 +575,7 @@
 		2F036FA327E429E400993E41 /* Resultado */ = {
 			isa = PBXGroup;
 			children = (
+				2F3A542E27EC2E5000FBA25F /* TappedButtonSave */,
 				2F036FA427E429E400993E41 /* ResultadoController.swift */,
 				2F036FA527E429E400993E41 /* ResultadoController.xib */,
 			);
@@ -625,8 +640,15 @@
 		2F0C33D827E432EC004A1E8C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2F3A542227EC272400FBA25F /* RegisterCell */,
+				2F3A542127EC270700FBA25F /* SocialCell */,
+				2F3A542027EC26FC00FBA25F /* SeparatorCell */,
+				2F3A541F27EC267900FBA25F /* FormCell */,
+				2F3A541E27EC267200FBA25F /* LogoCell */,
 				2F0C33D927E432EC004A1E8C /* telaaLoginViewController.xib */,
 				2F0C33DA27E432EC004A1E8C /* telaaLoginViewController.swift */,
+				2F3A544327EC3EE400FBA25F /* LoginViewController.swift */,
+				2F3A544427EC3EE400FBA25F /* LoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -966,6 +988,60 @@
 				2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */,
 			);
 			path = DropDownTwoTableCell;
+			sourceTree = "<group>";
+		};
+		2F3A541E27EC267200FBA25F /* LogoCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A542327EC28AA00FBA25F /* LogoCell.swift */,
+				2F3A542427EC28AA00FBA25F /* LogoCell.xib */,
+			);
+			path = LogoCell;
+			sourceTree = "<group>";
+		};
+		2F3A541F27EC267900FBA25F /* FormCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A543327EC341000FBA25F /* FormCell.swift */,
+				2F3A543427EC341000FBA25F /* FormCell.xib */,
+			);
+			path = FormCell;
+			sourceTree = "<group>";
+		};
+		2F3A542027EC26FC00FBA25F /* SeparatorCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A543727EC341F00FBA25F /* SeparatorCell.swift */,
+				2F3A543827EC341F00FBA25F /* SeparatorCell.xib */,
+			);
+			path = SeparatorCell;
+			sourceTree = "<group>";
+		};
+		2F3A542127EC270700FBA25F /* SocialCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A543B27EC342C00FBA25F /* SocialCell.swift */,
+				2F3A543C27EC342C00FBA25F /* SocialCell.xib */,
+			);
+			path = SocialCell;
+			sourceTree = "<group>";
+		};
+		2F3A542227EC272400FBA25F /* RegisterCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A543F27EC343800FBA25F /* RegisterCell.swift */,
+				2F3A544027EC343800FBA25F /* RegisterCell.xib */,
+			);
+			path = RegisterCell;
+			sourceTree = "<group>";
+		};
+		2F3A542E27EC2E5000FBA25F /* TappedButtonSave */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */,
+				2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */,
+			);
+			path = TappedButtonSave;
 			sourceTree = "<group>";
 		};
 		2F412EAD27E4101E007708E8 /* Home */ = {
@@ -1355,8 +1431,10 @@
 				2F0C343827E43954004A1E8C /* expire.mp4 in Resources */,
 				2F3A541127EC04A100FBA25F /* DropDownTwoTableViewCell.xib in Resources */,
 				2F0C343727E43954004A1E8C /* hold.mp4 in Resources */,
+				2F3A543E27EC342C00FBA25F /* SocialCell.xib in Resources */,
 				2F412EF127E41A0B007708E8 /* pad-A.mp3 in Resources */,
 				2F0C343527E43954004A1E8C /* inhale.mp4 in Resources */,
+				2F3A543A27EC341F00FBA25F /* SeparatorCell.xib in Resources */,
 				2F3A540827EC04A100FBA25F /* LeaveTrainingVC.xib in Resources */,
 				2F412ED127E41821007708E8 /* AudioCell.xib in Resources */,
 				2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */,
@@ -1392,21 +1470,25 @@
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
 				2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */,
+				2F3A544227EC343800FBA25F /* RegisterCell.xib in Resources */,
 				2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
+				2F3A543627EC341000FBA25F /* FormCell.xib in Resources */,
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
 				2F036FAB27E429E400993E41 /* ImcController.xib in Resources */,
 				2F036F8C27E429D800993E41 /* Alert.storyboard in Resources */,
 				2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */,
 				2F036F7827E429D800993E41 /* EventFilterViewController.xib in Resources */,
 				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
+				2F3A542627EC28AA00FBA25F /* LogoCell.xib in Resources */,
 				2F036FB027E429E400993E41 /* HistoricoController.xib in Resources */,
 				2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */,
+				2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */,
 				8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */,
+				2F3A543127EC2E5000FBA25F /* tappedSaveResultViewController.xib in Resources */,
 				2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */,
 				2F036F7B27E429D800993E41 /* HomeEvents.storyboard in Resources */,
 				2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */,
-				2F036FAE27E429E400993E41 /* TapeedSwitchObViewController.xib in Resources */,
 				2F0C33E127E432EC004A1E8C /* telaaLoginViewController.xib in Resources */,
 				2F412EF727E41A0B007708E8 /* pad-Gb.mp3 in Resources */,
 				8391EA5527E820E800F466F2 /* Comfortaa-SemiBold.ttf in Resources */,
@@ -1448,16 +1530,18 @@
 				2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
 				2F036F8127E429D800993E41 /* EventData.swift in Sources */,
+				2F3A543227EC2E5000FBA25F /* tappedSaveResultViewController.swift in Sources */,
 				2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */,
 				2F0C33DB27E432EC004A1E8C /* novaSenhaViewController.swift in Sources */,
 				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
 				2F0C33DF27E432EC004A1E8C /* modalSViewController.swift in Sources */,
-				2F036FAD27E429E400993E41 /* TapeedSwitchObViewController.swift in Sources */,
 				2F036FB127E429E400993E41 /* HistoricoTableViewCell.swift in Sources */,
+				2F3A543527EC341000FBA25F /* FormCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
 				2F3A541027EC04A100FBA25F /* DropDownTwoTableViewCell.swift in Sources */,
 				2F412ED227E41821007708E8 /* AudioCell.swift in Sources */,
+				2F3A543D27EC342C00FBA25F /* SocialCell.swift in Sources */,
 				2F3A540527EC04A100FBA25F /* TrainingStartedVC.swift in Sources */,
 				2F3A540427EC04A100FBA25F /* RenderGIF.swift in Sources */,
 				2F412ED627E41821007708E8 /* MeditationAudioFile.swift in Sources */,
@@ -1479,6 +1563,7 @@
 				8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */,
 				2F3A540B27EC04A100FBA25F /* TrainingPausedVC.swift in Sources */,
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
+				2F3A544527EC3EE400FBA25F /* LoginViewController.swift in Sources */,
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036FAC27E429E400993E41 /* ImcController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
@@ -1496,7 +1581,9 @@
 				2F412EB927E4101E007708E8 /* CardCell.swift in Sources */,
 				2F0C342A27E4384E004A1E8C /* ModalViewController.swift in Sources */,
 				2F3A540E27EC04A100FBA25F /* DropDownTableViewCell.swift in Sources */,
+				2F3A543927EC341F00FBA25F /* SeparatorCell.swift in Sources */,
 				2F0C342E27E4384E004A1E8C /* InhaleViewController.swift in Sources */,
+				2F3A544127EC343800FBA25F /* RegisterCell.swift in Sources */,
 				2F036FB527E429E400993E41 /* ResultadoController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */,
@@ -1520,6 +1607,7 @@
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				2F3A540227EC04A100FBA25F /* TrainingFinishedVC.swift in Sources */,
 				2F036FB827E429E400993E41 /* tappedSwitchObController.swift in Sources */,
+				2F3A542527EC28AA00FBA25F /* LogoCell.swift in Sources */,
 				2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
