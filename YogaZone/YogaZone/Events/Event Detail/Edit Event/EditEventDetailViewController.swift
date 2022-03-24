@@ -66,13 +66,45 @@ extension EditEventDetailViewController {
         self.eventNumberOfParticipantsTextField.placeholder = "Número de participantes"
         self.eventLocalTextField.placeholder = "Local"
         self.eventDescriptionTextField.placeholder = "Descrição de outras informações"
-      
+        
+        self.eventStartTimeTextField.textContentType = .dateTime
+        self.eventNumberOfParticipantsTextField.keyboardType = .numberPad
+        
         self.editEventButton.configuration = nil
         self.editEventButton.setTitle("Confirmar Alterações", for: .normal)
         self.editEventButton.setTitleColor(.white, for: .normal)
         self.editEventButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.editEventButton.backgroundColor = #colorLiteral(red: 0.2039215686, green: 0.6588235294, blue: 0.3254901961, alpha: 1)
+        self.editEventButton.backgroundColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
         self.editEventButton.layer.cornerRadius = 8
+        self.editEventButton.isEnabled = false
+        
+        self.eventNameTextField.layer.cornerRadius = 6
+        self.eventDateTextField.layer.cornerRadius = 6
+        self.eventStartTimeTextField.layer.cornerRadius = 6
+        self.eventNumberOfParticipantsTextField.layer.cornerRadius = 6
+        self.eventLocalTextField.layer.cornerRadius = 6
+        self.eventDescriptionTextField.layer.cornerRadius = 6
+        
+        self.eventNameTextField.layer.borderWidth = 0.5
+        self.eventDateTextField.layer.borderWidth = 0.5
+        self.eventStartTimeTextField.layer.borderWidth = 0.5
+        self.eventNumberOfParticipantsTextField.layer.borderWidth = 0.5
+        self.eventLocalTextField.layer.borderWidth = 0.5
+        self.eventDescriptionTextField.layer.borderWidth = 0.5
+        
+        self.eventNameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.eventDateTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.eventStartTimeTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.eventNumberOfParticipantsTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.eventLocalTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.eventDescriptionTextField.layer.borderColor = UIColor.lightGray.cgColor
+        
+        self.eventNameTextField.delegate = self
+        self.eventDateTextField.delegate = self
+        self.eventStartTimeTextField.delegate = self
+        self.eventNumberOfParticipantsTextField.delegate = self
+        self.eventLocalTextField.delegate = self
+        self.eventDescriptionTextField.delegate = self
         
         self.deleteEventButton.configuration = nil
         self.deleteEventButton.setTitle("Excluir Evento", for: .normal)
@@ -90,6 +122,92 @@ extension EditEventDetailViewController {
     
     @objc private func popToPrevious() {
         navigationController?.popViewController(animated: true)
+    }
+    
+}
+
+// MARK: Input Fields Delegate
+extension EditEventDetailViewController: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        switch textField {
+            
+        case self.eventNameTextField:
+            if self.eventNameTextField.text == ""{
+                setRedBorder(textField: textField)
+            }else{
+                setNormalBorder(textField: textField)
+            }
+            
+        case self.eventDateTextField:
+            if self.eventDateTextField.text == ""{
+                setRedBorder(textField: textField)
+            }else{
+                setNormalBorder(textField: textField)
+            }
+            
+        case self.eventStartTimeTextField:
+            if self.eventStartTimeTextField.text == ""{
+                setRedBorder(textField: textField)
+            }else{
+                setNormalBorder(textField: textField)
+            }
+            
+        case self.eventNumberOfParticipantsTextField:
+            if self.eventNumberOfParticipantsTextField.text == ""{
+                setRedBorder(textField: textField)
+            }else{
+                setNormalBorder(textField: textField)
+            }
+            
+        case self.eventLocalTextField:
+            if self.eventLocalTextField.text == ""{
+                setRedBorder(textField: textField)
+            }else{
+                setNormalBorder(textField: textField)
+            }
+            
+        default:
+            if self.eventDescriptionTextField.text == ""{
+                setRedBorder(textField: textField)
+            }else{
+                setNormalBorder(textField: textField)
+            }
+        }        
+        
+        if self.eventNameTextField.text != "" &&
+            self.eventDateTextField.text != "" &&
+            self.eventStartTimeTextField.text != "" &&
+            self.eventNumberOfParticipantsTextField.text != "" &&
+            self.eventLocalTextField.text != "" &&
+            self.eventDescriptionTextField.text != ""  {
+            
+            self.editEventButton.isEnabled = true
+            self.editEventButton.backgroundColor = #colorLiteral(red: 0.2039215686, green: 0.6588235294, blue: 0.3254901961, alpha: 1)
+            
+        } else {
+            
+            self.editEventButton.isEnabled = false
+            self.editEventButton.backgroundColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
+            
+        }
+        
+    }
+    
+    func setRedBorder(textField: UITextField){
+        textField.layer.borderColor = UIColor.red.cgColor
+        textField.layer.borderWidth = 1.0
+    }
+    
+    func setNormalBorder(textField: UITextField){
+        textField.layer.borderColor = UIColor.lightGray.cgColor
+        textField.layer.borderWidth = 0.5
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }
