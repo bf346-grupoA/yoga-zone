@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-Regular.ttf">
-            <string>Montserrat-Regular</string>
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -24,14 +24,14 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione um fundo para meditar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIP-Y4-skc">
-                    <rect key="frame" x="20" y="80" width="374" height="24.666666666666671"/>
-                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                    <color key="textColor" red="0.3411764706" green="0.25882352939999997" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequências para Meditar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIP-Y4-skc">
+                    <rect key="frame" x="20" y="30" width="374" height="25"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uXh-TS-b7i">
-                    <rect key="frame" x="0.0" y="134.66666666666669" width="414" height="601.33333333333326"/>
+                    <rect key="frame" x="0.0" y="85" width="414" height="651"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
@@ -42,7 +42,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SIP-Y4-skc" secondAttribute="trailing" constant="20" id="YNn-Hu-0hj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uXh-TS-b7i" secondAttribute="trailing" id="eqw-GA-dlj"/>
                 <constraint firstItem="SIP-Y4-skc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ezh-gI-zKB"/>
-                <constraint firstItem="SIP-Y4-skc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="fRL-YE-uhQ"/>
+                <constraint firstItem="SIP-Y4-skc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="fRL-YE-uhQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uXh-TS-b7i" secondAttribute="bottom" id="gpR-bC-t2g"/>
                 <constraint firstItem="uXh-TS-b7i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y6H-d3-AmF"/>
             </constraints>
