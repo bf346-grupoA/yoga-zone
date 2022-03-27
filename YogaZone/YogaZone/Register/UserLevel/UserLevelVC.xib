@@ -14,7 +14,6 @@
                 <outlet property="GuruBtn" destination="E75-jC-CdS" id="8oq-Th-vOI"/>
                 <outlet property="IntermediateBtn" destination="B2I-5H-uxK" id="JqP-Uf-aOo"/>
                 <outlet property="LowExperienceBtn" destination="dyZ-Ob-8QY" id="Za7-Af-eYk"/>
-                <outlet property="tappedArrowVoltarImage" destination="n5T-kO-wv1" id="LpT-Ul-1dR"/>
                 <outlet property="titleLabel" destination="ngt-ND-Iby" id="exB-pO-oUf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,13 +32,6 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n5T-kO-wv1">
-                    <rect key="frame" x="25" y="25" width="25" height="25"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="25" id="7MI-ti-3uM"/>
-                        <constraint firstAttribute="height" constant="25" id="So3-jL-DUb"/>
-                    </constraints>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-iF-9nM">
                     <rect key="frame" x="40" y="145" width="295" height="50"/>
                     <constraints>
@@ -112,7 +104,6 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dyZ-Ob-8QY" secondAttribute="trailing" constant="40" id="A9x-xm-92b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dld-iF-9nM" secondAttribute="trailing" constant="40" id="JLu-iJ-iJq"/>
                 <constraint firstItem="Dld-iF-9nM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="JvA-EX-lyR"/>
-                <constraint firstItem="n5T-kO-wv1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="KGo-XB-7YI"/>
                 <constraint firstItem="ngt-ND-Iby" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="MBI-Uh-ksZ"/>
                 <constraint firstItem="dyZ-Ob-8QY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Rdc-C8-yyM"/>
                 <constraint firstItem="ngt-ND-Iby" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="TU9-kv-HfW"/>
@@ -122,7 +113,6 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ngt-ND-Iby" secondAttribute="trailing" constant="30" id="r2G-tw-oyr"/>
                 <constraint firstItem="Dld-iF-9nM" firstAttribute="top" secondItem="ngt-ND-Iby" secondAttribute="bottom" constant="25" id="s8d-3U-3VP"/>
                 <constraint firstItem="B2I-5H-uxK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="wvH-O1-TgD"/>
-                <constraint firstItem="n5T-kO-wv1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="xmi-jS-Shi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E75-jC-CdS" secondAttribute="trailing" constant="40" id="zcn-4Y-ojk"/>
                 <constraint firstItem="dyZ-Ob-8QY" firstAttribute="top" secondItem="Dld-iF-9nM" secondAttribute="bottom" constant="20" id="ziu-DC-zO3"/>
             </constraints>

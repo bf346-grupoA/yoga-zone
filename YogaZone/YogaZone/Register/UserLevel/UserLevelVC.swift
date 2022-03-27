@@ -7,9 +7,8 @@
 
 import UIKit
 
-class UserLevelVC: UIViewController {
+class UserLevelVC: UIViewController, UIGestureRecognizerDelegate {
     
-    @IBOutlet weak var tappedArrowVoltarImage: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -23,29 +22,20 @@ class UserLevelVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configImages()
-        configBackButton()
+        setupNavigationBar()
         configLvlButtons()
         configLabels()
     }
     
-    
-    func configImages(){
-            tappedArrowVoltarImage.image = UIImage(named: "arrowVoltarCinza")
-        
-            // Hide Back Button from UINavigationItem
-                self.navigationItem.setHidesBackButton(true, animated: true)
-        }
-    
-    private func configBackButton(){
-        let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
-        self.tappedArrowVoltarImage.addGestureRecognizer(tapBackButton)
-        self.tappedArrowVoltarImage.isUserInteractionEnabled = true
-        
-    }
-    
-    @objc func tappedBackButton(){
-        self.navigationController?.popViewController(animated: true)
+    func setupNavigationBar(){
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
     }
     
     
@@ -123,7 +113,14 @@ class UserLevelVC: UIViewController {
     @IBAction func tappedGuruButton(_ sender: UIButton) {
         self.tappedLevelButton()
     }
+}
+
+// MARK: Navigation Bar Customization
+extension UserLevelVC {
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
     
 }
-    
     
