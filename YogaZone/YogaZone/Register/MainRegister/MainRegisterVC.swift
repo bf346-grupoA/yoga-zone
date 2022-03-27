@@ -7,11 +7,10 @@
 
 import UIKit
 
-class MainRegisterVC: UIViewController {
+class MainRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     private var arrayRegister:[String] = ["Digite seu e-mail", "Qual sera o seu Nick?", "Digite sua senha", "Confirme sua senha"]
 
-    @IBOutlet weak var tappedArrowVoltarImage: UIImageView!
     
     @IBOutlet weak var textAddPictureLabel: UILabel!
     
@@ -28,7 +27,8 @@ class MainRegisterVC: UIViewController {
         super.viewDidLoad()
         configImages()
         configTableView()
-        configButtonsAndLabelsApperance()
+        setupUI()
+        setupNavigationBar()
     }
     
     func configTableView(){
@@ -38,17 +38,40 @@ class MainRegisterVC: UIViewController {
             self.tableView.register(CustomMainRegisterCell.nib(), forCellReuseIdentifier: CustomMainRegisterCell.identifier)
         }
     
+    func setupNavigationBar(){
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
     func configImages(){
-            tappedArrowVoltarImage.image = UIImage(named: "arrowVoltarCinza")
             perfilImage.image = UIImage(named: "person")
             tappedCameraIconImage.image = UIImage(named: "cameraIcon")
         }
     
-    func configButtonsAndLabelsApperance(){
-        nextBtn.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-        nextBtn.clipsToBounds = true // Rounded 🙂
-        nextBtn.layer.cornerRadius = 7.5
-        textAddPictureLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+    
+    func configLvlButtons(){
+        var containerTitle = AttributeContainer()
+            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
+        var configNextButton = UIButton.Configuration.filled()
+            configNextButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+            configNextButton.baseForegroundColor = .white
+            configNextButton.attributedTitle = AttributedString("Avançar", attributes: containerTitle)
+        
+        self.nextBtn.configuration = configNextButton
+        self.nextBtn.layer.cornerRadius = 8
+
+    }
+    
+    func setupUI(){
+            configLvlButtons()
+            textAddPictureLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
     }
     
     @IBAction func nextPageButton(_ sender: UIButton) {
@@ -73,8 +96,17 @@ extension MainRegisterVC: UITableViewDataSource {
     }
 }
 
+
 extension MainRegisterVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(arrayRegister[indexPath.row])
     }
 }
+
+// MARK: Navigation Bar Customization
+extension MainRegisterVC {
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+}
+    
