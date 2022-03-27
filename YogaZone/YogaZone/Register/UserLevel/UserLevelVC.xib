@@ -10,10 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserLevelVC" customModule="YogaZone" customModuleProvider="target">
             <connections>
-                <outlet property="BeginnerBtn" destination="jTD-At-r4M" id="pRM-Y5-3Bh"/>
-                <outlet property="GuruBtn" destination="igj-2l-TDc" id="vY1-qs-nnd"/>
-                <outlet property="IntermediateBtn" destination="zqI-Kw-bjI" id="78B-9r-JlH"/>
-                <outlet property="LowExperienceBtn" destination="82h-yE-GrG" id="Cgk-zF-qjh"/>
+                <outlet property="BeginnerBtn" destination="Dld-iF-9nM" id="KwV-Cc-hra"/>
+                <outlet property="GuruBtn" destination="E75-jC-CdS" id="8oq-Th-vOI"/>
+                <outlet property="IntermediateBtn" destination="B2I-5H-uxK" id="JqP-Uf-aOo"/>
+                <outlet property="LowExperienceBtn" destination="dyZ-Ob-8QY" id="Za7-Af-eYk"/>
                 <outlet property="tappedArrowVoltarImage" destination="n5T-kO-wv1" id="LpT-Ul-1dR"/>
                 <outlet property="titleLabel" destination="ngt-ND-Iby" id="exB-pO-oUf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,7 +29,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="M6I-F7-1Cn"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -40,83 +40,91 @@
                         <constraint firstAttribute="height" constant="25" id="So3-jL-DUb"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-At-r4M">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-iF-9nM">
                     <rect key="frame" x="40" y="145" width="295" height="50"/>
-                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="il7-rp-3jd"/>
+                        <constraint firstAttribute="height" constant="50" id="N8m-dD-0i2"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Iniciante"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Iniciante">
+                        <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
                     <connections>
-                        <action selector="tappedBeginnerButton:" destination="-1" eventType="touchUpInside" id="u93-cj-9SV"/>
+                        <action selector="tappedBeginnerButton:" destination="-1" eventType="touchUpInside" id="bBw-pQ-SAi"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82h-yE-GrG">
-                    <rect key="frame" x="40" y="210" width="295" height="50"/>
-                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyZ-Ob-8QY">
+                    <rect key="frame" x="40" y="215" width="295" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="1ib-Sv-iBA"/>
+                        <constraint firstAttribute="height" constant="50" id="iWh-Gv-Eb3"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Pouco Experiente"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Pouco Experiente">
+                        <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
                     <connections>
-                        <action selector="tappedLowExperienceButton:" destination="-1" eventType="touchUpInside" id="N64-uK-1Pr"/>
+                        <action selector="tappedLowExperienceButton:" destination="-1" eventType="touchUpInside" id="5Nr-vd-N5f"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqI-Kw-bjI">
-                    <rect key="frame" x="40" y="275" width="295" height="50"/>
-                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2I-5H-uxK">
+                    <rect key="frame" x="40" y="285" width="295" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="JAB-ik-GHN"/>
+                        <constraint firstAttribute="height" constant="50" id="CYb-1B-B92"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Intermediário"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Intermediario">
+                        <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
                     <connections>
-                        <action selector="tappedMediumExperienceButton:" destination="-1" eventType="touchUpInside" id="Ehv-ZQ-d9m"/>
+                        <action selector="tappedMediumExperienceButton:" destination="-1" eventType="touchUpInside" id="uLo-WB-wwK"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igj-2l-TDc">
-                    <rect key="frame" x="40" y="340" width="295" height="50"/>
-                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E75-jC-CdS">
+                    <rect key="frame" x="40" y="355" width="295" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="H7H-pv-9f0"/>
+                        <constraint firstAttribute="height" constant="50" id="hno-7d-m9e"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Guru"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Guru">
+                        <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
                     <connections>
-                        <action selector="tappedGuruButton:" destination="-1" eventType="touchUpInside" id="d1o-P8-Y0b"/>
+                        <action selector="tappedGuruButton:" destination="-1" eventType="touchUpInside" id="La4-ZI-NFV"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="zqI-Kw-bjI" firstAttribute="top" secondItem="82h-yE-GrG" secondAttribute="bottom" constant="15" id="4UP-GL-X1I"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="igj-2l-TDc" secondAttribute="trailing" constant="40" id="BBD-af-aZI"/>
-                <constraint firstItem="82h-yE-GrG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="FVB-Uo-qdn"/>
-                <constraint firstItem="82h-yE-GrG" firstAttribute="top" secondItem="jTD-At-r4M" secondAttribute="bottom" constant="15" id="Fzo-Cq-r4E"/>
-                <constraint firstItem="jTD-At-r4M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="IVH-CH-9kt"/>
+                <constraint firstItem="B2I-5H-uxK" firstAttribute="top" secondItem="dyZ-Ob-8QY" secondAttribute="bottom" constant="20" id="4eb-1Z-erw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dyZ-Ob-8QY" secondAttribute="trailing" constant="40" id="A9x-xm-92b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dld-iF-9nM" secondAttribute="trailing" constant="40" id="JLu-iJ-iJq"/>
+                <constraint firstItem="Dld-iF-9nM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="JvA-EX-lyR"/>
                 <constraint firstItem="n5T-kO-wv1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="KGo-XB-7YI"/>
                 <constraint firstItem="ngt-ND-Iby" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="MBI-Uh-ksZ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="82h-yE-GrG" secondAttribute="trailing" constant="40" id="MwN-cL-Gs4"/>
-                <constraint firstItem="igj-2l-TDc" firstAttribute="top" secondItem="zqI-Kw-bjI" secondAttribute="bottom" constant="15" id="QT0-cO-P8p"/>
+                <constraint firstItem="dyZ-Ob-8QY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Rdc-C8-yyM"/>
                 <constraint firstItem="ngt-ND-Iby" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="TU9-kv-HfW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jTD-At-r4M" secondAttribute="trailing" constant="40" id="dmM-TY-QE6"/>
-                <constraint firstItem="zqI-Kw-bjI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="f30-ne-NK0"/>
-                <constraint firstItem="igj-2l-TDc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="ocT-1H-heT"/>
-                <constraint firstItem="jTD-At-r4M" firstAttribute="top" secondItem="ngt-ND-Iby" secondAttribute="bottom" constant="25" id="qNc-77-zjP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B2I-5H-uxK" secondAttribute="trailing" constant="40" id="WTa-0z-wHP"/>
+                <constraint firstItem="E75-jC-CdS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="jnz-3l-WSq"/>
+                <constraint firstItem="E75-jC-CdS" firstAttribute="top" secondItem="B2I-5H-uxK" secondAttribute="bottom" constant="20" id="mHi-zo-o91"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ngt-ND-Iby" secondAttribute="trailing" constant="30" id="r2G-tw-oyr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zqI-Kw-bjI" secondAttribute="trailing" constant="40" id="uXY-P8-bTY"/>
+                <constraint firstItem="Dld-iF-9nM" firstAttribute="top" secondItem="ngt-ND-Iby" secondAttribute="bottom" constant="25" id="s8d-3U-3VP"/>
+                <constraint firstItem="B2I-5H-uxK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="wvH-O1-TgD"/>
                 <constraint firstItem="n5T-kO-wv1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="xmi-jS-Shi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E75-jC-CdS" secondAttribute="trailing" constant="40" id="zcn-4Y-ojk"/>
+                <constraint firstItem="dyZ-Ob-8QY" firstAttribute="top" secondItem="Dld-iF-9nM" secondAttribute="bottom" constant="20" id="ziu-DC-zO3"/>
             </constraints>
             <point key="canvasLocation" x="132" y="82.3088455772114"/>
         </view>
@@ -124,9 +132,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
