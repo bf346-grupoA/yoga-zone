@@ -22,17 +22,36 @@ class DoneRegisterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configImages()
-        configButtonsAndLabelsApperance()
+        setupUI()
+    }
+    
+    
+    // MARK: SetupUI
+    func configStartButton(){
+        var containerTitle = AttributeContainer()
+            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
+        var config = UIButton.Configuration.filled()
+            config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+            config.baseForegroundColor = .white
+            config.attributedTitle = AttributedString("Começar", attributes: containerTitle)
+        
+        self.startBtn.configuration = config
+        self.startBtn.layer.cornerRadius = 8
 
     }
     
-    func configButtonsAndLabelsApperance(){
-        startBtn.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-        startBtn.clipsToBounds = true // Rounded 🙂
-        startBtn.layer.cornerRadius = 7.5
-        firstLabel.font = UIFont(name: "Montserrat-Bold", size: 17.0)
-        secondLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
-        thirdLabel.font = UIFont(name: "Montserrat-Regular", size: 17.0)
+    func configLabels(){
+        self.firstLabel.font = UIFont(name: "Comfortaa-Bold", size: 22)
+        self.firstLabel.textAlignment = .center
+        self.secondLabel.font = UIFont(name: "Comfortaa-SemiBold", size: 16)
+        self.secondLabel.textAlignment = .center
+        self.thirdLabel.font = UIFont(name: "Comfortaa-SemiBold", size: 16)
+    }
+    
+    func setupUI(){
+        configStartButton()
+        configLabels()
     }
 
     func configImages(){
