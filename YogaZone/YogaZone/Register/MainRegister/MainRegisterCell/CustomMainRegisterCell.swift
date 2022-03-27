@@ -21,6 +21,11 @@ class CustomMainRegisterCell: UITableViewCell {
         override func awakeFromNib() {
             super.awakeFromNib()
             clearBackgroundColorWhenSelectCell()
+            setupUI()
+        }
+    
+        func setupUI(){
+            self.registerUserTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
         }
         
         func clearBackgroundColorWhenSelectCell() {
