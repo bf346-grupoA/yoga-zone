@@ -7,14 +7,10 @@
 
 import UIKit
 
-class MyProfileVC: UIViewController {
+class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     
     
     private var arrayProfile:[String] = ["Nick", "Data de Nascimento", "Localidade", "Sexo"]
-    
-    @IBOutlet weak var tappedArrowVoltarImage: UIImageView!
-    
-    @IBOutlet weak var meuPerfilLabel: UILabel!
     
     @IBOutlet weak var perfilImage: UIImageView!
     
@@ -31,14 +27,12 @@ class MyProfileVC: UIViewController {
         super.viewDidLoad()
         configTableView()
         configImages()
-        configBackButton()
         configMoreOptionsButton()
         configSaveChangeButton()
+        setupNavigationBar()
     }
     
-    
     func configImages(){
-        tappedArrowVoltarImage.image = UIImage(named: "arrowVoltarCinza")
         tappedMoreOptionsButtonImage.image = UIImage(named: "moreOptions")
         perfilImage.image = UIImage(named: "person")
         tappedCameraIconImage.image = UIImage(named: "cameraIcon")
@@ -50,18 +44,7 @@ class MyProfileVC: UIViewController {
         self.tableView.separatorStyle = .none
         self.tableView.register(MyProfileTableViewCell.nib(), forCellReuseIdentifier: MyProfileTableViewCell.identifier)
     }
-    
-    private func configBackButton(){
-        let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
-        self.tappedArrowVoltarImage.addGestureRecognizer(tapBackButton)
-        self.tappedArrowVoltarImage.isUserInteractionEnabled = true
-        
-    }
-    
-    @objc func tappedBackButton(){
-        self.navigationController?.popViewController(animated: true)
-    }
-    
+
     
     private func configMoreOptionsButton(){
         let tapMoreOptionsButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedMoreOptionsButton))
@@ -76,9 +59,16 @@ class MyProfileVC: UIViewController {
     }
     
     func configSaveChangeButton(){
-        saveChangesButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-        saveChangesButton.clipsToBounds = true // Rounded 🙂
-        saveChangesButton.layer.cornerRadius = 7.5
+        var containerTitle = AttributeContainer()
+            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
+        var configSaveChangesButton = UIButton.Configuration.filled()
+            configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+            configSaveChangesButton.baseForegroundColor = .white
+            configSaveChangesButton.attributedTitle = AttributedString("Salvar Alterações", attributes: containerTitle)
+        
+        self.saveChangesButton.configuration = configSaveChangesButton
+        self.saveChangesButton.layer.cornerRadius = 8
     }
     
     @IBAction func tappedSaveChangesButton(_ sender: UIButton) {
@@ -107,6 +97,28 @@ extension MyProfileVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(arrayProfile[indexPath.row])
     }
+}
+
+// MARK: Navigation Bar Customization
+extension MyProfileVC {
+    func setupNavigationBar(){
+        self.navigationItem.title = "Meu Perfil"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16) ?? UIFont()]
+        
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 

@@ -21,7 +21,7 @@ class DeleteAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configButtonsApperance()
+        configDeleteAccountButton()
         
         self.confirmPasswordTextField.delegate = self
         self.confirmPasswordTextField.isHidden = true
@@ -32,10 +32,17 @@ class DeleteAccountVC: UIViewController {
         self.displayTextFieldSwitch.setOn(false, animated: false)
     }
     
-    func configButtonsApperance(){
-        confirmDeleteAccountButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-        confirmDeleteAccountButton.clipsToBounds = true // Rounded 🙂
-        confirmDeleteAccountButton.layer.cornerRadius = 7.5
+    func configDeleteAccountButton(){
+        var containerTitle = AttributeContainer()
+            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
+        var configSaveChangesButton = UIButton.Configuration.filled()
+            configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+            configSaveChangesButton.baseForegroundColor = .white
+            configSaveChangesButton.attributedTitle = AttributedString("Confirmar", attributes: containerTitle)
+        
+        self.confirmDeleteAccountButton.configuration = configSaveChangesButton
+        self.confirmDeleteAccountButton.layer.cornerRadius = 8
     }
     
     @IBAction func actionDisplayTextFieldSwitch(_ sender: UISwitch) {

@@ -7,11 +7,9 @@
 
 import UIKit
 
-class MoreOptionsVC: UIViewController {
+class MoreOptionsVC: UIViewController, UIGestureRecognizerDelegate{
 
     @IBOutlet weak var changePasswordTitleLabel: UILabel!
-    
-    @IBOutlet weak var tappedArrowBackToProfileImage: UIImageView!
     
     @IBOutlet weak var CurrentPasswordTextField: UITextField!
     
@@ -28,52 +26,60 @@ class MoreOptionsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.saveButton.isEnabled = true
-        
-        configImage()
-        configBackButton()
-        configButtonsApperance()
+        self.setupUIButtons()
+        self.setupNavigationBar()
     }
     
-    func configImage(){
-        tappedArrowBackToProfileImage.image = UIImage(named: "arrowVoltarCinza")
+    func configExcludeButton(){
+        var containerTitle = AttributeContainer()
+            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
-        // Hide Back Button from UINavigationItem
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        var configSaveChangesButton = UIButton.Configuration.filled()
+            configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+            configSaveChangesButton.baseForegroundColor = .white
+            configSaveChangesButton.attributedTitle = AttributedString("Excluir Conta", attributes: containerTitle)
+        
+        self.excludeAccountButton.configuration = configSaveChangesButton
+        self.excludeAccountButton.layer.cornerRadius = 8
     }
     
-    func configButtonsApperance(){
-        excludeAccountButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-        excludeAccountButton.clipsToBounds = true // Rounded 🙂
-        excludeAccountButton.layer.cornerRadius = 7.5
+    func configSaveButton(){
+        var containerTitle = AttributeContainer()
+            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
-        saveButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-        saveButton.clipsToBounds = true // Rounded 🙂
-        saveButton.layer.cornerRadius = 7.5
+        var configSaveChangesButton = UIButton.Configuration.filled()
+            configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+            configSaveChangesButton.baseForegroundColor = .white
+            configSaveChangesButton.attributedTitle = AttributedString("Salvar Senha", attributes: containerTitle)
         
-        leaveAppButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-        leaveAppButton.clipsToBounds = true // Rounded 🙂
-        leaveAppButton.layer.cornerRadius = 7.5
+        self.saveButton.configuration = configSaveChangesButton
+        self.saveButton.layer.cornerRadius = 8
+    }
+    
+    func configLeaveAppButton(){
+        var containerTitle = AttributeContainer()
+            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
+        var configSaveChangesButton = UIButton.Configuration.filled()
+            configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+            configSaveChangesButton.baseForegroundColor = .white
+            configSaveChangesButton.attributedTitle = AttributedString("Sair do Aplicativo", attributes: containerTitle)
+        
+        self.leaveAppButton.configuration = configSaveChangesButton
+        self.leaveAppButton.layer.cornerRadius = 8
+    }
+    
+    func setupUIButtons(){
+        self.configLeaveAppButton()
+        self.configSaveButton()
+        self.configExcludeButton()
         
     }
 
-    
-    private func configBackButton(){
-        let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
-        self.tappedArrowBackToProfileImage.addGestureRecognizer(tapBackButton)
-        self.tappedArrowBackToProfileImage.isUserInteractionEnabled = true
-        
-    }
-    
-    @objc func tappedBackButton(){
-        self.navigationController?.popViewController(animated: true)
-    }
-    
 
     @IBAction func tappedSaveNewPasswordButton(_ sender: UIButton) {
         CustomAlertVC.instance.showAlert(titleType: .success, message: "Sua senha foi salva com sucesso !", alertType: .success)
     }
-    
-    
     
     
     @IBAction func tappedDeleteAccountButton(_ sender: UIButton) {
@@ -103,6 +109,27 @@ extension MoreOptionsVC:UITextFieldDelegate{
     }
 }
 
+// MARK: Navigation Bar Customization
+extension MoreOptionsVC {
+    func setupNavigationBar(){
+        self.navigationItem.title = "Mais Opções"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16) ?? UIFont()]
+        
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
 
 
 
