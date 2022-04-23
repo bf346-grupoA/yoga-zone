@@ -9,8 +9,6 @@ import UIKit
 
 class TrainingListController: UIViewController, UITableViewDataSource, UIGestureRecognizerDelegate {
 
-    
-    @IBOutlet weak var TitleTreino: UILabel!
     @IBOutlet weak var CircleCaloriesImage: UIImageView!
     @IBOutlet weak var NumberOfCaloriesLabel: UILabel!
     @IBOutlet weak var CaloriesTitleLabel: UILabel!
@@ -86,6 +84,5 @@ extension TrainingListController {
     @objc private func popToPrevious() {
         navigationController?.popViewController(animated: true)
     }
-    
 }
 

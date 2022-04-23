@@ -8,7 +8,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let navController = UINavigationController(rootViewController: TrainingListController())
+        let navController = UINavigationController(rootViewController: LevelAndDurationVC())
         window = UIWindow(windowScene: windowScene)
         window?.frame = UIScreen.main.bounds
         window?.rootViewController = navController

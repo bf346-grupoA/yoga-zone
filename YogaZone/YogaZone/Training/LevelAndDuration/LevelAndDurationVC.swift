@@ -8,25 +8,16 @@
 import UIKit
 
 
-class LevelAndDurationVC: UIViewController {
+class LevelAndDurationVC: UIViewController, UIGestureRecognizerDelegate {
     
 
     @IBOutlet weak var durationNameLabel: UILabel!
-    
     @IBOutlet weak var levelNameLabel: UILabel!
-    
     @IBOutlet weak var circleBackground: UIImageView!
-    
     @IBOutlet weak var titleTreinoDeYoga: UILabel!
-    
     @IBOutlet weak var descriptionTreinoDeYoga: UILabel!
-    
-    @IBOutlet weak var tappedArrowVoltar: UIImageView!
-    
     @IBOutlet weak var timeDurationImage: UIImageView!
-    
     @IBOutlet weak var levelExerciceImage: UIImageView!
-    
     @IBOutlet weak var seeTrainButton: UIButton!
     
     //MARK: - Variables
@@ -46,10 +37,10 @@ class LevelAndDurationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configImages()
-        self.configBackButton()
-        setUpGestures()
-        populateDropDownArrays()
-        
+        self.setUpGestures()
+        self.populateDropDownArrays()
+        self.setupNavigationBar()
+        self.setupUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,13 +50,9 @@ class LevelAndDurationVC: UIViewController {
     }
     
     func configImages(){
-        tappedArrowVoltar.image = UIImage(named: "arrowVoltar")
         circleBackground.image = UIImage(named: "circleBackground")
         timeDurationImage.image = UIImage(named: "timeDuration")
         levelExerciceImage.image = UIImage(named: "levelExercice")
-        
-        // Hide Back Button from UINavigationItem
-        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     //MARK: - Setup Methods
@@ -132,17 +119,21 @@ class LevelAndDurationVC: UIViewController {
         self.levelDropDown.showDropDown(height: self.dropDownRowHeight * 4)
     }
     
-    private func configBackButton(){
-        let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
-        self.tappedArrowVoltar.addGestureRecognizer(tapBackButton)
-        self.tappedArrowVoltar.isUserInteractionEnabled = true
-        
+    //MARK: - SetupUI
+    func configLabels(){
+        self.titleTreinoDeYoga.font = UIFont(name: "Comfortaa-Bold", size: 24)
+        self.titleTreinoDeYoga.textAlignment = .center
+        self.descriptionTreinoDeYoga.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.descriptionTreinoDeYoga.textAlignment = .center
+        self.durationNameLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.levelNameLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+
     }
     
-    @objc func tappedBackButton(){
-        self.navigationController?.popViewController(animated: true)
+    func setupUI(){
+        self.configLabels()
     }
-
+    
     @IBAction func tappedSeeTrainButton(_ sender: UIButton) {
         let vc = TrainingListController()
         navigationController?.pushViewController(vc, animated: true)
@@ -185,6 +176,24 @@ extension LevelAndDurationVC: MakeDropDownDataSourceProtocol{
             self.levelNameLabel.text = levelArr[indexPos].levelName
             self.levelDropDown.hideDropDown()
         }
+    }
+}
+
+// MARK: Navigation Bar Customization
+extension LevelAndDurationVC {
+    func setupNavigationBar(){
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
     }
 }
 
