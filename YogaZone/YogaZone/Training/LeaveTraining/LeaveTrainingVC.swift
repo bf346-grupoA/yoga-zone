@@ -13,8 +13,6 @@ class LeaveTrainingVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Hide Back Button from UINavigationItem
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
