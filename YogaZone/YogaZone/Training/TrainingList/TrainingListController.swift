@@ -7,38 +7,20 @@
 
 import UIKit
 
-class TrainingListController: UIViewController, UITableViewDataSource {
+class TrainingListController: UIViewController, UITableViewDataSource, UIGestureRecognizerDelegate {
 
-    @IBOutlet weak var tappedArrowVoltar: UIImageView!
     
     @IBOutlet weak var TitleTreino: UILabel!
-    
-    //Calories
     @IBOutlet weak var CircleCaloriesImage: UIImageView!
-    
     @IBOutlet weak var NumberOfCaloriesLabel: UILabel!
-    
     @IBOutlet weak var CaloriesTitleLabel: UILabel!
-    
-    // Minutes
     @IBOutlet weak var CircleMinutesImage: UIImageView!
-    
     @IBOutlet weak var NumberOfMinutesLabel: UILabel!
-    
     @IBOutlet weak var MinutesTitleLabel: UILabel!
-    
-    //Positions
     @IBOutlet weak var CirclePositionsImage: UIImageView!
-    
     @IBOutlet weak var PositionsTitleLabel: UILabel!
-    
     @IBOutlet weak var NumberOfPositionsLabel: UILabel!
-    
-    //Table View
-    
     @IBOutlet weak var ListTrainYogaTableView: UITableView!
-    
-    //Start Train Button
     @IBOutlet weak var startTrainButton: UIButton!
     
     
@@ -47,33 +29,18 @@ class TrainingListController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configBackButton()
+        self.setupNavigationBar()
         CircleCaloriesImage.image = UIImage(named: "CircleCaloriesImage")
         CircleMinutesImage.image = UIImage(named: "CircleMinutesImage")
         CirclePositionsImage.image = UIImage(named: "CirclePositionsImage")
-        tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
         
-        //Table View
+        
         self.ListTrainYogaTableView.register(UINib(nibName: "TrainingCustomCell", bundle: nil), forCellReuseIdentifier: "TrainingCustomCell")
         self.ListTrainYogaTableView.delegate = self
         self.ListTrainYogaTableView.dataSource = self
-        
-        // Hide Back Button from UINavigationItem
-        self.navigationItem.setHidesBackButton(true, animated: true)
 
     }
     
-    private func configBackButton(){
-        let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
-        self.tappedArrowVoltar.addGestureRecognizer(tapBackButton)
-        self.tappedArrowVoltar.isUserInteractionEnabled = true
-        
-    }
-    
-    @objc func tappedBackButton(){
-        self.navigationController?.popViewController(animated: true)
-    }
-
     
     @IBAction func tappedStartTrainButton(_ sender: UIButton) {
         let vc = TrainingStartedVC()
@@ -103,3 +70,26 @@ extension TrainingListController: UITableViewDelegate {
         return UITableView.automaticDimension
     }
 }
+
+// MARK: Navigation Bar Customization
+extension TrainingListController {
+    func setupNavigationBar(){
+        self.navigationItem.title = "Seu Treino"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16) ?? UIFont()]
+        
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
+
