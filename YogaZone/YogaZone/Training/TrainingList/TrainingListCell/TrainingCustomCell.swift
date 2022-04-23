@@ -15,6 +15,13 @@ class TrainingCustomCell: UITableViewCell {
     
     @IBOutlet weak var treinoDurationLabel: UILabel!
     
+    
+    static let identifier:String = "TrainingCustomCell"
+    
+    static func nib()-> UINib{
+        return UINib(nibName: self.identifier, bundle: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         clearBackgroundColorWhenSelectCell()

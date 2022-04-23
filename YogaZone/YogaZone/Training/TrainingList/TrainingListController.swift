@@ -30,17 +30,17 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
+        self.setupImages()
+        self.ListTrainYogaTableView.register(TrainingCustomCell.nib(), forCellReuseIdentifier: TrainingCustomCell.identifier)
+        self.ListTrainYogaTableView.delegate = self
+        self.ListTrainYogaTableView.dataSource = self
+    }
+
+    func setupImages(){
         CircleCaloriesImage.image = UIImage(named: "CircleCaloriesImage")
         CircleMinutesImage.image = UIImage(named: "CircleMinutesImage")
         CirclePositionsImage.image = UIImage(named: "CirclePositionsImage")
-        
-        
-        self.ListTrainYogaTableView.register(UINib(nibName: "TrainingCustomCell", bundle: nil), forCellReuseIdentifier: "TrainingCustomCell")
-        self.ListTrainYogaTableView.delegate = self
-        self.ListTrainYogaTableView.dataSource = self
-
     }
-    
     
     @IBAction func tappedStartTrainButton(_ sender: UIButton) {
         let vc = TrainingStartedVC()
@@ -51,18 +51,14 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
 extension TrainingListController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return self.arrayExercices.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell:TrainingCustomCell? = tableView.dequeueReusableCell(withIdentifier: "TrainingCustomCell", for: indexPath) as? TrainingCustomCell
-        
+        let cell:TrainingCustomCell? = tableView.dequeueReusableCell(withIdentifier: TrainingCustomCell.identifier, for: indexPath) as? TrainingCustomCell
         cell?.treinoImageView.image = UIImage(named: self.arrayExercices[indexPath.row])
         cell?.treinoDescriptionLabel.text = self.arrayExercices[indexPath.row]
         cell?.treinoDurationLabel.text = self.arrayExercicesDuration[indexPath.row]
-        
         return cell ?? UITableViewCell()
     }
     
