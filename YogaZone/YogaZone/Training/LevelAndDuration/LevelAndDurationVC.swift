@@ -127,11 +127,24 @@ class LevelAndDurationVC: UIViewController, UIGestureRecognizerDelegate {
         self.descriptionTreinoDeYoga.textAlignment = .center
         self.durationNameLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.levelNameLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
-
+    }
+    
+    func configSeeTrainButton(){
+        var containerTitle = AttributeContainer()
+            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
+        var config = UIButton.Configuration.filled()
+            config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+            config.baseForegroundColor = .white
+            config.cornerStyle = .capsule
+            config.attributedTitle = AttributedString("Ver Treino", attributes: containerTitle)
+        
+        self.seeTrainButton.configuration = config
     }
     
     func setupUI(){
         self.configLabels()
+        self.configSeeTrainButton()
     }
     
     @IBAction func tappedSeeTrainButton(_ sender: UIButton) {
