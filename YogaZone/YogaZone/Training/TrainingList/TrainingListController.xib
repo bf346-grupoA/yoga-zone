@@ -50,17 +50,15 @@
                         <constraint firstAttribute="height" constant="70" id="dKM-Q3-N2G"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-wB-kIS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-wB-kIS">
                     <rect key="frame" x="50" y="572" width="275" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="4l5-qW-0eo"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Iniciar Treino" cornerStyle="dynamic">
-                        <backgroundConfiguration key="background" cornerRadius="22">
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        </backgroundConfiguration>
+                    <buttonConfiguration key="configuration" style="filled" title="Iniciar Treino">
+                        <color key="baseBackgroundColor" red="0.52156862749999999" green="0.49803921569999998" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                     <connections>
                         <action selector="tappedStartTrainButton:" destination="-1" eventType="touchUpInside" id="ZXw-5P-uGt"/>
@@ -95,7 +93,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posições" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psv-xx-ZJx">
-                    <rect key="frame" x="280" y="126.5" width="70" height="21"/>
+                    <rect key="frame" x="280" y="126.5" width="70" height="25.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -128,6 +126,7 @@
                 <constraint firstItem="9Ka-ce-uTa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Emw-zL-xk8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MF1-wB-kIS" secondAttribute="bottom" constant="45" id="Exw-Wh-I75"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MF1-wB-kIS" secondAttribute="trailing" constant="50" id="F44-bK-6tu"/>
+                <constraint firstItem="psv-xx-ZJx" firstAttribute="centerY" secondItem="Rzv-JN-jMQ" secondAttribute="centerY" id="FYD-sB-GhY"/>
                 <constraint firstItem="a4g-sU-Aon" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="IFX-xD-Gc9"/>
                 <constraint firstItem="rom-if-2Ar" firstAttribute="centerX" secondItem="DC0-Y3-olg" secondAttribute="centerX" id="LDH-BU-ho5"/>
                 <constraint firstItem="UCA-PN-ne3" firstAttribute="centerX" secondItem="9Ka-ce-uTa" secondAttribute="centerX" id="LUl-q5-UId"/>
@@ -152,9 +151,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
