@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="100" height="37"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nivel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h8-wW-XPl">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="37"/>
+                                <rect key="frame" x="15" y="0.0" width="85" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="9h8-wW-XPl" secondAttribute="bottom" id="02a-MX-vam"/>
-                            <constraint firstItem="9h8-wW-XPl" firstAttribute="leading" secondItem="AYG-7d-Pn4" secondAttribute="leading" id="8Um-zh-6zM"/>
+                            <constraint firstItem="9h8-wW-XPl" firstAttribute="leading" secondItem="AYG-7d-Pn4" secondAttribute="leading" constant="15" id="0d5-H5-8DF"/>
                             <constraint firstItem="9h8-wW-XPl" firstAttribute="top" secondItem="AYG-7d-Pn4" secondAttribute="top" id="9HW-5S-j90"/>
                             <constraint firstAttribute="trailing" secondItem="9h8-wW-XPl" secondAttribute="trailing" id="Qhi-dv-0TM"/>
                         </constraints>

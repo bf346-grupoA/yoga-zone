@@ -10,14 +10,30 @@ import UIKit
 class TrainingCustomCell: UITableViewCell {
 
     @IBOutlet weak var treinoImageView: UIImageView!
-    
     @IBOutlet weak var treinoDescriptionLabel: UILabel!
-    
     @IBOutlet weak var treinoDurationLabel: UILabel!
+    
+    
+    static let identifier:String = "TrainingCustomCell"
+    
+    static func nib()-> UINib{
+        return UINib(nibName: self.identifier, bundle: nil)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        clearBackgroundColorWhenSelectCell()
+        self.setupUI()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
+    //MARK: - SetupUI
+    func configLabels(){
+        self.treinoDescriptionLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
+        self.treinoDurationLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
+        self.treinoDurationLabel.textAlignment = .center
     }
     
     func clearBackgroundColorWhenSelectCell() {
@@ -25,9 +41,9 @@ class TrainingCustomCell: UITableViewCell {
            view.backgroundColor = UIColor.clear
            selectedBackgroundView = view
        }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
     
+    func setupUI(){
+        self.configLabels()
+        self.clearBackgroundColorWhenSelectCell()
+    }
 }

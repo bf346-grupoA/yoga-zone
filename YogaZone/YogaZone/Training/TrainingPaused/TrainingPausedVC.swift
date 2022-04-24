@@ -13,14 +13,13 @@ class TrainingPausedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.ReturnToTrain()
+        self.returnToTrain()
     }
     
-    private func ReturnToTrain(){
+    private func returnToTrain(){
         let tapView = UITapGestureRecognizer(target: self, action: #selector(self.tappedView))
         self.view.addGestureRecognizer(tapView)
         self.view.isUserInteractionEnabled = true
-        
     }
     
     @objc func tappedView(){

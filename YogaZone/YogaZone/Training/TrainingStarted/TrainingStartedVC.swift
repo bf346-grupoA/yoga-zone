@@ -8,10 +8,8 @@
 
 import UIKit
 
-class TrainingStartedVC: UIViewController {
+class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
 
-    @IBOutlet weak var tappedArrowVoltar: UIImageView!
-    
     @IBOutlet weak var titleExerciceNameLabel: UILabel!
     
     @IBOutlet weak var subtitleExerciceLabel: UILabel!
@@ -26,33 +24,21 @@ class TrainingStartedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configBackButton()
+        
+        self.setupNavigationBar()
         self.configPauseButton()
         self.configNextButton()
         self.loadGifImage()
-        
-        tappedArrowVoltar.image = UIImage(named: "arrowVoltarCinza")
-        pauseImage.image = UIImage(named: "pauseImage")
-        nextImage.image = UIImage(named: "nextArrowImage")
-        
-        
-        // Hide Back Button from UINavigationItem
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.setupImages()
     }
     
     func loadGifImage(){
         gifImage.image = UIImage.gifImageWithName("01_Natarajasana")
     }
- 
-    private func configBackButton(){
-        let tapBackButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedBackButton))
-        self.tappedArrowVoltar.addGestureRecognizer(tapBackButton)
-        self.tappedArrowVoltar.isUserInteractionEnabled = true
-    }
     
-    @objc func tappedBackButton(){
-        let leaveTraining = LeaveTrainingVC()
-        navigationController?.pushViewController(leaveTraining, animated: false)
+    func setupImages(){
+        pauseImage.image = UIImage(named: "pauseImage")
+        nextImage.image = UIImage(named: "nextArrowImage")
     }
     
     private func configPauseButton(){
@@ -78,5 +64,24 @@ class TrainingStartedVC: UIViewController {
     @objc func tappedNextButton(){
         let vc = TrainingFinishedVC()
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+// MARK: Navigation Bar Customization
+extension TrainingStartedVC {
+    func setupNavigationBar(){
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(leaveTraining)
+        )
+    }
+    
+    @objc private func leaveTraining() {
+        let leaveTraining = LeaveTrainingVC()
+        navigationController?.pushViewController(leaveTraining, animated: false)
     }
 }
