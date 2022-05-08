@@ -8,6 +8,7 @@
 import UIKit
 
 class TrainingPausedVC: UIViewController {
+    
 
     @IBOutlet weak var pausedLabel: UILabel!
     
@@ -16,10 +17,12 @@ class TrainingPausedVC: UIViewController {
         self.returnToTrain()
     }
     
+    
     private func returnToTrain(){
         let tapView = UITapGestureRecognizer(target: self, action: #selector(self.tappedView))
         self.view.addGestureRecognizer(tapView)
         self.view.isUserInteractionEnabled = true
+       
     }
     
     @objc func tappedView(){
