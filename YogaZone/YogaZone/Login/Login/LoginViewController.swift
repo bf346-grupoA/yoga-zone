@@ -128,7 +128,7 @@ extension LoginViewController: FormValidation, Navigable {
             case 1: self.navigationController?.pushViewController(HomeViewController(), animated: true)
             case 2: self.navigationController?.pushViewController(HomeViewController(), animated: true)
             case 3: self.navigationController?.pushViewController(HomeViewController(), animated: true)
-            default: self.navigationController?.pushViewController(HomeViewController(), animated: true)
+            default: self.navigationController?.pushViewController(MainRegisterVC(), animated: true)
         }
     }
     

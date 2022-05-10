@@ -110,7 +110,6 @@
 		2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A544427EC3EE400FBA25F /* LoginViewController.xib */; };
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
 		2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* CardMenuCell.swift */; };
-		2F412EB827E4101E007708E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB127E4101E007708E8 /* Router.swift */; };
 		2F412EB927E4101E007708E8 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB327E4101E007708E8 /* CardCell.swift */; };
 		2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EBD27E41821007708E8 /* MeditationData.swift */; };
 		2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F412EBF27E41821007708E8 /* MeditacaoHomeViewController.xib */; };
@@ -164,6 +163,8 @@
 		2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */; };
 		2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E16127DD12A30070397F /* PoseCategoryCell.swift */; };
 		2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E16227DD12A30070397F /* PoseCategoryCell.xib */; };
+		2F9FF26C2817714E0026F43E /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9FF26B2817714E0026F43E /* NavigationHelper.swift */; };
+		2F9FF26E2817715F0026F43E /* AssetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9FF26D2817715F0026F43E /* AssetHelper.swift */; };
 		2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */; };
 		2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */; };
 		2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B727EACC3C00C5BD81 /* MyProfileTableViewCell.swift */; };
@@ -311,7 +312,6 @@
 		2F3A544427EC3EE400FBA25F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		2F412EB027E4101E007708E8 /* CardMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMenuCell.swift; sourceTree = "<group>"; };
-		2F412EB127E4101E007708E8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2F412EB327E4101E007708E8 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		2F412EBD27E41821007708E8 /* MeditationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationData.swift; sourceTree = "<group>"; };
 		2F412EBF27E41821007708E8 /* MeditacaoHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeditacaoHomeViewController.xib; sourceTree = "<group>"; };
@@ -365,6 +365,8 @@
 		2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalVideoViewController.xib; sourceTree = "<group>"; };
 		2F79E16127DD12A30070397F /* PoseCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategoryCell.swift; sourceTree = "<group>"; };
 		2F79E16227DD12A30070397F /* PoseCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseCategoryCell.xib; sourceTree = "<group>"; };
+		2F9FF26B2817714E0026F43E /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		2F9FF26D2817715F0026F43E /* AssetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetHelper.swift; sourceTree = "<group>"; };
 		2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsVC.swift; sourceTree = "<group>"; };
 		2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreOptionsVC.xib; sourceTree = "<group>"; };
 		2FA287B727EACC3C00C5BD81 /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
@@ -625,6 +627,25 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		2F093FD62829EFF5008E7566 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */,
+				2F3A53C827EB63D900FBA25F /* Menu */,
+				2F412EAE27E4101E007708E8 /* CategoryHeader */,
+				2F412EB227E4101E007708E8 /* CardCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F093FD92829F03F008E7566 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53C927EB641C00FBA25F /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2F0C33CE27E432EC004A1E8C /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -845,7 +866,8 @@
 			children = (
 				2FA287CC27EAD19000C5BD81 /* Navigable.swift */,
 				2F5B670727ED230D00AC243E /* FormValidation.swift */,
-				2F412EB127E4101E007708E8 /* Router.swift */,
+				2F9FF26B2817714E0026F43E /* NavigationHelper.swift */,
+				2F9FF26D2817715F0026F43E /* AssetHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -995,11 +1017,8 @@
 		2F412EAD27E4101E007708E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2F3A53C827EB63D900FBA25F /* Menu */,
-				2F412EAE27E4101E007708E8 /* CategoryHeader */,
-				2F412EB227E4101E007708E8 /* CardCell */,
-				2F3A53C927EB641C00FBA25F /* HomeViewController.swift */,
-				2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */,
+				2F093FD92829F03F008E7566 /* Controller */,
+				2F093FD62829EFF5008E7566 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1704,6 +1723,7 @@
 				2F036F8727E429D800993E41 /* CancelContainerViewController.swift in Sources */,
 				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
 				2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */,
+				2F9FF26C2817714E0026F43E /* NavigationHelper.swift in Sources */,
 				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
 				2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
@@ -1758,7 +1778,6 @@
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
 				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
-				2F412EB827E4101E007708E8 /* Router.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				2F5B66F727ED22A800AC243E /* FacebookButtonCell.swift in Sources */,
 				2F3A540227EC04A100FBA25F /* TrainingFinishedVC.swift in Sources */,
@@ -1766,6 +1785,7 @@
 				2F5B670027ED22A800AC243E /* SeparatorCell.swift in Sources */,
 				2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
+				2F9FF26E2817715F0026F43E /* AssetHelper.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
 				2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */,
 				2F5B66FE27ED22A800AC243E /* EmailAndPasswordCell.swift in Sources */,

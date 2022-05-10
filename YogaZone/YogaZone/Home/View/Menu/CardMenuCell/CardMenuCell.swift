@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  CompositionalLayout
+//  CardMenuCell.swift
+//  YogaZone
 //
 //  Created by Philippe Muniz Gomes on 17/03/22.
 //
@@ -191,8 +191,8 @@ extension CardMenuCell: UICollectionViewDataSource, UICollectionViewDelegate, UI
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: CardCell.identifier, for: indexPath) as? CardCell
         
-        let image = Router.getImageName(indexPath: indexPath)
-        let destinationIndex = Router.getDestinationIndex(indexPath: indexPath)
+        let image = AssetHelper.getImageName(indexPath: indexPath)
+        let destinationIndex = NavigationHelper.getDestinationIndex(indexPath: indexPath)
 
         cell?.setupCell(imageName: image, destinationIndex: destinationIndex)
                 
@@ -203,13 +203,13 @@ extension CardMenuCell: UICollectionViewDataSource, UICollectionViewDelegate, UI
         
         let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CategoryHeaderView.identifier, for: indexPath) as? CategoryHeaderView
          
-        sectionHeader?.label.text = indexPath.section == 0 ? "Progresso Diário" : "Social"
+        sectionHeader?.label.text = indexPath.section == 0 ? "Daily Progress" : "Social"
         
         return sectionHeader ?? UICollectionReusableView()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let destinationIndex = Router.getDestinationIndex(indexPath: indexPath)
+        let destinationIndex = NavigationHelper.getDestinationIndex(indexPath: indexPath)
         self.delegate?.navigateTo(routeIndex: destinationIndex)
     }
     
