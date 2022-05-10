@@ -39,7 +39,7 @@ class NavigationHelper {
     static func getDestinationByIndex(index: Int) -> UIViewController {
         switch index {
             case 1: return PoseGalleryViewController()
-            case 2: return ImcController()
+            case 2: return BmiViewController()
             case 3: return BreathingHomeViewController()
             case 4: return MeditacaoHomeViewController()
             case 5: return MeditacaoHomeViewController()

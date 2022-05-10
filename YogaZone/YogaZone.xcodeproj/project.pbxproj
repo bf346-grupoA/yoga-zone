@@ -30,19 +30,6 @@
 		2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F7327E429D800993E41 /* EventDetailViewController.swift */; };
 		2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F7427E429D800993E41 /* EventDetail.storyboard */; };
 		2F036F9127E429D800993E41 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F7627E429D800993E41 /* Event.swift */; };
-		2F036FAB27E429E400993E41 /* ImcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F9427E429E400993E41 /* ImcController.xib */; };
-		2F036FAC27E429E400993E41 /* ImcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F9527E429E400993E41 /* ImcController.swift */; };
-		2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F9A27E429E400993E41 /* HistoricoController.swift */; };
-		2F036FB027E429E400993E41 /* HistoricoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F9B27E429E400993E41 /* HistoricoController.xib */; };
-		2F036FB127E429E400993E41 /* HistoricoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F9D27E429E400993E41 /* HistoricoTableViewCell.swift */; };
-		2F036FB227E429E400993E41 /* HistoricoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F9E27E429E400993E41 /* HistoricoTableViewCell.xib */; };
-		2F036FB327E429E400993E41 /* ImcEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036FA027E429E400993E41 /* ImcEnums.swift */; };
-		2F036FB427E429E400993E41 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036FA227E429E400993E41 /* Result.swift */; };
-		2F036FB527E429E400993E41 /* ResultadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036FA427E429E400993E41 /* ResultadoController.swift */; };
-		2F036FB627E429E400993E41 /* ResultadoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036FA527E429E400993E41 /* ResultadoController.xib */; };
-		2F036FB727E429E400993E41 /* tappedSwitchObController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F036FA727E429E400993E41 /* tappedSwitchObController.xib */; };
-		2F036FB827E429E400993E41 /* tappedSwitchObController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036FA827E429E400993E41 /* tappedSwitchObController.swift */; };
-		2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036FAA27E429E400993E41 /* NumericExtensions.swift */; };
 		2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */; };
 		2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */; };
 		2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */; };
@@ -104,8 +91,6 @@
 		2F3A541127EC04A100FBA25F /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */; };
 		2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */; };
 		2F3A541327EC04A100FBA25F /* LevelAndDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */; };
-		2F3A543127EC2E5000FBA25F /* tappedSaveResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */; };
-		2F3A543227EC2E5000FBA25F /* tappedSaveResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */; };
 		2F3A544527EC3EE400FBA25F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A544327EC3EE400FBA25F /* LoginViewController.swift */; };
 		2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A544427EC3EE400FBA25F /* LoginViewController.xib */; };
 		2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */; };
@@ -163,6 +148,17 @@
 		2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */; };
 		2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E16127DD12A30070397F /* PoseCategoryCell.swift */; };
 		2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E16227DD12A30070397F /* PoseCategoryCell.xib */; };
+		2F83C793282A0A0C00EC3334 /* Bmi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F83C781282A0A0C00EC3334 /* Bmi.storyboard */; };
+		2F83C794282A0A0C00EC3334 /* TableViewCellMyProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C784282A0A0C00EC3334 /* TableViewCellMyProgress.swift */; };
+		2F83C795282A0A0C00EC3334 /* TableViewCellMyProgress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F83C785282A0A0C00EC3334 /* TableViewCellMyProgress.xib */; };
+		2F83C796282A0A0C00EC3334 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C787282A0A0C00EC3334 /* MyTableViewCell.swift */; };
+		2F83C797282A0A0C00EC3334 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F83C788282A0A0C00EC3334 /* MyTableViewCell.xib */; };
+		2F83C798282A0A0C00EC3334 /* BmiEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C78B282A0A0C00EC3334 /* BmiEnum.swift */; };
+		2F83C799282A0A0C00EC3334 /* customFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C78D282A0A0C00EC3334 /* customFileCell.swift */; };
+		2F83C79A282A0A0C00EC3334 /* Myprogress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C78E282A0A0C00EC3334 /* Myprogress.swift */; };
+		2F83C79B282A0A0C00EC3334 /* BmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C790282A0A0C00EC3334 /* BmiViewController.swift */; };
+		2F83C79C282A0A0C00EC3334 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C791282A0A0C00EC3334 /* ResultViewController.swift */; };
+		2F83C79D282A0A0C00EC3334 /* MyProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C792282A0A0C00EC3334 /* MyProgressViewController.swift */; };
 		2F9FF26C2817714E0026F43E /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9FF26B2817714E0026F43E /* NavigationHelper.swift */; };
 		2F9FF26E2817715F0026F43E /* AssetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9FF26D2817715F0026F43E /* AssetHelper.swift */; };
 		2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */; };
@@ -221,19 +217,6 @@
 		2F036F7327E429D800993E41 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		2F036F7427E429D800993E41 /* EventDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventDetail.storyboard; sourceTree = "<group>"; };
 		2F036F7627E429D800993E41 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		2F036F9427E429E400993E41 /* ImcController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImcController.xib; sourceTree = "<group>"; };
-		2F036F9527E429E400993E41 /* ImcController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImcController.swift; sourceTree = "<group>"; };
-		2F036F9A27E429E400993E41 /* HistoricoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoController.swift; sourceTree = "<group>"; };
-		2F036F9B27E429E400993E41 /* HistoricoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoricoController.xib; sourceTree = "<group>"; };
-		2F036F9D27E429E400993E41 /* HistoricoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewCell.swift; sourceTree = "<group>"; };
-		2F036F9E27E429E400993E41 /* HistoricoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoricoTableViewCell.xib; sourceTree = "<group>"; };
-		2F036FA027E429E400993E41 /* ImcEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImcEnums.swift; sourceTree = "<group>"; };
-		2F036FA227E429E400993E41 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		2F036FA427E429E400993E41 /* ResultadoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoController.swift; sourceTree = "<group>"; };
-		2F036FA527E429E400993E41 /* ResultadoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultadoController.xib; sourceTree = "<group>"; };
-		2F036FA727E429E400993E41 /* tappedSwitchObController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tappedSwitchObController.xib; sourceTree = "<group>"; };
-		2F036FA827E429E400993E41 /* tappedSwitchObController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tappedSwitchObController.swift; sourceTree = "<group>"; };
-		2F036FAA27E429E400993E41 /* NumericExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericExtensions.swift; sourceTree = "<group>"; };
 		2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonController.swift; sourceTree = "<group>"; };
 		2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoRegisterVC.swift; sourceTree = "<group>"; };
 		2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInfoRegisterVC.xib; sourceTree = "<group>"; };
@@ -295,8 +278,6 @@
 		2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
 		2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelAndDurationVC.xib; sourceTree = "<group>"; };
 		2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelAndDurationVC.swift; sourceTree = "<group>"; };
-		2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tappedSaveResultViewController.xib; sourceTree = "<group>"; };
-		2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tappedSaveResultViewController.swift; sourceTree = "<group>"; };
 		2F3A544327EC3EE400FBA25F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F3A544427EC3EE400FBA25F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		2F412EAF27E4101E007708E8 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
@@ -354,6 +335,17 @@
 		2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalVideoViewController.xib; sourceTree = "<group>"; };
 		2F79E16127DD12A30070397F /* PoseCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategoryCell.swift; sourceTree = "<group>"; };
 		2F79E16227DD12A30070397F /* PoseCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseCategoryCell.xib; sourceTree = "<group>"; };
+		2F83C782282A0A0C00EC3334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Bmi.storyboard; sourceTree = "<group>"; };
+		2F83C784282A0A0C00EC3334 /* TableViewCellMyProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellMyProgress.swift; sourceTree = "<group>"; };
+		2F83C785282A0A0C00EC3334 /* TableViewCellMyProgress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellMyProgress.xib; sourceTree = "<group>"; };
+		2F83C787282A0A0C00EC3334 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		2F83C788282A0A0C00EC3334 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		2F83C78B282A0A0C00EC3334 /* BmiEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmiEnum.swift; sourceTree = "<group>"; };
+		2F83C78D282A0A0C00EC3334 /* customFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customFileCell.swift; sourceTree = "<group>"; };
+		2F83C78E282A0A0C00EC3334 /* Myprogress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Myprogress.swift; sourceTree = "<group>"; };
+		2F83C790282A0A0C00EC3334 /* BmiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmiViewController.swift; sourceTree = "<group>"; };
+		2F83C791282A0A0C00EC3334 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		2F83C792282A0A0C00EC3334 /* MyProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgressViewController.swift; sourceTree = "<group>"; };
 		2F9FF26B2817714E0026F43E /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		2F9FF26D2817715F0026F43E /* AssetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetHelper.swift; sourceTree = "<group>"; };
 		2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsVC.swift; sourceTree = "<group>"; };
@@ -374,17 +366,6 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		313BF5292828A978004CE901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		313BF52B2828A978004CE901 /* TableViewCellMyProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellMyProgress.swift; sourceTree = "<group>"; };
-		313BF52C2828A978004CE901 /* TableViewCellMyProgress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellMyProgress.xib; sourceTree = "<group>"; };
-		313BF52E2828A978004CE901 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
-		313BF52F2828A978004CE901 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
-		313BF5322828A978004CE901 /* BmiEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmiEnum.swift; sourceTree = "<group>"; };
-		313BF5342828A978004CE901 /* customFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customFileCell.swift; sourceTree = "<group>"; };
-		313BF5352828A978004CE901 /* Myprogress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Myprogress.swift; sourceTree = "<group>"; };
-		313BF5372828A978004CE901 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		313BF5382828A978004CE901 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		313BF5392828A978004CE901 /* MyProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgressViewController.swift; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -529,91 +510,6 @@
 				2F036F7627E429D800993E41 /* Event.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		2F036F9227E429E400993E41 /* IMC */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F9327E429E400993E41 /* Home */,
-				2F036F9927E429E400993E41 /* HIstorico */,
-				2F036F9F27E429E400993E41 /* Enums */,
-				2F036FA127E429E400993E41 /* Models */,
-				2F036FA327E429E400993E41 /* Resultado */,
-				2F036FA627E429E400993E41 /* TappedSwitchObController */,
-				2F036FA927E429E400993E41 /* Helpers */,
-			);
-			path = IMC;
-			sourceTree = "<group>";
-		};
-		2F036F9327E429E400993E41 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F9427E429E400993E41 /* ImcController.xib */,
-				2F036F9527E429E400993E41 /* ImcController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		2F036F9927E429E400993E41 /* HIstorico */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F9A27E429E400993E41 /* HistoricoController.swift */,
-				2F036F9B27E429E400993E41 /* HistoricoController.xib */,
-				2F036F9C27E429E400993E41 /* HistoricoCell */,
-			);
-			path = HIstorico;
-			sourceTree = "<group>";
-		};
-		2F036F9C27E429E400993E41 /* HistoricoCell */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F9D27E429E400993E41 /* HistoricoTableViewCell.swift */,
-				2F036F9E27E429E400993E41 /* HistoricoTableViewCell.xib */,
-			);
-			path = HistoricoCell;
-			sourceTree = "<group>";
-		};
-		2F036F9F27E429E400993E41 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				2F036FA027E429E400993E41 /* ImcEnums.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		2F036FA127E429E400993E41 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2F036FA227E429E400993E41 /* Result.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2F036FA327E429E400993E41 /* Resultado */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A542E27EC2E5000FBA25F /* TappedButtonSave */,
-				2F036FA427E429E400993E41 /* ResultadoController.swift */,
-				2F036FA527E429E400993E41 /* ResultadoController.xib */,
-			);
-			path = Resultado;
-			sourceTree = "<group>";
-		};
-		2F036FA627E429E400993E41 /* TappedSwitchObController */ = {
-			isa = PBXGroup;
-			children = (
-				2F036FA727E429E400993E41 /* tappedSwitchObController.xib */,
-				2F036FA827E429E400993E41 /* tappedSwitchObController.swift */,
-			);
-			path = TappedSwitchObController;
-			sourceTree = "<group>";
-		};
-		2F036FA927E429E400993E41 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				2F036FAA27E429E400993E41 /* NumericExtensions.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2F093FD62829EFF5008E7566 /* View */ = {
@@ -994,15 +890,6 @@
 			path = DropDownTwoTableCell;
 			sourceTree = "<group>";
 		};
-		2F3A542E27EC2E5000FBA25F /* TappedButtonSave */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */,
-				2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */,
-			);
-			path = TappedButtonSave;
-			sourceTree = "<group>";
-		};
 		2F412EAD27E4101E007708E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -1308,6 +1195,70 @@
 			path = PoseCategoryCell;
 			sourceTree = "<group>";
 		};
+		2F83C780282A0A0C00EC3334 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C781282A0A0C00EC3334 /* Bmi.storyboard */,
+				2F83C783282A0A0C00EC3334 /* TableViewMyProgress */,
+				2F83C786282A0A0C00EC3334 /* customTableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F83C783282A0A0C00EC3334 /* TableViewMyProgress */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C784282A0A0C00EC3334 /* TableViewCellMyProgress.swift */,
+				2F83C785282A0A0C00EC3334 /* TableViewCellMyProgress.xib */,
+			);
+			path = TableViewMyProgress;
+			sourceTree = "<group>";
+		};
+		2F83C786282A0A0C00EC3334 /* customTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C787282A0A0C00EC3334 /* MyTableViewCell.swift */,
+				2F83C788282A0A0C00EC3334 /* MyTableViewCell.xib */,
+			);
+			path = customTableViewCell;
+			sourceTree = "<group>";
+		};
+		2F83C789282A0A0C00EC3334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C78A282A0A0C00EC3334 /* Enum */,
+				2F83C78C282A0A0C00EC3334 /* Models */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F83C78A282A0A0C00EC3334 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C78B282A0A0C00EC3334 /* BmiEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		2F83C78C282A0A0C00EC3334 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C78D282A0A0C00EC3334 /* customFileCell.swift */,
+				2F83C78E282A0A0C00EC3334 /* Myprogress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F83C78F282A0A0C00EC3334 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C790282A0A0C00EC3334 /* BmiViewController.swift */,
+				2F83C791282A0A0C00EC3334 /* ResultViewController.swift */,
+				2F83C792282A0A0C00EC3334 /* MyProgressViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2FA287B127EACC3C00C5BD81 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -1399,7 +1350,6 @@
 				2F0C33FF27E4384E004A1E8C /* Breathing */,
 				2F0C33E327E434DA004A1E8C /* Register */,
 				2F0C33CE27E432EC004A1E8C /* Login */,
-				2F036F9227E429E400993E41 /* IMC */,
 				2F036F5027E429D800993E41 /* Events */,
 				2F412EDA27E41A0B007708E8 /* Assets */,
 				2F412EBB27E41821007708E8 /* Meditacao */,
@@ -1417,78 +1367,11 @@
 		313BF5262828A266004CE901 /* Bmi */ = {
 			isa = PBXGroup;
 			children = (
-				313BF5362828A978004CE901 /* Controller */,
-				313BF5302828A978004CE901 /* Model */,
-				313BF5272828A978004CE901 /* View */,
+				2F83C78F282A0A0C00EC3334 /* Controller */,
+				2F83C789282A0A0C00EC3334 /* Model */,
+				2F83C780282A0A0C00EC3334 /* View */,
 			);
 			path = Bmi;
-			sourceTree = "<group>";
-		};
-		313BF5272828A978004CE901 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				313BF5282828A978004CE901 /* Main.storyboard */,
-				313BF52A2828A978004CE901 /* TableViewMyProgress */,
-				313BF52D2828A978004CE901 /* customTableViewCell */,
-			);
-			name = View;
-			path = "../../../../../projetos prontos/BmiX/View";
-			sourceTree = "<group>";
-		};
-		313BF52A2828A978004CE901 /* TableViewMyProgress */ = {
-			isa = PBXGroup;
-			children = (
-				313BF52B2828A978004CE901 /* TableViewCellMyProgress.swift */,
-				313BF52C2828A978004CE901 /* TableViewCellMyProgress.xib */,
-			);
-			path = TableViewMyProgress;
-			sourceTree = "<group>";
-		};
-		313BF52D2828A978004CE901 /* customTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				313BF52E2828A978004CE901 /* MyTableViewCell.swift */,
-				313BF52F2828A978004CE901 /* MyTableViewCell.xib */,
-			);
-			path = customTableViewCell;
-			sourceTree = "<group>";
-		};
-		313BF5302828A978004CE901 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				313BF5312828A978004CE901 /* Enum */,
-				313BF5332828A978004CE901 /* Models */,
-			);
-			name = Model;
-			path = "../../../../../projetos prontos/BmiX/Model";
-			sourceTree = "<group>";
-		};
-		313BF5312828A978004CE901 /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-				313BF5322828A978004CE901 /* BmiEnum.swift */,
-			);
-			path = Enum;
-			sourceTree = "<group>";
-		};
-		313BF5332828A978004CE901 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				313BF5342828A978004CE901 /* customFileCell.swift */,
-				313BF5352828A978004CE901 /* Myprogress.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		313BF5362828A978004CE901 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				313BF5372828A978004CE901 /* ViewController.swift */,
-				313BF5382828A978004CE901 /* ResultViewController.swift */,
-				313BF5392828A978004CE901 /* MyProgressViewController.swift */,
-			);
-			name = Controller;
-			path = "../../../../../projetos prontos/BmiX/Controller";
 			sourceTree = "<group>";
 		};
 		8327042227E7AB3A0006CF3B /* Sucess Screen */ = {
@@ -1598,7 +1481,6 @@
 				2F0C342827E4384E004A1E8C /* ExpireViewController.xib in Resources */,
 				8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */,
 				2F3A540327EC04A100FBA25F /* TrainingFinishedVC.xib in Resources */,
-				2F036FB227E429E400993E41 /* HistoricoTableViewCell.xib in Resources */,
 				2F412EF327E41A0B007708E8 /* pad-B.mp3 in Resources */,
 				2F3A540627EC04A100FBA25F /* 01_Natarajasana.gif in Resources */,
 				2F3A540727EC04A100FBA25F /* TrainingStartedVC.xib in Resources */,
@@ -1610,8 +1492,10 @@
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
 				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
 				2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */,
+				2F83C797282A0A0C00EC3334 /* MyTableViewCell.xib in Resources */,
 				2F412ED427E41821007708E8 /* IntroViewController.xib in Resources */,
 				2F0C342C27E4384E004A1E8C /* HoldViewController.xib in Resources */,
+				2F83C793282A0A0C00EC3334 /* Bmi.storyboard in Resources */,
 				8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */,
 				2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */,
 				2F5B66D727ED227900AC243E /* ResetPasswordViewController.xib in Resources */,
@@ -1631,16 +1515,14 @@
 				2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
-				2F036FAB27E429E400993E41 /* ImcController.xib in Resources */,
 				2F036F8C27E429D800993E41 /* Alert.storyboard in Resources */,
 				2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */,
 				2F036F7827E429D800993E41 /* EventFilterViewController.xib in Resources */,
 				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
-				2F036FB027E429E400993E41 /* HistoricoController.xib in Resources */,
 				2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */,
 				2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */,
 				8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */,
-				2F3A543127EC2E5000FBA25F /* tappedSaveResultViewController.xib in Resources */,
+				2F83C795282A0A0C00EC3334 /* TableViewCellMyProgress.xib in Resources */,
 				2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */,
 				2F036F7B27E429D800993E41 /* HomeEvents.storyboard in Resources */,
 				2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */,
@@ -1651,7 +1533,6 @@
 				2F412EF527E41A0B007708E8 /* pad-D.mp3 in Resources */,
 				2F0C33FA27E434DA004A1E8C /* UserLevelVC.xib in Resources */,
 				2F412EF827E41A0B007708E8 /* pad-Eb.mp3 in Resources */,
-				2F036FB627E429E400993E41 /* ResultadoController.xib in Resources */,
 				2F5B66F927ED22A800AC243E /* RegisterButtonCell.xib in Resources */,
 				2F036F8A27E429D800993E41 /* EditEventDetailViewController.xib in Resources */,
 				2F5B66F627ED22A800AC243E /* FacebookButtonCell.xib in Resources */,
@@ -1667,7 +1548,6 @@
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
 				2F0C342D27E4384E004A1E8C /* InhaleViewController.xib in Resources */,
 				8391EA5727E820E800F466F2 /* Montserrat-SemiBold.ttf in Resources */,
-				2F036FB727E429E400993E41 /* tappedSwitchObController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1680,22 +1560,24 @@
 			files = (
 				2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */,
 				2F5B66FD27ED22A800AC243E /* LoginButtonCell.swift in Sources */,
+				2F83C79B282A0A0C00EC3334 /* BmiViewController.swift in Sources */,
 				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F0C342327E4384E004A1E8C /* StartViewController.swift in Sources */,
 				2F79E15227DCFEEB0070397F /* Pose.swift in Sources */,
-				2F036FB927E429E400993E41 /* NumericExtensions.swift in Sources */,
 				2F5B670327ED22A800AC243E /* LogoCell.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
 				2F5B66F527ED22A800AC243E /* GoogleButtonCell.swift in Sources */,
 				2F036F8127E429D800993E41 /* EventData.swift in Sources */,
 				2F5B66FB27ED22A800AC243E /* ResetPasswordCell.swift in Sources */,
-				2F3A543227EC2E5000FBA25F /* tappedSaveResultViewController.swift in Sources */,
 				2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */,
 				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
-				2F036FB127E429E400993E41 /* HistoricoTableViewCell.swift in Sources */,
+				2F83C796282A0A0C00EC3334 /* MyTableViewCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
+				2F83C794282A0A0C00EC3334 /* TableViewCellMyProgress.swift in Sources */,
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
+				2F83C799282A0A0C00EC3334 /* customFileCell.swift in Sources */,
 				2F3A541027EC04A100FBA25F /* DropDownTwoTableViewCell.swift in Sources */,
+				2F83C79D282A0A0C00EC3334 /* MyProgressViewController.swift in Sources */,
 				2F412ED227E41821007708E8 /* AudioCell.swift in Sources */,
 				2F3A540527EC04A100FBA25F /* TrainingStartedVC.swift in Sources */,
 				2F3A540427EC04A100FBA25F /* RenderGIF.swift in Sources */,
@@ -1709,6 +1591,7 @@
 				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
 				2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
+				2F83C79A282A0A0C00EC3334 /* Myprogress.swift in Sources */,
 				2F5B670627ED22B500AC243E /* UserData.swift in Sources */,
 				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
 				2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */,
@@ -1717,13 +1600,13 @@
 				2F036F8D27E429D800993E41 /* AlertService.swift in Sources */,
 				2F036F8227E429D800993E41 /* CreateNewEventViewController.swift in Sources */,
 				2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */,
+				2F83C798282A0A0C00EC3334 /* BmiEnum.swift in Sources */,
 				2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */,
 				8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */,
 				2F3A540B27EC04A100FBA25F /* TrainingPausedVC.swift in Sources */,
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
 				2F3A544527EC3EE400FBA25F /* LoginViewController.swift in Sources */,
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
-				2F036FAC27E429E400993E41 /* ImcController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
 				2F0C341D27E4384E004A1E8C /* SettingsViewController.swift in Sources */,
 				2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */,
@@ -1740,7 +1623,6 @@
 				2F0C342A27E4384E004A1E8C /* ModalViewController.swift in Sources */,
 				2F3A540E27EC04A100FBA25F /* DropDownTableViewCell.swift in Sources */,
 				2F0C342E27E4384E004A1E8C /* InhaleViewController.swift in Sources */,
-				2F036FB527E429E400993E41 /* ResultadoController.swift in Sources */,
 				3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */,
 				2F79E14F27DCFA120070397F /* PoseCell.swift in Sources */,
 				2F412EB627E4101E007708E8 /* CategoryHeaderView.swift in Sources */,
@@ -1752,18 +1634,15 @@
 				2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */,
-				2F036FB427E429E400993E41 /* Result.swift in Sources */,
 				2F3A53FF27EC04A100FBA25F /* TrainingListController.swift in Sources */,
-				2F036FB327E429E400993E41 /* ImcEnums.swift in Sources */,
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
 				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				2F5B66F727ED22A800AC243E /* FacebookButtonCell.swift in Sources */,
 				2F3A540227EC04A100FBA25F /* TrainingFinishedVC.swift in Sources */,
-				2F036FB827E429E400993E41 /* tappedSwitchObController.swift in Sources */,
 				2F5B670027ED22A800AC243E /* SeparatorCell.swift in Sources */,
-				2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */,
+				2F83C79C282A0A0C00EC3334 /* ResultViewController.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
 				2F9FF26E2817715F0026F43E /* AssetHelper.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
@@ -1781,20 +1660,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2F83C781282A0A0C00EC3334 /* Bmi.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F83C782282A0A0C00EC3334 /* Base */,
+			);
+			name = Bmi.storyboard;
+			sourceTree = "<group>";
+		};
 		3126834427C15ECB003F017B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3126834527C15ECB003F017B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		313BF5282828A978004CE901 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				313BF5292828A978004CE901 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

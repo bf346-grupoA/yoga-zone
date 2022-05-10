@@ -14,7 +14,7 @@ protocol SendData {
     var missing: Float {get}
 }
 
-class ViewController: UIViewController {
+class BmiViewController: UIViewController {
 
     @IBOutlet weak var wLabel: UILabel!
     @IBOutlet weak var hLabel: UILabel!
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController {
+extension BmiViewController {
     
     func calculateResult() {
         

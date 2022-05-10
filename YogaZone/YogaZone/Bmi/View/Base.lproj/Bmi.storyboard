@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bmi View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="BmiX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BmiViewController" id="BYZ-38-t0r" customClass="BmiViewController" customModule="YogaZone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +181,7 @@
         <!--Result View Controller-->
         <scene sceneID="ypg-MT-jha">
             <objects>
-                <viewController storyboardIdentifier="ResultViewController" id="bWC-TB-LGa" customClass="ResultViewController" customModule="BmiX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="bWC-TB-LGa" customClass="ResultViewController" customModule="YogaZone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NZG-5p-lNq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +225,7 @@
         <!--My Progress View Controller-->
         <scene sceneID="aEo-Mg-LpY">
             <objects>
-                <viewController storyboardIdentifier="MyProgressViewController" modalPresentationStyle="fullScreen" id="QnL-Zc-CSv" customClass="MyProgressViewController" customModule="BmiX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyProgressViewController" modalPresentationStyle="fullScreen" id="QnL-Zc-CSv" customClass="MyProgressViewController" customModule="YogaZone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPL-eZ-EPP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
