@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TrainingStartedVCDelegate:AnyObject {
+    func resumeTimer()
+}
+
 
 class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
 
@@ -22,10 +26,9 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var nextImage: UIImageView!
     
     @IBOutlet weak var gifImage: UIImageView!
-    
-    
-    var seconds = 61
+
     var timer = Timer()
+    var seconds = 61
     var isTimerRunning = false
     var resumeTapped = false
     
@@ -44,6 +47,7 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.runTimer()
+        
     }
     
     func loadGifImage(){
@@ -63,7 +67,12 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func tappedPauseButton(){
-        self.pauseTimer()
+        let vc = TrainingPausedVC()
+            vc.delegate = self
+            vc.view.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+            vc.modalPresentationStyle = .overCurrentContext
+            self.present(vc, animated: false, completion: nil)
+            self.pauseTimer()
     }
     
     private func configNextButton(){
@@ -99,8 +108,12 @@ extension TrainingStartedVC {
 }
 
 // MARK: Timer Configuration
-extension TrainingStartedVC {
+extension TrainingStartedVC: TrainingStartedVCDelegate {
+    func resumeTimer() {
+        self.pauseTimer()
+    }
     
+ 
     func runTimer(){
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(TrainingStartedVC.updateTimer)), userInfo: nil, repeats: true)
     }

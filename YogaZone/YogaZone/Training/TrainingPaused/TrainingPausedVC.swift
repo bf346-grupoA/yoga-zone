@@ -9,7 +9,8 @@ import UIKit
 
 class TrainingPausedVC: UIViewController {
     
-
+    weak var delegate: TrainingStartedVCDelegate?
+    
     @IBOutlet weak var pausedLabel: UILabel!
     
     override func viewDidLoad() {
@@ -26,6 +27,7 @@ class TrainingPausedVC: UIViewController {
     }
     
     @objc func tappedView(){
+        self.delegate?.resumeTimer()
         presentingViewController?.dismiss(animated: false, completion: nil)
     }
 }
