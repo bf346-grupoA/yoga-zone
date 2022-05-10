@@ -180,17 +180,6 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-		313BF53A2828A978004CE901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 313BF5282828A978004CE901 /* Main.storyboard */; };
-		313BF53B2828A978004CE901 /* TableViewCellMyProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52B2828A978004CE901 /* TableViewCellMyProgress.swift */; };
-		313BF53C2828A978004CE901 /* TableViewCellMyProgress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313BF52C2828A978004CE901 /* TableViewCellMyProgress.xib */; };
-		313BF53D2828A978004CE901 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52E2828A978004CE901 /* MyTableViewCell.swift */; };
-		313BF53E2828A978004CE901 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313BF52F2828A978004CE901 /* MyTableViewCell.xib */; };
-		313BF53F2828A978004CE901 /* BmiEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF5322828A978004CE901 /* BmiEnum.swift */; };
-		313BF5402828A978004CE901 /* customFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF5342828A978004CE901 /* customFileCell.swift */; };
-		313BF5412828A978004CE901 /* Myprogress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF5352828A978004CE901 /* Myprogress.swift */; };
-		313BF5422828A978004CE901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF5372828A978004CE901 /* ViewController.swift */; };
-		313BF5432828A978004CE901 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF5382828A978004CE901 /* ResultViewController.swift */; };
-		313BF5442828A978004CE901 /* MyProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF5392828A978004CE901 /* MyProgressViewController.swift */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
@@ -1602,10 +1591,8 @@
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
 				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
 				2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */,
-				313BF53E2828A978004CE901 /* MyTableViewCell.xib in Resources */,
 				2F412ED427E41821007708E8 /* IntroViewController.xib in Resources */,
 				2F0C342C27E4384E004A1E8C /* HoldViewController.xib in Resources */,
-				313BF53A2828A978004CE901 /* Main.storyboard in Resources */,
 				8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */,
 				2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */,
 				2F5B66D727ED227900AC243E /* ResetPasswordViewController.xib in Resources */,
@@ -1635,7 +1622,6 @@
 				2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */,
 				8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */,
 				2F3A543127EC2E5000FBA25F /* tappedSaveResultViewController.xib in Resources */,
-				313BF53C2828A978004CE901 /* TableViewCellMyProgress.xib in Resources */,
 				2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */,
 				2F036F7B27E429D800993E41 /* HomeEvents.storyboard in Resources */,
 				2F3A541227EC04A100FBA25F /* LevelAndDurationVC.xib in Resources */,
@@ -1687,16 +1673,12 @@
 				2F3A543227EC2E5000FBA25F /* tappedSaveResultViewController.swift in Sources */,
 				2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */,
 				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
-				313BF5402828A978004CE901 /* customFileCell.swift in Sources */,
-				313BF5432828A978004CE901 /* ResultViewController.swift in Sources */,
 				2F036FB127E429E400993E41 /* HistoricoTableViewCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
 				2F3A541027EC04A100FBA25F /* DropDownTwoTableViewCell.swift in Sources */,
 				2F412ED227E41821007708E8 /* AudioCell.swift in Sources */,
-				313BF5412828A978004CE901 /* Myprogress.swift in Sources */,
 				2F3A540527EC04A100FBA25F /* TrainingStartedVC.swift in Sources */,
-				313BF53F2828A978004CE901 /* BmiEnum.swift in Sources */,
 				2F3A540427EC04A100FBA25F /* RenderGIF.swift in Sources */,
 				2F412ED627E41821007708E8 /* MeditationAudioFile.swift in Sources */,
 				2F0C342727E4384E004A1E8C /* ExpireViewController.swift in Sources */,
@@ -1720,7 +1702,6 @@
 				2F3A540B27EC04A100FBA25F /* TrainingPausedVC.swift in Sources */,
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
 				2F3A544527EC3EE400FBA25F /* LoginViewController.swift in Sources */,
-				313BF53B2828A978004CE901 /* TableViewCellMyProgress.swift in Sources */,
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036FAC27E429E400993E41 /* ImcController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
@@ -1734,7 +1715,6 @@
 				2F0C341F27E4384E004A1E8C /* BreathingHomeViewController.swift in Sources */,
 				2F412ED727E41821007708E8 /* PracticeViewController.swift in Sources */,
 				2F3A540F27EC04A100FBA25F /* MakeDropDown.swift in Sources */,
-				313BF5422828A978004CE901 /* ViewController.swift in Sources */,
 				2F0C33F927E434DA004A1E8C /* UserLevelVC.swift in Sources */,
 				2F412EB927E4101E007708E8 /* CardCell.swift in Sources */,
 				2F0C342A27E4384E004A1E8C /* ModalViewController.swift in Sources */,
@@ -1769,10 +1749,8 @@
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
 				2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */,
 				2F5B66FE27ED22A800AC243E /* EmailAndPasswordCell.swift in Sources */,
-				313BF53D2828A978004CE901 /* MyTableViewCell.swift in Sources */,
 				2F0C342B27E4384E004A1E8C /* HoldViewController.swift in Sources */,
 				2F5B66F827ED22A800AC243E /* RegisterButtonCell.swift in Sources */,
-				313BF5442828A978004CE901 /* MyProgressViewController.swift in Sources */,
 				2F0C342427E4384E004A1E8C /* AnimationViewController.swift in Sources */,
 				2F036F8E27E429D800993E41 /* AlertViewController.swift in Sources */,
 				2F3A540027EC04A100FBA25F /* TrainingCustomCell.swift in Sources */,
