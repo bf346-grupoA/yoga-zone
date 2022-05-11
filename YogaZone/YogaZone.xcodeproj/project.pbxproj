@@ -760,24 +760,11 @@
 		2F3A53DA27EC04A100FBA25F /* Training */ = {
 			isa = PBXGroup;
 			children = (
-				2F3A53DB27EC04A100FBA25F /* TrainingList */,
-				2F3A53E127EC04A100FBA25F /* TrainingFinished */,
-				2F3A53E427EC04A100FBA25F /* TrainingStarted */,
-				2F3A53EA27EC04A100FBA25F /* LeaveTraining */,
-				2F3A53ED27EC04A100FBA25F /* TrainingPaused */,
-				2F3A53F027EC04A100FBA25F /* LevelAndDuration */,
+				83C1DBE2282C479D00F411F4 /* View */,
+				83C1DBE1282C479700F411F4 /* Model */,
+				83C1DBE0282C478700F411F4 /* Controller */,
 			);
 			path = Training;
-			sourceTree = "<group>";
-		};
-		2F3A53DB27EC04A100FBA25F /* TrainingList */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53DC27EC04A100FBA25F /* TrainingListController.xib */,
-				2F3A53DD27EC04A100FBA25F /* TrainingListController.swift */,
-				2F3A53DE27EC04A100FBA25F /* TrainingListCell */,
-			);
-			path = TrainingList;
 			sourceTree = "<group>";
 		};
 		2F3A53DE27EC04A100FBA25F /* TrainingListCell */ = {
@@ -789,79 +776,12 @@
 			path = TrainingListCell;
 			sourceTree = "<group>";
 		};
-		2F3A53E127EC04A100FBA25F /* TrainingFinished */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53E227EC04A100FBA25F /* TrainingFinishedVC.swift */,
-				2F3A53E327EC04A100FBA25F /* TrainingFinishedVC.xib */,
-			);
-			path = TrainingFinished;
-			sourceTree = "<group>";
-		};
-		2F3A53E427EC04A100FBA25F /* TrainingStarted */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53E527EC04A100FBA25F /* RenderGIF.swift */,
-				2F3A53E627EC04A100FBA25F /* TrainingStartedVC.swift */,
-				2F3A53E727EC04A100FBA25F /* Gifs */,
-				2F3A53E927EC04A100FBA25F /* TrainingStartedVC.xib */,
-			);
-			path = TrainingStarted;
-			sourceTree = "<group>";
-		};
 		2F3A53E727EC04A100FBA25F /* Gifs */ = {
 			isa = PBXGroup;
 			children = (
 				2F3A53E827EC04A100FBA25F /* 01_Natarajasana.gif */,
 			);
 			path = Gifs;
-			sourceTree = "<group>";
-		};
-		2F3A53EA27EC04A100FBA25F /* LeaveTraining */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53EB27EC04A100FBA25F /* LeaveTrainingVC.xib */,
-				2F3A53EC27EC04A100FBA25F /* LeaveTrainingVC.swift */,
-			);
-			path = LeaveTraining;
-			sourceTree = "<group>";
-		};
-		2F3A53ED27EC04A100FBA25F /* TrainingPaused */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53EE27EC04A100FBA25F /* TrainingPausedVC.xib */,
-				2F3A53EF27EC04A100FBA25F /* TrainingPausedVC.swift */,
-			);
-			path = TrainingPaused;
-			sourceTree = "<group>";
-		};
-		2F3A53F027EC04A100FBA25F /* LevelAndDuration */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F127EC04A100FBA25F /* DropDownWithMultipleXib */,
-				2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */,
-				2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */,
-			);
-			path = LevelAndDuration;
-			sourceTree = "<group>";
-		};
-		2F3A53F127EC04A100FBA25F /* DropDownWithMultipleXib */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F227EC04A100FBA25F /* Models */,
-				2F3A53F427EC04A100FBA25F /* DropDownTableCell */,
-				2F3A53F727EC04A100FBA25F /* MakeDropDownFile */,
-				2F3A53F927EC04A100FBA25F /* DropDownTwoTableCell */,
-			);
-			path = DropDownWithMultipleXib;
-			sourceTree = "<group>";
-		};
-		2F3A53F227EC04A100FBA25F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F327EC04A100FBA25F /* TrainingModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		2F3A53F427EC04A100FBA25F /* DropDownTableCell */ = {
@@ -871,14 +791,6 @@
 				2F3A53F627EC04A100FBA25F /* DropDownTableViewCell.swift */,
 			);
 			path = DropDownTableCell;
-			sourceTree = "<group>";
-		};
-		2F3A53F727EC04A100FBA25F /* MakeDropDownFile */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F827EC04A100FBA25F /* MakeDropDown.swift */,
-			);
-			path = MakeDropDownFile;
 			sourceTree = "<group>";
 		};
 		2F3A53F927EC04A100FBA25F /* DropDownTwoTableCell */ = {
@@ -1400,6 +1312,46 @@
 				8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		83C1DBE0282C478700F411F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53F827EC04A100FBA25F /* MakeDropDown.swift */,
+				2F3A53E527EC04A100FBA25F /* RenderGIF.swift */,
+				2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */,
+				2F3A53E227EC04A100FBA25F /* TrainingFinishedVC.swift */,
+				2F3A53E627EC04A100FBA25F /* TrainingStartedVC.swift */,
+				2F3A53EC27EC04A100FBA25F /* LeaveTrainingVC.swift */,
+				2F3A53EF27EC04A100FBA25F /* TrainingPausedVC.swift */,
+				2F3A53DD27EC04A100FBA25F /* TrainingListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83C1DBE1282C479700F411F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53E727EC04A100FBA25F /* Gifs */,
+				2F3A53F327EC04A100FBA25F /* TrainingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83C1DBE2282C479D00F411F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */,
+				2F3A53E327EC04A100FBA25F /* TrainingFinishedVC.xib */,
+				2F3A53EE27EC04A100FBA25F /* TrainingPausedVC.xib */,
+				2F3A53EB27EC04A100FBA25F /* LeaveTrainingVC.xib */,
+				2F3A53E927EC04A100FBA25F /* TrainingStartedVC.xib */,
+				2F3A53DC27EC04A100FBA25F /* TrainingListController.xib */,
+				2F3A53DE27EC04A100FBA25F /* TrainingListCell */,
+				2F3A53F927EC04A100FBA25F /* DropDownTwoTableCell */,
+				2F3A53F427EC04A100FBA25F /* DropDownTableCell */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
