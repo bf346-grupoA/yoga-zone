@@ -80,6 +80,6 @@ class TrainingFinishedVC: UIViewController {
     }
     
     @IBAction func tappedGoToHomeButton(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
     }
 }
