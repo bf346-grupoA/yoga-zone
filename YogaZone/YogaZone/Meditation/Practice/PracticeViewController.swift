@@ -16,6 +16,7 @@ class PracticeViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupPlayer()
+        setupNavigationBar()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -59,6 +60,7 @@ extension PracticeViewController {
         player = YogaPlayer(filename: selectedFile?.synthPad ?? "pad-B", fileExtension: "mp3")
         player?.setup()
     }
+    
 }
 
 
@@ -66,3 +68,24 @@ extension PracticeViewController {
 extension PracticeViewController {
     
 }
+
+// MARK: Navigation Bar Customization
+extension PracticeViewController: UIGestureRecognizerDelegate {
+    
+    func setupNavigationBar(){
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
+
