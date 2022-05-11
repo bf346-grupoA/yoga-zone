@@ -843,12 +843,9 @@
 		2F79E12627DCF42B0070397F /* PoseGallery */ = {
 			isa = PBXGroup;
 			children = (
-				2F79E15527DD0AED0070397F /* Detail */,
-				2F79E12927DCF4490070397F /* Mock */,
+				83C1DBF1282C507100F411F4 /* View */,
+				83C1DBF0282C506800F411F4 /* Controller */,
 				2F79E12827DCF4440070397F /* Models */,
-				2F79E12727DCF43C0070397F /* Cell */,
-				2F79E12A27DCF47B0070397F /* PoseGalleryViewController.swift */,
-				2F79E12B27DCF47B0070397F /* PoseGalleryViewController.xib */,
 			);
 			path = PoseGallery;
 			sourceTree = "<group>";
@@ -867,27 +864,9 @@
 			children = (
 				2F79E15127DCFEEB0070397F /* Pose.swift */,
 				2F79E15327DD034C0070397F /* PoseCategory.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2F79E12927DCF4490070397F /* Mock */ = {
-			isa = PBXGroup;
-			children = (
 				2FB0560227E022DA000E9CA6 /* Poses.swift */,
 			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		2F79E15527DD0AED0070397F /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				2F79E16027DD124F0070397F /* PoseCategoryCell */,
-				2F79E15B27DD0D980070397F /* ModalVideo */,
-				2F79E15727DD0B170070397F /* PoseDetailViewController.swift */,
-				2F79E15827DD0B170070397F /* PoseDetailViewController.xib */,
-			);
-			path = Detail;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2F79E15B27DD0D980070397F /* ModalVideo */ = {
@@ -1245,6 +1224,27 @@
 				2F412ECD27E41821007708E8 /* PracticeViewController.xib */,
 				2F412EBF27E41821007708E8 /* MeditationHomeViewController.xib */,
 				2F412EC127E41821007708E8 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83C1DBF0282C506800F411F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E12A27DCF47B0070397F /* PoseGalleryViewController.swift */,
+				2F79E15727DD0B170070397F /* PoseDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83C1DBF1282C507100F411F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E12B27DCF47B0070397F /* PoseGalleryViewController.xib */,
+				2F79E15827DD0B170070397F /* PoseDetailViewController.xib */,
+				2F79E16027DD124F0070397F /* PoseCategoryCell */,
+				2F79E15B27DD0D980070397F /* ModalVideo */,
+				2F79E12727DCF43C0070397F /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
