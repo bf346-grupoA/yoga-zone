@@ -16,7 +16,7 @@ class ResultViewController: UIViewController , SendData {
     var result : Double = 0
     var weigth: String = ""
     var goal: String = ""
-    var missing:Float = 0
+    var missing: Float = 0
     var file: [MyProgress] = []
 
     override func viewDidLoad() {
