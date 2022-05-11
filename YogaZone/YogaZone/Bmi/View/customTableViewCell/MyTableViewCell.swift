@@ -62,7 +62,7 @@ class MyTableViewCell: UITableViewCell {
         switch value{
             case 0..<BmiNumber.underWeight.rawValue:
             image = PicImage.underWeight.rawValue
-            result = String(format: " %.2f BMI", value)
+            result = String(format: " %.2f IMC", value)
             possibleCons = PossibleConsequences.underWeight.rawValue
             caseIndex = CaseIndex.underWeight.rawValue
             numberIndex = NumberIndex.underWeight.rawValue
@@ -71,7 +71,7 @@ class MyTableViewCell: UITableViewCell {
             
             case BmiNumber.normalMinimum.rawValue..<BmiNumber.normalMaximum.rawValue:
                 image = PicImage.normal.rawValue
-                result = String(format: " %.2f BMI", value)
+                result = String(format: " %.2f IMC", value)
                 possibleCons = PossibleConsequences.normal.rawValue
                 caseIndex = CaseIndex.normal.rawValue
                 numberIndex = NumberIndex.normal.rawValue
@@ -79,7 +79,7 @@ class MyTableViewCell: UITableViewCell {
             
             case BmiNumber.overWeightMinimum.rawValue..<BmiNumber.overWeightMaximum.rawValue:
                 image = PicImage.overWeight.rawValue
-                result = String(format: " %.2f BMI", value)
+                result = String(format: " %.2f IMC", value)
                 possibleCons = PossibleConsequences.overWeight.rawValue
                 caseIndex = CaseIndex.overWeight.rawValue
                 numberIndex = NumberIndex.overWeight.rawValue
@@ -87,7 +87,7 @@ class MyTableViewCell: UITableViewCell {
             
             case BmiNumber.obeseWeightMinimum.rawValue..<BmiNumber.obeseWeightMaximum.rawValue:
                 image = PicImage.obese.rawValue
-                result = String(format: " %.2f BMI", value)
+                result = String(format: " %.2f IMC", value)
                 possibleCons = PossibleConsequences.obese.rawValue
                 caseIndex = CaseIndex.obese.rawValue
                 numberIndex = NumberIndex.obese.rawValue
@@ -95,7 +95,7 @@ class MyTableViewCell: UITableViewCell {
            
             default:
                 image = PicImage.extremelyObese.rawValue
-                result = String(format: " %.2f BMI", value)
+                result = String(format: " %.2f IMC", value)
                 possibleCons = PossibleConsequences.extremelyObese.rawValue
                 caseIndex = CaseIndex.extremelyObese.rawValue
                 numberIndex = NumberIndex.extremelyObese.rawValue

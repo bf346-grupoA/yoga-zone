@@ -82,7 +82,7 @@ extension ResultViewController: MyTableViewCellProtocol{
     
     func populationArray(){
         let stringWeight = "\(weigth) kg "
-        let data: MyProgress = MyProgress(date:getDate(), result: String(format: " %.2f Bmi", result), weight:stringWeight)
+        let data: MyProgress = MyProgress(date:getDate(), result: String(format: " %.2f IMC", result), weight:stringWeight)
         file.append(data)
     }
 
