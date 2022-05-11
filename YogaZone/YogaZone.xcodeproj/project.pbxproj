@@ -690,31 +690,11 @@
 		2F412EBB27E41821007708E8 /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
-				2F412EBC27E41821007708E8 /* Mocks */,
-				2F412EBE27E41821007708E8 /* MeditacaoHome */,
-				2F412EC427E41821007708E8 /* Intro */,
+				83C1DBEF282C4FCA00F411F4 /* View */,
+				83C1DBEE282C4FC400F411F4 /* Controller */,
 				2F412EC727E41821007708E8 /* Models */,
-				2F412ECA27E41821007708E8 /* Practice */,
 			);
 			path = Meditation;
-			sourceTree = "<group>";
-		};
-		2F412EBC27E41821007708E8 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				2F412EBD27E41821007708E8 /* MeditationData.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		2F412EBE27E41821007708E8 /* MeditacaoHome */ = {
-			isa = PBXGroup;
-			children = (
-				2F412EBF27E41821007708E8 /* MeditationHomeViewController.xib */,
-				2F412EC027E41821007708E8 /* MeditationHomeViewController.swift */,
-				2F412EC127E41821007708E8 /* Cells */,
-			);
-			path = MeditacaoHome;
 			sourceTree = "<group>";
 		};
 		2F412EC127E41821007708E8 /* Cells */ = {
@@ -726,32 +706,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		2F412EC427E41821007708E8 /* Intro */ = {
-			isa = PBXGroup;
-			children = (
-				2F412EC527E41821007708E8 /* IntroViewController.swift */,
-				2F412EC627E41821007708E8 /* IntroViewController.xib */,
-			);
-			path = Intro;
-			sourceTree = "<group>";
-		};
 		2F412EC727E41821007708E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				2F412EC827E41821007708E8 /* AudioMeditation.swift */,
 				2F412EC927E41821007708E8 /* MeditationAudioFile.swift */,
+				2F412EBD27E41821007708E8 /* MeditationData.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		2F412ECA27E41821007708E8 /* Practice */ = {
-			isa = PBXGroup;
-			children = (
-				2F412ECB27E41821007708E8 /* PracticeViewController.swift */,
-				2F412ECC27E41821007708E8 /* YogaPlayer.swift */,
-				2F412ECD27E41821007708E8 /* PracticeViewController.xib */,
-			);
-			path = Practice;
 			sourceTree = "<group>";
 		};
 		2F412EDA27E41A0B007708E8 /* Assets */ = {
@@ -1263,6 +1225,28 @@
 				2F036F5527E429D800993E41 /* Home Containers */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		83C1DBEE282C4FC400F411F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F412EC027E41821007708E8 /* MeditationHomeViewController.swift */,
+				2F412EC527E41821007708E8 /* IntroViewController.swift */,
+				2F412ECB27E41821007708E8 /* PracticeViewController.swift */,
+				2F412ECC27E41821007708E8 /* YogaPlayer.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83C1DBEF282C4FCA00F411F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F412EC627E41821007708E8 /* IntroViewController.xib */,
+				2F412ECD27E41821007708E8 /* PracticeViewController.xib */,
+				2F412EBF27E41821007708E8 /* MeditationHomeViewController.xib */,
+				2F412EC127E41821007708E8 /* Cells */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
