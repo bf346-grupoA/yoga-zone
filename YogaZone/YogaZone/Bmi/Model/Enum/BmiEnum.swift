@@ -37,11 +37,11 @@ enum PicImage: String{
 }
 
 enum CaseIndex: String {
-    case underWeight = "Underweight"
+    case underWeight = "Abaixo do peso"
     case normal = "Normal"
-    case overWeight = "OverWeight"
+    case overWeight = "Acima do peso"
     case obese = "Obese"
-    case extremelyObese = "ExtremelyObese"
+    case extremelyObese = "Extremamente Obeso"
 }
 
 enum NumberIndex: String {

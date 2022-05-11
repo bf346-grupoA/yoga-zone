@@ -16,7 +16,7 @@ class ResultViewController: UIViewController , SendData {
     var result : Double = 0
     var weigth: String = ""
     var goal: String = ""
-    var missing:Float = 0
+    var missing: Float = 0
     var file: [MyProgress] = []
 
     override func viewDidLoad() {
@@ -82,7 +82,7 @@ extension ResultViewController: MyTableViewCellProtocol{
     
     func populationArray(){
         let stringWeight = "\(weigth) kg "
-        let data: MyProgress = MyProgress(date:getDate(), result: String(format: " %.2f Bmi", result), weight:stringWeight)
+        let data: MyProgress = MyProgress(date:getDate(), result: String(format: " %.2f IMC", result), weight:stringWeight)
         file.append(data)
     }
 

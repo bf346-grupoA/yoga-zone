@@ -9,12 +9,12 @@ import Foundation
 
 class AssetHelper {
     static let images: [Int: String] = [
-        1: "pose-gallery",
-        2: "bmi",
-        3: "breathing",
-        4: "meditation",
-        5: "workout",
-        6: "events"
+        1: "poses",
+        2: "imc",
+        3: "respiracao",
+        4: "meditacao",
+        5: "treinos",
+        6: "eventos"
     ]
     
     static func getImageName(indexPath: IndexPath) -> String {
