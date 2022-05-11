@@ -991,7 +991,6 @@
 			children = (
 				313BF5262828A266004CE901 /* Bmi */,
 				2F3A53DA27EC04A100FBA25F /* Training */,
-				2F3A53D827EB772800FBA25F /* Helpers */,
 				2FA287B127EACC3C00C5BD81 /* Profile */,
 				2F0C33FF27E4384E004A1E8C /* Breathing */,
 				2F0C33E327E434DA004A1E8C /* Register */,
@@ -1165,6 +1164,7 @@
 		83C1DBEB282C4E6700F411F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2F3A53D827EB772800FBA25F /* Helpers */,
 				2F5B66D627ED227900AC243E /* ResetPasswordViewController.swift */,
 				2F3A544327EC3EE400FBA25F /* LoginViewController.swift */,
 			);
