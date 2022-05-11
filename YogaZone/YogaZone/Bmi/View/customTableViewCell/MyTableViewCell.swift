@@ -75,7 +75,7 @@ class MyTableViewCell: UITableViewCell {
                 possibleCons = PossibleConsequences.normal.rawValue
                 caseIndex = CaseIndex.normal.rawValue
                 numberIndex = NumberIndex.normal.rawValue
-                color = .green
+                color = #colorLiteral(red: 0.003716206877, green: 0.8191881776, blue: 0.4462348819, alpha: 1)
             
             case BmiNumber.overWeightMinimum.rawValue..<BmiNumber.overWeightMaximum.rawValue:
                 image = PicImage.overWeight.rawValue
@@ -83,7 +83,7 @@ class MyTableViewCell: UITableViewCell {
                 possibleCons = PossibleConsequences.overWeight.rawValue
                 caseIndex = CaseIndex.overWeight.rawValue
                 numberIndex = NumberIndex.overWeight.rawValue
-            color = .systemYellow
+                color = #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)
             
             case BmiNumber.obeseWeightMinimum.rawValue..<BmiNumber.obeseWeightMaximum.rawValue:
                 image = PicImage.obese.rawValue
