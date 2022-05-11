@@ -554,59 +554,11 @@
 		2F0C33E327E434DA004A1E8C /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				2F0C33E427E434DA004A1E8C /* MoreInfoRegister */,
-				2F0C33E827E434DA004A1E8C /* DoneRegister */,
-				2F0C33EB27E434DA004A1E8C /* UserLevel */,
-				2F0C33EE27E434DA004A1E8C /* MainRegister */,
+				83C1DBE8282C4DD100F411F4 /* Model */,
+				83C1DBE7282C4DCE00F411F4 /* View */,
+				83C1DBE6282C4DC800F411F4 /* Controller */,
 			);
 			path = Register;
-			sourceTree = "<group>";
-		};
-		2F0C33E427E434DA004A1E8C /* MoreInfoRegister */ = {
-			isa = PBXGroup;
-			children = (
-				2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */,
-				2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */,
-				2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */,
-			);
-			path = MoreInfoRegister;
-			sourceTree = "<group>";
-		};
-		2F0C33E827E434DA004A1E8C /* DoneRegister */ = {
-			isa = PBXGroup;
-			children = (
-				2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */,
-				2F0C33EA27E434DA004A1E8C /* DoneRegisterVC.swift */,
-			);
-			path = DoneRegister;
-			sourceTree = "<group>";
-		};
-		2F0C33EB27E434DA004A1E8C /* UserLevel */ = {
-			isa = PBXGroup;
-			children = (
-				2F0C33EC27E434DA004A1E8C /* UserLevelVC.swift */,
-				2F0C33ED27E434DA004A1E8C /* UserLevelVC.xib */,
-			);
-			path = UserLevel;
-			sourceTree = "<group>";
-		};
-		2F0C33EE27E434DA004A1E8C /* MainRegister */ = {
-			isa = PBXGroup;
-			children = (
-				2F0C33EF27E434DA004A1E8C /* MainRegisterVC.swift */,
-				2F0C33F027E434DA004A1E8C /* MainRegisterVC.xib */,
-				2F0C33F127E434DA004A1E8C /* MainRegisterCell */,
-			);
-			path = MainRegister;
-			sourceTree = "<group>";
-		};
-		2F0C33F127E434DA004A1E8C /* MainRegisterCell */ = {
-			isa = PBXGroup;
-			children = (
-				2F0C33F227E434DA004A1E8C /* CustomMainRegisterCell.swift */,
-				2F0C33F327E434DA004A1E8C /* CustomMainRegisterCell.xib */,
-			);
-			path = MainRegisterCell;
 			sourceTree = "<group>";
 		};
 		2F0C33FF27E4384E004A1E8C /* Breathing */ = {
@@ -1332,6 +1284,38 @@
 			sourceTree = "<group>";
 		};
 		83C1DBE5282C4CC600F411F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83C1DBE6282C4DC800F411F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C33F227E434DA004A1E8C /* CustomMainRegisterCell.swift */,
+				2F0C33EF27E434DA004A1E8C /* MainRegisterVC.swift */,
+				2F0C33EC27E434DA004A1E8C /* UserLevelVC.swift */,
+				2F0C33EA27E434DA004A1E8C /* DoneRegisterVC.swift */,
+				2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */,
+				2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83C1DBE7282C4DCE00F411F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */,
+				2F0C33F027E434DA004A1E8C /* MainRegisterVC.xib */,
+				2F0C33ED27E434DA004A1E8C /* UserLevelVC.xib */,
+				2F0C33F327E434DA004A1E8C /* CustomMainRegisterCell.xib */,
+				2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83C1DBE8282C4DD100F411F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
