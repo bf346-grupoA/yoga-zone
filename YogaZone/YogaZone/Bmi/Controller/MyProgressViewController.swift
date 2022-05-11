@@ -35,7 +35,7 @@ class MyProgressViewController: UIViewController, SendData{
     }
     
     @IBAction func tappedButtonShare(_ sender: Any) {
-        let vcShare = UIActivityViewController(activityItems: ["Marcelo.Bmi"], applicationActivities: nil)
+        let vcShare = UIActivityViewController(activityItems: ["YogaZone.IMC"], applicationActivities: nil)
         vcShare.popoverPresentationController?.sourceView = self.view
         self.present(vcShare, animated: true, completion: nil)
         
