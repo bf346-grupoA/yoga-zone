@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController{
 
     @IBOutlet weak var introImageView: UIImageView!
     @IBOutlet weak var startButton: UIButton!
@@ -15,6 +15,7 @@ class IntroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupNavigationBar()
     }
 
     @IBAction func onStart(_ sender: UIButton) {
@@ -23,8 +24,29 @@ class IntroViewController: UIViewController {
     
 }
 
-extension IntroViewController {
+extension IntroViewController: UIGestureRecognizerDelegate  {
     func setupUI() {
         self.introImageView.image = #imageLiteral(resourceName: "meditacao-intro")
     }
+    
+    func setupNavigationBar(){
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
 }
+
+// MARK: Navigation Bar Customization
+extension IntroViewController {
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
+
