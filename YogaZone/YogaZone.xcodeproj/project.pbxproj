@@ -534,19 +534,9 @@
 		2F0C33CE27E432EC004A1E8C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2F5B670427ED22B500AC243E /* Models */,
-				2F5B66D427ED227900AC243E /* ForgotPassword */,
-				2F0C33D827E432EC004A1E8C /* Login */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		2F0C33D827E432EC004A1E8C /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				2F5B66D927ED22A800AC243E /* Form */,
-				2F3A544327EC3EE400FBA25F /* LoginViewController.swift */,
-				2F3A544427EC3EE400FBA25F /* LoginViewController.xib */,
+				83C1DBEB282C4E6700F411F4 /* Controller */,
+				83C1DBEA282C4E6400F411F4 /* Model */,
+				83C1DBE9282C4E5F00F411F4 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -870,22 +860,10 @@
 			path = SoundBank;
 			sourceTree = "<group>";
 		};
-		2F5B66D427ED227900AC243E /* ForgotPassword */ = {
-			isa = PBXGroup;
-			children = (
-				2F5B66D527ED227900AC243E /* ResetPasswordViewController.xib */,
-				2F5B66D627ED227900AC243E /* ResetPasswordViewController.swift */,
-			);
-			path = ForgotPassword;
-			sourceTree = "<group>";
-		};
 		2F5B66D927ED22A800AC243E /* Form */ = {
 			isa = PBXGroup;
 			children = (
 				2F5B66DA27ED22A800AC243E /* Buttons */,
-				2F5B66EB27ED22A800AC243E /* TextFields */,
-				2F5B66EE27ED22A800AC243E /* SeparatorCell */,
-				2F5B66F127ED22A800AC243E /* LogoCell */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -980,15 +958,6 @@
 				2F5B66F327ED22A800AC243E /* LogoCell.swift */,
 			);
 			path = LogoCell;
-			sourceTree = "<group>";
-		};
-		2F5B670427ED22B500AC243E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2F5B670527ED22B500AC243E /* UserData.swift */,
-			);
-			name = Models;
-			path = Login/Models;
 			sourceTree = "<group>";
 		};
 		2F79E12627DCF42B0070397F /* PoseGallery */ = {
@@ -1320,6 +1289,36 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		83C1DBE9282C4E5F00F411F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66D527ED227900AC243E /* ResetPasswordViewController.xib */,
+				2F3A544427EC3EE400FBA25F /* LoginViewController.xib */,
+				2F5B66D927ED22A800AC243E /* Form */,
+				2F5B66EB27ED22A800AC243E /* TextFields */,
+				2F5B66F127ED22A800AC243E /* LogoCell */,
+				2F5B66EE27ED22A800AC243E /* SeparatorCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83C1DBEA282C4E6400F411F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B670527ED22B500AC243E /* UserData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83C1DBEB282C4E6700F411F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F5B66D627ED227900AC243E /* ResetPasswordViewController.swift */,
+				2F3A544327EC3EE400FBA25F /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
