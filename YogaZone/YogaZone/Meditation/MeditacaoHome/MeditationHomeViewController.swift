@@ -1,6 +1,6 @@
 import UIKit
 
-class MeditacaoHomeViewController: UIViewController {
+class MeditationHomeViewController: UIViewController {
     
     @IBOutlet weak var meditationTableView: UITableView!
     
@@ -15,7 +15,7 @@ class MeditacaoHomeViewController: UIViewController {
 }
 
 // MARK: Data Mock
-extension MeditacaoHomeViewController {
+extension MeditationHomeViewController {
     func setupData() {
         let jsonData = meditationMock.data(using: .utf8)!
         let meditationData = try! JSONDecoder().decode([MeditationAudioFile].self, from: jsonData)
@@ -25,7 +25,7 @@ extension MeditacaoHomeViewController {
 
 
 // MARK: UI Functions
-extension MeditacaoHomeViewController {
+extension MeditationHomeViewController {
     func setupUI() {
         self.meditationTableView.delegate = self
         self.meditationTableView.dataSource = self
@@ -37,7 +37,7 @@ extension MeditacaoHomeViewController {
 
 
 // MARK: TableViewDelegate & TableViewDataSource
-extension MeditacaoHomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension MeditationHomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in TableView: UITableView) -> Int {
         return 1
     }
