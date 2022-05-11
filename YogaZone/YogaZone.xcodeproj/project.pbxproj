@@ -1174,31 +1174,11 @@
 		2FA287B127EACC3C00C5BD81 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				2FA287B227EACC3C00C5BD81 /* MoreOptions */,
-				2FA287B527EACC3C00C5BD81 /* MyProfile */,
-				2FA287BB27EACC3C00C5BD81 /* DeleteAccount */,
-				2FA287BE27EACC3C00C5BD81 /* Helpers */,
+				83C1DBE5282C4CC600F411F4 /* Model */,
+				83C1DBE4282C4CC300F411F4 /* View */,
+				83C1DBE3282C4C9E00F411F4 /* Controller */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		2FA287B227EACC3C00C5BD81 /* MoreOptions */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */,
-				2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */,
-			);
-			path = MoreOptions;
-			sourceTree = "<group>";
-		};
-		2FA287B527EACC3C00C5BD81 /* MyProfile */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287B627EACC3C00C5BD81 /* MyProfileTableViewCell */,
-				2FA287B927EACC3C00C5BD81 /* MyProfileVC.swift */,
-				2FA287BA27EACC3C00C5BD81 /* MyProfileVC.xib */,
-			);
-			path = MyProfile;
 			sourceTree = "<group>";
 		};
 		2FA287B627EACC3C00C5BD81 /* MyProfileTableViewCell */ = {
@@ -1208,32 +1188,6 @@
 				2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */,
 			);
 			path = MyProfileTableViewCell;
-			sourceTree = "<group>";
-		};
-		2FA287BB27EACC3C00C5BD81 /* DeleteAccount */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287BC27EACC3C00C5BD81 /* DeleteAccountVC.swift */,
-				2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */,
-			);
-			path = DeleteAccount;
-			sourceTree = "<group>";
-		};
-		2FA287BE27EACC3C00C5BD81 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287BF27EACC3C00C5BD81 /* Alert */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		2FA287BF27EACC3C00C5BD81 /* Alert */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */,
-				2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */,
-			);
-			path = Alert;
 			sourceTree = "<group>";
 		};
 		3126832D27C15ECA003F017B = {
@@ -1352,6 +1306,36 @@
 				2F3A53F427EC04A100FBA25F /* DropDownTableCell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		83C1DBE3282C4C9E00F411F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FA287B927EACC3C00C5BD81 /* MyProfileVC.swift */,
+				2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */,
+				2FA287BC27EACC3C00C5BD81 /* DeleteAccountVC.swift */,
+				2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83C1DBE4282C4CC300F411F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */,
+				2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */,
+				2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */,
+				2FA287BA27EACC3C00C5BD81 /* MyProfileVC.xib */,
+				2FA287B627EACC3C00C5BD81 /* MyProfileTableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83C1DBE5282C4CC600F411F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
