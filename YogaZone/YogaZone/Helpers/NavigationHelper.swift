@@ -41,8 +41,8 @@ class NavigationHelper {
             case 1: return PoseGalleryViewController()
             case 2: return BmiViewController()
             case 3: return BreathingHomeViewController()
-            case 4: return MeditacaoHomeViewController()
-            case 5: return MeditacaoHomeViewController()
+            case 4: return MeditationHomeViewController()
+            case 5: return MeditationHomeViewController()
             default: return HomeEventsViewController()
         }
     }

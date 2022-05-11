@@ -97,8 +97,8 @@
 		2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB027E4101E007708E8 /* CardMenuCell.swift */; };
 		2F412EB927E4101E007708E8 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EB327E4101E007708E8 /* CardCell.swift */; };
 		2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EBD27E41821007708E8 /* MeditationData.swift */; };
-		2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F412EBF27E41821007708E8 /* MeditacaoHomeViewController.xib */; };
-		2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EC027E41821007708E8 /* MeditacaoHomeViewController.swift */; };
+		2F412ECF27E41821007708E8 /* MeditationHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F412EBF27E41821007708E8 /* MeditationHomeViewController.xib */; };
+		2F412ED027E41821007708E8 /* MeditationHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EC027E41821007708E8 /* MeditationHomeViewController.swift */; };
 		2F412ED127E41821007708E8 /* AudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F412EC227E41821007708E8 /* AudioCell.xib */; };
 		2F412ED227E41821007708E8 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EC327E41821007708E8 /* AudioCell.swift */; };
 		2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F412EC527E41821007708E8 /* IntroViewController.swift */; };
@@ -284,8 +284,8 @@
 		2F412EB027E4101E007708E8 /* CardMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMenuCell.swift; sourceTree = "<group>"; };
 		2F412EB327E4101E007708E8 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		2F412EBD27E41821007708E8 /* MeditationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationData.swift; sourceTree = "<group>"; };
-		2F412EBF27E41821007708E8 /* MeditacaoHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeditacaoHomeViewController.xib; sourceTree = "<group>"; };
-		2F412EC027E41821007708E8 /* MeditacaoHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditacaoHomeViewController.swift; sourceTree = "<group>"; };
+		2F412EBF27E41821007708E8 /* MeditationHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeditationHomeViewController.xib; sourceTree = "<group>"; };
+		2F412EC027E41821007708E8 /* MeditationHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationHomeViewController.swift; sourceTree = "<group>"; };
 		2F412EC227E41821007708E8 /* AudioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioCell.xib; sourceTree = "<group>"; };
 		2F412EC327E41821007708E8 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
 		2F412EC527E41821007708E8 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -915,7 +915,7 @@
 			path = CardCell;
 			sourceTree = "<group>";
 		};
-		2F412EBB27E41821007708E8 /* Meditacao */ = {
+		2F412EBB27E41821007708E8 /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
 				2F412EBC27E41821007708E8 /* Mocks */,
@@ -924,7 +924,7 @@
 				2F412EC727E41821007708E8 /* Models */,
 				2F412ECA27E41821007708E8 /* Practice */,
 			);
-			path = Meditacao;
+			path = Meditation;
 			sourceTree = "<group>";
 		};
 		2F412EBC27E41821007708E8 /* Mocks */ = {
@@ -938,8 +938,8 @@
 		2F412EBE27E41821007708E8 /* MeditacaoHome */ = {
 			isa = PBXGroup;
 			children = (
-				2F412EBF27E41821007708E8 /* MeditacaoHomeViewController.xib */,
-				2F412EC027E41821007708E8 /* MeditacaoHomeViewController.swift */,
+				2F412EBF27E41821007708E8 /* MeditationHomeViewController.xib */,
+				2F412EC027E41821007708E8 /* MeditationHomeViewController.swift */,
 				2F412EC127E41821007708E8 /* Cells */,
 			);
 			path = MeditacaoHome;
@@ -1352,7 +1352,7 @@
 				2F0C33CE27E432EC004A1E8C /* Login */,
 				2F036F5027E429D800993E41 /* Events */,
 				2F412EDA27E41A0B007708E8 /* Assets */,
-				2F412EBB27E41821007708E8 /* Meditacao */,
+				2F412EBB27E41821007708E8 /* Meditation */,
 				2F412EAD27E4101E007708E8 /* Home */,
 				2F79E12627DCF42B0070397F /* PoseGallery */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
@@ -1512,7 +1512,7 @@
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
 				2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */,
-				2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */,
+				2F412ECF27E41821007708E8 /* MeditationHomeViewController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
 				2F036F8C27E429D800993E41 /* Alert.storyboard in Resources */,
@@ -1588,7 +1588,7 @@
 				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
 				2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */,
 				2F9FF26C2817714E0026F43E /* NavigationHelper.swift in Sources */,
-				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
+				2F412ED027E41821007708E8 /* MeditationHomeViewController.swift in Sources */,
 				2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
 				2F83C79A282A0A0C00EC3334 /* Myprogress.swift in Sources */,

@@ -1,6 +1,6 @@
 import UIKit
 
-class MeditacaoHomeViewController: UIViewController {
+class MeditationHomeViewController: UIViewController {
     
     @IBOutlet weak var meditationTableView: UITableView!
     
@@ -11,11 +11,12 @@ class MeditacaoHomeViewController: UIViewController {
         
         setupData()
         setupUI()
+        setupNavigationBar()
     }
 }
 
 // MARK: Data Mock
-extension MeditacaoHomeViewController {
+extension MeditationHomeViewController {
     func setupData() {
         let jsonData = meditationMock.data(using: .utf8)!
         let meditationData = try! JSONDecoder().decode([MeditationAudioFile].self, from: jsonData)
@@ -25,7 +26,7 @@ extension MeditacaoHomeViewController {
 
 
 // MARK: UI Functions
-extension MeditacaoHomeViewController {
+extension MeditationHomeViewController {
     func setupUI() {
         self.meditationTableView.delegate = self
         self.meditationTableView.dataSource = self
@@ -37,7 +38,7 @@ extension MeditacaoHomeViewController {
 
 
 // MARK: TableViewDelegate & TableViewDataSource
-extension MeditacaoHomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension MeditationHomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in TableView: UITableView) -> Int {
         return 1
     }
@@ -70,4 +71,24 @@ extension MeditacaoHomeViewController: UITableViewDelegate, UITableViewDataSourc
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
+}
+
+// MARK: Navigation Bar Customization
+extension MeditationHomeViewController: UIGestureRecognizerDelegate  {
+    
+    func setupNavigationBar(){
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

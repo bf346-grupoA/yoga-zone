@@ -21,6 +21,7 @@ class PoseDetailViewController: UIViewController {
 
         setupUI()
         setupTableView()
+        setupNavigationBar()
     }
 }
 
@@ -78,4 +79,24 @@ extension PoseDetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 4
     }
+}
+
+// MARK: Navigation Bar Customization
+extension PoseDetailViewController: UIGestureRecognizerDelegate {
+    
+    func setupNavigationBar(){
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

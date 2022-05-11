@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="75" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="gJh-zW-oRQ">
-                                <rect key="frame" x="18" y="207" width="378" height="31"/>
+                                <rect key="frame" x="18" y="167" width="378" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.1000000000000001" minValue="0.0" maxValue="2.2000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Cw3-xm-y4m">
-                                <rect key="frame" x="18" y="333" width="378" height="31"/>
+                                <rect key="frame" x="18" y="293" width="378" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,19 +54,19 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f71-Yh-NE0">
-                                <rect key="frame" x="20" y="242" width="374" height="30"/>
+                                <rect key="frame" x="20" y="202" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od4-qU-EUI">
-                                <rect key="frame" x="20" y="368" width="374" height="30"/>
+                                <rect key="frame" x="20" y="328" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="75" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="57d-fz-Szo">
-                                <rect key="frame" x="18" y="459" width="378" height="31"/>
+                                <rect key="frame" x="18" y="419" width="378" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,13 +81,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CR-0e-LFR">
-                                <rect key="frame" x="20" y="494" width="374" height="30"/>
+                                <rect key="frame" x="20" y="454" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gl9-NW-7Xh">
-                                <rect key="frame" x="60" y="614" width="294" height="45.5"/>
+                                <rect key="frame" x="60" y="574" width="294" height="45.5"/>
                                 <color key="backgroundColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -99,7 +99,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJl-VY-n1v">
-                                <rect key="frame" x="60" y="554" width="294" height="45"/>
+                                <rect key="frame" x="60" y="514" width="294" height="45"/>
                                 <color key="backgroundColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="cB8-2t-tA7"/>
@@ -114,7 +114,7 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-ew-QIg">
-                                <rect key="frame" x="340" y="420.5" width="51" height="31"/>
+                                <rect key="frame" x="340" y="380.5" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="MWa-nY-RDp"/>
                                 </connections>
@@ -160,7 +160,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cw3-xm-y4m" secondAttribute="trailing" constant="20" id="mWX-v9-le7"/>
                             <constraint firstItem="gJh-zW-oRQ" firstAttribute="top" secondItem="RCV-Ls-zp1" secondAttribute="bottom" constant="5" id="p2r-Cf-bcc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1CR-0e-LFR" secondAttribute="trailing" constant="20" id="ueb-B8-ffd"/>
-                            <constraint firstItem="GB1-s6-yhv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="xuD-wt-dIA"/>
+                            <constraint firstItem="GB1-s6-yhv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="xuD-wt-dIA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bi8-NZ-fMc"/>
