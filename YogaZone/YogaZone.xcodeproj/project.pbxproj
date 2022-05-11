@@ -396,35 +396,11 @@
 		2F036F5027E429D800993E41 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				8327042227E7AB3A0006CF3B /* Sucess Screen */,
-				2F036F5127E429D800993E41 /* Events Home */,
-				2F036F5F27E429D800993E41 /* Mock */,
-				2F036F6127E429D800993E41 /* Create New Event */,
-				2F036F5227E429D800993E41 /* Filter Modal */,
-				2F036F6627E429D800993E41 /* Event Detail */,
+				83C1DBED282C4EFE00F411F4 /* Controller */,
 				2F036F7527E429D800993E41 /* Model */,
+				83C1DBEC282C4EF600F411F4 /* View */,
 			);
 			path = Events;
-			sourceTree = "<group>";
-		};
-		2F036F5127E429D800993E41 /* Events Home */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F5527E429D800993E41 /* Home Containers */,
-				2F036F5827E429D800993E41 /* HomeEvents.storyboard */,
-				2F036F5927E429D800993E41 /* HomeEventsViewController.swift */,
-				2F036F5A27E429D800993E41 /* Cell */,
-			);
-			path = "Events Home";
-			sourceTree = "<group>";
-		};
-		2F036F5227E429D800993E41 /* Filter Modal */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F5327E429D800993E41 /* EventFilterViewController.swift */,
-				2F036F5427E429D800993E41 /* EventFilterViewController.xib */,
-			);
-			path = "Filter Modal";
 			sourceTree = "<group>";
 		};
 		2F036F5527E429D800993E41 /* Home Containers */ = {
@@ -445,68 +421,10 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		2F036F5F27E429D800993E41 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F6027E429D800993E41 /* EventData.swift */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		2F036F6127E429D800993E41 /* Create New Event */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F6227E429D800993E41 /* CreateNewEventViewController.swift */,
-				2F036F6327E429D800993E41 /* CreateNewEventViewController.xib */,
-			);
-			path = "Create New Event";
-			sourceTree = "<group>";
-		};
-		2F036F6627E429D800993E41 /* Event Detail */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F6727E429D800993E41 /* Detail Containers */,
-				2F036F6C27E429D800993E41 /* Edit Event */,
-				2F036F6F27E429D800993E41 /* Custom Alert */,
-				2F036F7327E429D800993E41 /* EventDetailViewController.swift */,
-				2F036F7427E429D800993E41 /* EventDetail.storyboard */,
-			);
-			path = "Event Detail";
-			sourceTree = "<group>";
-		};
-		2F036F6727E429D800993E41 /* Detail Containers */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F6827E429D800993E41 /* FinalizedContainerViewController.swift */,
-				2F036F6927E429D800993E41 /* CancelContainerViewController.swift */,
-				2F036F6A27E429D800993E41 /* ConfirmContainerViewController.swift */,
-				2F036F6B27E429D800993E41 /* EditContainerViewController.swift */,
-			);
-			path = "Detail Containers";
-			sourceTree = "<group>";
-		};
-		2F036F6C27E429D800993E41 /* Edit Event */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F6D27E429D800993E41 /* EditEventDetailViewController.xib */,
-				2F036F6E27E429D800993E41 /* EditEventDetailViewController.swift */,
-			);
-			path = "Edit Event";
-			sourceTree = "<group>";
-		};
-		2F036F6F27E429D800993E41 /* Custom Alert */ = {
-			isa = PBXGroup;
-			children = (
-				2F036F7027E429D800993E41 /* Alert.storyboard */,
-				2F036F7127E429D800993E41 /* AlertService.swift */,
-				2F036F7227E429D800993E41 /* AlertViewController.swift */,
-			);
-			path = "Custom Alert";
-			sourceTree = "<group>";
-		};
 		2F036F7527E429D800993E41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F036F6027E429D800993E41 /* EventData.swift */,
 				2F036F7627E429D800993E41 /* Event.swift */,
 			);
 			path = Model;
@@ -1161,15 +1079,6 @@
 			path = Bmi;
 			sourceTree = "<group>";
 		};
-		8327042227E7AB3A0006CF3B /* Sucess Screen */ = {
-			isa = PBXGroup;
-			children = (
-				8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */,
-				8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */,
-			);
-			path = "Sucess Screen";
-			sourceTree = "<group>";
-		};
 		8391EA4327E820E800F466F2 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1317,6 +1226,41 @@
 			children = (
 				2F5B66D627ED227900AC243E /* ResetPasswordViewController.swift */,
 				2F3A544327EC3EE400FBA25F /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83C1DBEC282C4EF600F411F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F036F7027E429D800993E41 /* Alert.storyboard */,
+				2F036F6327E429D800993E41 /* CreateNewEventViewController.xib */,
+				2F036F5427E429D800993E41 /* EventFilterViewController.xib */,
+				2F036F6D27E429D800993E41 /* EditEventDetailViewController.xib */,
+				8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */,
+				2F036F7427E429D800993E41 /* EventDetail.storyboard */,
+				2F036F5827E429D800993E41 /* HomeEvents.storyboard */,
+				2F036F5A27E429D800993E41 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83C1DBED282C4EFE00F411F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */,
+				2F036F5927E429D800993E41 /* HomeEventsViewController.swift */,
+				2F036F6827E429D800993E41 /* FinalizedContainerViewController.swift */,
+				2F036F6927E429D800993E41 /* CancelContainerViewController.swift */,
+				2F036F6A27E429D800993E41 /* ConfirmContainerViewController.swift */,
+				2F036F6B27E429D800993E41 /* EditContainerViewController.swift */,
+				2F036F6E27E429D800993E41 /* EditEventDetailViewController.swift */,
+				2F036F5327E429D800993E41 /* EventFilterViewController.swift */,
+				2F036F7327E429D800993E41 /* EventDetailViewController.swift */,
+				2F036F6227E429D800993E41 /* CreateNewEventViewController.swift */,
+				2F036F7127E429D800993E41 /* AlertService.swift */,
+				2F036F7227E429D800993E41 /* AlertViewController.swift */,
+				2F036F5527E429D800993E41 /* Home Containers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
