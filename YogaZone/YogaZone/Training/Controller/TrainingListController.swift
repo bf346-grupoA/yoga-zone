@@ -22,17 +22,17 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
     @IBOutlet weak var startTrainButton: UIButton!
     
     
-    private var arrayExercices:[String] = ["Natarajasana", "Sarvagansana", "Prancha Lateral", "Curvatura Frente", "Bakasana", "Boat", "Dolphin", "Garudasana", "Pigeon"]
-    private var arrayExercicesDuration:[String] = ["60s", "55s", "60s", "40s", "55s", "60s", "40s", "45s", "55s"]
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.setupUI()
-        self.setupNavigationBar()
-        self.ListTrainYogaTableView.register(TrainingCustomCell.nib(), forCellReuseIdentifier: TrainingCustomCell.identifier)
-        self.ListTrainYogaTableView.delegate = self
-        self.ListTrainYogaTableView.dataSource = self
-    }
+    var exercicesData: [ExercicesModel] = []
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            self.setupUI()
+            self.setupNavigationBar()
+            self.setupData()
+            self.ListTrainYogaTableView.register(TrainingCustomCell.nib(), forCellReuseIdentifier: TrainingCustomCell.identifier)
+            self.ListTrainYogaTableView.delegate = self
+            self.ListTrainYogaTableView.dataSource = self
+        }
     
     //MARK: - SetupUI
     func configLabels(){
@@ -86,16 +86,15 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
 extension TrainingListController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.arrayExercices.count
+        return self.exercicesData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TrainingCustomCell? = tableView.dequeueReusableCell(withIdentifier: TrainingCustomCell.identifier, for: indexPath) as? TrainingCustomCell
-        cell?.treinoImageView.image = UIImage(named: self.arrayExercices[indexPath.row])
-        cell?.treinoDescriptionLabel.text = self.arrayExercices[indexPath.row]
-        cell?.treinoDurationLabel.text = self.arrayExercicesDuration[indexPath.row]
+        cell?.setupCell(data: self.exercicesData[indexPath.row])
         return cell ?? UITableViewCell()
     }
+   
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -121,5 +120,14 @@ extension TrainingListController {
     @objc private func popToPrevious() {
         navigationController?.popViewController(animated: true)
     }
+}
+
+// MARK: Populate Data
+extension TrainingListController {
+    func setupData() {
+        let jsonData = trainingListMock.data(using: .utf8)!
+        let exercices = try! JSONDecoder().decode([ExercicesModel].self, from: jsonData)
+        exercices.forEach { self.exercicesData.append($0)}
+        }
 }
 

@@ -18,7 +18,6 @@ class LeaveTrainingVC: UIViewController {
     
     @IBAction func tappedYesButton(_ sender: UIButton) {
         navigationController?.pushViewController(HomeViewController(), animated: true)
-        
     }
     
     @IBAction func tappedNoButton(_ sender: UIButton) {
