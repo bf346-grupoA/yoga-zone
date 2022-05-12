@@ -8,7 +8,6 @@
 import UIKit
 protocol MyTableViewCellProtocol{
     func actionSaveButton()
-
 }
 
 class MyTableViewCell: UITableViewCell {
@@ -38,10 +37,8 @@ class MyTableViewCell: UITableViewCell {
         return UINib(nibName: self.identifier, bundle: nil)
     }
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
     override func layoutSubviews() {
@@ -51,7 +48,6 @@ class MyTableViewCell: UITableViewCell {
     
     
     public func setupCell(value:Double){
-        print(value)
         var image: String = ""
         var result: String = ""
         var possibleCons: String = ""
@@ -114,14 +110,11 @@ class MyTableViewCell: UITableViewCell {
         buttonTapped.backgroundColor = color
         imageIndex.image = UIImage(named:image)
         
-       
-        
     }
     
     
     @IBAction func tappedCalculate(_ sender: Any) {
         self.delegate?.actionSaveButton()
-        
     }
     
 }

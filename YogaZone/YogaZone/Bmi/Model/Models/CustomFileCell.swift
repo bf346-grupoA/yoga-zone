@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-struct Cell{
+struct Cell {
     
     let result : String
     let waitingResult : String

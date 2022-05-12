@@ -154,7 +154,7 @@
 		2F83C796282A0A0C00EC3334 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C787282A0A0C00EC3334 /* MyTableViewCell.swift */; };
 		2F83C797282A0A0C00EC3334 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F83C788282A0A0C00EC3334 /* MyTableViewCell.xib */; };
 		2F83C798282A0A0C00EC3334 /* BmiEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C78B282A0A0C00EC3334 /* BmiEnum.swift */; };
-		2F83C799282A0A0C00EC3334 /* customFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C78D282A0A0C00EC3334 /* customFileCell.swift */; };
+		2F83C799282A0A0C00EC3334 /* CustomFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C78D282A0A0C00EC3334 /* CustomFileCell.swift */; };
 		2F83C79A282A0A0C00EC3334 /* Myprogress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C78E282A0A0C00EC3334 /* Myprogress.swift */; };
 		2F83C79B282A0A0C00EC3334 /* BmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C790282A0A0C00EC3334 /* BmiViewController.swift */; };
 		2F83C79C282A0A0C00EC3334 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C791282A0A0C00EC3334 /* ResultViewController.swift */; };
@@ -341,7 +341,7 @@
 		2F83C787282A0A0C00EC3334 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		2F83C788282A0A0C00EC3334 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		2F83C78B282A0A0C00EC3334 /* BmiEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmiEnum.swift; sourceTree = "<group>"; };
-		2F83C78D282A0A0C00EC3334 /* customFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customFileCell.swift; sourceTree = "<group>"; };
+		2F83C78D282A0A0C00EC3334 /* CustomFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFileCell.swift; sourceTree = "<group>"; };
 		2F83C78E282A0A0C00EC3334 /* Myprogress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Myprogress.swift; sourceTree = "<group>"; };
 		2F83C790282A0A0C00EC3334 /* BmiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmiViewController.swift; sourceTree = "<group>"; };
 		2F83C791282A0A0C00EC3334 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -692,7 +692,7 @@
 			children = (
 				83C1DBEF282C4FCA00F411F4 /* View */,
 				83C1DBEE282C4FC400F411F4 /* Controller */,
-				2F412EC727E41821007708E8 /* Models */,
+				2F412EC727E41821007708E8 /* Model */,
 			);
 			path = Meditation;
 			sourceTree = "<group>";
@@ -706,14 +706,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		2F412EC727E41821007708E8 /* Models */ = {
+		2F412EC727E41821007708E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F412ECC27E41821007708E8 /* YogaPlayer.swift */,
 				2F412EC827E41821007708E8 /* AudioMeditation.swift */,
 				2F412EC927E41821007708E8 /* MeditationAudioFile.swift */,
 				2F412EBD27E41821007708E8 /* MeditationData.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2F412EDA27E41A0B007708E8 /* Assets */ = {
@@ -738,6 +739,18 @@
 				2F412EE327E41A0B007708E8 /* pad-Eb.mp3 */,
 			);
 			path = SoundBank;
+			sourceTree = "<group>";
+		};
+		2F41353D282C7F72000E1D73 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3126834227C15ECB003F017B /* Assets.xcassets */,
+				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
+				3126834727C15ECB003F017B /* Info.plist */,
+				3126833927C15ECA003F017B /* AppDelegate.swift */,
+				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		2F5B66D927ED22A800AC243E /* Form */ = {
@@ -892,7 +905,7 @@
 			children = (
 				2F83C781282A0A0C00EC3334 /* Bmi.storyboard */,
 				2F83C783282A0A0C00EC3334 /* TableViewMyProgress */,
-				2F83C786282A0A0C00EC3334 /* customTableViewCell */,
+				2F83C786282A0A0C00EC3334 /* CustomTableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -906,13 +919,13 @@
 			path = TableViewMyProgress;
 			sourceTree = "<group>";
 		};
-		2F83C786282A0A0C00EC3334 /* customTableViewCell */ = {
+		2F83C786282A0A0C00EC3334 /* CustomTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				2F83C787282A0A0C00EC3334 /* MyTableViewCell.swift */,
 				2F83C788282A0A0C00EC3334 /* MyTableViewCell.xib */,
 			);
-			path = customTableViewCell;
+			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
 		2F83C789282A0A0C00EC3334 /* Model */ = {
@@ -935,7 +948,7 @@
 		2F83C78C282A0A0C00EC3334 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2F83C78D282A0A0C00EC3334 /* customFileCell.swift */,
+				2F83C78D282A0A0C00EC3334 /* CustomFileCell.swift */,
 				2F83C78E282A0A0C00EC3334 /* Myprogress.swift */,
 			);
 			path = Models;
@@ -989,6 +1002,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				2F41353D282C7F72000E1D73 /* Config */,
 				313BF5262828A266004CE901 /* Bmi */,
 				2F3A53DA27EC04A100FBA25F /* Training */,
 				2FA287B127EACC3C00C5BD81 /* Profile */,
@@ -1000,11 +1014,6 @@
 				2F412EBB27E41821007708E8 /* Meditation */,
 				2F412EAD27E4101E007708E8 /* Home */,
 				2F79E12627DCF42B0070397F /* PoseGallery */,
-				3126833927C15ECA003F017B /* AppDelegate.swift */,
-				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
-				3126834227C15ECB003F017B /* Assets.xcassets */,
-				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
-				3126834727C15ECB003F017B /* Info.plist */,
 			);
 			path = YogaZone;
 			sourceTree = "<group>";
@@ -1212,7 +1221,6 @@
 				2F412EC027E41821007708E8 /* MeditationHomeViewController.swift */,
 				2F412EC527E41821007708E8 /* IntroViewController.swift */,
 				2F412ECB27E41821007708E8 /* PracticeViewController.swift */,
-				2F412ECC27E41821007708E8 /* YogaPlayer.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1422,7 +1430,7 @@
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
 				2F83C794282A0A0C00EC3334 /* TableViewCellMyProgress.swift in Sources */,
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
-				2F83C799282A0A0C00EC3334 /* customFileCell.swift in Sources */,
+				2F83C799282A0A0C00EC3334 /* CustomFileCell.swift in Sources */,
 				2F3A541027EC04A100FBA25F /* DropDownTwoTableViewCell.swift in Sources */,
 				2F83C79D282A0A0C00EC3334 /* MyProgressViewController.swift in Sources */,
 				2F412ED227E41821007708E8 /* AudioCell.swift in Sources */,
@@ -1651,7 +1659,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NXNZY6B6S6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YogaZone/Info.plist;
+				INFOPLIST_FILE = YogaZone/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1678,7 +1686,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NXNZY6B6S6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YogaZone/Info.plist;
+				INFOPLIST_FILE = YogaZone/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

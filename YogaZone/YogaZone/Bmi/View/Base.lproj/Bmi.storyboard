@@ -238,7 +238,7 @@
                                 </constraints>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meu Progresso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-su-FNr">
-                                <rect key="frame" x="20" y="64" width="374" height="27.5"/>
+                                <rect key="frame" x="132.5" y="64" width="149.5" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -351,7 +351,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2g-64-ycD">
-                                <rect key="frame" x="10" y="62.5" width="45" height="31"/>
+                                <rect key="frame" x="20" y="64" width="45" height="31"/>
                                 <color key="tintColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward.circle" catalog="system"/>
@@ -365,27 +365,28 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="xZB-Ht-0i1" secondAttribute="trailing" constant="20" id="1F9-dY-DhM"/>
-                            <constraint firstItem="i2g-64-ycD" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="10" id="1uO-Di-zWy"/>
+                            <constraint firstItem="i2g-64-ycD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="djo-Sw-qwn" secondAttribute="leading" id="1uO-Di-zWy"/>
                             <constraint firstItem="maw-gN-Hdp" firstAttribute="top" secondItem="Hj7-su-FNr" secondAttribute="bottom" constant="20" id="2On-TL-LFu"/>
                             <constraint firstItem="XDG-nj-neM" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="2c5-pa-rvk"/>
-                            <constraint firstItem="Hj7-su-FNr" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="2ct-ac-bns"/>
                             <constraint firstItem="XDG-nj-neM" firstAttribute="top" secondItem="cYf-Sh-OOW" secondAttribute="bottom" constant="25" id="3rL-Dg-f7e"/>
-                            <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="Hj7-su-FNr" secondAttribute="trailing" constant="20" id="Cay-hl-IXe"/>
+                            <constraint firstItem="Hj7-su-FNr" firstAttribute="centerX" secondItem="aPL-eZ-EPP" secondAttribute="centerX" id="4ZU-v1-xf0"/>
+                            <constraint firstItem="maw-gN-Hdp" firstAttribute="top" secondItem="i2g-64-ycD" secondAttribute="bottom" constant="16.5" id="8Nn-JR-Buq"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="bottom" secondItem="beA-KB-IMD" secondAttribute="bottom" constant="30" id="DTN-xJ-kAQ"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="maw-gN-Hdp" secondAttribute="trailing" constant="20" id="JzX-OL-X8K"/>
                             <constraint firstItem="maw-gN-Hdp" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="QVI-5k-YCB"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="beA-KB-IMD" secondAttribute="trailing" constant="60" id="S77-yw-ADR"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="cYf-Sh-OOW" secondAttribute="trailing" constant="20" id="ajq-y9-1Ov"/>
-                            <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="i2g-64-ycD" secondAttribute="trailing" constant="359" id="c9b-tl-mQx"/>
                             <constraint firstItem="cYf-Sh-OOW" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="cP8-jw-BbH"/>
-                            <constraint firstItem="i2g-64-ycD" firstAttribute="centerY" secondItem="Hj7-su-FNr" secondAttribute="centerY" id="d2P-Rg-oTl"/>
                             <constraint firstItem="JYa-Sv-QAf" firstAttribute="top" secondItem="XDG-nj-neM" secondAttribute="bottom" constant="10" id="fDB-sk-ZVV"/>
                             <constraint firstItem="Hj7-su-FNr" firstAttribute="top" secondItem="djo-Sw-qwn" secondAttribute="top" constant="20" id="fME-QQ-z7p"/>
+                            <constraint firstItem="Hj7-su-FNr" firstAttribute="top" secondItem="djo-Sw-qwn" secondAttribute="top" constant="20" id="ldS-ac-IU8"/>
                             <constraint firstItem="xZB-Ht-0i1" firstAttribute="top" secondItem="maw-gN-Hdp" secondAttribute="bottom" constant="10" id="mWu-JA-y6j"/>
                             <constraint firstItem="cYf-Sh-OOW" firstAttribute="top" secondItem="xZB-Ht-0i1" secondAttribute="bottom" constant="10" id="mmW-QR-xag"/>
                             <constraint firstItem="beA-KB-IMD" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="60" id="noP-oK-2w2"/>
+                            <constraint firstItem="Hj7-su-FNr" firstAttribute="leading" secondItem="i2g-64-ycD" secondAttribute="trailing" constant="67.5" id="pgY-Tb-uZR"/>
                             <constraint firstItem="xZB-Ht-0i1" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="q5x-zb-RG6"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="JYa-Sv-QAf" secondAttribute="trailing" id="tQ5-Ha-YgR"/>
+                            <constraint firstItem="i2g-64-ycD" firstAttribute="top" secondItem="djo-Sw-qwn" secondAttribute="top" constant="20" id="x5D-6u-0LJ"/>
                             <constraint firstItem="JYa-Sv-QAf" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" id="yNx-YK-x1C"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="XDG-nj-neM" secondAttribute="trailing" constant="20" id="yPx-89-TFX"/>
                         </constraints>
