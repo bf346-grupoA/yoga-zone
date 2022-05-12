@@ -180,6 +180,7 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+		792C667C282D76AC0018D343 /* TrainingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667B282D76AC0018D343 /* TrainingData.swift */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
@@ -372,6 +373,7 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		792C667B282D76AC0018D343 /* TrainingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -831,6 +833,7 @@
 		2F3A53DA27EC04A100FBA25F /* Training */ = {
 			isa = PBXGroup;
 			children = (
+				2F3A53F227EC04A100FBA25F /* Models */,
 				2F3A53DB27EC04A100FBA25F /* TrainingList */,
 				2F3A53E127EC04A100FBA25F /* TrainingFinished */,
 				2F3A53E427EC04A100FBA25F /* TrainingStarted */,
@@ -919,7 +922,6 @@
 		2F3A53F127EC04A100FBA25F /* DropDownWithMultipleXib */ = {
 			isa = PBXGroup;
 			children = (
-				2F3A53F227EC04A100FBA25F /* Models */,
 				2F3A53F427EC04A100FBA25F /* DropDownTableCell */,
 				2F3A53F727EC04A100FBA25F /* MakeDropDownFile */,
 				2F3A53F927EC04A100FBA25F /* DropDownTwoTableCell */,
@@ -931,6 +933,7 @@
 			isa = PBXGroup;
 			children = (
 				2F3A53F327EC04A100FBA25F /* TrainingModel.swift */,
+				792C667B282D76AC0018D343 /* TrainingData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1648,6 +1651,7 @@
 				2F036FB327E429E400993E41 /* ImcEnums.swift in Sources */,
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
+				792C667C282D76AC0018D343 /* TrainingData.swift in Sources */,
 				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
 				2F412EB827E4101E007708E8 /* Router.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,

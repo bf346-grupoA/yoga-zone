@@ -29,6 +29,13 @@ class TrainingCustomCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    public func setupCell(data:ExercicesModel){
+            self.treinoDescriptionLabel.text = data.exercise
+            self.treinoDurationLabel.text = data.seconds
+            self.treinoImageView.image = UIImage(named: data.exercise ?? "")
+        }
+        
+    
     //MARK: - SetupUI
     func configLabels(){
         self.treinoDescriptionLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
@@ -41,7 +48,7 @@ class TrainingCustomCell: UITableViewCell {
            view.backgroundColor = UIColor.clear
            selectedBackgroundView = view
        }
-    
+   
     func setupUI(){
         self.configLabels()
         self.clearBackgroundColorWhenSelectCell()
