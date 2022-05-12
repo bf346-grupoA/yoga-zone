@@ -79,9 +79,13 @@ extension EventListViewController{
 extension EventListViewController {
     func setupData() {
         self.eventData.removeAll()
-        let jsonData = eventMock.data(using: .utf8)!
-        let events = try! JSONDecoder().decode([Event].self, from: jsonData)
-        events.forEach { self.eventData.append($0)}
+        do {
+            let jsonData = eventMock.data(using: .utf8)
+            let events = try JSONDecoder().decode([Event].self, from: jsonData ?? Data() )
+            events.forEach { self.eventData.append($0)}
+        } catch {
+            print(error)
+        }
         
         if idSegment == 2 {
             eventData = eventData.filter({ Event in

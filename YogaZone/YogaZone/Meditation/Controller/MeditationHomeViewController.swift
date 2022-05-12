@@ -18,10 +18,16 @@ class MeditationHomeViewController: UIViewController {
 // MARK: Data Mock
 extension MeditationHomeViewController {
     func setupData() {
-        let jsonData = meditationMock.data(using: .utf8)!
-        let meditationData = try! JSONDecoder().decode([MeditationAudioFile].self, from: jsonData)
-        meditationData.forEach { self.meditationFiles.append($0)}
+        do {
+            let jsonData = meditationMock.data(using: .utf8)
+            let meditationData = try JSONDecoder().decode([MeditationAudioFile].self, from: jsonData ?? Data())
+            meditationData.forEach { self.meditationFiles.append($0)}
+        } catch {
+            print(error)
+        }
     }
+    
+    
 }
 
 

@@ -8,7 +8,7 @@
 import UIKit
 
 class TrainingListController: UIViewController, UITableViewDataSource, UIGestureRecognizerDelegate {
-
+    
     @IBOutlet weak var CircleCaloriesImage: UIImageView!
     @IBOutlet weak var NumberOfCaloriesLabel: UILabel!
     @IBOutlet weak var CaloriesTitleLabel: UILabel!
@@ -23,31 +23,31 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
     
     
     var exercicesData: [ExercicesModel] = []
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            self.setupUI()
-            self.setupNavigationBar()
-            self.setupData()
-            self.ListTrainYogaTableView.register(TrainingCustomCell.nib(), forCellReuseIdentifier: TrainingCustomCell.identifier)
-            self.ListTrainYogaTableView.delegate = self
-            self.ListTrainYogaTableView.dataSource = self
-        }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setupUI()
+        self.setupNavigationBar()
+        self.setupData()
+        self.ListTrainYogaTableView.register(TrainingCustomCell.nib(), forCellReuseIdentifier: TrainingCustomCell.identifier)
+        self.ListTrainYogaTableView.delegate = self
+        self.ListTrainYogaTableView.dataSource = self
+    }
     
     //MARK: - SetupUI
     func configLabels(){
         self.NumberOfCaloriesLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.NumberOfCaloriesLabel.textAlignment = .center
         self.CaloriesTitleLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
-    
+        
         self.NumberOfMinutesLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.NumberOfMinutesLabel.textAlignment = .center
         self.MinutesTitleLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
-   
+        
         self.NumberOfPositionsLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.NumberOfPositionsLabel.textAlignment = .center
         self.PositionsTitleLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
-
+        
     }
     
     func setupImages(){
@@ -55,15 +55,15 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
         CircleMinutesImage.image = UIImage(named: "CircleMinutesImage")
         CirclePositionsImage.image = UIImage(named: "CirclePositionsImage")
     }
-
+    
     func setupStartTrainButton(){
         var containerTitle = AttributeContainer()
-            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
         var config = UIButton.Configuration.filled()
-            config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
-            config.baseForegroundColor = .white
-            config.attributedTitle = AttributedString("Iniciar Treino", attributes: containerTitle)
+        config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        config.baseForegroundColor = .white
+        config.attributedTitle = AttributedString("Iniciar Treino", attributes: containerTitle)
         
         self.startTrainButton.configuration = config
         self.startTrainButton.layer.cornerRadius = 8
@@ -74,7 +74,7 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
         self.setupStartTrainButton()
         self.setupImages()
     }
-
+    
     
     @IBAction func tappedStartTrainButton(_ sender: UIButton) {
         let vc = TrainingStartedVC()
@@ -94,7 +94,7 @@ extension TrainingListController: UITableViewDelegate {
         cell?.setupCell(data: self.exercicesData[indexPath.row])
         return cell ?? UITableViewCell()
     }
-   
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -125,9 +125,13 @@ extension TrainingListController {
 // MARK: Populate Data
 extension TrainingListController {
     func setupData() {
-        let jsonData = trainingListMock.data(using: .utf8)!
-        let exercices = try! JSONDecoder().decode([ExercicesModel].self, from: jsonData)
-        exercices.forEach { self.exercicesData.append($0)}
+        do {
+            let jsonData = trainingListMock.data(using: .utf8)
+            let events = try JSONDecoder().decode([ExercicesModel].self, from: jsonData ?? Data() )
+            events.forEach { self.exercicesData.append($0)}
+        } catch {
+            print(error)
         }
+    }
 }
 
