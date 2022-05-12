@@ -163,7 +163,6 @@
 		792C66A1282D79CA0018D343 /* LeaveTrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6684282D79CA0018D343 /* LeaveTrainingVC.swift */; };
 		792C66A2282D79CA0018D343 /* LevelAndDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6685282D79CA0018D343 /* LevelAndDurationVC.swift */; };
 		792C66A3282D79CA0018D343 /* TrainingPausedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6686282D79CA0018D343 /* TrainingPausedVC.swift */; };
-		792C66A4282D79CA0018D343 /* TrainingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6688282D79CA0018D343 /* TrainingData.swift */; };
 		792C66A5282D79CA0018D343 /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6689282D79CA0018D343 /* TrainingModel.swift */; };
 		792C66A6282D79CA0018D343 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 792C668B282D79CA0018D343 /* 01_Natarajasana.gif */; };
 		792C66A7282D79CA0018D343 /* LevelAndDurationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792C668D282D79CA0018D343 /* LevelAndDurationVC.xib */; };
@@ -192,6 +191,7 @@
 		8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4D27E820E800F466F2 /* Montserrat-Regular.ttf */; };
 		8391EA5A27E820E800F466F2 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */; };
 		8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */; };
+		839A06AF282DB07100C797EC /* TrainingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A06AE282DB07100C797EC /* TrainingData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -353,7 +353,6 @@
 		792C6684282D79CA0018D343 /* LeaveTrainingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveTrainingVC.swift; sourceTree = "<group>"; };
 		792C6685282D79CA0018D343 /* LevelAndDurationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelAndDurationVC.swift; sourceTree = "<group>"; };
 		792C6686282D79CA0018D343 /* TrainingPausedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPausedVC.swift; sourceTree = "<group>"; };
-		792C6688282D79CA0018D343 /* TrainingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
 		792C6689282D79CA0018D343 /* TrainingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
 		792C668B282D79CA0018D343 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
 		792C668D282D79CA0018D343 /* LevelAndDurationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelAndDurationVC.xib; sourceTree = "<group>"; };
@@ -382,6 +381,7 @@
 		8391EA4D27E820E800F466F2 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		839A06AE282DB07100C797EC /* TrainingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1013,9 +1013,9 @@
 		792C6687282D79CA0018D343 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				792C6688282D79CA0018D343 /* TrainingData.swift */,
 				792C6689282D79CA0018D343 /* TrainingModel.swift */,
 				792C668A282D79CA0018D343 /* Gifs */,
+				839A06AE282DB07100C797EC /* TrainingData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1494,11 +1494,11 @@
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				792C66A3282D79CA0018D343 /* TrainingPausedVC.swift in Sources */,
 				2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */,
+				839A06AF282DB07100C797EC /* TrainingData.swift in Sources */,
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
 				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
-				792C66A4282D79CA0018D343 /* TrainingData.swift in Sources */,
 				2F5B66F727ED22A800AC243E /* FacebookButtonCell.swift in Sources */,
 				2F5B670027ED22A800AC243E /* SeparatorCell.swift in Sources */,
 				2F83C79C282A0A0C00EC3334 /* ResultViewController.swift in Sources */,

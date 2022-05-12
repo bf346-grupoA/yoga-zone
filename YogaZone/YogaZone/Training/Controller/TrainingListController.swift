@@ -127,8 +127,8 @@ extension TrainingListController {
     func setupData() {
         do {
             let jsonData = trainingListMock.data(using: .utf8)
-            let events = try JSONDecoder().decode([ExercicesModel].self, from: jsonData ?? Data() )
-            events.forEach { self.exercicesData.append($0)}
+            let exercices = try JSONDecoder().decode([ExercicesModel].self, from: jsonData ?? Data() )
+            exercices.forEach { self.exercicesData.append($0)}
         } catch {
             print(error)
         }
