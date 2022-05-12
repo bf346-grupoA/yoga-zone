@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TrainingStartedVCDelegate:AnyObject {
+    func resumeTimer()
+}
+
 class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var titleExerciceNameLabel: UILabel!
@@ -22,6 +26,11 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var gifImage: UIImageView!
     
+    var timer = Timer()
+    var seconds = 61
+    var isTimerRunning = false
+    var resumeTapped = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +39,12 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
         self.configNextButton()
         self.loadGifImage()
         self.setupImages()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.runTimer()
+        
     }
     
     func loadGifImage(){
@@ -49,9 +64,11 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     
     @objc func tappedPauseButton(){
         let vc = TrainingPausedVC()
-        vc.view.backgroundColor = UIColor.white.withAlphaComponent(0.5)
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: false, completion: nil)
+            vc.delegate = self
+            vc.view.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+            vc.modalPresentationStyle = .overCurrentContext
+            self.present(vc, animated: false, completion: nil)
+            self.pauseTimer()
     }
     
     private func configNextButton(){
@@ -83,5 +100,38 @@ extension TrainingStartedVC {
     @objc private func leaveTraining() {
         let leaveTraining = LeaveTrainingVC()
         navigationController?.pushViewController(leaveTraining, animated: false)
+    }
+}
+
+// MARK: Timer Configuration
+extension TrainingStartedVC: TrainingStartedVCDelegate {
+    func resumeTimer() {
+        self.pauseTimer()
+    }
+    
+ 
+    func runTimer(){
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(TrainingStartedVC.updateTimer)), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTimer(){
+        if self.seconds > 0 {
+            seconds -= 1
+            secondsTimerLabel.text = "\(seconds)"
+        } else {
+            self.seconds = 0
+        }
+    }
+    
+    func pauseTimer(){
+        if self.resumeTapped == false {
+            timer.invalidate()
+            self.resumeTapped = true
+            self.pauseImage.image = UIImage(named: "playButtonImage")
+        } else {
+            runTimer()
+            self.resumeTapped = false
+            self.pauseImage.image = UIImage(named: "pauseImage")
+        }
     }
 }

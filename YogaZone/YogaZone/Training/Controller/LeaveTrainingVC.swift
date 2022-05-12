@@ -17,7 +17,7 @@ class LeaveTrainingVC: UIViewController {
     }
     
     @IBAction func tappedYesButton(_ sender: UIButton) {
-        navigationController?.popToRootViewController(animated: true)
+        navigationController?.pushViewController(HomeViewController(), animated: true)
         
     }
     
