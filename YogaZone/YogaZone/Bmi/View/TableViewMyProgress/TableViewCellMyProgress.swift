@@ -19,17 +19,14 @@ class TableViewCellMyProgress: UITableViewCell {
         return UINib(nibName: self.identifier, bundle: nil)
     }
     
-    
     public func setupCell(myProgress:MyProgress){
         self.dateLabel.text = myProgress.date
         self.bmiIndex.text = myProgress.result
         self.weightLabel.text = myProgress.weight
-        
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-    
     }
 
 }

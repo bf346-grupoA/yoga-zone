@@ -8,10 +8,10 @@
 import UIKit
 
 protocol SendData {
-    var result: Double {get}
-    var weigth: String {get}
-    var goal: String {get}
-    var missing: Float {get}
+    var result: Double { get }
+    var weigth: String { get }
+    var goal: String { get }
+    var missing: Float { get }
 }
 
 class BmiViewController: UIViewController {
@@ -31,22 +31,19 @@ class BmiViewController: UIViewController {
     var bmi:Float = 0
     var getWeight:String = ""
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.switchLabel.isOn = false
         setupNavigationBar()
     
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.buttonCalculate.layer.cornerRadius = 7
         self.buttonMyProgress.layer.cornerRadius = 7
         
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         self.blockSlider()
@@ -82,9 +79,6 @@ class BmiViewController: UIViewController {
         self.blockSlider()
     }
     
-    
-    
-    
     @IBAction func tappedMyProgress(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyProgressViewController") as? MyProgressViewController
         self.present(vc ?? UIViewController(), animated: true)
@@ -108,20 +102,15 @@ extension BmiViewController {
         self.present(vc ?? UIViewController(), animated: true)
     }
     
-
     func blockSlider(){
         if switchLabel.isOn == true {
             sliderGoal.alpha = 0.3
             sliderGoal.isEnabled = false
-           
         } else {
             sliderGoal.alpha = 1.0
             sliderGoal.isEnabled = true
-           
         }
-    
     }
-    
     
 }
 
