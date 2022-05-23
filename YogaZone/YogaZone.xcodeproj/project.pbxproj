@@ -155,9 +155,6 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-<<<<<<< HEAD
-		792C667C282D76AC0018D343 /* TrainingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667B282D76AC0018D343 /* TrainingData.swift */; };
-=======
 		792C669C282D79CA0018D343 /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667F282D79CA0018D343 /* RenderGIF.swift */; };
 		792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6680282D79CA0018D343 /* MakeDropDown.swift */; };
 		792C669E282D79CA0018D343 /* TrainingFinishedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6681282D79CA0018D343 /* TrainingFinishedVC.swift */; };
@@ -167,7 +164,7 @@
 		792C66A2282D79CA0018D343 /* LevelAndDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6685282D79CA0018D343 /* LevelAndDurationVC.swift */; };
 		792C66A3282D79CA0018D343 /* TrainingPausedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6686282D79CA0018D343 /* TrainingPausedVC.swift */; };
 		792C66A5282D79CA0018D343 /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6689282D79CA0018D343 /* TrainingModel.swift */; };
-		792C66A6282D79CA0018D343 /* 01_Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 792C668B282D79CA0018D343 /* 01_Natarajasana.gif */; };
+		792C66A6282D79CA0018D343 /* Natarajasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 792C668B282D79CA0018D343 /* Natarajasana.gif */; };
 		792C66A7282D79CA0018D343 /* LevelAndDurationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792C668D282D79CA0018D343 /* LevelAndDurationVC.xib */; };
 		792C66A8282D79CA0018D343 /* TrainingPausedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792C668E282D79CA0018D343 /* TrainingPausedVC.xib */; };
 		792C66A9282D79CA0018D343 /* TrainingListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792C668F282D79CA0018D343 /* TrainingListController.xib */; };
@@ -180,7 +177,15 @@
 		792C66B0282D79CA0018D343 /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6698282D79CA0018D343 /* DropDownTableViewCell.swift */; };
 		792C66B1282D79CA0018D343 /* DropDownTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C669A282D79CA0018D343 /* DropDownTwoTableViewCell.swift */; };
 		792C66B2282D79CA0018D343 /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792C669B282D79CA0018D343 /* DropDownTwoTableViewCell.xib */; };
->>>>>>> 10cddc1f8300d5a71cb742cfbe03b635e28e6282
+		7979B29E283AFFBA00C698D0 /* Sarvagansana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B29D283AFFBA00C698D0 /* Sarvagansana.gif */; };
+		7979B2A0283B1C5C00C698D0 /* Prancha Lateral.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B29F283B1C5C00C698D0 /* Prancha Lateral.gif */; };
+		7979B2A2283B305600C698D0 /* Curvatura Frente.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A1283B305600C698D0 /* Curvatura Frente.gif */; };
+		7979B2A4283B307700C698D0 /* Bakasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A3283B307700C698D0 /* Bakasana.gif */; };
+		7979B2A6283B309800C698D0 /* Boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A5283B309800C698D0 /* Boat.gif */; };
+		7979B2A8283B30B300C698D0 /* Dolphin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A7283B30B300C698D0 /* Dolphin.gif */; };
+		7979B2AA283B30CB00C698D0 /* Garudasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A9283B30CB00C698D0 /* Garudasana.gif */; };
+		7979B2AC283B30EB00C698D0 /* Pigeon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2AB283B30EB00C698D0 /* Pigeon.gif */; };
+		7979B2AE283B31CB00C698D0 /* Lotus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2AD283B31CB00C698D0 /* Lotus.gif */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
@@ -349,9 +354,6 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		792C667B282D76AC0018D343 /* TrainingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
-=======
 		792C667F282D79CA0018D343 /* RenderGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderGIF.swift; sourceTree = "<group>"; };
 		792C6680282D79CA0018D343 /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
 		792C6681282D79CA0018D343 /* TrainingFinishedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingFinishedVC.swift; sourceTree = "<group>"; };
@@ -361,7 +363,7 @@
 		792C6685282D79CA0018D343 /* LevelAndDurationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelAndDurationVC.swift; sourceTree = "<group>"; };
 		792C6686282D79CA0018D343 /* TrainingPausedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPausedVC.swift; sourceTree = "<group>"; };
 		792C6689282D79CA0018D343 /* TrainingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
-		792C668B282D79CA0018D343 /* 01_Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01_Natarajasana.gif; sourceTree = "<group>"; };
+		792C668B282D79CA0018D343 /* Natarajasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Natarajasana.gif; sourceTree = "<group>"; };
 		792C668D282D79CA0018D343 /* LevelAndDurationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelAndDurationVC.xib; sourceTree = "<group>"; };
 		792C668E282D79CA0018D343 /* TrainingPausedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingPausedVC.xib; sourceTree = "<group>"; };
 		792C668F282D79CA0018D343 /* TrainingListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingListController.xib; sourceTree = "<group>"; };
@@ -374,7 +376,15 @@
 		792C6698282D79CA0018D343 /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
 		792C669A282D79CA0018D343 /* DropDownTwoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTwoTableViewCell.swift; sourceTree = "<group>"; };
 		792C669B282D79CA0018D343 /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
->>>>>>> 10cddc1f8300d5a71cb742cfbe03b635e28e6282
+		7979B29D283AFFBA00C698D0 /* Sarvagansana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sarvagansana.gif; sourceTree = "<group>"; };
+		7979B29F283B1C5C00C698D0 /* Prancha Lateral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Prancha Lateral.gif"; sourceTree = "<group>"; };
+		7979B2A1283B305600C698D0 /* Curvatura Frente.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Curvatura Frente.gif"; sourceTree = "<group>"; };
+		7979B2A3283B307700C698D0 /* Bakasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bakasana.gif; sourceTree = "<group>"; };
+		7979B2A5283B309800C698D0 /* Boat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Boat.gif; sourceTree = "<group>"; };
+		7979B2A7283B30B300C698D0 /* Dolphin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Dolphin.gif; sourceTree = "<group>"; };
+		7979B2A9283B30CB00C698D0 /* Garudasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Garudasana.gif; sourceTree = "<group>"; };
+		7979B2AB283B30EB00C698D0 /* Pigeon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pigeon.gif; sourceTree = "<group>"; };
+		7979B2AD283B31CB00C698D0 /* Lotus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Lotus.gif; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -627,152 +637,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		2F3A53DA27EC04A100FBA25F /* Training */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F227EC04A100FBA25F /* Models */,
-				2F3A53DB27EC04A100FBA25F /* TrainingList */,
-				2F3A53E127EC04A100FBA25F /* TrainingFinished */,
-				2F3A53E427EC04A100FBA25F /* TrainingStarted */,
-				2F3A53EA27EC04A100FBA25F /* LeaveTraining */,
-				2F3A53ED27EC04A100FBA25F /* TrainingPaused */,
-				2F3A53F027EC04A100FBA25F /* LevelAndDuration */,
-			);
-			path = Training;
-			sourceTree = "<group>";
-		};
-		2F3A53DB27EC04A100FBA25F /* TrainingList */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53DC27EC04A100FBA25F /* TrainingListController.xib */,
-				2F3A53DD27EC04A100FBA25F /* TrainingListController.swift */,
-				2F3A53DE27EC04A100FBA25F /* TrainingListCell */,
-			);
-			path = TrainingList;
-			sourceTree = "<group>";
-		};
-		2F3A53DE27EC04A100FBA25F /* TrainingListCell */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53DF27EC04A100FBA25F /* TrainingCustomCell.swift */,
-				2F3A53E027EC04A100FBA25F /* TrainingCustomCell.xib */,
-			);
-			path = TrainingListCell;
-			sourceTree = "<group>";
-		};
-		2F3A53E127EC04A100FBA25F /* TrainingFinished */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53E227EC04A100FBA25F /* TrainingFinishedVC.swift */,
-				2F3A53E327EC04A100FBA25F /* TrainingFinishedVC.xib */,
-			);
-			path = TrainingFinished;
-			sourceTree = "<group>";
-		};
-		2F3A53E427EC04A100FBA25F /* TrainingStarted */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53E527EC04A100FBA25F /* RenderGIF.swift */,
-				2F3A53E627EC04A100FBA25F /* TrainingStartedVC.swift */,
-				2F3A53E727EC04A100FBA25F /* Gifs */,
-				2F3A53E927EC04A100FBA25F /* TrainingStartedVC.xib */,
-			);
-			path = TrainingStarted;
-			sourceTree = "<group>";
-		};
-		2F3A53E727EC04A100FBA25F /* Gifs */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53E827EC04A100FBA25F /* 01_Natarajasana.gif */,
-			);
-			path = Gifs;
-			sourceTree = "<group>";
-		};
-		2F3A53EA27EC04A100FBA25F /* LeaveTraining */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53EB27EC04A100FBA25F /* LeaveTrainingVC.xib */,
-				2F3A53EC27EC04A100FBA25F /* LeaveTrainingVC.swift */,
-			);
-			path = LeaveTraining;
-			sourceTree = "<group>";
-		};
-		2F3A53ED27EC04A100FBA25F /* TrainingPaused */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53EE27EC04A100FBA25F /* TrainingPausedVC.xib */,
-				2F3A53EF27EC04A100FBA25F /* TrainingPausedVC.swift */,
-			);
-			path = TrainingPaused;
-			sourceTree = "<group>";
-		};
-		2F3A53F027EC04A100FBA25F /* LevelAndDuration */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F127EC04A100FBA25F /* DropDownWithMultipleXib */,
-				2F3A53FC27EC04A100FBA25F /* LevelAndDurationVC.xib */,
-				2F3A53FD27EC04A100FBA25F /* LevelAndDurationVC.swift */,
-			);
-			path = LevelAndDuration;
-			sourceTree = "<group>";
-		};
-		2F3A53F127EC04A100FBA25F /* DropDownWithMultipleXib */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F427EC04A100FBA25F /* DropDownTableCell */,
-				2F3A53F727EC04A100FBA25F /* MakeDropDownFile */,
-				2F3A53F927EC04A100FBA25F /* DropDownTwoTableCell */,
-			);
-			path = DropDownWithMultipleXib;
-			sourceTree = "<group>";
-		};
-		2F3A53F227EC04A100FBA25F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F327EC04A100FBA25F /* TrainingModel.swift */,
-				792C667B282D76AC0018D343 /* TrainingData.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2F3A53F427EC04A100FBA25F /* DropDownTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F527EC04A100FBA25F /* DropDownTableViewCell.xib */,
-				2F3A53F627EC04A100FBA25F /* DropDownTableViewCell.swift */,
-			);
-			path = DropDownTableCell;
-			sourceTree = "<group>";
-		};
-		2F3A53F727EC04A100FBA25F /* MakeDropDownFile */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53F827EC04A100FBA25F /* MakeDropDown.swift */,
-			);
-			path = MakeDropDownFile;
-			sourceTree = "<group>";
-		};
-		2F3A53F927EC04A100FBA25F /* DropDownTwoTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A53FA27EC04A100FBA25F /* DropDownTwoTableViewCell.swift */,
-				2F3A53FB27EC04A100FBA25F /* DropDownTwoTableViewCell.xib */,
-			);
-			path = DropDownTwoTableCell;
-			sourceTree = "<group>";
-		};
-		2F3A542E27EC2E5000FBA25F /* TappedButtonSave */ = {
-			isa = PBXGroup;
-			children = (
-				2F3A542F27EC2E5000FBA25F /* tappedSaveResultViewController.xib */,
-				2F3A543027EC2E5000FBA25F /* tappedSaveResultViewController.swift */,
-			);
-			path = TappedButtonSave;
-			sourceTree = "<group>";
-		};
-=======
->>>>>>> 10cddc1f8300d5a71cb742cfbe03b635e28e6282
 		2F412EAD27E4101E007708E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -1168,8 +1032,8 @@
 			isa = PBXGroup;
 			children = (
 				792C6689282D79CA0018D343 /* TrainingModel.swift */,
-				792C668A282D79CA0018D343 /* Gifs */,
 				839A06AE282DB07100C797EC /* TrainingData.swift */,
+				792C668A282D79CA0018D343 /* Gifs */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1177,7 +1041,16 @@
 		792C668A282D79CA0018D343 /* Gifs */ = {
 			isa = PBXGroup;
 			children = (
-				792C668B282D79CA0018D343 /* 01_Natarajasana.gif */,
+				792C668B282D79CA0018D343 /* Natarajasana.gif */,
+				7979B29D283AFFBA00C698D0 /* Sarvagansana.gif */,
+				7979B29F283B1C5C00C698D0 /* Prancha Lateral.gif */,
+				7979B2A1283B305600C698D0 /* Curvatura Frente.gif */,
+				7979B2A3283B307700C698D0 /* Bakasana.gif */,
+				7979B2A5283B309800C698D0 /* Boat.gif */,
+				7979B2A7283B30B300C698D0 /* Dolphin.gif */,
+				7979B2A9283B30CB00C698D0 /* Garudasana.gif */,
+				7979B2AB283B30EB00C698D0 /* Pigeon.gif */,
+				7979B2AD283B31CB00C698D0 /* Lotus.gif */,
 			);
 			path = Gifs;
 			sourceTree = "<group>";
@@ -1473,24 +1346,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F412ED927E41821007708E8 /* PracticeViewController.xib in Resources */,
+				7979B2AA283B30CB00C698D0 /* Garudasana.gif in Resources */,
 				792C66A9282D79CA0018D343 /* TrainingListController.xib in Resources */,
 				2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */,
 				2F5B66F427ED22A800AC243E /* GoogleButtonCell.xib in Resources */,
 				2F0C342927E4384E004A1E8C /* ModalViewController.xib in Resources */,
 				2F0C342527E4384E004A1E8C /* AnimationViewController.xib in Resources */,
+				7979B2A0283B1C5C00C698D0 /* Prancha Lateral.gif in Resources */,
+				7979B2A2283B305600C698D0 /* Curvatura Frente.gif in Resources */,
 				2F0C342227E4384E004A1E8C /* StartViewController.xib in Resources */,
 				2F0C343827E43954004A1E8C /* expire.mp4 in Resources */,
 				2F0C343727E43954004A1E8C /* hold.mp4 in Resources */,
 				2F412EF127E41A0B007708E8 /* pad-A.mp3 in Resources */,
 				2F0C343527E43954004A1E8C /* inhale.mp4 in Resources */,
 				2F412ED127E41821007708E8 /* AudioCell.xib in Resources */,
+				7979B2A6283B309800C698D0 /* Boat.gif in Resources */,
 				2F0C33FC27E434DA004A1E8C /* MainRegisterVC.xib in Resources */,
 				2F5B66FC27ED22A800AC243E /* LoginButtonCell.xib in Resources */,
 				2F5B670127ED22A800AC243E /* SeparatorCell.xib in Resources */,
 				2F0C342827E4384E004A1E8C /* ExpireViewController.xib in Resources */,
 				8391EA5927E820E800F466F2 /* Montserrat-Regular.ttf in Resources */,
 				2F412EF327E41A0B007708E8 /* pad-B.mp3 in Resources */,
-				792C66A6282D79CA0018D343 /* 01_Natarajasana.gif in Resources */,
+				792C66A6282D79CA0018D343 /* Natarajasana.gif in Resources */,
 				792C66A8282D79CA0018D343 /* TrainingPausedVC.xib in Resources */,
 				2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */,
 				792C66AD282D79CA0018D343 /* TrainingCustomCell.xib in Resources */,
@@ -1498,6 +1375,7 @@
 				2FA287C727EACC3C00C5BD81 /* MyProfileVC.xib in Resources */,
 				8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */,
 				2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */,
+				7979B2AC283B30EB00C698D0 /* Pigeon.gif in Resources */,
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
 				792C66AB282D79CA0018D343 /* TrainingFinishedVC.xib in Resources */,
 				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
@@ -1520,10 +1398,12 @@
 				2FA287C527EACC3C00C5BD81 /* MyProfileTableViewCell.xib in Resources */,
 				2F5B66FF27ED22A800AC243E /* EmailAndPasswordCell.xib in Resources */,
 				792C66AA282D79CA0018D343 /* LeaveTrainingVC.xib in Resources */,
+				7979B29E283AFFBA00C698D0 /* Sarvagansana.gif in Resources */,
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
 				2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */,
 				2F412ECF27E41821007708E8 /* MeditationHomeViewController.xib in Resources */,
+				7979B2A8283B30B300C698D0 /* Dolphin.gif in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
 				2F036F8C27E429D800993E41 /* Alert.storyboard in Resources */,
@@ -1531,6 +1411,7 @@
 				2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */,
 				2F036F7827E429D800993E41 /* EventFilterViewController.xib in Resources */,
 				2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */,
+				7979B2A4283B307700C698D0 /* Bakasana.gif in Resources */,
 				2F79E12D27DCF47B0070397F /* PoseGalleryViewController.xib in Resources */,
 				2F3A544627EC3EE400FBA25F /* LoginViewController.xib in Resources */,
 				8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */,
@@ -1558,6 +1439,7 @@
 				8391EA5827E820E800F466F2 /* Montserrat-ExtraBold.ttf in Resources */,
 				2F3A53D227EB67B500FBA25F /* HeaderCell.xib in Resources */,
 				3126834327C15ECB003F017B /* Assets.xcassets in Resources */,
+				7979B2AE283B31CB00C698D0 /* Lotus.gif in Resources */,
 				2F0C342D27E4384E004A1E8C /* InhaleViewController.xib in Resources */,
 				8391EA5727E820E800F466F2 /* Montserrat-SemiBold.ttf in Resources */,
 			);
@@ -1651,7 +1533,6 @@
 				839A06AF282DB07100C797EC /* TrainingData.swift in Sources */,
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
-				792C667C282D76AC0018D343 /* TrainingData.swift in Sources */,
 				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				2F5B66F727ED22A800AC243E /* FacebookButtonCell.swift in Sources */,

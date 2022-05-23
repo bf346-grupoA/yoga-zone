@@ -54,5 +54,10 @@ let trainingListMock = """
         "exercise": "Pigeon",
         "seconds": "55s",
       },
+      {
+        "id": 10,
+        "exercise": "Lotus",
+        "seconds": "55s",
+      },
     ]
     """

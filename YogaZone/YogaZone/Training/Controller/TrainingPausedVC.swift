@@ -9,7 +9,6 @@ import UIKit
 
 class TrainingPausedVC: UIViewController {
     
-    weak var delegate: TrainingStartedVCDelegate?
     
     @IBOutlet weak var pausedLabel: UILabel!
     

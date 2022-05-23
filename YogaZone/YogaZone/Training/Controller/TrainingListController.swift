@@ -21,11 +21,7 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
     @IBOutlet weak var ListTrainYogaTableView: UITableView!
     @IBOutlet weak var startTrainButton: UIButton!
     
-    
-<<<<<<< HEAD:YogaZone/YogaZone/Training/TrainingList/TrainingListController.swift
-//    private var arrayExercices:[String] = ["Natarajasana", "Sarvagansana", "Prancha Lateral", "Curvatura Frente", "Bakasana", "Boat", "Dolphin", "Garudasana", "Pigeon"]
-//    private var arrayExercicesDuration:[String] = ["60s", "55s", "60s", "40s", "55s", "60s", "40s", "45s", "55s"]
-    
+
     var exercicesData: [ExercicesModel] = []
         
         override func viewDidLoad() {
@@ -37,20 +33,7 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
             self.ListTrainYogaTableView.delegate = self
             self.ListTrainYogaTableView.dataSource = self
         }
-=======
-    var exercicesData: [ExercicesModel] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.setupUI()
-        self.setupNavigationBar()
-        self.setupData()
-        self.ListTrainYogaTableView.register(TrainingCustomCell.nib(), forCellReuseIdentifier: TrainingCustomCell.identifier)
-        self.ListTrainYogaTableView.delegate = self
-        self.ListTrainYogaTableView.dataSource = self
-    }
->>>>>>> 10cddc1f8300d5a71cb742cfbe03b635e28e6282:YogaZone/YogaZone/Training/Controller/TrainingListController.swift
-    
+
     //MARK: - SetupUI
     func configLabels(){
         self.NumberOfCaloriesLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
@@ -143,20 +126,13 @@ extension TrainingListController {
 // MARK: Populate Data
 extension TrainingListController {
     func setupData() {
-<<<<<<< HEAD:YogaZone/YogaZone/Training/TrainingList/TrainingListController.swift
-        let jsonData = trainingListMock.data(using: .utf8)!
-        let exercices = try! JSONDecoder().decode([ExercicesModel].self, from: jsonData)
-        exercices.forEach { self.exercicesData.append($0)}
-        }
-=======
+        let jsonData = trainingListMock.data(using: .utf8)
         do {
-            let jsonData = trainingListMock.data(using: .utf8)
             let exercices = try JSONDecoder().decode([ExercicesModel].self, from: jsonData ?? Data() )
             exercices.forEach { self.exercicesData.append($0)}
         } catch {
             print(error)
         }
     }
->>>>>>> 10cddc1f8300d5a71cb742cfbe03b635e28e6282:YogaZone/YogaZone/Training/Controller/TrainingListController.swift
 }
 
