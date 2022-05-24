@@ -121,7 +121,7 @@ extension LoginViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 
-extension LoginViewController: FormValidation, Navigable {
+extension LoginViewController: FormDelegate, Navigable {
     func navigateTo(routeIndex: Int) {
         switch routeIndex {
             case 0: self.navigationController?.pushViewController(ResetPasswordViewController(), animated: true)

@@ -9,7 +9,7 @@ import UIKit
 
 class EmailAndPasswordCell: UITableViewCell {
     private var userData: UserData? = nil
-    weak var delegate: FormValidation?
+    weak var delegate: FormDelegate?
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
