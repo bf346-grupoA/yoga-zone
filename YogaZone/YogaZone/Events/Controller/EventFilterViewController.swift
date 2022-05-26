@@ -5,6 +5,10 @@
 //  Created by Rafael Benjamin on 05/03/22.
 //
 
+protocol EventFilterDelegate: AnyObject {
+    func updateFilter(filter: EventFilter)
+}
+
 import UIKit
 
 class EventFilterViewController: UIViewController {
@@ -25,21 +29,52 @@ class EventFilterViewController: UIViewController {
     @IBOutlet weak var applyButton: UIButton!
     @IBOutlet weak var clearFiltersButtons: UIButton!
     
+    weak var delegate: EventFilterDelegate?
+    var filterData:EventFilter?
+    
+    public func delegate(delegate:EventFilterDelegate?){
+        self.delegate = delegate
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
     }
     
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func applyButtonTapped(_ sender: Any) {
-    
+    @IBAction func applyButtonTapped(_ sender: UIButton) {
+        filterData = EventFilter()
+        
+        if cityTextField.text != "" {
+            filterData?.local = cityTextField.text
+        }
+        
+        if startDateTextField.text != "" {
+            filterData?.startDate = startDateTextField.text
+        }
+        
+        if endDateTextField.text != "" {
+            filterData?.endDate = endDateTextField.text
+        }
+        
+        if eventNameTextField.text != "" {
+            filterData?.title = eventNameTextField.text
+        }
+        
+        filterData?.isOwner = createdByMeSwitch.isOn
+
+        self.delegate?.updateFilter(filter: filterData ?? EventFilter())
+        self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func clearFilterButtonTapped(_ sender: Any) {
-    
+    @IBAction func clearFilterButtonTapped(_ sender: UIButton) {
+        filterData = nil
+        self.delegate?.updateFilter(filter: filterData ?? EventFilter())
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

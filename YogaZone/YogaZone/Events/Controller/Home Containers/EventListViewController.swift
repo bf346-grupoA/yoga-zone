@@ -13,10 +13,11 @@ class EventListViewController: UIViewController {
     
     var eventData: [Event] = []
     var idSegment:Int = 0
+    var filterData:EventFilter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupData()
+        setupData(filter: filterData)
         configureTableView()
         setupUI()
     }
@@ -77,7 +78,7 @@ extension EventListViewController{
 
 // MARK: Data Mock
 extension EventListViewController {
-    func setupData() {
+    func setupData(filter: EventFilter?) {
         self.eventData.removeAll()
         do {
             let jsonData = eventMock.data(using: .utf8)
@@ -87,13 +88,35 @@ extension EventListViewController {
             print(error)
         }
         
-        if idSegment == 2 {
+        if idSegment == 0 {
+            eventData = eventData.filter({ Event in
+                Event.isOwner == false && Event.isParticipating == false
+            })
+        } else if idSegment == 2 {
             eventData = eventData.filter({ Event in
                 Event.isOwner == true || Event.isParticipating == true
             })
         }
         
+        if (filter != nil) {
+            if ( filter?.title != nil || filter?.local != nil || filter?.startDate != nil || filter?.endDate != nil || filter?.isOwner != nil || filter?.isParticipating != nil ){
+                eventData = searchFilter(filter)
+            }
+        }
+        
         self.tableView?.reloadData()
         
     }
+    
+    func searchFilter(_ filter: EventFilter?) -> [Event]{
+        var searchResults = eventData.filter({ Event -> Bool in
+            let title = Event.title.range(of: filter?.title ?? "", options: NSString.CompareOptions.caseInsensitive)
+            let local = Event.local.range(of: filter?.local ?? "", options: NSString.CompareOptions.caseInsensitive)
+            //let startDate = Event.startTime
+            let isOwner = filter?.isOwner ?? false
+            return title != nil || local != nil || isOwner}
+        )
+        return searchResults
+    }
+    
 }

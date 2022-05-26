@@ -16,6 +16,7 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
     @IBOutlet weak var containerMapView: UIView!
     
     var containerViewController: EventListViewController?
+    var filterData:EventFilter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
     
     @IBAction func filterButtonTapped(_ sender: UIButton) {
         let vc = EventFilterViewController()
+        vc.delegate = self
         present(vc, animated: true, completion: nil)
     }
     
@@ -39,7 +41,7 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
             self.containerListView.isHidden = false
             self.containerMapView.isHidden = true
             containerViewController?.idSegment = 0
-            containerViewController?.setupData()
+            containerViewController?.setupData(filter: filterData)
             containerViewController?.configureTableView()
         case 1:
             self.containerMapView.isHidden = false
@@ -48,7 +50,7 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
             self.containerListView.isHidden = false
             self.containerMapView.isHidden = true
             containerViewController?.idSegment = 2
-            containerViewController?.setupData()
+            containerViewController?.setupData(filter: filterData)
             containerViewController?.configureTableView()
         }
         
@@ -75,12 +77,12 @@ extension HomeEventsViewController {
     }
     
     func setupUI(){
-      
+        
         containerMapView.isHidden = true
         
         self.optionsControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 13) ?? UIFont() ], for: .normal)
         self.optionsControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 13) ?? UIFont()], for: .selected)
-       
+        
         self.buttonFilter.setImage(UIImage(named:"sliders-white"), for: .normal)
         self.buttonFilter.semanticContentAttribute = .forceLeftToRight
         
@@ -111,7 +113,7 @@ extension HomeEventsViewController {
 
 // MARK: Container View Segue
 extension HomeEventsViewController {
-    //Acessando os dados que estão dentro do viewcontroler, que estão dentro do Container View na home
+    //Acessando os dados que estão dentro do Container View na home
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToEventList" {
             containerViewController = segue.destination as? EventListViewController
@@ -131,3 +133,12 @@ extension HomeEventsViewController {
     
 }
 
+//MARK: - EventFilterDelegate
+extension HomeEventsViewController:EventFilterDelegate {
+    
+    func updateFilter(filter: EventFilter) {
+        self.filterData = filter
+        containerViewController?.setupData(filter: filterData)
+    }
+    
+}
