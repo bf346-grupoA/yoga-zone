@@ -139,6 +139,7 @@ extension HomeEventsViewController:EventFilterDelegate {
     func updateFilter(filter: EventFilter) {
         self.filterData = filter
         containerViewController?.setupData(filter: filterData)
+        print(filterData)
     }
     
 }
