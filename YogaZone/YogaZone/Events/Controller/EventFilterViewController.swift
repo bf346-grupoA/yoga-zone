@@ -55,19 +55,16 @@ class EventFilterViewController: UIViewController {
             filterData?.local = cityTextField.text
         }
         
+        if dateIntervalSelectedSwitch.isOn {
+            filterData?.startDate = startDatePicker.date
+            filterData?.endDate = endDatePicker.date
+        }
         
-        /* if startDateTextField.text != "" {
-         filterData?.startDate = startDateTextField.text
-         }
-         
-         if endDateTextField.text != "" {
-         filterData?.endDate = endDateTextField.text
-         }
-         */
         if eventNameTextField.text != "" {
             filterData?.title = eventNameTextField.text
         }
         
+        filterData?.isFinalized = finalizedSwitch.isOn
         filterData?.isOwner = createdByMeSwitch.isOn
         
         self.delegate?.updateFilter(filter: filterData ?? EventFilter())
@@ -113,10 +110,16 @@ extension EventFilterViewController {
         self.dateBackgroundView.layer.borderWidth = 0.5
         self.dateBackgroundView.layer.borderColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha:  1 )
         self.dateBackgroundView.layer.cornerRadius = 10
+        
         self.startDateLabel.textColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
         self.endDateLabel.textColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
         self.startDatePicker.isEnabled = false
         self.endDatePicker.isEnabled = false
+        
+        self.startDatePicker.datePickerMode = .date
+        self.startDatePicker.preferredDatePickerStyle = .compact
+        self.endDatePicker.datePickerMode = .date
+        self.endDatePicker.preferredDatePickerStyle = .compact
         
         self.dateIntervalSelectedSwitch.addTarget(self, action: #selector(dateSwitchChanged), for: UIControl.Event.valueChanged)
         

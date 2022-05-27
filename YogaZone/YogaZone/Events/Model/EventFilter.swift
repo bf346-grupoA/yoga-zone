@@ -10,8 +10,8 @@ import Foundation
 struct EventFilter: Codable {
     var title: String?
     var local: String?
-    var startDate: String?
-    var endDate: String?
+    var startDate: Date?
+    var endDate: Date?
     var isOwner: Bool?
-    var isParticipating: Bool?
+    var isFinalized: Bool?
 }

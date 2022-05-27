@@ -49,7 +49,6 @@ extension EventListViewController:UITableViewDataSource {
         return 135.0
     }
     
-    
 }
 
 // MARK: TableViewDelegate
@@ -58,7 +57,7 @@ extension EventListViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let storyboard = UIStoryboard(name: "EventDetail", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "EventDetailViewController") as?  EventDetailViewController
+        let vc = storyboard.instantiateViewController(identifier: "EventDetailViewController") as? EventDetailViewController
         
         vc?.event = eventData[indexPath.row]
         
@@ -78,11 +77,16 @@ extension EventListViewController{
 
 // MARK: Data Mock
 extension EventListViewController {
+    
     func setupData(filter: EventFilter?) {
+  
         self.eventData.removeAll()
+        
         do {
             let jsonData = eventMock.data(using: .utf8)
-            let events = try JSONDecoder().decode([Event].self, from: jsonData ?? Data() )
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .formatted(Formatter.dateFormatterPtBr)
+            let events = try decoder.decode([Event].self, from: jsonData ?? Data() )
             events.forEach { self.eventData.append($0)}
         } catch {
             print(error)
@@ -99,7 +103,7 @@ extension EventListViewController {
         }
         
         if (filter != nil) {
-            if ( filter?.title != nil || filter?.local != nil || filter?.startDate != nil || filter?.endDate != nil || filter?.isOwner != nil || filter?.isParticipating != nil ){
+            if ( filter?.title != nil || filter?.local != nil || filter?.startDate != nil || filter?.endDate != nil || filter?.isOwner != nil || filter?.isFinalized != nil ){
                 eventData = searchFilter(filter)
             }
         }
@@ -112,11 +116,13 @@ extension EventListViewController {
         var searchResults = eventData.filter({ Event -> Bool in
             let title = Event.title.range(of: filter?.title ?? "", options: NSString.CompareOptions.caseInsensitive)
             let local = Event.local.range(of: filter?.local ?? "", options: NSString.CompareOptions.caseInsensitive)
-            //let startDate = Event.startTime
-            let isOwner = filter?.isOwner ?? false
-            return title != nil || local != nil || isOwner}
+            //let date = Event.startTime
+            //let isOwner = filter?.isOwner ?? false
+            //print(isOwner)
+            return title != nil || local != nil}
         )
         return searchResults
     }
     
 }
+
