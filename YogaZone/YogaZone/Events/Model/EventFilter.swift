@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EventFilter: Codable {
+struct EventFilter {
     var title: String?
     var local: String?
     var startDate: Date?

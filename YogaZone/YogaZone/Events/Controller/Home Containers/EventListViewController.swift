@@ -79,7 +79,7 @@ extension EventListViewController{
 extension EventListViewController {
     
     func setupData(filter: EventFilter?) {
-  
+        
         self.eventData.removeAll()
         
         do {
@@ -103,7 +103,7 @@ extension EventListViewController {
         }
         
         if (filter != nil) {
-            if ( filter?.title != nil || filter?.local != nil || filter?.startDate != nil || filter?.endDate != nil || filter?.isOwner != nil || filter?.isFinalized != nil ){
+            if ( filter?.title != nil || filter?.local != nil || filter?.startDate != nil || filter?.endDate != nil ){
                 eventData = searchFilter(filter)
             }
         }
@@ -113,14 +113,19 @@ extension EventListViewController {
     }
     
     func searchFilter(_ filter: EventFilter?) -> [Event]{
-        var searchResults = eventData.filter({ Event -> Bool in
-            let title = Event.title.range(of: filter?.title ?? "", options: NSString.CompareOptions.caseInsensitive)
-            let local = Event.local.range(of: filter?.local ?? "", options: NSString.CompareOptions.caseInsensitive)
-            //let date = Event.startTime
-            //let isOwner = filter?.isOwner ?? false
-            //print(isOwner)
-            return title != nil || local != nil}
-        )
+        var searchResults:[Event]
+        
+        let local = filter?.local ?? ""
+        //Double condition, in case filter.local is nil, it will always be true, and return all the items in the list
+        //Case something is found with the text in range, it will return the events with the filter applied
+        searchResults = eventData.filter({ filter?.local == nil || $0.local.range(of: local, options: NSString.CompareOptions.caseInsensitive) != nil })
+        
+        let title = filter?.title ?? ""
+        if !(filter?.title?.isEmpty ?? true) {
+            //removes all occurences that are different from the filter result, wich is the text we are trying to find (== nil)
+            searchResults.removeAll { $0.title.range(of: title, options:  NSString.CompareOptions.caseInsensitive) == nil }
+        }
+        
         return searchResults
     }
     
