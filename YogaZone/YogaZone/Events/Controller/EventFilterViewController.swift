@@ -41,7 +41,7 @@ class EventFilterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupSelectedFilterData()
+        setupUserDefaultsFilterData()
         setupUI()
     }
     
@@ -69,7 +69,11 @@ class EventFilterViewController: UIViewController {
         self.filterData?.isAvaliable = self.avaliablePositionSwitch.isOn
         self.filterData?.isOwner = self.createdByMeSwitch.isOn
         
-        self.delegate?.updateFilter(filter: self.filterData ?? EventFilter())
+        if self.eventNameTextField.text != "" { filterData?.totalFilters += 1 }
+        if self.cityTextField.text != "" { filterData?.totalFilters += 1 }
+        if self.dateIntervalSelectedSwitch.isOn != false { filterData?.totalFilters += 1 }
+        if self.avaliablePositionSwitch.isOn != false { filterData?.totalFilters += 1 }
+        if self.createdByMeSwitch.isOn != false { filterData?.totalFilters += 1 }
         
         self.saveUserDefault(value: self.cityTextField.text ?? "", key: "eventFilterDataLocal")
         self.saveUserDefault(value: self.eventNameTextField.text ?? "", key: "eventFilterDataTitle")
@@ -78,6 +82,9 @@ class EventFilterViewController: UIViewController {
         self.saveUserDefault(value: self.dateIntervalSelectedSwitch.isOn, key: "eventFilterDateInvtervalSelected")
         self.saveUserDefault(value: self.avaliablePositionSwitch.isOn, key: "eventFilterDataIsFull")
         self.saveUserDefault(value: self.createdByMeSwitch.isOn, key: "eventFilterDataIsOwner")
+        self.saveUserDefault(value: filterData?.totalFilters ?? 0, key: "eventFilterTotalQuantity")
+        
+        self.delegate?.updateFilter(filter: self.filterData ?? EventFilter())
         
         self.dismiss(animated: true, completion: nil)
     }
@@ -91,6 +98,7 @@ class EventFilterViewController: UIViewController {
         self.endDatePicker.date = Calendar.current.date(byAdding: .month, value: 1, to: Date()) ?? Date()
         self.avaliablePositionSwitch.isOn = false
         self.createdByMeSwitch.isOn = false
+        self.filterData?.totalFilters = 0
         
     }
     
@@ -167,7 +175,7 @@ extension EventFilterViewController {
 //MARK: - User Defaults
 extension EventFilterViewController {
     
-    func setupSelectedFilterData() {
+    func setupUserDefaultsFilterData() {
         let local = self.getUserDefaults(key: "eventFilterDataLocal") as? String
         
         self.cityTextField.text = local

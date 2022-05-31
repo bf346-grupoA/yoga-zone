@@ -129,11 +129,11 @@ extension EventListViewController {
             searchResults.removeAll(where: { !range.contains($0.date) } )
         }
         
-        if filter?.isOwner != false {
+        if filter?.isOwner != false && filter?.isOwner != nil {
             searchResults.removeAll(where: { !$0.isOwner == filter?.isOwner } )
         }
         
-        if filter?.isAvaliable != false {
+        if filter?.isAvaliable != false && filter?.isAvaliable != nil {
             searchResults.removeAll(where: { $0.maximumOfParticipants - $0.numberOfParticipants == 0 } )
         }
         

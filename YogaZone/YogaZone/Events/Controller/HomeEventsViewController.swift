@@ -11,17 +11,20 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
     
     @IBOutlet weak var optionsControl: UISegmentedControl!
     @IBOutlet weak var buttonFilter: UIButton!
+    @IBOutlet weak var filterQuantityNotificationLabel: UILabel!
     @IBOutlet weak var buttonCreateNewEvent: UIButton!
     @IBOutlet weak var containerListView: UIView!
     @IBOutlet weak var containerMapView: UIView!
     
-    var containerViewController: EventListViewController?
-    var filterData:EventFilter?
+    private var containerViewController: EventListViewController?
+    private var filterData:EventFilter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         setupUI()
+        loadUserDefaultFilterConfiguration()
+        updateFilter(filter: filterData ?? EventFilter())
     }
     
     @IBAction func filterButtonTapped(_ sender: UIButton) {
@@ -86,6 +89,13 @@ extension HomeEventsViewController {
         self.buttonFilter.setImage(UIImage(named:"sliders-white"), for: .normal)
         self.buttonFilter.semanticContentAttribute = .forceLeftToRight
         
+        self.filterQuantityNotificationLabel.layer.cornerRadius = 10
+        self.filterQuantityNotificationLabel.clipsToBounds = true
+        self.filterQuantityNotificationLabel.layer.borderColor = UIColor.black.cgColor
+        self.filterQuantityNotificationLabel.backgroundColor = #colorLiteral(red: 0.9465729594, green: 0.2218600512, blue: 0.2172786891, alpha: 1)
+        self.filterQuantityNotificationLabel.textColor = .white
+        self.filterQuantityNotificationLabel.textAlignment = .center
+         
         self.buttonCreateNewEvent.setImage(UIImage(named:"circle-plus-white"), for: .normal)
         self.buttonCreateNewEvent.semanticContentAttribute = .forceLeftToRight
         
@@ -138,7 +148,59 @@ extension HomeEventsViewController:EventFilterDelegate {
     
     func updateFilter(filter: EventFilter) {
         self.filterData = filter
+        let totalFilters = UserDefaults.standard.object(forKey: "eventFilterTotalQuantity") as? Int
+        if totalFilters == 0 || totalFilters == nil {
+            self.filterQuantityNotificationLabel.isHidden = true
+        } else {
+            self.filterQuantityNotificationLabel.isHidden = false
+            self.filterQuantityNotificationLabel.text = String(totalFilters ?? 0)
+        }
+       
         containerViewController?.setupData(filter: filterData)
+    }
+    
+}
+
+//MARK: - User Defaults
+extension HomeEventsViewController {
+    
+    func loadUserDefaultFilterConfiguration(){
+        self.filterData = EventFilter()
+        
+        let local = self.getUserDefaults(key: "eventFilterDataLocal") as? String
+        if local != "" && local != nil {
+            self.filterData?.local = local
+        }
+        
+        let title = self.getUserDefaults(key: "eventFilterDataTitle") as? String
+        if title != "" && title != nil {
+            self.filterData?.title =   self.getUserDefaults(key: "eventFilterDataTitle") as? String
+        }
+        
+        let usingDate = self.getUserDefaults(key: "eventFilterDateInvtervalSelected") as? Bool
+        if usingDate != nil && usingDate == true {
+            self.filterData?.startDate = self.getUserDefaults(key: "eventFilterDataStartDate") as? Date
+            self.filterData?.endDate = self.getUserDefaults(key: "eventFilterDataEndDate") as? Date
+        }
+        
+        let isFull = self.getUserDefaults(key: "eventFilterDataIsFull") as? Bool
+        if isFull != nil && isFull == true {
+            self.filterData?.isAvaliable = isFull
+        }
+        
+        let isOwner = self.getUserDefaults(key: "eventFilterDataIsOwner") as? Bool
+        if isOwner != nil && isOwner == true {
+            self.filterData?.isOwner = isOwner
+        }
+        
+    }
+    
+    func saveUserDefault(value: Any, key: String){
+        UserDefaults.standard.set(value, forKey: key)
+    }
+    
+    func getUserDefaults(key: String) -> Any? {
+        return UserDefaults.standard.object(forKey: key)
     }
     
 }
