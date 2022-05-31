@@ -32,8 +32,8 @@ class EventFilterViewController: UIViewController {
     @IBOutlet weak var applyButton: UIButton!
     @IBOutlet weak var clearFiltersButtons: UIButton!
     
-    weak var delegate: EventFilterDelegate?
-    var filterData:EventFilter?
+    private weak var delegate: EventFilterDelegate?
+    private var filterData:EventFilter?
     
     public func delegate(delegate:EventFilterDelegate?){
         self.delegate = delegate
@@ -42,6 +42,7 @@ class EventFilterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupSelectedFilterData()
     }
     
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
@@ -49,32 +50,48 @@ class EventFilterViewController: UIViewController {
     }
     
     @IBAction func applyButtonTapped(_ sender: UIButton) {
-        filterData = EventFilter()
+        
+        self.filterData = EventFilter()
         
         if cityTextField.text != "" {
-            filterData?.local = cityTextField.text
+            self.filterData?.local = self.cityTextField.text
         }
         
         if dateIntervalSelectedSwitch.isOn {
-            filterData?.startDate = startDatePicker.date
-            filterData?.endDate = endDatePicker.date
+            self.filterData?.startDate = self.startDatePicker.date
+            self.filterData?.endDate = self.endDatePicker.date
         }
         
         if eventNameTextField.text != "" {
-            filterData?.title = eventNameTextField.text
+            self.filterData?.title = self.eventNameTextField.text
         }
         
-        filterData?.isFinalized = finalizedSwitch.isOn
-        filterData?.isOwner = createdByMeSwitch.isOn
+        self.filterData?.isFinalized = self.finalizedSwitch.isOn
+        self.filterData?.isOwner = self.createdByMeSwitch.isOn
         
-        self.delegate?.updateFilter(filter: filterData ?? EventFilter())
+        self.delegate?.updateFilter(filter: self.filterData ?? EventFilter())
+        
+        self.saveUserDefault(value: self.cityTextField.text ?? "", key: "eventFilterDataLocal")
+        self.saveUserDefault(value: self.eventNameTextField.text ?? "", key: "eventFilterDataTitle")
+        self.saveUserDefault(value: self.startDatePicker.date, key: "eventFilterDataStartDate")
+        self.saveUserDefault(value: self.endDatePicker.date, key: "eventFilterDataEndDate")
+        self.saveUserDefault(value: self.dateIntervalSelectedSwitch.isOn, key: "eventFilterDateInvtervalSelected")
+        self.saveUserDefault(value: self.finalizedSwitch.isOn, key: "eventFilterDataIsFinalized")
+        self.saveUserDefault(value: self.createdByMeSwitch.isOn, key: "eventFilterDataIsOwner")
+        
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func clearFilterButtonTapped(_ sender: UIButton) {
-        filterData = nil
-        self.delegate?.updateFilter(filter: filterData ?? EventFilter())
-        self.dismiss(animated: true, completion: nil)
+        
+        self.eventNameTextField.text = ""
+        self.cityTextField.text = ""
+        self.dateIntervalSelectedSwitch.isOn = false
+        self.startDatePicker.date = Date()
+        self.endDatePicker.date = Calendar.current.date(byAdding: .month, value: 1, to: Date()) ?? Date()
+        self.finalizedSwitch.isOn = false
+        self.createdByMeSwitch.isOn = false
+        
     }
     
 }
@@ -120,11 +137,10 @@ extension EventFilterViewController {
         self.startDatePicker.preferredDatePickerStyle = .compact
         self.endDatePicker.datePickerMode = .date
         self.endDatePicker.preferredDatePickerStyle = .compact
+        self.endDatePicker.date = Calendar.current.date(byAdding: .month, value: 1, to: Date()) ?? Date()
         
         self.dateIntervalSelectedSwitch.addTarget(self, action: #selector(dateSwitchChanged), for: UIControl.Event.valueChanged)
-        
-        let now = Date()
-        endDatePicker.date = Calendar.current.date(byAdding: .month, value: 1, to: now) ?? Date()
+                
     }
     
     @objc func dateSwitchChanged(mySwitch: UISwitch) {
@@ -139,6 +155,39 @@ extension EventFilterViewController {
             self.startDatePicker.isEnabled = false
             self.endDatePicker.isEnabled = false
         }
+    }
+}
+
+//MARK: - User Defaults
+extension EventFilterViewController {
+    
+    func setupSelectedFilterData() {
+        let local = self.getUserDefaults(key: "eventFilterDataLocal") as? String
+        
+        self.cityTextField.text = local
+        
+        let title = self.getUserDefaults(key: "eventFilterDataTitle") as? String
+        
+        self.eventNameTextField.text = title
+        
+        let startDate = self.getUserDefaults(key: "eventFilterDataStartDate") as? Date?
+        let endDate = self.getUserDefaults(key: "eventFilterDataEndDate") as? Date?
+        
+        self.dateIntervalSelectedSwitch.isOn = (self.getUserDefaults(key: "eventFilterDateInvtervalSelected") as? Bool ?? false )
+        self.startDatePicker.date = (startDate ?? Date()) ?? Date()
+        self.endDatePicker.date = (endDate ?? Date()) ?? Date()
+        
+        self.finalizedSwitch.isOn = self.getUserDefaults(key: "eventFilterDataIsFinalized") as? Bool ?? false
+        self.createdByMeSwitch.isOn = self.getUserDefaults(key: "eventFilterDataIsOwner") as? Bool ?? false
+        
+    }
+    
+    func saveUserDefault(value: Any, key: String){
+        UserDefaults.standard.set(value, forKey: key)
+    }
+    
+    func getUserDefaults(key: String) -> Any? {
+        return UserDefaults.standard.object(forKey: key)
     }
     
 }
