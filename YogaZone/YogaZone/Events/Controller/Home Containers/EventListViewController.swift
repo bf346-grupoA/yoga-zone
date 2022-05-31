@@ -103,9 +103,7 @@ extension EventListViewController {
         }
         
         if (filter != nil) {
-            if ( filter?.title != nil || filter?.local != nil || filter?.startDate != nil || filter?.endDate != nil ){
-                eventData = searchFilter(filter)
-            }
+            eventData = searchFilter(filter)
         }
         
         self.tableView?.reloadData()
@@ -124,6 +122,19 @@ extension EventListViewController {
         if !(filter?.title?.isEmpty ?? true) {
             //removes all occurences that are different from the filter result, wich is the text we are trying to find (== nil)
             searchResults.removeAll { $0.title.range(of: title, options:  NSString.CompareOptions.caseInsensitive) == nil }
+        }
+        
+        if (filter?.startDate != nil && filter?.endDate != nil ){
+            let range = (filter?.startDate ?? Date())...(filter?.endDate ?? Date())
+            searchResults.removeAll(where: { !range.contains($0.date) } )
+        }
+        
+        if filter?.isOwner != false {
+            searchResults.removeAll(where: { !$0.isOwner == filter?.isOwner } )
+        }
+        
+        if filter?.isAvaliable != false {
+            searchResults.removeAll(where: { $0.maximumOfParticipants - $0.numberOfParticipants == 0 } )
         }
         
         return searchResults

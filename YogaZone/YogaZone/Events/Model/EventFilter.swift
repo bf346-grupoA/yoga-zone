@@ -13,5 +13,5 @@ struct EventFilter {
     var startDate: Date?
     var endDate: Date?
     var isOwner: Bool?
-    var isFinalized: Bool?
+    var isAvaliable: Bool?
 }

@@ -19,6 +19,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventFilterViewController" customModule="YogaZone" customModuleProvider="target">
             <connections>
                 <outlet property="applyButton" destination="9Bk-GK-c0X" id="PPt-GH-0bj"/>
+                <outlet property="avaliablePositionLabel" destination="hh4-Vg-bOc" id="2fR-ri-mYL"/>
+                <outlet property="avaliablePositionSwitch" destination="gmx-1g-2Jo" id="6sP-wY-AbS"/>
                 <outlet property="cancelButton" destination="5rQ-Lm-bOY" id="m8Y-na-L4C"/>
                 <outlet property="cityLabel" destination="jMS-K9-4uF" id="FVJ-Ce-wfK"/>
                 <outlet property="cityTextField" destination="Dzx-XM-23K" id="Ld8-Yy-MF4"/>
@@ -31,8 +33,6 @@
                 <outlet property="endDatePicker" destination="e9D-Q8-Igx" id="lc0-86-hng"/>
                 <outlet property="eventNameLabel" destination="hAI-WI-jTA" id="17Z-31-Ar8"/>
                 <outlet property="eventNameTextField" destination="lQL-tC-VfV" id="Lga-tP-fFe"/>
-                <outlet property="finalizedLabel" destination="hh4-Vg-bOc" id="2fR-ri-mYL"/>
-                <outlet property="finalizedSwitch" destination="gmx-1g-2Jo" id="6sP-wY-AbS"/>
                 <outlet property="startDateLabel" destination="4PT-9B-5Vn" id="mVd-zK-fS2"/>
                 <outlet property="startDatePicker" destination="cYq-qE-cS5" id="Idd-cH-YOT"/>
                 <outlet property="useDateIntervalLabel" destination="tB2-uT-c6c" id="CFQ-J2-Ale"/>
@@ -85,13 +85,13 @@
                     <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-Vg-bOc" userLabel="Finalized">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-Vg-bOc" userLabel="Avaliable Position Only">
                     <rect key="frame" x="25" y="380.5" width="46.5" height="21"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gmx-1g-2Jo" userLabel="Finalized">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gmx-1g-2Jo" userLabel="Avaliable Position Only">
                     <rect key="frame" x="301" y="375.5" width="51" height="31"/>
                 </switch>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKb-vS-2vd" userLabel="Line 1">

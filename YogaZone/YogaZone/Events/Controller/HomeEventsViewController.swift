@@ -26,7 +26,7 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
     
     @IBAction func filterButtonTapped(_ sender: UIButton) {
         let vc = EventFilterViewController()
-        vc.delegate = self
+        vc.delegate(delegate: self)
         present(vc, animated: true, completion: nil)
     }
     
@@ -139,7 +139,6 @@ extension HomeEventsViewController:EventFilterDelegate {
     func updateFilter(filter: EventFilter) {
         self.filterData = filter
         containerViewController?.setupData(filter: filterData)
-        print(filterData)
     }
     
 }

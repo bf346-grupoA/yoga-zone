@@ -25,8 +25,8 @@ class EventFilterViewController: UIViewController {
     @IBOutlet weak var endDatePicker: UIDatePicker!
     @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var eventNameTextField: UITextField!
-    @IBOutlet weak var finalizedLabel: UILabel!
-    @IBOutlet weak var finalizedSwitch: UISwitch!
+    @IBOutlet weak var avaliablePositionLabel: UILabel!
+    @IBOutlet weak var avaliablePositionSwitch: UISwitch!
     @IBOutlet weak var createdByMeLabel: UILabel!
     @IBOutlet weak var createdByMeSwitch: UISwitch!
     @IBOutlet weak var applyButton: UIButton!
@@ -41,8 +41,8 @@ class EventFilterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
         setupSelectedFilterData()
+        setupUI()
     }
     
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
@@ -66,7 +66,7 @@ class EventFilterViewController: UIViewController {
             self.filterData?.title = self.eventNameTextField.text
         }
         
-        self.filterData?.isFinalized = self.finalizedSwitch.isOn
+        self.filterData?.isAvaliable = self.avaliablePositionSwitch.isOn
         self.filterData?.isOwner = self.createdByMeSwitch.isOn
         
         self.delegate?.updateFilter(filter: self.filterData ?? EventFilter())
@@ -76,7 +76,7 @@ class EventFilterViewController: UIViewController {
         self.saveUserDefault(value: self.startDatePicker.date, key: "eventFilterDataStartDate")
         self.saveUserDefault(value: self.endDatePicker.date, key: "eventFilterDataEndDate")
         self.saveUserDefault(value: self.dateIntervalSelectedSwitch.isOn, key: "eventFilterDateInvtervalSelected")
-        self.saveUserDefault(value: self.finalizedSwitch.isOn, key: "eventFilterDataIsFinalized")
+        self.saveUserDefault(value: self.avaliablePositionSwitch.isOn, key: "eventFilterDataIsFull")
         self.saveUserDefault(value: self.createdByMeSwitch.isOn, key: "eventFilterDataIsOwner")
         
         self.dismiss(animated: true, completion: nil)
@@ -89,7 +89,7 @@ class EventFilterViewController: UIViewController {
         self.dateIntervalSelectedSwitch.isOn = false
         self.startDatePicker.date = Date()
         self.endDatePicker.date = Calendar.current.date(byAdding: .month, value: 1, to: Date()) ?? Date()
-        self.finalizedSwitch.isOn = false
+        self.avaliablePositionSwitch.isOn = false
         self.createdByMeSwitch.isOn = false
         
     }
@@ -107,7 +107,7 @@ extension EventFilterViewController {
         self.endDateLabel.text = "Data final"
         self.eventNameLabel.text = "Nome do Evento"
         self.eventNameTextField.placeholder = "Nome do Evento"
-        self.finalizedLabel.text = "Finalizados"
+        self.avaliablePositionLabel.text = "Vaga disponível"
         self.createdByMeLabel.text = "Criados por mim"
         
         self.applyButton.configuration = nil
@@ -128,19 +128,25 @@ extension EventFilterViewController {
         self.dateBackgroundView.layer.borderColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha:  1 )
         self.dateBackgroundView.layer.cornerRadius = 10
         
-        self.startDateLabel.textColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
-        self.endDateLabel.textColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
-        self.startDatePicker.isEnabled = false
-        self.endDatePicker.isEnabled = false
+        if self.dateIntervalSelectedSwitch.isOn {
+            self.startDateLabel.textColor = .black
+            self.endDateLabel.textColor = .black
+            self.startDatePicker.isEnabled = true
+            self.endDatePicker.isEnabled = true
+        } else {
+            self.startDateLabel.textColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
+            self.endDateLabel.textColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
+            self.startDatePicker.isEnabled = false
+            self.endDatePicker.isEnabled = false
+        }
         
         self.startDatePicker.datePickerMode = .date
         self.startDatePicker.preferredDatePickerStyle = .compact
         self.endDatePicker.datePickerMode = .date
         self.endDatePicker.preferredDatePickerStyle = .compact
-        self.endDatePicker.date = Calendar.current.date(byAdding: .month, value: 1, to: Date()) ?? Date()
         
         self.dateIntervalSelectedSwitch.addTarget(self, action: #selector(dateSwitchChanged), for: UIControl.Event.valueChanged)
-                
+        
     }
     
     @objc func dateSwitchChanged(mySwitch: UISwitch) {
@@ -174,10 +180,15 @@ extension EventFilterViewController {
         let endDate = self.getUserDefaults(key: "eventFilterDataEndDate") as? Date?
         
         self.dateIntervalSelectedSwitch.isOn = (self.getUserDefaults(key: "eventFilterDateInvtervalSelected") as? Bool ?? false )
-        self.startDatePicker.date = (startDate ?? Date()) ?? Date()
-        self.endDatePicker.date = (endDate ?? Date()) ?? Date()
+        if self.dateIntervalSelectedSwitch.isOn {
+            self.startDatePicker.date = (startDate ?? Date()) ?? Date()
+            self.endDatePicker.date = (endDate ?? Date()) ?? Date()
+        } else {
+            self.startDatePicker.date = (startDate ?? Date()) ?? Date()
+            self.endDatePicker.date = Calendar.current.date(byAdding: .month, value: 1, to: Date()) ?? Date()
+        }
         
-        self.finalizedSwitch.isOn = self.getUserDefaults(key: "eventFilterDataIsFinalized") as? Bool ?? false
+        self.avaliablePositionSwitch.isOn = self.getUserDefaults(key: "eventFilterDataIsFull") as? Bool ?? false
         self.createdByMeSwitch.isOn = self.getUserDefaults(key: "eventFilterDataIsOwner") as? Bool ?? false
         
     }
