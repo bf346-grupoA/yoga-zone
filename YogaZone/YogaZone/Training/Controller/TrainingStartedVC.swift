@@ -16,17 +16,11 @@ protocol TrainingStartedVCDelegate:AnyObject {
 class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var titleExerciceNameLabel: UILabel!
-    
     @IBOutlet weak var subtitleExerciceLabel: UILabel!
-    
     @IBOutlet weak var secondsTimerLabel: UILabel!
-    
     @IBOutlet weak var pauseImage: UIImageView!
-    
     @IBOutlet weak var nextImage: UIImageView!
-    
     @IBOutlet weak var gifImage: UIImageView!
-    
     
     var exercicesData: [ExercicesModel] = []
     
@@ -34,6 +28,8 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     var seconds = 61
     var isTimerRunning = false
     var resumeTapped = false
+    
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +40,6 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
         self.loadGifImage()
         self.setupImages()
         self.configLabels()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         self.runTimer()
     }
     
@@ -98,6 +90,10 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
                 let vc = TrainingFinishedVC()
                 navigationController?.pushViewController(vc, animated: true)
             } else {
+                timer.invalidate()
+                seconds = 61
+                updateTimer()
+                runTimer()
                 self.nextExercise()
             }
         }

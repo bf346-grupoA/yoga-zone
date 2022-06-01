@@ -31,7 +31,7 @@ class TrainingCustomCell: UITableViewCell {
     
     public func setupCell(data:ExercicesModel){
             self.treinoDescriptionLabel.text = data.exercise
-            self.treinoDurationLabel.text = data.seconds
+            self.treinoDurationLabel.text = String(data.seconds ?? 0)+"s"
             self.treinoImageView.image = UIImage(named: data.exercise ?? "")
         }
         
