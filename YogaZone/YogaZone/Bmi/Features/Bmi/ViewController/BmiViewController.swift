@@ -30,9 +30,9 @@ class BmiViewController: UIViewController {
     var viewModel = BmiViewModel()
     var heigth:Float = 1.4
     var weight:Float = 75
-    var goal:Float = 1.3
+    var goal:Float = 0
     var bmi:Float = 0
-    var getWeight:String = ""
+    var missing: Float = 1.5
     
     override func viewDidLoad() {
         super.viewDidLoad()

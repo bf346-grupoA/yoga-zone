@@ -13117,7 +13117,7 @@
 		30ED1255D1374DC221B44ED5031934CA /* waiter.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = waiter.cc; path = absl/synchronization/internal/waiter.cc; sourceTree = "<group>"; };
 		30F2B3F24B7B68776F0EB3279D8BA4F1 /* resource.upb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resource.upb.h; path = "src/core/ext/upb-generated/envoy/annotations/resource.upb.h"; sourceTree = "<group>"; };
 		30F2BA825A0961FDC461FE335EE12442 /* backend_metric.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = backend_metric.cc; path = src/core/ext/filters/client_channel/backend_metric.cc; sourceTree = "<group>"; };
-		311B94E82847D0F5003A9C14 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		311B94E82847D0F5003A9C14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3126EEACEB3F54F86E3EBA1344B0B32B /* resource.upbdefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resource.upbdefs.h; path = "src/core/ext/upbdefs-generated/xds/core/v3/resource.upbdefs.h"; sourceTree = "<group>"; };
 		3134638436AA340E72338A82D622FAED /* status_util.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = status_util.cc; path = src/core/lib/channel/status_util.cc; sourceTree = "<group>"; };
 		31491F6593E0AABC13948189D21C4A3A /* http_server_filter.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = http_server_filter.cc; path = src/core/ext/filters/http/server/http_server_filter.cc; sourceTree = "<group>"; };
@@ -19835,7 +19835,7 @@
 				5C92B771EFBC9A79A22937F12CD359C1 /* Pods-YogaZone-umbrella.h */,
 				30E0A08042A9CB343A164C4D41A2772C /* Pods-YogaZone.debug.xcconfig */,
 				E50BD938EA0A0DC52A2E79F7FDF1A33E /* Pods-YogaZone.release.xcconfig */,
-				311B94E82847D0F5003A9C14 /* GoogleService-Info (1).plist */,
+				311B94E82847D0F5003A9C14 /* GoogleService-Info.plist */,
 			);
 			name = "Pods-YogaZone";
 			path = "Target Support Files/Pods-YogaZone";
