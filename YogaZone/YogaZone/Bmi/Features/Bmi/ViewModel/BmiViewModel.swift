@@ -8,7 +8,6 @@
 import Foundation
 import FirebaseFirestore
 
-
 class BmiViewModel {
 
     let fireStore = Firestore.firestore()

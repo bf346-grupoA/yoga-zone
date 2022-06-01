@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class ResultViewController: UIViewController , SendData {
     
     @IBOutlet weak var tableView: UITableView!
@@ -29,19 +28,15 @@ class ResultViewController: UIViewController , SendData {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(MyTableViewCell.nib(), forCellReuseIdentifier: MyTableViewCell.identifier)
-        
     }
     
     @IBAction func tappedBUttonClosed(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
-   
     }
-    
 }
 
 extension ResultViewController:UITableViewDelegate,UITableViewDataSource{
    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -60,8 +55,6 @@ extension ResultViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(#function)
     }
-    
-
 }
 
 extension ResultViewController: MyTableViewCellProtocol{
@@ -73,7 +66,5 @@ extension ResultViewController: MyTableViewCellProtocol{
         print("file \(file)")
         vc?.dataProgress = file
         self.navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
-        
     }
-    
 }

@@ -14,7 +14,6 @@ class TableViewCellMyProgress: UITableViewCell {
     @IBOutlet weak var weightLabel: UILabel!
     
     static let identifier: String = "TableViewCellMyProgress"
-    
     static func getNib() -> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
     }
@@ -28,5 +27,4 @@ class TableViewCellMyProgress: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
 }

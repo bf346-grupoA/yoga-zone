@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 enum BmiNumber: Double{
     case underWeight = 18.4
     case normalMinimum = 18.5

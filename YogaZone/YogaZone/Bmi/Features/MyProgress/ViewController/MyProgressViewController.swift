@@ -8,7 +8,6 @@
 import UIKit
 import FirebaseFirestore
 
-
 class MyProgressViewController: UIViewController, SendData{
 
     @IBOutlet weak var tableView: UITableView!
@@ -17,7 +16,6 @@ class MyProgressViewController: UIViewController, SendData{
     @IBOutlet weak var missingLabel: UILabel!
     @IBOutlet weak var buttonShare: UIButton!
     @IBOutlet weak var closedButton: UIButton!
-    
     
     var weigth: String = ""
     var goal: String = ""
@@ -29,15 +27,12 @@ class MyProgressViewController: UIViewController, SendData{
     var dataProgress: [MyProgress] = []
     var bmiViewController = BmiViewController()
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.buttonShare.layer.cornerRadius = 7
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(TableViewCellMyProgress.getNib(), forCellReuseIdentifier: TableViewCellMyProgress.identifier)
-     
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,8 +44,6 @@ class MyProgressViewController: UIViewController, SendData{
         let vcShare = UIActivityViewController(activityItems: ["YogaZone.IMC"], applicationActivities: nil)
         vcShare.popoverPresentationController?.sourceView = self.view
         self.present(vcShare, animated: true, completion: nil)
-        
-    
     }
     
     @IBAction func tappedClosedBUtton(_ sender: UIButton) {
@@ -85,14 +78,8 @@ class MyProgressViewController: UIViewController, SendData{
 
 }
 
-
-
-
-
 extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
    
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataProgress.count
     }

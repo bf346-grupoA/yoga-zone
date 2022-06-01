@@ -8,7 +8,6 @@
 import UIKit
 import FirebaseFirestore
 
-
 protocol SendData {
     var result: Double {get}
     var weigth: String {get}
@@ -25,8 +24,8 @@ class BmiViewController: UIViewController {
     @IBOutlet weak var buttonMyProgress: UIButton!
     @IBOutlet weak var sliderGoal: UISlider!
     @IBOutlet weak var switchLabel: UISwitch!
-    
     @IBOutlet weak var backBUtton: UIButton!
+    
     let fireStore = Firestore.firestore()
     var viewModel = BmiViewModel()
     var heigth:Float = 1.4
@@ -39,7 +38,6 @@ class BmiViewController: UIViewController {
         super.viewDidLoad()
         self.switchLabel.isOn = false
         self.viewModel.initFireStore()
-    
     }
     
     override func viewDidLayoutSubviews() {
@@ -55,14 +53,13 @@ class BmiViewController: UIViewController {
     
     @IBAction func tappedBackButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
-    
     }
+    
     @IBAction func sliderWeight(_ sender: Any) {
         weight = (sender as AnyObject).value
         let stringWeight = String(format: " %.1f", weight)
         wLabel.text = "\(stringWeight) Kg"
         viewModel.getWeight = stringWeight
-        
     }
     
     @IBAction func sliderHeight(_ sender: Any) {
@@ -94,13 +91,11 @@ class BmiViewController: UIViewController {
         vc?.missing = String(format: " %.1f ", missing)
         self.navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
-    
 }
 
 extension BmiViewController {
     
     func calculateResult() {
-        
         let result = weight / (heigth * heigth)
         self.viewModel.result = String(format: " %.1f ", result)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController
@@ -120,7 +115,6 @@ extension BmiViewController {
             sliderGoal.isEnabled = true
         }
     }
-    
 }
 
 // MARK: Navigation Bar Customization
@@ -140,5 +134,4 @@ extension BmiViewController: UIGestureRecognizerDelegate {
     @objc private func popToPrevious() {
         navigationController?.popViewController(animated: true)
     }
-    
 }

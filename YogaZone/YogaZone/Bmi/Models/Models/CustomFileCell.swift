@@ -18,7 +18,6 @@ struct Cell {
     let imageView: UIImage
     let indexNUmber: String
     let IndexCase: String
-    
 }
 
 
