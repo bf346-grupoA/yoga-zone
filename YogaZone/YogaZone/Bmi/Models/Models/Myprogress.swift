@@ -11,5 +11,6 @@ import Foundation
 struct MyProgress {
     let date: String
     let result: String
-    let weight:String
+    let weight: String
+    let goal: String
 }

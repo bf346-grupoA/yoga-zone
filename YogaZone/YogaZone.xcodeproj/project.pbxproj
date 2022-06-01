@@ -151,6 +151,8 @@
 		2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */; };
 		2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287CC27EAD19000C5BD81 /* Navigable.swift */; };
 		2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0560227E022DA000E9CA6 /* Poses.swift */; };
+		311B94E52847BB2E003A9C14 /* MyProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B94E42847BB2E003A9C14 /* MyProgressViewModel.swift */; };
+		311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B94E62847CE50003A9C14 /* BmiViewModel.swift */; };
 		3126833A27C15ECA003F017B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833927C15ECA003F017B /* AppDelegate.swift */; };
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
@@ -341,6 +343,8 @@
 		2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
 		2FA287CC27EAD19000C5BD81 /* Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigable.swift; sourceTree = "<group>"; };
 		2FB0560227E022DA000E9CA6 /* Poses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poses.swift; sourceTree = "<group>"; };
+		311B94E42847BB2E003A9C14 /* MyProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressViewModel.swift; sourceTree = "<group>"; };
+		311B94E62847CE50003A9C14 /* BmiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiViewModel.swift; sourceTree = "<group>"; };
 		3126833627C15ECA003F017B /* YogaZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3126833927C15ECA003F017B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3126833B27C15ECA003F017B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -866,37 +870,8 @@
 			isa = PBXGroup;
 			children = (
 				2F83C781282A0A0C00EC3334 /* Bmi.storyboard */,
-				2F83C783282A0A0C00EC3334 /* TableViewMyProgress */,
-				2F83C786282A0A0C00EC3334 /* CustomTableViewCell */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		2F83C783282A0A0C00EC3334 /* TableViewMyProgress */ = {
-			isa = PBXGroup;
-			children = (
-				2F83C784282A0A0C00EC3334 /* TableViewCellMyProgress.swift */,
-				2F83C785282A0A0C00EC3334 /* TableViewCellMyProgress.xib */,
-			);
-			path = TableViewMyProgress;
-			sourceTree = "<group>";
-		};
-		2F83C786282A0A0C00EC3334 /* CustomTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				2F83C787282A0A0C00EC3334 /* MyTableViewCell.swift */,
-				2F83C788282A0A0C00EC3334 /* MyTableViewCell.xib */,
-			);
-			path = CustomTableViewCell;
-			sourceTree = "<group>";
-		};
-		2F83C789282A0A0C00EC3334 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2F83C78A282A0A0C00EC3334 /* Enum */,
-				2F83C78C282A0A0C00EC3334 /* Models */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		2F83C78A282A0A0C00EC3334 /* Enum */ = {
@@ -916,16 +891,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2F83C78F282A0A0C00EC3334 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				2F83C790282A0A0C00EC3334 /* BmiViewController.swift */,
-				2F83C791282A0A0C00EC3334 /* ResultViewController.swift */,
-				2F83C792282A0A0C00EC3334 /* MyProgressViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		2FA287B127EACC3C00C5BD81 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -943,6 +908,119 @@
 				2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */,
 			);
 			path = MyProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		311B94D62847B83B003A9C14 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				311B94DE2847B9F0003A9C14 /* Result */,
+				311B94DB2847B943003A9C14 /* Bmi */,
+				311B94D72847B86A003A9C14 /* MyProgress */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		311B94D72847B86A003A9C14 /* MyProgress */ = {
+			isa = PBXGroup;
+			children = (
+				311B94D82847B8B2003A9C14 /* TableViewMyProgress */,
+				311B94D92847B8E1003A9C14 /* ViewModel */,
+				311B94DA2847B8F5003A9C14 /* ViewController */,
+			);
+			path = MyProgress;
+			sourceTree = "<group>";
+		};
+		311B94D82847B8B2003A9C14 /* TableViewMyProgress */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C785282A0A0C00EC3334 /* TableViewCellMyProgress.xib */,
+				2F83C784282A0A0C00EC3334 /* TableViewCellMyProgress.swift */,
+			);
+			path = TableViewMyProgress;
+			sourceTree = "<group>";
+		};
+		311B94D92847B8E1003A9C14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				311B94E42847BB2E003A9C14 /* MyProgressViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		311B94DA2847B8F5003A9C14 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C792282A0A0C00EC3334 /* MyProgressViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		311B94DB2847B943003A9C14 /* Bmi */ = {
+			isa = PBXGroup;
+			children = (
+				311B94DD2847B976003A9C14 /* ViewController */,
+				311B94DC2847B96A003A9C14 /* ViewModel */,
+			);
+			path = Bmi;
+			sourceTree = "<group>";
+		};
+		311B94DC2847B96A003A9C14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				311B94E62847CE50003A9C14 /* BmiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		311B94DD2847B976003A9C14 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C790282A0A0C00EC3334 /* BmiViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		311B94DE2847B9F0003A9C14 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				311B94E12847BA1F003A9C14 /* ViewController */,
+				311B94E02847BA13003A9C14 /* ViewModel */,
+				311B94DF2847B9FF003A9C14 /* ResultTableViewCell */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		311B94DF2847B9FF003A9C14 /* ResultTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C787282A0A0C00EC3334 /* MyTableViewCell.swift */,
+				2F83C788282A0A0C00EC3334 /* MyTableViewCell.xib */,
+			);
+			path = ResultTableViewCell;
+			sourceTree = "<group>";
+		};
+		311B94E02847BA13003A9C14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		311B94E12847BA1F003A9C14 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C791282A0A0C00EC3334 /* ResultViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		311B94E22847BA4B003A9C14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C78A282A0A0C00EC3334 /* Enum */,
+				2F83C78C282A0A0C00EC3334 /* Models */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3126832D27C15ECA003F017B = {
@@ -985,8 +1063,8 @@
 		313BF5262828A266004CE901 /* Bmi */ = {
 			isa = PBXGroup;
 			children = (
-				2F83C78F282A0A0C00EC3334 /* Controller */,
-				2F83C789282A0A0C00EC3334 /* Model */,
+				311B94E22847BA4B003A9C14 /* Models */,
+				311B94D62847B83B003A9C14 /* Features */,
 				2F83C780282A0A0C00EC3334 /* View */,
 			);
 			path = Bmi;
@@ -1281,7 +1359,6 @@
 				D4D27262DAFA92507C209F58 /* Pods-YogaZone.debug.xcconfig */,
 				1324D7CEB10BE795F7D86B4B /* Pods-YogaZone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -1494,6 +1571,7 @@
 				2F5B670327ED22A800AC243E /* LogoCell.swift in Sources */,
 				792C669E282D79CA0018D343 /* TrainingFinishedVC.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
+				311B94E52847BB2E003A9C14 /* MyProgressViewModel.swift in Sources */,
 				2F5B66F527ED22A800AC243E /* GoogleButtonCell.swift in Sources */,
 				2F036F8127E429D800993E41 /* EventData.swift in Sources */,
 				2F5B66FB27ED22A800AC243E /* ResetPasswordCell.swift in Sources */,
@@ -1568,6 +1646,7 @@
 				2F0C33FD27E434DA004A1E8C /* CustomMainRegisterCell.swift in Sources */,
 				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
+				311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */,
 				2F5B66F727ED22A800AC243E /* FacebookButtonCell.swift in Sources */,
 				2F5B670027ED22A800AC243E /* SeparatorCell.swift in Sources */,
 				2F83C79C282A0A0C00EC3334 /* ResultViewController.swift in Sources */,
