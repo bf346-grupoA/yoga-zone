@@ -13,19 +13,12 @@ protocol MyTableViewCellProtocol{
 class MyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var resultLabel: UILabel!
-    
     @IBOutlet weak var waitingResultLabel: UILabel!
-    
     @IBOutlet weak var possibleConsequencesLabel: UILabel!
-    
     @IBOutlet weak var waitingPossibleConsequencesLabel: UILabel!
-    
     @IBOutlet weak var imageIndex: UIImageView!
-    
     @IBOutlet weak var numberIndexLabel: UILabel!
-    
     @IBOutlet weak var caseIndexLabel: UILabel!
-    
     @IBOutlet weak var buttonTapped: UIButton!
     
     
