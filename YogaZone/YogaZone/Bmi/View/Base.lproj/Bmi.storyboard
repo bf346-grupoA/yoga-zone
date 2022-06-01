@@ -119,6 +119,15 @@
                                     <action selector="switchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="MWa-nY-RDp"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhN-gK-aoD">
+                                <rect key="frame" x="8" y="108" width="45" height="31"/>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="tappedBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ciR-WQ-bUe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -127,6 +136,7 @@
                             <constraint firstItem="oJl-VY-n1v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="1zh-uN-peO"/>
                             <constraint firstItem="1CR-0e-LFR" firstAttribute="top" secondItem="57d-fz-Szo" secondAttribute="bottom" constant="5" id="23L-mr-WnD"/>
                             <constraint firstItem="57d-fz-Szo" firstAttribute="top" secondItem="evU-Sz-zxS" secondAttribute="bottom" constant="5" id="3tN-RY-HUV"/>
+                            <constraint firstItem="VhN-gK-aoD" firstAttribute="top" secondItem="GB1-s6-yhv" secondAttribute="top" id="4Bz-rw-0sU"/>
                             <constraint firstItem="Gl9-NW-7Xh" firstAttribute="top" secondItem="oJl-VY-n1v" secondAttribute="bottom" constant="15" id="6Gn-hX-SsR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gl9-NW-7Xh" secondAttribute="trailing" constant="60" id="6NP-Ph-lKE"/>
                             <constraint firstItem="Cw3-xm-y4m" firstAttribute="top" secondItem="U6U-Ze-XBO" secondAttribute="bottom" constant="5" id="8IX-T7-5jl"/>
@@ -159,12 +169,14 @@
                             <constraint firstItem="GB1-s6-yhv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="khh-HU-Go8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cw3-xm-y4m" secondAttribute="trailing" constant="50" id="mWX-v9-le7"/>
                             <constraint firstItem="gJh-zW-oRQ" firstAttribute="top" secondItem="RCV-Ls-zp1" secondAttribute="bottom" constant="5" id="p2r-Cf-bcc"/>
+                            <constraint firstItem="VhN-gK-aoD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="rja-S3-NtT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1CR-0e-LFR" secondAttribute="trailing" constant="20" id="ueb-B8-ffd"/>
                             <constraint firstItem="GB1-s6-yhv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xuD-wt-dIA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bi8-NZ-fMc"/>
                     <connections>
+                        <outlet property="backBUtton" destination="VhN-gK-aoD" id="uZM-9Z-J2x"/>
                         <outlet property="buttonCalculate" destination="oJl-VY-n1v" id="CqE-35-bDd"/>
                         <outlet property="buttonMyProgress" destination="Gl9-NW-7Xh" id="GcS-dg-6bF"/>
                         <outlet property="gLabel" destination="1CR-0e-LFR" id="75x-vv-UMg"/>

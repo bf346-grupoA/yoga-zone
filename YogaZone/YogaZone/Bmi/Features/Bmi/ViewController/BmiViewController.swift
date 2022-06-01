@@ -26,6 +26,7 @@ class BmiViewController: UIViewController {
     @IBOutlet weak var sliderGoal: UISlider!
     @IBOutlet weak var switchLabel: UISwitch!
     
+    @IBOutlet weak var backBUtton: UIButton!
     let fireStore = Firestore.firestore()
     var viewModel = BmiViewModel()
     var heigth:Float = 1.4
@@ -45,7 +46,6 @@ class BmiViewController: UIViewController {
         super.viewDidLayoutSubviews()
         self.buttonCalculate.layer.cornerRadius = 7
         self.buttonMyProgress.layer.cornerRadius = 7
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,6 +53,10 @@ class BmiViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    @IBAction func tappedBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    
+    }
     @IBAction func sliderWeight(_ sender: Any) {
         weight = (sender as AnyObject).value
         let stringWeight = String(format: " %.1f", weight)
@@ -91,8 +95,6 @@ class BmiViewController: UIViewController {
         self.navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
     
-    @IBAction func unwindToOne(_ sender: UIStoryboardSegue) {
-    }
 }
 
 extension BmiViewController {
