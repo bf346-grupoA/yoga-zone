@@ -7,6 +7,5 @@
 
 import Foundation
 
-class ResultViewModel {
-    
+class ResultViewModel {    
 }
