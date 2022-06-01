@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class MyProgressViewController: UIViewController, SendData{
 
     @IBOutlet weak var tableView: UITableView!
@@ -16,7 +17,7 @@ class MyProgressViewController: UIViewController, SendData{
     @IBOutlet weak var buttonShare: UIButton!
     @IBOutlet weak var closedButton: UIButton!
     
-    let defaults = UserDefaults.standard
+    
     var data: [MyProgress] = []
     var weigth: String = ""
     var goal: String = ""
@@ -72,14 +73,5 @@ extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
         return cell ?? UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        self.data.remove(at: indexPath.row)
-        self.tableView.deleteRows(at: [indexPath], with: .top)
-        self.tableView.reloadData()
-        
-    }
-    
-    
-    
-    
+
 }
