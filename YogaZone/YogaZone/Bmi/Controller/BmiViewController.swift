@@ -25,7 +25,7 @@ class BmiViewController: UIViewController {
     @IBOutlet weak var switchLabel: UISwitch!
     
     
-    var heigth:Float = 1.5
+    var heigth:Float = 1.44444444444
     var weight:Float = 75
     var goal:Float = 1.3
     var bmi:Float = 0
