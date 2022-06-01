@@ -1022,10 +1022,19 @@
 		311B94E22847BA4B003A9C14 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				311B94ED2847DF57003A9C14 /* Service */,
 				2F83C78A282A0A0C00EC3334 /* Enum */,
 				2F83C78C282A0A0C00EC3334 /* Models */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		311B94ED2847DF57003A9C14 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				311B94EB2847DD90003A9C14 /* GoogleService-Info.plist */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		3126832D27C15ECA003F017B = {
@@ -1068,7 +1077,6 @@
 		313BF5262828A266004CE901 /* Bmi */ = {
 			isa = PBXGroup;
 			children = (
-				311B94EB2847DD90003A9C14 /* GoogleService-Info.plist */,
 				311B94E22847BA4B003A9C14 /* Models */,
 				311B94D62847B83B003A9C14 /* Features */,
 				2F83C780282A0A0C00EC3334 /* View */,

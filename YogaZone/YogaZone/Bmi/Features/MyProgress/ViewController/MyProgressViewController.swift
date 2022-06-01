@@ -27,6 +27,7 @@ class MyProgressViewController: UIViewController, SendData{
     var viewModel = MyProgressViewModel()
     var dataBase = Firestore.firestore()
     var dataProgress: [MyProgress] = []
+    var bmiViewController = BmiViewController()
 
 
     
@@ -53,8 +54,7 @@ class MyProgressViewController: UIViewController, SendData{
     }
     
     @IBAction func tappedClosedBUtton(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
-
+        navigationController?.popToViewController(bmiViewController, animated: true)
     }
     
     func updateProgress(){
