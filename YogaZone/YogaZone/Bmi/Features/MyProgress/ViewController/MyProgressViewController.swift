@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 
 class MyProgressViewController: UIViewController, SendData{
@@ -18,21 +19,26 @@ class MyProgressViewController: UIViewController, SendData{
     @IBOutlet weak var closedButton: UIButton!
     
     
-    var data: [MyProgress] = []
     var weigth: String = ""
     var goal: String = ""
-    var missing:Float = 0
+    var missing:String = ""
     var result: Double = 0.0
-    
+    var resultVC = ResultViewController()
+    var viewModel = MyProgressViewModel()
+    var dataBase = Firestore.firestore()
+    var dataProgress: [MyProgress] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.buttonShare.layer.cornerRadius = 7
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(TableViewCellMyProgress.getNib(), forCellReuseIdentifier: TableViewCellMyProgress.identifier)
-        updateProgress()
-        print(data)
+    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.updateProgress()
+        self.getData()
     }
     
     @IBAction func tappedButtonShare(_ sender: Any) {
@@ -44,10 +50,8 @@ class MyProgressViewController: UIViewController, SendData{
     }
     
     @IBAction func tappedClosedBUtton(_ sender: UIButton) {
-      
-        
-        
-        
+        self.navigationController?.popToRootViewController(animated: true)
+
     }
     
     
@@ -55,8 +59,31 @@ class MyProgressViewController: UIViewController, SendData{
     func updateProgress(){
         weightLabel.text = weigth
         goalLabel.text = goal
-        missingLabel.text =  String(format: "%.1f", missing)
+        missingLabel.text = missing
     }
+}
+
+func getData(){
+    dataBase.collection("progress").order(by: "postDate").getDocuments { snapshot, error in
+        if error == nil{
+            if let snapshot = snapshot {
+                DispatchQueue.main.async {
+                    self.dataProgress = snapshot.documents.map({ document in
+                        return MyProgress(date: document["date"] as? String ?? "",
+                                          result: document["result"] as? String ?? "",
+                                          weight: document["weight"] as? String ?? "",
+                                          goal: document["goal"] as? String ?? "")
+                    })
+                    self.tableView.reloadData()
+                }
+            }
+        } else {
+            print("fail")
+        }
+    }
+}
+
+
 }
 
 extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
@@ -64,12 +91,12 @@ extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return dataProgress.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellMyProgress.identifier, for: indexPath) as? TableViewCellMyProgress
-        cell?.setupCell(myProgress: data[indexPath.row])
+        cell?.setupCell(myProgress: dataProgress[indexPath.row])
         return cell ?? UITableViewCell()
     }
     
