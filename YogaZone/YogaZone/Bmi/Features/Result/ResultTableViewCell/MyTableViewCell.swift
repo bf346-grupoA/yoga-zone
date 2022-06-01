@@ -21,11 +21,9 @@ class MyTableViewCell: UITableViewCell {
     @IBOutlet weak var caseIndexLabel: UILabel!
     @IBOutlet weak var buttonTapped: UIButton!
     
-    
     var delegate: MyTableViewCellProtocol?
     
     static let identifier: String = "MyTableViewCell"
-    
     static func nib() -> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
     }
@@ -38,7 +36,6 @@ class MyTableViewCell: UITableViewCell {
         super.layoutSubviews()
         self.buttonTapped.layer.cornerRadius = 7
     }
-    
     
     public func setupCell(value:Double){
         var image: String = ""
@@ -57,7 +54,6 @@ class MyTableViewCell: UITableViewCell {
             numberIndex = NumberIndex.underWeight.rawValue
             color = .blue
                 
-            
             case BmiNumber.normalMinimum.rawValue..<BmiNumber.normalMaximum.rawValue:
                 image = PicImage.normal.rawValue
                 result = String(format: " %.2f IMC", value)
@@ -89,9 +85,7 @@ class MyTableViewCell: UITableViewCell {
                 caseIndex = CaseIndex.extremelyObese.rawValue
                 numberIndex = NumberIndex.extremelyObese.rawValue
                 color = .red
-            
         }
-        
         waitingPossibleConsequencesLabel.text = possibleCons
         waitingPossibleConsequencesLabel.textColor = color
         waitingResultLabel.text = result
@@ -102,12 +96,9 @@ class MyTableViewCell: UITableViewCell {
         caseIndexLabel.textColor = color
         buttonTapped.backgroundColor = color
         imageIndex.image = UIImage(named:image)
-        
     }
-    
     
     @IBAction func tappedCalculate(_ sender: Any) {
         self.delegate?.actionSaveButton()
     }
-    
 }
