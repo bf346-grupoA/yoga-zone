@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true);
         self.view.backgroundColor = .white
-        setupTableView()
+        self.setupTableView()
     }
 }
 
@@ -64,7 +64,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         default: return self.view.frame.height
         }
     }
-    
 
 }
 
