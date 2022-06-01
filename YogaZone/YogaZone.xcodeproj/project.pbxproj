@@ -155,6 +155,7 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+		759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */; };
 		792C669C282D79CA0018D343 /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667F282D79CA0018D343 /* RenderGIF.swift */; };
 		792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6680282D79CA0018D343 /* MakeDropDown.swift */; };
 		792C669E282D79CA0018D343 /* TrainingFinishedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6681282D79CA0018D343 /* TrainingFinishedVC.swift */; };
@@ -195,6 +196,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1324D7CEB10BE795F7D86B4B /* Pods-YogaZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.release.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.release.xcconfig"; sourceTree = "<group>"; };
 		2F036F5327E429D800993E41 /* EventFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFilterViewController.swift; sourceTree = "<group>"; };
 		2F036F5427E429D800993E41 /* EventFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventFilterViewController.xib; sourceTree = "<group>"; };
 		2F036F5627E429D800993E41 /* EventMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
@@ -382,6 +384,8 @@
 		8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		839A06AE282DB07100C797EC /* TrainingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
+		9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D27262DAFA92507C209F58 /* Pods-YogaZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.debug.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +393,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -945,6 +950,8 @@
 			children = (
 				3126833827C15ECA003F017B /* YogaZone */,
 				3126833727C15ECA003F017B /* Products */,
+				BF1663D5229798EC74BA8ADC /* Pods */,
+				9C0AC58147DCC157D9E2E4BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1260,6 +1267,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9C0AC58147DCC157D9E2E4BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF1663D5229798EC74BA8ADC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4D27262DAFA92507C209F58 /* Pods-YogaZone.debug.xcconfig */,
+				1324D7CEB10BE795F7D86B4B /* Pods-YogaZone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1267,9 +1292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3126834A27C15ECB003F017B /* Build configuration list for PBXNativeTarget "YogaZone" */;
 			buildPhases = (
+				6D4E98C958C8AA6A7FD144EB /* [CP] Check Pods Manifest.lock */,
 				3126833227C15ECA003F017B /* Sources */,
 				3126833327C15ECA003F017B /* Frameworks */,
 				3126833427C15ECA003F017B /* Resources */,
+				69DD2CBF741D4FFB85D6D780 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1410,6 +1437,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69DD2CBF741D4FFB85D6D780 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D4E98C958C8AA6A7FD144EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YogaZone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3126833227C15ECA003F017B /* Sources */ = {
@@ -1656,6 +1725,7 @@
 		};
 		3126834B27C15ECB003F017B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D27262DAFA92507C209F58 /* Pods-YogaZone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1683,6 +1753,7 @@
 		};
 		3126834C27C15ECB003F017B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1324D7CEB10BE795F7D86B4B /* Pods-YogaZone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
