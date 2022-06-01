@@ -377,8 +377,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward.circle" catalog="system"/>
                                 <connections>
-                                    <action selector="tappedClosedBUtton:" destination="QnL-Zc-CSv" eventType="touchUpInside" id="29I-jQ-eJp"/>
-                                    <segue destination="Tym-YM-jE4" kind="unwind" unwindAction="unwindToOne:" id="4ZM-yE-RVo"/>
+                                    <segue destination="Tym-YM-jE4" kind="unwind" unwindAction="unwindToBmiVC:" id="Rd4-pI-5pd"/>
                                 </connections>
                             </button>
                         </subviews>
