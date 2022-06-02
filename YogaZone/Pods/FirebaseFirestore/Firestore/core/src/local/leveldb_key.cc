@@ -55,8 +55,6 @@ const char* kNamedQueriesTable = "named_queries";
 const char* kIndexConfigurationTable = "index_configuration";
 const char* kIndexStateTable = "index_state";
 const char* kIndexEntriesTable = "index_entries";
-const char* kIndexEntriesDocumentKeyIndexTable =
-    "index_entries_document_key_index";
 const char* kDocumentOverlaysTable = "document_overlays";
 const char* kDocumentOverlaysLargestBatchIdIndexTable =
     "document_overlays_largest_batch_id_index";
@@ -141,18 +139,6 @@ enum ComponentLabel {
   /** A component containing a collection group name. */
   CollectionGroup = 22,
 
-  /** A general component to differentiate indexes with same prefixes. */
-  SequenceNumber = 23,
-
-  // TODO(wuandy) We use document id and document key to mean the same thing.
-  // This is because there is a `ReadDocumentKey` method that returns a
-  // `DocumentKey`, which conflicts with the names we want to use here.
-  /**
-   * A component containing an encoded document key with either ASC or DESC
-   * ordering.
-   */
-  OrderedDocumentKey = 24,
-
   /**
    * A path segment describes just a single segment in a resource path. Path
    * segments that occur sequentially in a key represent successive segments in
@@ -231,10 +217,6 @@ class Reader {
     return ReadLabeledString(ComponentLabel::DocumentId);
   }
 
-  std::string ReadOrderedDocumentKey() {
-    return ReadLabeledString(ComponentLabel::OrderedDocumentKey);
-  }
-
   std::string ReadBundleId() {
     return ReadLabeledString(ComponentLabel::BundleId);
   }
@@ -257,10 +239,6 @@ class Reader {
 
   std::string ReadIndexDirectionalValue() {
     return ReadLabeledString(ComponentLabel::IndexDirectionalValue);
-  }
-
-  int64_t ReadSequenceNumber() {
-    return ReadLabeledInt64(ComponentLabel::SequenceNumber);
   }
 
   /**
@@ -419,24 +397,6 @@ class Reader {
       Fail();
     }
     return ReadInt32();
-  }
-
-  /**
-   * Reads a component label and signed number from the key and verifies that
-   * the label matches the expected_label and the value fits in a 32-bit
-   * integer.
-   *
-   * If the read is unsuccessful, the label didn't match, or the number was out
-   * of range, returns 0 and fails the Reader.
-   *
-   * Otherwise, returns the number and advances the Reader to the next unread
-   * byte.
-   */
-  int64_t ReadLabeledInt64(ComponentLabel expected_label) {
-    if (!ReadComponentLabelMatching(expected_label)) {
-      Fail();
-    }
-    return ReadInt64();
   }
 
   /**
@@ -630,11 +590,7 @@ std::string Reader::Describe() {
       if (ok_) {
         absl::StrAppend(&description, " document_id=", document_id);
       }
-    } else if (label == ComponentLabel::OrderedDocumentKey) {
-      ReadOrderedDocumentKey();
-      if (ok_) {
-        absl::StrAppend(&description, " ordered_document_id=<skipped>");
-      }
+
     } else if (label == ComponentLabel::SnapshotVersion) {
       model::SnapshotVersion snapshot_version = ReadSnapshotVersion();
       if (ok_) {
@@ -726,10 +682,6 @@ class Writer {
     WriteLabeledString(ComponentLabel::DocumentId, document_id);
   }
 
-  void WriteOrderedDocumentKey(absl::string_view document_key) {
-    WriteLabeledString(ComponentLabel::OrderedDocumentKey, document_key);
-  }
-
   void WriteSnapshotVersion(model::SnapshotVersion snapshot_version) {
     WriteComponentLabel(ComponentLabel::SnapshotVersion);
     OrderedCode::WriteSignedNumIncreasing(
@@ -774,10 +726,6 @@ class Writer {
     WriteLabeledString(ComponentLabel::IndexDirectionalValue, value);
   }
 
-  void WriteSequenceNumber(int64_t seq) {
-    WriteLabeledInt64(ComponentLabel::SequenceNumber, seq);
-  }
-
  private:
   /** Writes a component label to the given key destination. */
   void WriteComponentLabel(ComponentLabel label) {
@@ -788,14 +736,6 @@ class Writer {
    * Writes a component label and a signed integer to the given key destination.
    */
   void WriteLabeledInt32(ComponentLabel label, int32_t value) {
-    WriteComponentLabel(label);
-    OrderedCode::WriteSignedNumIncreasing(&dest_, value);
-  }
-
-  /**
-   * Writes a component label and a signed integer to the given key destination.
-   */
-  void WriteLabeledInt64(ComponentLabel label, int64_t value) {
     WriteComponentLabel(label);
     OrderedCode::WriteSignedNumIncreasing(&dest_, value);
   }
@@ -1300,34 +1240,18 @@ std::string LevelDbIndexEntryKey::KeyPrefix(int32_t index_id) {
   return writer.result();
 }
 
-std::string LevelDbIndexEntryKey::KeyPrefix(
-    int32_t index_id,
-    absl::string_view user_id,
-    absl::string_view array_value,
-    absl::string_view directional_value) {
-  Writer writer;
-  writer.WriteTableName(kIndexEntriesTable);
-  writer.WriteIndexId(index_id);
-  writer.WriteUserId(user_id);
-  writer.WriteIndexArrayValue(array_value);
-  writer.WriteIndexDirectionalValue(directional_value);
-  return writer.result();
-}
-
 std::string LevelDbIndexEntryKey::Key(int32_t index_id,
                                       absl::string_view user_id,
                                       absl::string_view array_value,
                                       absl::string_view directional_value,
-                                      absl::string_view ordered_document_key,
-                                      absl::string_view document_key) {
+                                      absl::string_view document_name) {
   Writer writer;
   writer.WriteTableName(kIndexEntriesTable);
   writer.WriteIndexId(index_id);
   writer.WriteUserId(user_id);
   writer.WriteIndexArrayValue(array_value);
   writer.WriteIndexDirectionalValue(directional_value);
-  writer.WriteOrderedDocumentKey(ordered_document_key);
-  writer.WriteDocumentId(document_key);
+  writer.WriteDocumentId(document_name);
   writer.WriteTerminator();
   return writer.result();
 }
@@ -1339,42 +1263,7 @@ bool LevelDbIndexEntryKey::Decode(absl::string_view key) {
   user_id_ = reader.ReadUserId();
   array_value_ = reader.ReadIndexArrayValue();
   directional_value_ = reader.ReadIndexDirectionalValue();
-  ordered_document_key_ = reader.ReadOrderedDocumentKey();
   document_key_ = reader.ReadDocumentId();
-  reader.ReadTerminator();
-  return reader.ok();
-}
-
-std::string LevelDbIndexEntryDocumentKeyIndexKey::Key() {
-  Writer writer;
-  writer.WriteTableName(kIndexEntriesDocumentKeyIndexTable);
-  writer.WriteIndexId(index_id_);
-  writer.WriteUserId(user_id_);
-  writer.WriteDocumentId(document_key_);
-  writer.WriteSequenceNumber(seq_number_);
-  writer.WriteTerminator();
-  return writer.result();
-}
-
-std::string LevelDbIndexEntryDocumentKeyIndexKey::KeyPrefix(
-    int32_t index_id,
-    absl::string_view user_id,
-    absl::string_view document_name) {
-  Writer writer;
-  writer.WriteTableName(kIndexEntriesDocumentKeyIndexTable);
-  writer.WriteIndexId(index_id);
-  writer.WriteUserId(user_id);
-  writer.WriteDocumentId(document_name);
-  return writer.result();
-}
-
-bool LevelDbIndexEntryDocumentKeyIndexKey::Decode(absl::string_view key) {
-  Reader reader{key};
-  reader.ReadTableNameMatching(kIndexEntriesDocumentKeyIndexTable);
-  index_id_ = reader.ReadIndexId();
-  user_id_ = reader.ReadUserId();
-  document_key_ = reader.ReadDocumentId();
-  seq_number_ = reader.ReadSequenceNumber();
   reader.ReadTerminator();
   return reader.ok();
 }
@@ -1563,7 +1452,7 @@ std::string LevelDbDocumentOverlayCollectionGroupIndexKey::Key(
 std::string LevelDbDocumentOverlayCollectionGroupIndexKey::Key(
     const LevelDbDocumentOverlayKey& key) {
   const absl::optional<std::string> collection_group =
-      key.document_key().GetCollectionGroup();
+      key.document_key().GetCollectionId();
   HARD_ASSERT(collection_group.has_value());
   return Key(key.user_id(), collection_group.value(), key.largest_batch_id(),
              key.document_key());

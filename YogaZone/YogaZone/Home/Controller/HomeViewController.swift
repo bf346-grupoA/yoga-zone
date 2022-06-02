@@ -68,7 +68,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 // MARK: Navigation
-extension HomeViewController: Navigable {
+extension HomeViewController: NavigationDelegate {
     func navigateTo(routeIndex: Int) {
         switch routeIndex {
             case 1: self.navigationController?.pushViewController(PoseGalleryViewController(), animated: true)

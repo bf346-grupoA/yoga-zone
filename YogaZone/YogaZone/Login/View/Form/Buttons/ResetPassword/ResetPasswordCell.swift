@@ -8,7 +8,7 @@
 import UIKit
 
 class ResetPasswordCell: UITableViewCell {
-    weak var delegate: Navigable?
+    weak var delegate: NavigationDelegate?
     
     @IBOutlet weak var resetPasswordButton: UIButton!
     

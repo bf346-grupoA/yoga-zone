@@ -7,7 +7,20 @@
 
 import Foundation
 
-
-protocol FormDelegate: AnyObject {
+protocol FormDataDelegate: AnyObject {
     func send(userData: UserData)
+    func isValidEmail(email: String) -> Bool
+    func isValidPasswordLenght(password: String) -> Bool
+}
+
+extension FormDataDelegate {
+    
+    func isValidEmail(email: String) -> Bool {
+        return email.isValid(inputType: .email)
+    }
+    
+    func isValidPasswordLenght(password: String) -> Bool {
+        return password.isValid(inputType: .password)
+    }
+    
 }
