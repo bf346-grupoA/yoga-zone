@@ -63,8 +63,6 @@ extension EmailAndPasswordCell: UITextFieldDelegate {
         
         self.delegate?.send(userData: user)
     }
-    
-    
 }
 
 // MARK: Static properties & methods

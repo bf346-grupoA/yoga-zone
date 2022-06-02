@@ -6,13 +6,17 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     var userData: UserData?
+    var auth: Auth?
+    
     @IBOutlet weak var loginTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        auth = Auth.auth()
         
         setupTableView()
         self.userData = UserData(email: "", password: "")
