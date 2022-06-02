@@ -22,6 +22,8 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.pbxproj
+*.xcworkspace
 
 ## Obj-C/Swift specific
 *.hmap
