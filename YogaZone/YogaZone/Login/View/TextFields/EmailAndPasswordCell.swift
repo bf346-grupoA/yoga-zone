@@ -46,8 +46,16 @@ extension EmailAndPasswordCell: UITextFieldDelegate {
         return true
     }
     
+
     func isValidForm() -> Bool {
-        return self.emailTextField.text != "" && self.passwordTextField.text != ""
+        return self.emailTextField.text != "" &&
+        self.isValidEmail(email: self.emailTextField.text) &&
+        self.passwordTextField.text != ""
+    }
+    
+    func isValidEmail(email: String?) -> Bool {
+        // TODO: ADD VALIDATION MASK EMAIL, EMAIL TRULY
+        return true
     }
     
     func submit() {

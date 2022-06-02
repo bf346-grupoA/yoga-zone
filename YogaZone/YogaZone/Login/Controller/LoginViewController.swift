@@ -131,7 +131,7 @@ extension LoginViewController: FormDelegate, Navigable {
             default: self.navigationController?.pushViewController(MainRegisterVC(), animated: true)
         }
     }
-    
+    // TODO: ADD VALIDATION FIREBASE
     func send(userData: UserData) {
         self.userData = userData
     }
