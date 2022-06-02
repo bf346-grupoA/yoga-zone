@@ -1388,6 +1388,7 @@
 				3126833327C15ECA003F017B /* Frameworks */,
 				3126833427C15ECA003F017B /* Resources */,
 				69DD2CBF741D4FFB85D6D780 /* [CP] Embed Pods Frameworks */,
+				45A23499E1D19E9C01E5361B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1531,6 +1532,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		45A23499E1D19E9C01E5361B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		69DD2CBF741D4FFB85D6D780 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
