@@ -10,6 +10,7 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
     var userData: UserData?
+    var auth: Auth?
     
     @IBOutlet weak var loginTableView: UITableView!
 
