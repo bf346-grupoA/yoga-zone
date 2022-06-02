@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyProfileVC" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="perfilImage" destination="Ee7-fb-6dF" id="hSt-dF-2R3"/>
+                <outlet property="saveChangesButton" destination="NtN-Yo-jD1" id="6yf-OT-k7b"/>
+                <outlet property="tableView" destination="6rF-cA-U9t" id="ahp-SX-I9f"/>
+                <outlet property="tappedCameraIconImage" destination="52C-KW-VGF" id="Amp-rI-auV"/>
+                <outlet property="tappedMoreOptionsButtonImage" destination="SfG-Fa-1GV" id="WLl-4l-iFB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ee7-fb-6dF">
+                    <rect key="frame" x="137.5" y="30" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="ETL-Wa-YLF"/>
+                        <constraint firstAttribute="width" constant="100" id="IY1-e0-6ly"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52C-KW-VGF">
+                    <rect key="frame" x="207.5" y="100" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="e8K-3m-RH7"/>
+                        <constraint firstAttribute="height" constant="30" id="vMT-3G-rPE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ricardo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds1-Gz-2KN">
+                    <rect key="frame" x="137.5" y="145" width="100" height="22.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="00s-Fh-00u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-cA-U9t">
+                    <rect key="frame" x="0.0" y="192.5" width="375" height="374.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-Yo-jD1">
+                    <rect key="frame" x="50" y="592" width="275" height="50"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="RFU-6q-pMX"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Salvar Alterações"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Salvar Alterações" cornerStyle="dynamic">
+                        <backgroundConfiguration key="background" cornerRadius="8"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.52156862749999999" green="0.49803921569999998" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedSaveChangesButton:" destination="-1" eventType="touchUpInside" id="bOX-h5-J73"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SfG-Fa-1GV">
+                    <rect key="frame" x="315" y="0.0" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="ddp-Fa-5pb"/>
+                        <constraint firstAttribute="width" constant="35" id="qkM-21-R3e"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ee7-fb-6dF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0UI-rc-K1b"/>
+                <constraint firstItem="52C-KW-VGF" firstAttribute="bottom" secondItem="Ee7-fb-6dF" secondAttribute="bottom" id="9Xa-hp-xgp"/>
+                <constraint firstItem="6rF-cA-U9t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="D6e-CF-ljG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NtN-Yo-jD1" secondAttribute="bottom" constant="25" id="Ehx-L3-CgB"/>
+                <constraint firstItem="NtN-Yo-jD1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="HfM-r6-FoN"/>
+                <constraint firstItem="6rF-cA-U9t" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="IRT-Zi-J74"/>
+                <constraint firstItem="6rF-cA-U9t" firstAttribute="top" secondItem="ds1-Gz-2KN" secondAttribute="bottom" constant="25" id="NDL-NK-bcl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SfG-Fa-1GV" secondAttribute="trailing" constant="25" id="Oq1-0z-9JU"/>
+                <constraint firstItem="SfG-Fa-1GV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PJ5-gU-qh1"/>
+                <constraint firstItem="ds1-Gz-2KN" firstAttribute="top" secondItem="Ee7-fb-6dF" secondAttribute="bottom" constant="15" id="eKY-dl-k7C"/>
+                <constraint firstItem="ds1-Gz-2KN" firstAttribute="centerX" secondItem="Ee7-fb-6dF" secondAttribute="centerX" id="ho8-as-3xY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NtN-Yo-jD1" secondAttribute="trailing" constant="50" id="j7R-dw-OMD"/>
+                <constraint firstItem="52C-KW-VGF" firstAttribute="trailing" secondItem="Ee7-fb-6dF" secondAttribute="trailing" id="lS2-ds-42W"/>
+                <constraint firstItem="Ee7-fb-6dF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="lqM-KE-PIE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6rF-cA-U9t" secondAttribute="bottom" constant="100" id="pI9-Ns-ex3"/>
+                <constraint firstItem="NtN-Yo-jD1" firstAttribute="top" secondItem="6rF-cA-U9t" secondAttribute="bottom" constant="25" id="tx2-5P-Dms"/>
+            </constraints>
+            <point key="canvasLocation" x="155.60747663551402" y="94.600431965442766"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

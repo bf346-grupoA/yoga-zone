@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditEventDetailViewController" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteEventButton" destination="LFH-oY-FGY" id="2F5-WD-Igu"/>
+                <outlet property="editEventButton" destination="G1j-ma-E59" id="FCg-9j-GdJ"/>
+                <outlet property="eventDateTextField" destination="AHc-jP-Scf" id="fZ8-LH-uzO"/>
+                <outlet property="eventDescriptionTextField" destination="mby-95-PPB" id="ZAd-cI-IIz"/>
+                <outlet property="eventLocalTextField" destination="vG0-WL-cC5" id="Vn9-5d-FsR"/>
+                <outlet property="eventNameTextField" destination="L8O-kx-Sz7" id="tYV-td-93o"/>
+                <outlet property="eventNumberOfParticipantsTextField" destination="5xX-3o-Yuu" id="iaL-XW-aS5"/>
+                <outlet property="eventStartTimeTextField" destination="aFH-kz-cTp" id="74B-4h-bcV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do evento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8O-kx-Sz7" userLabel="Event name">
+                    <rect key="frame" x="30" y="35" width="315" height="50"/>
+                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Mqv-Ir-rax"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data do evento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHc-jP-Scf" userLabel="Event date">
+                    <rect key="frame" x="30" y="100" width="315" height="50"/>
+                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="zeH-iV-DY5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-yY-BhD">
+                    <rect key="frame" x="30" y="165" width="315" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Horário de início" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="aFH-kz-cTp">
+                            <rect key="frame" x="0.0" y="0.0" width="129.5" height="50"/>
+                            <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="hQ1-gz-nfN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número de participantes" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5xX-3o-Yuu">
+                            <rect key="frame" x="133.5" y="0.0" width="181.5" height="50"/>
+                            <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="KOC-Ny-AmQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Local" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vG0-WL-cC5">
+                    <rect key="frame" x="30" y="230" width="315" height="50"/>
+                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vLc-aM-qjh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Descrição e outras informações" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="mby-95-PPB" userLabel="Description">
+                    <rect key="frame" x="30" y="295" width="315" height="150"/>
+                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="bg7-Gc-MSW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1j-ma-E59" userLabel="Edit Button">
+                    <rect key="frame" x="30" y="460" width="315" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="WbU-S8-5bV"/>
+                    </constraints>
+                    <color key="tintColor" red="0.44600826500000001" green="0.40339455010000003" blue="0.79507714510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Editar Evento">
+                        <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="editButtonTapped:" destination="-1" eventType="touchUpInside" id="sCt-sg-xRe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFH-oY-FGY" userLabel="Delete Button">
+                    <rect key="frame" x="30" y="525" width="315" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="dSz-hu-KGH"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Excluir Evento">
+                        <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.83137254901960778" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="deleteButtonTapped:" destination="-1" eventType="touchUpInside" id="Ef8-XF-pgR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vG0-WL-cC5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="21D-CI-Cut"/>
+                <constraint firstItem="LFH-oY-FGY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="4My-qT-4Lx"/>
+                <constraint firstItem="vG0-WL-cC5" firstAttribute="top" secondItem="BtF-yY-BhD" secondAttribute="bottom" constant="15" id="6g7-bj-gZ8"/>
+                <constraint firstItem="AHc-jP-Scf" firstAttribute="top" secondItem="L8O-kx-Sz7" secondAttribute="bottom" constant="15" id="6lp-Lp-gPF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vG0-WL-cC5" secondAttribute="trailing" constant="30" id="7da-0t-vg9"/>
+                <constraint firstItem="mby-95-PPB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="A0w-vJ-Faj"/>
+                <constraint firstItem="G1j-ma-E59" firstAttribute="top" secondItem="mby-95-PPB" secondAttribute="bottom" constant="15" id="Ah3-ly-IaX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G1j-ma-E59" secondAttribute="trailing" constant="30" id="FvX-cR-9GN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L8O-kx-Sz7" secondAttribute="trailing" constant="30" id="IWE-5U-xlv"/>
+                <constraint firstItem="BtF-yY-BhD" firstAttribute="top" secondItem="AHc-jP-Scf" secondAttribute="bottom" constant="15" id="NZG-ge-9dM"/>
+                <constraint firstItem="G1j-ma-E59" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="QGL-wV-ASG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mby-95-PPB" secondAttribute="trailing" constant="30" id="SiH-Zg-Cm2"/>
+                <constraint firstItem="L8O-kx-Sz7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="cRa-Aj-e62"/>
+                <constraint firstItem="mby-95-PPB" firstAttribute="top" secondItem="vG0-WL-cC5" secondAttribute="bottom" constant="15" id="gGF-7R-fm3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LFH-oY-FGY" secondAttribute="trailing" constant="30" id="hlU-KI-Pjp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AHc-jP-Scf" secondAttribute="trailing" constant="30" id="i2f-rB-wFZ"/>
+                <constraint firstAttribute="trailing" secondItem="BtF-yY-BhD" secondAttribute="trailing" constant="30" id="lwH-1r-yO5"/>
+                <constraint firstItem="L8O-kx-Sz7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="nUD-x7-jA2"/>
+                <constraint firstItem="AHc-jP-Scf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="rWR-LA-gM0"/>
+                <constraint firstItem="LFH-oY-FGY" firstAttribute="top" secondItem="G1j-ma-E59" secondAttribute="bottom" constant="15" id="wC4-F0-yTN"/>
+                <constraint firstItem="BtF-yY-BhD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="xk9-bO-WHl"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
