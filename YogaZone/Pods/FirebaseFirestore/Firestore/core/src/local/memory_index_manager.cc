@@ -90,13 +90,15 @@ std::vector<model::FieldIndex> MemoryIndexManager::GetFieldIndexes() {
 }
 
 absl::optional<model::FieldIndex> MemoryIndexManager::GetFieldIndex(
-    const core::Target& target) {
+    core::Target target) {
   (void)target;
   return absl::nullopt;
 }
 
 absl::optional<std::vector<model::DocumentKey>>
-MemoryIndexManager::GetDocumentsMatchingTarget(const core::Target& target) {
+MemoryIndexManager::GetDocumentsMatchingTarget(model::FieldIndex fieldIndex,
+                                               core::Target target) {
+  (void)fieldIndex;
   (void)target;
   return {};
 }

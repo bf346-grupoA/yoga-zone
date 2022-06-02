@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: Lifecycle & Props
 class CardMenuCell: UITableViewCell {
-    weak var delegate: Navigable?
+    weak var delegate: NavigationDelegate?
     
     private let categoryHeaderId = "categoryHeaderId"
     private let headerId = "headerId"

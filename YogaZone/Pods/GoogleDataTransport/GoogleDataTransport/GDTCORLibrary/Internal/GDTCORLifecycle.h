@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
  * library (GDTCORStorage and GDTCORUploadCoordinator instances) will deserialize themselves from
  * and to disk before and after every operation, respectively.
  */
-@interface GDTCORLifecycle : NSObject
+@interface GDTCORLifecycle : NSObject <GDTCORApplicationDelegate>
 
 @end
 
