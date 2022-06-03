@@ -39,40 +39,47 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe sua data de nascimento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NtT-gF-a49">
-                    <rect key="frame" x="30" y="75" width="315" height="34"/>
+                    <rect key="frame" x="30" y="75" width="315" height="50"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Ahc-Zd-gxC"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onde você mora ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJM-AI-IJF">
-                    <rect key="frame" x="30" y="139" width="315" height="21"/>
+                    <rect key="frame" x="30" y="155" width="315" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual seu sexo ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbJ-SQ-C8X">
-                    <rect key="frame" x="30" y="239" width="315" height="21"/>
+                    <rect key="frame" x="30" y="271" width="315" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe sua Cidade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APa-Yv-PfL">
-                    <rect key="frame" x="30" y="180" width="260" height="34"/>
+                    <rect key="frame" x="30" y="196" width="260" height="50"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2g6-jm-vyy"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q76-aL-3Pm">
-                    <rect key="frame" x="298" y="180" width="47" height="34"/>
+                    <rect key="frame" x="298" y="196" width="47" height="50"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Qzr-xJ-b8H"/>
                         <constraint firstAttribute="width" constant="47" id="h6J-6p-VXu"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sr4-oa-yec" userLabel="W">
-                    <rect key="frame" x="100" y="331" width="50" height="50"/>
+                    <rect key="frame" x="100" y="363" width="50" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="FSS-8j-aSV"/>
@@ -86,7 +93,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-5r-py5" userLabel="M">
-                    <rect key="frame" x="225" y="331" width="50" height="50"/>
+                    <rect key="frame" x="225" y="363" width="50" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="CZc-4j-WWs"/>
@@ -100,7 +107,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feminino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSD-AV-6Cv">
-                    <rect key="frame" x="50" y="295" width="137" height="21"/>
+                    <rect key="frame" x="50" y="327" width="137" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="137" id="vml-Fo-PYQ"/>
                     </constraints>
@@ -109,7 +116,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masculino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF1-dh-1J5">
-                    <rect key="frame" x="188" y="295" width="137" height="21"/>
+                    <rect key="frame" x="188" y="327" width="137" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="137" id="rs8-2I-FAd"/>
                     </constraints>
@@ -118,7 +125,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qij-8D-bM8">
-                    <rect key="frame" x="70" y="441" width="235" height="40"/>
+                    <rect key="frame" x="70" y="473" width="235" height="40"/>
                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Cmi-5x-h7g"/>

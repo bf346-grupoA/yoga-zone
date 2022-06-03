@@ -138,7 +138,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func tappedRegisterDone(_ sender: UIButton) {
         self.navigationController?.pushViewController(DoneRegisterVC(), animated: true)
-        
+        UserDefaults.standard.set(true, forKey: "isOnboardingAvaliable")
     }
 }
 

@@ -30,12 +30,7 @@ class UserLevelVC: UIViewController, UIGestureRecognizerDelegate {
     func setupNavigationBar(){
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "arrowVoltar"),
-            style: .plain,
-            target: self,
-            action: #selector(popToPrevious)
-        )
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     
@@ -114,13 +109,3 @@ class UserLevelVC: UIViewController, UIGestureRecognizerDelegate {
         self.tappedLevelButton()
     }
 }
-
-// MARK: Navigation Bar Customization
-extension UserLevelVC {
-    
-    @objc private func popToPrevious() {
-        navigationController?.popViewController(animated: true)
-    }
-    
-}
-    
