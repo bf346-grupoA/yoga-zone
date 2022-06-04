@@ -183,6 +183,10 @@
 		792C66B2282D79CA0018D343 /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792C669B282D79CA0018D343 /* DropDownTwoTableViewCell.xib */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
+		8366B690284BE55F001166D1 /* OboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B68F284BE55F001166D1 /* OboardingService.swift */; };
+		8366B692284BE5D0001166D1 /* BrazilianCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B691284BE5D0001166D1 /* BrazilianCities.swift */; };
+		8366B694284BE739001166D1 /* BrazilianStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B693284BE739001166D1 /* BrazilianStates.swift */; };
+		8366B69B284BF717001166D1 /* OboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B69A284BF717001166D1 /* OboardingViewModel.swift */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
 		8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */; };
 		8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */; };
@@ -377,6 +381,10 @@
 		792C669B282D79CA0018D343 /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
+		8366B68F284BE55F001166D1 /* OboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OboardingService.swift; sourceTree = "<group>"; };
+		8366B691284BE5D0001166D1 /* BrazilianCities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrazilianCities.swift; path = YogaZone/Onboarding/Model/BrazilianCities.swift; sourceTree = SOURCE_ROOT; };
+		8366B693284BE739001166D1 /* BrazilianStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrazilianStates.swift; path = YogaZone/Onboarding/Model/BrazilianStates.swift; sourceTree = SOURCE_ROOT; };
+		8366B69A284BF717001166D1 /* OboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OboardingViewModel.swift; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
@@ -475,7 +483,9 @@
 		2F0C33E327E434DA004A1E8C /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				2F3D0EBD28484ABD00C3446B /* Model */,
+				83DEFCC5284BF91200C95622 /* Model */,
+				8366B697284BF6DC001166D1 /* ViewModel */,
+				8366B68E284BE443001166D1 /* Service */,
 				83C1DBE7282C4DCE00F411F4 /* View */,
 				83C1DBE6282C4DC800F411F4 /* Controller */,
 			);
@@ -654,13 +664,6 @@
 				2F3D0EBB284849ED00C3446B /* FirebaseOperationsDelegate.swift */,
 			);
 			path = FirebaseCommons;
-			sourceTree = "<group>";
-		};
-		2F3D0EBD28484ABD00C3446B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		2F3D0EC32848583800C3446B /* Extensions */ = {
@@ -1234,6 +1237,22 @@
 			path = DropDownTwoTableCell;
 			sourceTree = "<group>";
 		};
+		8366B68E284BE443001166D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8366B68F284BE55F001166D1 /* OboardingService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8366B697284BF6DC001166D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8366B69A284BF717001166D1 /* OboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8391EA4327E820E800F466F2 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1410,6 +1429,15 @@
 				2F79E12727DCF43C0070397F /* Cell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		83DEFCC5284BF91200C95622 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8366B691284BE5D0001166D1 /* BrazilianCities.swift */,
+				8366B693284BE739001166D1 /* BrazilianStates.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9C0AC58147DCC157D9E2E4BF /* Frameworks */ = {
@@ -1639,6 +1667,7 @@
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
 				311B94E52847BB2E003A9C14 /* MyProgressViewModel.swift in Sources */,
 				2F5B66F527ED22A800AC243E /* RegisterButtonCell.swift in Sources */,
+				8366B690284BE55F001166D1 /* OboardingService.swift in Sources */,
 				311B94EA2847D838003A9C14 /* ResultViewModel.swift in Sources */,
 				2F036F8127E429D800993E41 /* EventData.swift in Sources */,
 				2F5B66FB27ED22A800AC243E /* ResetPasswordCell.swift in Sources */,
@@ -1690,6 +1719,7 @@
 				792C66A2282D79CA0018D343 /* LevelAndDurationVC.swift in Sources */,
 				2F0C341F27E4384E004A1E8C /* BreathingHomeViewController.swift in Sources */,
 				2F412ED727E41821007708E8 /* PracticeViewController.swift in Sources */,
+				8366B692284BE5D0001166D1 /* BrazilianCities.swift in Sources */,
 				2F0C33F927E434DA004A1E8C /* UserLevelVC.swift in Sources */,
 				792C66AC282D79CA0018D343 /* TrainingCustomCell.swift in Sources */,
 				2F412EB927E4101E007708E8 /* CardCell.swift in Sources */,
@@ -1707,6 +1737,7 @@
 				2F036F7727E429D800993E41 /* EventFilterViewController.swift in Sources */,
 				2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
+				8366B69B284BF717001166D1 /* OboardingViewModel.swift in Sources */,
 				2F3D0EB9284849BA00C3446B /* AlertController.swift in Sources */,
 				2F3D0ED22848696500C3446B /* RegisterViewController.swift in Sources */,
 				792C66A3282D79CA0018D343 /* TrainingPausedVC.swift in Sources */,
@@ -1714,6 +1745,7 @@
 				839A06AF282DB07100C797EC /* TrainingData.swift in Sources */,
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* FormFieldCell.swift in Sources */,
+				8366B694284BE739001166D1 /* BrazilianStates.swift in Sources */,
 				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */,

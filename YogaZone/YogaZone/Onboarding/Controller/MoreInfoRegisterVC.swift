@@ -8,7 +8,6 @@
 import UIKit
 
 class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
-
     
     @IBOutlet weak var ageLabel: UILabel!
     
@@ -24,7 +23,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var cityTextField: UITextField!
     
-    @IBOutlet weak var ufTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
     
     @IBOutlet weak var btnWoman: UIButton!
     
@@ -33,17 +32,22 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var registerDoneBtn: UIButton!
     
     let radioController: RadioButtonController = RadioButtonController()
-    	
+    let onboardingViewModel:OnboardingViewModel = OnboardingViewModel()
+    let test = ["a","b","c","d"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         createDatePicker()
+        loadStateData()
         setupUI()
         setupRadioButton()
+        
     }
     
-    // MARK: DatePicker Implementation
+    // MARK: UIPickers Implementation
     let datePicker = UIDatePicker()
+    let pickerView = UIPickerView()
     
     func createToolBar() -> UIToolbar{
         let toolbar = UIToolbar()
@@ -51,6 +55,19 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
         toolbar.setItems([doneButton], animated: true)
         return toolbar
+    }
+    
+    func loadStateData(){
+        self.onboardingViewModel.delegate(delegate: self)
+        self.onboardingViewModel.getRequestBrazilianState()
+    }
+    
+    func configStatePickerView(){
+        self.pickerView.delegate = self
+        self.pickerView.dataSource = self
+        self.stateTextField.inputView = pickerView
+        self.stateTextField.textAlignment = .center
+        self.stateTextField.inputAccessoryView = createToolBar()
     }
     
     func createDatePicker() {
@@ -80,16 +97,16 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     // MARK: SetupUI
     func configRegisterDoneButton(){
         var containerTitle = AttributeContainer()
-            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
         var config = UIButton.Configuration.filled()
-            config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
-            config.baseForegroundColor = .white
-            config.attributedTitle = AttributedString("Avançar", attributes: containerTitle)
+        config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        config.baseForegroundColor = .white
+        config.attributedTitle = AttributedString("Avançar", attributes: containerTitle)
         
         self.registerDoneBtn.configuration = config
         self.registerDoneBtn.layer.cornerRadius = 8
-
+        
     }
     
     func configLabels(){
@@ -108,7 +125,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     func configTextFields(){
         self.ageTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.cityTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.ufTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.stateTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
     }
     
     func setupUI(){
@@ -147,4 +164,46 @@ extension MoreInfoRegisterVC {
     @objc private func popToPrevious() {
         navigationController?.popViewController(animated: true)
     }
+}
+
+extension MoreInfoRegisterVC: UIPickerViewDelegate, UIPickerViewDataSource{
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.onboardingViewModel.countTotalStates
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.onboardingViewModel.getLoadedStates(row: row)
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        stateTextField.text = self.onboardingViewModel.getLoadedStates(row: row)
+    }
+    
+}
+
+extension MoreInfoRegisterVC: OnboardingViewModelDelegate {
+    
+    func error(error: Error) {
+        DispatchQueue.main.async {
+            let dialogMessage = UIAlertController(title: "Atenção", message: "Erro ao carregar dados dos estados. Por favor tente novamente.", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            })
+            dialogMessage.addAction(ok)
+            self.present(dialogMessage, animated: true, completion: nil)
+            print(error)
+        }
+        
+    }
+    
+    func success() {
+        DispatchQueue.main.async {
+            self.configStatePickerView()
+        }
+    }
+    
 }
