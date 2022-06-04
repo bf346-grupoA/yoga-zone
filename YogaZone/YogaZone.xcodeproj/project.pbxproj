@@ -160,6 +160,8 @@
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
 		31A83954284BBCBA0027987A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83953284BBCBA0027987A /* LoginView.swift */; };
 		31A83956284BBCE20027987A /* LoginViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83955284BBCE20027987A /* LoginViewControllerX.swift */; };
+		31A8395B284BE0130027987A /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A8395A284BE0130027987A /* ResetPasswordView.swift */; };
+		31A83962284BE7A80027987A /* ResetPasswordViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */; };
 		759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */; };
 		792C669C282D79CA0018D343 /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667F282D79CA0018D343 /* RenderGIF.swift */; };
 		792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6680282D79CA0018D343 /* MakeDropDown.swift */; };
@@ -357,6 +359,8 @@
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31A83953284BBCBA0027987A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		31A83955284BBCE20027987A /* LoginViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerX.swift; sourceTree = "<group>"; };
+		31A8395A284BE0130027987A /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewControllerX.swift; sourceTree = "<group>"; };
 		792C667F282D79CA0018D343 /* RenderGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderGIF.swift; sourceTree = "<group>"; };
 		792C6680282D79CA0018D343 /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
 		792C6681282D79CA0018D343 /* TrainingFinishedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingFinishedVC.swift; sourceTree = "<group>"; };
@@ -1124,6 +1128,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				31A8395E284BE1690027987A /* ResetPassword */,
 				31A83950284BBC080027987A /* LoginX */,
 				2F3D0EC628485B6D00C3446B /* Register */,
 				2F3D0EB62848498500C3446B /* Commons */,
@@ -1176,6 +1181,31 @@
 				31A83955284BBCE20027987A /* LoginViewControllerX.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		31A8395E284BE1690027987A /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				31A83960284BE1840027987A /* View */,
+				31A8395F284BE1760027987A /* ViewController */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		31A8395F284BE1760027987A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		31A83960284BE1840027987A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31A8395A284BE0130027987A /* ResetPasswordView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		792C667D282D79CA0018D343 /* Training */ = {
@@ -1741,6 +1771,7 @@
 				31A83956284BBCE20027987A /* LoginViewControllerX.swift in Sources */,
 				2F3D0EB9284849BA00C3446B /* AlertController.swift in Sources */,
 				2F3D0ED22848696500C3446B /* RegisterViewController.swift in Sources */,
+				31A8395B284BE0130027987A /* ResetPasswordView.swift in Sources */,
 				792C66A3282D79CA0018D343 /* TrainingPausedVC.swift in Sources */,
 				2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */,
 				839A06AF282DB07100C797EC /* TrainingData.swift in Sources */,
@@ -1749,6 +1780,7 @@
 				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */,
+				31A83962284BE7A80027987A /* ResetPasswordViewControllerX.swift in Sources */,
 				2F5B670027ED22A800AC243E /* SeparatorCell.swift in Sources */,
 				2F83C79C282A0A0C00EC3334 /* ResultViewController.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,

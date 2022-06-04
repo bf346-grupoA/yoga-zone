@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewControllerX: UIViewController {
     
     var loginView: LoginView?
+    var auth: Auth?
+    var alert: AlertController?
     
     override func loadView() {
         self.loginView = LoginView()
@@ -20,7 +23,9 @@ class LoginViewControllerX: UIViewController {
         super.viewDidLoad()
         self.loginView?.configTextFieldDelegate(delegate: self)
         self.loginView?.delegate(delegate: self)
-      
+        self.auth = Auth.auth()
+        self.alert = AlertController(controller: self)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,9 +38,20 @@ class LoginViewControllerX: UIViewController {
 extension LoginViewControllerX: LoginViewProtocol {
     
     func actionSignInButton() {
-//       let vc = UIStoryboard(name:
-//       "HomeViewController", bundle: nil).instantiateViewController (withIdentifier: "HomeViewController") as? HomeViewController
-        self.navigationController?.pushViewController(HomeViewController() , animated: true)
+        guard let login = loginView else {return}
+        auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { user, error in
+            
+            if error != nil {
+                self.alert?.setup(title: "Ops", message: "E-mail e/ou senha incorretos!", okText: "Ok")
+            }else{
+                if user == nil {
+                    self.alert?.setup(title: "Ops", message: "Algo deu errado, tente novamente!", okText: "Ok")
+                }else{
+                    let vc = HomeViewController()
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+        })
     }
     
     func actionSignUpButton() {
@@ -44,8 +60,8 @@ extension LoginViewControllerX: LoginViewProtocol {
     }
     
     func actionforgotPasswordButton() {
-//        let vc: PasswordChangeViewController = PasswordChangeViewController()
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = ResetPasswordViewControllerX()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

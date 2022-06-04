@@ -39,6 +39,7 @@ class LoginView: UIView {
         textField.layer.cornerRadius = 7
         textField.layer.borderColor = CGColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)
         textField.layer.borderWidth = 1.0
+        textField.autocapitalizationType = .none
         textField.keyboardType = .emailAddress
         textField.placeholder = "E-mail"
         textField.textColor = .darkGray
@@ -54,6 +55,7 @@ class LoginView: UIView {
         textField.layer.cornerRadius = 7
         textField.layer.borderColor = CGColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)
         textField.layer.borderWidth = 1.0
+        textField.autocapitalizationType = .none
         textField.keyboardType = .default
         textField.isSecureTextEntry = true
         textField.placeholder = "Senha"
@@ -126,6 +128,15 @@ class LoginView: UIView {
         self.emailTextField.delegate = delegate
         self.passwordTextField.delegate = delegate
     }
+    
+    public func getEmail()->String {
+        return emailTextField.text ?? ""
+    }
+    
+    public func getPassword()->String {
+        return passwordTextField.text ?? ""
+    }
+    
     
     public func validateTextField() {
         if emailTextField.text != "" && passwordTextField.text != "" {
