@@ -10,5 +10,6 @@ target 'YogaZone' do
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 pod 'FirebaseAuth'
+pod 'TransitionButton'
 
 end

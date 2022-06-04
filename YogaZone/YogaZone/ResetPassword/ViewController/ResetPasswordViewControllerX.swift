@@ -46,11 +46,20 @@ extension ResetPasswordViewControllerX: ResetPassowrdViewProtocol {
     
     func forgotPassword() {
         guard let resetPassword = resetPassword else {return}
+        
         auth?.sendPasswordReset(withEmail: resetPassword.getEmail(), completion: { error in
-            if let error = error {
-                self.alert?.setup(title: "Ops", message: error.localizedDescription, okText: "Ok")
+            
+            if error != nil{
+                self.alert?.setup(title: "Ops", message: "Algo deu errado, tente novamente!" , okText: "Ok")
+                return
             }
-            self.alert?.setup(title: "Sucesso", message: "E-mail enviado com sucesso, verifique sua caixa de e-mail/spam!", okText: "Ok")
+            
+            self.resetPassword?.sendButton.startAnimation()
+            DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                self.resetPassword?.sendButton.stopAnimation(animationStyle: .normal, revertAfterDelay: 0) {
+                    self.alert?.setup(title: "Sucesso", message: "E-mail enviado com sucesso, verifique sua caixa de e-mail/spam!", okText: "Ok")
+                }
+            }
         })
     }
     
@@ -83,3 +92,4 @@ extension ResetPasswordViewControllerX: UITextFieldDelegate {
     
 
  
+        

@@ -47,8 +47,14 @@ extension LoginViewControllerX: LoginViewProtocol {
                 if user == nil {
                     self.alert?.setup(title: "Ops", message: "Algo deu errado, tente novamente!", okText: "Ok")
                 }else{
-                    let vc = HomeViewController()
-                    self.navigationController?.pushViewController(vc, animated: true)
+                    self.loginView?.signInButton.startAnimation()
+                    DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                        self.loginView?.signInButton.stopAnimation(animationStyle: .normal, revertAfterDelay: 0) {
+                            let vc = HomeViewController()
+                            self.navigationController?.pushViewController(vc, animated: true)
+                        }
+                    }
+                    
                 }
             }
         })

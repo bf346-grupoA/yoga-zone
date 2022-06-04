@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TransitionButton
 
 protocol LoginViewProtocol: AnyObject {
     func actionSignInButton()
@@ -73,8 +74,8 @@ class LoginView: UIView {
         return button
     }()
     
-    lazy var signInButton: UIButton = {
-        let button = UIButton()
+    lazy var signInButton: TransitionButton = {
+        let button = TransitionButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
         button.layer.cornerRadius = 7
@@ -83,6 +84,7 @@ class LoginView: UIView {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0), for: .normal)
         button.addTarget(self, action: #selector(self.didTapSignInButton), for: .touchUpInside)
+        button.spinnerColor = .white
         return button
     }()
     

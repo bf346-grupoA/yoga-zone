@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TransitionButton
 
 protocol ResetPassowrdViewProtocol: AnyObject {
     func tappedBackButtonAction()
@@ -65,8 +66,8 @@ class ResetPasswordView: UIView {
         return label
     }()
     
-    lazy var sendButton: UIButton = {
-        let button = UIButton()
+    lazy var sendButton: TransitionButton = {
+        let button = TransitionButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
         button.layer.cornerRadius = 7
@@ -139,9 +140,8 @@ class ResetPasswordView: UIView {
     @objc private func didTapSendButton() {
         self.delegate?.forgotPassword()
     }
-    
-    
-    
+
+
     private func setUpConstraints() {
         
         NSLayoutConstraint.activate([
