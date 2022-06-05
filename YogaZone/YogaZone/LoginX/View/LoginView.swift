@@ -47,14 +47,7 @@ class LoginView: UIView {
         return textField
     }()
     
-//    lazy var eyeImageView:UIImageView = {
-//        let image = UIImageView()
-//        image.translatesAutoresizingMaskIntoConstraints = false
-//        image.image = UIImage(named: "eye")
-//        image.contentView.frame = CGRect(x: 0, y: 0, width: UIImage(named: "eyeSlash")!.size.width height:UIImage)
-//        image.contentMode = .scaleAspectFit
-//        return image
-//    }()
+
     
     lazy var passwordTextField: UITextField = {
         let textField = UITextField()
@@ -71,6 +64,15 @@ class LoginView: UIView {
         textField.placeholder = Constants.passwordPlaceholder.rawValue
         textField.textColor = .darkGray
         return textField
+    }()
+    
+    lazy var eyeImageView:UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.image = UIImage(named: "eye")
+        image.contentView.frame = CGRect(x: 0, y: 0, width: UIImage(named: "eyeSlash")!.size.width height:UIImage)
+        image.contentMode = .scaleAspectFit
+        return image
     }()
     
     lazy var forgotPasswordButton: UIButton = {
