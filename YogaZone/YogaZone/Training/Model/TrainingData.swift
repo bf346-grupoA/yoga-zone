@@ -27,7 +27,7 @@ let trainingListMock = """
       {
         "id": 4,
         "exercise": "Curvatura Frente",
-        "seconds": 60,
+        "seconds":60,
       },
       {
         "id": 5,

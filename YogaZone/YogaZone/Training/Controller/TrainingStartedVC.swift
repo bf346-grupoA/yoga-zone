@@ -25,7 +25,7 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     var exercicesData: [ExercicesModel] = []
     
     var timer = Timer()
-    var seconds = 6
+    var seconds = 61
     var isTimerRunning = false
     var resumeTapped = false
     
@@ -90,7 +90,7 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
                 navigationController?.pushViewController(vc, animated: true)
             } else {
                 timer.invalidate()
-                seconds = 6
+                seconds = 61
                 updateTimer()
                 runTimer()
                 self.nextExercise()
