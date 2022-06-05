@@ -36,8 +36,6 @@ class ResetPasswordViewControllerX: UIViewController {
     
 }
 
-//MARK: - LoginScreenProtocol
-
 extension ResetPasswordViewControllerX: ResetPassowrdViewProtocol {
     func tappedBackButtonAction() {
         let vc = LoginViewControllerX()

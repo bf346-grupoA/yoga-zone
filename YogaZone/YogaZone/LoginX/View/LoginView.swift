@@ -47,6 +47,15 @@ class LoginView: UIView {
         return textField
     }()
     
+//    lazy var eyeImageView:UIImageView = {
+//        let image = UIImageView()
+//        image.translatesAutoresizingMaskIntoConstraints = false
+//        image.image = UIImage(named: "eye")
+//        image.contentView.frame = CGRect(x: 0, y: 0, width: UIImage(named: "eyeSlash")!.size.width height:UIImage)
+//        image.contentMode = .scaleAspectFit
+//        return image
+//    }()
+    
     lazy var passwordTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
@@ -70,7 +79,7 @@ class LoginView: UIView {
         button.setTitle(Constants.forgotPassword.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         button.setTitleColor(UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0), for: .normal)
-        button.addTarget(self, action: #selector(self.didTapforgotPasswordButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.tappedForgotPasswordButton), for: .touchUpInside)
         return button
     }()
     
@@ -83,7 +92,7 @@ class LoginView: UIView {
         button.setTitle(Constants.enter.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0), for: .normal)
-        button.addTarget(self, action: #selector(self.didTapSignInButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.tappedJoinInButton), for: .touchUpInside)
         button.spinnerColor = .white
         return button
     }()
@@ -96,7 +105,7 @@ class LoginView: UIView {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.layer.cornerRadius = 7
         button.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0), for: .normal)
-        button.addTarget(self, action: #selector(self.didTapSignUpButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.tappedSubscribeButton), for: .touchUpInside)
         return button
     }()
     
@@ -158,15 +167,15 @@ class LoginView: UIView {
         }
     }
     
-    @objc private func didTapSignInButton() {
+    @objc private func tappedJoinInButton() {
         self.delegate?.joinButtonAction()
     }
     
-    @objc private func didTapSignUpButton() {
+    @objc private func tappedSubscribeButton() {
         self.delegate?.subscribeButtonAction()
     }
     
-    @objc private func didTapforgotPasswordButton() {
+    @objc private func tappedForgotPasswordButton() {
         self.delegate?.forgotPasswordButtonAction()
     }
     
