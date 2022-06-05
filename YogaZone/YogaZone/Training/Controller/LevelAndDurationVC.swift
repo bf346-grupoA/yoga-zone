@@ -89,34 +89,19 @@ class LevelAndDurationVC: UIViewController, UIGestureRecognizerDelegate {
     
     //MARK: - Populate Data
     func populateDropDownArrays(){
-        
             let durationModel1 = DurationModel(durationName: "10 minutos")
-            let durationModel2 = DurationModel(durationName: "15 minutos")
-            let durationModel3 = DurationModel(durationName: "20 minutos")
-            let durationModel4 = DurationModel(durationName: "25 minutos")
-
             let levelModel1 = LevelModel(levelName: "Iniciante")
-            let levelModel2 = LevelModel(levelName: "Pouco Experiente")
-            let levelModel3 = LevelModel(levelName: "Intermediário")
-            let levelModel4 = LevelModel(levelName: "Guru")
-              
+
             self.durationArr.append(durationModel1)
-            self.durationArr.append(durationModel2)
-            self.durationArr.append(durationModel3)
-            self.durationArr.append(durationModel4)
-        
             self.levelArr.append(levelModel1)
-            self.levelArr.append(levelModel2)
-            self.levelArr.append(levelModel3)
-            self.levelArr.append(levelModel4)
     }
     
     //MARK: - Selector Methods
     @objc func durationNameLabelTapped(){
-        self.durationDropDown.showDropDown(height: self.dropDownRowHeight * 4)
+        self.durationDropDown.showDropDown(height: self.dropDownRowHeight * 1)
     }
     @objc func levelNameLabelTapped(){
-        self.levelDropDown.showDropDown(height: self.dropDownRowHeight * 4)
+        self.levelDropDown.showDropDown(height: self.dropDownRowHeight * 1)
     }
     
     //MARK: - SetupUI
@@ -130,18 +115,15 @@ class LevelAndDurationVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     func configSeeTrainButton(){
-        var containerTitle = AttributeContainer()
-            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        
-        var config = UIButton.Configuration.filled()
-            config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
-            config.baseForegroundColor = .white
-            config.cornerStyle = .capsule
-            config.attributedTitle = AttributedString("Ver Treino", attributes: containerTitle)
-        
-        self.seeTrainButton.configuration = config
+        self.seeTrainButton.configuration = nil
+        self.seeTrainButton.setTitle("Ver Treino", for: .normal)
+        self.seeTrainButton.setTitleColor(.white, for: .normal)
+        self.seeTrainButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.seeTrainButton.backgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        self.seeTrainButton.layer.cornerRadius = 26
+        self.seeTrainButton.isEnabled = false
     }
-    
+
     func setupUI(){
         self.configLabels()
         self.configSeeTrainButton()
@@ -186,7 +168,7 @@ extension LevelAndDurationVC: MakeDropDownDataSourceProtocol{
             self.durationNameLabel.text = self.durationArr[indexPos].durationName
             self.durationDropDown.hideDropDown()
         }else{
-            self.levelNameLabel.text = levelArr[indexPos].levelName
+            self.levelNameLabel.text = self.levelArr[indexPos].levelName
             self.levelDropDown.hideDropDown()
         }
     }
