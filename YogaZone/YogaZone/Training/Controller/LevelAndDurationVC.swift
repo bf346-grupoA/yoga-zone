@@ -171,6 +171,17 @@ extension LevelAndDurationVC: MakeDropDownDataSourceProtocol{
             self.levelNameLabel.text = self.levelArr[indexPos].levelName
             self.levelDropDown.hideDropDown()
         }
+        teste()
+        
+    }
+    
+    func teste(){
+        if durationNameLabel.text != "Duração" &&
+            levelNameLabel.text != "Nivel" {
+            self.seeTrainButton.isEnabled = true
+        } else {
+            self.seeTrainButton.isEnabled = false
+        }
     }
 }
 
