@@ -33,21 +33,22 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     let radioController: RadioButtonController = RadioButtonController()
     let onboardingViewModel:OnboardingViewModel = OnboardingViewModel()
-    let test = ["a","b","c","d"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
+        configStatePickerView()
+        configCityPickerView()
         createDatePicker()
         loadStateData()
         setupUI()
         setupRadioButton()
-        
     }
     
     // MARK: UIPickers Implementation
     let datePicker = UIDatePicker()
-    let pickerView = UIPickerView()
+    let statePickerView = UIPickerView()
+    let cityPickerView = UIPickerView()
     
     func createToolBar() -> UIToolbar{
         let toolbar = UIToolbar()
@@ -63,11 +64,25 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     func configStatePickerView(){
-        self.pickerView.delegate = self
-        self.pickerView.dataSource = self
-        self.stateTextField.inputView = pickerView
+        self.statePickerView.delegate = self
+        self.statePickerView.dataSource = self
+        
+        self.stateTextField.inputView = statePickerView
         self.stateTextField.textAlignment = .center
         self.stateTextField.inputAccessoryView = createToolBar()
+        self.stateTextField.isEnabled = false
+        self.stateTextField.isUserInteractionEnabled = false
+    }
+    
+    func configCityPickerView(){
+        self.cityPickerView.delegate = self
+        self.cityPickerView.dataSource = self
+        
+        self.cityTextField.inputView = cityPickerView
+        self.cityTextField.textAlignment = .center
+        self.cityTextField.inputAccessoryView = createToolBar()
+        self.cityTextField.isEnabled = false
+        self.cityTextField.isUserInteractionEnabled = false
     }
     
     func createDatePicker() {
@@ -95,7 +110,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     // MARK: SetupUI
-    func configRegisterDoneButton(){
+    func configRegisterDoneButtonEnabled(){
         var containerTitle = AttributeContainer()
         containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
@@ -106,6 +121,22 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         
         self.registerDoneBtn.configuration = config
         self.registerDoneBtn.layer.cornerRadius = 8
+        self.registerDoneBtn.isEnabled = true
+        
+    }
+    
+    func configRegisterDoneButtonDisabled(){
+        var containerTitle = AttributeContainer()
+        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
+        var config = UIButton.Configuration.filled()
+        config.baseBackgroundColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
+        config.baseForegroundColor = .white
+        config.attributedTitle = AttributedString("Avançar", attributes: containerTitle)
+        
+        self.registerDoneBtn.configuration = config
+        self.registerDoneBtn.layer.cornerRadius = 8
+        self.registerDoneBtn.isEnabled = false
         
     }
     
@@ -125,11 +156,11 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     func configTextFields(){
         self.ageTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.cityTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.stateTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.stateTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)        
     }
     
     func setupUI(){
-        configRegisterDoneButton()
+        configRegisterDoneButtonDisabled()
         configLabels()
         configTextFields()
     }
@@ -173,15 +204,49 @@ extension MoreInfoRegisterVC: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return self.onboardingViewModel.countTotalStates
+        if pickerView == self.statePickerView {
+            return self.onboardingViewModel.countTotalStates
+        } else if pickerView == self.cityPickerView {
+            return self.onboardingViewModel.countTotalCities
+        } else {
+            return 0
+        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return self.onboardingViewModel.getLoadedStates(row: row)
+        if pickerView == self.statePickerView {
+            return self.onboardingViewModel.getLoadedStates(row: row)
+        } else if pickerView == self.cityPickerView {
+            return self.onboardingViewModel.getLoadedCities(row: row)
+        } else {
+            return ""
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        stateTextField.text = self.onboardingViewModel.getLoadedStates(row: row)
+        var state = ""
+        
+        if pickerView == self.statePickerView {
+            state = self.onboardingViewModel.getLoadedStates(row: row)
+            stateTextField.text = state
+            if stateTextField.text != "" {
+                self.cityTextField.isUserInteractionEnabled = true
+                self.cityTextField.isEnabled = true
+                self.onboardingViewModel.getRequestBrazilianCity(state: state)
+            }
+        } else if pickerView == self.cityPickerView {
+            cityTextField.text = self.onboardingViewModel.getLoadedCities(row: row)
+        }
+        
+        if self.ageTextField.text != "" &&
+            self.stateTextField.text != "" &&
+            self.cityTextField.text != "" {
+            configRegisterDoneButtonEnabled()
+        } else {
+            configRegisterDoneButtonDisabled()
+        }
+        
     }
     
 }
@@ -190,7 +255,7 @@ extension MoreInfoRegisterVC: OnboardingViewModelDelegate {
     
     func error(error: Error) {
         DispatchQueue.main.async {
-            let dialogMessage = UIAlertController(title: "Atenção", message: "Erro ao carregar dados dos estados. Por favor tente novamente.", preferredStyle: .alert)
+            let dialogMessage = UIAlertController(title: "Atenção", message: "Erro ao carregar dados das regiões. Por favor tente novamente.", preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             })
             dialogMessage.addAction(ok)
@@ -200,10 +265,22 @@ extension MoreInfoRegisterVC: OnboardingViewModelDelegate {
         
     }
     
-    func success() {
-        DispatchQueue.main.async {
-            self.configStatePickerView()
+    func success(serviceType: serviceType) {
+        
+        if serviceType == .getState {
+            DispatchQueue.main.async {
+                self.stateTextField.isEnabled = true
+                self.stateTextField.isUserInteractionEnabled = true
+            }
         }
+        
+        if serviceType == .getCity {
+            DispatchQueue.main.async {
+                self.cityTextField.isEnabled = true
+                self.cityTextField.isUserInteractionEnabled = true
+            }
+        }
+        
     }
     
 }
