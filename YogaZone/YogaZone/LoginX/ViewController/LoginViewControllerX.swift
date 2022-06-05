@@ -33,11 +33,9 @@ class LoginViewControllerX: UIViewController {
     }
 }
 
-//MARK: - LoginScreenProtocol
-
 extension LoginViewControllerX: LoginViewProtocol {
     
-    func actionSignInButton() {
+    func joinButtonAction() {
         guard let login = loginView else {return}
         auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { user, error in
             
@@ -47,9 +45,9 @@ extension LoginViewControllerX: LoginViewProtocol {
                 if user == nil {
                     self.alert?.setup(title: "Ops", message: "Algo deu errado, tente novamente!", okText: "Ok")
                 }else{
-                    self.loginView?.signInButton.startAnimation()
+                    self.loginView?.joinButton.startAnimation()
                     DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-                        self.loginView?.signInButton.stopAnimation(animationStyle: .normal, revertAfterDelay: 0) {
+                        self.loginView?.joinButton.stopAnimation(animationStyle: .normal, revertAfterDelay: 0) {
                             let vc = HomeViewController()
                             self.navigationController?.pushViewController(vc, animated: true)
                         }
@@ -60,18 +58,15 @@ extension LoginViewControllerX: LoginViewProtocol {
         })
     }
     
-    func actionSignUpButton() {
-//        let vc: SignUpViewController = SignUpViewController()
-//        self.navigationController?.pushViewController(vc, animated: true)
+    func subscribeButtonAction() {
+ //TODO: nao estou conseguindo fazer a chamada para o fluxo de Register 
     }
     
-    func actionforgotPasswordButton() {
+    func forgotPasswordButtonAction() {
         let vc = ResetPasswordViewControllerX()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
-
-//MARK: - UITextFieldDelegate
 
 extension LoginViewControllerX: UITextFieldDelegate {
     

@@ -9,9 +9,9 @@ import UIKit
 import TransitionButton
 
 protocol LoginViewProtocol: AnyObject {
-    func actionSignInButton()
-    func actionSignUpButton()
-    func actionforgotPasswordButton()
+    func joinButtonAction()
+    func subscribeButtonAction()
+    func forgotPasswordButtonAction()
 }
 
 class LoginView: UIView {
@@ -23,7 +23,7 @@ class LoginView: UIView {
     }
     
     
-    lazy var logoAppImageView:UIImageView = {
+    lazy var appImageView:UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(named: "Logo")
@@ -74,7 +74,7 @@ class LoginView: UIView {
         return button
     }()
     
-    lazy var signInButton: TransitionButton = {
+    lazy var joinButton: TransitionButton = {
         let button = TransitionButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
@@ -88,7 +88,7 @@ class LoginView: UIView {
         return button
     }()
     
-    lazy var signUpButton: UIButton = {
+    lazy var subscribeButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor(red: 228/255, green: 228/255, blue: 236/255, alpha: 1.0)
@@ -118,12 +118,12 @@ class LoginView: UIView {
     
     private func addSubView() {
 
-        self.addSubview(self.logoAppImageView)
+        self.addSubview(self.appImageView)
         self.addSubview(self.emailTextField)
         self.addSubview(self.passwordTextField)
         self.addSubview(self.forgotPasswordButton)
-        self.addSubview(self.signInButton)
-        self.addSubview(self.signUpButton)
+        self.addSubview(self.joinButton)
+        self.addSubview(self.subscribeButton)
     }
     
     public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
@@ -150,24 +150,24 @@ class LoginView: UIView {
     
     private func enableButton(_ enable: Bool) {
         if enable {
-            self.signInButton.isEnabled = true
-            self.signInButton.setTitleColor(.white, for: .normal)
+            self.joinButton.isEnabled = true
+            self.joinButton.setTitleColor(.white, for: .normal)
         } else {
-            self.signInButton.isEnabled = false
-            self.signInButton.setTitleColor(.lightGray, for: .normal)
+            self.joinButton.isEnabled = false
+            self.joinButton.setTitleColor(.lightGray, for: .normal)
         }
     }
     
     @objc private func didTapSignInButton() {
-        self.delegate?.actionSignInButton()
+        self.delegate?.joinButtonAction()
     }
     
     @objc private func didTapSignUpButton() {
-        self.delegate?.actionSignUpButton()
+        self.delegate?.subscribeButtonAction()
     }
     
     @objc private func didTapforgotPasswordButton() {
-        self.delegate?.actionforgotPasswordButton()
+        self.delegate?.forgotPasswordButtonAction()
     }
     
     private func setUpConstraints() {
@@ -175,12 +175,12 @@ class LoginView: UIView {
         NSLayoutConstraint.activate([
             
             
-            self.logoAppImageView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 60),
-            self.logoAppImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
-            self.logoAppImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
-            self.logoAppImageView.heightAnchor.constraint(equalToConstant: 80),
+            self.appImageView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 60),
+            self.appImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
+            self.appImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
+            self.appImageView.heightAnchor.constraint(equalToConstant: 80),
             
-            self.emailTextField.topAnchor.constraint(equalTo: self.logoAppImageView.bottomAnchor, constant: 20),
+            self.emailTextField.topAnchor.constraint(equalTo: self.appImageView.bottomAnchor, constant: 20),
             self.emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             self.emailTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             self.emailTextField.heightAnchor.constraint(equalToConstant: 50),
@@ -193,15 +193,15 @@ class LoginView: UIView {
             self.forgotPasswordButton.topAnchor.constraint(equalTo: self.passwordTextField.bottomAnchor, constant: 20),
             self.forgotPasswordButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             
-            self.signInButton.topAnchor.constraint(equalTo: self.forgotPasswordButton.bottomAnchor, constant: 20),
-            self.signInButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
-            self.signInButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-            self.signInButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
+            self.joinButton.topAnchor.constraint(equalTo: self.forgotPasswordButton.bottomAnchor, constant: 20),
+            self.joinButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
+            self.joinButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
+            self.joinButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
             
-            self.signUpButton.topAnchor.constraint(equalTo: self.signInButton.bottomAnchor, constant: 10),
-            self.signUpButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
-            self.signUpButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-            self.signUpButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor)
+            self.subscribeButton.topAnchor.constraint(equalTo: self.joinButton.bottomAnchor, constant: 10),
+            self.subscribeButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
+            self.subscribeButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
+            self.subscribeButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor)
         ])
     }
 }
