@@ -50,14 +50,14 @@ extension ResetPasswordViewControllerX: ResetPassowrdViewProtocol {
         auth?.sendPasswordReset(withEmail: resetPassword.getEmail(), completion: { error in
             
             if error != nil{
-                self.alert?.setup(title: "Ops", message: "Algo deu errado, tente novamente!" , okText: "Ok")
+                self.alert?.setup(title: Constants.ops.rawValue, message: Constants.somethingWrong.rawValue, okText: Constants.ok.rawValue)
                 return
             }
             
             self.resetPassword?.sendButton.startAnimation()
             DispatchQueue.main.asyncAfter(deadline: .now()+1) {
                 self.resetPassword?.sendButton.stopAnimation(animationStyle: .normal, revertAfterDelay: 0) {
-                    self.alert?.setup(title: "Sucesso", message: "E-mail enviado com sucesso, verifique sua caixa de e-mail/spam!", okText: "Ok")
+                    self.alert?.setup(title: Constants.sucess.rawValue, message: Constants.sentEmail.rawValue, okText: Constants.ok.rawValue)
                 }
             }
         })

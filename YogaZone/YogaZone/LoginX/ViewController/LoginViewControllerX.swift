@@ -40,10 +40,10 @@ extension LoginViewControllerX: LoginViewProtocol {
         auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { user, error in
             
             if error != nil {
-                self.alert?.setup(title: "Ops", message: "E-mail e/ou senha incorretos!", okText: "Ok")
+                self.alert?.setup(title: Constants.ops.rawValue, message: Constants.wrongPasswordEmail.rawValue, okText: Constants.ok.rawValue)
             }else{
                 if user == nil {
-                    self.alert?.setup(title: "Ops", message: "Algo deu errado, tente novamente!", okText: "Ok")
+                    self.alert?.setup(title: Constants.ops.rawValue, message: Constants.somethingWrong.rawValue, okText: Constants.ok.rawValue)
                 }else{
                     self.loginView?.joinButton.startAnimation()
                     DispatchQueue.main.asyncAfter(deadline: .now()+1) {
