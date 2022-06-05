@@ -82,6 +82,7 @@ class LoginView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
         button.cornerRadius = 7
+        button.layer.cornerRadius = 7
         button.clipsToBounds = true
         button.setTitle(Constants.enter.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
@@ -97,7 +98,7 @@ class LoginView: UIView {
         button.backgroundColor = UIColor(red: 228/255, green: 228/255, blue: 236/255, alpha: 1.0)
         button.setTitle(Constants.noAccount.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        button.cornerRadius = 7
+        button.layer.cornerRadius = 7
         button.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0), for: .normal)
         button.addTarget(self, action: #selector(self.tappedSubscribeButton), for: .touchUpInside)
         return button

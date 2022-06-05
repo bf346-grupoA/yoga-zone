@@ -8,7 +8,7 @@
 import Foundation
 
 protocol FormDataDelegate: AnyObject {
-    func send(userData: UserData)
+    func send()
     func isValidEmail(email: String) -> Bool
     func isValidPasswordLenght(password: String) -> Bool
 }
