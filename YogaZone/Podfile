@@ -11,5 +11,6 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 pod 'FirebaseAuth'
 pod 'TransitionButton'
+pod 'ShowPasswordTextField'
 
 end

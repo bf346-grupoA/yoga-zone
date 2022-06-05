@@ -737,12 +737,14 @@ PODS:
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
   - PromisesObjC (2.1.0)
+  - ShowPasswordTextField (1.0.0)
   - TransitionButton (0.5.3)
 
 DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Storage
   - FirebaseAuth
+  - ShowPasswordTextField
   - TransitionButton
 
 SPEC REPOS:
@@ -769,6 +771,7 @@ SPEC REPOS:
     - Libuv-gRPC
     - nanopb
     - PromisesObjC
+    - ShowPasswordTextField
     - TransitionButton
 
 SPEC CHECKSUMS:
@@ -794,8 +797,9 @@ SPEC CHECKSUMS:
   Libuv-gRPC: 55e51798e14ef436ad9bc45d12d43b77b49df378
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
+  ShowPasswordTextField: afaa03b704087989f841e3bdd4525383261104d1
   TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
 
-PODFILE CHECKSUM: 243d58fa602d6debc7a6fdec5d7f7d4228b8d0da
+PODFILE CHECKSUM: 5c4824d77c13d8c53f20872b151cde4dcc2cb597
 
 COCOAPODS: 1.11.2

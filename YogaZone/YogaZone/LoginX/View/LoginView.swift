@@ -7,6 +7,7 @@
 
 import UIKit
 import TransitionButton
+import ShowPasswordTextField
 
 protocol LoginViewProtocol: AnyObject {
     func joinButtonAction()
@@ -22,7 +23,7 @@ class LoginView: UIView {
         self.delegate = delegate
     }
     
-    
+
     lazy var appImageView:UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -47,11 +48,12 @@ class LoginView: UIView {
         return textField
     }()
     
-
-    
-    lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
+    lazy var passwordTextField: ShowPasswordTextField = {
+        let textField = ShowPasswordTextField(frame: CGRect(x: 0, y: 0, width: 240, height: 44))
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.borderStyle = .bezel
+        textField.tintIconColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
+        textField.sizeIcon = 26
         textField.autocorrectionType = .no
         textField.backgroundColor = .white
         textField.borderStyle = .roundedRect
@@ -110,7 +112,7 @@ class LoginView: UIView {
         self.addSubView()
         self.setUpConstraints()
         self.enableButton(true)
-    }
+}
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -128,6 +130,7 @@ class LoginView: UIView {
         self.addSubview(self.forgotPasswordButton)
         self.addSubview(self.joinButton)
         self.addSubview(self.subscribeButton)
+
     }
     
     public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
