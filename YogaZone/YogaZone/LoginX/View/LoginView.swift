@@ -27,7 +27,7 @@ class LoginView: UIView {
     lazy var appImageView:UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: Constants.logoApp.rawValue)
+        image.image = UIImage(named: LoginConstants.logoApp.rawValue)
         image.contentMode = .scaleAspectFit
         return image
     }()
@@ -43,7 +43,7 @@ class LoginView: UIView {
         textField.layer.borderWidth = 1.0
         textField.autocapitalizationType = .none
         textField.keyboardType = .emailAddress
-        textField.placeholder = Constants.emailPlaceholder.rawValue
+        textField.placeholder = LoginConstants.emailPlaceholder.rawValue
         textField.textColor = .darkGray
         return textField
     }()
@@ -63,7 +63,7 @@ class LoginView: UIView {
         textField.autocapitalizationType = .none
         textField.keyboardType = .default
         textField.isSecureTextEntry = true
-        textField.placeholder = Constants.passwordPlaceholder.rawValue
+        textField.placeholder = LoginConstants.passwordPlaceholder.rawValue
         textField.textColor = .darkGray
         return textField
     }()
@@ -72,7 +72,7 @@ class LoginView: UIView {
     lazy var forgotPasswordButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(Constants.forgotPassword.rawValue, for: .normal)
+        button.setTitle(LoginConstants.forgotPassword.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         button.setTitleColor(UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0), for: .normal)
         button.addTarget(self, action: #selector(self.tappedForgotPasswordButton), for: .touchUpInside)
@@ -86,7 +86,7 @@ class LoginView: UIView {
         button.cornerRadius = 7
         button.layer.cornerRadius = 7
         button.clipsToBounds = true
-        button.setTitle(Constants.enter.rawValue, for: .normal)
+        button.setTitle(LoginConstants.enter.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0), for: .normal)
         button.addTarget(self, action: #selector(self.tappedJoinInButton), for: .touchUpInside)
@@ -98,7 +98,7 @@ class LoginView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor(red: 228/255, green: 228/255, blue: 236/255, alpha: 1.0)
-        button.setTitle(Constants.noAccount.rawValue, for: .normal)
+        button.setTitle(LoginConstants.noAccount.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.layer.cornerRadius = 7
         button.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0), for: .normal)
@@ -139,16 +139,16 @@ class LoginView: UIView {
     }
     
     public func getEmail()->String {
-        return emailTextField.text ?? Constants.empty.rawValue
+        return emailTextField.text ?? LoginConstants.empty.rawValue
     }
     
     public func getPassword()->String {
-        return passwordTextField.text ?? Constants.empty.rawValue
+        return passwordTextField.text ?? LoginConstants.empty.rawValue
     }
     
     
     public func validateTextField() {
-        if emailTextField.text != Constants.empty.rawValue && passwordTextField.text != Constants.empty.rawValue {
+        if emailTextField.text != LoginConstants.empty.rawValue && passwordTextField.text != LoginConstants.empty.rawValue {
             self.enableButton(true)
         } else {
             self.enableButton(false)

@@ -26,7 +26,7 @@ class ResetPasswordView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.tintColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
-        button.setImage(UIImage(systemName: Constants.backButtonImagem.rawValue), for: .normal)
+        button.setImage(UIImage(systemName: LoginConstants.backButtonImagem.rawValue), for: .normal)
         button.addTarget(self, action: #selector(self.tappedBackButton), for: .touchUpInside)
         return button
     }()
@@ -36,7 +36,7 @@ class ResetPasswordView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
         label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.text = Constants.resetPassword.rawValue
+        label.text = LoginConstants.resetPassword.rawValue
         return label
     }()
     
@@ -52,7 +52,7 @@ class ResetPasswordView: UIView {
         textField.layer.borderWidth = 1.0
         textField.keyboardType = .emailAddress
         textField.autocapitalizationType = .none
-        textField.placeholder = Constants.typeEmailPlaceholder.rawValue
+        textField.placeholder = LoginConstants.typeEmailPlaceholder.rawValue
         textField.textColor = .darkGray
         return textField
     }()
@@ -62,7 +62,7 @@ class ResetPasswordView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
         label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.text = Constants.obligationField.rawValue
+        label.text = LoginConstants.obligationField.rawValue
         return label
     }()
     
@@ -72,7 +72,7 @@ class ResetPasswordView: UIView {
         button.backgroundColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
         button.cornerRadius = 7
         button.clipsToBounds = true
-        button.setTitle(Constants.send.rawValue, for: .normal)
+        button.setTitle(LoginConstants.send.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(self.didTapSendButton), for: .touchUpInside)
@@ -112,11 +112,11 @@ class ResetPasswordView: UIView {
     
     
     public func getEmail() -> String {
-        return emailTextField.text ?? Constants.empty.rawValue
+        return emailTextField.text ?? LoginConstants.empty.rawValue
     }
     
     public func validateTextField() {
-        if emailTextField.text != Constants.empty.rawValue {
+        if emailTextField.text != LoginConstants.empty.rawValue {
             self.enableButton(true)
         } else {
             self.enableButton(false)

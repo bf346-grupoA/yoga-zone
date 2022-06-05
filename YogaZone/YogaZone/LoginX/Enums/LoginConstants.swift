@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Constants: String {
+enum LoginConstants: String {
     case ops = "Ops"
     case ok = "Ok"
     case emailPlaceholder = "E-mail"

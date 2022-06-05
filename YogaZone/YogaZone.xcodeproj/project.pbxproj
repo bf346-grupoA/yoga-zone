@@ -145,7 +145,7 @@
 		31A83956284BBCE20027987A /* LoginViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83955284BBCE20027987A /* LoginViewControllerX.swift */; };
 		31A8395B284BE0130027987A /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A8395A284BE0130027987A /* ResetPasswordView.swift */; };
 		31A83962284BE7A80027987A /* ResetPasswordViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */; };
-		31D3E802284C2B4200CFC7B5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E801284C2B4200CFC7B5 /* Strings.swift */; };
+		31D3E802284C2B4200CFC7B5 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */; };
 		759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */; };
 		792C669C282D79CA0018D343 /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667F282D79CA0018D343 /* RenderGIF.swift */; };
 		792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6680282D79CA0018D343 /* MakeDropDown.swift */; };
@@ -328,7 +328,7 @@
 		31A83955284BBCE20027987A /* LoginViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerX.swift; sourceTree = "<group>"; };
 		31A8395A284BE0130027987A /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewControllerX.swift; sourceTree = "<group>"; };
-		31D3E801284C2B4200CFC7B5 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
 		792C667F282D79CA0018D343 /* RenderGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderGIF.swift; sourceTree = "<group>"; };
 		792C6680282D79CA0018D343 /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
 		792C6681282D79CA0018D343 /* TrainingFinishedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingFinishedVC.swift; sourceTree = "<group>"; };
@@ -592,7 +592,6 @@
 				3142E8FA284D3CD700C212A3 /* FormValidation.swift */,
 				3142E8FC284D3CD700C212A3 /* NavigationDelegate.swift */,
 				3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */,
-				31D3E800284C2B1E00CFC7B5 /* Strings */,
 				2F3D0EC32848583800C3446B /* Extensions */,
 				2F3D0EBA284849D800C3446B /* FirebaseCommons */,
 				2F3D0EB72848498F00C3446B /* AlertController */,
@@ -1040,6 +1039,7 @@
 		31A83950284BBC080027987A /* LoginX */ = {
 			isa = PBXGroup;
 			children = (
+				31D3E800284C2B1E00CFC7B5 /* Enums */,
 				31A83952284BBC890027987A /* ViewController */,
 				31A83951284BBC800027987A /* View */,
 			);
@@ -1087,12 +1087,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		31D3E800284C2B1E00CFC7B5 /* Strings */ = {
+		31D3E800284C2B1E00CFC7B5 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				31D3E801284C2B4200CFC7B5 /* Strings.swift */,
+				31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */,
 			);
-			path = Strings;
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		792C667D282D79CA0018D343 /* Training */ = {
@@ -1623,7 +1623,7 @@
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */,
 				31A83962284BE7A80027987A /* ResetPasswordViewControllerX.swift in Sources */,
-				31D3E802284C2B4200CFC7B5 /* Strings.swift in Sources */,
+				31D3E802284C2B4200CFC7B5 /* LoginConstants.swift in Sources */,
 				2F83C79C282A0A0C00EC3334 /* ResultViewController.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
