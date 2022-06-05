@@ -18,7 +18,7 @@ enum Constants: String {
     case somethingWrong = "Algo deu errado, tente novamente!"
     case empty = ""
     case recoverpassword = "Recuperação de senha"
-    case send = "enviar"
+    case send = "Enviar"
     case obligationField = "*Campo obrigatório"
     case typeEmailPlaceholder = "Digite seu e-mail cadastrado"
     case resetPassword = "Recuperação de Senha"

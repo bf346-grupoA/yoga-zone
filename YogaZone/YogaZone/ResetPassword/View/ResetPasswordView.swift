@@ -70,7 +70,7 @@ class ResetPasswordView: UIView {
         let button = TransitionButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
-        button.layer.cornerRadius = 7
+        button.cornerRadius = 7
         button.clipsToBounds = true
         button.setTitle(Constants.send.rawValue, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)

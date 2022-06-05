@@ -47,7 +47,7 @@ extension LoginViewControllerX: LoginViewProtocol {
                 }else{
                     self.loginView?.joinButton.startAnimation()
                     DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-                        self.loginView?.joinButton.stopAnimation(animationStyle: .normal, revertAfterDelay: 0) {
+                        self.loginView?.joinButton.stopAnimation(animationStyle:.normal, revertAfterDelay: 0) {
                             let vc = HomeViewController()
                             self.navigationController?.pushViewController(vc, animated: true)
                         }

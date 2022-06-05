@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventFilterViewController" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="applyButton" destination="9Bk-GK-c0X" id="PPt-GH-0bj"/>
+                <outlet property="cancelButton" destination="5rQ-Lm-bOY" id="m8Y-na-L4C"/>
+                <outlet property="cityLabel" destination="jMS-K9-4uF" id="FVJ-Ce-wfK"/>
+                <outlet property="cityTextField" destination="Dzx-XM-23K" id="Ld8-Yy-MF4"/>
+                <outlet property="clearFiltersButtons" destination="Lyt-ct-fUC" id="orZ-aZ-D4S"/>
+                <outlet property="createdByMeLabel" destination="tRk-S7-eHp" id="Tuh-gh-goG"/>
+                <outlet property="createdByMeSwitch" destination="2xe-9N-gvh" id="Hpf-aT-iTd"/>
+                <outlet property="endDateLabel" destination="0z4-wy-PWg" id="Hw8-dS-Mkk"/>
+                <outlet property="endDateTextField" destination="2q5-qE-hl4" id="EUu-WG-mjg"/>
+                <outlet property="eventNameLabel" destination="hAI-WI-jTA" id="17Z-31-Ar8"/>
+                <outlet property="eventNameTextField" destination="lQL-tC-VfV" id="Lga-tP-fFe"/>
+                <outlet property="finalizedLabel" destination="hh4-Vg-bOc" id="2fR-ri-mYL"/>
+                <outlet property="finalizedSwitch" destination="gmx-1g-2Jo" id="6sP-wY-AbS"/>
+                <outlet property="startDateLabel" destination="4PT-9B-5Vn" id="mVd-zK-fS2"/>
+                <outlet property="startDateTextField" destination="eV3-xz-bdg" id="8Yl-RO-vmP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rQ-Lm-bOY" userLabel="Cancelar">
+                    <rect key="frame" x="13" y="10" width="75" height="34.5"/>
+                    <color key="tintColor" systemColor="tintColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="6XT-Pd-n1b"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMS-K9-4uF" userLabel="City">
+                    <rect key="frame" x="25" y="59" width="46.5" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dzx-XM-23K" userLabel="City">
+                    <rect key="frame" x="25" y="90" width="325" height="50"/>
+                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="q2g-Kh-TDr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PT-9B-5Vn" userLabel="Start Date">
+                    <rect key="frame" x="25" y="155" width="46.5" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inicio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eV3-xz-bdg" userLabel="Start Date">
+                    <rect key="frame" x="25" y="186" width="157.5" height="50"/>
+                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="c5d-V7-GdW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fim" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2q5-qE-hl4" userLabel="End Date">
+                    <rect key="frame" x="192.5" y="186" width="157.5" height="50"/>
+                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="p5o-C1-hzt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z4-wy-PWg" userLabel="End Date">
+                    <rect key="frame" x="192.5" y="155" width="46.5" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAI-WI-jTA" userLabel="Event Name">
+                    <rect key="frame" x="25" y="251" width="46.5" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do Evento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQL-tC-VfV" userLabel="Event Name">
+                    <rect key="frame" x="25" y="282" width="325" height="50"/>
+                    <color key="backgroundColor" red="0.96595627070000001" green="0.96954113249999996" blue="0.97299617530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BdF-RM-yoO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-Vg-bOc" userLabel="Finalized">
+                    <rect key="frame" x="25" y="362" width="46.5" height="31"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gmx-1g-2Jo" userLabel="Finalized">
+                    <rect key="frame" x="301" y="362" width="51" height="31"/>
+                </switch>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKb-vS-2vd" userLabel="Line 1">
+                    <rect key="frame" x="25" y="399" width="325" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="IG5-D1-vW0"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRk-S7-eHp" userLabel="Created by me">
+                    <rect key="frame" x="25" y="420" width="46.5" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2xe-9N-gvh" userLabel="Created by me">
+                    <rect key="frame" x="301" y="415" width="51" height="31"/>
+                </switch>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wh8-ha-9fx" userLabel="Line 2">
+                    <rect key="frame" x="25" y="452" width="325" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="6vq-mJ-Hdn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-GK-c0X" userLabel="Apply">
+                    <rect key="frame" x="25" y="503" width="325" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="C7f-1L-DE8"/>
+                    </constraints>
+                    <color key="tintColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Aplicar">
+                        <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="applyButtonTapped:" destination="-1" eventType="touchUpInside" id="g4M-6r-AWc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyt-ct-fUC" userLabel="Clear filters">
+                    <rect key="frame" x="25" y="568" width="325" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7gi-dH-I5m"/>
+                    </constraints>
+                    <color key="tintColor" red="0.44600826500000001" green="0.40339455010000003" blue="0.79507714510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Limpar filtros">
+                        <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="clearFilterButtonTapped:" destination="-1" eventType="touchUpInside" id="rBG-JS-A83"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2xe-9N-gvh" secondAttribute="trailing" constant="25" id="1Bi-4k-mAh"/>
+                <constraint firstItem="5rQ-Lm-bOY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="20n-G6-SvL"/>
+                <constraint firstItem="2q5-qE-hl4" firstAttribute="top" secondItem="0z4-wy-PWg" secondAttribute="bottom" constant="10" id="3ya-LL-T4l"/>
+                <constraint firstItem="eV3-xz-bdg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.42" id="4bu-IB-GCG"/>
+                <constraint firstItem="eV3-xz-bdg" firstAttribute="top" secondItem="4PT-9B-5Vn" secondAttribute="bottom" constant="10" id="5yB-ea-iq5"/>
+                <constraint firstItem="EKb-vS-2vd" firstAttribute="top" secondItem="gmx-1g-2Jo" secondAttribute="bottom" constant="6" id="6fh-KC-HTu"/>
+                <constraint firstItem="Dzx-XM-23K" firstAttribute="top" secondItem="jMS-K9-4uF" secondAttribute="bottom" constant="10" id="7Ll-Vx-wD0"/>
+                <constraint firstItem="tRk-S7-eHp" firstAttribute="centerY" secondItem="2xe-9N-gvh" secondAttribute="centerY" id="8On-MZ-SJd"/>
+                <constraint firstItem="5rQ-Lm-bOY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="9DR-PN-gAK"/>
+                <constraint firstItem="Lyt-ct-fUC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="9IS-cF-dai"/>
+                <constraint firstItem="Dzx-XM-23K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="90" id="AuT-p3-eCR"/>
+                <constraint firstItem="lQL-tC-VfV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="CU1-wT-RPf"/>
+                <constraint firstItem="Lyt-ct-fUC" firstAttribute="top" secondItem="9Bk-GK-c0X" secondAttribute="bottom" constant="15" id="CUN-P9-No2"/>
+                <constraint firstItem="tRk-S7-eHp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="DtN-9d-AAZ"/>
+                <constraint firstItem="wh8-ha-9fx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="EXA-s4-nmN"/>
+                <constraint firstItem="2q5-qE-hl4" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.42" id="Euz-Me-HRK"/>
+                <constraint firstItem="Dzx-XM-23K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="Ewi-fM-cS4"/>
+                <constraint firstItem="hh4-Vg-bOc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="H0A-RE-awI"/>
+                <constraint firstItem="9Bk-GK-c0X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="Ixz-YI-RCv"/>
+                <constraint firstItem="jMS-K9-4uF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="JDH-B6-utJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2q5-qE-hl4" secondAttribute="trailing" constant="25" id="JMH-Wc-ad2"/>
+                <constraint firstItem="tRk-S7-eHp" firstAttribute="top" secondItem="EKb-vS-2vd" secondAttribute="bottom" constant="20" id="JPM-Qx-G1j"/>
+                <constraint firstItem="lQL-tC-VfV" firstAttribute="top" secondItem="hAI-WI-jTA" secondAttribute="bottom" constant="10" id="KLB-9D-B8g"/>
+                <constraint firstItem="4PT-9B-5Vn" firstAttribute="top" secondItem="Dzx-XM-23K" secondAttribute="bottom" constant="15" id="MZ5-Zn-jHh"/>
+                <constraint firstItem="hAI-WI-jTA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="O0a-jA-f9p"/>
+                <constraint firstAttribute="trailing" secondItem="wh8-ha-9fx" secondAttribute="trailing" constant="25" id="PKT-J1-x8O"/>
+                <constraint firstItem="0z4-wy-PWg" firstAttribute="leading" secondItem="2q5-qE-hl4" secondAttribute="leading" id="PTf-cn-hXI"/>
+                <constraint firstItem="hh4-Vg-bOc" firstAttribute="centerY" secondItem="gmx-1g-2Jo" secondAttribute="centerY" id="T8A-he-gts"/>
+                <constraint firstItem="wh8-ha-9fx" firstAttribute="top" secondItem="2xe-9N-gvh" secondAttribute="bottom" constant="6" id="TJS-ON-yuG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gmx-1g-2Jo" secondAttribute="trailing" constant="25" id="VJv-af-IS9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EKb-vS-2vd" secondAttribute="trailing" constant="25" id="WXM-OG-2Wn"/>
+                <constraint firstItem="0z4-wy-PWg" firstAttribute="top" secondItem="Dzx-XM-23K" secondAttribute="bottom" constant="15" id="XKU-nm-lX4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lQL-tC-VfV" secondAttribute="trailing" constant="25" id="ZBt-n2-jbn"/>
+                <constraint firstItem="gmx-1g-2Jo" firstAttribute="top" secondItem="lQL-tC-VfV" secondAttribute="bottom" constant="30" id="bcA-h8-QFr"/>
+                <constraint firstItem="9Bk-GK-c0X" firstAttribute="top" secondItem="wh8-ha-9fx" secondAttribute="bottom" constant="50" id="d7u-tC-fIn"/>
+                <constraint firstItem="hh4-Vg-bOc" firstAttribute="top" secondItem="lQL-tC-VfV" secondAttribute="bottom" constant="30" id="hvZ-16-Rsw"/>
+                <constraint firstItem="hAI-WI-jTA" firstAttribute="top" secondItem="eV3-xz-bdg" secondAttribute="bottom" constant="15" id="p9O-G7-kFB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dzx-XM-23K" secondAttribute="trailing" constant="25" id="qnP-Dq-Gmc"/>
+                <constraint firstItem="4PT-9B-5Vn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="uWH-jI-n2T"/>
+                <constraint firstItem="EKb-vS-2vd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="vEh-In-Kg6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lyt-ct-fUC" secondAttribute="trailing" constant="25" id="vfz-Tr-s8Q"/>
+                <constraint firstItem="eV3-xz-bdg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="wXB-iM-FKs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Bk-GK-c0X" secondAttribute="trailing" constant="25" id="yj1-Aw-gev"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="95.802098950524751"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
