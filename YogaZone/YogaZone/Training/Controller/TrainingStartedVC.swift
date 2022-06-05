@@ -25,7 +25,7 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     var exercicesData: [ExercicesModel] = []
     
     var timer = Timer()
-    var seconds = 61
+    var seconds = 6
     var isTimerRunning = false
     var resumeTapped = false
     
@@ -65,7 +65,6 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
         let tapPauseButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedPauseButton))
         self.pauseImage.addGestureRecognizer(tapPauseButton)
         self.pauseImage.isUserInteractionEnabled = true
-        
     }
     
     @objc func tappedPauseButton(){
@@ -91,7 +90,7 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
                 navigationController?.pushViewController(vc, animated: true)
             } else {
                 timer.invalidate()
-                seconds = 61
+                seconds = 6
                 updateTimer()
                 runTimer()
                 self.nextExercise()
@@ -134,6 +133,9 @@ extension TrainingStartedVC: TrainingStartedVCDelegate {
         if self.seconds > 0 {
             seconds -= 1
             secondsTimerLabel.text = "\(seconds)"
+            if self.seconds == 0 {
+                self.tappedNextButton()
+            }
         } else {
             self.seconds = 0
         }
