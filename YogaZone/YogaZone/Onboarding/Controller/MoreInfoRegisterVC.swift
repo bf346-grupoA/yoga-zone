@@ -40,7 +40,6 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         configStatePickerView()
         configCityPickerView()
         createDatePicker()
-        loadStateData()
         setupUI()
         setupRadioButton()
     }
@@ -88,6 +87,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     func createDatePicker() {
         datePicker.preferredDatePickerStyle = .wheels
         datePicker.datePickerMode = .date
+        datePicker.maximumDate = Date()
         
         ageTextField.textAlignment = .center
         ageTextField.inputView = datePicker
@@ -100,6 +100,8 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         dateFormater.timeStyle = .none
         
         self.ageTextField.text = dateFormater.string(from: datePicker.date)
+        
+        self.loadStateData()
         self.view.endEditing(true)
     }
     
@@ -155,8 +157,24 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     func configTextFields(){
         self.ageTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.cityTextField.placeholder = "Informe sua data de nascimento"
+        self.cityTextField.layer.cornerRadius = 6
+        self.cityTextField.layer.borderWidth = 0.5
+        self.cityTextField.layer.borderColor = UIColor.lightGray.cgColor
+        
         self.cityTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.stateTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)        
+        self.cityTextField.placeholder = "Informe sua Cidade"
+        self.cityTextField.layer.cornerRadius = 6
+        self.cityTextField.layer.borderWidth = 0.5
+        self.cityTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.cityTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
+        self.stateTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.stateTextField.placeholder = "UF"
+        self.stateTextField.layer.cornerRadius = 6
+        self.stateTextField.layer.borderWidth = 0.5
+        self.stateTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.stateTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
     
     func setupUI(){
@@ -206,21 +224,16 @@ extension MoreInfoRegisterVC: UIPickerViewDelegate, UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView == self.statePickerView {
             return self.onboardingViewModel.countTotalStates
-        } else if pickerView == self.cityPickerView {
-            return self.onboardingViewModel.countTotalCities
         } else {
-            return 0
+            return self.onboardingViewModel.countTotalCities
         }
-        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView == self.statePickerView {
             return self.onboardingViewModel.getLoadedStates(row: row)
-        } else if pickerView == self.cityPickerView {
-            return self.onboardingViewModel.getLoadedCities(row: row)
         } else {
-            return ""
+            return self.onboardingViewModel.getLoadedCities(row: row)
         }
     }
     
@@ -229,13 +242,15 @@ extension MoreInfoRegisterVC: UIPickerViewDelegate, UIPickerViewDataSource{
         
         if pickerView == self.statePickerView {
             state = self.onboardingViewModel.getLoadedStates(row: row)
-            stateTextField.text = state
+            self.stateTextField.text = state
+            self.cityTextField.text = ""
             if stateTextField.text != "" {
                 self.cityTextField.isUserInteractionEnabled = true
                 self.cityTextField.isEnabled = true
+                self.cityTextField.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
                 self.onboardingViewModel.getRequestBrazilianCity(state: state)
             }
-        } else if pickerView == self.cityPickerView {
+        } else {
             cityTextField.text = self.onboardingViewModel.getLoadedCities(row: row)
         }
         
@@ -271,13 +286,7 @@ extension MoreInfoRegisterVC: OnboardingViewModelDelegate {
             DispatchQueue.main.async {
                 self.stateTextField.isEnabled = true
                 self.stateTextField.isUserInteractionEnabled = true
-            }
-        }
-        
-        if serviceType == .getCity {
-            DispatchQueue.main.async {
-                self.cityTextField.isEnabled = true
-                self.cityTextField.isUserInteractionEnabled = true
+                self.stateTextField.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
             }
         }
         
