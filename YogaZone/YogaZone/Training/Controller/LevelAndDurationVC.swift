@@ -117,7 +117,7 @@ class LevelAndDurationVC: UIViewController, UIGestureRecognizerDelegate {
     func configSeeTrainButton(){
         self.seeTrainButton.configuration = nil
         self.seeTrainButton.setTitle("Ver Treino", for: .normal)
-        self.seeTrainButton.setTitleColor(.white, for: .normal)
+        self.seeTrainButton.setTitleColor(.darkGray, for: .normal)
         self.seeTrainButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.seeTrainButton.backgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
         self.seeTrainButton.layer.cornerRadius = 26
@@ -171,14 +171,15 @@ extension LevelAndDurationVC: MakeDropDownDataSourceProtocol{
             self.levelNameLabel.text = self.levelArr[indexPos].levelName
             self.levelDropDown.hideDropDown()
         }
-        teste()
+        seeTrainButtonValidation()
         
     }
     
-    func teste(){
+    func seeTrainButtonValidation(){
         if durationNameLabel.text != "Duração" &&
             levelNameLabel.text != "Nivel" {
             self.seeTrainButton.isEnabled = true
+            self.seeTrainButton.setTitleColor(.white, for: .normal)
         } else {
             self.seeTrainButton.isEnabled = false
         }
