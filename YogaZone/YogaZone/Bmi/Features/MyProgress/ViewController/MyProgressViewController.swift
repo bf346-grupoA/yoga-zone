@@ -14,7 +14,6 @@ class MyProgressViewController: UIViewController, SendData{
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var missingLabel: UILabel!
-    @IBOutlet weak var buttonShare: UIButton!
     @IBOutlet weak var closedButton: UIButton!
     
     var weigth: String = ""
@@ -28,7 +27,6 @@ class MyProgressViewController: UIViewController, SendData{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.buttonShare.layer.cornerRadius = 7
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(TableViewCellMyProgress.getNib(), forCellReuseIdentifier: TableViewCellMyProgress.identifier)
@@ -39,11 +37,6 @@ class MyProgressViewController: UIViewController, SendData{
         self.getData()
     }
     
-    @IBAction func tappedButtonShare(_ sender: Any) {
-        let vcShare = UIActivityViewController(activityItems: ["YogaZone.IMC"], applicationActivities: nil)
-        vcShare.popoverPresentationController?.sourceView = self.view
-        self.present(vcShare, animated: true, completion: nil)
-    }
     
     @IBAction func tappedClosedBUtton(_ sender: UIButton) {
     }
