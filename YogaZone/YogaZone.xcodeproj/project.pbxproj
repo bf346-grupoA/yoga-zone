@@ -787,6 +787,7 @@
 				3126834227C15ECB003F017B /* Assets.xcassets */,
 				3126834427C15ECB003F017B /* LaunchScreen.storyboard */,
 				3126834727C15ECB003F017B /* Info.plist */,
+				311B94EB2847DD90003A9C14 /* GoogleService-Info.plist */,
 				3126833927C15ECA003F017B /* AppDelegate.swift */,
 				3126833B27C15ECA003F017B /* SceneDelegate.swift */,
 			);
@@ -1002,7 +1003,6 @@
 		311B94ED2847DF57003A9C14 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				311B94EB2847DD90003A9C14 /* GoogleService-Info.plist */,
 			);
 			path = Service;
 			sourceTree = "<group>";
