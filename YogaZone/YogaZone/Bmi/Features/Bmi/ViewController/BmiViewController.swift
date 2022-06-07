@@ -17,9 +17,14 @@ protocol SendData {
 
 class BmiViewController: UIViewController {
 
-    @IBOutlet weak var wLabel: UILabel!
-    @IBOutlet weak var hLabel: UILabel!
-    @IBOutlet weak var gLabel: UILabel!
+    
+    @IBOutlet weak var titleImc: UILabel!
+    @IBOutlet weak var weigthLabel: UILabel!
+    @IBOutlet weak var weightValueLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var heightValueLabel: UILabel!
+    @IBOutlet weak var goalLabel: UILabel!
+    @IBOutlet weak var goalLabelValue: UILabel!
     @IBOutlet weak var buttonCalculate: UIButton!
     @IBOutlet weak var buttonMyProgress: UIButton!
     @IBOutlet weak var sliderGoal: UISlider!
@@ -38,6 +43,7 @@ class BmiViewController: UIViewController {
         super.viewDidLoad()
         self.switchLabel.isOn = false
         self.viewModel.initFireStore()
+        self.configLabels()
     }
     
     override func viewDidLayoutSubviews() {
@@ -61,19 +67,19 @@ class BmiViewController: UIViewController {
     @IBAction func sliderWeight(_ sender: Any) {
         weight = (sender as AnyObject).value
         let stringWeight = String(format: " %.1f", weight)
-        wLabel.text = "\(stringWeight) Kg"
+        weightValueLabel.text = "\(stringWeight) Kg"
         viewModel.getWeight = stringWeight
     }
     
     @IBAction func sliderHeight(_ sender: Any) {
         heigth = (sender as AnyObject).value
-        hLabel.text = String(format: " %.2f M", heigth)
+        heightValueLabel.text = String(format: " %.2f M", heigth)
     }
     
     @IBAction func sliderGoal(_ sender: Any) {
         goal = (sender as AnyObject).value
         let stringWeight = String(format: " %.1f", goal)
-        gLabel.text = "\(stringWeight) Kg"
+        goalLabelValue.text = "\(stringWeight) Kg"
         viewModel.saveGoal = stringWeight
     }
     
@@ -94,6 +100,20 @@ class BmiViewController: UIViewController {
         vc?.missing = String(format: " %.1f ", missing)
         self.navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
+    
+    //MARK: - SetupUI
+    func configLabels(){
+        self.titleImc.font = UIFont(name: "Comfortaa-Bold", size: 30)
+        self.weigthLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.weightValueLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.heightLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.heightValueLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.goalLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.goalLabelValue.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.buttonCalculate.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.buttonMyProgress.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 20)
+    }
+    
 }
 
 extension BmiViewController {
