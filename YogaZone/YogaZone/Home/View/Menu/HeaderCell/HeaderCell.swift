@@ -23,7 +23,7 @@ class HeaderCell: UITableViewCell {
         self.profileImageView.layer.cornerRadius =  30
         self.profileImageView.clipsToBounds = true
         self.profileImageView.contentMode = .scaleAspectFill
-        self.profileImageView.image = #imageLiteral(resourceName: "profile-2")
+        self.profileImageView.image = #imageLiteral(resourceName: "profile")
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onTap))
         self.profileImageView.addGestureRecognizer(tapGesture)

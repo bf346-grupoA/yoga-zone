@@ -8,7 +8,7 @@
 import UIKit
 
 class DoneRegisterVC: UIViewController {
-
+    
     @IBOutlet weak var smileEmojiImage: UIImageView!
     
     @IBOutlet weak var firstLabel: UILabel!
@@ -29,16 +29,16 @@ class DoneRegisterVC: UIViewController {
     // MARK: SetupUI
     func configStartButton(){
         var containerTitle = AttributeContainer()
-            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
         var config = UIButton.Configuration.filled()
-            config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
-            config.baseForegroundColor = .white
-            config.attributedTitle = AttributedString("Começar", attributes: containerTitle)
+        config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        config.baseForegroundColor = .white
+        config.attributedTitle = AttributedString("Começar", attributes: containerTitle)
         
         self.startBtn.configuration = config
         self.startBtn.layer.cornerRadius = 8
-
+        
     }
     
     func configLabels(){
@@ -53,12 +53,10 @@ class DoneRegisterVC: UIViewController {
         configStartButton()
         configLabels()
     }
-
+    
     func configImages(){
-        
         smileEmojiImage.image = UIImage(named: "smile_emoji")
-        // Hide Back Button from UINavigationItem
-            self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     @IBAction func tappedGoToHome(_ sender: UIButton) {
@@ -66,4 +64,4 @@ class DoneRegisterVC: UIViewController {
     }
     
 }
-  
+
