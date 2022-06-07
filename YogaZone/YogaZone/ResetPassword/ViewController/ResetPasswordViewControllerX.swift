@@ -38,7 +38,7 @@ class ResetPasswordViewControllerX: UIViewController {
 
 extension ResetPasswordViewControllerX: ResetPassowrdViewProtocol {
     func tappedBackButtonAction() {
-        let vc = LoginViewControllerX()
+        let vc = LoginViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

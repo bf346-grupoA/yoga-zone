@@ -141,7 +141,7 @@
 		3142E8FF284D3CD700C212A3 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */; };
 		3142E900284D3CD700C212A3 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8FC284D3CD700C212A3 /* NavigationDelegate.swift */; };
 		31A83954284BBCBA0027987A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83953284BBCBA0027987A /* LoginView.swift */; };
-		31A83956284BBCE20027987A /* LoginViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83955284BBCE20027987A /* LoginViewControllerX.swift */; };
+		31A83956284BBCE20027987A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83955284BBCE20027987A /* LoginViewController.swift */; };
 		31A8395B284BE0130027987A /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A8395A284BE0130027987A /* ResetPasswordView.swift */; };
 		31A83962284BE7A80027987A /* ResetPasswordViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */; };
 		31D3E802284C2B4200CFC7B5 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */; };
@@ -333,7 +333,7 @@
 		3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		3142E8FC284D3CD700C212A3 /* NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
 		31A83953284BBCBA0027987A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		31A83955284BBCE20027987A /* LoginViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerX.swift; sourceTree = "<group>"; };
+		31A83955284BBCE20027987A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31A8395A284BE0130027987A /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewControllerX.swift; sourceTree = "<group>"; };
 		31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
@@ -1026,7 +1026,7 @@
 			isa = PBXGroup;
 			children = (
 				31A8395E284BE1690027987A /* ResetPassword */,
-				31A83950284BBC080027987A /* LoginX */,
+				31A83950284BBC080027987A /* Login */,
 				2F3D0EC628485B6D00C3446B /* Register */,
 				2F3D0EB62848498500C3446B /* Commons */,
 				792C667D282D79CA0018D343 /* Training */,
@@ -1054,14 +1054,14 @@
 			path = Bmi;
 			sourceTree = "<group>";
 		};
-		31A83950284BBC080027987A /* LoginX */ = {
+		31A83950284BBC080027987A /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				31D3E800284C2B1E00CFC7B5 /* Enums */,
 				31A83952284BBC890027987A /* ViewController */,
 				31A83951284BBC800027987A /* View */,
 			);
-			path = LoginX;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		31A83951284BBC800027987A /* View */ = {
@@ -1075,7 +1075,7 @@
 		31A83952284BBC890027987A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				31A83955284BBCE20027987A /* LoginViewControllerX.swift */,
+				31A83955284BBCE20027987A /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1647,7 +1647,7 @@
 				2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */,
 				31A83954284BBCBA0027987A /* LoginView.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
-				31A83956284BBCE20027987A /* LoginViewControllerX.swift in Sources */,
+				31A83956284BBCE20027987A /* LoginViewController.swift in Sources */,
 				2F3D0EB9284849BA00C3446B /* AlertController.swift in Sources */,
 				2F3D0ED22848696500C3446B /* RegisterViewController.swift in Sources */,
 				31A8395B284BE0130027987A /* ResetPasswordView.swift in Sources */,
