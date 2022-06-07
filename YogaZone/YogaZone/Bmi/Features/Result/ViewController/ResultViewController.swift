@@ -27,7 +27,7 @@ class ResultViewController: UIViewController , SendData {
     func configTableView(){
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(MyTableViewCell.nib(), forCellReuseIdentifier: MyTableViewCell.identifier)
+        self.tableView.register(ResultTableViewCell.nib(), forCellReuseIdentifier: ResultTableViewCell.identifier)
     }
     
     @IBAction func tappedBUttonClosed(_ sender: Any) {
@@ -42,7 +42,7 @@ extension ResultViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as? MyTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.identifier, for: indexPath) as? ResultTableViewCell
         cell?.setupCell(value:result)
         cell?.delegate = self
         return cell ?? UITableViewCell()

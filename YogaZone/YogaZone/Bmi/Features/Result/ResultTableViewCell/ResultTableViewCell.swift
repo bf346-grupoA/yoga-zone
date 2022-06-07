@@ -10,7 +10,7 @@ protocol MyTableViewCellProtocol{
     func actionSaveButton()
 }
 
-class MyTableViewCell: UITableViewCell {
+class ResultTableViewCell: UITableViewCell {
 
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var waitingResultLabel: UILabel!
