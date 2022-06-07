@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Medium.ttf">
+            <string>Comfortaa-Medium</string>
+        </array>
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PoseDetailViewController" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="categoriesLabel" destination="xoZ-bg-8YE" id="xXA-eT-Vt3"/>
+                <outlet property="categoriesTableView" destination="97d-WH-XVH" id="h9J-L6-a2Q"/>
+                <outlet property="titleLabel" destination="yBu-x2-w8u" id="jEW-Vi-5yC"/>
+                <outlet property="videoButton" destination="ETa-k2-efs" id="azg-iw-eID"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBu-x2-w8u">
+                    <rect key="frame" x="173.5" y="64" width="67" height="37"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="30"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.043137254899999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoZ-bg-8YE">
+                    <rect key="frame" x="128.5" y="141" width="157.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Comfortaa-Medium" family="Comfortaa" pointSize="16"/>
+                    <color key="textColor" red="0.4431372549" green="0.37254901959999998" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="97d-WH-XVH">
+                    <rect key="frame" x="0.0" y="169" width="414" height="597"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETa-k2-efs">
+                    <rect key="frame" x="20" y="806" width="374" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="jSd-bj-WWd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                    <color key="tintColor" red="0.25490196079999999" green="0.043137254899999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Video"/>
+                    <buttonConfiguration key="configuration" style="filled" title="See Video">
+                        <fontDescription key="titleFontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                        <color key="baseBackgroundColor" red="0.25490196079999999" green="0.043137254899999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="onClickWithSender:" destination="-1" eventType="touchUpInside" id="wul-1D-BAc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ETa-k2-efs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1R1-av-cwO"/>
+                <constraint firstItem="yBu-x2-w8u" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="8S0-KY-NlB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ETa-k2-efs" secondAttribute="bottom" constant="20" id="PCl-SN-ATd"/>
+                <constraint firstItem="97d-WH-XVH" firstAttribute="top" secondItem="xoZ-bg-8YE" secondAttribute="bottom" constant="10" id="Y74-rS-e8U"/>
+                <constraint firstItem="xoZ-bg-8YE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YDv-1U-ikt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ETa-k2-efs" secondAttribute="trailing" constant="20" id="blY-Rk-FyP"/>
+                <constraint firstItem="xoZ-bg-8YE" firstAttribute="top" secondItem="yBu-x2-w8u" secondAttribute="bottom" constant="40" id="eEU-Fc-1cv"/>
+                <constraint firstItem="ETa-k2-efs" firstAttribute="top" secondItem="97d-WH-XVH" secondAttribute="bottom" constant="40" id="gnu-0E-raF"/>
+                <constraint firstItem="97d-WH-XVH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kEX-1d-soU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="97d-WH-XVH" secondAttribute="trailing" id="mss-Lg-5v1"/>
+                <constraint firstItem="yBu-x2-w8u" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u2S-Po-e22"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="68"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
