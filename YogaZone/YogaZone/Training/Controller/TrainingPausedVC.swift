@@ -8,7 +8,8 @@
 import UIKit
 
 class TrainingPausedVC: UIViewController {
-
+    
+    
     @IBOutlet weak var pausedLabel: UILabel!
     
     weak var delegate: TrainingStartedVCDelegate?
