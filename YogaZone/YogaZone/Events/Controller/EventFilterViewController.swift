@@ -20,6 +20,7 @@ class EventFilterViewController: UIViewController {
     @IBOutlet weak var startDateLabel: UILabel!
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var useDateIntervalLabel: UILabel!
+    @IBOutlet weak var dateErrorLabel: UILabel!
     @IBOutlet weak var dateIntervalSelectedSwitch: UISwitch!
     @IBOutlet weak var endDateLabel: UILabel!
     @IBOutlet weak var endDatePicker: UIDatePicker!
@@ -69,24 +70,31 @@ class EventFilterViewController: UIViewController {
         self.filterData?.isAvaliable = self.avaliablePositionSwitch.isOn
         self.filterData?.isOwner = self.createdByMeSwitch.isOn
         
-        if self.eventNameTextField.text != "" { filterData?.totalFilters += 1 }
-        if self.cityTextField.text != "" { filterData?.totalFilters += 1 }
+        if self.eventNameTextField.text != "" { self.filterData?.totalFilters += 1 }
+        if self.cityTextField.text != "" { self.filterData?.totalFilters += 1 }
         if self.dateIntervalSelectedSwitch.isOn != false { filterData?.totalFilters += 1 }
         if self.avaliablePositionSwitch.isOn != false { filterData?.totalFilters += 1 }
         if self.createdByMeSwitch.isOn != false { filterData?.totalFilters += 1 }
         
-        self.saveUserDefault(value: self.cityTextField.text ?? "", key: "eventFilterDataLocal")
-        self.saveUserDefault(value: self.eventNameTextField.text ?? "", key: "eventFilterDataTitle")
-        self.saveUserDefault(value: self.startDatePicker.date, key: "eventFilterDataStartDate")
-        self.saveUserDefault(value: self.endDatePicker.date, key: "eventFilterDataEndDate")
-        self.saveUserDefault(value: self.dateIntervalSelectedSwitch.isOn, key: "eventFilterDateInvtervalSelected")
-        self.saveUserDefault(value: self.avaliablePositionSwitch.isOn, key: "eventFilterDataIsFull")
-        self.saveUserDefault(value: self.createdByMeSwitch.isOn, key: "eventFilterDataIsOwner")
-        self.saveUserDefault(value: filterData?.totalFilters ?? 0, key: "eventFilterTotalQuantity")
-        
-        self.delegate?.updateFilter(filter: self.filterData ?? EventFilter())
-        
-        self.dismiss(animated: true, completion: nil)
+        if self.startDatePicker.date > self.endDatePicker.date {
+            self.dateErrorLabel.text = "Data final deve ser maior do que inicial"
+            self.dateErrorLabel.textColor = .red
+            self.dateErrorLabel.adjustsFontSizeToFitWidth = true
+            self.dateErrorLabel.minimumScaleFactor = 0.5
+        } else {
+            self.saveUserDefault(value: self.cityTextField.text ?? "", key: "eventFilterDataLocal")
+            self.saveUserDefault(value: self.eventNameTextField.text ?? "", key: "eventFilterDataTitle")
+            self.saveUserDefault(value: self.startDatePicker.date, key: "eventFilterDataStartDate")
+            self.saveUserDefault(value: self.endDatePicker.date, key: "eventFilterDataEndDate")
+            self.saveUserDefault(value: self.dateIntervalSelectedSwitch.isOn, key: "eventFilterDateInvtervalSelected")
+            self.saveUserDefault(value: self.avaliablePositionSwitch.isOn, key: "eventFilterDataIsFull")
+            self.saveUserDefault(value: self.createdByMeSwitch.isOn, key: "eventFilterDataIsOwner")
+            self.saveUserDefault(value: self.filterData?.totalFilters ?? 0, key: "eventFilterTotalQuantity")
+            
+            self.delegate?.updateFilter(filter: self.filterData ?? EventFilter())
+            self.dismiss(animated: true, completion: nil)
+        }
+      
     }
     
     @IBAction func clearFilterButtonTapped(_ sender: UIButton) {
