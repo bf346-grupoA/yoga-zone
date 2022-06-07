@@ -29,7 +29,7 @@ class MyProgressViewController: UIViewController, SendData{
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(TableViewCellMyProgress.getNib(), forCellReuseIdentifier: TableViewCellMyProgress.identifier)
+        self.tableView.register(MyProgressTableViewCell.getNib(), forCellReuseIdentifier: MyProgressTableViewCell.identifier)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -75,7 +75,7 @@ extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellMyProgress.identifier, for: indexPath) as? TableViewCellMyProgress
+        let cell = tableView.dequeueReusableCell(withIdentifier: MyProgressTableViewCell.identifier, for: indexPath) as? MyProgressTableViewCell
         cell?.setupCell(myProgress: dataProgress[indexPath.row])
         return cell ?? UITableViewCell()
     }

@@ -127,7 +127,7 @@
 		2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E16127DD12A30070397F /* PoseCategoryCell.swift */; };
 		2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E16227DD12A30070397F /* PoseCategoryCell.xib */; };
 		2F83C793282A0A0C00EC3334 /* Bmi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F83C781282A0A0C00EC3334 /* Bmi.storyboard */; };
-		2F83C794282A0A0C00EC3334 /* TableViewCellMyProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C784282A0A0C00EC3334 /* TableViewCellMyProgress.swift */; };
+		2F83C794282A0A0C00EC3334 /* MyProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C784282A0A0C00EC3334 /* MyProgressTableViewCell.swift */; };
 		2F83C795282A0A0C00EC3334 /* TableViewCellMyProgress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F83C785282A0A0C00EC3334 /* TableViewCellMyProgress.xib */; };
 		2F83C796282A0A0C00EC3334 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C787282A0A0C00EC3334 /* ResultTableViewCell.swift */; };
 		2F83C797282A0A0C00EC3334 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F83C788282A0A0C00EC3334 /* ResultTableViewCell.xib */; };
@@ -321,7 +321,7 @@
 		2F79E16127DD12A30070397F /* PoseCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategoryCell.swift; sourceTree = "<group>"; };
 		2F79E16227DD12A30070397F /* PoseCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseCategoryCell.xib; sourceTree = "<group>"; };
 		2F83C782282A0A0C00EC3334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Bmi.storyboard; sourceTree = "<group>"; };
-		2F83C784282A0A0C00EC3334 /* TableViewCellMyProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellMyProgress.swift; sourceTree = "<group>"; };
+		2F83C784282A0A0C00EC3334 /* MyProgressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgressTableViewCell.swift; sourceTree = "<group>"; };
 		2F83C785282A0A0C00EC3334 /* TableViewCellMyProgress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellMyProgress.xib; sourceTree = "<group>"; };
 		2F83C787282A0A0C00EC3334 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		2F83C788282A0A0C00EC3334 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
@@ -938,7 +938,7 @@
 			isa = PBXGroup;
 			children = (
 				2F83C785282A0A0C00EC3334 /* TableViewCellMyProgress.xib */,
-				2F83C784282A0A0C00EC3334 /* TableViewCellMyProgress.swift */,
+				2F83C784282A0A0C00EC3334 /* MyProgressTableViewCell.swift */,
 			);
 			path = TableViewMyProgress;
 			sourceTree = "<group>";
@@ -1595,7 +1595,7 @@
 				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
 				2F83C796282A0A0C00EC3334 /* ResultTableViewCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
-				2F83C794282A0A0C00EC3334 /* TableViewCellMyProgress.swift in Sources */,
+				2F83C794282A0A0C00EC3334 /* MyProgressTableViewCell.swift in Sources */,
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
 				2F83C799282A0A0C00EC3334 /* CustomFileCell.swift in Sources */,
 				2F83C79D282A0A0C00EC3334 /* MyProgressViewController.swift in Sources */,
