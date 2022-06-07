@@ -15,6 +15,10 @@ protocol FormDataDelegate: AnyObject {
 
 extension FormDataDelegate {
     
+    func send(userData: UserData) {
+        // Intentionally Unimplemented
+    }
+    
     func isValidEmail(email: String) -> Bool {
         return email.isValid(inputType: .email)
     }

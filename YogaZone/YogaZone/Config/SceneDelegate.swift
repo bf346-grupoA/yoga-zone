@@ -8,7 +8,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let navController = UINavigationController(rootViewController: LoginViewController())
+//        let navController = UINavigationController(rootViewController: LoginViewController())
+        let navController = UINavigationController(rootViewController: RegisterViewController())
         window = UIWindow(windowScene: windowScene)
         window?.frame = UIScreen.main.bounds
         window?.rootViewController = navController
