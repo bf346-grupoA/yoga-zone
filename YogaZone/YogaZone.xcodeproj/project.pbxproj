@@ -179,6 +179,8 @@
 		792C66B2282D79CA0018D343 /* DropDownTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792C669B282D79CA0018D343 /* DropDownTwoTableViewCell.xib */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
+		8388729F284ED4C200B8FA9C /* EmptyEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388729D284ED4C200B8FA9C /* EmptyEventCell.swift */; };
+		838872A0284ED4C200B8FA9C /* EmptyEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8388729E284ED4C200B8FA9C /* EmptyEventCell.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
 		8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */; };
 		8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */; };
@@ -370,6 +372,8 @@
 		792C669B282D79CA0018D343 /* DropDownTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTwoTableViewCell.xib; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
+		8388729D284ED4C200B8FA9C /* EmptyEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyEventCell.swift; sourceTree = "<group>"; };
+		8388729E284ED4C200B8FA9C /* EmptyEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyEventCell.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
@@ -421,6 +425,8 @@
 			children = (
 				2F036F5B27E429D800993E41 /* EventCell.swift */,
 				2F036F5C27E429D800993E41 /* EventCell.xib */,
+				8388729D284ED4C200B8FA9C /* EmptyEventCell.swift */,
+				8388729E284ED4C200B8FA9C /* EmptyEventCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1349,6 +1355,7 @@
 				2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */,
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
 				792C66AB282D79CA0018D343 /* TrainingFinishedVC.xib in Resources */,
+				838872A0284ED4C200B8FA9C /* EmptyEventCell.xib in Resources */,
 				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
 				2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */,
 				2F83C797282A0A0C00EC3334 /* MyTableViewCell.xib in Resources */,
@@ -1445,6 +1452,7 @@
 				2F0C342727E4384E004A1E8C /* ExpireViewController.swift in Sources */,
 				792C66B1282D79CA0018D343 /* DropDownTwoTableViewCell.swift in Sources */,
 				2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */,
+				8388729F284ED4C200B8FA9C /* EmptyEventCell.swift in Sources */,
 				2F036F8727E429D800993E41 /* CancelContainerViewController.swift in Sources */,
 				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
 				2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */,

@@ -26,6 +26,7 @@ class EventListViewController: UIViewController {
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         self.tableView?.register(EventCell.nib(), forCellReuseIdentifier: EventCell.identifier)
+        self.tableView?.register(EmptyEventCell.nib(), forCellReuseIdentifier: EmptyEventCell.identifier)
     }
     
 }
@@ -34,19 +35,36 @@ class EventListViewController: UIViewController {
 extension EventListViewController:UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.eventData.count
+        if self.eventData.isEmpty {
+            return 1
+        } else {
+            return self.eventData.count
+        }
+        
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: EventCell.identifier, for: indexPath) as? EventCell
-        cell?.setupCell(event: self.eventData[indexPath.row])
-        cell?.selectionStyle = .none
-        return cell ?? UITableViewCell()
+        if self.eventData.isEmpty {
+            self.tableView.isScrollEnabled = false
+            let cell = tableView.dequeueReusableCell(withIdentifier: EmptyEventCell.identifier, for: indexPath) as? EmptyEventCell
+            cell?.selectionStyle = .none
+            return cell ?? UITableViewCell()
+        } else {
+            self.tableView.isScrollEnabled = true
+            let cell = tableView.dequeueReusableCell(withIdentifier: EventCell.identifier, for: indexPath) as? EventCell
+            cell?.setupCell(event: self.eventData[indexPath.row])
+            cell?.selectionStyle = .none
+            return cell ?? UITableViewCell()
+        }
+               
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 135.0
+        if self.eventData.isEmpty {
+            return 400.0
+        } else {
+            return 135.0
+        }
     }
     
 }
@@ -56,12 +74,15 @@ extension EventListViewController:UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let storyboard = UIStoryboard(name: "EventDetail", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "EventDetailViewController") as? EventDetailViewController
+        if !self.eventData.isEmpty {
+            let storyboard = UIStoryboard(name: "EventDetail", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "EventDetailViewController") as? EventDetailViewController
+            
+            vc?.event = eventData[indexPath.row]
+            
+            navigationController?.pushViewController(vc ?? EventDetailViewController(), animated: true)
+        }
         
-        vc?.event = eventData[indexPath.row]
-        
-        navigationController?.pushViewController(vc ?? EventDetailViewController(), animated: true)
     }
     
 }

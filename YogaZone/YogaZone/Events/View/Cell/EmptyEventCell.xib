@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmptyEventCell" rowHeight="393" id="KGk-i7-Jjw" customClass="EmptyEventCell" customModule="YogaZone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="393"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="302" height="393"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_yoga" translatesAutoresizingMaskIntoConstraints="NO" id="X6O-lb-L0J">
+                        <rect key="frame" x="11" y="10" width="280" height="260"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="280" id="5mF-Rd-Dks"/>
+                            <constraint firstAttribute="height" constant="260" id="6Bg-xb-hgQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rL-Bz-QwJ">
+                        <rect key="frame" x="41" y="315" width="220" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="n4V-xw-cpc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X6O-lb-L0J" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4k5-kV-1C4"/>
+                    <constraint firstItem="1rL-Bz-QwJ" firstAttribute="top" secondItem="X6O-lb-L0J" secondAttribute="bottom" constant="45" id="HhZ-3r-uGX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1rL-Bz-QwJ" secondAttribute="trailing" constant="25" id="QmV-ly-w34"/>
+                    <constraint firstItem="X6O-lb-L0J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="S5t-QO-Bnt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1rL-Bz-QwJ" secondAttribute="bottom" constant="10" id="sZr-Cy-c8N"/>
+                    <constraint firstItem="1rL-Bz-QwJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="25" id="v8f-dw-BLx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="noActivitiesImageView" destination="X6O-lb-L0J" id="PUN-cM-tAa"/>
+                <outlet property="noActivitiesLabel" destination="1rL-Bz-QwJ" id="u2u-v9-ubi"/>
+            </connections>
+            <point key="canvasLocation" x="210.1449275362319" y="185.82589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="undraw_yoga" width="125" height="135.5"/>
+    </resources>
+</document>
