@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-class LoginViewControllerX: UIViewController {
+class LoginViewController: UIViewController {
     
     var loginView: LoginView?
     var auth: Auth?
@@ -33,7 +33,7 @@ class LoginViewControllerX: UIViewController {
     }
 }
 
-extension LoginViewControllerX: LoginViewProtocol {
+extension LoginViewController: LoginViewProtocol {
     
     func joinButtonAction() {
         guard let login = loginView else {return}
@@ -68,7 +68,7 @@ extension LoginViewControllerX: LoginViewProtocol {
     }
 }
 
-extension LoginViewControllerX: UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderWidth = 2.0
