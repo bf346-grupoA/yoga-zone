@@ -29,7 +29,7 @@ class LoginViewControllerX: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationItem.setHidesBackButton(true, animated: true);
     }
 }
 
