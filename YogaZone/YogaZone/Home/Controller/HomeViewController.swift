@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true);
         self.view.backgroundColor = .white
-        setupTableView()
+        self.setupTableView()
     }
 }
 
@@ -64,12 +64,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         default: return self.view.frame.height
         }
     }
-    
 
 }
 
 // MARK: Navigation
-extension HomeViewController: Navigable {
+extension HomeViewController: NavigationDelegate {
     func navigateTo(routeIndex: Int) {
         switch routeIndex {
             case 1: self.navigationController?.pushViewController(PoseGalleryViewController(), animated: true)

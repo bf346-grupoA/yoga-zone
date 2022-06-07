@@ -11,7 +11,7 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
-    weak var delegate: Navigable?
+    weak var delegate: NavigationDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()

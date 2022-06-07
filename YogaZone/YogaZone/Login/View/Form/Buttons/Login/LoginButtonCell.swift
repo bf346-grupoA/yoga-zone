@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginButtonCell: UITableViewCell {
-    weak var delegate: Navigable?
+    weak var delegate: NavigationDelegate?
     
     @IBOutlet weak var loginButton: UIButton!
     
