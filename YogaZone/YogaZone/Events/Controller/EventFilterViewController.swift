@@ -81,7 +81,9 @@ class EventFilterViewController: UIViewController {
             self.dateErrorLabel.textColor = .red
             self.dateErrorLabel.adjustsFontSizeToFitWidth = true
             self.dateErrorLabel.minimumScaleFactor = 0.5
+            self.dateErrorLabel.isHidden = false
         } else {
+            self.dateErrorLabel.isHidden = true
             self.saveUserDefault(value: self.cityTextField.text ?? "", key: "eventFilterDataLocal")
             self.saveUserDefault(value: self.eventNameTextField.text ?? "", key: "eventFilterDataTitle")
             self.saveUserDefault(value: self.startDatePicker.date, key: "eventFilterDataStartDate")
@@ -160,6 +162,7 @@ extension EventFilterViewController {
         self.startDatePicker.preferredDatePickerStyle = .compact
         self.endDatePicker.datePickerMode = .date
         self.endDatePicker.preferredDatePickerStyle = .compact
+        self.dateErrorLabel.isHidden = true
         
         self.dateIntervalSelectedSwitch.addTarget(self, action: #selector(dateSwitchChanged), for: UIControl.Event.valueChanged)
         
