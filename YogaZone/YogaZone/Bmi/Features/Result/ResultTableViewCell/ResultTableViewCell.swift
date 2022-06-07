@@ -6,7 +6,7 @@
 //
 
 import UIKit
-protocol MyTableViewCellProtocol{
+protocol ResultTableViewCellProtocol{
     func actionSaveButton()
 }
 
@@ -21,15 +21,16 @@ class ResultTableViewCell: UITableViewCell {
     @IBOutlet weak var caseIndexLabel: UILabel!
     @IBOutlet weak var buttonTapped: UIButton!
     
-    var delegate: MyTableViewCellProtocol?
+    var delegate: ResultTableViewCellProtocol?
     
-    static let identifier: String = "MyTableViewCell"
+    static let identifier: String = "ResultTableViewCell"
     static func nib() -> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.configLabels()
     }
 
     override func layoutSubviews() {
@@ -100,5 +101,15 @@ class ResultTableViewCell: UITableViewCell {
     
     @IBAction func tappedCalculate(_ sender: Any) {
         self.delegate?.actionSaveButton()
+    }
+    
+    func configLabels(){
+        self.resultLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.waitingResultLabel.font = UIFont(name: "Comfortaa-Bold", size: 15)
+        self.possibleConsequencesLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.waitingPossibleConsequencesLabel.font = UIFont(name: "Comfortaa-Bold", size: 15)
+        self.numberIndexLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.caseIndexLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.buttonTapped.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 20)
     }
 }

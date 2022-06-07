@@ -57,7 +57,7 @@ extension ResultViewController:UITableViewDelegate,UITableViewDataSource{
     }
 }
 
-extension ResultViewController: MyTableViewCellProtocol{
+extension ResultViewController: ResultTableViewCellProtocol{
     func actionSaveButton() {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyProgressViewController") as? MyProgressViewController
         vc?.goal = goal
