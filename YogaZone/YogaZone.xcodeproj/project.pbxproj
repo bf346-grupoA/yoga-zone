@@ -141,7 +141,6 @@
 		3142E8FF284D3CD700C212A3 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */; };
 		3142E900284D3CD700C212A3 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8FC284D3CD700C212A3 /* NavigationDelegate.swift */; };
 		31A83954284BBCBA0027987A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83953284BBCBA0027987A /* LoginView.swift */; };
-		31A83956284BBCE20027987A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83955284BBCE20027987A /* LoginViewController.swift */; };
 		31A8395B284BE0130027987A /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A8395A284BE0130027987A /* ResetPasswordView.swift */; };
 		31A83962284BE7A80027987A /* ResetPasswordViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */; };
 		31D3E802284C2B4200CFC7B5 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */; };
@@ -195,6 +194,7 @@
 		8391EA5A27E820E800F466F2 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */; };
 		8391EA5B27E820E800F466F2 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */; };
 		839A06AF282DB07100C797EC /* TrainingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A06AE282DB07100C797EC /* TrainingData.swift */; };
+		83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B78448284F10EA00F61005 /* LoginViewController.swift */; };
 		83E3165C284F06360066EAA0 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3165B284F06360066EAA0 /* FormValidation.swift */; };
 		83E3165D284F08A80066EAA0 /* Boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A5283B309800C698D0 /* Boat.gif */; };
 /* End PBXBuildFile section */
@@ -337,7 +337,6 @@
 		3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		3142E8FC284D3CD700C212A3 /* NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
 		31A83953284BBCBA0027987A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		31A83955284BBCE20027987A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31A8395A284BE0130027987A /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewControllerX.swift; sourceTree = "<group>"; };
 		31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
@@ -391,6 +390,7 @@
 		8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		839A06AE282DB07100C797EC /* TrainingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
+		83B78448284F10EA00F61005 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83E3165B284F06360066EAA0 /* FormValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
 		9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D27262DAFA92507C209F58 /* Pods-YogaZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.debug.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1078,7 +1078,7 @@
 		31A83952284BBC890027987A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				31A83955284BBCE20027987A /* LoginViewController.swift */,
+				83B78448284F10EA00F61005 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1609,7 +1609,6 @@
 				792C669E282D79CA0018D343 /* TrainingFinishedVC.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
 				311B94E52847BB2E003A9C14 /* MyProgressViewModel.swift in Sources */,
-				2F5B66F527ED22A800AC243E /* RegisterButtonCell.swift in Sources */,
 				8366B690284BE55F001166D1 /* OboardingService.swift in Sources */,
 				311B94EA2847D838003A9C14 /* ResultViewModel.swift in Sources */,
 				2F036F8127E429D800993E41 /* EventData.swift in Sources */,
@@ -1650,6 +1649,7 @@
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
 				2F0C341D27E4384E004A1E8C /* SettingsViewController.swift in Sources */,
+				83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */,
 				2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */,
 				792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */,
 				2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */,
@@ -1688,7 +1688,6 @@
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* FormFieldCell.swift in Sources */,
 				8366B694284BE739001166D1 /* BrazilianStates.swift in Sources */,
-				2F5B670827ED230D00AC243E /* FormValidation.swift in Sources */,
 				2F0C342627E4384E004A1E8C /* ViewModel.swift in Sources */,
 				311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */,
 				31A83962284BE7A80027987A /* ResetPasswordViewControllerX.swift in Sources */,
