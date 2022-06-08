@@ -14,9 +14,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true);
         self.view.backgroundColor = .white
-        self.getOnboardingUserDefault()
-        self.setupTableView()
-        
+        self.setupTableView()        
     }
 }
 
@@ -85,24 +83,5 @@ extension HomeViewController: NavigationDelegate {
             self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: "HomeEventsViewController"), animated: true)
         default: self.navigationController?.pushViewController(MyProfileVC(), animated: true)
         }
-    }
-}
-
-//MARK: - User Defaults
-extension HomeViewController {
-    
-    func getOnboardingUserDefault() {
-        let isOnboardingAvaliable = self.getUserDefaults(key: "isOnboardingAvaliable") as? Bool
-        if isOnboardingAvaliable != true {
-            self.navigationController?.pushViewController(UserLevelVC(), animated: true)
-        }
-    }
-    
-    func saveUserDefault(value: Any, key: String){
-        UserDefaults.standard.set(value, forKey: key)
-    }
-    
-    func getUserDefaults(key: String) -> Any? {
-        return UserDefaults.standard.object(forKey: key)
     }
 }

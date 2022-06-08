@@ -48,8 +48,15 @@ extension LoginViewController: LoginViewProtocol {
                     self.loginView?.joinButton.startAnimation()
                     DispatchQueue.main.asyncAfter(deadline: .now()+1) {
                         self.loginView?.joinButton.stopAnimation(animationStyle:.normal, revertAfterDelay: 0) {
-                            let vc = HomeViewController()
-                            self.navigationController?.pushViewController(vc, animated: true)
+                            
+                            let isOnboardingAvaliable = self.getUserDefaults(key: "isOnboardingAvaliable") as? Bool
+                            if isOnboardingAvaliable != true {
+                                self.navigationController?.pushViewController(UserLevelVC(), animated: true)
+                            } else {
+                                let vc = HomeViewController()
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            }
+                            
                         }
                     }
                     
@@ -59,7 +66,7 @@ extension LoginViewController: LoginViewProtocol {
     }
     
     func subscribeButtonAction() {
- //TODO: nao estou conseguindo fazer a chamada para o fluxo de Register 
+        //TODO: nao estou conseguindo fazer a chamada para o fluxo de Register
     }
     
     func forgotPasswordButtonAction() {
@@ -90,5 +97,17 @@ extension LoginViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+}
+
+//MARK: - User Defaults
+extension LoginViewController {
+    
+    func saveUserDefault(value: Any, key: String){
+        UserDefaults.standard.set(value, forKey: key)
+    }
+    
+    func getUserDefaults(key: String) -> Any? {
+        return UserDefaults.standard.object(forKey: key)
     }
 }
