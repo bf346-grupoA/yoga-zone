@@ -7,12 +7,15 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class LoginViewController: UIViewController {
     
     var loginView: LoginView?
     var auth: Auth?
     var alert: AlertController?
+    let database = Firestore.firestore()
+    var isOnboarding:Bool?
     
     override func loadView() {
         self.loginView = LoginView()
@@ -46,10 +49,18 @@ extension LoginViewController: LoginViewProtocol {
                     self.alert?.setup(title: LoginConstants.ops.rawValue, message: LoginConstants.somethingWrong.rawValue, okText: LoginConstants.ok.rawValue)
                 }else{
                     self.loginView?.joinButton.startAnimation()
+                    self.loadOnboaringStatus()
+                    
                     DispatchQueue.main.asyncAfter(deadline: .now()+1) {
                         self.loginView?.joinButton.stopAnimation(animationStyle:.normal, revertAfterDelay: 0) {
-                            let vc = HomeViewController()
-                            self.navigationController?.pushViewController(vc, animated: true)
+                            
+                            if self.isOnboarding == true {
+                                let vc = HomeViewController()
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            } else {
+                                self.navigationController?.pushViewController(UserLevelVC(), animated: true)
+                            }
+                            
                         }
                     }
                     
@@ -59,7 +70,7 @@ extension LoginViewController: LoginViewProtocol {
     }
     
     func subscribeButtonAction() {
- //TODO: nao estou conseguindo fazer a chamada para o fluxo de Register 
+        //TODO: nao estou conseguindo fazer a chamada para o fluxo de Register
     }
     
     func forgotPasswordButtonAction() {
@@ -91,4 +102,43 @@ extension LoginViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
+}
+
+//MARK: - User Defaults
+extension LoginViewController {
+    
+    func saveUserDefault(value: Any, key: String){
+        UserDefaults.standard.set(value, forKey: key)
+    }
+    
+    func getUserDefaults(key: String) -> Any? {
+        return UserDefaults.standard.object(forKey: key)
+    }
+}
+
+//MARK: - Firestore
+extension LoginViewController {
+    
+    func loadOnboaringStatus(){
+        if let email = Auth.auth().currentUser?.email {
+            database.collection(OnboardingConstants.collectionName.rawValue)
+                .document(email)
+                .getDocument { document, error in
+                    if let e = error {
+                        print("\(CommonConstants.firestoreRetrivingDataError.rawValue) \(e.localizedDescription)")
+                    } else {
+                        if let document = document, document.exists {
+                            let data = document.data()
+                            let isOnboarding = data?["isOnboarding"] as? Bool ?? false
+                            self.isOnboarding = isOnboarding
+                        } else {
+                            print("\(CommonConstants.firestoreDocumentDoesNotExistError.rawValue)")
+                            self.isOnboarding = false
+                        }
+                    }
+                }
+        }
+        
+    }
+    
 }
