@@ -19,7 +19,6 @@
                 <outlet property="saveChangesButton" destination="NtN-Yo-jD1" id="6yf-OT-k7b"/>
                 <outlet property="tableView" destination="6rF-cA-U9t" id="ahp-SX-I9f"/>
                 <outlet property="tappedCameraIconImage" destination="52C-KW-VGF" id="Amp-rI-auV"/>
-                <outlet property="tappedMoreOptionsButtonImage" destination="SfG-Fa-1GV" id="WLl-4l-iFB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -43,7 +42,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ricardo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds1-Gz-2KN">
-                    <rect key="frame" x="137.5" y="145" width="100" height="22.5"/>
+                    <rect key="frame" x="137.5" y="145" width="100" height="23.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="00s-Fh-00u"/>
                     </constraints>
@@ -52,7 +51,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-cA-U9t">
-                    <rect key="frame" x="0.0" y="192.5" width="375" height="374.5"/>
+                    <rect key="frame" x="0.0" y="193.5" width="375" height="373.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-Yo-jD1">
@@ -73,13 +72,6 @@
                         <action selector="tappedSaveChangesButton:" destination="-1" eventType="touchUpInside" id="bOX-h5-J73"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SfG-Fa-1GV">
-                    <rect key="frame" x="315" y="0.0" width="35" height="35"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="35" id="ddp-Fa-5pb"/>
-                        <constraint firstAttribute="width" constant="35" id="qkM-21-R3e"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,8 +83,6 @@
                 <constraint firstItem="NtN-Yo-jD1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="HfM-r6-FoN"/>
                 <constraint firstItem="6rF-cA-U9t" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="IRT-Zi-J74"/>
                 <constraint firstItem="6rF-cA-U9t" firstAttribute="top" secondItem="ds1-Gz-2KN" secondAttribute="bottom" constant="25" id="NDL-NK-bcl"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SfG-Fa-1GV" secondAttribute="trailing" constant="25" id="Oq1-0z-9JU"/>
-                <constraint firstItem="SfG-Fa-1GV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PJ5-gU-qh1"/>
                 <constraint firstItem="ds1-Gz-2KN" firstAttribute="top" secondItem="Ee7-fb-6dF" secondAttribute="bottom" constant="15" id="eKY-dl-k7C"/>
                 <constraint firstItem="ds1-Gz-2KN" firstAttribute="centerX" secondItem="Ee7-fb-6dF" secondAttribute="centerX" id="ho8-as-3xY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NtN-Yo-jD1" secondAttribute="trailing" constant="50" id="j7R-dw-OMD"/>

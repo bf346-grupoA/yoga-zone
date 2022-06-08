@@ -164,14 +164,10 @@
 		2F79E15F27DD0DB60070397F /* ModalVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */; };
 		2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79E16127DD12A30070397F /* PoseCategoryCell.swift */; };
 		2F79E16427DD12A30070397F /* PoseCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79E16227DD12A30070397F /* PoseCategoryCell.xib */; };
-		2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */; };
-		2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */; };
 		2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B727EACC3C00C5BD81 /* MyProfileTableViewCell.swift */; };
 		2FA287C527EACC3C00C5BD81 /* MyProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */; };
 		2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B927EACC3C00C5BD81 /* MyProfileVC.swift */; };
 		2FA287C727EACC3C00C5BD81 /* MyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287BA27EACC3C00C5BD81 /* MyProfileVC.xib */; };
-		2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287BC27EACC3C00C5BD81 /* DeleteAccountVC.swift */; };
-		2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */; };
 		2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */; };
 		2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */; };
 		2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287CC27EAD19000C5BD81 /* Navigable.swift */; };
@@ -180,6 +176,7 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+		314EFC0E28515BBD00C35F69 /* ProfileViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314EFC0D28515BBD00C35F69 /* ProfileViewX.swift */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
@@ -354,14 +351,10 @@
 		2F79E15D27DD0DB60070397F /* ModalVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalVideoViewController.xib; sourceTree = "<group>"; };
 		2F79E16127DD12A30070397F /* PoseCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategoryCell.swift; sourceTree = "<group>"; };
 		2F79E16227DD12A30070397F /* PoseCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoseCategoryCell.xib; sourceTree = "<group>"; };
-		2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsVC.swift; sourceTree = "<group>"; };
-		2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreOptionsVC.xib; sourceTree = "<group>"; };
 		2FA287B727EACC3C00C5BD81 /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
 		2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileTableViewCell.xib; sourceTree = "<group>"; };
 		2FA287B927EACC3C00C5BD81 /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		2FA287BA27EACC3C00C5BD81 /* MyProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileVC.xib; sourceTree = "<group>"; };
-		2FA287BC27EACC3C00C5BD81 /* DeleteAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountVC.swift; sourceTree = "<group>"; };
-		2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteAccountVC.xib; sourceTree = "<group>"; };
 		2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
 		2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
 		2FA287CC27EAD19000C5BD81 /* Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigable.swift; sourceTree = "<group>"; };
@@ -372,6 +365,7 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		314EFC0D28515BBD00C35F69 /* ProfileViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewX.swift; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -1281,21 +1275,10 @@
 		2FA287B127EACC3C00C5BD81 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				2FA287B227EACC3C00C5BD81 /* MoreOptions */,
 				2FA287B527EACC3C00C5BD81 /* MyProfile */,
-				2FA287BB27EACC3C00C5BD81 /* DeleteAccount */,
 				2FA287BE27EACC3C00C5BD81 /* Helpers */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		2FA287B227EACC3C00C5BD81 /* MoreOptions */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */,
-				2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */,
-			);
-			path = MoreOptions;
 			sourceTree = "<group>";
 		};
 		2FA287B527EACC3C00C5BD81 /* MyProfile */ = {
@@ -1315,15 +1298,6 @@
 				2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */,
 			);
 			path = MyProfileTableViewCell;
-			sourceTree = "<group>";
-		};
-		2FA287BB27EACC3C00C5BD81 /* DeleteAccount */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287BC27EACC3C00C5BD81 /* DeleteAccountVC.swift */,
-				2FA287BD27EACC3C00C5BD81 /* DeleteAccountVC.xib */,
-			);
-			path = DeleteAccount;
 			sourceTree = "<group>";
 		};
 		2FA287BE27EACC3C00C5BD81 /* Helpers */ = {
@@ -1362,6 +1336,7 @@
 		3126833827C15ECA003F017B /* YogaZone */ = {
 			isa = PBXGroup;
 			children = (
+				314EFC0C28515B9600C35F69 /* perfilX */,
 				2F3A53DA27EC04A100FBA25F /* Training */,
 				2F3A53D827EB772800FBA25F /* Helpers */,
 				2FA287B127EACC3C00C5BD81 /* Profile */,
@@ -1381,6 +1356,14 @@
 				3126834727C15ECB003F017B /* Info.plist */,
 			);
 			path = YogaZone;
+			sourceTree = "<group>";
+		};
+		314EFC0C28515B9600C35F69 /* perfilX */ = {
+			isa = PBXGroup;
+			children = (
+				314EFC0D28515BBD00C35F69 /* ProfileViewX.swift */,
+			);
+			path = perfilX;
 			sourceTree = "<group>";
 		};
 		8327042227E7AB3A0006CF3B /* Sucess Screen */ = {
@@ -1505,7 +1488,6 @@
 				2F412ED427E41821007708E8 /* IntroViewController.xib in Resources */,
 				2F0C342C27E4384E004A1E8C /* HoldViewController.xib in Resources */,
 				8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */,
-				2FA287C927EACC3C00C5BD81 /* DeleteAccountVC.xib in Resources */,
 				2F5B66D727ED227900AC243E /* ResetPasswordViewController.xib in Resources */,
 				2F0C343627E43954004A1E8C /* start.mp4 in Resources */,
 				8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */,
@@ -1519,7 +1501,6 @@
 				2F5B66FF27ED22A800AC243E /* EmailAndPasswordCell.xib in Resources */,
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
 				2F0C342027E4384E004A1E8C /* TimerViewController.xib in Resources */,
-				2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */,
 				2F412ECF27E41821007708E8 /* MeditacaoHomeViewController.xib in Resources */,
 				3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */,
 				8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */,
@@ -1570,7 +1551,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */,
 				2F5B66FD27ED22A800AC243E /* LoginButtonCell.swift in Sources */,
 				2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */,
 				2F0C342327E4384E004A1E8C /* StartViewController.swift in Sources */,
@@ -1598,6 +1578,7 @@
 				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
 				2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */,
 				2F412ED027E41821007708E8 /* MeditacaoHomeViewController.swift in Sources */,
+				314EFC0E28515BBD00C35F69 /* ProfileViewX.swift in Sources */,
 				2FA287CD27EAD19000C5BD81 /* Navigable.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
 				2F5B670627ED22B500AC243E /* UserData.swift in Sources */,
@@ -1658,7 +1639,6 @@
 				2F036FAF27E429E400993E41 /* HistoricoController.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
-				2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */,
 				2F5B66FE27ED22A800AC243E /* EmailAndPasswordCell.swift in Sources */,
 				2F0C342B27E4384E004A1E8C /* HoldViewController.swift in Sources */,
 				2F5B66F827ED22A800AC243E /* RegisterButtonCell.swift in Sources */,

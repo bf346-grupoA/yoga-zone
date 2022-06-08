@@ -9,12 +9,8 @@ import UIKit
 
 class MyProfileTableViewCell: UITableViewCell {
     
-    
-    
-    @IBOutlet weak var meuPerfilTitleCellLabel: UILabel!
-    
-    @IBOutlet weak var meuPerfilTitleCellTextField: UITextField!
-    
+    @IBOutlet weak var myProfileTitleCellLabel: UILabel!
+    @IBOutlet weak var myProfileTitleCellTextField: UITextField!
     
     static let identifier:String = "MyProfileTableViewCell"
     
@@ -25,7 +21,7 @@ class MyProfileTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         clearBackgroundColorWhenSelectCell()
-        self.meuPerfilTitleCellTextField.setupRightImage(imageName: "editIcon")
+        self.myProfileTitleCellTextField.setupRightImage(imageName: "editIcon")
     }
     
     func clearBackgroundColorWhenSelectCell() {
@@ -34,7 +30,6 @@ class MyProfileTableViewCell: UITableViewCell {
         selectedBackgroundView = view
     }
 }
-
 
 extension UITextField {
     func setupRightImage(imageName:String){

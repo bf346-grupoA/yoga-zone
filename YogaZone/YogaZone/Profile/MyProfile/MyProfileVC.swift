@@ -9,7 +9,6 @@ import UIKit
 
 class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     
-    
     private var arrayProfile:[String] = ["Nick", "Data de Nascimento", "Localidade", "Sexo"]
     
     @IBOutlet weak var perfilImage: UIImageView!
@@ -18,7 +17,6 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var tappedMoreOptionsButtonImage: UIImageView!
     
     @IBOutlet weak var saveChangesButton: UIButton!
     
@@ -27,13 +25,11 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         super.viewDidLoad()
         configTableView()
         configImages()
-        configMoreOptionsButton()
         configSaveChangeButton()
         setupNavigationBar()
     }
     
     func configImages(){
-        tappedMoreOptionsButtonImage.image = UIImage(named: "moreOptions")
         perfilImage.image = UIImage(named: "person")
         tappedCameraIconImage.image = UIImage(named: "cameraIcon")
     }
@@ -46,27 +42,14 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     }
 
     
-    private func configMoreOptionsButton(){
-        let tapMoreOptionsButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedMoreOptionsButton))
-        self.tappedMoreOptionsButtonImage.addGestureRecognizer(tapMoreOptionsButton)
-        self.tappedMoreOptionsButtonImage.isUserInteractionEnabled = true
-        
-    }
-    
-    @objc func tappedMoreOptionsButton(){
-        self.navigationController?.pushViewController(MoreOptionsVC(), animated: true)
-        
-    }
     
     func configSaveChangeButton(){
         var containerTitle = AttributeContainer()
             containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        
         var configSaveChangesButton = UIButton.Configuration.filled()
             configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
             configSaveChangesButton.baseForegroundColor = .white
             configSaveChangesButton.attributedTitle = AttributedString("Salvar Alterações", attributes: containerTitle)
-        
         self.saveChangesButton.configuration = configSaveChangesButton
         self.saveChangesButton.layer.cornerRadius = 8
     }
@@ -85,7 +68,7 @@ extension MyProfileVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: MyProfileTableViewCell? = tableView.dequeueReusableCell(withIdentifier: MyProfileTableViewCell.identifier, for: indexPath) as? MyProfileTableViewCell
-        cell?.meuPerfilTitleCellLabel.text = self.arrayProfile[indexPath.row]
+        cell?.myProfileTitleCellLabel.text = self.arrayProfile[indexPath.row]
         return cell ?? UITableViewCell()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
