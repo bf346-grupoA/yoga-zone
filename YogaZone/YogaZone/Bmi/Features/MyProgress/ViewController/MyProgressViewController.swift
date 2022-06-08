@@ -86,7 +86,6 @@ class MyProgressViewController: UIViewController, SendData{
         self.goalLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.missingLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
     }
-    
 }
 
 extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
@@ -101,7 +100,4 @@ extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
         return cell ?? UITableViewCell()
     }
     
-//    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath){
-//        self.tableView.deleteRows(at: [IndexPath], with: .top)
-//    }
 }
