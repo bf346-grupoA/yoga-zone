@@ -38,12 +38,15 @@ class BmiViewController: UIViewController {
     var goal:Float = 0
     var bmi:Float = 0
     var missing: Float = 1.5
-    
+    let userDefaults = UserDefaults.standard
+
+       
     override func viewDidLoad() {
         super.viewDidLoad()
         self.switchLabel.isOn = false
         self.viewModel.initFireStore()
         self.configLabels()
+
     }
     
     override func viewDidLayoutSubviews() {
@@ -55,7 +58,10 @@ class BmiViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.blockSlider()
         self.navigationController?.isNavigationBarHidden = true
+        
     }
+    
+
     
     @IBAction func unwindToBmiVC(_ sender: UIStoryboardSegue) {
     }
@@ -90,6 +96,7 @@ class BmiViewController: UIViewController {
     
     @IBAction func switchTapped(_ sender: UISwitch) {
         self.blockSlider()
+            
     }
     
     @IBAction func tappedMyProgress(_ sender: Any) {
@@ -114,7 +121,6 @@ class BmiViewController: UIViewController {
     }
     
 }
-
 extension BmiViewController {
     
     func calculateResult() {
