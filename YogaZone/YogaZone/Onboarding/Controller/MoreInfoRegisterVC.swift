@@ -5,6 +5,8 @@
 //  Created by Marcus on 16/03/22.
 //
 
+import FirebaseFirestore
+import FirebaseAuth
 import UIKit
 
 class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
@@ -33,6 +35,8 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     let radioController: RadioButtonController = RadioButtonController()
     let onboardingViewModel:OnboardingViewModel = OnboardingViewModel()
+    let database = Firestore.firestore()
+    var gender:String = "Feminino"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,8 +102,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         let dateFormater = DateFormatter()
         dateFormater.dateStyle = .medium
         dateFormater.timeStyle = .none
-        
-        self.ageTextField.text = dateFormater.string(from: datePicker.date)
+        self.ageTextField.text = dateFormater.string(from: self.datePicker.date)
         
         self.loadStateData()
         self.view.endEditing(true)
@@ -196,16 +199,27 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @IBAction func btnWomanAction(_ sender: UIButton) {
+        self.gender = "Feminino"
         radioController.buttonArrayUpdated(buttonSelected: sender)
     }
     
     @IBAction func btnManAction(_ sender: UIButton) {
+        self.gender = "Masculino"
         radioController.buttonArrayUpdated(buttonSelected: sender)
     }
     
     @IBAction func tappedRegisterDone(_ sender: UIButton) {
+        
+        var userData = OnboardingModel()
+        userData.email = Auth.auth().currentUser?.email
+        userData.birthDate = self.datePicker.date
+        userData.state = self.stateTextField.text
+        userData.city = self.cityTextField.text
+        userData.gender = self.gender
+        userData.isOnboarding = true
+        saveFirestoreData(user: userData)
+        
         self.navigationController?.pushViewController(DoneRegisterVC(), animated: true)
-        UserDefaults.standard.set(true, forKey: "isOnboardingAvaliable")
     }
 }
 
@@ -216,6 +230,7 @@ extension MoreInfoRegisterVC {
     }
 }
 
+//MARK: - PickerView Delegate
 extension MoreInfoRegisterVC: UIPickerViewDelegate, UIPickerViewDataSource{
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -267,6 +282,7 @@ extension MoreInfoRegisterVC: UIPickerViewDelegate, UIPickerViewDataSource{
     
 }
 
+//MARK: - ObboardingViewModel Delegate
 extension MoreInfoRegisterVC: OnboardingViewModelDelegate {
     
     func error(error: Error) {
@@ -291,6 +307,37 @@ extension MoreInfoRegisterVC: OnboardingViewModelDelegate {
             }
         }
         
+    }
+    
+}
+
+//MARK: - Firestore
+extension MoreInfoRegisterVC {
+    
+    func saveFirestoreData(user:OnboardingModel) {
+       
+        if let email = Auth.auth().currentUser?.email,
+           let birthDate = user.birthDate,
+           let state = user.state,
+           let city = user.city,
+           let gender = user.gender,
+           let isOnboarding = user.isOnboarding {
+            database.collection(OnboardingConstants.collectionName.rawValue)
+                .document(email)
+                .updateData([
+                    OnboardingConstants.birthDateField.rawValue : birthDate,
+                    OnboardingConstants.stateField.rawValue : state,
+                    OnboardingConstants.cityField.rawValue : city,
+                    OnboardingConstants.genderField.rawValue : gender,
+                    OnboardingConstants.isOnboardingField.rawValue : isOnboarding
+                ]) { (error) in
+                    if let e = error {
+                        print("There was an issue saving data to firestore, \(e.localizedDescription)")
+                    } else {
+                        print("Successfully saved data.")
+                    }
+                }
+        }
     }
     
 }

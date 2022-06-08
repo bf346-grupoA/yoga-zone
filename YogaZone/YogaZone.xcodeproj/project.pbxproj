@@ -177,6 +177,7 @@
 		7979B2AE283B31CB00C698D0 /* Lotus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2AD283B31CB00C698D0 /* Lotus.gif */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
+		833A67A6285024C300F21DF6 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A67A5285024C300F21DF6 /* OnboardingModel.swift */; };
 		8366B690284BE55F001166D1 /* OboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B68F284BE55F001166D1 /* OboardingService.swift */; };
 		8366B692284BE5D0001166D1 /* BrazilianCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B691284BE5D0001166D1 /* BrazilianCities.swift */; };
 		8366B694284BE739001166D1 /* BrazilianStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B693284BE739001166D1 /* BrazilianStates.swift */; };
@@ -197,6 +198,8 @@
 		83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B78448284F10EA00F61005 /* LoginViewController.swift */; };
 		83E3165C284F06360066EAA0 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3165B284F06360066EAA0 /* FormValidation.swift */; };
 		83E3165D284F08A80066EAA0 /* Boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A5283B309800C698D0 /* Boat.gif */; };
+		83F14AF22850DBE300ED56C2 /* OnboardingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F14AF12850DBE300ED56C2 /* OnboardingConstants.swift */; };
+		83F14AF428511AC400ED56C2 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F14AF328511AC400ED56C2 /* CommonConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -373,6 +376,7 @@
 		7979B2AD283B31CB00C698D0 /* Lotus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Lotus.gif; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
+		833A67A5285024C300F21DF6 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		8366B68F284BE55F001166D1 /* OboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OboardingService.swift; sourceTree = "<group>"; };
 		8366B691284BE5D0001166D1 /* BrazilianCities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrazilianCities.swift; path = YogaZone/Onboarding/Model/BrazilianCities.swift; sourceTree = SOURCE_ROOT; };
 		8366B693284BE739001166D1 /* BrazilianStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrazilianStates.swift; path = YogaZone/Onboarding/Model/BrazilianStates.swift; sourceTree = SOURCE_ROOT; };
@@ -392,6 +396,8 @@
 		839A06AE282DB07100C797EC /* TrainingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
 		83B78448284F10EA00F61005 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83E3165B284F06360066EAA0 /* FormValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		83F14AF12850DBE300ED56C2 /* OnboardingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConstants.swift; sourceTree = "<group>"; };
+		83F14AF328511AC400ED56C2 /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
 		9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D27262DAFA92507C209F58 /* Pods-YogaZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.debug.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -616,6 +622,7 @@
 		2F3D0EB62848498500C3446B /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				83F14AF328511AC400ED56C2 /* CommonConstants.swift */,
 				83E3165B284F06360066EAA0 /* FormValidation.swift */,
 				3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */,
 				3142E8F9284D3CD700C212A3 /* AssetHelper.swift */,
@@ -1379,6 +1386,8 @@
 			children = (
 				8366B691284BE5D0001166D1 /* BrazilianCities.swift */,
 				8366B693284BE739001166D1 /* BrazilianStates.swift */,
+				833A67A5285024C300F21DF6 /* OnboardingModel.swift */,
+				83F14AF12850DBE300ED56C2 /* OnboardingConstants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1632,6 +1641,7 @@
 				2F412ED027E41821007708E8 /* MeditationHomeViewController.swift in Sources */,
 				2F036F8627E429D800993E41 /* FinalizedContainerViewController.swift in Sources */,
 				2F83C79A282A0A0C00EC3334 /* Myprogress.swift in Sources */,
+				833A67A6285024C300F21DF6 /* OnboardingModel.swift in Sources */,
 				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
 				792C66A1282D79CA0018D343 /* LeaveTrainingVC.swift in Sources */,
 				2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */,
@@ -1642,6 +1652,7 @@
 				2F79E15427DD034C0070397F /* PoseCategory.swift in Sources */,
 				2F3D0EBC284849ED00C3446B /* FirebaseOperationsDelegate.swift in Sources */,
 				792C66A5282D79CA0018D343 /* TrainingModel.swift in Sources */,
+				83F14AF22850DBE300ED56C2 /* OnboardingConstants.swift in Sources */,
 				2F83C798282A0A0C00EC3334 /* BmiEnum.swift in Sources */,
 				2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */,
 				8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */,
@@ -1676,6 +1687,7 @@
 				2F036F8827E429D800993E41 /* ConfirmContainerViewController.swift in Sources */,
 				2F036F7727E429D800993E41 /* EventFilterViewController.swift in Sources */,
 				2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */,
+				83F14AF428511AC400ED56C2 /* CommonConstants.swift in Sources */,
 				31A83954284BBCBA0027987A /* LoginView.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
 				8366B69B284BF717001166D1 /* OboardingViewModel.swift in Sources */,
