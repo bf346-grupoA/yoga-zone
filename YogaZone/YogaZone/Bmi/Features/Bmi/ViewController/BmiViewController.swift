@@ -88,7 +88,7 @@ class BmiViewController: UIViewController {
         self.viewModel.saveData()
     }
     
-    @IBAction func switchTapped(_ sender: Any) {
+    @IBAction func switchTapped(_ sender: UISwitch) {
         self.blockSlider()
     }
     
@@ -100,8 +100,7 @@ class BmiViewController: UIViewController {
         vc?.missing = String(format: " %.1f ", missing)
         self.navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
-    
-    //MARK: - SetupUI
+
     func configLabels(){
         self.titleImc.font = UIFont(name: "Comfortaa-Bold", size: 30)
         self.weigthLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
