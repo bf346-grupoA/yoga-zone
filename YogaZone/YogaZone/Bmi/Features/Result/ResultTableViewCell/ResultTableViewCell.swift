@@ -104,9 +104,9 @@ class ResultTableViewCell: UITableViewCell {
     }
     
     func configLabels(){
-        self.resultLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.resultLabel.font = UIFont(name: "Comfortaa-Bold", size: 25)
         self.waitingResultLabel.font = UIFont(name: "Comfortaa-Bold", size: 15)
-        self.possibleConsequencesLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
+        self.possibleConsequencesLabel.font = UIFont(name: "Comfortaa-Bold", size: 25)
         self.waitingPossibleConsequencesLabel.font = UIFont(name: "Comfortaa-Bold", size: 15)
         self.numberIndexLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
         self.caseIndexLabel.font = UIFont(name: "Comfortaa-Bold", size: 20)
