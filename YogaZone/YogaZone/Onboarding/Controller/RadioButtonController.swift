@@ -11,11 +11,12 @@ class RadioButtonController: NSObject {
     var buttonsArray: [UIButton]! {
         didSet {
             for b in buttonsArray {
-                b.setImage(UIImage(named: "radio_off"), for: .normal)
-                b.setImage(UIImage(named: "radio_on"), for: .selected)
+                b.setImage(UIImage(named: OnboardingConstants.radioOff.rawValue), for: .normal)
+                b.setImage(UIImage(named: OnboardingConstants.radioOn.rawValue), for: .selected)
             }
         }
     }
+    
     var selectedButton: UIButton?
     var defaultButton: UIButton = UIButton() {
         didSet {

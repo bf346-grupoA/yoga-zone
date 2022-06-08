@@ -36,7 +36,7 @@ class OnboardingViewModel{
                 self.stateData = success
                 self.delegate?.success(serviceType: serviceType.getState)
             } else {
-                self.delegate?.error(error: Error.errorDescription(message: "Error obtaining state data", error: error))
+                self.delegate?.error(error: Error.errorDescription(message: OnboardingConstants.badCityRequestError.rawValue, error: error))
             }
         }
     }
@@ -47,7 +47,7 @@ class OnboardingViewModel{
                 self.cityData = success
                 self.delegate?.success(serviceType: serviceType.getCity)
             } else {
-                self.delegate?.error(error: Error.errorDescription(message: "Error obtaining city data", error: error))
+                self.delegate?.error(error: Error.errorDescription(message: OnboardingConstants.badCityRequestError.rawValue, error: error))
             }
         }
     }

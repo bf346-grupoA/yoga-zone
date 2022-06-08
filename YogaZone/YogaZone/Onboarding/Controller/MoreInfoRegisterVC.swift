@@ -36,7 +36,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     let radioController: RadioButtonController = RadioButtonController()
     let onboardingViewModel:OnboardingViewModel = OnboardingViewModel()
     let database = Firestore.firestore()
-    var gender:String = "Feminino"
+    var gender:String = OnboardingConstants.femaleGender.rawValue
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,12 +117,12 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     // MARK: SetupUI
     func configRegisterDoneButtonEnabled(){
         var containerTitle = AttributeContainer()
-        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        containerTitle.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         
         var config = UIButton.Configuration.filled()
         config.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
         config.baseForegroundColor = .white
-        config.attributedTitle = AttributedString("Avançar", attributes: containerTitle)
+        config.attributedTitle = AttributedString(OnboardingConstants.nextStep.rawValue, attributes: containerTitle)
         
         self.registerDoneBtn.configuration = config
         self.registerDoneBtn.layer.cornerRadius = 8
@@ -132,12 +132,12 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     func configRegisterDoneButtonDisabled(){
         var containerTitle = AttributeContainer()
-        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        containerTitle.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         
         var config = UIButton.Configuration.filled()
         config.baseBackgroundColor = #colorLiteral(red: 0.7843137255, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
         config.baseForegroundColor = .white
-        config.attributedTitle = AttributedString("Avançar", attributes: containerTitle)
+        config.attributedTitle = AttributedString(OnboardingConstants.nextStep.rawValue, attributes: containerTitle)
         
         self.registerDoneBtn.configuration = config
         self.registerDoneBtn.layer.cornerRadius = 8
@@ -146,34 +146,34 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     func configLabels(){
-        self.ageLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.ageLabel.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         self.ageLabel.textAlignment = .center
-        self.locateLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.locateLabel.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         self.locateLabel.textAlignment = .center
-        self.genderLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.genderLabel.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         self.genderLabel.textAlignment = .center
-        self.womanLabel.font = UIFont(name: "Comfortaa-Regular", size: 16)
+        self.womanLabel.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         self.womanLabel.textAlignment = .center
-        self.manLabel.font = UIFont(name: "Comfortaa-Regular", size: 16)
+        self.manLabel.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         self.manLabel.textAlignment = .center
     }
     
     func configTextFields(){
-        self.ageTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.cityTextField.placeholder = "Informe sua data de nascimento"
+        self.ageTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
+        self.cityTextField.placeholder = OnboardingConstants.informBirthDatePlaceholder.rawValue
         self.cityTextField.layer.cornerRadius = 6
         self.cityTextField.layer.borderWidth = 0.5
         self.cityTextField.layer.borderColor = UIColor.lightGray.cgColor
         
-        self.cityTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.cityTextField.placeholder = "Informe sua Cidade"
+        self.cityTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
+        self.cityTextField.placeholder = OnboardingConstants.informCityPlaceholder.rawValue
         self.cityTextField.layer.cornerRadius = 6
         self.cityTextField.layer.borderWidth = 0.5
         self.cityTextField.layer.borderColor = UIColor.lightGray.cgColor
         self.cityTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
-        self.stateTextField.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.stateTextField.placeholder = "UF"
+        self.stateTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
+        self.stateTextField.placeholder = OnboardingConstants.informStatePlaceholder.rawValue
         self.stateTextField.layer.cornerRadius = 6
         self.stateTextField.layer.borderWidth = 0.5
         self.stateTextField.layer.borderColor = UIColor.lightGray.cgColor
@@ -191,7 +191,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "arrowVoltar"),
+            image: UIImage(named: CommonConstants.backArrorImage.rawValue),
             style: .plain,
             target: self,
             action: #selector(popToPrevious)
@@ -199,12 +199,12 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @IBAction func btnWomanAction(_ sender: UIButton) {
-        self.gender = "Feminino"
+        self.gender = OnboardingConstants.femaleGender.rawValue
         radioController.buttonArrayUpdated(buttonSelected: sender)
     }
     
     @IBAction func btnManAction(_ sender: UIButton) {
-        self.gender = "Masculino"
+        self.gender = OnboardingConstants.maleGender.rawValue
         radioController.buttonArrayUpdated(buttonSelected: sender)
     }
     
@@ -287,8 +287,8 @@ extension MoreInfoRegisterVC: OnboardingViewModelDelegate {
     
     func error(error: Error) {
         DispatchQueue.main.async {
-            let dialogMessage = UIAlertController(title: "Atenção", message: "Erro ao carregar dados das regiões. Por favor tente novamente.", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            let dialogMessage = UIAlertController(title: OnboardingConstants.atentionWarning.rawValue, message: OnboardingConstants.loadingRegionError.rawValue , preferredStyle: .alert)
+            let ok = UIAlertAction(title: OnboardingConstants.ok.rawValue, style: .default, handler: { (action) -> Void in
             })
             dialogMessage.addAction(ok)
             self.present(dialogMessage, animated: true, completion: nil)
@@ -332,9 +332,9 @@ extension MoreInfoRegisterVC {
                     OnboardingConstants.isOnboardingField.rawValue : isOnboarding
                 ]) { (error) in
                     if let e = error {
-                        print("There was an issue saving data to firestore, \(e.localizedDescription)")
+                        print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(e.localizedDescription)")
                     } else {
-                        print("Successfully saved data.")
+                        print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
                     }
                 }
         }
