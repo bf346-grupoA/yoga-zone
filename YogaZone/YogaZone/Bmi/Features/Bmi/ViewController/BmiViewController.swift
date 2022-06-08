@@ -17,7 +17,6 @@ protocol SendData {
 
 class BmiViewController: UIViewController {
 
-    
     @IBOutlet weak var titleImc: UILabel!
     @IBOutlet weak var weigthLabel: UILabel!
     @IBOutlet weak var weightValueLabel: UILabel!
@@ -40,13 +39,11 @@ class BmiViewController: UIViewController {
     var missing: Float = 1.5
     let userDefaults = UserDefaults.standard
 
-       
     override func viewDidLoad() {
         super.viewDidLoad()
         self.switchLabel.isOn = false
         self.viewModel.initFireStore()
         self.configLabels()
-
     }
     
     override func viewDidLayoutSubviews() {
@@ -58,10 +55,7 @@ class BmiViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.blockSlider()
         self.navigationController?.isNavigationBarHidden = true
-        
     }
-    
-
     
     @IBAction func unwindToBmiVC(_ sender: UIStoryboardSegue) {
     }
