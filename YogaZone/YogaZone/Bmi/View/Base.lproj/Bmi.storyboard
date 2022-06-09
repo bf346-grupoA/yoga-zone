@@ -188,11 +188,15 @@
                         <outlet property="backBUtton" destination="VhN-gK-aoD" id="uZM-9Z-J2x"/>
                         <outlet property="buttonCalculate" destination="oJl-VY-n1v" id="CqE-35-bDd"/>
                         <outlet property="buttonMyProgress" destination="Gl9-NW-7Xh" id="GcS-dg-6bF"/>
-                        <outlet property="gLabel" destination="1CR-0e-LFR" id="75x-vv-UMg"/>
-                        <outlet property="hLabel" destination="od4-qU-EUI" id="AYV-pR-vZw"/>
+                        <outlet property="goalLabel" destination="evU-Sz-zxS" id="8cz-7e-OWr"/>
+                        <outlet property="goalLabelValue" destination="1CR-0e-LFR" id="75x-vv-UMg"/>
+                        <outlet property="heightLabel" destination="U6U-Ze-XBO" id="ZFN-oz-wvJ"/>
+                        <outlet property="heightValueLabel" destination="od4-qU-EUI" id="AYV-pR-vZw"/>
                         <outlet property="sliderGoal" destination="57d-fz-Szo" id="8Kt-Kt-fKy"/>
                         <outlet property="switchLabel" destination="4WY-ew-QIg" id="beQ-UK-Hqa"/>
-                        <outlet property="wLabel" destination="f71-Yh-NE0" id="YM5-pn-gXh"/>
+                        <outlet property="titleImc" destination="GB1-s6-yhv" id="Ncu-KL-CXf"/>
+                        <outlet property="weightValueLabel" destination="f71-Yh-NE0" id="YM5-pn-gXh"/>
+                        <outlet property="weigthLabel" destination="RCV-Ls-zp1" id="Gpv-no-Sha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -252,35 +256,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JYa-Sv-QAf">
-                                <rect key="frame" x="0.0" y="242.5" width="414" height="419"/>
+                                <rect key="frame" x="0.0" y="246" width="414" height="512"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="419" id="XkE-9d-umw"/>
+                                    <constraint firstAttribute="height" constant="512" id="XkE-9d-umw"/>
                                 </constraints>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meu Progresso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-su-FNr">
-                                <rect key="frame" x="132.5" y="64" width="149.5" height="27.5"/>
+                                <rect key="frame" x="132.5" y="64" width="149.5" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beA-KB-IMD">
-                                <rect key="frame" x="15" y="792" width="384" height="40"/>
-                                <color key="backgroundColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Qo6-ZS-cey"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Compartilhar">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="tappedButtonShare:" destination="QnL-Zc-CSv" eventType="touchUpInside" id="Ce9-hs-qT4"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="XDG-nj-neM">
-                                <rect key="frame" x="20" y="218" width="374" height="14.5"/>
+                                <rect key="frame" x="20" y="221.5" width="374" height="14.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-qm-a9y">
                                         <rect key="frame" x="0.0" y="0.0" width="73.5" height="14.5"/>
@@ -303,7 +292,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="maw-gN-Hdp">
-                                <rect key="frame" x="20" y="111.5" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="115" width="374" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Peso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjs-7Z-jco">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="20.5"/>
@@ -326,7 +315,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="xZB-Ht-0i1">
-                                <rect key="frame" x="20" y="142" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="145.5" width="374" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJY-Bk-fvQ">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="20.5"/>
@@ -349,7 +338,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="cYf-Sh-OOW">
-                                <rect key="frame" x="20" y="172.5" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="176" width="374" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOD-Wz-97A">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="20.5"/>
@@ -372,7 +361,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2g-64-ycD">
-                                <rect key="frame" x="20" y="64" width="45" height="31"/>
+                                <rect key="frame" x="47.5" y="64" width="45" height="31"/>
                                 <color key="tintColor" red="0.37964420879999999" green="0.2028827865" blue="0.66263289299999995" alpha="0.93093643709999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward.circle" catalog="system"/>
@@ -385,39 +374,41 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="xZB-Ht-0i1" secondAttribute="trailing" constant="20" id="1F9-dY-DhM"/>
-                            <constraint firstItem="i2g-64-ycD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="djo-Sw-qwn" secondAttribute="leading" id="1uO-Di-zWy"/>
                             <constraint firstItem="maw-gN-Hdp" firstAttribute="top" secondItem="Hj7-su-FNr" secondAttribute="bottom" constant="20" id="2On-TL-LFu"/>
                             <constraint firstItem="XDG-nj-neM" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="2c5-pa-rvk"/>
                             <constraint firstItem="XDG-nj-neM" firstAttribute="top" secondItem="cYf-Sh-OOW" secondAttribute="bottom" constant="25" id="3rL-Dg-f7e"/>
                             <constraint firstItem="Hj7-su-FNr" firstAttribute="centerX" secondItem="aPL-eZ-EPP" secondAttribute="centerX" id="4ZU-v1-xf0"/>
-                            <constraint firstItem="maw-gN-Hdp" firstAttribute="top" secondItem="i2g-64-ycD" secondAttribute="bottom" constant="16.5" id="8Nn-JR-Buq"/>
-                            <constraint firstItem="djo-Sw-qwn" firstAttribute="bottom" secondItem="beA-KB-IMD" secondAttribute="bottom" constant="30" id="DTN-xJ-kAQ"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="maw-gN-Hdp" secondAttribute="trailing" constant="20" id="JzX-OL-X8K"/>
+                            <constraint firstItem="Hj7-su-FNr" firstAttribute="leading" secondItem="i2g-64-ycD" secondAttribute="trailing" constant="40" id="KOW-Lq-zvn"/>
                             <constraint firstItem="maw-gN-Hdp" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="QVI-5k-YCB"/>
-                            <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="beA-KB-IMD" secondAttribute="trailing" constant="15" id="S77-yw-ADR"/>
+                            <constraint firstItem="i2g-64-ycD" firstAttribute="top" secondItem="djo-Sw-qwn" secondAttribute="top" constant="20" id="a4E-mV-0Ef"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="cYf-Sh-OOW" secondAttribute="trailing" constant="20" id="ajq-y9-1Ov"/>
                             <constraint firstItem="cYf-Sh-OOW" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="cP8-jw-BbH"/>
                             <constraint firstItem="JYa-Sv-QAf" firstAttribute="top" secondItem="XDG-nj-neM" secondAttribute="bottom" constant="10" id="fDB-sk-ZVV"/>
                             <constraint firstItem="Hj7-su-FNr" firstAttribute="top" secondItem="djo-Sw-qwn" secondAttribute="top" constant="20" id="fME-QQ-z7p"/>
                             <constraint firstItem="Hj7-su-FNr" firstAttribute="top" secondItem="djo-Sw-qwn" secondAttribute="top" constant="20" id="ldS-ac-IU8"/>
+                            <constraint firstItem="i2g-64-ycD" firstAttribute="centerY" secondItem="Hj7-su-FNr" secondAttribute="centerY" id="ldr-Mq-xjJ"/>
                             <constraint firstItem="xZB-Ht-0i1" firstAttribute="top" secondItem="maw-gN-Hdp" secondAttribute="bottom" constant="10" id="mWu-JA-y6j"/>
                             <constraint firstItem="cYf-Sh-OOW" firstAttribute="top" secondItem="xZB-Ht-0i1" secondAttribute="bottom" constant="10" id="mmW-QR-xag"/>
-                            <constraint firstItem="beA-KB-IMD" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="15" id="noP-oK-2w2"/>
-                            <constraint firstItem="Hj7-su-FNr" firstAttribute="leading" secondItem="i2g-64-ycD" secondAttribute="trailing" constant="67.5" id="pgY-Tb-uZR"/>
                             <constraint firstItem="xZB-Ht-0i1" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" constant="20" id="q5x-zb-RG6"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="JYa-Sv-QAf" secondAttribute="trailing" id="tQ5-Ha-YgR"/>
-                            <constraint firstItem="i2g-64-ycD" firstAttribute="top" secondItem="djo-Sw-qwn" secondAttribute="top" constant="20" id="x5D-6u-0LJ"/>
                             <constraint firstItem="JYa-Sv-QAf" firstAttribute="leading" secondItem="djo-Sw-qwn" secondAttribute="leading" id="yNx-YK-x1C"/>
                             <constraint firstItem="djo-Sw-qwn" firstAttribute="trailing" secondItem="XDG-nj-neM" secondAttribute="trailing" constant="20" id="yPx-89-TFX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonShare" destination="beA-KB-IMD" id="niY-qP-lXb"/>
                         <outlet property="closedButton" destination="i2g-64-ycD" id="Fdj-wx-kKc"/>
+                        <outlet property="dateLabelTitle" destination="XHN-qm-a9y" id="koi-NF-yvS"/>
                         <outlet property="goalLabel" destination="Vl8-18-mXU" id="VWy-Gm-KJA"/>
+                        <outlet property="goalLabelTitle" destination="HlY-q4-ZSf" id="XqX-XO-siO"/>
+                        <outlet property="missLabelTitle" destination="3UY-lI-wIC" id="iik-Op-fbY"/>
                         <outlet property="missingLabel" destination="Sve-ko-eiR" id="G5u-AE-zzT"/>
+                        <outlet property="resultLabelTitle" destination="FgE-yf-rOE" id="mrp-9k-7Qd"/>
                         <outlet property="tableView" destination="JYa-Sv-QAf" id="O9g-13-pB0"/>
+                        <outlet property="titleLabel" destination="Hj7-su-FNr" id="F3A-rc-qA7"/>
                         <outlet property="weightLabel" destination="SJY-Bk-fvQ" id="5kt-MT-g9z"/>
+                        <outlet property="weightLabelTitleTv" destination="sFQ-4X-PvE" id="md9-MK-Uee"/>
+                        <outlet property="weightLabeltitle" destination="yjs-7Z-jco" id="hr6-J0-0UQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yr7-zJ-Kym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

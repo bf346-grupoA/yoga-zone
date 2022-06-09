@@ -9,12 +9,18 @@ import UIKit
 import FirebaseFirestore
 
 class MyProgressViewController: UIViewController, SendData{
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var weightLabeltitle: UILabel!
+    @IBOutlet weak var goalLabelTitle: UILabel!
+    @IBOutlet weak var missLabelTitle: UILabel!
+    @IBOutlet weak var dateLabelTitle: UILabel!
+    @IBOutlet weak var resultLabelTitle: UILabel!
+    @IBOutlet weak var weightLabelTitleTv: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var missingLabel: UILabel!
-    @IBOutlet weak var buttonShare: UIButton!
     @IBOutlet weak var closedButton: UIButton!
     
     var weigth: String = ""
@@ -28,21 +34,15 @@ class MyProgressViewController: UIViewController, SendData{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.buttonShare.layer.cornerRadius = 7
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(TableViewCellMyProgress.getNib(), forCellReuseIdentifier: TableViewCellMyProgress.identifier)
+        self.configLabels()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.updateProgress()
         self.getData()
-    }
-    
-    @IBAction func tappedButtonShare(_ sender: Any) {
-        let vcShare = UIActivityViewController(activityItems: ["YogaZone.IMC"], applicationActivities: nil)
-        vcShare.popoverPresentationController?.sourceView = self.view
-        self.present(vcShare, animated: true, completion: nil)
     }
     
     @IBAction func tappedClosedBUtton(_ sender: UIButton) {
@@ -73,6 +73,19 @@ class MyProgressViewController: UIViewController, SendData{
             }
         }
     }
+    
+    func configLabels(){
+        self.titleLabel.font = UIFont(name: "Comfortaa-Bold", size: 26)
+        self.weightLabeltitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.goalLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.missLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.dateLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 12)
+        self.resultLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 11)
+        self.weightLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.weightLabelTitleTv.font = UIFont(name: "Comfortaa-Bold", size: 12)
+        self.goalLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.missingLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+    }
 }
 
 extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
@@ -86,4 +99,5 @@ extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
         cell?.setupCell(myProgress: dataProgress[indexPath.row])
         return cell ?? UITableViewCell()
     }
+    
 }
