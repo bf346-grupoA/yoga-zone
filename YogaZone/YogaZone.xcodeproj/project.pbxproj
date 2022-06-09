@@ -201,9 +201,9 @@
 		83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B78448284F10EA00F61005 /* LoginViewController.swift */; };
 		83E3165C284F06360066EAA0 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3165B284F06360066EAA0 /* FormValidation.swift */; };
 		83E3165D284F08A80066EAA0 /* Boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A5283B309800C698D0 /* Boat.gif */; };
+		83ED3CB328365EE50045C33B /* EventFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED3CB228365EE50045C33B /* EventFilter.swift */; };
 		83F14AF22850DBE300ED56C2 /* OnboardingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F14AF12850DBE300ED56C2 /* OnboardingConstants.swift */; };
 		83F14AF428511AC400ED56C2 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F14AF328511AC400ED56C2 /* CommonConstants.swift */; };
-		83ED3CB328365EE50045C33B /* EventFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED3CB228365EE50045C33B /* EventFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -402,11 +402,11 @@
 		839A06AE282DB07100C797EC /* TrainingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
 		83B78448284F10EA00F61005 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83E3165B284F06360066EAA0 /* FormValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		83ED3CB228365EE50045C33B /* EventFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFilter.swift; sourceTree = "<group>"; };
 		83F14AF12850DBE300ED56C2 /* OnboardingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConstants.swift; sourceTree = "<group>"; };
 		83F14AF328511AC400ED56C2 /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
 		9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D27262DAFA92507C209F58 /* Pods-YogaZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.debug.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.debug.xcconfig"; sourceTree = "<group>"; };
-		83ED3CB228365EE50045C33B /* EventFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1079,7 +1079,6 @@
 			isa = PBXGroup;
 			children = (
 				31D3E800284C2B1E00CFC7B5 /* Enums */,
-				31A83952284BBC890027987A /* ViewController */,
 				31A83951284BBC800027987A /* View */,
 			);
 			path = Login;
@@ -1130,6 +1129,7 @@
 			isa = PBXGroup;
 			children = (
 				31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */,
+				31A83952284BBC890027987A /* ViewController */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -1644,7 +1644,7 @@
 				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
 				2F83C796282A0A0C00EC3334 /* ResultTableViewCell.swift in Sources */,
 				83ED3CB328365EE50045C33B /* EventFilter.swift in Sources */,
-				2F83C796282A0A0C00EC3334 /* MyTableViewCell.swift in Sources */,
+				2F83C796282A0A0C00EC3334 /* ResultTableViewCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
 				2F83C794282A0A0C00EC3334 /* TableViewCellMyProgress.swift in Sources */,
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
