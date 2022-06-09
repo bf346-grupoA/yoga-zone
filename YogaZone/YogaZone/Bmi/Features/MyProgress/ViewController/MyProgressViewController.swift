@@ -99,5 +99,6 @@ extension MyProgressViewController:UITableViewDelegate,UITableViewDataSource{
         cell?.setupCell(myProgress: dataProgress[indexPath.row])
         return cell ?? UITableViewCell()
     }
-    
 }
+
+
