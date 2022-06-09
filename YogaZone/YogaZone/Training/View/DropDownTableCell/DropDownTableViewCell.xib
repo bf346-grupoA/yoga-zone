@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="durationDropDownCell" rowHeight="26" id="KGk-i7-Jjw" customClass="DropDownTableViewCell" customModule="YogaZone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="26"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="DropDownTableViewCell" customModule="dropDownMultipleYogazone">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="26"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bA2-DK-RsH">
+                        <rect key="frame" x="0.0" y="0.0" width="153" height="26"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duração" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWp-aI-plz">
+                                <rect key="frame" x="15" y="0.0" width="138" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OWp-aI-plz" secondAttribute="trailing" id="Aas-qp-oT3"/>
+                            <constraint firstItem="OWp-aI-plz" firstAttribute="top" secondItem="bA2-DK-RsH" secondAttribute="top" id="YgV-4W-qF3"/>
+                            <constraint firstAttribute="bottom" secondItem="OWp-aI-plz" secondAttribute="bottom" id="Z3G-gi-6ie"/>
+                            <constraint firstItem="OWp-aI-plz" firstAttribute="leading" secondItem="bA2-DK-RsH" secondAttribute="leading" constant="15" id="ixn-rh-z0c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bA2-DK-RsH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="80L-C3-RGn"/>
+                    <constraint firstAttribute="bottom" secondItem="bA2-DK-RsH" secondAttribute="bottom" id="gAu-sI-d1d"/>
+                    <constraint firstAttribute="trailing" secondItem="bA2-DK-RsH" secondAttribute="trailing" id="h2f-Sb-lwj"/>
+                    <constraint firstItem="bA2-DK-RsH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="khC-OO-wdi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="durationNameLabel" destination="OWp-aI-plz" id="kqm-QB-apa"/>
+            </connections>
+            <point key="canvasLocation" x="-16.800000000000001" y="157.42128935532236"/>
+        </tableViewCell>
+    </objects>
+</document>
