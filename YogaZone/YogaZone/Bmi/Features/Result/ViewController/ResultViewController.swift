@@ -21,11 +21,11 @@ class ResultViewController: UIViewController , SendData {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configTableView()
+        self.configTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationController?.isNavigationBarHidden = true
     }
 
     func configTableView(){
@@ -49,6 +49,7 @@ extension ResultViewController:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.identifier, for: indexPath) as? ResultTableViewCell
         cell?.setupCell(value:result)
         cell?.delegate = self
+        cell?.selectionStyle = .none
         return cell ?? UITableViewCell()
     }
     
@@ -72,3 +73,5 @@ extension ResultViewController: ResultTableViewCellProtocol{
         self.navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
 }
+
+
