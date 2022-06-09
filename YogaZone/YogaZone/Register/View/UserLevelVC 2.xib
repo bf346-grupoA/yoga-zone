@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserLevelVC" customModule="YogaZone" customModuleProvider="target">
+            <connections>
+                <outlet property="BeginnerBtn" destination="Dld-iF-9nM" id="KwV-Cc-hra"/>
+                <outlet property="GuruBtn" destination="E75-jC-CdS" id="8oq-Th-vOI"/>
+                <outlet property="IntermediateBtn" destination="B2I-5H-uxK" id="JqP-Uf-aOo"/>
+                <outlet property="LowExperienceBtn" destination="dyZ-Ob-8QY" id="Za7-Af-eYk"/>
+                <outlet property="titleLabel" destination="ngt-ND-Iby" id="exB-pO-oUf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conte um pouco mais sobre você, selecione qual seu nível atual ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngt-ND-Iby">
+                    <rect key="frame" x="30" y="60" width="315" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="M6I-F7-1Cn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-iF-9nM">
+                    <rect key="frame" x="40" y="145" width="295" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="N8m-dD-0i2"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Iniciante">
+                        <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedBeginnerButton:" destination="-1" eventType="touchUpInside" id="bBw-pQ-SAi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyZ-Ob-8QY">
+                    <rect key="frame" x="40" y="215" width="295" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="iWh-Gv-Eb3"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Pouco Experiente">
+                        <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedLowExperienceButton:" destination="-1" eventType="touchUpInside" id="5Nr-vd-N5f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2I-5H-uxK">
+                    <rect key="frame" x="40" y="285" width="295" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CYb-1B-B92"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Intermediario">
+                        <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedMediumExperienceButton:" destination="-1" eventType="touchUpInside" id="uLo-WB-wwK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E75-jC-CdS">
+                    <rect key="frame" x="40" y="355" width="295" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hno-7d-m9e"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Guru">
+                        <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.44705882352941173" green="0.40392156862745099" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tappedGuruButton:" destination="-1" eventType="touchUpInside" id="La4-ZI-NFV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="B2I-5H-uxK" firstAttribute="top" secondItem="dyZ-Ob-8QY" secondAttribute="bottom" constant="20" id="4eb-1Z-erw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dyZ-Ob-8QY" secondAttribute="trailing" constant="40" id="A9x-xm-92b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dld-iF-9nM" secondAttribute="trailing" constant="40" id="JLu-iJ-iJq"/>
+                <constraint firstItem="Dld-iF-9nM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="JvA-EX-lyR"/>
+                <constraint firstItem="ngt-ND-Iby" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="MBI-Uh-ksZ"/>
+                <constraint firstItem="dyZ-Ob-8QY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Rdc-C8-yyM"/>
+                <constraint firstItem="ngt-ND-Iby" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="TU9-kv-HfW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B2I-5H-uxK" secondAttribute="trailing" constant="40" id="WTa-0z-wHP"/>
+                <constraint firstItem="E75-jC-CdS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="jnz-3l-WSq"/>
+                <constraint firstItem="E75-jC-CdS" firstAttribute="top" secondItem="B2I-5H-uxK" secondAttribute="bottom" constant="20" id="mHi-zo-o91"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ngt-ND-Iby" secondAttribute="trailing" constant="30" id="r2G-tw-oyr"/>
+                <constraint firstItem="Dld-iF-9nM" firstAttribute="top" secondItem="ngt-ND-Iby" secondAttribute="bottom" constant="25" id="s8d-3U-3VP"/>
+                <constraint firstItem="B2I-5H-uxK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="wvH-O1-TgD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E75-jC-CdS" secondAttribute="trailing" constant="40" id="zcn-4Y-ojk"/>
+                <constraint firstItem="dyZ-Ob-8QY" firstAttribute="top" secondItem="Dld-iF-9nM" secondAttribute="bottom" constant="20" id="ziu-DC-zO3"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="82.3088455772114"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

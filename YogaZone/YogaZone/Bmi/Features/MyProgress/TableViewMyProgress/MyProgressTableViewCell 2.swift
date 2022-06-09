@@ -7,13 +7,13 @@
 
 import UIKit
 
-class TableViewCellMyProgress: UITableViewCell {
+class MyProgressTableViewCell: UITableViewCell {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var bmiIndex: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     
-    static let identifier: String = "TableViewCellMyProgress"
+    static let identifier: String = "MyProgressTableViewCell"
     static func getNib() -> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
     }
@@ -27,11 +27,4 @@ class TableViewCellMyProgress: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
-    func configLabels(){
-        self.dateLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
-        self.bmiIndex.font = UIFont(name: "Comfortaa-Bold", size: 14)
-        self.weightLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
-    }
-    
 }

@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 struct Cell {
     
     let result : String
