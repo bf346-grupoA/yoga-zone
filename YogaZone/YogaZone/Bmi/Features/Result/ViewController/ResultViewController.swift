@@ -23,6 +23,10 @@ class ResultViewController: UIViewController , SendData {
         super.viewDidLoad()
         configTableView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
 
     func configTableView(){
         self.tableView.delegate = self
