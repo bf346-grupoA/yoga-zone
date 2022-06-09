@@ -111,7 +111,7 @@
                 <outlet property="waitingPossibleConsequencesLabel" destination="1uA-jp-A91" id="0sk-1F-mdN"/>
                 <outlet property="waitingResultLabel" destination="1nC-4N-WU1" id="6AW-OV-vnz"/>
             </connections>
-            <point key="canvasLocation" x="-127" y="-17"/>
+            <point key="canvasLocation" x="-128.2608695652174" y="-17.410714285714285"/>
         </tableViewCell>
     </objects>
 </document>

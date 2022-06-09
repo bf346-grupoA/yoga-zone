@@ -15,7 +15,7 @@ protocol SendData {
     var missing: String {get}
 }
 
-class BmiViewController: UIViewController {
+class BmiViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var titleImc: UILabel!
     @IBOutlet weak var weigthLabel: UILabel!
@@ -28,7 +28,7 @@ class BmiViewController: UIViewController {
     @IBOutlet weak var buttonMyProgress: UIButton!
     @IBOutlet weak var sliderGoal: UISlider!
     @IBOutlet weak var switchLabel: UISwitch!
-    @IBOutlet weak var backBUtton: UIButton!
+
     
     let fireStore = Firestore.firestore()
     var viewModel = BmiViewModel()
@@ -44,7 +44,9 @@ class BmiViewController: UIViewController {
         self.switchLabel.isOn = false
         self.viewModel.initFireStore()
         self.configLabels()
+        self.setupNavigationBar()
     }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -54,14 +56,11 @@ class BmiViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.blockSlider()
-        self.navigationItem.setHidesBackButton(true, animated: true);
+        self.setupNavigationBar()
+      
     }
     
     @IBAction func unwindToBmiVC(_ sender: UIStoryboardSegue) {
-    }
-    
-    @IBAction func tappedBackButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func sliderWeight(_ sender: Any) {
@@ -137,4 +136,26 @@ extension BmiViewController {
             sliderGoal.isEnabled = true
         }
     }
+}
+
+
+extension BmiViewController {
+    
+    func setupNavigationBar(){
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16) ?? UIFont()]
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+
 }
