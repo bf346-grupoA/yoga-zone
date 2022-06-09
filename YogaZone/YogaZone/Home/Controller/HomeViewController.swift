@@ -75,7 +75,7 @@ extension HomeViewController: NavigationDelegate {
         case 2:
             let storyboard = UIStoryboard(name: "Bmi", bundle: nil)
             self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: "BmiViewController"), animated: true)
-        case 3: self.navigationController?.pushViewController(BreathingHomeViewController(), animated: true)
+        case 3: break
         case 4: self.navigationController?.pushViewController(IntroViewController(), animated: true)
         case 5: self.navigationController?.pushViewController(LevelAndDurationVC(), animated: true)
         case 6:
