@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MoreOptionsVC: UIViewController, UIGestureRecognizerDelegate{
-
+    
     @IBOutlet weak var changePasswordTitleLabel: UILabel!
     
     @IBOutlet weak var CurrentPasswordTextField: UITextField!
@@ -32,12 +33,12 @@ class MoreOptionsVC: UIViewController, UIGestureRecognizerDelegate{
     
     func configExcludeButton(){
         var containerTitle = AttributeContainer()
-            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
         var configSaveChangesButton = UIButton.Configuration.filled()
-            configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
-            configSaveChangesButton.baseForegroundColor = .white
-            configSaveChangesButton.attributedTitle = AttributedString("Excluir Conta", attributes: containerTitle)
+        configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        configSaveChangesButton.baseForegroundColor = .white
+        configSaveChangesButton.attributedTitle = AttributedString("Excluir Conta", attributes: containerTitle)
         
         self.excludeAccountButton.configuration = configSaveChangesButton
         self.excludeAccountButton.layer.cornerRadius = 8
@@ -45,12 +46,12 @@ class MoreOptionsVC: UIViewController, UIGestureRecognizerDelegate{
     
     func configSaveButton(){
         var containerTitle = AttributeContainer()
-            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
         var configSaveChangesButton = UIButton.Configuration.filled()
-            configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
-            configSaveChangesButton.baseForegroundColor = .white
-            configSaveChangesButton.attributedTitle = AttributedString("Salvar Senha", attributes: containerTitle)
+        configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        configSaveChangesButton.baseForegroundColor = .white
+        configSaveChangesButton.attributedTitle = AttributedString("Salvar Senha", attributes: containerTitle)
         
         self.saveButton.configuration = configSaveChangesButton
         self.saveButton.layer.cornerRadius = 8
@@ -58,12 +59,12 @@ class MoreOptionsVC: UIViewController, UIGestureRecognizerDelegate{
     
     func configLeaveAppButton(){
         var containerTitle = AttributeContainer()
-            containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        containerTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
         var configSaveChangesButton = UIButton.Configuration.filled()
-            configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
-            configSaveChangesButton.baseForegroundColor = .white
-            configSaveChangesButton.attributedTitle = AttributedString("Sair do Aplicativo", attributes: containerTitle)
+        configSaveChangesButton.baseBackgroundColor = #colorLiteral(red: 0.4470588235, green: 0.4039215686, blue: 0.7960784314, alpha: 1)
+        configSaveChangesButton.baseForegroundColor = .white
+        configSaveChangesButton.attributedTitle = AttributedString("Sair do Aplicativo", attributes: containerTitle)
         
         self.leaveAppButton.configuration = configSaveChangesButton
         self.leaveAppButton.layer.cornerRadius = 8
@@ -75,8 +76,8 @@ class MoreOptionsVC: UIViewController, UIGestureRecognizerDelegate{
         self.configExcludeButton()
         
     }
-
-
+    
+    
     @IBAction func tappedSaveNewPasswordButton(_ sender: UIButton) {
         CustomAlertVC.instance.showAlert(titleType: .success, message: "Sua senha foi salva com sucesso !", alertType: .success)
     }
@@ -91,14 +92,20 @@ class MoreOptionsVC: UIViewController, UIGestureRecognizerDelegate{
     }
     
     @IBAction func leaveAppButton(_ sender: UIButton) {
-        navigationController?.popToRootViewController(animated: false)
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: false)
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+        
     }
 }
 
 extension MoreOptionsVC:UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
     }
-
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         //REALIZAR AS VALIDACOES
     }
