@@ -11,7 +11,7 @@ class AssetHelper {
     static let images: [Int: String] = [
         1: "poses",
         2: "imc",
-        3: "respiracao",
+        3: "PlaceholderLotus",
         4: "meditacao",
         5: "treinos",
         6: "eventos"
