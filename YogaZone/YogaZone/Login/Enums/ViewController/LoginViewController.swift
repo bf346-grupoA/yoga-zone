@@ -129,7 +129,7 @@ extension LoginViewController {
                     } else {
                         if let document = document, document.exists {
                             let data = document.data()
-                            let isOnboarding = data?["isOnboarding"] as? Bool ?? false
+                            let isOnboarding = data?[OnboardingConstants.isOnboardingField.rawValue] as? Bool ?? false
                             self.isOnboarding = isOnboarding
                         } else {
                             print("\(CommonConstants.firestoreDocumentDoesNotExistError.rawValue)")
