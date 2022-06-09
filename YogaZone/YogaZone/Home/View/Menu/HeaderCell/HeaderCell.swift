@@ -11,7 +11,7 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
-    weak var delegate: Navigable?
+    weak var delegate: NavigationDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +23,7 @@ class HeaderCell: UITableViewCell {
         self.profileImageView.layer.cornerRadius =  30
         self.profileImageView.clipsToBounds = true
         self.profileImageView.contentMode = .scaleAspectFill
-        self.profileImageView.image = #imageLiteral(resourceName: "profile-2")
+        self.profileImageView.image = #imageLiteral(resourceName: "profile")
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onTap))
         self.profileImageView.addGestureRecognizer(tapGesture)

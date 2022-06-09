@@ -19,5 +19,5 @@ struct LevelModel {
 struct ExercicesModel: Codable {
     var id: Int?
     var exercise: String?
-    var seconds: String?
+    var seconds: Int?
 }

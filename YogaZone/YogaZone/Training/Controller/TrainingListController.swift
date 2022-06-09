@@ -21,19 +21,19 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
     @IBOutlet weak var ListTrainYogaTableView: UITableView!
     @IBOutlet weak var startTrainButton: UIButton!
     
-    
+
     var exercicesData: [ExercicesModel] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.setupUI()
-        self.setupNavigationBar()
-        self.setupData()
-        self.ListTrainYogaTableView.register(TrainingCustomCell.nib(), forCellReuseIdentifier: TrainingCustomCell.identifier)
-        self.ListTrainYogaTableView.delegate = self
-        self.ListTrainYogaTableView.dataSource = self
-    }
-    
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            self.setupUI()
+            self.setupNavigationBar()
+            self.setupData()
+            self.ListTrainYogaTableView.register(TrainingCustomCell.nib(), forCellReuseIdentifier: TrainingCustomCell.identifier)
+            self.ListTrainYogaTableView.delegate = self
+            self.ListTrainYogaTableView.dataSource = self
+        }
+
     //MARK: - SetupUI
     func configLabels(){
         self.NumberOfCaloriesLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
@@ -94,6 +94,7 @@ extension TrainingListController: UITableViewDelegate {
         cell?.setupCell(data: self.exercicesData[indexPath.row])
         return cell ?? UITableViewCell()
     }
+   
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -125,8 +126,8 @@ extension TrainingListController {
 // MARK: Populate Data
 extension TrainingListController {
     func setupData() {
+        let jsonData = trainingListMock.data(using: .utf8)
         do {
-            let jsonData = trainingListMock.data(using: .utf8)
             let exercices = try JSONDecoder().decode([ExercicesModel].self, from: jsonData ?? Data() )
             exercices.forEach { self.exercicesData.append($0)}
         } catch {

@@ -54,7 +54,7 @@ class BmiViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.blockSlider()
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationItem.setHidesBackButton(true, animated: true);
     }
     
     @IBAction func unwindToBmiVC(_ sender: UIStoryboardSegue) {
