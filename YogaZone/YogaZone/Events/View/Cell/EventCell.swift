@@ -20,7 +20,7 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var eventNumberOfParticipantsLabel: UILabel!
     
     static let identifier:String = "EventCell"
-    
+  
     override func awakeFromNib() {
         super.awakeFromNib()
         self.view.layer.cornerRadius = 10
@@ -31,11 +31,15 @@ class EventCell: UITableViewCell {
     }
     
     func setupCell(event: Event){
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.locale = Locale(identifier: "pt_BR")
+        
         self.eventTitleLabel.text = event.title
         self.eventLocalLabel.text = event.local
-        self.eventDateLabel.text = event.date
+        self.eventDateLabel.text = dateFormatter.string(from: event.date)
         self.eventNumberOfParticipantsLabel.text = String(event.numberOfParticipants) + " / " + String(event.maximumOfParticipants)
-
         
         if event.isOwner == true {
             self.eventIsOwnerLabel.isHidden = false

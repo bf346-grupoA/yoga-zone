@@ -29,7 +29,8 @@ class EventDetailViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var availableVacanciesLabel: UILabel!
     @IBOutlet weak var eventAvailableVacanciesLabel: UILabel!
     
-    var event = try! JSONDecoder().decode([Event].self, from: eventMock.data(using: .utf8)!).first
+    var event: Event?
+    
     var avaliableVacancies = 0
     
     override func viewDidLoad() {
@@ -59,6 +60,11 @@ extension EventDetailViewController {
     }
     
     func setupUI(){
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.locale = Locale(identifier: "pt_BR")
+        
         self.nameLabel.text = "Nome"
         self.dateLabel.text = "Data"
         self.hourLabel.text = "Hora"
@@ -68,7 +74,7 @@ extension EventDetailViewController {
         self.availableVacanciesLabel.text = "Vagas disponíveis"
         
         self.eventNameLabel.text = self.event?.title
-        self.eventDateLabel.text = self.event?.date
+        self.eventDateLabel.text = dateFormatter.string(from: event?.date ?? Date())
         self.eventHourLabel.text = self.event?.startTime
         self.eventNumberOfParticipantsLabel.text = String(self.event?.numberOfParticipants ?? 0)
         self.eventLocalLabel.text = self.event?.local
@@ -79,14 +85,10 @@ extension EventDetailViewController {
     }
     
     func configureContainerView() {
-    
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        let dateString = self.event?.date ?? ""
-        let dateEvent = dateFormatter.date(from: dateString) ?? Date()
+        
         let today = Date()
         
-        if dateEvent < today {
+        if self.event?.date ?? Date() < today {
             
             self.confirmContainer.isHidden = true
             self.cancelContainer.isHidden = true
@@ -127,4 +129,3 @@ extension EventDetailViewController {
     }
     
 }
-

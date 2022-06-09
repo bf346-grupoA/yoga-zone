@@ -75,6 +75,16 @@
                                     <segue destination="Bh3-jp-Of6" kind="embed" identifier="goToEventList" id="WPa-Lr-3wq"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Or-4f-4Pc" userLabel="Number Of Applied Filters">
+                                <rect key="frame" x="78" y="95" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="atw-oB-AbC"/>
+                                    <constraint firstAttribute="height" constant="20" id="yae-Cn-Xcv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tuy-9N-obw" userLabel="MapView">
                                 <rect key="frame" x="0.0" y="142" width="375" height="525"/>
                                 <connections>
@@ -92,6 +102,7 @@
                             <constraint firstItem="YSL-Rr-DQw" firstAttribute="top" secondItem="3lA-8k-aM4" secondAttribute="bottom" constant="15" id="FJg-4i-TAQ"/>
                             <constraint firstItem="bX2-dM-TIK" firstAttribute="top" secondItem="SZK-5s-Taq" secondAttribute="bottom" constant="15" id="Fa2-hg-ICa"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Tuy-9N-obw" secondAttribute="trailing" id="IZ8-pp-IUX"/>
+                            <constraint firstItem="0Or-4f-4Pc" firstAttribute="centerY" secondItem="SZK-5s-Taq" secondAttribute="top" constant="5" id="Mce-sk-2qF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YSL-Rr-DQw" secondAttribute="trailing" constant="25" id="OIh-Zn-s9r"/>
                             <constraint firstItem="Tuy-9N-obw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="et7-fq-XAF"/>
                             <constraint firstItem="3lA-8k-aM4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gwH-1P-3MA"/>
@@ -101,6 +112,7 @@
                             <constraint firstItem="3lA-8k-aM4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="qWd-1U-P0S"/>
                             <constraint firstItem="SZK-5s-Taq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="s5Q-Nu-pPJ"/>
                             <constraint firstItem="SZK-5s-Taq" firstAttribute="top" secondItem="3lA-8k-aM4" secondAttribute="bottom" constant="15" id="xH9-ob-paR"/>
+                            <constraint firstItem="0Or-4f-4Pc" firstAttribute="leading" secondItem="SZK-5s-Taq" secondAttribute="trailing" constant="-14" id="zE1-B5-AJQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w9n-Ly-AKE">
@@ -111,6 +123,7 @@
                         <outlet property="buttonFilter" destination="SZK-5s-Taq" id="QnY-7S-gQA"/>
                         <outlet property="containerListView" destination="bX2-dM-TIK" id="PpJ-rB-tN4"/>
                         <outlet property="containerMapView" destination="Tuy-9N-obw" id="AsF-eN-tT6"/>
+                        <outlet property="filterQuantityNotificationLabel" destination="0Or-4f-4Pc" id="Wwe-BF-luY"/>
                         <outlet property="optionsControl" destination="3lA-8k-aM4" id="nur-Ym-wev"/>
                     </connections>
                 </viewController>

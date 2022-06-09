@@ -137,7 +137,6 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-		31E3D2E1284FFA4700497906 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 31E3D2E0284FFA4700497906 /* Algorithms */; };
 		759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */; };
 		792C669C282D79CA0018D343 /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667F282D79CA0018D343 /* RenderGIF.swift */; };
 		792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6680282D79CA0018D343 /* MakeDropDown.swift */; };
@@ -183,6 +182,8 @@
 		838170952851794B0018A3BF /* AssetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8F9284D3CD700C212A3 /* AssetHelper.swift */; };
 		838170962851796A0018A3BF /* ResetPasswordViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */; };
 		838170972851796D0018A3BF /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A8395A284BE0130027987A /* ResetPasswordView.swift */; };
+		8388729F284ED4C200B8FA9C /* EmptyEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388729D284ED4C200B8FA9C /* EmptyEventCell.swift */; };
+		838872A0284ED4C200B8FA9C /* EmptyEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8388729E284ED4C200B8FA9C /* EmptyEventCell.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
 		8391EA5127E820E800F466F2 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */; };
 		8391EA5227E820E800F466F2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */; };
@@ -199,6 +200,7 @@
 		83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B78448284F10EA00F61005 /* LoginViewController.swift */; };
 		83E3165C284F06360066EAA0 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3165B284F06360066EAA0 /* FormValidation.swift */; };
 		83E3165D284F08A80066EAA0 /* Boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A5283B309800C698D0 /* Boat.gif */; };
+		83ED3CB328365EE50045C33B /* EventFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED3CB228365EE50045C33B /* EventFilter.swift */; };
 		83F14AF22850DBE300ED56C2 /* OnboardingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F14AF12850DBE300ED56C2 /* OnboardingConstants.swift */; };
 		83F14AF428511AC400ED56C2 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F14AF328511AC400ED56C2 /* CommonConstants.swift */; };
 /* End PBXBuildFile section */
@@ -382,6 +384,8 @@
 		8366B691284BE5D0001166D1 /* BrazilianCities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrazilianCities.swift; path = YogaZone/Onboarding/Model/BrazilianCities.swift; sourceTree = SOURCE_ROOT; };
 		8366B693284BE739001166D1 /* BrazilianStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrazilianStates.swift; path = YogaZone/Onboarding/Model/BrazilianStates.swift; sourceTree = SOURCE_ROOT; };
 		8366B69A284BF717001166D1 /* OboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OboardingViewModel.swift; sourceTree = "<group>"; };
+		8388729D284ED4C200B8FA9C /* EmptyEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyEventCell.swift; sourceTree = "<group>"; };
+		8388729E284ED4C200B8FA9C /* EmptyEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyEventCell.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		8391EA4527E820E800F466F2 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		8391EA4627E820E800F466F2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
@@ -397,6 +401,7 @@
 		839A06AE282DB07100C797EC /* TrainingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingData.swift; sourceTree = "<group>"; };
 		83B78448284F10EA00F61005 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83E3165B284F06360066EAA0 /* FormValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		83ED3CB228365EE50045C33B /* EventFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFilter.swift; sourceTree = "<group>"; };
 		83F14AF12850DBE300ED56C2 /* OnboardingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConstants.swift; sourceTree = "<group>"; };
 		83F14AF328511AC400ED56C2 /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
 		9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,7 +413,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31E3D2E1284FFA4700497906 /* Algorithms in Frameworks */,
 				759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +444,8 @@
 			children = (
 				2F036F5B27E429D800993E41 /* EventCell.swift */,
 				2F036F5C27E429D800993E41 /* EventCell.xib */,
+				8388729D284ED4C200B8FA9C /* EmptyEventCell.swift */,
+				8388729E284ED4C200B8FA9C /* EmptyEventCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 			children = (
 				2F036F6027E429D800993E41 /* EventData.swift */,
 				2F036F7627E429D800993E41 /* Event.swift */,
+				83ED3CB228365EE50045C33B /* EventFilter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1070,7 +1077,6 @@
 			isa = PBXGroup;
 			children = (
 				31D3E800284C2B1E00CFC7B5 /* Enums */,
-				31A83952284BBC890027987A /* ViewController */,
 				31A83951284BBC800027987A /* View */,
 			);
 			path = Login;
@@ -1121,6 +1127,7 @@
 			isa = PBXGroup;
 			children = (
 				31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */,
+				31A83952284BBC890027987A /* ViewController */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -1430,7 +1437,6 @@
 			);
 			name = YogaZone;
 			packageProductDependencies = (
-				31E3D2E0284FFA4700497906 /* Algorithms */,
 			);
 			productName = YogaZone;
 			productReference = 3126833627C15ECA003F017B /* YogaZone.app */;
@@ -1461,7 +1467,6 @@
 			);
 			mainGroup = 3126832D27C15ECA003F017B;
 			packageReferences = (
-				31E3D2DF284FFA4700497906 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 3126833727C15ECA003F017B /* Products */;
 			projectDirPath = "";
@@ -1505,6 +1510,7 @@
 				7979B2AC283B30EB00C698D0 /* Pigeon.gif in Resources */,
 				2F79E15A27DD0B170070397F /* PoseDetailViewController.xib in Resources */,
 				792C66AB282D79CA0018D343 /* TrainingFinishedVC.xib in Resources */,
+				838872A0284ED4C200B8FA9C /* EmptyEventCell.xib in Resources */,
 				8391EA5627E820E800F466F2 /* Comfortaa-Medium.ttf in Resources */,
 				2F036F8327E429D800993E41 /* CreateNewEventViewController.xib in Resources */,
 				2F83C797282A0A0C00EC3334 /* ResultTableViewCell.xib in Resources */,
@@ -1633,6 +1639,8 @@
 				2F3D0EC52848593300C3446B /* StringExtensions.swift in Sources */,
 				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
 				2F83C796282A0A0C00EC3334 /* ResultTableViewCell.swift in Sources */,
+				83ED3CB328365EE50045C33B /* EventFilter.swift in Sources */,
+				2F83C796282A0A0C00EC3334 /* ResultTableViewCell.swift in Sources */,
 				2F0C342127E4384E004A1E8C /* TimerViewController.swift in Sources */,
 				2F83C794282A0A0C00EC3334 /* TableViewCellMyProgress.swift in Sources */,
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
@@ -1644,6 +1652,7 @@
 				2F0C342727E4384E004A1E8C /* ExpireViewController.swift in Sources */,
 				792C66B1282D79CA0018D343 /* DropDownTwoTableViewCell.swift in Sources */,
 				2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */,
+				8388729F284ED4C200B8FA9C /* EmptyEventCell.swift in Sources */,
 				2F036F8727E429D800993E41 /* CancelContainerViewController.swift in Sources */,
 				2F79E15927DD0B170070397F /* PoseDetailViewController.swift in Sources */,
 				2F0C33F827E434DA004A1E8C /* DoneRegisterVC.swift in Sources */,
@@ -1942,25 +1951,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		31E3D2DF284FFA4700497906 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		31E3D2E0284FFA4700497906 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 31E3D2DF284FFA4700497906 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3126832E27C15ECA003F017B /* Project object */;
 }
