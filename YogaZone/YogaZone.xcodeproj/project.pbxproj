@@ -137,7 +137,6 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
-		31E3D2E1284FFA4700497906 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 31E3D2E0284FFA4700497906 /* Algorithms */; };
 		759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */; };
 		792C669C282D79CA0018D343 /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667F282D79CA0018D343 /* RenderGIF.swift */; };
 		792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6680282D79CA0018D343 /* MakeDropDown.swift */; };
@@ -414,7 +413,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31E3D2E1284FFA4700497906 /* Algorithms in Frameworks */,
 				759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1439,7 +1437,6 @@
 			);
 			name = YogaZone;
 			packageProductDependencies = (
-				31E3D2E0284FFA4700497906 /* Algorithms */,
 			);
 			productName = YogaZone;
 			productReference = 3126833627C15ECA003F017B /* YogaZone.app */;
@@ -1470,7 +1467,6 @@
 			);
 			mainGroup = 3126832D27C15ECA003F017B;
 			packageReferences = (
-				31E3D2DF284FFA4700497906 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 3126833727C15ECA003F017B /* Products */;
 			projectDirPath = "";
@@ -1955,25 +1951,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		31E3D2DF284FFA4700497906 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		31E3D2E0284FFA4700497906 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 31E3D2DF284FFA4700497906 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3126832E27C15ECA003F017B /* Project object */;
 }
