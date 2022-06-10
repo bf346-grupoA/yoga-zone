@@ -18,9 +18,9 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var tappedMoreOptionsButtonImage: UIImageView!
     @IBOutlet weak var saveChangesButton: UIButton!
     @IBOutlet weak var textFieldName: UITextField!
-    @IBOutlet weak var textFieldBirthday: UITextField!
     @IBOutlet weak var textFieldCity: UITextField!
     @IBOutlet weak var textFieldState: UITextField!
+    @IBOutlet weak var textFieldBirthday: UITextField!
     
     let profileViewModel:ProfileViewModel = ProfileViewModel()
     let database = Firestore.firestore()

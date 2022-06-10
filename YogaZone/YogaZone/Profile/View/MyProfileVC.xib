@@ -19,8 +19,8 @@
                 <outlet property="saveChangesButton" destination="NtN-Yo-jD1" id="6yf-OT-k7b"/>
                 <outlet property="tappedCameraIconImage" destination="52C-KW-VGF" id="Amp-rI-auV"/>
                 <outlet property="tappedMoreOptionsButtonImage" destination="SfG-Fa-1GV" id="WLl-4l-iFB"/>
+                <outlet property="textFieldBirthday" destination="Dvb-mA-0Zg" id="x78-0C-pbj"/>
                 <outlet property="textFieldCity" destination="ewx-fd-cbX" id="TsO-VQ-HqR"/>
-                <outlet property="textFieldEmail" destination="Dvb-mA-0Zg" id="xFL-w9-Fo2"/>
                 <outlet property="textFieldName" destination="Nae-hZ-unO" id="0oO-5T-f4Q"/>
                 <outlet property="textFieldState" destination="NKr-YV-sth" id="TUU-UO-sbi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
