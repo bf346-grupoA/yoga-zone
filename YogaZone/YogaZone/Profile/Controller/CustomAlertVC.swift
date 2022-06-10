@@ -54,6 +54,7 @@ class CustomAlertVC: UIView {
     }
     
     func showAlert(titleType: TitleType, message:String, alertType: AlertType) {
+        
         self.messageLabel.text = message
         switch alertType {
         case .success:
@@ -64,7 +65,9 @@ class CustomAlertVC: UIView {
             titleLabel.text = "Tente novamente"
         }
         
-        UIApplication.shared.windows.first{$0.isKeyWindow}?.addSubview(parentView)
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        windowScene?.windows.first{$0.isKeyWindow}?.addSubview(parentView)
     }
     
     @IBAction func tappedOkButton(_ sender: UIButton) {

@@ -22,7 +22,6 @@ class DoneRegisterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configImages()
-        configLabels()
         setupUI()
     }
     

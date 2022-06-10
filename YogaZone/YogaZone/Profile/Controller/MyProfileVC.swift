@@ -17,10 +17,14 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var tappedCameraIconImage: UIImageView!
     @IBOutlet weak var tappedMoreOptionsButtonImage: UIImageView!
     @IBOutlet weak var saveChangesButton: UIButton!
-    @IBOutlet weak var textFieldName: UITextField!
-    @IBOutlet weak var textFieldCity: UITextField!
-    @IBOutlet weak var textFieldState: UITextField!
-    @IBOutlet weak var textFieldBirthday: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
+    @IBOutlet weak var birthdayTextField: UITextField!
+    @IBOutlet weak var editNameImage: UIImageView!
+    @IBOutlet weak var editBirthdayImage: UIImageView!
+    @IBOutlet weak var editStateImage: UIImageView!
+    @IBOutlet weak var editCityImage: UIImageView!
     
     let profileViewModel:ProfileViewModel = ProfileViewModel()
     let database = Firestore.firestore()
@@ -29,6 +33,7 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         super.viewDidLoad()
         self.configImages()
         self.configMoreOptionsButton()
+        self.configEditTextFieldButton()
         self.setupNavigationBar()
         self.configStatePickerView()
         self.configCityPickerView()
@@ -37,11 +42,21 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         self.setupUI()
     }
     
-    
     // MARK: UIPickers Implementation
     let datePicker = UIDatePicker()
     let statePickerView = UIPickerView()
     let cityPickerView = UIPickerView()
+    
+    func loadStateData(){
+        self.profileViewModel.delegate(delegate: self)
+        self.profileViewModel.getRequestBrazilianState()
+    }
+    
+    
+}
+
+//MARK: - UISetup
+extension MyProfileVC {
     
     func createToolBar() -> UIToolbar{
         let toolbar = UIToolbar()
@@ -51,31 +66,26 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         return toolbar
     }
     
-    func loadStateData(){
-        self.profileViewModel.delegate(delegate: self)
-        self.profileViewModel.getRequestBrazilianState()
-    }
-    
     func configStatePickerView(){
         self.statePickerView.delegate = self
         self.statePickerView.dataSource = self
         
-        self.textFieldState.inputView = statePickerView
-        self.textFieldState.textAlignment = .center
-        self.textFieldState.inputAccessoryView = createToolBar()
-        self.textFieldState.isEnabled = false
-        self.textFieldState.isUserInteractionEnabled = false
+        self.stateTextField.inputView = statePickerView
+        self.stateTextField.textAlignment = .center
+        self.stateTextField.inputAccessoryView = createToolBar()
+        self.stateTextField.isEnabled = false
+        self.stateTextField.isUserInteractionEnabled = false
     }
     
     func configCityPickerView(){
         self.cityPickerView.delegate = self
         self.cityPickerView.dataSource = self
         
-        self.textFieldCity.inputView = cityPickerView
-        self.textFieldCity.textAlignment = .center
-        self.textFieldCity.inputAccessoryView = createToolBar()
-        self.textFieldCity.isEnabled = false
-        self.textFieldCity.isUserInteractionEnabled = false
+        self.cityTextField.inputView = cityPickerView
+        self.cityTextField.textAlignment = .center
+        self.cityTextField.inputAccessoryView = createToolBar()
+        self.cityTextField.isEnabled = false
+        self.cityTextField.isUserInteractionEnabled = false
     }
     
     func createDatePicker() {
@@ -83,19 +93,9 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         datePicker.datePickerMode = .date
         datePicker.maximumDate = Date()
         
-        textFieldBirthday.textAlignment = .center
-        textFieldBirthday.inputView = datePicker
-        textFieldBirthday.inputAccessoryView = createToolBar()
-    }
-    
-    @objc func donePressed(){
-        let dateFormater = DateFormatter()
-        dateFormater.dateStyle = .medium
-        dateFormater.timeStyle = .none
-        self.textFieldBirthday.text = dateFormater.string(from: self.datePicker.date)
-        
-        self.loadStateData()
-        self.view.endEditing(true)
+        birthdayTextField.textAlignment = .center
+        birthdayTextField.inputView = datePicker
+        birthdayTextField.inputAccessoryView = createToolBar()
     }
     
     func configImages(){
@@ -136,40 +136,48 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     func configTextFields(){
-        self.textFieldName.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
-        self.textFieldName.layer.cornerRadius = 6
-        self.textFieldName.layer.borderWidth = 0.5
-        self.textFieldName.layer.borderColor = UIColor.lightGray.cgColor
-        self.textFieldName.minimumFontSize = 8
-        self.textFieldName.sizeToFit()
-        self.textFieldName.textAlignment = .left
+        self.nameTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
+        self.nameTextField.placeholder = ProfileConstants.informNamePlaceholder.rawValue
+        self.nameTextField.layer.cornerRadius = 6
+        self.nameTextField.layer.borderWidth = 0.5
+        self.nameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.nameTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.nameTextField.minimumFontSize = 8
+        self.nameTextField.sizeToFit()
+        self.nameTextField.textAlignment = .left
+        self.nameTextField.isEnabled = false
+        self.nameTextField.isUserInteractionEnabled = false
         
-        self.textFieldBirthday.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
-        self.textFieldBirthday.placeholder = ProfileConstants.informBirthDatePlaceholder.rawValue
-        self.textFieldBirthday.layer.cornerRadius = 6
-        self.textFieldBirthday.layer.borderWidth = 0.5
-        self.textFieldBirthday.layer.borderColor = UIColor.lightGray.cgColor
-        self.textFieldBirthday.textAlignment = .left
+        self.birthdayTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
+        self.birthdayTextField.placeholder = ProfileConstants.informBirthDatePlaceholder.rawValue
+        self.birthdayTextField.layer.cornerRadius = 6
+        self.birthdayTextField.layer.borderWidth = 0.5
+        self.birthdayTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.birthdayTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.birthdayTextField.textAlignment = .left
+        self.birthdayTextField.isEnabled = false
+        self.birthdayTextField.isUserInteractionEnabled = false
         
-        self.textFieldCity.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
-        self.textFieldCity.placeholder = ProfileConstants.informCityPlaceholder.rawValue
-        self.textFieldCity.layer.cornerRadius = 6
-        self.textFieldCity.layer.borderWidth = 0.5
-        self.textFieldCity.layer.borderColor = UIColor.lightGray.cgColor
-        self.textFieldCity.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        self.textFieldCity.textAlignment = .left
-        self.textFieldCity.minimumFontSize = 8
-        self.textFieldCity.sizeToFit()
+        self.cityTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
+        self.cityTextField.placeholder = ProfileConstants.informCityPlaceholder.rawValue
+        self.cityTextField.layer.cornerRadius = 6
+        self.cityTextField.layer.borderWidth = 0.5
+        self.cityTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.cityTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.cityTextField.textAlignment = .left
+        self.cityTextField.minimumFontSize = 8
+        self.cityTextField.sizeToFit()
         
+        self.stateTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
+        self.stateTextField.placeholder = ProfileConstants.informStatePlaceholder.rawValue
+        self.stateTextField.layer.cornerRadius = 6
+        self.stateTextField.layer.borderWidth = 0.5
+        self.stateTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.stateTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.stateTextField.textAlignment = .left
         
-        self.textFieldState.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
-        self.textFieldState.placeholder = ProfileConstants.informStatePlaceholder.rawValue
-        self.textFieldState.layer.cornerRadius = 6
-        self.textFieldState.layer.borderWidth = 0.5
-        self.textFieldState.layer.borderColor = UIColor.lightGray.cgColor
-        self.textFieldState.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        self.textFieldState.textAlignment = .left
-        
+        self.nameTextField.delegate = self
+        self.cityTextField.delegate = self
     }
     
     func setupUI(){
@@ -177,26 +185,81 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         configTextFields()
     }
     
-    
     private func configMoreOptionsButton(){
         let tapMoreOptionsButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedMoreOptionsButton))
         self.tappedMoreOptionsButtonImage.addGestureRecognizer(tapMoreOptionsButton)
         self.tappedMoreOptionsButtonImage.isUserInteractionEnabled = true
     }
     
-    @objc func tappedMoreOptionsButton(){
-        self.navigationController?.pushViewController(MoreOptionsVC(), animated: true)
+    private func configEditTextFieldButton(){
+        let editName = UITapGestureRecognizer(target: self, action: #selector(self.tappedEditNameImage))
+        self.editNameImage.addGestureRecognizer(editName)
+        self.editNameImage.isUserInteractionEnabled = true
         
+        let birthday = UITapGestureRecognizer(target: self, action: #selector(self.tappedEditBirthdayImage))
+        self.editBirthdayImage.addGestureRecognizer(birthday)
+        self.editBirthdayImage.isUserInteractionEnabled = true
+        
+        let state = UITapGestureRecognizer(target: self, action: #selector(self.tappedEditStateImage))
+        self.editStateImage.addGestureRecognizer(state)
+        self.editStateImage.isUserInteractionEnabled = true
+        
+        let city = UITapGestureRecognizer(target: self, action: #selector(self.tappedEditCityImage))
+        self.editCityImage.addGestureRecognizer(city)
+        self.editCityImage.isUserInteractionEnabled = true
     }
+}
+
+//MARK: - Actions
+extension MyProfileVC {
     
     @IBAction func tappedSaveChangesButton(_ sender: UIButton) {
         var userData = ProfileModel()
-        userData.name = self.textFieldName.text
+        userData.name = self.nameTextField.text
         userData.birthDate = self.datePicker.date
-        userData.state = self.textFieldState.text
-        userData.city = self.textFieldCity.text
+        userData.state = self.stateTextField.text
+        userData.city = self.cityTextField.text
         saveFirestoreData(user: userData)
         CustomAlertVC.instance.showAlert(titleType: .success, message: "Suas alterações foram salvas com sucesso !", alertType: .success)
+    }
+    
+    @objc func tappedMoreOptionsButton(){
+        self.navigationController?.pushViewController(MoreOptionsVC(), animated: true)
+    }
+    
+    @objc func donePressed(){
+        let dateFormater = DateFormatter()
+        dateFormater.dateStyle = .short
+        dateFormater.locale = Locale.current
+        self.birthdayTextField.text = dateFormater.string(from: self.datePicker.date)
+        
+        self.view.endEditing(true)
+    }
+    
+    @objc func tappedEditNameImage(){
+        self.nameTextField.isEnabled = true
+        self.nameTextField.isUserInteractionEnabled = true
+        self.nameTextField.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
+    }
+    
+    @objc func tappedEditBirthdayImage(){
+        self.birthdayTextField.isEnabled = true
+        self.birthdayTextField.isUserInteractionEnabled = true
+        self.birthdayTextField.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
+    }
+    
+    @objc func tappedEditStateImage(){
+        self.stateTextField.isEnabled = true
+        self.stateTextField.isUserInteractionEnabled = true
+        self.stateTextField.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
+        loadStateData()
+    }
+    
+    @objc func tappedEditCityImage(){
+        self.cityTextField.isEnabled = true
+        self.cityTextField.isUserInteractionEnabled = true
+        self.cityTextField.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
+        self.profileViewModel.getRequestBrazilianCity(state: self.stateTextField.text ?? "")
     }
 }
 
@@ -251,21 +314,22 @@ extension MyProfileVC: UIPickerViewDelegate, UIPickerViewDataSource{
         
         if pickerView == self.statePickerView {
             state = self.profileViewModel.getLoadedStates(row: row)
-            self.textFieldState.text = state
-            self.textFieldCity.text = ""
-            if textFieldState.text != "" {
-                self.textFieldCity.isUserInteractionEnabled = true
-                self.textFieldCity.isEnabled = true
-                self.textFieldCity.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
+            self.stateTextField.text = state
+            self.cityTextField.text = ""
+            if stateTextField.text != "" {
+                self.cityTextField.isUserInteractionEnabled = true
+                self.cityTextField.isEnabled = true
+                self.cityTextField.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
                 self.profileViewModel.getRequestBrazilianCity(state: state)
             }
         } else {
-            textFieldCity.text = self.profileViewModel.getLoadedCities(row: row)
+            cityTextField.text = self.profileViewModel.getLoadedCities(row: row)
         }
         
-        if self.textFieldBirthday.text != "" &&
-            self.textFieldState.text != "" &&
-            self.textFieldCity.text != "" {
+        if  self.nameTextField.text != "" &&
+                self.birthdayTextField.text != "" &&
+                self.stateTextField.text != "" &&
+                self.cityTextField.text != "" {
             configSaveButtonEnabled()
         } else {
             configSaveButtonDisabled()
@@ -278,9 +342,9 @@ extension MyProfileVC: ProfileViewModelDelegate {
     func success(serviceType: ServiceType) {
         if serviceType == .getState {
             DispatchQueue.main.async {
-                self.textFieldState.isEnabled = true
-                self.textFieldState.isUserInteractionEnabled = true
-                self.textFieldState.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
+                self.stateTextField.isEnabled = true
+                self.stateTextField.isUserInteractionEnabled = true
+                self.stateTextField.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
             }
         }
     }
@@ -347,11 +411,11 @@ extension MyProfileVC {
                                 formater.locale = Locale.current
                                 let date = formater.string(from: birthDate)
                                 
-                                self.textFieldName.text = name
-                                self.textFieldBirthday.text = date
-                                self.textFieldState.text = state
-                                self.textFieldCity.text = city
-                
+                                self.nameTextField.text = name
+                                self.birthdayTextField.text = date
+                                self.stateTextField.text = state
+                                self.cityTextField.text = city
+                                
                             } else {
                                 print("\(CommonConstants.firestoreDocumentDoesNotExistError.rawValue)")
                                 
@@ -365,4 +429,53 @@ extension MyProfileVC {
     
 }
 
-
+// MARK: Input Fields Delegate
+extension MyProfileVC: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        switch textField {
+        case self.nameTextField:
+            if self.nameTextField.text == ""{
+                setRedBorder(textField: textField)
+            }else{
+                setNormalBorder(textField: textField)
+            }
+        case self.cityTextField:
+            if self.cityTextField.text == ""{
+                setRedBorder(textField: textField)
+            }else{
+                setNormalBorder(textField: textField)
+            }
+            
+        default:
+            break
+        }
+        
+        if  self.nameTextField.text != "" &&
+                self.birthdayTextField.text != "" &&
+                self.stateTextField.text != "" &&
+                self.cityTextField.text != "" {
+            configSaveButtonEnabled()
+        } else {
+            configSaveButtonDisabled()
+        }
+        
+    }
+    
+    func setRedBorder(textField: UITextField){
+        textField.layer.borderColor = UIColor.red.cgColor
+        textField.layer.borderWidth = 1.0
+    }
+    
+    func setNormalBorder(textField: UITextField){
+        textField.layer.borderColor = UIColor.lightGray.cgColor
+        textField.layer.borderWidth = 0.5
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+}
