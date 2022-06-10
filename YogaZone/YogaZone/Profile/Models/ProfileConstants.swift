@@ -19,9 +19,11 @@ enum ProfileConstants: String {
     case informBirthDatePlaceholder = "Informe sua data de nascimento"
     case informCityPlaceholder = "Informe sua Cidade"
     case informStatePlaceholder = "UF"
+    case informCurrentPasswordPlaceholder = "Digite sua senha atual"
+    case informNewPasswordPlaceholder = "Digite a nova senha"
+    case informConfirmNewPasswordPlaceholder = "Confirmar nova senha"
     case save = "Salvar Alterações"
-    case start = "Começar"
-    case ok = "OK"
+    case ok = "OK"    
     case atentionWarning = "Atenção"
     case loadingRegionError = "Erro ao carregar dados das regiões. Por favor tente novamente."
 }

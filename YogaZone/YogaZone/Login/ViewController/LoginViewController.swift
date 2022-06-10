@@ -54,6 +54,7 @@ extension LoginViewController: LoginViewProtocol {
                         self.loginView?.joinButton.stopAnimation(animationStyle:.normal, revertAfterDelay: 0) {
                             
                             if self.isOnboarding == true {
+                                self.setNewRootController()
                                 let vc = HomeViewController()
                                 self.navigationController?.pushViewController(vc, animated: true)
                             } else {
@@ -75,6 +76,13 @@ extension LoginViewController: LoginViewProtocol {
     func forgotPasswordButtonAction() {
         let vc = ResetPasswordViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func setNewRootController(){
+        let rootViewController = UINavigationController(rootViewController: HomeViewController())
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        windowScene?.keyWindow?.rootViewController = rootViewController
     }
 }
 

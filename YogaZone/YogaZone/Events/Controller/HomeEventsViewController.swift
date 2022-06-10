@@ -138,8 +138,6 @@ extension HomeEventsViewController {
 extension HomeEventsViewController {
     
     @objc private func popToPrevious() {
-        let rootViewController = UINavigationController(rootViewController: HomeViewController())
-        self.view.window?.rootViewController = rootViewController
         navigationController?.popToRootViewController(animated: true)
     }
     

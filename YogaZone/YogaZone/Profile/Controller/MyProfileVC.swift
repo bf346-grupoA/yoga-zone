@@ -39,7 +39,8 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         self.configCityPickerView()
         self.createDatePicker()
         self.loadFirestoreUserData()
-        self.setupUI()
+        self.configSaveButtonDisabled()
+        self.configTextFields()
     }
     
     // MARK: UIPickers Implementation
@@ -177,11 +178,6 @@ extension MyProfileVC {
         
         self.nameTextField.delegate = self
         self.cityTextField.delegate = self
-    }
-    
-    func setupUI(){
-        configSaveButtonDisabled()
-        configTextFields()
     }
     
     private func configMoreOptionsButton(){
