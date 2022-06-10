@@ -12,6 +12,8 @@ enum CommonConstants: String {
     case firestoreDocumentDoesNotExistError = "Document does not exist"
     case firestoreDataSavedWithSuccess = "Successfully saved data."
     case firestoreErrorSavingData = "There was an issue saving data to firestore,"
+    case collectionName = "UserData"
+    case bmiSubColletionName = "bmiProgress"
     case comfortaaRegularFont = "Comfortaa-Regular"
     case comfortaaBoldFont = "Comfortaa-Bold"
     case comfortaaSemiBoldFont = "Comfortaa-Semi"
