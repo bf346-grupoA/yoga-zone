@@ -28,6 +28,7 @@ class ResetPasswordView: UIView {
         button.tintColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
         button.setImage(UIImage(systemName: LoginConstants.backButtonImagem.rawValue), for: .normal)
         button.addTarget(self, action: #selector(self.tappedBackButton), for: .touchUpInside)
+        button.isHidden = true
         return button
     }()
     

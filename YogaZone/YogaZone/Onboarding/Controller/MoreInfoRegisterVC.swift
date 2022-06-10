@@ -33,10 +33,8 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var registerDoneBtn: UIButton!
     
-    let radioController: RadioButtonController = RadioButtonController()
     let onboardingViewModel:OnboardingViewModel = OnboardingViewModel()
     let database = Firestore.firestore()
-    var gender:String = OnboardingConstants.femaleGender.rawValue
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +43,6 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         configCityPickerView()
         createDatePicker()
         setupUI()
-        setupRadioButton()
     }
     
     // MARK: UIPickers Implementation
@@ -107,13 +104,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         self.loadStateData()
         self.view.endEditing(true)
     }
-    
-    // MARK: Radio Button
-    func setupRadioButton(){
-        radioController.buttonsArray = [btnWoman,btnMan]
-        radioController.defaultButton = btnWoman
-    }
-    
+            
     // MARK: SetupUI
     func configRegisterDoneButtonEnabled(){
         var containerTitle = AttributeContainer()
@@ -150,12 +141,6 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         self.ageLabel.textAlignment = .center
         self.locateLabel.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         self.locateLabel.textAlignment = .center
-        self.genderLabel.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
-        self.genderLabel.textAlignment = .center
-        self.womanLabel.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
-        self.womanLabel.textAlignment = .center
-        self.manLabel.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
-        self.manLabel.textAlignment = .center
     }
     
     func configTextFields(){
@@ -198,24 +183,13 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         )
     }
     
-    @IBAction func btnWomanAction(_ sender: UIButton) {
-        self.gender = OnboardingConstants.femaleGender.rawValue
-        radioController.buttonArrayUpdated(buttonSelected: sender)
-    }
-    
-    @IBAction func btnManAction(_ sender: UIButton) {
-        self.gender = OnboardingConstants.maleGender.rawValue
-        radioController.buttonArrayUpdated(buttonSelected: sender)
-    }
-    
-    @IBAction func tappedRegisterDone(_ sender: UIButton) {
+  @IBAction func tappedRegisterDone(_ sender: UIButton) {
         
         var userData = OnboardingModel()
         userData.email = Auth.auth().currentUser?.email
         userData.birthDate = self.datePicker.date
         userData.state = self.stateTextField.text
         userData.city = self.cityTextField.text
-        userData.gender = self.gender
         userData.isOnboarding = true
         saveFirestoreData(user: userData)
         
@@ -320,7 +294,6 @@ extension MoreInfoRegisterVC {
            let birthDate = user.birthDate,
            let state = user.state,
            let city = user.city,
-           let gender = user.gender,
            let isOnboarding = user.isOnboarding {
             database.collection(OnboardingConstants.collectionName.rawValue)
                 .document(email)
@@ -328,7 +301,6 @@ extension MoreInfoRegisterVC {
                     OnboardingConstants.birthDateField.rawValue : birthDate,
                     OnboardingConstants.stateField.rawValue : state,
                     OnboardingConstants.cityField.rawValue : city,
-                    OnboardingConstants.genderField.rawValue : gender,
                     OnboardingConstants.isOnboardingField.rawValue : isOnboarding
                 ]) { (error) in
                     if let e = error {

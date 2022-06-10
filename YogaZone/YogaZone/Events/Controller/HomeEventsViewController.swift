@@ -66,6 +66,7 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
 extension HomeEventsViewController {
     
     func setupNavigationBar(){
+        self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.title = "Eventos"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 24) ?? UIFont()]
         

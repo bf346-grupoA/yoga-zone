@@ -56,8 +56,7 @@ class BmiViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         self.blockSlider()
-        self.setupNavigationBar()
-      
+        self.setupNavigationBar()      
     }
     
     @IBAction func unwindToBmiVC(_ sender: UIStoryboardSegue) {

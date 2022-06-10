@@ -30,7 +30,6 @@
 		2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F7327E429D800993E41 /* EventDetailViewController.swift */; };
 		2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F7427E429D800993E41 /* EventDetail.storyboard */; };
 		2F036F9127E429D800993E41 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F7627E429D800993E41 /* Event.swift */; };
-		2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */; };
 		2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */; };
 		2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */; };
 		2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */; };
@@ -156,7 +155,7 @@
 		83817093285179470018A3BF /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */; };
 		838170942851794A0018A3BF /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8FC284D3CD700C212A3 /* NavigationDelegate.swift */; };
 		838170952851794B0018A3BF /* AssetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8F9284D3CD700C212A3 /* AssetHelper.swift */; };
-		838170962851796A0018A3BF /* ResetPasswordViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */; };
+		838170962851796A0018A3BF /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83961284BE7A80027987A /* ResetPasswordViewController.swift */; };
 		838170972851796D0018A3BF /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A8395A284BE0130027987A /* ResetPasswordView.swift */; };
 		8388729F284ED4C200B8FA9C /* EmptyEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388729D284ED4C200B8FA9C /* EmptyEventCell.swift */; };
 		838872A0284ED4C200B8FA9C /* EmptyEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8388729E284ED4C200B8FA9C /* EmptyEventCell.xib */; };
@@ -206,7 +205,6 @@
 		2F036F7327E429D800993E41 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		2F036F7427E429D800993E41 /* EventDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventDetail.storyboard; sourceTree = "<group>"; };
 		2F036F7627E429D800993E41 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonController.swift; sourceTree = "<group>"; };
 		2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoRegisterVC.swift; sourceTree = "<group>"; };
 		2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInfoRegisterVC.xib; sourceTree = "<group>"; };
 		2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoneRegisterVC.xib; sourceTree = "<group>"; };
@@ -296,7 +294,7 @@
 		3142E8FC284D3CD700C212A3 /* NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
 		31A83953284BBCBA0027987A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		31A8395A284BE0130027987A /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
-		31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewControllerX.swift; sourceTree = "<group>"; };
+		31A83961284BE7A80027987A /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
 		792C667F282D79CA0018D343 /* RenderGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderGIF.swift; sourceTree = "<group>"; };
 		792C6680282D79CA0018D343 /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
@@ -950,7 +948,7 @@
 		31A8395F284BE1760027987A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				31A83961284BE7A80027987A /* ResetPasswordViewControllerX.swift */,
+				31A83961284BE7A80027987A /* ResetPasswordViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1137,7 +1135,6 @@
 			children = (
 				2F0C33EC27E434DA004A1E8C /* UserLevelVC.swift */,
 				2F0C33EA27E434DA004A1E8C /* DoneRegisterVC.swift */,
-				2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */,
 				2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */,
 			);
 			path = Controller;
@@ -1502,7 +1499,6 @@
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
 				83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */,
-				2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */,
 				792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */,
 				2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */,
 				2F036F7927E429D800993E41 /* EventMapViewController.swift in Sources */,
@@ -1520,7 +1516,7 @@
 				83817093285179470018A3BF /* NavigationHelper.swift in Sources */,
 				792C669F282D79CA0018D343 /* TrainingStartedVC.swift in Sources */,
 				2F036F7D27E429D800993E41 /* EventCell.swift in Sources */,
-				838170962851796A0018A3BF /* ResetPasswordViewControllerX.swift in Sources */,
+				838170962851796A0018A3BF /* ResetPasswordViewController.swift in Sources */,
 				2F036F9127E429D800993E41 /* Event.swift in Sources */,
 				792C66B0282D79CA0018D343 /* DropDownTableViewCell.swift in Sources */,
 				2F036F8827E429D800993E41 /* ConfirmContainerViewController.swift in Sources */,

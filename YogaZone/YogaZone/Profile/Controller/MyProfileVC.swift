@@ -10,7 +10,7 @@ import UIKit
 class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     
     
-    private var arrayProfile:[String] = ["Nick", "Data de Nascimento", "Localidade", "Sexo"]
+    private var arrayProfile:[String] = ["Nick", "Data de Nascimento", "Localidade"]
     
     @IBOutlet weak var perfilImage: UIImageView!
     
@@ -102,6 +102,7 @@ extension MyProfileVC: UITableViewDelegate{
 // MARK: Navigation Bar Customization
 extension MyProfileVC {
     func setupNavigationBar(){
+        self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.title = "Meu Perfil"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16) ?? UIFont()]
         
