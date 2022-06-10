@@ -14,14 +14,14 @@ enum FormFieldDimension: CGFloat {
 class RegisterView: UIView {
     
     // MARK: Parameters
-    weak var delegate: FirebaseOperationsDelegate?
+    weak var delegate: FormInputDelegate?
     
     // MARK: UI Elements
     private lazy var welcomeLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "Confortaa-SemiBold", size: 19)
-        label.text = "Gostaria de adicionar uma foto de perfil? 😃"
+        label.font = UIFont(name: "Confortaa-SemiBold", size: 16)
+        label.text = "Vamos iniciar uma incrível jornada juntos 😃"
         label.numberOfLines = 0
         
         return label
@@ -109,6 +109,13 @@ class RegisterView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    public func clearForm() {
+        self.emailTextField.text = ""
+        self.preferredNameTextField.text = ""
+        self.passwordTextField.text = ""
+        self.confirmPasswordTextField.text = ""
+    }
 
 }
 
@@ -127,6 +134,7 @@ extension RegisterView {
         addSubview(confirmPasswordTextField)
         addSubview(registerButton)
         
+        clearForm()
         setupConstraints()
     }
     
@@ -200,7 +208,7 @@ extension RegisterView {
     
 }
 
-// MARK: TextField Delegates
+// MARK: TextField Delegates & Validations
 extension RegisterView: UITextFieldDelegate, FormDataDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -314,6 +322,10 @@ extension RegisterView: UITextFieldDelegate, FormDataDelegate {
     private func enableButton(_ isEnabled: Bool) {
         self.registerButton.layer.opacity = isEnabled ? 1.0 : 0.5
         self.registerButton.isEnabled = isEnabled
+        
+        if self.registerButton.isEnabled {
+            setViewModelUser()
+        }
     }
     
     private func setFormInitialState() {
@@ -331,15 +343,20 @@ extension RegisterView: UITextFieldDelegate, FormDataDelegate {
         
         self.registerButton.isEnabled = false
     }
-    
+
+    private func setViewModelUser() {
+        guard let email = self.emailTextField.text, let password = self.passwordTextField.text else { return }
+        
+        let formUser = UserRegistrationModel(email: email, name: self.preferredNameTextField.text ?? "", password: password)
+        self.delegate?.getUser(user: formUser)
+    }
 }
 
 // MARK: Button Action
 extension RegisterView {
     
     @objc private func tappedRegisterButton(_ sender: UIButton!) {
-        print(#function)
-//        self.delegate?.register()
+        self.delegate?.submit()
     }
     
 }

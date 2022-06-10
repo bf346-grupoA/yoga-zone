@@ -64,6 +64,9 @@
 		2F0C343927E43954004A1E8C /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C343427E43954004A1E8C /* intro.mp4 */; };
 		2F0FCD81284EF11800301E9E /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0FCD80284EF11800301E9E /* UserPreferences.swift */; };
 		2F0FCD83284EF41700301E9E /* UserPreferencesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0FCD82284EF41700301E9E /* UserPreferencesProtocol.swift */; };
+		2F2B2F042853ECBC000AE6A6 /* YZNetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B2F032853ECBC000AE6A6 /* YZNetworkErrors.swift */; };
+		2F2B2F062853EE8D000AE6A6 /* CallbackObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B2F052853EE8D000AE6A6 /* CallbackObjects.swift */; };
+		2F2B2F082853EF5C000AE6A6 /* UserResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B2F072853EF5C000AE6A6 /* UserResponseDto.swift */; };
 		2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53C927EB641C00FBA25F /* HomeViewController.swift */; };
 		2F3A53CC27EB641C00FBA25F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */; };
 		2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A53CF27EB67B400FBA25F /* HeaderCell.swift */; };
@@ -128,6 +131,7 @@
 		2FA287CA27EACC3C00C5BD81 /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */; };
 		2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */; };
 		2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0560227E022DA000E9CA6 /* Poses.swift */; };
+		2FFD3A5928529A5500389CFE /* FormInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD3A5828529A5500389CFE /* FormInputDelegate.swift */; };
 		311B94E52847BB2E003A9C14 /* MyProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B94E42847BB2E003A9C14 /* MyProgressViewModel.swift */; };
 		311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B94E62847CE50003A9C14 /* BmiViewModel.swift */; };
 		311B94EA2847D838003A9C14 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B94E92847D838003A9C14 /* ResultViewModel.swift */; };
@@ -263,6 +267,9 @@
 		2F0C343427E43954004A1E8C /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
 		2F0FCD80284EF11800301E9E /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		2F0FCD82284EF41700301E9E /* UserPreferencesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesProtocol.swift; sourceTree = "<group>"; };
+		2F2B2F032853ECBC000AE6A6 /* YZNetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YZNetworkErrors.swift; sourceTree = "<group>"; };
+		2F2B2F052853EE8D000AE6A6 /* CallbackObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackObjects.swift; sourceTree = "<group>"; };
+		2F2B2F072853EF5C000AE6A6 /* UserResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseDto.swift; sourceTree = "<group>"; };
 		2F3A53C927EB641C00FBA25F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2F3A53CA27EB641C00FBA25F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		2F3A53CF27EB67B400FBA25F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
@@ -348,6 +355,7 @@
 		2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
 		2FA287C127EACC3C00C5BD81 /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
 		2FB0560227E022DA000E9CA6 /* Poses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poses.swift; sourceTree = "<group>"; };
+		2FFD3A5828529A5500389CFE /* FormInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputDelegate.swift; sourceTree = "<group>"; };
 		311B94E42847BB2E003A9C14 /* MyProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressViewModel.swift; sourceTree = "<group>"; };
 		311B94E62847CE50003A9C14 /* BmiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiViewModel.swift; sourceTree = "<group>"; };
 		311B94E92847D838003A9C14 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
@@ -630,6 +638,14 @@
 			path = UserPreferences;
 			sourceTree = "<group>";
 		};
+		2F2B2F022853ECA2000AE6A6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2F2B2F032853ECBC000AE6A6 /* YZNetworkErrors.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		2F3A53C827EB63D900FBA25F /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,10 +680,12 @@
 				3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */,
 				3142E8F9284D3CD700C212A3 /* AssetHelper.swift */,
 				3142E8FC284D3CD700C212A3 /* NavigationDelegate.swift */,
+				2F2B2F022853ECA2000AE6A6 /* Enums */,
 				2F0FCD7F284EF0F600301E9E /* UserPreferences */,
 				2F3D0EC32848583800C3446B /* Extensions */,
 				2F3D0EBA284849D800C3446B /* FirebaseCommons */,
 				2F3D0EB72848498F00C3446B /* AlertController */,
+				2FFD3A5828529A5500389CFE /* FormInputDelegate.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -683,7 +701,9 @@
 		2F3D0EBA284849D800C3446B /* FirebaseCommons */ = {
 			isa = PBXGroup;
 			children = (
+				2F2B2F072853EF5C000AE6A6 /* UserResponseDto.swift */,
 				2F3D0EBB284849ED00C3446B /* FirebaseOperationsDelegate.swift */,
+				2F2B2F052853EE8D000AE6A6 /* CallbackObjects.swift */,
 			);
 			path = FirebaseCommons;
 			sourceTree = "<group>";
@@ -1746,6 +1766,8 @@
 				2F3D0EBC284849ED00C3446B /* FirebaseOperationsDelegate.swift in Sources */,
 				792C66A5282D79CA0018D343 /* TrainingModel.swift in Sources */,
 				83F14AF22850DBE300ED56C2 /* OnboardingConstants.swift in Sources */,
+				2F2B2F062853EE8D000AE6A6 /* CallbackObjects.swift in Sources */,
+				2FFD3A5928529A5500389CFE /* FormInputDelegate.swift in Sources */,
 				2F83C798282A0A0C00EC3334 /* BmiEnum.swift in Sources */,
 				2F036F7C27E429D800993E41 /* HomeEventsViewController.swift in Sources */,
 				8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */,
@@ -1753,10 +1775,15 @@
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
 				83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */,
+				2F0C341D27E4384E004A1E8C /* SettingsViewController.swift in Sources */,
+				2F2B2F082853EF5C000AE6A6 /* UserResponseDto.swift in Sources */,
+				2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */,
 				792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */,
 				2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */,
 				2F036F7927E429D800993E41 /* EventMapViewController.swift in Sources */,
 				792C66A2282D79CA0018D343 /* LevelAndDurationVC.swift in Sources */,
+				2F2B2F042853ECBC000AE6A6 /* YZNetworkErrors.swift in Sources */,
+				2F0C341F27E4384E004A1E8C /* BreathingHomeViewController.swift in Sources */,
 				2F412ED727E41821007708E8 /* PracticeViewController.swift in Sources */,
 				8366B692284BE5D0001166D1 /* BrazilianCities.swift in Sources */,
 				2F0C33F927E434DA004A1E8C /* UserLevelVC.swift in Sources */,
@@ -1958,6 +1985,7 @@
 				INFOPLIST_FILE = YogaZone/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1966,7 +1994,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.backfront.YogaZone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnz.YogaZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1987,6 +2015,7 @@
 				INFOPLIST_FILE = YogaZone/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1995,7 +2024,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.backfront.YogaZone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnz.YogaZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

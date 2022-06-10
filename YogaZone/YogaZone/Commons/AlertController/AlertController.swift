@@ -18,7 +18,7 @@ class AlertController {
     }
     
 
-    func setup(title:String, message: String, okText: String, completion: (()-> Void)? = nil) {
+    func setup(title:String, message: String, okText: String = "Fechar", completion: (()-> Void)? = nil) {
         self.alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         let actionOk: UIAlertAction = UIAlertAction(title: okText, style: .default) { _ in

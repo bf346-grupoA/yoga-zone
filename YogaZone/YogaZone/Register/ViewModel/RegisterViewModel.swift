@@ -8,47 +8,39 @@
 import Foundation
 import FirebaseAuth
 
-struct Response {
-    var message: String
-    var isError: Bool
-}
-
 class RegisterViewModel {
 
-    // MARK: Public Parameters
-    
     // MARK: Private Parameters
     private var user: UserRegistrationModel?
     private var auth: Auth?
+    
     
     // MARK: Initializer
     init() {
         self.auth = Auth.auth()
     }
     
-    func register() -> Response {
-        var response = Response(message: "", isError: false)
-        guard let email = user?.email, let password = user?.password else { return response }
+    func register(completion: @escaping YZFirebaseUserCallback<UserResponseDto>) {
+        guard let email = user?.email, let password = user?.password else { return }
         
         self.auth?.createUser(withEmail: email, password: password, completion: { (result, error) in
             if(error != nil) {
-                response.isError = true
-                response.message = error?.localizedDescription ?? "Unknown Error"
-                
+                if let error = error {
+                    completion(.failure(error))
+                }
             } else {
-                response.message = "Cadastro Realizado com Sucesso"
+                if let user = result?.user {
+                    completion(.success(UserResponseDto(user: user)))
+                }
             }
         })
-        
-        return response
-        
+    
     }
     
     public func setUser(formUser: UserRegistrationModel) {
         self.user = UserRegistrationModel(
             email: formUser.email,
             name: formUser.name,
-            nickName: formUser.nickName,
             password: formUser.password
         )
     }

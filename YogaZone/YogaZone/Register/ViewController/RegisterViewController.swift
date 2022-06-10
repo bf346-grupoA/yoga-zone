@@ -7,17 +7,13 @@
 
 import UIKit
 
-enum Dimensions: CGFloat {
-    case PROFILE_IMAGE_PICKER = 100
-    case PROFILE_IMAGE_CELL = 50
-}
-
 class RegisterViewController: UIViewController {
 
     // MARK: Private Parameters
     private var viewModel: RegisterViewModel?
     private var registerView: RegisterView?
     private var alert: AlertController?
+    
     
     public init(with viewModel: RegisterViewModel = RegisterViewModel()) {
         self.viewModel = viewModel
@@ -27,7 +23,6 @@ class RegisterViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -66,17 +61,46 @@ extension RegisterViewController: UIGestureRecognizerDelegate {
     
 }
 
-// MARK: Firebase Delegate
-extension RegisterViewController: FirebaseOperationsDelegate {
+// MARK: Firebase Delegate and Form Actions
+extension RegisterViewController: FormInputDelegate {
     
-    func register() {
-        if let result = self.viewModel?.register() {
-            self.alert?.setup(
-                title: result.isError ? "Ops =(" : "Cadastro Realizado =)",
-                message: result.message,
-                okText: "Fechar"
-            )
+    func getUser(user: UserRegistrationModel) {
+        self.viewModel?.setUser(formUser: user)
+    }
+    
+    func submit() {
+        self.viewModel?.register { result in
+            switch result {
+            case .success(let response):
+                self.handleSuccess(with: response)
+            case .failure(let error):
+                self.handleError(with: error)
+            }
         }
+         
+    }
+    
+    private func handleSuccess(with response: UserResponseDto) {
+        self.notifyUser(
+            withTitle: "Deu tudo certo \(response.user.displayName ?? "")!",
+            withMessage: "Agora é só fazer o login e ser feliz =)"
+        )
+    }
+    
+    private func handleError(with error: Error) {
+        let customMessage = error.localizedDescription.contains("in use by another account") ?
+                            "Essa conta já está em uso.\nTente outro e-mail =)":
+                            error.localizedDescription
+        
+        self.notifyUser(withTitle: "Deu Ruim ein =(", withMessage: customMessage)
+    }
+    
+
+    private func notifyUser(withTitle title: String, withMessage message: String) {
+        self.alert?.setup(
+            title: title,
+            message: message
+        )
     }
     
 }
