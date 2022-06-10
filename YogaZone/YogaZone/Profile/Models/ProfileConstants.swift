@@ -13,7 +13,6 @@ enum ProfileConstants: String {
     case birthDateField = "birth"
     case stateField = "state"
     case cityField = "city"
-    case genderField = "gender"
     case badCityRequestError = "Error obtaining city data"
     case badStateRequestError = "Error obtaining state data"
     case informBirthDatePlaceholder = "Informe sua data de nascimento"

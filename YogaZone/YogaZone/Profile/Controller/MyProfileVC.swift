@@ -12,7 +12,7 @@ import FirebaseAuth
 import UIKit
 
 class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
-
+    
     @IBOutlet weak var perfilImage: UIImageView!
     @IBOutlet weak var tappedCameraIconImage: UIImageView!
     @IBOutlet weak var tappedMoreOptionsButtonImage: UIImageView!
@@ -27,13 +27,14 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configImages()
-        configMoreOptionsButton()
-        setupNavigationBar()
-        configStatePickerView()
-        configCityPickerView()
-        createDatePicker()
-        setupUI()
+        self.configImages()
+        self.configMoreOptionsButton()
+        self.setupNavigationBar()
+        self.configStatePickerView()
+        self.configCityPickerView()
+        self.createDatePicker()
+        self.loadFirestoreUserData()
+        self.setupUI()
     }
     
     
@@ -135,11 +136,20 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     func configTextFields(){
+        self.textFieldName.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
+        self.textFieldName.layer.cornerRadius = 6
+        self.textFieldName.layer.borderWidth = 0.5
+        self.textFieldName.layer.borderColor = UIColor.lightGray.cgColor
+        self.textFieldName.minimumFontSize = 8
+        self.textFieldName.sizeToFit()
+        self.textFieldName.textAlignment = .left
+        
         self.textFieldBirthday.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
-        self.textFieldCity.placeholder = ProfileConstants.informBirthDatePlaceholder.rawValue
-        self.textFieldCity.layer.cornerRadius = 6
-        self.textFieldCity.layer.borderWidth = 0.5
-        self.textFieldCity.layer.borderColor = UIColor.lightGray.cgColor
+        self.textFieldBirthday.placeholder = ProfileConstants.informBirthDatePlaceholder.rawValue
+        self.textFieldBirthday.layer.cornerRadius = 6
+        self.textFieldBirthday.layer.borderWidth = 0.5
+        self.textFieldBirthday.layer.borderColor = UIColor.lightGray.cgColor
+        self.textFieldBirthday.textAlignment = .left
         
         self.textFieldCity.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         self.textFieldCity.placeholder = ProfileConstants.informCityPlaceholder.rawValue
@@ -147,6 +157,10 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         self.textFieldCity.layer.borderWidth = 0.5
         self.textFieldCity.layer.borderColor = UIColor.lightGray.cgColor
         self.textFieldCity.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.textFieldCity.textAlignment = .left
+        self.textFieldCity.minimumFontSize = 8
+        self.textFieldCity.sizeToFit()
+        
         
         self.textFieldState.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         self.textFieldState.placeholder = ProfileConstants.informStatePlaceholder.rawValue
@@ -154,6 +168,8 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         self.textFieldState.layer.borderWidth = 0.5
         self.textFieldState.layer.borderColor = UIColor.lightGray.cgColor
         self.textFieldState.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.textFieldState.textAlignment = .left
+        
     }
     
     func setupUI(){
@@ -161,7 +177,7 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         configTextFields()
     }
     
-
+    
     private func configMoreOptionsButton(){
         let tapMoreOptionsButton = UITapGestureRecognizer(target: self, action: #selector(self.tappedMoreOptionsButton))
         self.tappedMoreOptionsButtonImage.addGestureRecognizer(tapMoreOptionsButton)
@@ -190,7 +206,7 @@ extension MyProfileVC {
     func setupNavigationBar(){
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.title = "Meu Perfil"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16) ?? UIFont()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 24) ?? UIFont()]
         
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
@@ -292,14 +308,14 @@ extension MyProfileVC {
            let birthDate = user.birthDate,
            let state = user.state,
            let city = user.city {
-            database.collection(ProfileConstants.collectionName.rawValue)
+            database.collection(CommonConstants.collectionName.rawValue)
                 .document(email)
                 .updateData([
                     ProfileConstants.nameField.rawValue : name,
                     ProfileConstants.birthDateField.rawValue : birthDate,
                     ProfileConstants.stateField.rawValue : state,
                     ProfileConstants.cityField.rawValue : city,
-                   
+                    
                 ]) { (error) in
                     if let e = error {
                         print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(e.localizedDescription)")
@@ -308,6 +324,43 @@ extension MyProfileVC {
                     }
                 }
         }
+    }
+    
+    func loadFirestoreUserData() {
+        if let email = Auth.auth().currentUser?.email {
+            database.collection(CommonConstants.collectionName.rawValue)
+                .document(email)
+                .getDocument { document, error in
+                    if let e = error {
+                        print("\(CommonConstants.firestoreRetrivingDataError.rawValue) \(e.localizedDescription)")
+                    } else {
+                        DispatchQueue.main.async {
+                            if let document = document, document.exists {
+                                let data = document.data()
+                                let name = data?[ProfileConstants.nameField.rawValue] as? String ?? ""
+                                let birthDate = data?[ProfileConstants.birthDateField.rawValue] as? Date ?? Date()
+                                let state = data?[ProfileConstants.stateField.rawValue] as? String ?? ""
+                                let city = data?[ProfileConstants.cityField.rawValue] as? String ?? ""
+                                
+                                let formater = DateFormatter()
+                                formater.dateStyle = .short
+                                formater.locale = Locale.current
+                                let date = formater.string(from: birthDate)
+                                
+                                self.textFieldName.text = name
+                                self.textFieldBirthday.text = date
+                                self.textFieldState.text = state
+                                self.textFieldCity.text = city
+                
+                            } else {
+                                print("\(CommonConstants.firestoreDocumentDoesNotExistError.rawValue)")
+                                
+                            }
+                        }
+                    }
+                }
+        }
+        
     }
     
 }

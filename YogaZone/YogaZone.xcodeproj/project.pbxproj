@@ -912,6 +912,7 @@
 			isa = PBXGroup;
 			children = (
 				31D3E800284C2B1E00CFC7B5 /* Enums */,
+				31A83952284BBC890027987A /* ViewController */,
 				31A83951284BBC800027987A /* View */,
 			);
 			path = Login;
@@ -962,7 +963,6 @@
 			isa = PBXGroup;
 			children = (
 				31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */,
-				31A83952284BBC890027987A /* ViewController */,
 			);
 			path = Enums;
 			sourceTree = "<group>";

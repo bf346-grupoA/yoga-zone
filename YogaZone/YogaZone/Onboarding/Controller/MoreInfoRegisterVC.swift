@@ -97,8 +97,8 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     @objc func donePressed(){
         let dateFormater = DateFormatter()
-        dateFormater.dateStyle = .medium
-        dateFormater.timeStyle = .none
+        dateFormater.dateStyle = .short
+        dateFormater.locale = Locale.current
         self.ageTextField.text = dateFormater.string(from: self.datePicker.date)
         
         self.loadStateData()
@@ -145,10 +145,10 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
     
     func configTextFields(){
         self.ageTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
-        self.cityTextField.placeholder = OnboardingConstants.informBirthDatePlaceholder.rawValue
-        self.cityTextField.layer.cornerRadius = 6
-        self.cityTextField.layer.borderWidth = 0.5
-        self.cityTextField.layer.borderColor = UIColor.lightGray.cgColor
+        self.ageTextField.placeholder = OnboardingConstants.informBirthDatePlaceholder.rawValue
+        self.ageTextField.layer.cornerRadius = 6
+        self.ageTextField.layer.borderWidth = 0.5
+        self.ageTextField.layer.borderColor = UIColor.lightGray.cgColor
         
         self.cityTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         self.cityTextField.placeholder = OnboardingConstants.informCityPlaceholder.rawValue
@@ -156,6 +156,8 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         self.cityTextField.layer.borderWidth = 0.5
         self.cityTextField.layer.borderColor = UIColor.lightGray.cgColor
         self.cityTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.cityTextField.minimumFontSize = 8
+        self.cityTextField.sizeToFit()
         
         self.stateTextField.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 16)
         self.stateTextField.placeholder = OnboardingConstants.informStatePlaceholder.rawValue
@@ -295,7 +297,7 @@ extension MoreInfoRegisterVC {
            let state = user.state,
            let city = user.city,
            let isOnboarding = user.isOnboarding {
-            database.collection(OnboardingConstants.collectionName.rawValue)
+            database.collection(CommonConstants.collectionName.rawValue)
                 .document(email)
                 .updateData([
                     OnboardingConstants.birthDateField.rawValue : birthDate,

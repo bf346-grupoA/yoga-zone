@@ -120,19 +120,21 @@ extension LoginViewController {
     
     func loadOnboaringStatus(){
         if let email = Auth.auth().currentUser?.email {
-            database.collection(OnboardingConstants.collectionName.rawValue)
+            database.collection(CommonConstants.collectionName.rawValue)
                 .document(email)
                 .getDocument { document, error in
                     if let e = error {
                         print("\(CommonConstants.firestoreRetrivingDataError.rawValue) \(e.localizedDescription)")
                     } else {
-                        if let document = document, document.exists {
-                            let data = document.data()
-                            let isOnboarding = data?[OnboardingConstants.isOnboardingField.rawValue] as? Bool ?? false
-                            self.isOnboarding = isOnboarding
-                        } else {
-                            print("\(CommonConstants.firestoreDocumentDoesNotExistError.rawValue)")
-                            self.isOnboarding = false
+                        DispatchQueue.main.async {
+                            if let document = document, document.exists {
+                                let data = document.data()
+                                let isOnboarding = data?[OnboardingConstants.isOnboardingField.rawValue] as? Bool ?? false
+                                self.isOnboarding = isOnboarding
+                            } else {
+                                print("\(CommonConstants.firestoreDocumentDoesNotExistError.rawValue)")
+                                self.isOnboarding = false
+                            }
                         }
                     }
                 }
