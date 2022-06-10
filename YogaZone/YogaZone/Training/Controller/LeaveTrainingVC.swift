@@ -7,8 +7,12 @@
 
 import UIKit
 
+
 class LeaveTrainingVC: UIViewController {
     
+    weak var delegate: LeaveTrainingVCDelegate?
+    
+
     @IBOutlet weak var WantToLeaveLabel: UILabel!
     
     override func viewDidLoad() {
@@ -17,6 +21,7 @@ class LeaveTrainingVC: UIViewController {
     }
     
     @IBAction func tappedYesButton(_ sender: UIButton) {
+        self.delegate?.killTimer()
         navigationController?.pushViewController(HomeViewController(), animated: true)
     }
     
@@ -24,3 +29,8 @@ class LeaveTrainingVC: UIViewController {
         navigationController?.popViewController(animated: false)
     }
 }
+
+
+
+    
+
