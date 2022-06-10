@@ -144,6 +144,7 @@
 		7979B2AC283B30EB00C698D0 /* Pigeon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2AB283B30EB00C698D0 /* Pigeon.gif */; };
 		7979B2AE283B31CB00C698D0 /* Lotus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2AD283B31CB00C698D0 /* Lotus.gif */; };
 		79D0DBC12852ED9600F79F92 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0DBC02852ED9600F79F92 /* ProfileService.swift */; };
+		79D0DBC42852EF1F00F79F92 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0DBC32852EF1F00F79F92 /* ProfileViewModel.swift */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		833A67A6285024C300F21DF6 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A67A5285024C300F21DF6 /* OnboardingModel.swift */; };
@@ -329,6 +330,7 @@
 		7979B2AB283B30EB00C698D0 /* Pigeon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pigeon.gif; sourceTree = "<group>"; };
 		7979B2AD283B31CB00C698D0 /* Lotus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Lotus.gif; sourceTree = "<group>"; };
 		79D0DBC02852ED9600F79F92 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		79D0DBC32852EF1F00F79F92 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		833A67A5285024C300F21DF6 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -726,6 +728,7 @@
 		2FA287B127EACC3C00C5BD81 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				79D0DBC22852EF0B00F79F92 /* ViewModel */,
 				79D0DBBF2852ED4E00F79F92 /* Service */,
 				792377762852E8BF00E32B87 /* Models */,
 				83C1DBE4282C4CC300F411F4 /* View */,
@@ -1074,6 +1077,14 @@
 				79D0DBC02852ED9600F79F92 /* ProfileService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		79D0DBC22852EF0B00F79F92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79D0DBC32852EF1F00F79F92 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8366B68E284BE443001166D1 /* Service */ = {
@@ -1532,6 +1543,7 @@
 				2F3D0ED22848696500C3446B /* RegisterViewController.swift in Sources */,
 				792C66A3282D79CA0018D343 /* TrainingPausedVC.swift in Sources */,
 				2F412EB727E4101E007708E8 /* CardMenuCell.swift in Sources */,
+				79D0DBC42852EF1F00F79F92 /* ProfileViewModel.swift in Sources */,
 				839A06AF282DB07100C797EC /* TrainingData.swift in Sources */,
 				2F412ED527E41821007708E8 /* AudioMeditation.swift in Sources */,
 				2F0C33FD27E434DA004A1E8C /* FormFieldCell.swift in Sources */,

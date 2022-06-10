@@ -5,6 +5,10 @@
 //  Created by Marcus on 07/03/22.
 //
 
+
+
+import FirebaseFirestore
+import FirebaseAuth
 import UIKit
 
 class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
@@ -18,6 +22,9 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var textFieldBirthday: UITextField!
     @IBOutlet weak var textFieldCity: UITextField!
     @IBOutlet weak var textFieldState: UITextField!
+    
+    let onboardingViewModel:OnboardingViewModel = OnboardingViewModel()
+    let database = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
