@@ -28,11 +28,10 @@ class LoginViewController: UIViewController {
         self.loginView?.delegate(delegate: self)
         self.auth = Auth.auth()
         self.alert = AlertController(controller: self)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.setHidesBackButton(true, animated: true);
+        self.navigationController?.isNavigationBarHidden = true
     }
 }
 
@@ -74,7 +73,7 @@ extension LoginViewController: LoginViewProtocol {
     }
     
     func forgotPasswordButtonAction() {
-        let vc = ResetPasswordViewControllerX()
+        let vc = ResetPasswordViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

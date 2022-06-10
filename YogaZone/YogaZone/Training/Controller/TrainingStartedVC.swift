@@ -86,6 +86,7 @@ class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
     @objc func tappedNextButton(){
         if let titleLbl = subtitleExerciceLabel.text {
             if titleLbl == "10 de 10"{
+                timer.invalidate()
                 let vc = TrainingFinishedVC()
                 navigationController?.pushViewController(vc, animated: true)
             } else {

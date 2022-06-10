@@ -189,6 +189,7 @@ extension LevelAndDurationVC: MakeDropDownDataSourceProtocol{
 // MARK: Navigation Bar Customization
 extension LevelAndDurationVC {
     func setupNavigationBar(){
+        self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(

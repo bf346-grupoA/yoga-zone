@@ -12,9 +12,12 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true);
         self.view.backgroundColor = .white
-        self.setupTableView()        
+        self.setupTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
 }
 

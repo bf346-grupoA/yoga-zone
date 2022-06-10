@@ -35,6 +35,7 @@ extension IntroViewController {
 extension IntroViewController: UIGestureRecognizerDelegate  {
     
     func setupNavigationBar(){
+        self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(

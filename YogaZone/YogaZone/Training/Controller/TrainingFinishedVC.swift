@@ -27,6 +27,7 @@ class TrainingFinishedVC: UIViewController {
     func setupImages(){
         self.congratulationsImage.image = UIImage(named: "parabensTrofeuImage")
     }
+    
     func configLabels(){
         self.CongratulationsLabel.font = UIFont(name: "Comfortaa-Bold", size: 26)
         self.CongratulationsLabel.textAlignment = .center

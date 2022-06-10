@@ -102,6 +102,7 @@ extension MyProfileVC: UITableViewDelegate{
 // MARK: Navigation Bar Customization
 extension MyProfileVC {
     func setupNavigationBar(){
+        self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.title = "Meu Perfil"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16) ?? UIFont()]
         

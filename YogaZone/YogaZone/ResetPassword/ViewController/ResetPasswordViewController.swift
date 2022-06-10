@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-class ResetPasswordViewControllerX: UIViewController {
+class ResetPasswordViewController: UIViewController, UIGestureRecognizerDelegate {
 
     var resetPassword: ResetPasswordView?
     var auth: Auth?
@@ -25,21 +25,20 @@ class ResetPasswordViewControllerX: UIViewController {
         self.resetPassword?.delegate(delegate: self)
         self.auth = Auth.auth()
         self.alert = AlertController(controller: self)
-        
+        self.setupNavigationBar()
       
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
+        self.navigationController?.isNavigationBarHidden = false        
     }
     
 }
 
-extension ResetPasswordViewControllerX: ResetPassowrdViewProtocol {
+extension ResetPasswordViewController: ResetPassowrdViewProtocol {
+    
     func tappedBackButtonAction() {
-        let vc = LoginViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+       
     }
     
     func forgotPassword() {
@@ -65,7 +64,7 @@ extension ResetPasswordViewControllerX: ResetPassowrdViewProtocol {
 
 //MARK: - UITextFieldDelegate
 
-extension ResetPasswordViewControllerX: UITextFieldDelegate {
+extension ResetPasswordViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderWidth = 2.0
@@ -89,5 +88,26 @@ extension ResetPasswordViewControllerX: UITextFieldDelegate {
     }
     
 
- 
+extension ResetPasswordViewController {
+    
+    func setupNavigationBar(){
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 24) ?? UIFont()]
         
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.4784313725, green: 0.4784313725, blue: 0.4784313725, alpha: 1)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "arrowVoltar"),
+            style: .plain,
+            target: self,
+            action: #selector(popToPrevious)
+        )
+    }
+    
+    @objc private func popToPrevious() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
+
+

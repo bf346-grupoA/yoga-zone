@@ -94,7 +94,9 @@ class MoreOptionsVC: UIViewController, UIGestureRecognizerDelegate{
     @IBAction func leaveAppButton(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
-            navigationController?.popToRootViewController(animated: false)
+            let rootViewController = UINavigationController(rootViewController: LoginViewController())
+            self.view.window?.rootViewController = rootViewController
+            navigationController?.popToRootViewController(animated: true)
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
         }
