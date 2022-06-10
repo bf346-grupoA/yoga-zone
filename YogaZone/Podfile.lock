@@ -739,6 +739,7 @@ PODS:
   - PromisesObjC (2.1.0)
   - ShowPasswordTextField (1.0.0)
   - TransitionButton (0.5.3)
+  - youtube-ios-player-helper (1.0.4)
 
 DEPENDENCIES:
   - Firebase/Firestore
@@ -746,6 +747,7 @@ DEPENDENCIES:
   - FirebaseAuth
   - ShowPasswordTextField
   - TransitionButton
+  - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
@@ -773,6 +775,7 @@ SPEC REPOS:
     - PromisesObjC
     - ShowPasswordTextField
     - TransitionButton
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   abseil: ebe5b5529fb05d93a8bdb7951607be08b7fa71bc
@@ -799,7 +802,8 @@ SPEC CHECKSUMS:
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
   ShowPasswordTextField: afaa03b704087989f841e3bdd4525383261104d1
   TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
 
-PODFILE CHECKSUM: 5c4824d77c13d8c53f20872b151cde4dcc2cb597
+PODFILE CHECKSUM: 138d47064b0b0c3614a2cc9a67c9a32f1331b170
 
 COCOAPODS: 1.11.2

@@ -64,6 +64,7 @@ class ResetPasswordView: UIView {
         label.textColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
         label.font = UIFont.boldSystemFont(ofSize: 12)
         label.text = LoginConstants.obligationField.rawValue
+        label.isHidden = true
         return label
     }()
     

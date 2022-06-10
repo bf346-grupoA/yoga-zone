@@ -118,6 +118,7 @@ extension BmiViewController {
     func calculateResult() {
         let result = weight / (heigth * heigth)
         self.viewModel.result = String(format: " %.1f ", result)
+        self.viewModel.getWeight = String(weight)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController
         vc?.result = Double(result)
         vc?.weigth = String(format: " %.1f ", weight)

@@ -21,12 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3lA-8k-aM4" userLabel="Options">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3lA-8k-aM4" userLabel="Options">
                                 <rect key="frame" x="32" y="54" width="311" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
-                                    <segment title="Third"/>
+                                    <segment title="Third" width="95"/>
                                 </segments>
                                 <connections>
                                     <action selector="didTapSegmentWithSegment:" destination="Y6W-OH-hqX" eventType="valueChanged" id="TWh-Da-8k4"/>
