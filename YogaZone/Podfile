@@ -12,5 +12,5 @@ pod 'Firebase/Storage'
 pod 'FirebaseAuth'
 pod 'TransitionButton'
 pod 'ShowPasswordTextField'
-
+pod 'youtube-ios-player-helper'
 end

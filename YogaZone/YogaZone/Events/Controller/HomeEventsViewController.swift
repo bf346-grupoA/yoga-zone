@@ -117,6 +117,7 @@ extension HomeEventsViewController {
         self.optionsControl.setTitle("Lista", forSegmentAt: 0)
         self.optionsControl.setTitle("Mapa", forSegmentAt: 1)
         self.optionsControl.setTitle("Meus Eventos", forSegmentAt: 2)
+        self.optionsControl.apportionsSegmentWidthsByContent = true
         
     }
     

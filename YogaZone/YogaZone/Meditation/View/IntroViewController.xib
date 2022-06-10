@@ -41,7 +41,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqM-Nq-t0f">
-                    <rect key="frame" x="60" y="519" width="294" height="36"/>
+                    <rect key="frame" x="20" y="519" width="374" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="92H-ZO-GcH"/>
                     </constraints>
@@ -68,9 +68,9 @@
                 <constraint firstItem="15K-6v-0VL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="1Aq-Jk-dKK"/>
                 <constraint firstItem="iqM-Nq-t0f" firstAttribute="top" secondItem="1he-ub-MlS" secondAttribute="bottom" constant="50" id="490-W5-Udo"/>
                 <constraint firstItem="1he-ub-MlS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="F83-EM-EKq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iqM-Nq-t0f" secondAttribute="trailing" constant="60" id="IDP-0D-ueq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iqM-Nq-t0f" secondAttribute="trailing" constant="20" id="IDP-0D-ueq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1he-ub-MlS" secondAttribute="trailing" constant="20" id="JNb-8U-vpe"/>
-                <constraint firstItem="iqM-Nq-t0f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="Md5-dg-o2a"/>
+                <constraint firstItem="iqM-Nq-t0f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Md5-dg-o2a"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="15K-6v-0VL" secondAttribute="trailing" constant="30" id="Oal-pn-uTt"/>
                 <constraint firstItem="1he-ub-MlS" firstAttribute="top" secondItem="15K-6v-0VL" secondAttribute="bottom" constant="30" id="aTm-RL-cVr"/>
                 <constraint firstItem="15K-6v-0VL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="bPe-SE-xia"/>
