@@ -143,6 +143,7 @@
 		7979B2AA283B30CB00C698D0 /* Garudasana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2A9283B30CB00C698D0 /* Garudasana.gif */; };
 		7979B2AC283B30EB00C698D0 /* Pigeon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2AB283B30EB00C698D0 /* Pigeon.gif */; };
 		7979B2AE283B31CB00C698D0 /* Lotus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7979B2AD283B31CB00C698D0 /* Lotus.gif */; };
+		79D0DBC12852ED9600F79F92 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0DBC02852ED9600F79F92 /* ProfileService.swift */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		833A67A6285024C300F21DF6 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A67A5285024C300F21DF6 /* OnboardingModel.swift */; };
@@ -327,6 +328,7 @@
 		7979B2A9283B30CB00C698D0 /* Garudasana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Garudasana.gif; sourceTree = "<group>"; };
 		7979B2AB283B30EB00C698D0 /* Pigeon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pigeon.gif; sourceTree = "<group>"; };
 		7979B2AD283B31CB00C698D0 /* Lotus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Lotus.gif; sourceTree = "<group>"; };
+		79D0DBC02852ED9600F79F92 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		833A67A5285024C300F21DF6 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -724,6 +726,7 @@
 		2FA287B127EACC3C00C5BD81 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				79D0DBBF2852ED4E00F79F92 /* Service */,
 				792377762852E8BF00E32B87 /* Models */,
 				83C1DBE4282C4CC300F411F4 /* View */,
 				83C1DBE3282C4C9E00F411F4 /* Controller */,
@@ -1063,6 +1066,14 @@
 				792C669B282D79CA0018D343 /* DropDownTwoTableViewCell.xib */,
 			);
 			path = DropDownTwoTableCell;
+			sourceTree = "<group>";
+		};
+		79D0DBBF2852ED4E00F79F92 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				79D0DBC02852ED9600F79F92 /* ProfileService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		8366B68E284BE443001166D1 /* Service */ = {
@@ -1492,6 +1503,7 @@
 				83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */,
 				792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */,
 				2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */,
+				79D0DBC12852ED9600F79F92 /* ProfileService.swift in Sources */,
 				2F036F7927E429D800993E41 /* EventMapViewController.swift in Sources */,
 				792C66A2282D79CA0018D343 /* LevelAndDurationVC.swift in Sources */,
 				2F412ED727E41821007708E8 /* PracticeViewController.swift in Sources */,
