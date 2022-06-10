@@ -29,7 +29,7 @@ class TableViewCellMyProgress: UITableViewCell {
     }
     
     func configLabels(){
-        self.dateLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
+        self.dateLabel.font = UIFont(name: "Comfortaa-Bold", size: 1)
         self.bmiIndex.font = UIFont(name: "Comfortaa-Bold", size: 14)
         self.weightLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
     }

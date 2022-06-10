@@ -28,7 +28,7 @@
                         <rect key="frame" x="10" y="5" width="356" height="118"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo Do Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47f-K6-fg3" userLabel="Titulo">
-                                <rect key="frame" x="40" y="12.5" width="145.5" height="21"/>
+                                <rect key="frame" x="40" y="12.5" width="177" height="21"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
                                 <color key="textColor" red="0.090196078430000007" green="0.31764705879999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +39,7 @@
                                 <color key="tintColor" red="0.44705882349999998" green="0.34901960780000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local do Evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7V-AP-eEQ" userLabel="Local">
-                                <rect key="frame" x="40" y="53" width="127.5" height="20"/>
+                                <rect key="frame" x="40" y="55" width="127.5" height="18"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                 <color key="textColor" red="0.090196078430000007" green="0.31764705879999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -74,6 +74,7 @@
                                 <rect key="frame" x="237" y="12" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.97647058819999999" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se Juntou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-Oa-vLN" userLabel="Se juntou">
                                 <rect key="frame" x="269" y="53" width="80.5" height="22"/>
@@ -103,14 +104,21 @@
                             <constraint firstItem="txy-jT-R8n" firstAttribute="bottom" secondItem="t9X-As-ISa" secondAttribute="bottom" id="9hG-hn-VV6"/>
                             <constraint firstItem="dKt-Oa-vLN" firstAttribute="leading" secondItem="txy-jT-R8n" secondAttribute="leading" id="HjI-SF-Mu2"/>
                             <constraint firstItem="dKt-Oa-vLN" firstAttribute="bottom" secondItem="fC3-rC-hSV" secondAttribute="bottom" id="JOK-y8-I1w"/>
+                            <constraint firstItem="00a-pb-GHM" firstAttribute="leading" secondItem="w7g-uz-3WU" secondAttribute="trailing" constant="10" id="L2j-oC-9Qk"/>
+                            <constraint firstItem="DIc-Yp-FUK" firstAttribute="leading" secondItem="47f-K6-fg3" secondAttribute="trailing" constant="20" id="NBd-7o-UgN"/>
                             <constraint firstItem="47f-K6-fg3" firstAttribute="leading" secondItem="Nfl-LE-UC2" secondAttribute="trailing" constant="10" id="Ndj-YA-Bz1"/>
                             <constraint firstItem="00a-pb-GHM" firstAttribute="top" secondItem="y7V-AP-eEQ" secondAttribute="bottom" constant="19" id="OAr-72-gFc"/>
                             <constraint firstItem="00a-pb-GHM" firstAttribute="leading" secondItem="y7V-AP-eEQ" secondAttribute="leading" id="Ou9-Qt-S4U"/>
                             <constraint firstItem="47f-K6-fg3" firstAttribute="centerY" secondItem="Nfl-LE-UC2" secondAttribute="centerY" id="RPU-EI-zch"/>
+                            <constraint firstItem="y7V-AP-eEQ" firstAttribute="leading" secondItem="jiE-1j-np0" secondAttribute="trailing" constant="10" id="SHG-Xg-WhK"/>
                             <constraint firstItem="dKt-Oa-vLN" firstAttribute="top" secondItem="fC3-rC-hSV" secondAttribute="top" id="U8b-TC-HMw"/>
                             <constraint firstItem="txy-jT-R8n" firstAttribute="baseline" secondItem="00a-pb-GHM" secondAttribute="baseline" id="bSA-9j-ClX"/>
+                            <constraint firstItem="fC3-rC-hSV" firstAttribute="centerY" secondItem="y7V-AP-eEQ" secondAttribute="centerY" id="c1D-mr-SEL"/>
                             <constraint firstItem="00a-pb-GHM" firstAttribute="leading" secondItem="47f-K6-fg3" secondAttribute="leading" id="dNS-3a-CRR"/>
                             <constraint firstItem="txy-jT-R8n" firstAttribute="top" secondItem="t9X-As-ISa" secondAttribute="top" id="gHW-c1-y88"/>
+                            <constraint firstItem="dKt-Oa-vLN" firstAttribute="top" secondItem="Cd9-Ms-Wt5" secondAttribute="bottom" constant="19" id="mnf-Rt-ARM"/>
+                            <constraint firstItem="t9X-As-ISa" firstAttribute="centerY" secondItem="00a-pb-GHM" secondAttribute="centerY" id="pBr-0P-sig"/>
+                            <constraint firstItem="DIc-Yp-FUK" firstAttribute="centerY" secondItem="47f-K6-fg3" secondAttribute="centerY" id="pyS-I1-FC8"/>
                             <constraint firstItem="txy-jT-R8n" firstAttribute="firstBaseline" secondItem="00a-pb-GHM" secondAttribute="firstBaseline" id="tvx-gW-oAa"/>
                             <constraint firstItem="dKt-Oa-vLN" firstAttribute="leading" secondItem="Cd9-Ms-Wt5" secondAttribute="leading" id="vHs-LS-jiz"/>
                         </constraints>

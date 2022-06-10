@@ -39,6 +39,7 @@ class BmiViewModel {
         let currentyDate = Date()
         let formater = DateFormatter()
         formater.dateStyle = .short
+        formater.dateFormat = "dd/MM/yy"
         let date = formater.string(from: currentyDate)
         return date
     }

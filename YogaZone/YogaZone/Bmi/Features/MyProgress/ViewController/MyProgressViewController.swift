@@ -43,6 +43,7 @@ class MyProgressViewController: UIViewController, SendData{
     override func viewWillAppear(_ animated: Bool) {
         self.updateProgress()
         self.getData()
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     @IBAction func tappedClosedBUtton(_ sender: UIButton) {
@@ -75,16 +76,18 @@ class MyProgressViewController: UIViewController, SendData{
     }
     
     func configLabels(){
-        self.titleLabel.font = UIFont(name: "Comfortaa-Bold", size: 26)
+        self.titleLabel.font = UIFont(name: "Comfortaa-Bold", size: 24)
         self.weightLabeltitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.goalLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.missLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.dateLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 12)
-        self.resultLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 11)
-        self.weightLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.weightLabelTitleTv.font = UIFont(name: "Comfortaa-Bold", size: 12)
-        self.goalLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        self.missingLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.weightLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
+        self.goalLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
+        self.missingLabel.font = UIFont(name: "Comfortaa-Bold", size: 14)
+        self.dateLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.resultLabelTitle.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        self.weightLabelTitleTv.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
+      
     }
 }
 
