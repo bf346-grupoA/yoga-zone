@@ -6,23 +6,24 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class ModalVideoViewController: UIViewController {
-    var selectedPose: String? = nil
+    var videoId: String = ""
     
-    @IBOutlet weak var thumbVideoImageView: UIImageView!
+
+    @IBOutlet weak var youTubePlayerView: YTPlayerView!
     
     @IBOutlet weak var videoTitleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        self.getPoseVideo(id: videoId)
+    }
+    
+    func getPoseVideo(id:String){
+        youTubePlayerView.load(withVideoId: id)
     }
 
 }
 
-extension ModalVideoViewController {
-    func setupUI() {
-        self.videoTitleLabel.text = selectedPose ?? "None"
-    }
-}

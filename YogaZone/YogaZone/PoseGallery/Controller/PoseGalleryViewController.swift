@@ -79,14 +79,48 @@ extension PoseGalleryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedPose = poses[indexPath.section]
         let vc = PoseDetailViewController()
+        vc.videoId = getVideoPoseId(indexPath: indexPath)
         vc.selectedPose = selectedPose
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 158
+        return 78
     }
+    
+    func getVideoPoseId(indexPath:IndexPath) -> String {
+        switch indexPath.row {
+        case 0:
+            return "8KsyQvwi85Q"
+        case 1:
+            return "0495rbXZMQg"
+        case 2:
+            return "FCuSE4oS9xc"
+        case 3:
+            return "egqMxaJ9mKw"
+        case 4:
+            return "YXOeBUjmERI"
+        case 5:
+            return "8q7GxnIFsQo"
+        case 6:
+            return "98NweOVmU8"
+        case 7:
+            return "NuYfAhZ2MhM"
+        case 8:
+            return "0FxWRAJht6k"
+        case 9:
+            return "J_lLt6-GlMo"
+        case 10:
+            return "1VYlOKUdylM"
+        case 11:
+            return "lu358XJfYnk"
+        default:
+            return "3_jMiU6_3NE"
+        }
+    }
+    
+    
 }
 
 // MARK: TableViewDataSource
