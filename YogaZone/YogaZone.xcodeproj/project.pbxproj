@@ -95,8 +95,6 @@
 		2F83C79D282A0A0C00EC3334 /* MyProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83C792282A0A0C00EC3334 /* MyProgressViewController.swift */; };
 		2FA287C227EACC3C00C5BD81 /* MoreOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */; };
 		2FA287C327EACC3C00C5BD81 /* MoreOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */; };
-		2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B727EACC3C00C5BD81 /* MyProfileTableViewCell.swift */; };
-		2FA287C527EACC3C00C5BD81 /* MyProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */; };
 		2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287B927EACC3C00C5BD81 /* MyProfileVC.swift */; };
 		2FA287C727EACC3C00C5BD81 /* MyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287BA27EACC3C00C5BD81 /* MyProfileVC.xib */; };
 		2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA287BC27EACC3C00C5BD81 /* DeleteAccountVC.swift */; };
@@ -113,6 +111,8 @@
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
 		759B87B9D4657FF8988DB3F6 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B791A959A2264EC135ED35C /* Pods_YogaZone.framework */; };
+		792377782852E8DF00E32B87 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792377772852E8DF00E32B87 /* ProfileModel.swift */; };
+		7923777A2852E93300E32B87 /* ProfileConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792377792852E93300E32B87 /* ProfileConstants.swift */; };
 		792C669C282D79CA0018D343 /* RenderGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C667F282D79CA0018D343 /* RenderGIF.swift */; };
 		792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6680282D79CA0018D343 /* MakeDropDown.swift */; };
 		792C669E282D79CA0018D343 /* TrainingFinishedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C6681282D79CA0018D343 /* TrainingFinishedVC.swift */; };
@@ -270,8 +270,6 @@
 		2F83C792282A0A0C00EC3334 /* MyProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgressViewController.swift; sourceTree = "<group>"; };
 		2FA287B327EACC3C00C5BD81 /* MoreOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsVC.swift; sourceTree = "<group>"; };
 		2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreOptionsVC.xib; sourceTree = "<group>"; };
-		2FA287B727EACC3C00C5BD81 /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
-		2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileTableViewCell.xib; sourceTree = "<group>"; };
 		2FA287B927EACC3C00C5BD81 /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		2FA287BA27EACC3C00C5BD81 /* MyProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileVC.xib; sourceTree = "<group>"; };
 		2FA287BC27EACC3C00C5BD81 /* DeleteAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountVC.swift; sourceTree = "<group>"; };
@@ -296,6 +294,8 @@
 		31A8395A284BE0130027987A /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		31A83961284BE7A80027987A /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
+		792377772852E8DF00E32B87 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		792377792852E93300E32B87 /* ProfileConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConstants.swift; sourceTree = "<group>"; };
 		792C667F282D79CA0018D343 /* RenderGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderGIF.swift; sourceTree = "<group>"; };
 		792C6680282D79CA0018D343 /* MakeDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeDropDown.swift; sourceTree = "<group>"; };
 		792C6681282D79CA0018D343 /* TrainingFinishedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingFinishedVC.swift; sourceTree = "<group>"; };
@@ -724,20 +724,11 @@
 		2FA287B127EACC3C00C5BD81 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				83C1DBE5282C4CC600F411F4 /* Model */,
+				792377762852E8BF00E32B87 /* Models */,
 				83C1DBE4282C4CC300F411F4 /* View */,
 				83C1DBE3282C4C9E00F411F4 /* Controller */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		2FA287B627EACC3C00C5BD81 /* MyProfileTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287B727EACC3C00C5BD81 /* MyProfileTableViewCell.swift */,
-				2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */,
-			);
-			path = MyProfileTableViewCell;
 			sourceTree = "<group>";
 		};
 		311B94D62847B83B003A9C14 /* Features */ = {
@@ -970,6 +961,15 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		792377762852E8BF00E32B87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				792377772852E8DF00E32B87 /* ProfileModel.swift */,
+				792377792852E93300E32B87 /* ProfileConstants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		792C667D282D79CA0018D343 /* Training */ = {
 			isa = PBXGroup;
 			children = (
@@ -1118,16 +1118,8 @@
 				2FA287B427EACC3C00C5BD81 /* MoreOptionsVC.xib */,
 				2FA287C027EACC3C00C5BD81 /* CustomAlertVC.xib */,
 				2FA287BA27EACC3C00C5BD81 /* MyProfileVC.xib */,
-				2FA287B627EACC3C00C5BD81 /* MyProfileTableViewCell */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		83C1DBE5282C4CC600F411F4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		83C1DBE6282C4DC800F411F4 /* Controller */ = {
@@ -1355,7 +1347,6 @@
 				311B94EC2847DD90003A9C14 /* GoogleService-Info.plist in Resources */,
 				8391EA5427E820E800F466F2 /* Montserrat-Bold.ttf in Resources */,
 				2F036F7E27E429D800993E41 /* EventCell.xib in Resources */,
-				2FA287C527EACC3C00C5BD81 /* MyProfileTableViewCell.xib in Resources */,
 				792C66AA282D79CA0018D343 /* LeaveTrainingVC.xib in Resources */,
 				7979B29E283AFFBA00C698D0 /* Sarvagansana.gif in Resources */,
 				2F79E15027DCFA120070397F /* PoseCell.xib in Resources */,
@@ -1461,6 +1452,7 @@
 				2F3D0EC52848593300C3446B /* StringExtensions.swift in Sources */,
 				2F3A53D127EB67B500FBA25F /* HeaderCell.swift in Sources */,
 				2F83C796282A0A0C00EC3334 /* ResultTableViewCell.swift in Sources */,
+				792377782852E8DF00E32B87 /* ProfileModel.swift in Sources */,
 				83ED3CB328365EE50045C33B /* EventFilter.swift in Sources */,
 				2F83C796282A0A0C00EC3334 /* ResultTableViewCell.swift in Sources */,
 				2F83C794282A0A0C00EC3334 /* TableViewCellMyProgress.swift in Sources */,
@@ -1482,7 +1474,6 @@
 				833A67A6285024C300F21DF6 /* OnboardingModel.swift in Sources */,
 				2FB0560327E022DA000E9CA6 /* Poses.swift in Sources */,
 				792C66A1282D79CA0018D343 /* LeaveTrainingVC.swift in Sources */,
-				2FA287C427EACC3C00C5BD81 /* MyProfileTableViewCell.swift in Sources */,
 				2F79E15E27DD0DB60070397F /* ModalVideoViewController.swift in Sources */,
 				83E3165C284F06360066EAA0 /* FormValidation.swift in Sources */,
 				2F036F8D27E429D800993E41 /* AlertService.swift in Sources */,
@@ -1535,6 +1526,7 @@
 				8366B694284BE739001166D1 /* BrazilianStates.swift in Sources */,
 				311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */,
 				2F83C79C282A0A0C00EC3334 /* ResultViewController.swift in Sources */,
+				7923777A2852E93300E32B87 /* ProfileConstants.swift in Sources */,
 				2FA287CB27EACC3C00C5BD81 /* CustomAlertVC.swift in Sources */,
 				2F412ED327E41821007708E8 /* IntroViewController.swift in Sources */,
 				2FA287C827EACC3C00C5BD81 /* DeleteAccountVC.swift in Sources */,
