@@ -15,7 +15,7 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var tappedMoreOptionsButtonImage: UIImageView!
     @IBOutlet weak var saveChangesButton: UIButton!
     @IBOutlet weak var textFieldName: UITextField!
-    @IBOutlet weak var textFieldEmail: UITextField!
+    @IBOutlet weak var textFieldBirthday: UITextField!
     @IBOutlet weak var textFieldCity: UITextField!
     @IBOutlet weak var textFieldState: UITextField!
     
