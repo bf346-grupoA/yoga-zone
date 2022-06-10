@@ -6,19 +6,22 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class PoseDetailViewController: UIViewController {
     var selectedPose: Pose? = nil
+    var linkYoutube: String?
+    
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var categoriesLabel: UILabel!
     @IBOutlet weak var categoriesTableView: UITableView!
-    @IBOutlet weak var videoButton: UIButton!
+    @IBOutlet weak var videoButton: YTPlayerView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        videoButton.load(withVideoId: "zuhA6cEHvfo")
         setupUI()
         setupTableView()
     }

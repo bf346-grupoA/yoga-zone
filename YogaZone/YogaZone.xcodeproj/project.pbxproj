@@ -178,6 +178,7 @@
 		3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126833B27C15ECA003F017B /* SceneDelegate.swift */; };
 		3126834327C15ECB003F017B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3126834227C15ECB003F017B /* Assets.xcassets */; };
 		3126834627C15ECB003F017B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3126834427C15ECB003F017B /* LaunchScreen.storyboard */; };
+		495732F9912D435EDC8F7A11 /* Pods_YogaZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD03E3B42C7D9E77BD9D327 /* Pods_YogaZone.framework */; };
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		8391EA5027E820E800F466F2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */; };
@@ -368,6 +369,8 @@
 		3126834227C15ECB003F017B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3126834527C15ECB003F017B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3126834727C15ECB003F017B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF66A29E244FD9E6F8568E4 /* Pods-YogaZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.debug.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.debug.xcconfig"; sourceTree = "<group>"; };
+		6BD03E3B42C7D9E77BD9D327 /* Pods_YogaZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -382,6 +385,7 @@
 		8391EA4D27E820E800F466F2 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8391EA4E27E820E800F466F2 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		8391EA4F27E820E800F466F2 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		9910736155307AF488FC6B78 /* Pods-YogaZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaZone.release.xcconfig"; path = "Target Support Files/Pods-YogaZone/Pods-YogaZone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,12 +393,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495732F9912D435EDC8F7A11 /* Pods_YogaZone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09C090EE162D6F58DB0655DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BD03E3B42C7D9E77BD9D327 /* Pods_YogaZone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F036F5027E429D800993E41 /* Events */ = {
 			isa = PBXGroup;
 			children = (
@@ -1301,6 +1314,8 @@
 			children = (
 				3126833827C15ECA003F017B /* YogaZone */,
 				3126833727C15ECA003F017B /* Products */,
+				E4EC11F77A854E08045DF60B /* Pods */,
+				09C090EE162D6F58DB0655DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1364,6 +1379,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E4EC11F77A854E08045DF60B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FF66A29E244FD9E6F8568E4 /* Pods-YogaZone.debug.xcconfig */,
+				9910736155307AF488FC6B78 /* Pods-YogaZone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1371,9 +1395,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3126834A27C15ECB003F017B /* Build configuration list for PBXNativeTarget "YogaZone" */;
 			buildPhases = (
+				52C83FDB82B73F78FD2D8910 /* [CP] Check Pods Manifest.lock */,
 				3126833227C15ECA003F017B /* Sources */,
 				3126833327C15ECA003F017B /* Frameworks */,
 				3126833427C15ECA003F017B /* Resources */,
+				CD3DB1C85CACD87BDBD539B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1517,6 +1543,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52C83FDB82B73F78FD2D8910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YogaZone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3DB1C85CACD87BDBD539B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YogaZone/Pods-YogaZone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3126833227C15ECA003F017B /* Sources */ = {
@@ -1752,18 +1820,20 @@
 		};
 		3126834B27C15ECB003F017B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF66A29E244FD9E6F8568E4 /* Pods-YogaZone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXNZY6B6S6;
+				DEVELOPMENT_TEAM = RVDHB2VBB6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YogaZone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1779,18 +1849,20 @@
 		};
 		3126834C27C15ECB003F017B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9910736155307AF488FC6B78 /* Pods-YogaZone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXNZY6B6S6;
+				DEVELOPMENT_TEAM = RVDHB2VBB6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YogaZone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
