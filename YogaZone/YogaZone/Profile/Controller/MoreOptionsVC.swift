@@ -74,8 +74,6 @@ extension MoreOptionsVC {
             }
         })
         
-        
-        
     }
     
     @IBAction func tappedDeleteAccountButton(_ sender: UIButton) {

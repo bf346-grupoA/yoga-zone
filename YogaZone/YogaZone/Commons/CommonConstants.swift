@@ -17,6 +17,7 @@ enum CommonConstants: String {
     case comfortaaRegularFont = "Comfortaa-Regular"
     case comfortaaBoldFont = "Comfortaa-Bold"
     case comfortaaSemiBoldFont = "Comfortaa-SemiBold"
+    case comfortaaMediumFont = "Comfortaa-Medium"
     case montserratRegularFont = "Montserrat-Regular"
     case smileEmojiText = "smile_emoji"
     case backArrowImage = "arrowVoltar"

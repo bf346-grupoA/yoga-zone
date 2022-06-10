@@ -22,6 +22,7 @@ enum ProfileConstants: String {
     case informCurrentPasswordPlaceholder = "Digite sua senha atual"
     case informNewPasswordPlaceholder = "Digite a nova senha"
     case informConfirmNewPasswordPlaceholder = "Confirmar nova senha"
+    case informConfirmPasswordPlaceholder = "Digite sua senha"
     case save = "Salvar Alterações"
     case ok = "OK"    
     case atentionWarning = "Atenção"
