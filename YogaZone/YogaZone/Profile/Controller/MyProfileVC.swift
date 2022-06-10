@@ -52,13 +52,12 @@ class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
         self.profileViewModel.getRequestBrazilianState()
     }
     
-    
 }
 
 //MARK: - UISetup
 extension MyProfileVC {
     
-    func createToolBar() -> UIToolbar{
+        func createToolBar() -> UIToolbar{
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
@@ -221,6 +220,7 @@ extension MyProfileVC {
         userData.city = self.cityTextField.text
         saveFirestoreData(user: userData)
         CustomAlertVC.instance.showAlert(titleType: .success, message: "Suas alterações foram salvas com sucesso !", alertType: .success)
+        CustomAlertVC.instance.delegate(delegate: self)
     }
     
     @objc func tappedMoreOptionsButton(){
@@ -263,7 +263,6 @@ extension MyProfileVC {
     }
 }
 
-
 // MARK: Navigation Bar Customization
 extension MyProfileVC {
     func setupNavigationBar(){
@@ -284,6 +283,16 @@ extension MyProfileVC {
     @objc private func popToPrevious() {
         navigationController?.popViewController(animated: true)
     }
+}
+
+
+//MARK: - CustomAlertDelegate
+extension MyProfileVC: customAlertDelegate {
+    
+    func okPressed() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 //MARK: - PickerView Delegate

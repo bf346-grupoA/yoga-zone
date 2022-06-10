@@ -19,8 +19,7 @@ class ResetPasswordView: UIView {
     
     func delegate(delegate: ResetPassowrdViewProtocol?) {
         self.delegate = delegate
-    }
-    
+    }    
     
     lazy var backButton: UIButton = {
         let button = UIButton()

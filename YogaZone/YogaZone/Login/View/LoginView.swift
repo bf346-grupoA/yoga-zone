@@ -22,7 +22,6 @@ class LoginView: UIView {
     func delegate(delegate: LoginViewProtocol?) {
         self.delegate = delegate
     }
-    
 
     lazy var appImageView:UIImageView = {
         let image = UIImageView()
