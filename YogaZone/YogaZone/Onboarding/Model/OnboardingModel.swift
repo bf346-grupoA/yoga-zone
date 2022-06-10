@@ -12,6 +12,5 @@ struct OnboardingModel {
     var birthDate: Date?
     var state: String?
     var city: String?
-    var gender: String?
     var isOnboarding: Bool?
 }

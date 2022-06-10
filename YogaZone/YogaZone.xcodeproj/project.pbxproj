@@ -30,7 +30,6 @@
 		2F036F8F27E429D800993E41 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F7327E429D800993E41 /* EventDetailViewController.swift */; };
 		2F036F9027E429D800993E41 /* EventDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F036F7427E429D800993E41 /* EventDetail.storyboard */; };
 		2F036F9127E429D800993E41 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F036F7627E429D800993E41 /* Event.swift */; };
-		2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */; };
 		2F0C33F527E434DA004A1E8C /* MoreInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */; };
 		2F0C33F627E434DA004A1E8C /* MoreInfoRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */; };
 		2F0C33F727E434DA004A1E8C /* DoneRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */; };
@@ -206,7 +205,6 @@
 		2F036F7327E429D800993E41 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		2F036F7427E429D800993E41 /* EventDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventDetail.storyboard; sourceTree = "<group>"; };
 		2F036F7627E429D800993E41 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonController.swift; sourceTree = "<group>"; };
 		2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoRegisterVC.swift; sourceTree = "<group>"; };
 		2F0C33E727E434DA004A1E8C /* MoreInfoRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInfoRegisterVC.xib; sourceTree = "<group>"; };
 		2F0C33E927E434DA004A1E8C /* DoneRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoneRegisterVC.xib; sourceTree = "<group>"; };
@@ -1137,7 +1135,6 @@
 			children = (
 				2F0C33EC27E434DA004A1E8C /* UserLevelVC.swift */,
 				2F0C33EA27E434DA004A1E8C /* DoneRegisterVC.swift */,
-				2F0C33E527E434DA004A1E8C /* RadioButtonController.swift */,
 				2F0C33E627E434DA004A1E8C /* MoreInfoRegisterVC.swift */,
 			);
 			path = Controller;
@@ -1502,7 +1499,6 @@
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
 				83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */,
-				2F0C33F427E434DA004A1E8C /* RadioButtonController.swift in Sources */,
 				792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */,
 				2F412ECE27E41821007708E8 /* MeditationData.swift in Sources */,
 				2F036F7927E429D800993E41 /* EventMapViewController.swift in Sources */,

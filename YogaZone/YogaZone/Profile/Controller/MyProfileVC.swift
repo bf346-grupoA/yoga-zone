@@ -10,7 +10,7 @@ import UIKit
 class MyProfileVC: UIViewController, UIGestureRecognizerDelegate {
     
     
-    private var arrayProfile:[String] = ["Nick", "Data de Nascimento", "Localidade", "Sexo"]
+    private var arrayProfile:[String] = ["Nick", "Data de Nascimento", "Localidade"]
     
     @IBOutlet weak var perfilImage: UIImageView!
     
