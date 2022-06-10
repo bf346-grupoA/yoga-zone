@@ -8,8 +8,8 @@
 import Foundation
 
 struct ProfileModel {
-    var email: String?
     var name: String?
+    var birthDate: Date?
     var state: String?
     var city: String?
 }

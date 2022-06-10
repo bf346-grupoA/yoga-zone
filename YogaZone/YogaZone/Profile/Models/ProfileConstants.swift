@@ -9,6 +9,7 @@ import Foundation
 
 enum ProfileConstants: String {
     case collectionName = "UserData"
+    case nameField = "name"
     case birthDateField = "birth"
     case stateField = "state"
     case cityField = "city"
@@ -18,7 +19,7 @@ enum ProfileConstants: String {
     case informBirthDatePlaceholder = "Informe sua data de nascimento"
     case informCityPlaceholder = "Informe sua Cidade"
     case informStatePlaceholder = "UF"
-    case nextStep = "Avançar"
+    case save = "Salvar Alterações"
     case start = "Começar"
     case ok = "OK"
     case atentionWarning = "Atenção"
