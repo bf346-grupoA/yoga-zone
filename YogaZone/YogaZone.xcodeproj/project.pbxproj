@@ -220,10 +220,6 @@
 		2F0C33EA27E434DA004A1E8C /* DoneRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneRegisterVC.swift; sourceTree = "<group>"; };
 		2F0C33EC27E434DA004A1E8C /* UserLevelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLevelVC.swift; sourceTree = "<group>"; };
 		2F0C33ED27E434DA004A1E8C /* UserLevelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserLevelVC.xib; sourceTree = "<group>"; };
-		2F0C33F227E434DA004A1E8C /* FormFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldCell.swift; sourceTree = "<group>"; };
-		2F0C340227E4384E004A1E8C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2F0C340527E4384E004A1E8C /* BreathingHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreathingHomeViewController.swift; sourceTree = "<group>"; };
-		2F0C340F27E4384E004A1E8C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2F0FCD80284EF11800301E9E /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		2F0FCD82284EF41700301E9E /* UserPreferencesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesProtocol.swift; sourceTree = "<group>"; };
 		2F2B2F032853ECBC000AE6A6 /* YZNetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YZNetworkErrors.swift; sourceTree = "<group>"; };
@@ -727,26 +723,6 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		2FA287B627EACC3C00C5BD81 /* MyProfileTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				2FA287B727EACC3C00C5BD81 /* MyProfileTableViewCell.swift */,
-				2FA287B827EACC3C00C5BD81 /* MyProfileTableViewCell.xib */,
-			);
-			path = MyProfileTableViewCell;
-			sourceTree = "<group>";
-		};
-		2FB292B028540BB700FA7284 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				2F0C340227E4384E004A1E8C /* SettingsViewController.swift */,
-				2F0C340527E4384E004A1E8C /* BreathingHomeViewController.swift */,
-				2F0C33F227E434DA004A1E8C /* FormFieldCell.swift */,
-				2F0C340F27E4384E004A1E8C /* ViewModel.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		2FB292B728540FAD00FA7284 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,7 +895,6 @@
 				3126833727C15ECA003F017B /* Products */,
 				BF1663D5229798EC74BA8ADC /* Pods */,
 				9C0AC58147DCC157D9E2E4BF /* Frameworks */,
-				2FB292B028540BB700FA7284 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -965,7 +940,6 @@
 		31A83950284BBC080027987A /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				31A83952284BBC890027987A /* ViewController */,
 				31D3E800284C2B1E00CFC7B5 /* Enums */,
 				31A83952284BBC890027987A /* ViewController */,
 				31A83951284BBC800027987A /* View */,

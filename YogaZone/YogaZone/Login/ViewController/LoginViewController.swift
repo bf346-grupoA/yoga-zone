@@ -28,11 +28,10 @@ class LoginViewController: UIViewController {
         self.loginView?.delegate(delegate: self)
         self.auth = Auth.auth()
         self.alert = AlertController(controller: self)
-        self.joinButton.isEnabled = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        self.navigationController?.isNavigationBarHidden = true
+
     }
 }
 
@@ -54,7 +53,7 @@ extension LoginViewController: LoginViewProtocol {
                     DispatchQueue.main.asyncAfter(deadline: .now()+1) {
                         self.loginView?.joinButton.stopAnimation(animationStyle:.normal, revertAfterDelay: 0) {
                             
-                            if self.isOnboarding == true {
+                            if self.isOnboarding == false {
                                 self.setNewRootController()
                                 let vc = HomeViewController()
                                 self.navigationController?.pushViewController(vc, animated: true)
