@@ -11,10 +11,9 @@ class AssetHelper {
     static let images: [Int: String] = [
         1: "poses",
         2: "imc",
-        3: "PlaceholderLotus",
+        3: "treinos",
         4: "meditacao",
-        5: "treinos",
-        6: "eventos"
+        5: "eventos"
     ]
     
     static func getImageName(indexPath: IndexPath) -> String {

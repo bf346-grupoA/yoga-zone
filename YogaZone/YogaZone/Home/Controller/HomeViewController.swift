@@ -81,7 +81,7 @@ extension HomeViewController: NavigationDelegate {
         case 4: self.navigationController?.pushViewController(IntroViewController(), animated: true)
         case 5: self.navigationController?.pushViewController(LevelAndDurationVC(), animated: true)
         case 6:
-                initializeStoryboard(withName: "HomeEvents", withIdentifier: "HomeEventsViewController")
+            initializeStoryboard(withName: "HomeEvents", withIdentifier: "HomeEventsViewController")
         default: self.navigationController?.pushViewController(MyProfileVC(), animated: true)
         }
     }

@@ -7,6 +7,7 @@
 
 import UIKit
 
+//TODO: Change class name to MeditationIntroViewController
 class IntroViewController: UIViewController{
     
     @IBOutlet weak var introImageView: UIImageView!

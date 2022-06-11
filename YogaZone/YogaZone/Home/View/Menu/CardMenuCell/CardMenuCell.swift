@@ -70,6 +70,7 @@ extension CardMenuCell {
 
 // MARK: Section Builders
 extension CardMenuCell {
+    
     private func firstLayoutSection() -> NSCollectionLayoutSection {
         
         // Single Item
@@ -128,14 +129,18 @@ extension CardMenuCell {
     
     private func secondLayoutSection() -> NSCollectionLayoutSection {
         
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .absolute(140))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(130))
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = .init(top: 0, leading: 6, bottom: 10, trailing: 6)
+        item.contentInsets.bottom = 15
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(500))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(0.35))
+        
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.contentInsets = .init(top: 0, leading: 0, bottom: 100, trailing: 8)
+       
         let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets.leading = 8
 
         return section
     }
@@ -168,6 +173,7 @@ extension CardMenuCell {
         
         return section
     }
+    
 }
 
 
@@ -182,7 +188,7 @@ extension CardMenuCell: UICollectionViewDataSource, UICollectionViewDelegate, UI
             case 0:
                 return 3
             case 1:
-                return 2
+                return 1
             default:
                 return 1
         }
@@ -223,4 +229,3 @@ extension CardMenuCell {
         return UINib(nibName: self.identifier, bundle: nil)
     }
 }
-

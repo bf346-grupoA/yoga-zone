@@ -16,12 +16,11 @@ class NavigationHelper {
     ]
     
     static let secondSectionRouter: [Int: Int] = [
-        0: 4,
-        1: 5
+        0: 4
     ]
     
     static let thirdSectionRouter: [Int: Int] = [
-        0: 6
+        0:5
     ]
         
     static let sections: [Int: Dictionary<Int,Int>] = [
@@ -40,8 +39,8 @@ class NavigationHelper {
         switch index {
             case 1: return PoseGalleryViewController()
             case 2: return BmiViewController()
+            case 3: return LevelAndDurationVC()
             case 4: return MeditationHomeViewController()
-            case 5: return MeditationHomeViewController()
             default: return HomeEventsViewController()
         }
     }
