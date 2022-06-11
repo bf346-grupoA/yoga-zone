@@ -40,9 +40,13 @@ class EventFilterViewController: UIViewController {
         self.delegate = delegate
     }
     
+    public func setFilterData( filterData:EventFilter) {
+        self.filterData = filterData
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUserDefaultsFilterData()
+        loadFilterData()
         setupUI()
     }
     
@@ -54,16 +58,23 @@ class EventFilterViewController: UIViewController {
         
         self.filterData = EventFilter()
         
-        if cityTextField.text != "" {
+        if cityTextField.text == "" {
+            self.filterData?.local = nil
+        } else {
             self.filterData?.local = self.cityTextField.text
         }
         
         if dateIntervalSelectedSwitch.isOn {
             self.filterData?.startDate = self.startDatePicker.date
             self.filterData?.endDate = self.endDatePicker.date
+        } else {
+            self.filterData?.startDate = nil
+            self.filterData?.endDate = nil
         }
         
-        if eventNameTextField.text != "" {
+        if eventNameTextField.text == "" {
+            self.filterData?.title = nil
+        } else {
             self.filterData?.title = self.eventNameTextField.text
         }
         
@@ -83,16 +94,7 @@ class EventFilterViewController: UIViewController {
             self.dateErrorLabel.minimumScaleFactor = 0.5
             self.dateErrorLabel.isHidden = false
         } else {
-            self.dateErrorLabel.isHidden = true
-            self.saveUserDefault(value: self.cityTextField.text ?? "", key: "eventFilterDataLocal")
-            self.saveUserDefault(value: self.eventNameTextField.text ?? "", key: "eventFilterDataTitle")
-            self.saveUserDefault(value: self.startDatePicker.date, key: "eventFilterDataStartDate")
-            self.saveUserDefault(value: self.endDatePicker.date, key: "eventFilterDataEndDate")
-            self.saveUserDefault(value: self.dateIntervalSelectedSwitch.isOn, key: "eventFilterDateInvtervalSelected")
-            self.saveUserDefault(value: self.avaliablePositionSwitch.isOn, key: "eventFilterDataIsFull")
-            self.saveUserDefault(value: self.createdByMeSwitch.isOn, key: "eventFilterDataIsOwner")
-            self.saveUserDefault(value: self.filterData?.totalFilters ?? 0, key: "eventFilterTotalQuantity")
-            
+            self.dateErrorLabel.isHidden = true           
             self.delegate?.updateFilter(filter: self.filterData ?? EventFilter())
             self.dismiss(animated: true, completion: nil)
         }
@@ -186,39 +188,30 @@ extension EventFilterViewController {
 //MARK: - User Defaults
 extension EventFilterViewController {
     
-    func setupUserDefaultsFilterData() {
-        let local = self.getUserDefaults(key: "eventFilterDataLocal") as? String
+    func loadFilterData() {
         
-        self.cityTextField.text = local
+        self.cityTextField.text = self.filterData?.local
+        self.eventNameTextField.text = self.filterData?.title
         
-        let title = self.getUserDefaults(key: "eventFilterDataTitle") as? String
+        let startDate = self.filterData?.startDate
+        let endDate = self.filterData?.endDate
         
-        self.eventNameTextField.text = title
-        
-        let startDate = self.getUserDefaults(key: "eventFilterDataStartDate") as? Date?
-        let endDate = self.getUserDefaults(key: "eventFilterDataEndDate") as? Date?
-        
-        self.dateIntervalSelectedSwitch.isOn = (self.getUserDefaults(key: "eventFilterDateInvtervalSelected") as? Bool ?? false )
+        if let _ = startDate, let _ = endDate{
+            self.dateIntervalSelectedSwitch.isOn = true
+        }
+
         if self.dateIntervalSelectedSwitch.isOn {
-            self.startDatePicker.date = (startDate ?? Date()) ?? Date()
-            self.endDatePicker.date = (endDate ?? Date()) ?? Date()
+            self.startDatePicker.date = startDate ?? Date()
+            self.endDatePicker.date = endDate ?? Date()
         } else {
-            self.startDatePicker.date = (startDate ?? Date()) ?? Date()
+            self.startDatePicker.date = startDate ?? Date()
             self.endDatePicker.date = Calendar.current.date(byAdding: .month, value: 1, to: Date()) ?? Date()
         }
         
-        self.avaliablePositionSwitch.isOn = self.getUserDefaults(key: "eventFilterDataIsFull") as? Bool ?? false
-        self.createdByMeSwitch.isOn = self.getUserDefaults(key: "eventFilterDataIsOwner") as? Bool ?? false
+        self.avaliablePositionSwitch.isOn = self.filterData?.isAvaliable ?? false
+        self.createdByMeSwitch.isOn = self.filterData?.isOwner ?? false
         
     }
-    
-    func saveUserDefault(value: Any, key: String){
-        UserDefaults.standard.set(value, forKey: key)
-    }
-    
-    func getUserDefaults(key: String) -> Any? {
-        return UserDefaults.standard.object(forKey: key)
-    }
-    
+      
 }
 

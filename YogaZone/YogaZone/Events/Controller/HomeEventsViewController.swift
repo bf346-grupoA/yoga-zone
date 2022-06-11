@@ -27,9 +27,38 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
         updateFilter(filter: filterData ?? EventFilter())
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        
+
+        self.saveUserDefault(value: self.filterData?.local ?? "", key: "eventFilterDataLocal")
+        self.saveUserDefault(value: self.filterData?.title ?? "", key: "eventFilterDataTitle")
+
+        if let startDate = self.filterData?.startDate, let endDate = self.filterData?.endDate {
+            self.saveUserDefault(value: startDate, key: "eventFilterDataStartDate")
+            self.saveUserDefault(value: endDate, key: "eventFilterDataEndDate")
+            self.saveUserDefault(value: true, key: "eventFilterDateInvtervalSelected")
+        } else {
+            self.saveUserDefault(value: false, key: "eventFilterDateInvtervalSelected")
+        }
+        
+        if let isAvaliable = filterData?.isAvaliable {
+            self.saveUserDefault(value: isAvaliable, key: "eventFilterDataIsFull")
+        }
+        
+        if let isOwner = filterData?.isOwner {
+            self.saveUserDefault(value: isOwner , key: "eventFilterDataIsOwner")
+        }
+        
+        if let totalFilters = filterData?.totalFilters {
+            self.saveUserDefault(value: totalFilters, key: "eventFilterTotalQuantity")
+        }
+        
+    }
+    
     @IBAction func filterButtonTapped(_ sender: UIButton) {
         let vc = EventFilterViewController()
         vc.delegate(delegate: self)
+        vc.setFilterData(filterData: self.filterData ?? EventFilter())
         present(vc, animated: true, completion: nil)
     }
     
@@ -96,7 +125,7 @@ extension HomeEventsViewController {
         self.filterQuantityNotificationLabel.backgroundColor = #colorLiteral(red: 0.9465729594, green: 0.2218600512, blue: 0.2172786891, alpha: 1)
         self.filterQuantityNotificationLabel.textColor = .white
         self.filterQuantityNotificationLabel.textAlignment = .center
-         
+        
         self.buttonCreateNewEvent.setImage(UIImage(named:"circle-plus-white"), for: .normal)
         self.buttonCreateNewEvent.semanticContentAttribute = .forceLeftToRight
         
@@ -148,14 +177,14 @@ extension HomeEventsViewController:EventFilterDelegate {
     
     func updateFilter(filter: EventFilter) {
         self.filterData = filter
-        let totalFilters = UserDefaults.standard.object(forKey: "eventFilterTotalQuantity") as? Int
+        let totalFilters = self.filterData?.totalFilters
         if totalFilters == 0 || totalFilters == nil {
             self.filterQuantityNotificationLabel.isHidden = true
         } else {
             self.filterQuantityNotificationLabel.isHidden = false
             self.filterQuantityNotificationLabel.text = String(totalFilters ?? 0)
         }
-       
+        
         containerViewController?.setupData(filter: filterData)
     }
     
@@ -174,11 +203,11 @@ extension HomeEventsViewController {
         
         let title = self.getUserDefaults(key: "eventFilterDataTitle") as? String
         if title != "" && title != nil {
-            self.filterData?.title =   self.getUserDefaults(key: "eventFilterDataTitle") as? String
+            self.filterData?.title = self.getUserDefaults(key: "eventFilterDataTitle") as? String
         }
         
         let usingDate = self.getUserDefaults(key: "eventFilterDateInvtervalSelected") as? Bool
-        if usingDate != nil && usingDate == true {
+        if usingDate == true {
             self.filterData?.startDate = self.getUserDefaults(key: "eventFilterDataStartDate") as? Date
             self.filterData?.endDate = self.getUserDefaults(key: "eventFilterDataEndDate") as? Date
         }
@@ -191,6 +220,11 @@ extension HomeEventsViewController {
         let isOwner = self.getUserDefaults(key: "eventFilterDataIsOwner") as? Bool
         if isOwner != nil && isOwner == true {
             self.filterData?.isOwner = isOwner
+        }
+        
+        let totalFilters = self.getUserDefaults(key: "eventFilterTotalQuantity") as? Int
+        if totalFilters != nil && totalFilters != 0 {
+            self.filterData?.totalFilters = totalFilters ?? 0
         }
         
     }

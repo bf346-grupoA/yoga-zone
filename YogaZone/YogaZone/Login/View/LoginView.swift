@@ -35,11 +35,11 @@ class LoginView: UIView {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.autocorrectionType = .no
-        textField.backgroundColor = .white
         textField.borderStyle = .roundedRect
         textField.layer.cornerRadius = 7
         textField.layer.borderColor = CGColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)
         textField.layer.borderWidth = 1.0
+        textField.backgroundColor = #colorLiteral(red: 0.9718734622, green: 0.9751194119, blue: 0.9782194495, alpha: 1)
         textField.autocapitalizationType = .none
         textField.keyboardType = .emailAddress
         textField.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
@@ -55,7 +55,7 @@ class LoginView: UIView {
         textField.tintIconColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
         textField.sizeIcon = 26
         textField.autocorrectionType = .no
-        textField.backgroundColor = .white
+        textField.backgroundColor = #colorLiteral(red: 0.9718734622, green: 0.9751194119, blue: 0.9782194495, alpha: 1)
         textField.borderStyle = .roundedRect
         textField.layer.cornerRadius = 7
         textField.layer.borderColor = CGColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)

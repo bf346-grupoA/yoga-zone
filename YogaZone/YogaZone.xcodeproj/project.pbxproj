@@ -157,10 +157,10 @@
 		8327042527E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */; };
 		8327042627E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */; };
 		833A67A6285024C300F21DF6 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A67A5285024C300F21DF6 /* OnboardingModel.swift */; };
-		8366B690284BE55F001166D1 /* OboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B68F284BE55F001166D1 /* OboardingService.swift */; };
+		8366B690284BE55F001166D1 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B68F284BE55F001166D1 /* OnboardingService.swift */; };
 		8366B692284BE5D0001166D1 /* BrazilianCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B691284BE5D0001166D1 /* BrazilianCities.swift */; };
 		8366B694284BE739001166D1 /* BrazilianStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B693284BE739001166D1 /* BrazilianStates.swift */; };
-		8366B69B284BF717001166D1 /* OboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B69A284BF717001166D1 /* OboardingViewModel.swift */; };
+		8366B69B284BF717001166D1 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B69A284BF717001166D1 /* OnboardingViewModel.swift */; };
 		83817091285178ED0018A3BF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83953284BBCBA0027987A /* LoginView.swift */; };
 		83817092285179110018A3BF /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E801284C2B4200CFC7B5 /* LoginConstants.swift */; };
 		83817093285179470018A3BF /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142E8FB284D3CD700C212A3 /* NavigationHelper.swift */; };
@@ -352,10 +352,10 @@
 		8327042327E7AB4A0006CF3B /* EventCreatedSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreatedSuccessViewController.swift; sourceTree = "<group>"; };
 		8327042427E7AB4A0006CF3B /* EventCreatedSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreatedSuccessViewController.xib; sourceTree = "<group>"; };
 		833A67A5285024C300F21DF6 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
-		8366B68F284BE55F001166D1 /* OboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OboardingService.swift; sourceTree = "<group>"; };
+		8366B68F284BE55F001166D1 /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
 		8366B691284BE5D0001166D1 /* BrazilianCities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrazilianCities.swift; path = YogaZone/Onboarding/Model/BrazilianCities.swift; sourceTree = SOURCE_ROOT; };
 		8366B693284BE739001166D1 /* BrazilianStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrazilianStates.swift; path = YogaZone/Onboarding/Model/BrazilianStates.swift; sourceTree = SOURCE_ROOT; };
-		8366B69A284BF717001166D1 /* OboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OboardingViewModel.swift; sourceTree = "<group>"; };
+		8366B69A284BF717001166D1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		8388729D284ED4C200B8FA9C /* EmptyEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyEventCell.swift; sourceTree = "<group>"; };
 		8388729E284ED4C200B8FA9C /* EmptyEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyEventCell.xib; sourceTree = "<group>"; };
 		8391EA4427E820E800F466F2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -1141,7 +1141,7 @@
 		8366B68E284BE443001166D1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				8366B68F284BE55F001166D1 /* OboardingService.swift */,
+				8366B68F284BE55F001166D1 /* OnboardingService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1149,7 +1149,7 @@
 		8366B697284BF6DC001166D1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8366B69A284BF717001166D1 /* OboardingViewModel.swift */,
+				8366B69A284BF717001166D1 /* OnboardingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1516,7 +1516,7 @@
 				792C669E282D79CA0018D343 /* TrainingFinishedVC.swift in Sources */,
 				2F412ED827E41821007708E8 /* YogaPlayer.swift in Sources */,
 				311B94E52847BB2E003A9C14 /* MyProgressViewModel.swift in Sources */,
-				8366B690284BE55F001166D1 /* OboardingService.swift in Sources */,
+				8366B690284BE55F001166D1 /* OnboardingService.swift in Sources */,
 				311B94EA2847D838003A9C14 /* ResultViewModel.swift in Sources */,
 				2F036F8127E429D800993E41 /* EventData.swift in Sources */,
 				2F79E12C27DCF47B0070397F /* PoseGalleryViewController.swift in Sources */,
@@ -1597,7 +1597,7 @@
 				2FA287C627EACC3C00C5BD81 /* MyProfileVC.swift in Sources */,
 				83F14AF428511AC400ED56C2 /* CommonConstants.swift in Sources */,
 				3126833C27C15ECA003F017B /* SceneDelegate.swift in Sources */,
-				8366B69B284BF717001166D1 /* OboardingViewModel.swift in Sources */,
+				8366B69B284BF717001166D1 /* OnboardingViewModel.swift in Sources */,
 				2FB292C228540FAE00FA7284 /* RegisterView.swift in Sources */,
 				2F3D0EB9284849BA00C3446B /* AlertController.swift in Sources */,
 				792C66A3282D79CA0018D343 /* TrainingPausedVC.swift in Sources */,

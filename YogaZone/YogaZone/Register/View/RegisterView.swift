@@ -20,8 +20,9 @@ class RegisterView: UIView {
     private lazy var welcomeLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "Confortaa-SemiBold", size: 16)
+        label.font = UIFont(name: "Comfortaa-SemiBold", size: 16)
         label.text = "Vamos iniciar uma incrível jornada juntos 😃"
+        label.sizeToFit()
         label.numberOfLines = 0
         
         return label
@@ -30,10 +31,13 @@ class RegisterView: UIView {
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.translatesAutoresizingMaskIntoConstraints = false
         textField.borderStyle = .roundedRect
-        textField.textColor = .systemPurple
-        textField.font = UIFont(name: "Confortaa-Bold", size: 16)
+        textField.backgroundColor = #colorLiteral(red: 0.9718734622, green: 0.9751194119, blue: 0.9782194495, alpha: 1)
+        textField.autocorrectionType = .no
+        textField.textColor = .darkGray
+        textField.keyboardType = .emailAddress
+        textField.autocapitalizationType = .none
+        textField.font = UIFont(name: "Comfortaa-Bold", size: 16)
         textField.placeholder = "Email"
         textField.backgroundColor = .white
         
@@ -43,12 +47,13 @@ class RegisterView: UIView {
     private lazy var preferredNameTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.translatesAutoresizingMaskIntoConstraints = false
         textField.borderStyle = .roundedRect
-        textField.textColor = .systemPurple
-        textField.font = UIFont(name: "Confortaa-Bold", size: 16)
-        textField.placeholder = "Seu nome ou nick favorito (Opcional)"
-        textField.backgroundColor = .white
+        textField.backgroundColor = #colorLiteral(red: 0.9718734622, green: 0.9751194119, blue: 0.9782194495, alpha: 1)
+        textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
+        textField.textColor = .darkGray
+        textField.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        textField.placeholder = "Seu nome ou nick favorito"
         
         return textField
     }()
@@ -56,12 +61,13 @@ class RegisterView: UIView {
     private lazy var passwordTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.autocorrectionType = .no
         textField.borderStyle = .roundedRect
-        textField.textColor = .systemPurple
-        textField.font = UIFont(name: "Confortaa-Bold", size: 16)
+        textField.backgroundColor = #colorLiteral(red: 0.9718734622, green: 0.9751194119, blue: 0.9782194495, alpha: 1)
+        textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
+        textField.textColor = .darkGray
+        textField.font = UIFont(name: "Comfortaa-Bold", size: 16)
         textField.placeholder = "Senha"
-        textField.backgroundColor = .white
         textField.isSecureTextEntry = true
         
         return textField
@@ -70,12 +76,13 @@ class RegisterView: UIView {
     private lazy var confirmPasswordTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = #colorLiteral(red: 0.9718734622, green: 0.9751194119, blue: 0.9782194495, alpha: 1)
         textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
         textField.borderStyle = .roundedRect
-        textField.textColor = .systemPurple
-        textField.font = UIFont(name: "Confortaa-Bold", size: 16)
+        textField.textColor = .darkGray
+        textField.font = UIFont(name: "Comfortaa-Bold", size: 16)
         textField.placeholder = "Confirme sua senha"
-        textField.backgroundColor = .white
         textField.isSecureTextEntry = true
         
         return textField

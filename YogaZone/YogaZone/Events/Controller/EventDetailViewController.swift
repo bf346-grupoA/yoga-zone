@@ -31,6 +31,7 @@ class EventDetailViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var event: Event?
     
+    private var containerViewController: FinalizedContainerViewController?
     var avaliableVacancies = 0
     
     override func viewDidLoad() {
@@ -94,6 +95,7 @@ extension EventDetailViewController {
             self.cancelContainer.isHidden = true
             self.editContainer.isHidden = true
             self.finalizedContainer.isHidden = false
+            self.containerViewController?.setLabelText(text: "Evento Finalizado")
             
         } else if self.event?.isOwner == true {
             
@@ -115,6 +117,15 @@ extension EventDetailViewController {
             self.cancelContainer.isHidden = true
             self.editContainer.isHidden = true
             self.finalizedContainer.isHidden = true
+            
+        } else if avaliableVacancies == 0 {
+           
+            self.confirmContainer.isHidden = true
+            self.cancelContainer.isHidden = true
+            self.editContainer.isHidden = true
+            self.finalizedContainer.isHidden = false
+            self.containerViewController?.setLabelText(text: "Não há mais vagas disponíveis")
+            
         }
         
     }
@@ -126,6 +137,17 @@ extension EventDetailViewController {
     
     @objc private func popToPrevious() {
         navigationController?.popViewController(animated: true)
+    }
+    
+}
+
+// MARK: Container View Segue
+extension EventDetailViewController {
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToFinalizedContainer" {
+            containerViewController = segue.destination as? FinalizedContainerViewController
+        }
     }
     
 }

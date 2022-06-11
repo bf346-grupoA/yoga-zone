@@ -30,6 +30,26 @@ class EventCell: UITableViewCell {
         return UINib(nibName: self.identifier, bundle: nil)
     }
     
+    func setupUI(){
+        self.eventTitleLabel.minimumScaleFactor = 0.5
+        self.eventTitleLabel.adjustsFontSizeToFitWidth = true
+        
+        self.eventLocalLabel.minimumScaleFactor = 0.5
+        self.eventLocalLabel.adjustsFontSizeToFitWidth = true
+        
+        self.eventDateLabel.minimumScaleFactor = 0.5
+        self.eventDateLabel.adjustsFontSizeToFitWidth = true
+        
+        self.eventIsOwnerLabel.minimumScaleFactor = 0.5
+        self.eventIsOwnerLabel.adjustsFontSizeToFitWidth = true
+        
+        self.eventIsParticipatingLabel.minimumScaleFactor = 0.5
+        self.eventIsParticipatingLabel.adjustsFontSizeToFitWidth = true
+        
+        self.eventNumberOfParticipantsLabel.minimumScaleFactor = 0.5
+        self.eventNumberOfParticipantsLabel.adjustsFontSizeToFitWidth = true
+    }
+    
     func setupCell(event: Event){
         
         let dateFormatter = DateFormatter()
