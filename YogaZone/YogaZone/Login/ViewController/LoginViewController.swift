@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+//        self.navigationController?.isNavigationBarHidden = true
     }
 }
 
@@ -53,7 +53,7 @@ extension LoginViewController: LoginViewProtocol {
                     DispatchQueue.main.asyncAfter(deadline: .now()+1) {
                         self.loginView?.joinButton.stopAnimation(animationStyle:.normal, revertAfterDelay: 0) {
                             
-                            if self.isOnboarding == true {
+                            if self.isOnboarding == false {
                                 let vc = HomeViewController()
                                 self.navigationController?.pushViewController(vc, animated: true)
                             } else {
@@ -69,7 +69,7 @@ extension LoginViewController: LoginViewProtocol {
     }
     
     func subscribeButtonAction() {
-        //TODO: nao estou conseguindo fazer a chamada para o fluxo de Register
+        self.navigationController?.pushViewController(RegisterViewController(), animated: true)
     }
     
     func forgotPasswordButtonAction() {

@@ -74,7 +74,12 @@ extension RegisterViewController: FormInputDelegate {
             case .success(let response):
                 self.handleSuccess(with: response)
             case .failure(let error):
-                self.handleError(with: error)
+                guard let yzError = error as? YZError else {
+                    self.notifyUser(withTitle: "Deu Ruim ein =(", withMessage: "A conta já está em uso por outra pessoa =(")
+                    return 
+                }
+                    
+                self.handleError(with: yzError)
             }
         }
          
@@ -87,7 +92,7 @@ extension RegisterViewController: FormInputDelegate {
         )
     }
     
-    private func handleError(with error: Error) {
+    private func handleError(with error: YZError) {
         let customMessage = error.localizedDescription.contains("in use by another account") ?
                             "Essa conta já está em uso.\nTente outro e-mail =)":
                             error.localizedDescription

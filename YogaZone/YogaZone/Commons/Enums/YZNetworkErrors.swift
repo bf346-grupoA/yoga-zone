@@ -7,7 +7,9 @@
 
 import Foundation
 
-enum YZNetworkErrors: Error {
+
+// TODO: Delete this file
+enum YZNetworkErrors: YZError {
     case acccountAlreadyExists
     case noConnection
 }

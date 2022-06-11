@@ -8,6 +8,8 @@
 import Foundation
 import FirebaseAuth
 
-struct UserResponseDto: Error {
+protocol YZError: Swift.Error { }
+
+struct UserResponseDto: YZError {
     var user: User
 }

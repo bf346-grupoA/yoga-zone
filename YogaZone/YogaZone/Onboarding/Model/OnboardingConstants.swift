@@ -32,4 +32,5 @@ enum OnboardingConstants: String {
     case ok = "OK"
     case atentionWarning = "Atenção"
     case loadingRegionError = "Erro ao carregar dados das regiões. Por favor tente novamente."
+    case nameField = "name"
 }

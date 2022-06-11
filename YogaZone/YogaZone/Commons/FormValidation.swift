@@ -16,7 +16,7 @@ protocol FormDataDelegate: AnyObject {
 
 extension FormDataDelegate {
     
-    func send(userData: UserData) {
+    func send() {
         // Intentionally Unimplemented
     }
     

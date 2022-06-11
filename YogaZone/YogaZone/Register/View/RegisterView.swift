@@ -87,7 +87,7 @@ class RegisterView: UIView {
         button.setTitle("Criar Conta", for: .normal)
         button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 16)
         button.setTitleColor(.yogaWhite, for: .normal)
-        button.backgroundColor = .yogaMediumPurple
+        button.backgroundColor = .yogaLighterPurple
         button.layer.opacity = 0.5
         button.isEnabled = false
         button.isOpaque = true

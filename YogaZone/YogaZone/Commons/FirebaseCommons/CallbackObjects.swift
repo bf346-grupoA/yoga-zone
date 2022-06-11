@@ -7,4 +7,4 @@
 
 import Foundation
 
-public typealias YZFirebaseUserCallback<T: Error> = ((Result<T, Error>) -> Void)
+public typealias YZFirebaseUserCallback<T: Swift.Error> = ((Result<T, Swift.Error>) -> Void)

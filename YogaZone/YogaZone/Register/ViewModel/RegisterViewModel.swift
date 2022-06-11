@@ -7,12 +7,14 @@
 
 import Foundation
 import FirebaseAuth
+import FirebaseFirestore
 
 class RegisterViewModel {
 
     // MARK: Private Parameters
     private var user: UserRegistrationModel?
     private var auth: Auth?
+    private let database = Firestore.firestore()
     
     
     // MARK: Initializer
@@ -24,15 +26,33 @@ class RegisterViewModel {
         guard let email = user?.email, let password = user?.password else { return }
         
         self.auth?.createUser(withEmail: email, password: password, completion: { (result, error) in
+            
             if(error != nil) {
                 if let error = error {
                     completion(.failure(error))
                 }
             } else {
                 if let user = result?.user {
+                    
+                    if let email = Auth.auth().currentUser?.email, let name = self.user?.name {
+                        self.database.collection(CommonConstants.collectionName.rawValue)
+                            .document(email)
+                            .setData([
+                                OnboardingConstants.nameField.rawValue : name,
+                                OnboardingConstants.isOnboardingField.rawValue : true
+                            ]) { (error) in
+                                    if let error = error as? YZError {
+                                        completion(.failure(error))
+                                    } else {
+                                        print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
+                                    }
+                                }
+                    }
+                    
                     completion(.success(UserResponseDto(user: user)))
                 }
             }
+            
         })
     
     }
