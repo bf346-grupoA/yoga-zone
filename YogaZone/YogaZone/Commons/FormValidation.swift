@@ -11,9 +11,14 @@ protocol FormDataDelegate: AnyObject {
     func send()
     func isValidEmail(email: String) -> Bool
     func isValidPasswordLenght(password: String) -> Bool
+    func getUser(user: UserRegistrationModel)
 }
 
 extension FormDataDelegate {
+    
+    func send() {
+        // Intentionally Unimplemented
+    }
     
     func isValidEmail(email: String) -> Bool {
         return email.isValid(inputType: .email)
@@ -23,4 +28,7 @@ extension FormDataDelegate {
         return password.isValid(inputType: .password)
     }
     
+    func getUser(user: UserRegistrationModel) {
+        // Intentionally Unimplemented
+    }
 }

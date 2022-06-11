@@ -37,8 +37,6 @@ class ResultViewController: UIViewController , SendData {
     @IBAction func tappedBUttonClosed(_ sender: Any) {
         
         self.navigationController?.popViewController(animated: true)
-        print("deu bom 1")
-
     }
 }
 

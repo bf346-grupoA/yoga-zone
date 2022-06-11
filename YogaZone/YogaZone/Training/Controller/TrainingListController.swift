@@ -34,7 +34,7 @@ class TrainingListController: UIViewController, UITableViewDataSource, UIGesture
             self.ListTrainYogaTableView.dataSource = self
         }
 
-    //MARK: - SetupUI
+//MARK: - SetupUI
     func configLabels(){
         self.NumberOfCaloriesLabel.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.NumberOfCaloriesLabel.textAlignment = .center
@@ -95,8 +95,6 @@ extension TrainingListController: UITableViewDelegate {
         return cell ?? UITableViewCell()
     }
    
-    
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
@@ -111,7 +109,7 @@ extension TrainingListController {
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "arrowVoltar"),
+            image: UIImage(named: CommonConstants.backArrorImage.rawValue),
             style: .plain,
             target: self,
             action: #selector(popToPrevious)

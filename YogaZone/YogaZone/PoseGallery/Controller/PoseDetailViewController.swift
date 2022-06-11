@@ -6,22 +6,26 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class PoseDetailViewController: UIViewController {
-    var selectedPose: Pose? = nil
-    
+
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var categoriesLabel: UILabel!
     @IBOutlet weak var categoriesTableView: UITableView!
-    @IBOutlet weak var videoButton: UIButton!
+    @IBOutlet weak var videoButton: YTPlayerView!
+    
+    var selectedPose: Pose? = nil
+    var linkYoutube: String?
+    var videoId: String = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
         setupTableView()
         setupNavigationBar()
+        
     }
 }
 
@@ -30,9 +34,13 @@ class PoseDetailViewController: UIViewController {
 extension PoseDetailViewController {
     @IBAction func onClick(sender: UIButton) {
         let vc = ModalVideoViewController()
-        vc.selectedPose = self.selectedPose?.name ?? "None"
+        let nav = UINavigationController(rootViewController: vc)
+        if let sheet = nav.sheetPresentationController{
+            sheet.detents = [.medium()]
+        }
+        vc.videoId = self.videoId
     
-        present(vc, animated: true, completion: nil)
+        present(nav, animated: true, completion: nil)
     }
 }
 
@@ -73,7 +81,7 @@ extension PoseDetailViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 132
+        return 75
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
