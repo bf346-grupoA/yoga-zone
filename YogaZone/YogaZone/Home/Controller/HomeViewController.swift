@@ -76,15 +76,19 @@ extension HomeViewController: NavigationDelegate {
         switch routeIndex {
         case 1: self.navigationController?.pushViewController(PoseGalleryViewController(), animated: true)
         case 2:
-            let storyboard = UIStoryboard(name: "Bmi", bundle: nil)
-            self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: "BmiViewController"), animated: true)
+            initializeStoryboard(withName: "Bmi", withIdentifier: "BmiViewController")
         case 3: break
         case 4: self.navigationController?.pushViewController(IntroViewController(), animated: true)
         case 5: self.navigationController?.pushViewController(LevelAndDurationVC(), animated: true)
         case 6:
-            let storyboard = UIStoryboard(name: "HomeEvents", bundle: nil)
-            self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: "HomeEventsViewController"), animated: true)
+                initializeStoryboard(withName: "HomeEvents", withIdentifier: "HomeEventsViewController")
         default: self.navigationController?.pushViewController(MyProfileVC(), animated: true)
         }
+    }
+    
+    
+    private func initializeStoryboard(withName name: String, withIdentifier identifier: String) {
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: identifier), animated: true)
     }
 }
