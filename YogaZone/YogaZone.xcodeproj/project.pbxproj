@@ -108,6 +108,8 @@
 		2FB292C228540FAE00FA7284 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB292BD28540FAE00FA7284 /* RegisterView.swift */; };
 		2FB292C328540FAE00FA7284 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB292BF28540FAE00FA7284 /* RegisterViewController.swift */; };
 		2FB292C42854169A00FA7284 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C6BE5284BEC1500BB6E37 /* ColorExtensions.swift */; };
+		2FB292C72854368600FA7284 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB292C62854368600FA7284 /* UserInfo.swift */; };
+		2FB292CA28543ABD00FA7284 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB292C928543ABD00FA7284 /* HomeViewModel.swift */; };
 		2FFD3A5928529A5500389CFE /* FormInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD3A5828529A5500389CFE /* FormInputDelegate.swift */; };
 		311B94E52847BB2E003A9C14 /* MyProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B94E42847BB2E003A9C14 /* MyProgressViewModel.swift */; };
 		311B94E72847CE50003A9C14 /* BmiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B94E62847CE50003A9C14 /* BmiViewModel.swift */; };
@@ -292,6 +294,8 @@
 		2FB292BB28540FAE00FA7284 /* UserRegistrationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationModel.swift; sourceTree = "<group>"; };
 		2FB292BD28540FAE00FA7284 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		2FB292BF28540FAE00FA7284 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2FB292C62854368600FA7284 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		2FB292C928543ABD00FA7284 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2FFD3A5828529A5500389CFE /* FormInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputDelegate.swift; sourceTree = "<group>"; };
 		311B94E42847BB2E003A9C14 /* MyProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressViewModel.swift; sourceTree = "<group>"; };
 		311B94E62847CE50003A9C14 /* BmiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiViewModel.swift; sourceTree = "<group>"; };
@@ -550,6 +554,8 @@
 		2F412EAD27E4101E007708E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2FB292C828543AB200FA7284 /* ViewModel */,
+				2FB292C52854366D00FA7284 /* Model */,
 				2F093FD92829F03F008E7566 /* Controller */,
 				2F093FD62829EFF5008E7566 /* View */,
 			);
@@ -764,6 +770,22 @@
 				2FB292BF28540FAE00FA7284 /* RegisterViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2FB292C52854366D00FA7284 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FB292C62854368600FA7284 /* UserInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FB292C828543AB200FA7284 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2FB292C928543ABD00FA7284 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		311B94D62847B83B003A9C14 /* Features */ = {
@@ -1509,6 +1531,7 @@
 				2F3A53CB27EB641C00FBA25F /* HomeViewController.swift in Sources */,
 				2FB292C128540FAE00FA7284 /* UserRegistrationModel.swift in Sources */,
 				838170972851796D0018A3BF /* ResetPasswordView.swift in Sources */,
+				2FB292CA28543ABD00FA7284 /* HomeViewModel.swift in Sources */,
 				2F83C799282A0A0C00EC3334 /* CustomFileCell.swift in Sources */,
 				2F83C79D282A0A0C00EC3334 /* MyProgressViewController.swift in Sources */,
 				2F412ED227E41821007708E8 /* AudioCell.swift in Sources */,
@@ -1542,6 +1565,7 @@
 				2F79E16327DD12A30070397F /* PoseCategoryCell.swift in Sources */,
 				2F036F8927E429D800993E41 /* EditContainerViewController.swift in Sources */,
 				2F036F7A27E429D800993E41 /* EventListViewController.swift in Sources */,
+				2FB292C72854368600FA7284 /* UserInfo.swift in Sources */,
 				83B78449284F10EA00F61005 /* LoginViewController.swift in Sources */,
 				2F2B2F082853EF5C000AE6A6 /* UserResponseDto.swift in Sources */,
 				792C669D282D79CA0018D343 /* MakeDropDown.swift in Sources */,

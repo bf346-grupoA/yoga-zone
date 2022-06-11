@@ -6,19 +6,34 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseAuth
+import Firebase
 
 class HomeViewController: UIViewController {
+    // MARK: Private Parameters
+    private let database = Firestore.firestore()
+    private var alert: AlertController?
+    private var loggedUser: UserInfo?
+    private var viewModel: HomeViewModel?
+    
     @IBOutlet weak var menuTableView: UITableView!
     
+    
+    // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        self.setupTableView()
+        self.alert = AlertController(controller: self)
+        self.viewModel = HomeViewModel()
+        self.requestUserInfo()
+//        self.setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }
+    
 }
 
 // MARK: UI Setup
@@ -49,6 +64,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             let headerCell = self.menuTableView.dequeueReusableCell(withIdentifier: HeaderCell.identifier, for: indexPath) as? HeaderCell
             headerCell?.delegate = self
+            
+            
+            headerCell?.setupCell(userInfo: self.loggedUser ?? UserInfo(username: "Usuário", avatar: nil))
             
             return headerCell ?? UITableViewCell()
             
@@ -91,4 +109,46 @@ extension HomeViewController: NavigationDelegate {
         let storyboard = UIStoryboard(name: name, bundle: nil)
         self.navigationController?.pushViewController(storyboard.instantiateViewController(identifier: identifier), animated: true)
     }
+}
+
+// MARK: AlertController
+extension HomeViewController {
+    private func notifyUser(withTitle title: String, withMessage message: String) {
+        self.alert?.setup(
+            title: title,
+            message: message
+        )
+    }
+}
+
+// MARK: User Profile
+extension HomeViewController {
+
+    private func requestUserInfo() {
+        self.viewModel?.requestUserInfo { result in
+            switch result {
+                case .success(let userInfo):
+                    self.handleSuccess(with: userInfo)
+                case .failure(let error):
+                    guard let yzError = error as? YZError else {
+                        self.notifyUser(withTitle: "Deu Ruim ein =(", withMessage: "Info de Usuário não encontrada =(")
+                        return
+                    }
+                        
+                    self.handleError(with: yzError)
+            }
+        }
+    }
+    
+    private func handleSuccess(with response: UserInfo) {
+        self.loggedUser = self.viewModel?.getUserInfo()
+        setupTableView()
+    }
+    
+    private func handleError(with error: YZError) {
+        self.loggedUser = self.viewModel?.getUserInfo()
+        setupTableView()
+        self.notifyUser(withTitle: "Deu Ruim ein =(", withMessage: error.localizedDescription)
+    }
+    
 }

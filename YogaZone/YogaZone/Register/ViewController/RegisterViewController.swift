@@ -33,6 +33,7 @@ class RegisterViewController: UIViewController {
         self.view = self.registerView
     }
 
+    
 }
 
 // MARK: Navigation Bar Customization
@@ -76,7 +77,7 @@ extension RegisterViewController: FormInputDelegate {
             case .failure(let error):
                 guard let yzError = error as? YZError else {
                     self.notifyUser(withTitle: "Deu Ruim ein =(", withMessage: "A conta já está em uso por outra pessoa =(")
-                    return 
+                    return
                 }
                     
                 self.handleError(with: yzError)

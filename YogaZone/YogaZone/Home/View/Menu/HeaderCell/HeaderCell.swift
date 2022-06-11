@@ -30,6 +30,10 @@ class HeaderCell: UITableViewCell {
         self.profileImageView.isUserInteractionEnabled = true
     }
     
+    func setupCell(userInfo: UserInfo) {
+        self.usernameLabel.text = userInfo.username
+    }
+    
     @objc func onTap() {
          self.delegate?.navigateTo(routeIndex: 7)
      }
