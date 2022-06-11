@@ -177,6 +177,8 @@ extension MyProfileVC {
         self.stateTextField.textAlignment = .left
         
         self.nameTextField.delegate = self
+        self.birthdayTextField.delegate = self
+        self.stateTextField.delegate = self
         self.cityTextField.delegate = self
     }
     
@@ -407,17 +409,19 @@ extension MyProfileVC {
                             if let document = document, document.exists {
                                 let data = document.data()
                                 let name = data?[ProfileConstants.nameField.rawValue] as? String ?? ""
-                                let birthDate = data?[ProfileConstants.birthDateField.rawValue] as? Date ?? Date()
+                                let birth = data?[ProfileConstants.birthDateField.rawValue] as? Timestamp
                                 let state = data?[ProfileConstants.stateField.rawValue] as? String ?? ""
                                 let city = data?[ProfileConstants.cityField.rawValue] as? String ?? ""
-                                
+                               
+                                guard let birth = birth?.dateValue() else {return}
                                 let formater = DateFormatter()
                                 formater.dateStyle = .short
                                 formater.locale = Locale.current
-                                let date = formater.string(from: birthDate)
+                                self.datePicker.date = birth
+                                let formatedBirthDate = formater.string(from: birth)
                                 
                                 self.nameTextField.text = name
-                                self.birthdayTextField.text = date
+                                self.birthdayTextField.text = formatedBirthDate
                                 self.stateTextField.text = state
                                 self.cityTextField.text = city
                                 
