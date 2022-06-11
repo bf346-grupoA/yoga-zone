@@ -8,10 +8,12 @@
 import Foundation
 import UIKit
 
-class CustomAlertVC: UIView {
-    
-    static let instance = CustomAlertVC()
+protocol customAlertDelegate:AnyObject {
+    func okPressed()
+}
 
+class CustomAlertVC: UIView {
+ 
     @IBOutlet var parentView: UIView!
     
     @IBOutlet weak var alertView: UIView!
@@ -21,6 +23,13 @@ class CustomAlertVC: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var messageLabel: UILabel!
+    
+    weak private var delegate: customAlertDelegate?
+    static let instance = CustomAlertVC()
+    
+    func delegate(delegate: customAlertDelegate?) {
+        self.delegate = delegate
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -54,6 +63,7 @@ class CustomAlertVC: UIView {
     }
     
     func showAlert(titleType: TitleType, message:String, alertType: AlertType) {
+        
         self.messageLabel.text = message
         switch alertType {
         case .success:
@@ -64,10 +74,13 @@ class CustomAlertVC: UIView {
             titleLabel.text = "Tente novamente"
         }
         
-        UIApplication.shared.windows.first{$0.isKeyWindow}?.addSubview(parentView)
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        windowScene?.windows.first{$0.isKeyWindow}?.addSubview(parentView)
     }
     
     @IBAction func tappedOkButton(_ sender: UIButton) {
         parentView.removeFromSuperview()
+        self.delegate?.okPressed()
     }
 }

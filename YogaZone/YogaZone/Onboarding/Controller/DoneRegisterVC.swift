@@ -41,6 +41,11 @@ class DoneRegisterVC: UIViewController {
         
     }
     
+    @IBAction func tappedGoToHome(_ sender: UIButton) {
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+        self.setNewRootController()
+    }
+    
     func configLabels(){
         self.firstLabel.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 22)
         self.firstLabel.textAlignment = .center
@@ -59,8 +64,11 @@ class DoneRegisterVC: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
-    @IBAction func tappedGoToHome(_ sender: UIButton) {
-        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+    func setNewRootController(){
+        let rootViewController = UINavigationController(rootViewController: HomeViewController())
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        windowScene?.keyWindow?.rootViewController = rootViewController
     }
     
 }

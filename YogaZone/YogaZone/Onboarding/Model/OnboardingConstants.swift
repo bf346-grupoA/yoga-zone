@@ -8,7 +8,6 @@
 import Foundation
 
 enum OnboardingConstants: String {
-    case collectionName = "UserData"
     case birthDateField = "birth"
     case stateField = "state"
     case cityField = "city"

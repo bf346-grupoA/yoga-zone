@@ -203,7 +203,7 @@ extension CardMenuCell: UICollectionViewDataSource, UICollectionViewDelegate, UI
         
         let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CategoryHeaderView.identifier, for: indexPath) as? CategoryHeaderView
          
-        sectionHeader?.label.text = indexPath.section == 0 ? "Daily Progress" : "Social"
+        sectionHeader?.label.text = indexPath.section == 0 ? "Atividades" : "Social"
         
         return sectionHeader ?? UICollectionReusableView()
     }

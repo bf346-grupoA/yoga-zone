@@ -22,7 +22,6 @@ class LoginView: UIView {
     func delegate(delegate: LoginViewProtocol?) {
         self.delegate = delegate
     }
-    
 
     lazy var appImageView:UIImageView = {
         let image = UIImageView()
@@ -43,6 +42,7 @@ class LoginView: UIView {
         textField.layer.borderWidth = 1.0
         textField.autocapitalizationType = .none
         textField.keyboardType = .emailAddress
+        textField.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         textField.placeholder = LoginConstants.emailPlaceholder.rawValue
         textField.textColor = .darkGray
         return textField
@@ -62,6 +62,7 @@ class LoginView: UIView {
         textField.layer.borderWidth = 1.0
         textField.autocapitalizationType = .none
         textField.keyboardType = .default
+        textField.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         textField.isSecureTextEntry = true
         textField.placeholder = LoginConstants.passwordPlaceholder.rawValue
         textField.textColor = .darkGray
@@ -73,7 +74,7 @@ class LoginView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle(LoginConstants.forgotPassword.rawValue, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        button.titleLabel?.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         button.setTitleColor(UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0), for: .normal)
         button.addTarget(self, action: #selector(self.tappedForgotPasswordButton), for: .touchUpInside)
         return button
@@ -82,12 +83,12 @@ class LoginView: UIView {
     lazy var joinButton: TransitionButton = {
         let button = TransitionButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
+        button.backgroundColor = UIColor(red: 114/255, green: 103/255, blue: 203/255, alpha: 1.0)
         button.cornerRadius = 7
         button.layer.cornerRadius = 7
         button.clipsToBounds = true
         button.setTitle(LoginConstants.enter.rawValue, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        button.titleLabel?.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         button.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0), for: .normal)
         button.addTarget(self, action: #selector(self.tappedJoinInButton), for: .touchUpInside)
         button.spinnerColor = .white
@@ -99,7 +100,7 @@ class LoginView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor(red: 228/255, green: 228/255, blue: 236/255, alpha: 1.0)
         button.setTitle(LoginConstants.noAccount.rawValue, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        button.titleLabel?.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         button.layer.cornerRadius = 7
         button.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0), for: .normal)
         button.addTarget(self, action: #selector(self.tappedSubscribeButton), for: .touchUpInside)

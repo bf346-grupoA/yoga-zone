@@ -16,7 +16,9 @@ enum CommonConstants: String {
     case bmiSubColletionName = "bmiProgress"
     case comfortaaRegularFont = "Comfortaa-Regular"
     case comfortaaBoldFont = "Comfortaa-Bold"
-    case comfortaaSemiBoldFont = "Comfortaa-Semi"
+    case comfortaaSemiBoldFont = "Comfortaa-SemiBold"
+    case comfortaaMediumFont = "Comfortaa-Medium"
+    case montserratRegularFont = "Montserrat-Regular"
     case smileEmojiText = "smile_emoji"
-    case backArrorImage = "arrowVoltar"
+    case backArrowImage = "arrowVoltar"
 }
