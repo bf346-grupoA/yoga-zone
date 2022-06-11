@@ -168,6 +168,9 @@ extension EventFilterViewController {
         
         self.dateIntervalSelectedSwitch.addTarget(self, action: #selector(dateSwitchChanged), for: UIControl.Event.valueChanged)
         
+        self.eventNameTextField.delegate = self
+        self.cityTextField.delegate = self
+        
     }
     
     @objc func dateSwitchChanged(mySwitch: UISwitch) {
@@ -215,3 +218,10 @@ extension EventFilterViewController {
       
 }
 
+extension EventFilterViewController: UITextFieldDelegate {
+   
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}

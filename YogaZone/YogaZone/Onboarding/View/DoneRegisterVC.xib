@@ -55,10 +55,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AB-fz-FfP">
-                    <rect key="frame" x="70" y="426.5" width="235" height="40"/>
+                    <rect key="frame" x="70" y="426.5" width="235" height="50"/>
                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="2lW-ui-PCg"/>
+                        <constraint firstAttribute="height" constant="50" id="2lW-ui-PCg"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
