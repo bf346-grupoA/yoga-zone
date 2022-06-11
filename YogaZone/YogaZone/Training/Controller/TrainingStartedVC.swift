@@ -13,6 +13,10 @@ protocol TrainingStartedVCDelegate:AnyObject {
     func resumeTimer()
 }
 
+protocol LeaveTrainingVCDelegate: AnyObject {
+    func killTimer()
+}
+
 class TrainingStartedVC: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var titleExerciceNameLabel: UILabel!
@@ -115,12 +119,17 @@ extension TrainingStartedVC {
     
     @objc private func leaveTraining() {
         let leaveTraining = LeaveTrainingVC()
+        leaveTraining.delegate = self
         navigationController?.pushViewController(leaveTraining, animated: false)
     }
 }
 
 // MARK: Timer Configuration
-extension TrainingStartedVC: TrainingStartedVCDelegate {
+extension TrainingStartedVC: TrainingStartedVCDelegate, LeaveTrainingVCDelegate {
+    func killTimer() {
+       timer.invalidate()
+    }
+    
     func resumeTimer() {
         self.pauseTimer()
     }
