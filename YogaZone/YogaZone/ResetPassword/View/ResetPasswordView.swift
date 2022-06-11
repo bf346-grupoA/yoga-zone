@@ -45,7 +45,7 @@ class ResetPasswordView: UIView {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.autocorrectionType = .no
-        textField.backgroundColor = .white
+        textField.backgroundColor = #colorLiteral(red: 0.9718734622, green: 0.9751194119, blue: 0.9782194495, alpha: 1)
         textField.borderStyle = .roundedRect
         textField.layer.cornerRadius = 7
         textField.layer.borderColor = CGColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)

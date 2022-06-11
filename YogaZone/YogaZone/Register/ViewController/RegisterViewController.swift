@@ -42,7 +42,7 @@ extension RegisterViewController: UIGestureRecognizerDelegate {
     func setupNavigationBar() {
         self.navigationItem.title = "Crie sua conta"
         self.navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16) ?? UIFont()
+            NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 20) ?? UIFont()
         ]
         
         self.navigationController?.navigationBar.tintColor = .yogaMediumGray
