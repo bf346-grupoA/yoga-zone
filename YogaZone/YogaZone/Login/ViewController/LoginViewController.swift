@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
         self.loginView?.delegate(delegate: self)
         self.auth = Auth.auth()
         self.alert = AlertController(controller: self)
+        self.joinButton.isEnabled = true
     }
     
     override func viewWillAppear(_ animated: Bool) {

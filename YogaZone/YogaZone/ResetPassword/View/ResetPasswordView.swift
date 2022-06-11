@@ -35,8 +35,8 @@ class ResetPasswordView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
-        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.text = LoginConstants.resetPassword.rawValue
+        label.font = UIFont(name: CommonConstants.comfortaaBoldFont.rawValue, size: 20)
         return label
     }()
     
@@ -52,6 +52,7 @@ class ResetPasswordView: UIView {
         textField.layer.borderWidth = 1.0
         textField.keyboardType = .emailAddress
         textField.autocapitalizationType = .none
+        textField.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         textField.placeholder = LoginConstants.typeEmailPlaceholder.rawValue
         textField.textColor = .darkGray
         return textField
@@ -70,11 +71,11 @@ class ResetPasswordView: UIView {
     lazy var sendButton: TransitionButton = {
         let button = TransitionButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor(red: 83/255, green: 66/255, blue: 114/255, alpha: 1.0)
+        button.backgroundColor = UIColor(red: 114/255, green: 103/255, blue: 203/255, alpha: 1.0)
         button.cornerRadius = 7
         button.clipsToBounds = true
         button.setTitle(LoginConstants.send.rawValue, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        button.titleLabel?.font = UIFont(name: CommonConstants.comfortaaRegularFont.rawValue, size: 16)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(self.didTapSendButton), for: .touchUpInside)
         return button
