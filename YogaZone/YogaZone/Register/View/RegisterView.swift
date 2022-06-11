@@ -53,7 +53,7 @@ class RegisterView: UIView {
         textField.autocapitalizationType = .none
         textField.textColor = .darkGray
         textField.font = UIFont(name: "Comfortaa-Bold", size: 16)
-        textField.placeholder = "Seu nome ou nick favorito (Opcional)"
+        textField.placeholder = "Seu nome ou nick favorito"
         
         return textField
     }()

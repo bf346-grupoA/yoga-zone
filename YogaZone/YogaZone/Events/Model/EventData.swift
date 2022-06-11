@@ -72,7 +72,7 @@ let eventMock = """
         "title": "Yuke",
         "local": "Rua lisa, 88",
         "date": "15/07/2022",
-        "description": "Foi o Pablo que disse.",
+        "description": "É isso ai.",
         "isOwner": false,
         "isParticipating": false,
         "numberOfParticipants": 10,
@@ -102,6 +102,19 @@ let eventMock = """
         "numberOfParticipants": 10,
         "maximumOfParticipants": 20,
         "startTime": "12:00"
+      },
+      {
+        "id": 9,
+        "title": "Masterclass",
+        "local": "Birigui",
+        "date": "15/07/2022",
+        "description": "Ao lado das Birigui Identical Towers",
+        "isOwner": false,
+        "isParticipating": false,
+        "numberOfParticipants": 14,
+        "maximumOfParticipants": 22,
+        "startTime": "14:00"
       }
+    
     ]
     """
