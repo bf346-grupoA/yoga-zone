@@ -192,7 +192,7 @@ class MoreInfoRegisterVC: UIViewController, UIGestureRecognizerDelegate {
         userData.birthDate = self.datePicker.date
         userData.state = self.stateTextField.text
         userData.city = self.cityTextField.text
-        userData.isOnboarding = true
+        userData.isOnboarding = false
         saveFirestoreData(user: userData)
         
         self.navigationController?.pushViewController(DoneRegisterVC(), animated: true)
