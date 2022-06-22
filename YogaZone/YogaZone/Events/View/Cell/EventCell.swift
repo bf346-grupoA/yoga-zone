@@ -50,7 +50,7 @@ class EventCell: UITableViewCell {
         self.eventNumberOfParticipantsLabel.adjustsFontSizeToFitWidth = true
     }
     
-    func setupCell(event: Event){
+    func setupCell(event: EventModel){
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"

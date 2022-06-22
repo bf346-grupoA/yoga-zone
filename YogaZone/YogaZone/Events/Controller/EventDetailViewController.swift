@@ -29,7 +29,7 @@ class EventDetailViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var availableVacanciesLabel: UILabel!
     @IBOutlet weak var eventAvailableVacanciesLabel: UILabel!
     
-    var event: Event?
+    var event: EventModel?
     
     private var containerViewController: FinalizedContainerViewController?
     var avaliableVacancies = 0

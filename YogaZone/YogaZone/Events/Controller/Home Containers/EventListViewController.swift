@@ -11,7 +11,7 @@ class EventListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    var eventData: [Event] = []
+    var eventData: [EventModel] = []
     var idSegment:Int = 0
     var filterData:EventFilter?
     
@@ -107,7 +107,7 @@ extension EventListViewController {
             let jsonData = eventMock.data(using: .utf8)
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .formatted(Formatter.dateFormatterPtBr)
-            let events = try decoder.decode([Event].self, from: jsonData ?? Data() )
+            let events = try decoder.decode([EventModel].self, from: jsonData ?? Data() )
             events.forEach { self.eventData.append($0)}
         } catch {
             print(error)
@@ -131,8 +131,8 @@ extension EventListViewController {
         
     }
     
-    func searchFilter(_ filter: EventFilter?) -> [Event]{
-        var searchResults:[Event]
+    func searchFilter(_ filter: EventFilter?) -> [EventModel]{
+        var searchResults:[EventModel]
         
         let local = filter?.local ?? ""
         //Double condition, in case filter.local is nil, it will always be true, and return all the items in the list
