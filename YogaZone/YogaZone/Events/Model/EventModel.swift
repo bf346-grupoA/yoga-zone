@@ -22,8 +22,7 @@ struct EventModel: Codable, Identifiable {
     var creator: String?
     var eventParticipants: [String]?
     
-    init(id: String, title: String, local: String, date: Date, description: String, isOwner: Bool, isParticipating: Bool,
-         numberOfParticipants: Int, maximumOfParticipants: Int, startTime: String){
+    init(id: String?, title: String, local: String, date: Date, description: String, isOwner: Bool?, isParticipating: Bool?,numberOfParticipants: Int, maximumOfParticipants: Int, startTime: String, creator: String, eventParticipants:[String]){
         self.id = id
         self.title = title
         self.local = local
@@ -34,6 +33,8 @@ struct EventModel: Codable, Identifiable {
         self.numberOfParticipants = numberOfParticipants
         self.maximumOfParticipants = maximumOfParticipants
         self.startTime = startTime
+        self.creator = creator
+        self.eventParticipants = eventParticipants
     }
 }
 

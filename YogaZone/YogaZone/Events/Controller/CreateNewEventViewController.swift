@@ -35,16 +35,19 @@ class CreateNewEventViewController: UIViewController, UIGestureRecognizerDelegat
     
     @IBAction func createEventButtonTapped(_ sender: UIButton) {
         
-        let event = EventModel(id: "0",
+        let email = Auth.auth().currentUser?.email ?? ""
+        let event = EventModel(id: nil,
                                title: eventNameTextField.text ?? "",
                                local: eventLocalTextField.text ?? "",
                                date: eventDatePicker.date,
                                description: eventDescriptionTextField.text ?? "",
-                               isOwner: true,
-                               isParticipating: true,
+                               isOwner: nil,
+                               isParticipating: nil,
                                numberOfParticipants: 1,
                                maximumOfParticipants: Int(eventNumberOfParticipantsTextField.text ?? "") ?? 0,
-                               startTime: eventStartTimeTextField.text ?? "")
+                               startTime: eventStartTimeTextField.text ?? "",
+                               creator: email,
+                               eventParticipants: [email])
         
         self.saveFirestoreData(event: event)
         
@@ -260,24 +263,13 @@ extension CreateNewEventViewController {
     
     func saveFirestoreData(event:EventModel) {
         
-        let document = database.collection(EventsConstants.eventCollectionName.rawValue).document()
-        let id = document.documentID
-        let email = Auth.auth().currentUser?.email ?? ""
-        document.setData([
-            EventsConstants.nameField.rawValue : event.title ?? "",
-            EventsConstants.dateField.rawValue : event.date ?? Date(),
-            EventsConstants.startTimeField.rawValue : event.startTime ?? "",
-            EventsConstants.maximumOfParticipantsField.rawValue : event.maximumOfParticipants ?? 0,
-            EventsConstants.addressField.rawValue : event.local ?? "",
-            EventsConstants.descriptionField.rawValue : event.description ?? "",
-            EventsConstants.creatorField.rawValue : email,
-            EventsConstants.eventParticipantsEmail.rawValue : [email]
-        ]){ (error) in
-            if let e = error {
-                print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(e.localizedDescription)")
-            } else {
-                print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
-            }
+        let collectionRef = database.collection(EventsConstants.eventCollectionName.rawValue)
+        do {
+            let newDocReference = try collectionRef.addDocument(from: event)
+            print("Event created with new document reference: \(newDocReference.documentID)")
+            print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
+        } catch {
+            print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(error.localizedDescription)")
         }
       
     }
