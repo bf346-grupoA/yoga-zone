@@ -5,21 +5,24 @@
 //  Created by Rafael Benjamin on 12/03/22.
 //
 
-import UIKit
+import Foundation
+import FirebaseFirestoreSwift
 
-struct EventModel: Codable {
-    var id: Int
-    var title: String
-    var local: String
-    var date: Date
-    var description: String
-    var isOwner: Bool
-    var isParticipating: Bool
-    var numberOfParticipants: Int
-    var maximumOfParticipants: Int
-    var startTime: String
+struct EventModel: Codable, Identifiable {
+    @DocumentID var id: String?
+    var title: String?
+    var local: String?
+    var date: Date?
+    var description: String?
+    var isOwner: Bool?
+    var isParticipating: Bool?
+    var numberOfParticipants: Int?
+    var maximumOfParticipants: Int?
+    var startTime: String?
+    var creator: String?
+    var eventParticipants: [String]?
     
-    init(id: Int, title: String, local: String, date: Date, description: String, isOwner: Bool, isParticipating: Bool,
+    init(id: String, title: String, local: String, date: Date, description: String, isOwner: Bool, isParticipating: Bool,
          numberOfParticipants: Int, maximumOfParticipants: Int, startTime: String){
         self.id = id
         self.title = title

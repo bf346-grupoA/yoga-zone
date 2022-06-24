@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseAuth
 
 class EventListViewController: UIViewController {
     
@@ -17,10 +19,15 @@ class EventListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupData(filter: filterData)
-        configureTableView()
-        setupUI()
+        self.setupData(filter: self.filterData)
+        self.setupUI()
+       
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.configureTableView()
+    }
+    
     
     func configureTableView(){
         self.tableView?.delegate = self
@@ -56,7 +63,7 @@ extension EventListViewController:UITableViewDataSource {
             cell?.selectionStyle = .none
             return cell ?? UITableViewCell()
         }
-               
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -101,6 +108,74 @@ extension EventListViewController {
     
     func setupData(filter: EventFilter?) {
         
+        //self.eventData.removeAll()
+        let database = Firestore.firestore()
+        DispatchQueue.main.async {
+            database.collection(EventsConstants.eventCollectionName.rawValue).getDocuments { querySnapshot, error in
+                
+                if let e = error {
+                    print("\(CommonConstants.firestoreRetrivingDataError.rawValue) \(e.localizedDescription)")
+                } else {
+                    guard let documents = querySnapshot?.documents else {
+                        print("No documents")
+                        return
+                    }
+                    
+                    self.eventData = documents.compactMap({ queryDocumentSnapshot -> EventModel? in
+                        return try? queryDocumentSnapshot.data(as: EventModel.self)
+                    })
+                    
+                    /*
+                     for document in querySnapshot!.documents {
+                     print("\(document.documentID) => \(document.data())");
+                     
+                     }*/
+                }
+                
+                let email = Auth.auth().currentUser?.email ?? ""
+                
+                for i in self.eventData.indices {
+                    
+                    self.eventData[i].isOwner = false
+                    self.eventData[i].isParticipating = false
+                    
+                    if self.eventData[i].creator == email{
+                        self.eventData[i].isOwner = true
+                    }
+                    
+                    for z in (self.eventData[i].eventParticipants ?? []).indices {
+                        if self.eventData[i].eventParticipants?[z] == email {
+                            self.eventData[i].isParticipating = true
+                            break
+                        }
+                    }
+                    
+                }
+                
+                if self.idSegment == 0 {
+                    self.eventData = self.eventData.filter({ event in
+                        event.isOwner == false && event.isParticipating == false
+                    })
+                } else if self.idSegment == 2 {
+                    self.eventData = self.eventData.filter({ event in
+                        event.isOwner == true || event.isParticipating == true
+                    })
+                }
+                
+                if (filter != nil) {
+                    self.eventData = self.searchFilter(filter)
+                }
+                
+                self.tableView.reloadData()
+                
+            }
+        }
+        
+        
+    }
+    
+    func setupData2(filter: EventFilter?) {
+        
         self.eventData.removeAll()
         
         do {
@@ -114,12 +189,12 @@ extension EventListViewController {
         }
         
         if idSegment == 0 {
-            eventData = eventData.filter({ Event in
-                Event.isOwner == false && Event.isParticipating == false
+            eventData = eventData.filter({ event in
+                event.isOwner == false && event.isParticipating == false
             })
         } else if idSegment == 2 {
-            eventData = eventData.filter({ Event in
-                Event.isOwner == true || Event.isParticipating == true
+            eventData = eventData.filter({ event in
+                event.isOwner == true || event.isParticipating == true
             })
         }
         
@@ -137,25 +212,25 @@ extension EventListViewController {
         let local = filter?.local ?? ""
         //Double condition, in case filter.local is nil, it will always be true, and return all the items in the list
         //Case something is found with the text in range, it will return the events with the filter applied
-        searchResults = eventData.filter({ filter?.local == nil || $0.local.range(of: local, options: NSString.CompareOptions.caseInsensitive) != nil })
+        searchResults = eventData.filter({ filter?.local == nil || $0.local?.range(of: local, options: NSString.CompareOptions.caseInsensitive) != nil })
         
         let title = filter?.title ?? ""
         if !(filter?.title?.isEmpty ?? true) {
             //removes all occurences that are different from the filter result, wich is the text we are trying to find (== nil)
-            searchResults.removeAll { $0.title.range(of: title, options:  NSString.CompareOptions.caseInsensitive) == nil }
+            searchResults.removeAll { $0.title?.range(of: title, options:  NSString.CompareOptions.caseInsensitive) == nil }
         }
         
         if (filter?.startDate != nil && filter?.endDate != nil ){
             let range = (filter?.startDate ?? Date())...(filter?.endDate ?? Date())
-            searchResults.removeAll(where: { !range.contains($0.date) } )
+            searchResults.removeAll(where: { !range.contains($0.date ?? Date()) } )
         }
         
         if filter?.isOwner != false && filter?.isOwner != nil {
-            searchResults.removeAll(where: { !$0.isOwner == filter?.isOwner } )
+            searchResults.removeAll(where: { !($0.isOwner ?? false) == filter?.isOwner } )
         }
         
         if filter?.isAvaliable != false && filter?.isAvaliable != nil {
-            searchResults.removeAll(where: { $0.maximumOfParticipants - $0.numberOfParticipants == 0 } )
+            searchResults.removeAll(where: { ($0.maximumOfParticipants ?? 0) - ($0.numberOfParticipants ?? 0) == 0 } )
         }
         
         return searchResults

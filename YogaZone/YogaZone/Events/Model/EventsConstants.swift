@@ -9,13 +9,14 @@ import Foundation
 
 enum EventsConstants: String {
     case eventCollectionName = "Events"
-    case nameField = "Name"
-    case dateField = "Date"
-    case startTimeField = "StartTime"
-    case maximumOfParticipantsField = "MaximumParticipants"
-    case numberOfParticipantsField = "Participants"
-    case addressField = "Address"
-    case descriptionField = "Description"
-    case creatorField = "Creator"
-    case eventParticipantsCollectionName = "EventParticipants"
+    case nameField = "title"
+    case dateField = "date"
+    case startTimeField = "startTime"
+    case maximumOfParticipantsField = "maximumOfParticipants"
+    case numberOfParticipantsField = "numberOfParticipants"
+    case addressField = "local"
+    case descriptionField = "description"
+    case creatorField = "creator"
+    case eventParticipantsEmail = "eventParticipants"
+    case existsField = "exists"
 }

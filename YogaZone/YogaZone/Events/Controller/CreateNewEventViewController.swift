@@ -35,7 +35,7 @@ class CreateNewEventViewController: UIViewController, UIGestureRecognizerDelegat
     
     @IBAction func createEventButtonTapped(_ sender: UIButton) {
         
-        let event = EventModel(id: 0,
+        let event = EventModel(id: "0",
                                title: eventNameTextField.text ?? "",
                                local: eventLocalTextField.text ?? "",
                                date: eventDatePicker.date,
@@ -264,13 +264,14 @@ extension CreateNewEventViewController {
         let id = document.documentID
         let email = Auth.auth().currentUser?.email ?? ""
         document.setData([
-            EventsConstants.nameField.rawValue : event.title,
-            EventsConstants.dateField.rawValue : event.date,
-            EventsConstants.startTimeField.rawValue : event.startTime,
-            EventsConstants.maximumOfParticipantsField.rawValue : event.maximumOfParticipants,
-            EventsConstants.addressField.rawValue : event.local,
-            EventsConstants.descriptionField.rawValue : event.description,
-            EventsConstants.creatorField.rawValue : email
+            EventsConstants.nameField.rawValue : event.title ?? "",
+            EventsConstants.dateField.rawValue : event.date ?? Date(),
+            EventsConstants.startTimeField.rawValue : event.startTime ?? "",
+            EventsConstants.maximumOfParticipantsField.rawValue : event.maximumOfParticipants ?? 0,
+            EventsConstants.addressField.rawValue : event.local ?? "",
+            EventsConstants.descriptionField.rawValue : event.description ?? "",
+            EventsConstants.creatorField.rawValue : email,
+            EventsConstants.eventParticipantsEmail.rawValue : [email]
         ]){ (error) in
             if let e = error {
                 print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(e.localizedDescription)")
@@ -278,19 +279,7 @@ extension CreateNewEventViewController {
                 print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
             }
         }
-        
-        database
-            .collection(EventsConstants.eventCollectionName.rawValue)
-            .document(id)
-            .collection(EventsConstants.eventParticipantsCollectionName.rawValue)
-            .document(email)
-            .setData(["Exists" : true]) { (error) in
-                if let e = error {
-                    print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(e.localizedDescription)")
-                } else {
-                    print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
-                }
-            }
+      
     }
     
 }

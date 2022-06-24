@@ -12,6 +12,7 @@ target 'YogaZone' do
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 pod 'FirebaseAuth'
+pod 'FirebaseFirestoreSwift'
 pod 'TransitionButton'
 pod 'ShowPasswordTextField'
 pod 'youtube-ios-player-helper'

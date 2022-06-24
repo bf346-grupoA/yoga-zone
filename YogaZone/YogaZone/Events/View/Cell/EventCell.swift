@@ -58,8 +58,8 @@ class EventCell: UITableViewCell {
         
         self.eventTitleLabel.text = event.title
         self.eventLocalLabel.text = event.local
-        self.eventDateLabel.text = dateFormatter.string(from: event.date)
-        self.eventNumberOfParticipantsLabel.text = String(event.numberOfParticipants) + " / " + String(event.maximumOfParticipants)
+        self.eventDateLabel.text = dateFormatter.string(from: event.date ?? Date())
+        self.eventNumberOfParticipantsLabel.text = String(event.numberOfParticipants ?? 0) + " / " + String(event.maximumOfParticipants ?? 0)
         
         if event.isOwner == true {
             self.eventIsOwnerLabel.isHidden = false
