@@ -21,6 +21,10 @@ struct EventModel: Codable, Identifiable {
     var startTime: String?
     var creator: String?
     var eventParticipants: [String]?
+
+    init(){
+        
+    }
     
     init(id: String?, title: String, local: String, date: Date, description: String, isOwner: Bool?, isParticipating: Bool?,numberOfParticipants: Int, maximumOfParticipants: Int, startTime: String, creator: String, eventParticipants:[String]){
         self.id = id

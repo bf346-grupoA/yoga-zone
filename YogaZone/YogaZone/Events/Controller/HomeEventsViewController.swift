@@ -28,8 +28,6 @@ class HomeEventsViewController: UIViewController, UIGestureRecognizerDelegate{
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        
-
         self.saveUserDefault(value: self.filterData?.local ?? "", key: "eventFilterDataLocal")
         self.saveUserDefault(value: self.filterData?.title ?? "", key: "eventFilterDataTitle")
 
@@ -154,7 +152,6 @@ extension HomeEventsViewController {
 
 // MARK: Container View Segue
 extension HomeEventsViewController {
-    //Acessando os dados que estão dentro do Container View na home
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToEventList" {
             containerViewController = segue.destination as? EventListViewController

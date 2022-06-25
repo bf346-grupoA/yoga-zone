@@ -19,13 +19,13 @@ class EventListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configureTableView()
         self.setupData(filter: self.filterData)
         self.setupUI()
-       
-    }
+     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.configureTableView()
+    
     }
     
     
@@ -108,9 +108,8 @@ extension EventListViewController {
     
     func setupData(filter: EventFilter?) {
         
-        //self.eventData.removeAll()
         let database = Firestore.firestore()
-        DispatchQueue.main.async {
+      
             database.collection(EventsConstants.eventCollectionName.rawValue).getDocuments { querySnapshot, error in
                 
                 if let e = error {
@@ -166,11 +165,10 @@ extension EventListViewController {
                     self.eventData = self.searchFilter(filter)
                 }
                 
+              
                 self.tableView.reloadData()
                 
             }
-        }
-        
         
     }
     

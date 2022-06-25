@@ -15,10 +15,9 @@ class FinalizedContainerViewController:UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+   override func viewWillAppear(_ animated: Bool) {
         setupUI()
     }
     
