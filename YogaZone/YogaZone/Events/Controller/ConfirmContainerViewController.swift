@@ -12,7 +12,7 @@ import FirebaseFirestore
 class ConfirmContainerViewController:UIViewController {
     
     @IBOutlet weak var confirmButton: UIButton!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -68,11 +68,11 @@ extension ConfirmContainerViewController {
         let docRef = database.collection(EventsConstants.eventCollectionName.rawValue).document(id)
         do {
             try docRef.setData(from: event)
-           print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
+            print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
         } catch {
             print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(error.localizedDescription)")
         }
-      
+        
     }
     
 }

@@ -6,21 +6,36 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class CancelContainerViewController:UIViewController {
     
     @IBOutlet weak var cancelButton: UIButton!
-    
-    let alertService = AlertService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
+    let alertService = AlertService()
+    let alertViewController = AlertViewController()
+    let database = Firestore.firestore()
+    var event: EventModel?
+    
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        let alertVC = alertService.alert(parentVC: self, alertTitle: "Atenção!", alertDescription: "Confirmar Saída do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Cancelamento")
+        let alertVC = alertService.alert(parentVC: self, alertTitle: "Atenção!", alertDescription: "Confirmar Saída do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Cancelamento", delegate: self)
         self.present(alertVC, animated: true)
+    }
+    
+    func setEventData(event:EventModel){
+        self.event = event
+    }
+    
+    func confirmParticipation(){
+        let email = Auth.auth().currentUser?.email ?? ""
+        self.event?.eventParticipants?.removeAll{ $0 == email}
+        updateFirestoreData(event: self.event ?? EventModel())
     }
     
 }
@@ -39,3 +54,28 @@ extension CancelContainerViewController {
     
 }
 
+extension CancelContainerViewController: AlertDelegate {
+    
+    func confirmAlertPressed() {
+        self.confirmParticipation()
+    }
+    
+}
+
+//MARK: - Firestore
+extension CancelContainerViewController {
+    
+    func updateFirestoreData(event:EventModel) {
+        
+        let id = event.id ?? "0"
+        let docRef = database.collection(EventsConstants.eventCollectionName.rawValue).document(id)
+        do {
+            try docRef.setData(from: event)
+            print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
+        } catch {
+            print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(error.localizedDescription)")
+        }
+        
+    }
+    
+}

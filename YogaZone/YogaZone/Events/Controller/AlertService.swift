@@ -9,11 +9,12 @@ import UIKit
 
 class AlertService {
     
-    func alert(parentVC: UIViewController, alertTitle: String, alertDescription: String, cancelText: String, confirmText: String, actionType: String) -> AlertViewController {
+    func alert(parentVC: UIViewController, alertTitle: String, alertDescription: String, cancelText: String, confirmText: String, actionType: String, delegate: AlertDelegate) -> AlertViewController {
        
         let storyboard = UIStoryboard(name: "Alert", bundle: nil)
         let alertVC = storyboard.instantiateViewController(identifier: "AlertViewController") as AlertViewController
         
+        alertVC.delegate(delegate: delegate)
         alertVC.alertTitle = alertTitle
         alertVC.alertDescritpiton = alertDescription
         alertVC.cancelText = cancelText

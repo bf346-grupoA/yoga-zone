@@ -13,12 +13,19 @@ class EditContainerViewController:UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
     }
+    
+    var event: EventModel?
     
     @IBAction func editButtonTapped(_ sender: Any) {
         let vc = EditEventDetailViewController()
+        vc.event = self.event
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func setEventData(event:EventModel){
+        self.event = event
     }
     
 }
@@ -31,8 +38,7 @@ extension EditContainerViewController {
         self.editButton.setTitleColor(.white, for: .normal)
         self.editButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
         self.editButton.backgroundColor = #colorLiteral(red: 0.8588235294, green: 0.5137254902, blue: 0.2823529412, alpha: 1)
-        self.editButton.layer.cornerRadius = 8
-        
+        self.editButton.layer.cornerRadius = 8        
     }
     
 }

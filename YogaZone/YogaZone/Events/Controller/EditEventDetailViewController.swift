@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class EditEventDetailViewController: UIViewController, UIGestureRecognizerDelegate {
     
@@ -19,6 +20,8 @@ class EditEventDetailViewController: UIViewController, UIGestureRecognizerDelega
     @IBOutlet weak var deleteEventButton: UIButton!
     
     let alertService = AlertService()
+    let database = Firestore.firestore()
+    var event: EventModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +39,16 @@ class EditEventDetailViewController: UIViewController, UIGestureRecognizerDelega
     }
     
     @IBAction func deleteButtonTapped(_ sender: Any) {
-        let alertVC = alertService.alert(parentVC: self, alertTitle: "Atenção!", alertDescription: "Confirmar Exclusão do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Exclusão")
+        let alertVC = alertService.alert(parentVC: self, alertTitle: "Atenção!", alertDescription: "Confirmar Exclusão do Evento?", cancelText: "Não", confirmText: "Sim", actionType: "Exclusão", delegate: self)
         self.present(alertVC, animated: true)
+    }
+    
+}
+
+extension EditEventDetailViewController: AlertDelegate {
+    
+    func confirmAlertPressed() {
+        self.deleteFirestoreData(event: self.event ?? EventModel())
     }
     
 }
@@ -174,7 +185,7 @@ extension EditEventDetailViewController: UITextFieldDelegate {
             }else{
                 setNormalBorder(textField: textField)
             }
-        }        
+        }
         
         if self.eventNameTextField.text != "" &&
             self.eventDateTextField.text != "" &&
@@ -208,6 +219,26 @@ extension EditEventDetailViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+}
+
+//MARK: - Firestore
+extension EditEventDetailViewController {
+    
+    func deleteFirestoreData(event:EventModel) {
+        
+        let id = event.id ?? "0"
+        database.collection(EventsConstants.eventCollectionName.rawValue)
+            .document(id)
+            .delete { error in
+            if let error = error {
+                print("Error removing document: \(error)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+        
     }
     
 }

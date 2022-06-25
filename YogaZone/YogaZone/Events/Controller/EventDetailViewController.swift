@@ -33,6 +33,8 @@ class EventDetailViewController: UIViewController, UIGestureRecognizerDelegate {
     
     private var finalizedContainerViewController: FinalizedContainerViewController?
     private var confirmContainerViewController: ConfirmContainerViewController?
+    private var cancelContainerViewController: CancelContainerViewController?
+    private var editContainerViewController: EditContainerViewController?
     
     var avaliableVacancies = 0
     
@@ -105,6 +107,7 @@ extension EventDetailViewController {
             self.cancelContainer.isHidden = true
             self.editContainer.isHidden = false
             self.finalizedContainer.isHidden = true
+            self.editContainerViewController?.setEventData(event: self.event ?? EventModel())
             
         } else if self.event?.isParticipating == true {
             
@@ -112,6 +115,7 @@ extension EventDetailViewController {
             self.cancelContainer.isHidden = false
             self.editContainer.isHidden = true
             self.finalizedContainer.isHidden = true
+            self.cancelContainerViewController?.setEventData(event: self.event ?? EventModel())
             
         } else if avaliableVacancies > 0 {
             
@@ -150,8 +154,12 @@ extension EventDetailViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToFinalizedContainer" {
             self.finalizedContainerViewController = segue.destination as? FinalizedContainerViewController
-        } else  if segue.identifier == "goToConfirmContainer" {
+        } else if segue.identifier == "goToConfirmContainer" {
             self.confirmContainerViewController = segue.destination as? ConfirmContainerViewController
+        } else if segue.identifier == "goToCancelContainer" {
+            self.cancelContainerViewController = segue.destination as? CancelContainerViewController
+        } else if segue.identifier == "goToEditContainer" {
+            self.editContainerViewController = segue.destination as? EditContainerViewController
         }
     }
     

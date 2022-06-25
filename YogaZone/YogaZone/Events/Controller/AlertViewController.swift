@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol AlertDelegate:AnyObject {
+    func confirmAlertPressed()
+}
+
 class AlertViewController: UIViewController {
     
     @IBOutlet weak var alertView: UIView!
@@ -15,12 +19,17 @@ class AlertViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var confirmButton: UIButton!
     
+    weak private var delegate:AlertDelegate?
     var alertTitle = ""
     var alertDescritpiton = ""
     var cancelText = ""
     var confirmText = ""
     var actionType = ""
     var parentVC = UIViewController()
+    
+    func delegate(delegate: AlertDelegate){
+        self.delegate = delegate
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +38,7 @@ class AlertViewController: UIViewController {
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
         let vc = EventCreatedSuccessViewController()
+        self.delegate?.confirmAlertPressed()
         
         if actionType == "Exclusão"{
             
