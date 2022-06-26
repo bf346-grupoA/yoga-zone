@@ -40,6 +40,9 @@ class ConfirmContainerViewController:UIViewController {
     func confirmParticipation(){
         let email = Auth.auth().currentUser?.email ?? ""
         self.event?.eventParticipants?.append(contentsOf: [email])
+        self.event?.numberOfParticipants? += 1
+        self.event?.isOwner = nil
+        self.event?.isParticipating = nil
         updateFirestoreData(event: self.event ?? EventModel())
     }
     

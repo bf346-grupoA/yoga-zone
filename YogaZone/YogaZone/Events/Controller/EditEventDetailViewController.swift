@@ -7,13 +7,17 @@
 
 import UIKit
 import FirebaseFirestore
+import FirebaseAuth
 
 class EditEventDetailViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var eventNameTextField: UITextField!
-    @IBOutlet weak var eventDateTextField: UITextField!
+    @IBOutlet weak var eventDateLabel: UILabel!
+    @IBOutlet weak var eventDatePicker: UIDatePicker!
+    
     @IBOutlet weak var eventStartTimeTextField: UITextField!
     @IBOutlet weak var eventNumberOfParticipantsTextField: UITextField!
+    @IBOutlet weak var numberOfParticipantsErrorLabel: UILabel!
     @IBOutlet weak var eventLocalTextField: UITextField!
     @IBOutlet weak var eventDescriptionTextField: UITextField!
     @IBOutlet weak var editEventButton: UIButton!
@@ -26,8 +30,13 @@ class EditEventDetailViewController: UIViewController, UIGestureRecognizerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
+        createTimePicker()
         setupUI()
+        loadCurrentEventData()
     }
+    
+    // MARK: UIPickers Implementation
+    let datePicker = UIDatePicker()
     
     @IBAction func editButtonTapped(_ sender: Any) {
         let vc = EventCreatedSuccessViewController()
@@ -35,6 +44,22 @@ class EditEventDetailViewController: UIViewController, UIGestureRecognizerDelega
         vc.sucessMessage = """
         Evento alterado com sucesso !
         """
+        
+        let event = EventModel(id: event?.id,
+                               title: eventNameTextField.text ?? "",
+                               local: eventLocalTextField.text ?? "",
+                               date: eventDatePicker.date,
+                               description: eventDescriptionTextField.text ?? "",
+                               isOwner: nil,
+                               isParticipating: nil,
+                               numberOfParticipants: event?.numberOfParticipants ?? 0,
+                               maximumOfParticipants: Int(eventNumberOfParticipantsTextField.text ?? "") ?? 0,
+                               startTime: eventStartTimeTextField.text ?? "",
+                               creator: event?.creator ?? "",
+                               eventParticipants: event?.eventParticipants ?? [])
+        
+        self.updateFirestoreData(event: event)
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -70,16 +95,51 @@ extension EditEventDetailViewController {
         )
     }
     
+    func createToolBar() -> UIToolbar{
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        toolbar.setItems([doneButton], animated: true)
+        return toolbar
+    }
+    
+    @objc func donePressed(){
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "HH:mm"
+        dateFormater.locale = Locale.current
+        self.eventStartTimeTextField.text = dateFormater.string(from: self.datePicker.date)
+        
+        self.view.endEditing(true)
+    }
+    
+    func createTimePicker() {
+        self.datePicker.preferredDatePickerStyle = .wheels
+        self.datePicker.datePickerMode = .time
+        
+        self.eventStartTimeTextField.textAlignment = .center
+        self.eventStartTimeTextField.inputView = datePicker
+        self.eventStartTimeTextField.inputAccessoryView = createToolBar()
+    }
+    
     func setupUI(){
         self.eventNameTextField.placeholder = "Nome do evento"
-        self.eventDateTextField.placeholder = "Data do evento"
+        self.eventDateLabel.text = "Data do evento"
         self.eventStartTimeTextField.placeholder = "Horário de início"
         self.eventNumberOfParticipantsTextField.placeholder = "Número de participantes"
         self.eventLocalTextField.placeholder = "Local"
         self.eventDescriptionTextField.placeholder = "Descrição de outras informações"
         
-        self.eventStartTimeTextField.textContentType = .dateTime
+        self.eventDateLabel.font =  UIFont(name: "Comfortaa-Bold", size: 16)
+        
+        self.eventDatePicker.minimumDate = Date()
+        
         self.eventNumberOfParticipantsTextField.keyboardType = .numberPad
+        self.eventNumberOfParticipantsTextField.inputAccessoryView = createToolBar()
+        
+        self.numberOfParticipantsErrorLabel.isHidden = true
+        self.numberOfParticipantsErrorLabel.text = "Número de participantes deve ser maior que 0"
+        self.numberOfParticipantsErrorLabel.font = UIFont(name: "Comfortaa-Bold", size: 12)
+        self.numberOfParticipantsErrorLabel.textColor = #colorLiteral(red: 0.9764705882, green: 0.1450980392, blue: 0.1450980392, alpha: 1)
         
         self.editEventButton.configuration = nil
         self.editEventButton.setTitle("Confirmar Alterações", for: .normal)
@@ -90,28 +150,24 @@ extension EditEventDetailViewController {
         self.editEventButton.isEnabled = false
         
         self.eventNameTextField.layer.cornerRadius = 6
-        self.eventDateTextField.layer.cornerRadius = 6
         self.eventStartTimeTextField.layer.cornerRadius = 6
         self.eventNumberOfParticipantsTextField.layer.cornerRadius = 6
         self.eventLocalTextField.layer.cornerRadius = 6
         self.eventDescriptionTextField.layer.cornerRadius = 6
         
         self.eventNameTextField.layer.borderWidth = 0.5
-        self.eventDateTextField.layer.borderWidth = 0.5
-        self.eventStartTimeTextField.layer.borderWidth = 0.5
+         self.eventStartTimeTextField.layer.borderWidth = 0.5
         self.eventNumberOfParticipantsTextField.layer.borderWidth = 0.5
         self.eventLocalTextField.layer.borderWidth = 0.5
         self.eventDescriptionTextField.layer.borderWidth = 0.5
         
         self.eventNameTextField.layer.borderColor = UIColor.lightGray.cgColor
-        self.eventDateTextField.layer.borderColor = UIColor.lightGray.cgColor
         self.eventStartTimeTextField.layer.borderColor = UIColor.lightGray.cgColor
         self.eventNumberOfParticipantsTextField.layer.borderColor = UIColor.lightGray.cgColor
         self.eventLocalTextField.layer.borderColor = UIColor.lightGray.cgColor
         self.eventDescriptionTextField.layer.borderColor = UIColor.lightGray.cgColor
         
         self.eventNameTextField.delegate = self
-        self.eventDateTextField.delegate = self
         self.eventStartTimeTextField.delegate = self
         self.eventNumberOfParticipantsTextField.delegate = self
         self.eventLocalTextField.delegate = self
@@ -124,6 +180,15 @@ extension EditEventDetailViewController {
         self.deleteEventButton.backgroundColor = #colorLiteral(red: 0.831372549, green: 0.1764705882, blue: 0.1764705882, alpha: 1)
         self.deleteEventButton.layer.cornerRadius = 8
         
+    }
+    
+    func loadCurrentEventData() {
+        self.eventNameTextField.text = event?.title
+        self.eventDatePicker.date = event?.date ?? Date()
+        self.eventStartTimeTextField.text = event?.startTime
+        self.eventNumberOfParticipantsTextField.text = String(event?.maximumOfParticipants ?? 0)
+        self.eventLocalTextField.text = event?.local
+        self.eventDescriptionTextField.text = event?.description
     }
     
 }
@@ -150,14 +215,7 @@ extension EditEventDetailViewController: UITextFieldDelegate {
             }else{
                 setNormalBorder(textField: textField)
             }
-            
-        case self.eventDateTextField:
-            if self.eventDateTextField.text == ""{
-                setRedBorder(textField: textField)
-            }else{
-                setNormalBorder(textField: textField)
-            }
-            
+              
         case self.eventStartTimeTextField:
             if self.eventStartTimeTextField.text == ""{
                 setRedBorder(textField: textField)
@@ -170,6 +228,13 @@ extension EditEventDetailViewController: UITextFieldDelegate {
                 setRedBorder(textField: textField)
             }else{
                 setNormalBorder(textField: textField)
+            }
+            if self.eventNumberOfParticipantsTextField.text == "0" {
+                setRedBorder(textField: textField)
+                self.numberOfParticipantsErrorLabel.isHidden = false
+            }else{
+                setNormalBorder(textField: textField)
+                self.numberOfParticipantsErrorLabel.isHidden = true
             }
             
         case self.eventLocalTextField:
@@ -188,8 +253,9 @@ extension EditEventDetailViewController: UITextFieldDelegate {
         }
         
         if self.eventNameTextField.text != "" &&
-            self.eventDateTextField.text != "" &&
             self.eventStartTimeTextField.text != "" &&
+            !(self.eventNumberOfParticipantsTextField.text?.isEmpty ?? false) &&
+            self.eventNumberOfParticipantsTextField.text != "0" &&
             self.eventNumberOfParticipantsTextField.text != "" &&
             self.eventLocalTextField.text != "" &&
             self.eventDescriptionTextField.text != ""  {
@@ -237,6 +303,19 @@ extension EditEventDetailViewController {
             } else {
                 print("Document successfully removed!")
             }
+        }
+        
+    }
+    
+    func updateFirestoreData(event:EventModel) {
+        
+        let id = event.id ?? "0"
+        let docRef = database.collection(EventsConstants.eventCollectionName.rawValue).document(id)
+        do {
+            try docRef.setData(from: event)
+            print(CommonConstants.firestoreDataSavedWithSuccess.rawValue)
+        } catch {
+            print("\(CommonConstants.firestoreErrorSavingData.rawValue) \(error.localizedDescription)")
         }
         
     }

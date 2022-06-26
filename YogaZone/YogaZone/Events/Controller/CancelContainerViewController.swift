@@ -35,6 +35,9 @@ class CancelContainerViewController:UIViewController {
     func confirmParticipation(){
         let email = Auth.auth().currentUser?.email ?? ""
         self.event?.eventParticipants?.removeAll{ $0 == email}
+        self.event?.numberOfParticipants? -= 1
+        self.event?.isOwner = nil
+        self.event?.isParticipating = nil
         updateFirestoreData(event: self.event ?? EventModel())
     }
     
